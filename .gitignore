@@ -1,0 +1,9 @@
+*.iml
+.gradle
+.DS_Store
+/build
+/captures
+local.properties
+.idea
+google-services.json
+nongit.properties
