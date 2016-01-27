@@ -51,8 +51,8 @@ editing tools. Export and integrate them in minutes!
 img.ly SDK for Android is a dual-licensed library which can be used for different purposes. <br/>
 Please see:
 
- [LICENSE.AGPL](https://github.com/imgly/imgly-sdk-android/blob/master/LICENSE.AGPL) for NON-PROPIETARY usage. <br/>
- [LICENSE.PROPIETARY](https://github.com/imgly/imgly-sdk-android/blob/master/LICENSE.PROPIETARY) for PROPIETARY usage.
+ [LICENSE.AGPL](https://github.com/imgly/imgly-sdk-android-demo/blob/master/LICENSE.AGPL) for NON-PROPIETARY usage. <br/>
+ [LICENSE.PROPIETARY](https://github.com/imgly/imgly-sdk-android-demo/blob/master/LICENSE.PROPIETARY) for PROPIETARY usage.
 
 ### Author & Contact
 
