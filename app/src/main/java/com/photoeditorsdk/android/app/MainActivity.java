@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.media.MediaScannerConnection;
 import android.net.Uri;
 import android.os.Bundle;
+import android.support.annotation.NonNull;
 import android.widget.Toast;
 
 import java.io.File;
@@ -11,8 +12,9 @@ import java.io.File;
 import ly.img.android.ui.activities.CameraPreviewActivity;
 import ly.img.android.ui.activities.CameraPreviewIntent;
 import ly.img.android.ui.activities.PhotoEditorIntent;
+import ly.img.android.ui.utilities.PermissionRequest;
 
-public class MainActivity extends Activity {
+public class MainActivity extends Activity  implements PermissionRequest.Response {
 
     private static final String FOLDER = "ImgLy";
     public static int CAMERA_PREVIEW_RESULT = 1;
@@ -26,9 +28,9 @@ public class MainActivity extends Activity {
                 .setExportPrefix("img_")
                 .setEditorIntent(
                         new PhotoEditorIntent(this)
-                        .setExportDir(PhotoEditorIntent.Directory.DCIM, FOLDER)
-                        .setExportPrefix("result_")
-                        .destroySourceAfterSave(true)
+                                .setExportDir(PhotoEditorIntent.Directory.DCIM, FOLDER)
+                                .setExportPrefix("result_")
+                                .destroySourceAfterSave(true)
                 )
                 .startActivityForResult(CAMERA_PREVIEW_RESULT);
     }
@@ -39,19 +41,34 @@ public class MainActivity extends Activity {
         if (resultCode == RESULT_OK && requestCode == CAMERA_PREVIEW_RESULT) {
             String path = data.getStringExtra(CameraPreviewActivity.RESULT_IMAGE_PATH);
 
-            Toast.makeText(this, "Image Save on: " + path, Toast.LENGTH_LONG).show();
+            Toast.makeText(this, "Image saved at: " + path, Toast.LENGTH_LONG).show();
 
-            File mMediaFolder = new File(path); //new File(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DCIM), FOLDER);
-
-            //sendBroadcast(new Intent(Intent.ACTION_MEDIA_SCANNER_SCAN_FILE, Uri.fromFile(mMediaFolder)));
+            File mMediaFolder = new File(path);
 
             MediaScannerConnection.scanFile(this, new String[] {mMediaFolder.getAbsolutePath()}, null, new MediaScannerConnection.OnScanCompletedListener() {
-                    public void onScanCompleted(String path, Uri uri) {
-                        finish();
+                        public void onScanCompleted(String path, Uri uri) {
+                            //onBackPressed();
+                        }
                     }
-                }
             );
         }
         finish();
+    }
+
+    @Override
+    public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
+        PermissionRequest.onRequestPermissionsResult(requestCode, permissions, grantResults);
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
+    }
+
+    @Override
+    public void permissionGranted() {
+
+    }
+
+    @Override
+    public void permissionDenied() {
+        finish();
+        System.exit(0);
     }
 }

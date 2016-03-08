@@ -3,7 +3,7 @@ buildscript {
         jcenter()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:2.0.0-alpha1'
+        classpath 'com.android.tools.build:gradle:2.0.0-beta6'
         classpath 'com.mutualmobile.gradle.plugins:dexinfo:0.1.2'
     }
 }
@@ -44,6 +44,6 @@ dependencies {
 
     compile 'com.google.android.gms:play-services-analytics:8.3.0'
 
-    compile 'ly.img.android:photo-editor-sdk:0.9.6'
+    compile 'ly.img.android:photo-editor-sdk:1.0.0'
 
 }
