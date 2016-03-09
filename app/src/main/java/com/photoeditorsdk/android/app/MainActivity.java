@@ -47,7 +47,7 @@ public class MainActivity extends Activity  implements PermissionRequest.Respons
 
             MediaScannerConnection.scanFile(this, new String[] {mMediaFolder.getAbsolutePath()}, null, new MediaScannerConnection.OnScanCompletedListener() {
                         public void onScanCompleted(String path, Uri uri) {
-                            //onBackPressed();
+
                         }
                     }
             );
