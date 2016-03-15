@@ -1,12 +1,30 @@
-![img.ly](http://i.imgur.com/EC8walN.png)
-
+<p align="center">
+  <img src="https://camo.githubusercontent.com/4c4c8d90e242619972a11baa3c33acaaeb9bad00/687474703a2f2f692e696d6775722e636f6d2f666748314852742e706e67" />
+</p>
+<p align="center">
+  <a href="http://developer.android.com/guide/topics/manifest/uses-sdk-element.html#ApiLevels">
+    <img src="https://img.shields.io/badge/MIN_SDK-15-B8D529.svg?style=flat" alt="Twitter">
+    <img src="https://img.shields.io/badge/BUILD_SDK-23-92D230.svg?style=flat" alt="Twitter">
+  </a>
+  <a href="https://www.photoeditorsdk.com/documentation/android/getting-started">
+    <img src="https://img.shields.io/badge/platform-android-2DC25C.svg?style=flat" alt="Twitter">
+  </a>
+  <a href="https://bintray.com/9elements/ly.img.android/photo-editor-sdk/_latestVersion">
+    <img src="https://api.bintray.com/packages/9elements/ly.img.android/photo-editor-sdk/images/download.svg" alt="JCenter">
+  </a>
+  <a href="http://twitter.com/PhotoEditorSDK">
+    <img src="https://img.shields.io/badge/twitter-@PhotoEditorSDK-8646E2.svg?style=flat" alt="Twitter">
+  </a>
+</p>
 ## img.ly SDK for Android
 
 img.ly SDK for Android is for creating stunning images with a nice selection of premium filters.
 
+<a href="https://play.google.com/store/apps/details?id=com.photoeditorsdk.android.app&utm_source=global_co&utm_medium=prtnr&utm_content=Mar2515&utm_campaign=PartBadge&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1"><img height="60px" alt="Get it on Google Play" src="https://play.google.com/intl/en_us/badges/images/generic/en-play-badge-border.png" /></a>
+
 ### Overview
 
-The img.ly Photo Editor SDK provides a variety of tools and functions for creating photo applications for Android. It is dual-licensed under AGPLv3 for non-proprietary usage and intended to be used as better alternative for free software applications such as the [GPUImage](https://github.com/CyberAgent/android-gpuimage) or similiar libraries. If you are interested in our SDK for proprietary application (copyleft free), please [contact us](#author--contact).
+The img.ly Photo Editor SDK provides a variety of tools and functions for creating photo applications for Android. It is licensed under a proprietary license and intended to be used as better alternative for free software applications such as the [GPUImage](https://github.com/CyberAgent/android-gpuimage) or similiar libraries. If you are interested in our SDK, please [contact us](#author--contact).
 
 #### SDK Core
 
@@ -14,19 +32,21 @@ __ACS Component__ <br/>
 A generic Android Camera Stack library which is based on the [android.hardware.Camera](http://developer.android.com/reference/android/hardware/Camera.html) API. Supports front and rear cam, HDR, flash modes and much more.
 
 __SDK Component__ <br/>
-The img.ly core library for Android. Containing the OpenGL and filter implementation.
+The img.ly core library for Android. Containing the OpenGL and toolset implementation.
 
 __UI Component__ <br/>
-The default UI components constisting of LivePreview and Editor Activity.
+The default UI components consisting of LivePreview and Editor Activity.
 
-#### Dependecies
-External libraries needed by the SDK.
+__PLUGIN Components__ <br/>
+At the momment not implemented, it is for future use. For Example to embedding you Google Analytics.
 
-__Colorpicker__ <br/>
-An Android [Colorpicker Library](https://github.com/QuadFlask/colorpicker) licensed under Apache v2.0.
+#### Dependencies
 
-__AndroidSVG__ <br/>
-An Android [SVG Library](https://github.com/BigBadaboom/androidsvg) licensed under Apache v2.0.
+No external non Google libraries needed or used by the SDK.
+
+* com.android.support:recyclerview-v7:23.2.0'
+* com.android.support:support-annotations:23.2.0'
+
 
 ### Features
 
@@ -36,23 +56,21 @@ An Android [SVG Library](https://github.com/BigBadaboom/androidsvg) licensed und
 * __Generic camera support__. Integrated and featureful on the most Android phones.
 * __Crop__, __Rotate__, __Stickers__, __Text Placement__, and __Colorize__. All essential photo editing functions wrapped into a simple, beautiful and customizable UI.
 * __57 Stunning filters__ which are builtin and work out of the box.
-* __Open Source__ with AGPLv3. Want to change anything? Go ahead, we provide the full source code.
 * __No native code__. Our backend is Renderscript based with highlevel OpenGL support, therefore we dodge all the nasty native library problems other frameworks face.
 * __Tablet support__. Works great on tablets.
-* __Photoshop LUT__. Design filters in Photoshop!
-With this feature it is possible to generate LUT (Look Up Table) filters easily from different photo
+* __Photoshop LUT__. Design color filters in Photoshop!
+With this feature it is possible to generate LUT (Look Up Table) color filters easily from different photo
 editing tools. Export and integrate them in minutes!
-* __Live Preview up to 20mpx__. Filters can be previewed in realtime on full camera resolution.
+* __Live Preview up to 21mpx__. Filters can be previewed in high quality realtime on full camera resolution.
 * __Low memory footprint__ even with high resolution images.
 * __Extensible and customizable toolset interface__. Add your own customized filters with [Renderscript](https://developer.android.com/guide/topics/renderscript/index.html) and modify tool properties yourself.
 
 ### License
 
-img.ly SDK for Android is a dual-licensed library which can be used for different purposes. <br/>
+img.ly SDK for Android is a licensed library which can be used for different purposes. <br/>
 Please see:
 
- [LICENSE.AGPL](https://github.com/imgly/imgly-sdk-android-demo/blob/master/LICENSE.AGPL) for NON-PROPIETARY usage. <br/>
- [LICENSE.PROPIETARY](https://github.com/imgly/imgly-sdk-android-demo/blob/master/LICENSE.PROPIETARY) for PROPIETARY usage.
+ [LICENSE.PROPIETARY](https://github.com/imgly/imgly-sdk-android/blob/master/LICENSE.PROPIETARY) for PROPIETARY usage.
 
 ### Author & Contact
 
@@ -63,10 +81,11 @@ Please see:
 
 ## Installation
 
-> Require a minimum deployment target of Android API 15 (4.0.4) and Device with HardwareLayer and LargeHeap Support
+> Require a minimum deployment target of Android API 15 (4.0.4) and Device with HardwareLayer (for LivePreview) and LargeHeap Support (To operate and export large images)
 
 
-##### 1. Import the img.ly SDK into your project with jcenter.
+##### 1. Import the img.ly SDK into your project with jcenter like this. 
+
 ```
 apply plugin: 'com.android.application'
 ...
@@ -80,11 +99,11 @@ android {
     compileSdkVersion 23
     buildToolsVersion "23.0.1"
     minSdkVersion 15
-	...
+    ...
 
     defaultConfig {
         ...
-        renderscriptTargetApi 23
+        renderscriptTargetApi 20
         renderscriptSupportModeEnabled true
     }
     ...
@@ -98,9 +117,17 @@ dependencies {
 }
 ```
 
-##### 2. Initialize SDK in an Applicaton class.
+__Do not forget to add "renderscriptSupportModeEnabled true" and "renderscriptTargetApi 20"!__<BR/>
+__And please use the latest jCenter Version__
+
+<a href="https://bintray.com/9elements/ly.img.android/photo-editor-sdk/_latestVersion">
+    <img src="https://api.bintray.com/packages/9elements/ly.img.android/photo-editor-sdk/images/download.svg" alt="JCenter">
+</a>
+
+##### 2. Initialize SDK in an Application class.
+
 ```xml
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encodinAg="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.mymodule.app" >
 
@@ -126,11 +153,10 @@ public class Application extends android.app.Application {
 }
 ```
 
-
 ##### 3.1. Start img.ly SDK default UI.
 
 ```java
-public class MainActivity extends Activity {
+public class MainActivity extends Activity implements PermissionRequest.Response{
 
     public static int CAMERA_PREVIEW_RESULT = 1;
 
@@ -161,10 +187,30 @@ public class MainActivity extends Activity {
 
         }
     }
+    
+    //Important for Android 6.0 permisstion request, don't forget this!
+    @Override
+    public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
+        PermissionRequest.onRequestPermissionsResult(requestCode, permissions, grantResults);
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
+    }
+
+    @Override
+    public void permissionGranted() {
+
+    }
+
+    @Override
+    public void permissionDenied() { 
+        //The Permission whas rejected by the user, so the Editor was not opened because it can not save the result Image. 
+        //TODO for you: Show a Hint to the User
+    }
 }
 ```
 
-##### 3.2. Start Camera Preview Activity with editor backend.
+__Do not forget to delegate the onRequestPermissionsResult to PermissionRequest.onRequestPermissionsResult. Apart from that it will not work on Android 6.0 and above__
+
+##### 3.1. Start Camera Preview Activity with editor backend.
 
 ```java
 // Camera activity intent with customized editor access.
