@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ly.img.android.ui.widgets.RelativeBlurLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/progressView"
+    android:layout_width="200dp"
+    android:layout_height="144dp"
+    android:layout_centerInParent="true"
+    app:blurRadius="1dp"
+    app:blurDownSample="5"
+    app:blurSource="@+id/rootView"
+    app:blurUpdateAtStart="false"
+    app:blurUpdateOnInvalidate="true"
+    app:borderRadius="4dp"
+    android:background="#CC2B2B2B">
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/imgly_photo_editor_export_progress"
+        android:textSize="14sp"
+        android:textColor="#FFFFFF"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:paddingBottom="30dp"
+        android:gravity="center"/>
+
+</ly.img.android.ui.widgets.RelativeBlurLayout>

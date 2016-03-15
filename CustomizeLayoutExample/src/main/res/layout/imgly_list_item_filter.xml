@@ -1,0 +1,46 @@
+<ly.img.android.ui.widgets.AutoRotateLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginTop="12dp"
+    android:layout_width="64dp"
+    android:layout_height="64dp">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_centerInParent="true"
+        android:id="@+id/contentHolder">
+        <RelativeLayout
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_gravity="center"
+            tools:ignore="UselessParent">
+            <View
+                android:padding="0dp"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                style="@style/Imgly.Editor.Toolbar.Panels.Filter.ItemSelectBackground"/>
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:src="@drawable/imgly_icon_camera_roll"
+                style="@style/Imgly.Editor.Toolbar.Panels.Filter.ItemIcon"/>
+            <View
+                android:padding="0dp"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                style="@style/Imgly.Editor.Toolbar.Panels.Filter.ItemSelectOverlay"/>
+            <TextView
+                android:id="@+id/label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/imgly_color_filter_name_default"
+                style="@style/Imgly.Editor.Toolbar.Panels.Filter.ItemLabel"
+                android:layout_alignParentBottom="true"
+                android:lines="1"
+                />
+        </RelativeLayout>
+
+    </LinearLayout>
+</ly.img.android.ui.widgets.AutoRotateLayout>

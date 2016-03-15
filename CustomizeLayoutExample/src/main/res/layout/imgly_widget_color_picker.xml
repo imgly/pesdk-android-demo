@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:clickable="true"
+    android:focusable="true"
+    android:layout_width="match_parent"
+    android:layout_height="296dp"
+    android:orientation="horizontal"
+    android:background="@color/imgly_background">
+
+    <ly.img.android.ui.widgets.colorpicker.HueView
+        android:id="@+id/color_picker_hue"
+        android:layout_width="50dp"
+        android:layout_height="match_parent"
+        android:paddingLeft="20dp"
+        android:paddingRight="10dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        tools:ignore="RtlHardcoded"/>
+
+    <ly.img.android.ui.widgets.colorpicker.SelectView
+        android:id="@+id/color_picker_select"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp" />
+
+    <ly.img.android.ui.widgets.colorpicker.AlphaView
+        android:id="@+id/color_picker_alpha"
+        android:layout_width="50dp"
+        android:layout_height="match_parent"
+        android:paddingLeft="10dp"
+        android:paddingRight="20dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        tools:ignore="RtlHardcoded" />
+
+</LinearLayout>
