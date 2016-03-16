@@ -1,0 +1,17 @@
+<ly.img.android.ui.widgets.AutoRotateLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_marginTop="3dp"
+    android:id="@+id/contentHolder"
+    android:layout_width="64dp"
+    android:layout_height="64dp"
+    style="@style/Imgly.Editor.Toolbar.Panels.Text.Font">
+    <TextView
+        android:id="@+id/text"
+        style="@style/Imgly.Editor.Toolbar.Panels.Text.Font.ItemText"
+        />
+    <TextView
+        android:id="@+id/label"
+        android:text="@string/imgly_tool_name_text_font"
+        style="@style/Imgly.Editor.Toolbar.Panels.Text.Font.ItemLabel"
+        android:layout_alignParentBottom="true"/>
+</ly.img.android.ui.widgets.AutoRotateLayout>

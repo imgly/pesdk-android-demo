@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ly.img.android.ui.widgets.RelativeBlurLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rootView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:blurRadius="1dp"
+    app:blurDownSample="5"
+    app:blurSource="@+id/rootView"
+    android:background="#992B2B2B">
+
+    <RelativeLayout
+        android:id="@+id/contentView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#992B2B2B">
+        <EditText
+            android:id="@+id/textInputField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="37dp"
+            android:text=""
+            android:hint="@string/imgly_text_panel_edit_text_placeholder"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:singleLine="true"
+            android:textColor="#FFFFFFFF"
+            android:imeOptions="actionDone"
+            android:background="@color/transparent"/>
+    </RelativeLayout>
+
+</ly.img.android.ui.widgets.RelativeBlurLayout>

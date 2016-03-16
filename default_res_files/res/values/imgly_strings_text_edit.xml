@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="imgly_text_option_font">Font</string>
+    <string name="imgly_text_option_color">Color</string>
+    <string name="imgly_text_option_bg_color">BG Color</string>
+
+    <string name="imgly_text_option_flip_v">@string/imgly_orientation_name_flip_v</string>
+    <string name="imgly_text_option_flip_h">@string/imgly_orientation_name_flip_h</string>
+    <string name="imgly_text_option_to_front">To Front</string>
+    <string name="imgly_text_option_delete">Delete</string>
+
+    <string name="imgly_text_panel_edit_text_placeholder">Your text</string>
+
+</resources>

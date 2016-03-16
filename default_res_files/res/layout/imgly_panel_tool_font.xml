@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:id="@+id/rootView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="80dp"
+        android:orientation="vertical">
+
+        <ly.img.android.ui.widgets.RelativeBlurLayout
+            android:id="@+id/fontPicker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:blurRadius="1dp"
+            app:blurDownSample="5"
+            app:blurSource="@id/editorImageView"
+            app:blurUpdateOnInvalidate="true">
+            <ly.img.android.ui.widgets.VerticalListView
+                android:id="@+id/bigFontList"
+                style="@style/Imgly.Editor.Toolbar.Panels.Text.FontVertical.Container" />
+        </ly.img.android.ui.widgets.RelativeBlurLayout>
+
+        <ImageButton
+            android:id="@+id/openFontListButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/imgly_floating_list_action_button"
+            android:background="@null"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <include layout="@layout/imgly_option_list"
+        android:layout_height="80dp"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"/>
+</RelativeLayout>

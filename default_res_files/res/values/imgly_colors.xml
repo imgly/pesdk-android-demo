@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="transparent" >#00000000</color>
+
+
+    <color name="imgly_button_color">#00000000</color>
+    <color name="imgly_button_pressed_color">#FF203E61</color>
+    <color name="imgly_button_disabled_color">#66333333</color>
+
+    <color name="imgly_textedit_color">#FF203E61</color>
+    <color name="imgly_textedit_text_color">#FFFFFFFF</color>
+
+    <color name="imgly_slider_thumb_color">#FFFFFFFF</color>
+    <color name="imgly_slider_thumb_pressed_color">#FFEEEEEE</color>
+    <color name="imgly_slider_thumb_disabled_color">#66FFFFFF</color>
+    <color name="imgly_slider_track_color">#66FFFFFF</color>
+    <color name="imgly_slider_progress_color">#FFFFFFFF</color>
+
+    <color name="imgly_text_color">#FFFFFF</color>
+    <color name="imgly_editor_text_color">@color/imgly_text_color</color>
+    <color name="imgly_preview_text_color">@color/imgly_text_color</color>
+
+    <color name="imgly_editor_text_color_secondary">#66FFFFFF</color>
+
+    <color name="imgly_background">#000000</color>
+    <color name="imgly_editor_background">#FF111111</color>
+    <color name="imgly_editor_header_background">#FF1B1B1B</color>
+    <color name="imgly_editor_toolbar_background">#FF2B2B2B</color>
+    <color name="imgly_editor_overlay_panel_background">#CC1B1B1B</color>
+
+
+    <color name="imgly_preview_background">@color/imgly_background</color>
+
+    <color name="imgly_preview_header_background">#27000000</color>
+    <color name="imgly_preview_footer_background">#73000000</color>
+
+</resources>

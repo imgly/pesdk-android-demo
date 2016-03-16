@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="imgly_orientation_name_cw">Left</string>
+    <string name="imgly_orientation_name_ccw">Right</string>
+    <string name="imgly_orientation_name_flip_h">Flip H</string>
+    <string name="imgly_orientation_name_flip_v">Flip V</string>
+
+</resources>

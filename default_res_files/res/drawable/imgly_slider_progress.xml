@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@android:id/background" android:height="16dp" android:gravity="center|clip_vertical">
+        <layer-list>
+            <item android:height="16dp" android:top="0dp" android:bottom="0dp">
+                <shape android:shape="rectangle">
+                    <size android:height="16dp"/>
+                    <corners android:radius="2dp"/>
+                    <solid android:color="#00000000"/>
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+    <item android:id="@android:id/secondaryProgress" android:height="16dp" android:gravity="center|clip_vertical">
+        <scale android:scaleWidth="100%">
+            <layer-list>
+                <item android:height="16dp">
+                    <shape android:shape="rectangle">
+                        <size android:height="2dp"/>
+                        <solid android:color="#00000000"/>
+                    </shape>
+                </item>
+                <item android:top="7dp" android:bottom="7dp" android:height="2dp">
+                    <shape android:shape="rectangle">
+                        <size android:height="2dp"/>
+                        <corners android:radius="2dp"/>
+                        <solid android:color="@color/imgly_slider_track_color"/>
+                    </shape>
+                </item>
+            </layer-list>
+        </scale>
+    </item>
+    <item android:id="@android:id/progress" android:height="16dp" android:gravity="center|clip_vertical">
+        <scale android:scaleWidth="100%">
+            <layer-list>
+                <item android:height="16dp">
+                    <shape android:shape="rectangle">
+                        <size android:height="2dp"/>
+                    </shape>
+                </item>
+                <item android:top="7dp" android:bottom="7dp" android:height="2dp">
+                    <shape android:shape="rectangle">
+                        <size android:height="2dp"/>
+                        <corners android:radius="2dp"/>
+                        <solid android:color="@color/imgly_slider_progress_color"/>
+                    </shape>
+                </item>
+            </layer-list>
+        </scale>
+    </item>
+</layer-list>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ly.img.android.ui.widgets.AutoRotateLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:clickable="true"
+    android:focusable="true"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <View
+        android:id="@+id/clickVisualization"
+        android:layout_width="47dp"
+        android:layout_height="47dp"
+        android:background="@drawable/imgly_button_click_overlay"/>
+
+    <ImageView
+        android:id="@+id/pictureView"
+        android:layout_width="47dp"
+        android:layout_height="47dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/imgly_icon_camera_roll"
+        />
+</ly.img.android.ui.widgets.AutoRotateLayout>

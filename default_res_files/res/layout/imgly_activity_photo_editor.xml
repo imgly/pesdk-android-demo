@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout style="@style/Imgly.Editor.Toolbar.Container">
+        <RelativeLayout style="@style/Imgly.Editor.Preview">
+            <ly.img.android.sdk.views.EditorPreview
+                android:id="@+id/editorImageView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true" />
+            <include layout="@layout/imgly_popup_activity_spinner" android:visibility="gone"/>
+        </RelativeLayout>
+        <ly.img.android.ui.widgets.HorizontalListView
+            android:id="@+id/toolList"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"/>
+        <RelativeLayout
+            android:id="@+id/toolPanelContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            />
+    </RelativeLayout>
+
+    <ly.img.android.ui.widgets.ImgLyTitleBar
+        android:id="@+id/imglyActionBar"
+        android:layout_width="match_parent"
+        android:layout_height="48dp">
+    </ly.img.android.ui.widgets.ImgLyTitleBar>
+</LinearLayout>
