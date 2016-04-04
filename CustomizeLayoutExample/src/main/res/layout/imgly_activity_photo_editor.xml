@@ -4,11 +4,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
-    <ly.img.android.ui.widgets.ImgLyTitleBar
-        android:id="@+id/imglyActionBar"
-        android:layout_width="match_parent"
-        android:layout_height="48dp">
-    </ly.img.android.ui.widgets.ImgLyTitleBar>
 
     <RelativeLayout style="@style/Imgly.Editor.Toolbar.Container">
         <RelativeLayout style="@style/Imgly.Editor.Preview">
@@ -33,4 +28,9 @@
             />
     </RelativeLayout>
 
+    <ly.img.android.ui.widgets.ImgLyTitleBar
+        android:id="@+id/imglyActionBar"
+        android:layout_width="match_parent"
+        android:layout_height="48dp">
+    </ly.img.android.ui.widgets.ImgLyTitleBar>
 </LinearLayout>

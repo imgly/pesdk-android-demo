@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="imgly_photo_editor_title">Editor</string>
+
+    <string name="imgly_photo_editor_accept">Done</string>
+    <string name="imgly_photo_editor_cancel">Cancel</string>
+
+    <string name="imgly_photo_editor_save">Save</string>
+
+    <string name="imgly_photo_editor_cancel_image_title">Close Editor?</string>
+    <string name="imgly_photo_editor_cancel_image_content">Do you really want to discard the image?</string>
+    <string name="imgly_photo_editor_cancel_image_yes">Yes</string>
+    <string name="imgly_photo_editor_cancel_image_no">No</string>
+
+    <string name="imgly_photo_editor_export_progress">Exporting image…</string>
+
+</resources>

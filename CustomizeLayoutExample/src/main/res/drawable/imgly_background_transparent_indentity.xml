@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:top="0dp" android:left="0dp" android:width="10dp" android:height="10dp">
+        <shape>
+            <solid android:color="#FFd3d3d3"/>
+        </shape>
+    </item>
+    <item android:top="0dp" android:left="10dp" android:width="10dp" android:height="10dp">
+        <shape>
+            <solid android:color="#FFFFFFFF"/>
+        </shape>
+    </item>
+    <item android:top="0dp" android:left="20dp" android:width="10dp" android:height="10dp">
+        <shape>
+            <solid android:color="#FFd3d3d3"/>
+        </shape>
+    </item>
+    <item android:top="0dp" android:left="30dp" android:width="10dp" android:height="10dp">
+        <shape>
+            <solid android:color="#FFFFFFFF"/>
+        </shape>
+    </item>
+
+
+    <item android:top="10dp" android:left="0dp" android:width="10dp" android:height="10dp">
+        <shape>
+            <solid android:color="#FFFFFFFF"/>
+        </shape>
+    </item>
+    <item android:top="10dp" android:left="10dp" android:width="10dp" android:height="10dp">
+        <shape>
+            <solid android:color="#FFd3d3d3"/>
+        </shape>
+    </item>
+    <item android:top="10dp" android:left="20dp" android:width="10dp" android:height="10dp">
+        <shape>
+            <solid android:color="#FFFFFFFF"/>
+        </shape>
+    </item>
+    <item android:top="10dp" android:left="30dp" android:width="10dp" android:height="10dp">
+        <shape>
+            <solid android:color="#FFd3d3d3"/>
+        </shape>
+    </item>
+
+
+
+    <item android:top="20dp" android:left="0dp" android:width="10dp" android:height="10dp">
+        <shape>
+            <solid android:color="#FFd3d3d3"/>
+        </shape>
+    </item>
+    <item android:top="20dp" android:left="10dp" android:width="10dp" android:height="10dp">
+        <shape>
+            <solid android:color="#FFFFFFFF"/>
+        </shape>
+    </item>
+    <item android:top="20dp" android:left="20dp" android:width="10dp" android:height="10dp">
+        <shape>
+            <solid android:color="#FFd3d3d3"/>
+        </shape>
+    </item>
+    <item android:top="20dp" android:left="30dp" android:width="10dp" android:height="10dp">
+        <shape>
+            <solid android:color="#FFFFFFFF"/>
+        </shape>
+    </item>
+
+
+
+    <item android:top="30dp" android:left="0dp" android:width="10dp" android:height="10dp">
+        <shape>
+            <solid android:color="#FFFFFFFF"/>
+        </shape>
+    </item>
+    <item android:top="30dp" android:left="10dp" android:width="10dp" android:height="10dp">
+        <shape>
+            <solid android:color="#FFd3d3d3"/>
+        </shape>
+    </item>
+    <item android:top="30dp" android:left="20dp" android:width="10dp" android:height="10dp">
+        <shape>
+            <solid android:color="#FFFFFFFF"/>
+        </shape>
+    </item>
+    <item android:top="30dp" android:left="30dp" android:width="10dp" android:height="10dp">
+        <shape>
+            <solid android:color="#FFd3d3d3"/>
+        </shape>
+    </item>
+
+</layer-list>

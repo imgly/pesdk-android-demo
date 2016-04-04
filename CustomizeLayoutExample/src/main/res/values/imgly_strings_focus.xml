@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="imgly_focus_name_none">NONE</string>
+    <string name="imgly_focus_name_radial">Radial</string>
+    <string name="imgly_focus_name_linear">Linear</string>
+
+</resources>

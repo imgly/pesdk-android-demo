@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="imgly_tool_name_magic">Magic</string>
+    <string name="imgly_tool_name_filter">Filter</string>
+    <string name="imgly_tool_name_orientation">Orientation</string>
+    <string name="imgly_tool_name_focus">Focus</string>
+    <string name="imgly_tool_name_crop">Crop</string>
+    <string name="imgly_tool_name_adjust">Adjust</string>
+    <string name="imgly_tool_name_adjust_brightness">Brightness</string>
+    <string name="imgly_tool_name_adjust_contrast">Contrast</string>
+    <string name="imgly_tool_name_adjust_saturation">Saturation</string>
+    <string name="imgly_tool_name_sticker">Sticker</string>
+    <string name="imgly_tool_name_sticker_options">Sticker Options</string>
+    <string name="imgly_tool_name_text">Text</string>
+    <string name="imgly_tool_name_text_add">Text</string>
+    <string name="imgly_tool_name_text_options">Text Options</string>
+    <string name="imgly_tool_name_text_color">Text Color</string>
+    <string name="imgly_tool_name_text_font">Font</string>
+
+</resources>

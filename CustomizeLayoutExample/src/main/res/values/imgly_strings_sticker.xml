@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="imgly_sticker_name_sticker">Sticker</string>
+    <string name="imgly_sticker_name_glasses_normal">Glasses</string>
+    <string name="imgly_sticker_name_glasses_nerd">Nerd Glasses</string>
+    <string name="imgly_sticker_name_glasses_shutter_green">Shutter Glasses</string>
+    <string name="imgly_sticker_name_glasses_shutter_yellow">Shutter Glasses</string>
+    <string name="imgly_sticker_name_glasses_sun">Sun Glasses</string>
+    <string name="imgly_sticker_name_hat_cap">Cape</string>
+    <string name="imgly_sticker_name_hat_sherrif">Sherrif</string>
+    <string name="imgly_sticker_name_hat_party">Party Hat</string>
+    <string name="imgly_sticker_name_hat_zylinder">Zylinder</string>
+    <string name="imgly_sticker_name_mustache1">Mustage</string>
+    <string name="imgly_sticker_name_mustache2">Mustage</string>
+    <string name="imgly_sticker_name_mustache3">Mustage</string>
+    <string name="imgly_sticker_name_mustache_long">Mustage</string>
+    <string name="imgly_sticker_name_snowflake">Snowflake</string>
+    <string name="imgly_sticker_name_heart">Heart</string>
+    <string name="imgly_sticker_name_pipe">Pipe</string>
+    <string name="imgly_sticker_name_star">Star</string>
+
+
+    <string name="imgly_sticker_option_flip_v">@string/imgly_orientation_name_flip_v</string>
+    <string name="imgly_sticker_option_flip_h">@string/imgly_orientation_name_flip_h</string>
+    <string name="imgly_sticker_option_to_front">To Front</string>
+    <string name="imgly_sticker_option_delete">Delete</string>
+
+</resources>

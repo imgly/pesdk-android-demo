@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="imgly_crop_name_custom">Custom</string>
+    <string name="imgly_crop_name_square">1:1</string>
+    <string name="imgly_crop_name_16_9">16:9</string>
+    <string name="imgly_crop_name_4_3">4:3</string>
+    <string name="imgly_crop_name_9_16">9:16</string>
+    <string name="imgly_crop_name_3_4">3:4</string>
+
+</resources>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="imgly_camera_preview_hdr_on">HDR ON</string>
+    <string name="imgly_camera_preview_hdr_off">HDR OFF</string>
+
+    <string name="imgly_camera_preview_flash_auto">AUTO</string>
+    <string name="imgly_camera_preview_flash_on">ON</string>
+    <string name="imgly_camera_preview_flash_off">OFF</string>
+</resources>
