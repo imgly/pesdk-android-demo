@@ -23,7 +23,7 @@ android {
         minSdkVersion 15
         targetSdkVersion 23
         versionCode 1
-        versionName "0.96 Beta"
+        versionName "1.07"
         renderscriptTargetApi 20
         renderscriptSupportModeEnabled true
     }
@@ -43,6 +43,6 @@ dependencies {
 
     compile 'com.google.android.gms:play-services-analytics:8.3.0'
 
-    compile 'ly.img.android:photo-editor-sdk:1.0.6'
+    compile 'ly.img.android:photo-editor-sdk:1.0.7'
 
 }
