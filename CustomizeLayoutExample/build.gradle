@@ -3,7 +3,7 @@ buildscript {
         jcenter()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:2.1.0-alpha1'
+        classpath 'com.android.tools.build:gradle:2.1.0'
         classpath 'com.mutualmobile.gradle.plugins:dexinfo:0.1.2'
     }
 }
@@ -16,7 +16,7 @@ repositories {
 
 android {
     compileSdkVersion 23
-    buildToolsVersion '23.0.2'
+    buildToolsVersion '23.0.3'
 
     defaultConfig {
         applicationId "com.photoeditorsdk.android.app"
@@ -43,6 +43,6 @@ dependencies {
 
     compile 'com.google.android.gms:play-services-analytics:8.3.0'
 
-    compile 'ly.img.android:photo-editor-sdk:1.0.7'
+    compile 'ly.img.android:photo-editor-sdk:1.0.10'
 
 }

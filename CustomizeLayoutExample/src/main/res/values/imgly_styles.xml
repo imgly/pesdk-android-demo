@@ -23,19 +23,6 @@
 
     <!-- Picker -->
     <style name="Imgly.Picker" parent="Imgly"/>
-    <!-- Color Picker -->
-
-    <style name="Imgly.Picker.Color" parent="Imgly.Picker"/>
-
-    <style name="Imgly.Picker.Color.EditText" parent="Imgly">
-        <item name="android:layout_width">match_parent</item>
-        <item name="android:layout_height">wrap_content</item>
-        <item name="android:layout_margin">4dp</item>
-        <item name="android:imeOptions">actionNext</item>
-        <item name="android:singleLine">true</item>
-        <item name="android:textSize">22sp</item>
-        <item name="android:textColor">@color/imgly_textedit_text_color</item>
-    </style>
 
     <!-- Editor -->
     <style name="Imgly.Editor" parent="Imgly"/>

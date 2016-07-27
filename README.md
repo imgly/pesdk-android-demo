@@ -97,7 +97,7 @@ repositories {
 
 android {
     compileSdkVersion 23
-    buildToolsVersion "23.0.1"
+    buildToolsVersion "23.0.3"
     minSdkVersion 15
     ...
 
@@ -112,7 +112,7 @@ android {
 
 dependencies {
 
-    compile 'ly.img.android:photo-editor-sdk:1.0.7'
+    compile 'ly.img.android:photo-editor-sdk:1.0.10'
     ...
 }
 ```
