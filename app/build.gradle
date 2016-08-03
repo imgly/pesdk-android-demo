@@ -23,7 +23,7 @@ android {
         minSdkVersion 15
         targetSdkVersion 23
         versionCode 1
-        versionName "1.07"
+        versionName "1.1.0"
         renderscriptTargetApi 20
         renderscriptSupportModeEnabled true
     }
@@ -41,6 +41,6 @@ dependencies {
 
     compile 'net.hockeyapp.android:HockeySDK:3.7.0'
 
-    compile 'ly.img.android:photo-editor-sdk:1.0.10'
+    compile 'ly.img.android:photo-editor-sdk:1.1.0'
 
 }

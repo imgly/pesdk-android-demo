@@ -112,7 +112,7 @@ android {
 
 dependencies {
 
-    compile 'ly.img.android:photo-editor-sdk:1.0.10'
+    compile 'ly.img.android:photo-editor-sdk:1.1.0'
     ...
 }
 ```

@@ -43,6 +43,6 @@ dependencies {
 
     compile 'com.google.android.gms:play-services-analytics:8.3.0'
 
-    compile 'ly.img.android:photo-editor-sdk:1.0.10'
+    compile 'ly.img.android:photo-editor-sdk:1.1.0'
 
 }
