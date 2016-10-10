@@ -9,9 +9,12 @@ import android.widget.Toast;
 
 import java.io.File;
 
+import ly.img.android.sdk.models.constant.Directory;
+import ly.img.android.sdk.models.state.CameraSettings;
+import ly.img.android.sdk.models.state.EditorSaveSettings;
+import ly.img.android.sdk.models.state.manager.SettingsList;
 import ly.img.android.ui.activities.CameraPreviewActivity;
-import ly.img.android.ui.activities.CameraPreviewIntent;
-import ly.img.android.ui.activities.PhotoEditorIntent;
+import ly.img.android.ui.activities.CameraPreviewBuilder;
 import ly.img.android.ui.utilities.PermissionRequest;
 
 public class MainActivity extends Activity  implements PermissionRequest.Response {
@@ -23,16 +26,20 @@ public class MainActivity extends Activity  implements PermissionRequest.Respons
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        new CameraPreviewIntent(this)
-                .setExportDir(CameraPreviewIntent.Directory.DCIM, FOLDER)
-                .setExportPrefix("img_")
-                .setEditorIntent(
-                        new PhotoEditorIntent(this)
-                                .setExportDir(PhotoEditorIntent.Directory.DCIM, FOLDER)
-                                .setExportPrefix("result_")
-                                .destroySourceAfterSave(true)
-                )
-                .startActivityForResult(CAMERA_PREVIEW_RESULT);
+        SettingsList settingsList = new SettingsList();
+        settingsList
+                .getSettingsModel(CameraSettings.class)
+                .setExportDir(Directory.DCIM, FOLDER)
+                .setExportPrefix("camera_")
+
+                .getSettingsModel(EditorSaveSettings.class)
+                .setExportDir(Directory.DCIM, FOLDER)
+                .setExportPrefix("result_")
+                .setSavePolicy(EditorSaveSettings.SavePolicy.KEEP_SOURCE_AND_CREATE_ALWAYS_OUTPUT);
+
+        new CameraPreviewBuilder(this)
+                .setSettingsList(settingsList)
+                .startActivityForResult(this, CAMERA_PREVIEW_RESULT);
     }
 
     @Override

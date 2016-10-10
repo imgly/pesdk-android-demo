@@ -1,4 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ This file is part of the PhotoEditor Software Development Kit.
+  ~
+  ~ Copyright (C) 2016 9elements GmbH <contact@9elements.com>
+  ~ All rights reserved.
+  ~
+  ~ Redistribution and use in source and binary forms, without
+  ~ modification, are permitted provided that the following license agreement
+  ~ is approved and a legal/financial contract was signed by the user.
+  ~
+  ~ The license agreement can be found under the following link:
+  ~
+  ~ https://www.photoeditorsdk.com/LICENSE.txt
+  -->
+
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/rootView"
@@ -32,7 +47,7 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             style="@style/Imgly.Preview.Header">
-            <ly.img.android.ui.widgets.AutoRotateLayout
+            <!--AutoRotateLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentLeft="true"
@@ -44,8 +59,15 @@
                     android:layout_centerInParent="true"
                     style="@style/Imgly.Preview.Header.Button.FlashButton"
                     />
-            </ly.img.android.ui.widgets.AutoRotateLayout>
-            <ly.img.android.ui.widgets.AutoRotateLayout
+            </AutoRotateLayout-->
+            <Button
+                android:id="@+id/flashButton"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                style="@style/Imgly.Preview.Header.Button.FlashButton"
+                />
+            <!--AutoRotateLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
@@ -56,7 +78,13 @@
                     android:layout_height="50dp"
                     android:layout_centerInParent="true"
                     style="@style/Imgly.Preview.Header.Button.HDRButton"/>
-            </ly.img.android.ui.widgets.AutoRotateLayout>
+            </AutoRotateLayout-->
+            <ToggleButton
+                android:id="@+id/hdrButton"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_centerHorizontal="true"
+                style="@style/Imgly.Preview.Header.Button.HDRButton"/>
             <ly.img.android.ui.widgets.AutoRotateLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -87,13 +115,13 @@
             android:layout_height="wrap_content"
             android:orientation="vertical"
             style="@style/Imgly.Preview.Footer"
-            >
+            android:clipToPadding="false"
+            android:clipChildren="false">
+            
             <LinearLayout
                 android:id="@+id/filterBar"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:clipToPadding="false"
-                android:clipChildren="false"
                 android:padding="10dp">
                 <ly.img.android.ui.widgets.AutoRotateLayout
                     android:layout_width="wrap_content"
@@ -132,11 +160,15 @@
             <ly.img.android.ui.widgets.ExpandableView
                 android:id="@+id/expandableView"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:clipToPadding="false"
+                android:clipChildren="false">
                 <ly.img.android.ui.widgets.HorizontalListView
                     android:id="@+id/filterList"
                     android:layout_width="match_parent"
                     android:layout_height="80dp"
+                    android:clipToPadding="false"
+                    android:clipChildren="false"
                     />
             </ly.img.android.ui.widgets.ExpandableView>
         </LinearLayout>

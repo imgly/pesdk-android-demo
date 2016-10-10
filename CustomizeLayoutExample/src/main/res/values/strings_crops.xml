@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ This file is part of the PhotoEditor Software Development Kit.
+  ~
+  ~ Copyright (C) 2016 9elements GmbH <contact@9elements.com>
+  ~ All rights reserved.
+  ~
+  ~ Redistribution and use in source and binary forms, without
+  ~ modification, are permitted provided that the following license agreement
+  ~ is approved and a legal/financial contract was signed by the user.
+  ~
+  ~ The license agreement can be found under the following link:
+  ~
+  ~ https://www.photoeditorsdk.com/LICENSE.txt
+  -->
+
+<resources>
+
+    <string name="imgly_crop_name_custom">Custom</string>
+    <string name="imgly_crop_name_square">1:1</string>
+    <string name="imgly_crop_name_16_9">16:9</string>
+    <string name="imgly_crop_name_4_3">4:3</string>
+    <string name="imgly_crop_name_9_16">9:16</string>
+    <string name="imgly_crop_name_3_4">3:4</string>
+
+    <string name="imgly_crop_name_3_2">3:2</string>
+    <string name="imgly_crop_name_2_3">2:3</string>
+
+</resources>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:duplicateParentState="true"
+    >
+    <RelativeLayout
+        android:id="@+id/brushPreviewPopup"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <include android:id="@+id/blurView" layout="@layout/imgly_popup_brush_preview"/>
+    </RelativeLayout>
+    <ly.img.android.ui.widgets.ImgLyFloatSlider
+        android:id="@+id/seekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <include layout="@layout/imgly_option_list"/>
+
+</LinearLayout>

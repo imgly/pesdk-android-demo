@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ This file is part of the PhotoEditor Software Development Kit.
+  ~
+  ~ Copyright (C) 2016 9elements GmbH <contact@9elements.com>
+  ~ All rights reserved.
+  ~
+  ~ Redistribution and use in source and binary forms, without
+  ~ modification, are permitted provided that the following license agreement
+  ~ is approved and a legal/financial contract was signed by the user.
+  ~
+  ~ The license agreement can be found under the following link:
+  ~
+  ~ https://www.photoeditorsdk.com/LICENSE.txt
+  -->
+
+<ly.img.android.ui.widgets.RelativeBlurLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="200dp"
+    android:layout_height="144dp"
+    android:layout_centerInParent="true"
+    app:blurRadius="1dp"
+    app:blurDownSample="5"
+    app:blurSource="@+id/rootView"
+    app:blurUpdateAtStart="false"
+    app:blurUpdateOnInvalidate="true"
+    app:borderRadius="4dp"
+    android:background="#CC2B2B2B">
+
+    <ly.img.android.ui.widgets.BrushToolPreviewView
+        android:id="@+id/brushToolPreview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true" />
+
+</ly.img.android.ui.widgets.RelativeBlurLayout>

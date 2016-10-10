@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ This file is part of the PhotoEditor Software Development Kit.
+  ~
+  ~ Copyright (C) 2016 9elements GmbH <contact@9elements.com>
+  ~ All rights reserved.
+  ~
+  ~ Redistribution and use in source and binary forms, without
+  ~ modification, are permitted provided that the following license agreement
+  ~ is approved and a legal/financial contract was signed by the user.
+  ~
+  ~ The license agreement can be found under the following link:
+  ~
+  ~ https://www.photoeditorsdk.com/LICENSE.txt
+  -->
+
+<resources>
+	<declare-styleable name="ColorPickerPreference">
+		<attr name="alphaSlider" format="boolean"/>
+		<attr name="lightnessSlider" format="boolean"/>
+		<attr name="density" format="integer"/>
+		<attr name="initialColor" format="integer"/>
+		<attr name="wheelType" format="enum">
+			<enum name="FLOWER" value="0"/>
+			<enum name="CIRCLE" value="1"/>
+		</attr>
+		<attr name="lightnessSliderView" format="reference"/>
+		<attr name="alphaSliderView" format="reference"/>
+		<attr name="pickerTitle" format="reference|string"/>
+		<attr name="pickerButtonOk" format="reference|string"/>
+		<attr name="pickerButtonCancel" format="reference|string"/>
+	</declare-styleable>
+
+	<declare-styleable name="SubsamplingScaleImageView">
+		<attr name="src" format="reference"/>
+		<attr name="assetName" format="string"/>
+		<attr name="panEnabled" format="boolean"/>
+		<attr name="zoomEnabled" format="boolean"/>
+		<attr name="quickScaleEnabled" format="boolean"/>
+		<attr name="tileBackgroundColor" format="color"/>
+	</declare-styleable>
+
+	<declare-styleable name="BorderRadius">
+		<attr name="borderRadius" format="dimension"/>
+	</declare-styleable>
+
+	<declare-styleable name="RelativeBlurLayout">
+		<attr name="blurRadius" format="dimension"/>
+		<attr name="blurDownSample" format="integer"/>
+		<attr name="blurSource" format="reference"/>
+		<attr name="blurRootSource" format="boolean"/>
+		<attr name="blurUpdateAtStart" format="boolean"/>
+		<attr name="blurUpdateOnInvalidate" format="boolean"/>
+	</declare-styleable>
+</resources>

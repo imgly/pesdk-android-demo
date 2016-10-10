@@ -1,4 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ This file is part of the PhotoEditor Software Development Kit.
+  ~
+  ~ Copyright (C) 2016 9elements GmbH <contact@9elements.com>
+  ~ All rights reserved.
+  ~
+  ~ Redistribution and use in source and binary forms, without
+  ~ modification, are permitted provided that the following license agreement
+  ~ is approved and a legal/financial contract was signed by the user.
+  ~
+  ~ The license agreement can be found under the following link:
+  ~
+  ~ https://www.photoeditorsdk.com/LICENSE.txt
+  -->
+
 <ly.img.android.ui.widgets.RelativeBlurLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/rootView"
@@ -23,10 +38,11 @@
             android:hint="@string/imgly_text_panel_edit_text_placeholder"
             android:gravity="center"
             android:layout_centerInParent="true"
-            android:singleLine="true"
             android:textColor="#FFFFFFFF"
             android:imeOptions="actionDone"
-            android:background="@color/transparent"/>
+            android:inputType="textCapSentences|textAutoCorrect"
+            android:background="@color/transparent"
+            android:maxLines="1"/>
     </RelativeLayout>
 
 </ly.img.android.ui.widgets.RelativeBlurLayout>

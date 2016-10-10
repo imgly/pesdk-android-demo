@@ -3,7 +3,7 @@ buildscript {
         jcenter()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:2.1.0'
+        classpath 'com.android.tools.build:gradle:2.2.0'
         classpath 'com.mutualmobile.gradle.plugins:dexinfo:0.1.2'
     }
 }
@@ -15,16 +15,16 @@ repositories {
 }
 
 android {
-    compileSdkVersion 23
-    buildToolsVersion '23.0.3'
+    compileSdkVersion 24
+    buildToolsVersion '24.0.3'
 
     defaultConfig {
         applicationId "com.photoeditorsdk.android.app"
         minSdkVersion 15
-        targetSdkVersion 23
+        targetSdkVersion 24
         versionCode 1
-        versionName "0.96 Beta"
-        renderscriptTargetApi 20
+        versionName "2.0.11 RC1"
+        renderscriptTargetApi 23
         renderscriptSupportModeEnabled true
     }
 
@@ -41,8 +41,6 @@ dependencies {
 
     compile 'net.hockeyapp.android:HockeySDK:3.7.0'
 
-    compile 'com.google.android.gms:play-services-analytics:8.3.0'
-
-    compile 'ly.img.android:photo-editor-sdk:1.1.0'
+    compile 'ly.img.android:photo-editor-sdk:2.0.11'
 
 }
