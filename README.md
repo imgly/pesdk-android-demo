@@ -379,7 +379,7 @@ settingsList.setEventTracker(new CustomEventTracker(Application.ANALYTICS_TRACK_
 //... set this SettingsList to a builder.
 
 ```
-See [CustomEventTracker.java](https://github.com/imgly/imgly-sdk-android/blob/master/AppExample/src/main/java/com/photoeditorsdk/android/app/CustomEventTracker.java) for an example implementation.
+See [CustomEventTracker.java](./app/src/main/java/com/photoeditorsdk/android/app/CustomEventTracker.java) for an example implementation.
 
 
 ## Troubleshooting
