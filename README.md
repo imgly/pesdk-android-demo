@@ -149,6 +149,12 @@ android {
         targetCompatibility JavaVersion.VERSION_1_7
     }
 
+    /* Enables support for the Android Data Binding Library. Without it
+     * the app will crash! */
+    dataBinding {
+        enabled = true
+    }
+
     ...
 }
 
