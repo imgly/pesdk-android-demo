@@ -45,6 +45,6 @@ dependencies {
 
     compile 'net.hockeyapp.android:HockeySDK:3.7.0'
 
-    compile 'ly.img.android:photo-editor-sdk:2.0.12RC1'
+    compile 'ly.img.android:photo-editor-sdk:2.0.12RC2'
 
 }
