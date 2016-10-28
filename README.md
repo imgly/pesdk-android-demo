@@ -47,15 +47,6 @@ Two Google support libraries needed or used by the SDK.
 * com.android.support:recyclerview-v7
 * com.android.support:support-annotations
 
-And the Rapid decoder libraries because Android has a bug in the `BitmapRegionDecoder`.
-*Apache License v2.0 https://github.com/svendvd/RapidDecoder/blob/master/LICENSE*
-
-* rapid.decoder:library:0.3.0
-* rapid.decoder:png-decoder:0.3.0
-
-
-
-
 ### Features
 
 * __Android API Level 15+__. Covers nearly 95% of all Android devices.
@@ -96,19 +87,6 @@ Please see:
 
 There are few things we'll need to add here.
 See comments in the example code below.
-
-**Currently you have to add a third party maven repo we try to fix this in the final release!**
-```
-allprojects {
-    repositories {
-        jcenter()
-        maven {
-            url 'https://github.com/suckgamony/RapidDecoder/raw/master/repository'
-        }
-    }
-}
-
-```
 
 __DO NOT FORGET TO ADD RENDERSCRIPT SUPPORT!__
 
