@@ -2,6 +2,7 @@ package com.photoeditorsdk.android.app;
 
 import android.os.Parcel;
 
+import ly.img.android.ImgLySdk;
 import ly.img.android.sdk.models.state.BrushLayerSettings;
 import ly.img.android.sdk.models.state.BrushLayerSettingsEvent;
 import ly.img.android.sdk.models.state.ColorAdjustmentSettings;
@@ -29,6 +30,10 @@ public class CustomEventTracker extends EventTracker {
     private String trackerId;
 
     public CustomEventTracker(String trackerId) {
+        init(trackerId);
+    }
+
+    private void init(String trackerId) {
         this.trackerId = trackerId;
         /* Example
         GoogleAnalytics analytics = GoogleAnalytics.getInstance(ImgLySdk.getAppContext());
@@ -340,10 +345,6 @@ public class CustomEventTracker extends EventTracker {
         */
     }
 
-    protected CustomEventTracker(Parcel in) {
-        this(in.readString());
-    }
-
     @Override
     public int describeContents() {
         return 0;
@@ -353,6 +354,11 @@ public class CustomEventTracker extends EventTracker {
     public void writeToParcel(Parcel dest, int flags) {
         super.writeToParcel(dest, flags);
         dest.writeString(this.trackerId);
+    }
+
+    protected CustomEventTracker(Parcel in) {
+        super(in);
+        init(in.readString());
     }
 
     public static final Creator<CustomEventTracker> CREATOR = new Creator<CustomEventTracker>() {
