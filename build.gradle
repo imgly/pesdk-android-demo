@@ -16,7 +16,7 @@ allprojects {
     repositories {
         jcenter()
         maven {
-            url 'https://github.com/svendvd/RapidDecoder/raw/master/repository'
+            url "https://artifactory.9elements.com/artifactory/imgly"
         }
     }
 }

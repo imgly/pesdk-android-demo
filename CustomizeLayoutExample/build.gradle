@@ -1,6 +1,9 @@
 buildscript {
     repositories {
         jcenter()
+        maven {
+            url "https://artifactory.9elements.com/artifactory/imgly"
+        }
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:2.2.2'
@@ -52,6 +55,6 @@ dependencies {
 
     compile 'net.hockeyapp.android:HockeySDK:3.7.0'
 
-    compile 'ly.img.android:photo-editor-sdk:2.0.14'
+    compile 'ly.img.android:photo-editor-sdk:2.0.23'
 
 }

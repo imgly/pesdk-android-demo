@@ -83,7 +83,22 @@ Please see:
 > This SDK requires a minimum deployment target of Android API 15 (4.0.4) and Device with HardwareLayer (for LivePreview) and LargeHeap Support (to operate and export large images)
 
 
-##### 1. Configure your Module build.gradle to import the img.ly SDK into your project with jCenter.
+##### 1. Add the imgly maven repo to the project build.gradle.
+
+```
+ allprojects {
+     repositories {
+         jcenter()
+         maven {
+             url "https://artifactory.9elements.com/artifactory/imgly"
+         }
+     }
+ }
+
+```
+
+
+##### 2. Configure your Module build.gradle to import the img.ly SDK into your project with jCenter.
 
 There are few things we'll need to add here.
 See comments in the example code below.
@@ -138,7 +153,7 @@ android {
 
 dependencies {
     /* Make sure you are import the latest SDK version */
-    compile 'ly.img.android:photo-editor-sdk:2.0.13'
+    compile 'ly.img.android:photo-editor-sdk:2.0.23'
 }
 
 ...
@@ -149,7 +164,7 @@ Be also sure to sync your project with the Gradle files after making any edits.
 
 For more information about gradle look at http://developer.android.com/tools/building/configuring-gradle.html
 
-##### 2. Initialize SDK in an Application class.
+##### 3. Initialize SDK in an Application class.
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -178,7 +193,7 @@ public class Application extends android.app.Application {
 }
 ```
 
-##### 3.1. Start img.ly SDK default UI.
+##### 4. Start img.ly SDK default UI.
 
 This is what your Activity should look like. Follow the steps below to understand the individual workflow:
 
@@ -216,9 +231,9 @@ public class MainActivity extends Activity implements PermissionRequest.Response
         super.onActivityResult(requestCode, resultCode, data);
         if (resultCode == RESULT_OK && requestCode == CAMERA_PREVIEW_RESULT) {
             String resultPath = 
-                   data.getStringExtra(CameraPreviewActivity.RESULT_IMAGE_PATH);
+                   data.getStringExtra(ImgLyIntent.RESULT_IMAGE_PATH);
             String sourcePath =
-                   data.getStringExtra(CameraPreviewActivity.SOURCE_IMAGE_PATH);
+                   data.getStringExtra(ImgLyIntent.SOURCE_IMAGE_PATH);
 
             if (resultPath != null) {
 	            // Scan result file
@@ -264,7 +279,7 @@ public class MainActivity extends Activity implements PermissionRequest.Response
 
 __Do not forget to delegate the onRequestPermissionsResult to PermissionRequest.onRequestPermissionsResult. Otherwise it will not work on Android 6.0 and above.__
 
-##### 3.2. Start Camera Preview Activity with editor backend.
+##### 4.1. Start Camera Preview Activity with editor backend.
 
 ```java
 // Camera activity with customized editor access.
@@ -288,7 +303,7 @@ settingsList
             .startActivityForResult(this, CAMERA_PREVIEW_RESULT);
 ```
 
-##### 3.3. Start Editor Activity standalone.
+##### 4.2. Start Editor Activity standalone.
 
 ```java
 String myPicture = "PATH_TO_THE_IMAGE"
@@ -308,7 +323,7 @@ settingsList
 	    .startActivityForResult(this, CAMERA_PREVIEW_RESULT);
 ```
 
-##### 4. Customize SDK config for your own Android App.
+##### 5. Customize SDK config for your own Android App.
 
 ```java
 // Custom toolset modifications can be done by modify the SettingsList.
@@ -352,7 +367,7 @@ settingsList.getConfig().setTools(
 );
 ```
 
-##### 5. Set own event tracker. (e. g. Google Analytics...)
+##### 6. Set own event tracker. (e. g. Google Analytics...)
 
 ```java
 // Custom toolset modifications can be done by modify the SettingsList.
