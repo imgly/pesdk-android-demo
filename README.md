@@ -11,8 +11,8 @@
   <a href="https://www.photoeditorsdk.com/documentation/android/getting-started">
     <img src="https://img.shields.io/badge/platform-android-2DC25C.svg?style=flat">
   </a>
-  <a href="https://bintray.com/9elements/ly.img.android/photo-editor-sdk/_latestVersion">
-    <img src="https://api.bintray.com/packages/9elements/ly.img.android/photo-editor-sdk/images/download.svg" alt="JCenter">
+  <a href="https://artifactory.9elements.com/artifactory/imgly/ly/img/android/photo-editor-sdk/">
+    <img src="https://www.photoeditorsdk.com/documentation/badge.svg?type=android_latest" alt="Maven">
   </a>
   <a href="http://twitter.com/PhotoEditorSDK">
     <img src="https://img.shields.io/badge/twitter-@PhotoEditorSDK-8646E2.svg?style=flat" alt="Twitter">
