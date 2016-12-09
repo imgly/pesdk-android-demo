@@ -50,18 +50,18 @@ Two Google support libraries needed or used by the SDK.
 ### Features
 
 * __Android API Level 15+__. Covers nearly 95% of all Android devices.
-* __Default UI__ for camera preview and editing. Based on Intents and Activities.
+* __Default UI__. for camera preview and editing. Based on Intents and Activities.
 * __Fast image export up to 4294 MegaPixel__. Even with large images and slow devices with low memory the export is done in adequate time with a intelligent unrivaled background processing technology.
 * __Generic camera support__. Integrated and featureful on the most Android phones.
 * __Crop__, __Rotate__, __Stickers__, __Text Placement__, and __Colorize__. All essential photo editing functions wrapped into a simple, beautiful and customizable UI.
-* __57 Stunning filters__ which are builtin and work out of the box.
+* __57 Stunning filters__. which are builtin and work out of the box.
 * __No native code__. Our backend is Renderscript based with highlevel OpenGL support, therefore we dodge all the nasty native library problems other frameworks face.
 * __Tablet support__. Works great on tablets.
 * __Photoshop LUT__. Design color filters in Photoshop!
 With this feature it is possible to generate LUT (Look Up Table) color filters easily from different photo
 editing tools. Export and integrate them in minutes!
-* __Live Preview __. Filters can be previewed in high quality at realtime.
-* __Low memory footprint__ even with high resolution images.
+* __Live Preview__. Filters can be previewed in high quality at realtime.
+* __Low memory footprint__. even with high resolution images.
 * __Extensible and customizable toolset interface__. Add your own customized filters with [Renderscript](https://developer.android.com/guide/topics/renderscript/index.html) and modify tool properties yourself.
 
 ### License
