@@ -1,42 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ This file is part of the PhotoEditor Software Development Kit.
+  ~
+  ~ Copyright (C) 2017 9elements GmbH <contact@9elements.com>
+  ~ All rights reserved.
+  ~
+  ~ Redistribution and use in source and binary forms, without
+  ~ modification, are permitted provided that the following license agreement
+  ~ is approved and a legal/financial contract was signed by the user.
+  ~
+  ~ The license agreement can be found under the following link:
+  ~
+  ~ https://www.photoeditorsdk.com/LICENSE.txt
+  -->
+
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-
     android:id="@+id/rootView"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
-    <RelativeLayout
+    android:layout_height="match_parent"
+    android:background="@null">
+    <ly.img.android.ui.widgets.DraggableExpandView
+        android:id="@+id/expandView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginBottom="80dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="88dp"
         android:orientation="vertical">
-
-        <ly.img.android.ui.widgets.RelativeBlurLayout
-            android:id="@+id/fontPicker"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:blurRadius="1dp"
-            app:blurDownSample="5"
-            app:blurSource="@id/editorImageView"
-            app:blurUpdateOnInvalidate="true">
-            <ly.img.android.ui.widgets.VerticalListView
-                android:id="@+id/bigFontList"
-                style="@style/Imgly.Editor.Toolbar.Panels.Text.FontVertical.Container" />
-        </ly.img.android.ui.widgets.RelativeBlurLayout>
-
-        <ImageButton
-            android:id="@+id/openFontListButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/imgly_floating_list_action_button"
-            android:background="@null"
-            android:layout_alignParentBottom="true"
-            android:layout_alignParentRight="true"
-            android:layout_alignParentEnd="true" />
-    </RelativeLayout>
+        <ly.img.android.ui.widgets.VerticalListView
+            android:id="@+id/bigFontList"
+            style="@style/Imgly.Editor.Toolbar.Panels.Text.FontVertical.Container" />
+        <ImageView
+            android:id="@+id/draggerThumb"
+            android:layout_width="match_parent"
+            android:layout_height="14dp"
+            android:src="@drawable/imgly_list_thump_handle"
+            android:scaleType="center"
+            android:background="@drawable/imgly_list_thump"
+            />
+    </ly.img.android.ui.widgets.DraggableExpandView>
     <include layout="@layout/imgly_option_list"
-        android:layout_height="80dp"
+        android:layout_height="88dp"
         android:layout_width="match_parent"
         android:layout_alignParentBottom="true"/>
 </RelativeLayout>

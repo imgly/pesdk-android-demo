@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ This file is part of the PhotoEditor Software Development Kit.
+  ~
+  ~ Copyright (C) 2017 9elements GmbH <contact@9elements.com>
+  ~ All rights reserved.
+  ~
+  ~ Redistribution and use in source and binary forms, without
+  ~ modification, are permitted provided that the following license agreement
+  ~ is approved and a legal/financial contract was signed by the user.
+  ~
+  ~ The license agreement can be found under the following link:
+  ~
+  ~ https://www.photoeditorsdk.com/LICENSE.txt
+  -->
+
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+        android:viewportWidth="48"
+        android:viewportHeight="48"
+        android:width="48dp"
+        android:height="48dp">
+    <path
+        android:pathData="M21.53822 25.15295C20.02267 25.41965 19 26.13356 19 28L29 28C29 26.13356 27.97733 25.41965 26.46178 25.15295C25.78299 25.68369 24.92843 26 24 26C23.07157 26 22.21701 25.68369 21.53822 25.15295ZM28.0002 13L32.0066 13C32.55505 13 33 13.44537 33 13.99477L33 31.00523C33 31.54907 32.55524 32 32.0066 32L29.66667 32L31 36L29 36L27.66667 32L20.3336 32L19 36L17 36L18.33293 32L15.9934 32C15.44495 32 15 31.55462 15 31.00523L15 13.99477C15 13.45092 15.44476 13 15.9934 13L20.00011 13C20.0001 13.06523 20.0001 13.1212 20.00011 13.16002C20.00014 13.3188 20.0002 14.72727 20.0002 14.72727L20.0002 15L21 15L27.5002 15L28.0002 15L28.0002 14.72727L28.0002 13ZM23 36L25 36L25 33L23 33L23 36ZM21 12L27 12L27 14L21 14L21 12ZM24 25C25.65685 25 27 23.65685 27 22C27 20.34315 25.65685 19 24 19C22.34315 19 21 20.34315 21 22C21 23.65685 22.34315 25 24 25ZM17 17L17 30L31 30L31 17L17 17Z"
+        android:fillColor="@color/imgly_icon_color" />
+</vector>

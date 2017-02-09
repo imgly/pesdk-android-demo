@@ -1,7 +1,7 @@
 package com.photoeditorsdk.android.app;
 
 import android.app.Activity;
-import android.media.MediaScannerConnection;
+import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -9,20 +9,13 @@ import android.widget.Toast;
 
 import java.io.File;
 
+import ly.img.android.PESDK;
 import ly.img.android.sdk.models.constant.Directory;
 import ly.img.android.sdk.models.state.CameraSettings;
-import ly.img.android.sdk.models.state.CropSettings;
-import ly.img.android.sdk.models.state.EditorLoadSettings;
 import ly.img.android.sdk.models.state.EditorSaveSettings;
-import ly.img.android.sdk.models.state.ImgLyConfig;
 import ly.img.android.sdk.models.state.manager.SettingsList;
-import ly.img.android.sdk.models.state.manager.StateHandler;
-import ly.img.android.sdk.operator.CropOperation;
-import ly.img.android.sdk.operator.ImageLoadOperation;
-import ly.img.android.sdk.operator.ImageSaveOperation;
-import ly.img.android.sdk.operator.Operator;
-import ly.img.android.ui.activities.CameraPreviewActivity;
 import ly.img.android.ui.activities.CameraPreviewBuilder;
+import ly.img.android.ui.activities.ImgLyIntent;
 import ly.img.android.ui.utilities.PermissionRequest;
 
 public class MainActivity extends Activity implements PermissionRequest.Response {
@@ -33,8 +26,13 @@ public class MainActivity extends Activity implements PermissionRequest.Response
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+    }
 
+    @Override
+    protected void onResume() {
+        super.onResume();
         SettingsList settingsList = new SettingsList();
+
         settingsList
                 .getSettingsModel(CameraSettings.class)
                 .setExportDir(Directory.DCIM, FOLDER)
@@ -43,31 +41,40 @@ public class MainActivity extends Activity implements PermissionRequest.Response
                 .getSettingsModel(EditorSaveSettings.class)
                 .setExportDir(Directory.DCIM, FOLDER)
                 .setExportPrefix("result_")
+                .setJpegQuality(80, false)
                 .setSavePolicy(EditorSaveSettings.SavePolicy.KEEP_SOURCE_AND_CREATE_ALWAYS_OUTPUT);
 
         new CameraPreviewBuilder(this)
                 .setSettingsList(settingsList)
                 .startActivityForResult(this, CAMERA_PREVIEW_RESULT);
+
     }
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, android.content.Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
         if (resultCode == RESULT_OK && requestCode == CAMERA_PREVIEW_RESULT) {
-            String path = data.getStringExtra(CameraPreviewActivity.RESULT_IMAGE_PATH);
 
-            Toast.makeText(this, "Image saved at: " + path, Toast.LENGTH_LONG).show();
+            String resultPath = data.getStringExtra(ImgLyIntent.RESULT_IMAGE_PATH);
+            String sourcePath = data.getStringExtra(ImgLyIntent.SOURCE_IMAGE_PATH);
 
-            File mMediaFolder = new File(path);
+            if (resultPath != null) {
+                // Add result file to Gallery
+                sendBroadcast(new Intent(Intent.ACTION_MEDIA_SCANNER_SCAN_FILE, Uri.fromFile(new File(resultPath))));
+            }
 
-            MediaScannerConnection.scanFile(this, new String[] {mMediaFolder.getAbsolutePath()}, null, new MediaScannerConnection.OnScanCompletedListener() {
-                        public void onScanCompleted(String path, Uri uri) {
+            if (sourcePath != null) {
+                // Add sourceType file to Gallery
+                sendBroadcast(new Intent(Intent.ACTION_MEDIA_SCANNER_SCAN_FILE, Uri.fromFile(new File(sourcePath))));
+            }
 
-                        }
-                    }
-            );
+            Toast.makeText(PESDK.getAppContext(), "Image saved on: " + resultPath, Toast.LENGTH_LONG).show();
+        } else if (resultCode == RESULT_CANCELED && requestCode == CAMERA_PREVIEW_RESULT && data != null) {
+            String sourcePath = data.getStringExtra(ImgLyIntent.SOURCE_IMAGE_PATH);
+            Toast.makeText(PESDK.getAppContext(), "Editor canceled, sourceType image is:\n" + sourcePath, Toast.LENGTH_LONG).show();
+        } else {
+            finish();
         }
-        finish();
     }
 
     @Override

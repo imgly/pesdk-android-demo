@@ -1,7 +1,6 @@
 package com.photoeditorsdk.android.app;
 
-import ly.img.android.ImgLySdk;
-
+import ly.img.android.PESDK;
 
 public class Application extends android.app.Application {
 
@@ -9,8 +8,7 @@ public class Application extends android.app.Application {
     public void onCreate() {
         super.onCreate();
 
-        ImgLySdk.init(this);
+        PESDK.init(this);
     }
-
 
 }

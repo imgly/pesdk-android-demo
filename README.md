@@ -1,6 +1,6 @@
 
 
-<p align="center">
+<p aligntoolkitr">
   <img src="https://camo.githubusercontent.com/4c4c8d90e242619972a11baa3c33acaaeb9bad00/687474703a2f2f692e696d6775722e636f6d2f666748314852742e706e67" />
 </p>
 <p align="center">
@@ -18,12 +18,16 @@
     <img src="https://img.shields.io/badge/twitter-@PhotoEditorSDK-8646E2.svg?style=flat" alt="Twitter">
   </a>
 </p>
-## img.ly SDK for Android
 
+
+
+## img.ly SDK for Android
 
 img.ly SDK for Android is for creating stunning images with a nice selection of premium filters.
 
-<a href="https://play.google.com/store/apps/details?id=com.photoeditorsdk.android.app&utm_source=global_co&utm_medium=prtnr&utm_content=Mar2515&utm_campaign=PartBadge&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1"><img height="60px" alt="Get it on Google Play" src="https://play.google.com/intl/en_us/badges/images/generic/en-play-badge-border.png" /></a>
+<a href="https://play.google.com/store/apps/details?id=com.photoeditorsdk.android.app&utm_source=global_co&utm_medium=prtnr&utm_content=Mar2515&utm_campaign=PartBadge&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1">
+    <img height="60" alt="Get it on Google Play" src="https://play.google.com/intl/en_us/badges/images/generic/en-play-badge-border.png" >
+</a>
 
 ### Overview
 
@@ -35,7 +39,7 @@ __ACS Component__ <br/>
 A generic Android Camera Stack library which is based on the [android.hardware.Camera](http://developer.android.com/reference/android/hardware/Camera.html) API. Supports front and rear cam, HDR, flash modes and much more.
 
 __SDK Component__ <br/>
-The img.ly core library for Android. Containing the OpenGL and toolset implementation.
+The img.ly core library for Android. Containing the OpenGL and toolkit implementation.
 
 __UI Component__ <br/>
 The default UI components consisting of LivePreview and Editor Activity.
@@ -54,7 +58,7 @@ Two Google support libraries needed or used by the SDK.
 * __Fast image export up to 4294 MegaPixel__. Even with large images and slow devices with low memory the export is done in adequate time with a intelligent unrivaled background processing technology.
 * __Generic camera support__. Integrated and featureful on the most Android phones.
 * __Crop__, __Rotate__, __Stickers__, __Text Placement__, and __Colorize__. All essential photo editing functions wrapped into a simple, beautiful and customizable UI.
-* __57 Stunning filters__. which are builtin and work out of the box.
+* __57 Stunning filters__ which are builtin and work out of the box.
 * __No native code__. Our backend is Renderscript based with highlevel OpenGL support, therefore we dodge all the nasty native library problems other frameworks face.
 * __Tablet support__. Works great on tablets.
 * __Photoshop LUT__. Design color filters in Photoshop!
@@ -62,7 +66,7 @@ With this feature it is possible to generate LUT (Look Up Table) color filters e
 editing tools. Export and integrate them in minutes!
 * __Live Preview__. Filters can be previewed in high quality at realtime.
 * __Low memory footprint__. even with high resolution images.
-* __Extensible and customizable toolset interface__. Add your own customized filters with [Renderscript](https://developer.android.com/guide/topics/renderscript/index.html) and modify tool properties yourself.
+* __Extensible and customizable toolkit interface__. Add your own customized filters with [Renderscript](https://developer.android.com/guide/topics/renderscript/index.html) and modify tool properties yourself.
 
 ### License
 
@@ -109,9 +113,9 @@ __DO NOT FORGET TO ADD RENDERSCRIPT SUPPORT!__
 apply plugin: 'com.android.application'
 
 android {
-    /* Set the Compile SDK and the Build SDK min. at SDK 23 or grater. */
-    compileSdkVersion 24
-    buildToolsVersion '24.0.3'
+    /* Set the Compile SDK and the Build SDK 25. */
+    compileSdkVersion 25
+    buildToolsVersion '25.0.2'
 
     /* If you update from SDK 22 and below, the ApacheHttp-Library are removed by Google,
      * if you need the ApacheHttp-Library comment out the next line */
@@ -125,7 +129,7 @@ android {
         minSdkVersion 15
 
         /* Set the target SDK Version at minimum to 24 or higher */
-        targetSdkVersion 24
+        targetSdkVersion 25
 
         /* Set your own Version Code and Version name */
         versionCode 1
@@ -142,21 +146,15 @@ android {
         targetCompatibility JavaVersion.VERSION_1_7
     }
 
-    /* Enables support for the Android Data Binding Library. Without it
-     * the app will crash! */
-    dataBinding {
-        enabled = true
-    }
-
-    ...
+    //...
 }
 
 dependencies {
     /* Make sure you are import the latest SDK version */
-    compile 'ly.img.android:photo-editor-sdk:2.0.27'
+    compile 'ly.img.android:photo-editor-sdk:3.0.1'
 }
 
-...
+//...
 
 ```
 
@@ -169,13 +167,14 @@ For more information about gradle look at http://developer.android.com/tools/bui
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.mymodule.app" >
+    package="..." >
 
     <application
-        android:name=".Application"
-        ... >
-
-        ...
+        android:name=".Application" 
+        android:icon="..."
+        android:label="..."
+        andSoOn="..." >
+        <!--...-->
     </application>
 
 </manifest>
@@ -188,7 +187,7 @@ public class Application extends android.app.Application {
     public void onCreate() {
         super.onCreate();
 
-        ImgLySdk.init(this);
+        PESDK.init(this);
     }
 }
 ```
@@ -198,7 +197,7 @@ public class Application extends android.app.Application {
 This is what your Activity should look like. Follow the steps below to understand the individual workflow:
 
 ```java
-public class MainActivity extends Activity implements PermissionRequest.Response{
+public class MyActivity extends Activity implements PermissionRequest.Response {
 
     public static int CAMERA_PREVIEW_RESULT = 1;
 
@@ -218,7 +217,7 @@ public class MainActivity extends Activity implements PermissionRequest.Response
                     .setExportDir(Directory.DCIM, FOLDER)
                     .setExportPrefix("result_")
                     .setSavePolicy(
-                         EditorSaveSettings.SavePolicy.RETURN_ALWAYS_ONLY_OUTPUT
+                         EditorSaveSettings.SavePolicy.KEEP_SOURCE_AND_CREATE_ALWAYS_OUTPUT
                     );
              
             new CameraPreviewBuilder(this)
@@ -282,104 +281,177 @@ __Do not forget to delegate the onRequestPermissionsResult to PermissionRequest.
 ##### 4.1. Start Camera Preview Activity with editor backend.
 
 ```java
-// Camera activity with customized editor access.
-SettingsList settingsList = new SettingsList();
-settingsList
-	// Set custom camera export settings
-	.getSettingsModel(CameraSettings.class)
-	.setExportDir(Directory.DCIM, FOLDER)
-	.setExportPrefix("camera_")
-	
-	// Set custom editor export settings
-	.getSettingsModel(EditorSaveSettings.class)
-	.setExportDir(Directory.DCIM, FOLDER)
-	.setExportPrefix("result_")
-	.setSavePolicy(
-	     EditorSaveSettings.SavePolicy.RETURN_ALWAYS_ONLY_OUTPUT
-	);
-     
-    new CameraPreviewBuilder(this)
-            .setSettingsList(settingsList)
-            .startActivityForResult(this, CAMERA_PREVIEW_RESULT);
+
+public class MyActivity extends Activity implements PermissionRequest.Response {
+    
+    // ...
+    
+    // Start camera with editor access.
+    public void startCamera() {
+        SettingsList settingsList = new SettingsList();
+        settingsList
+            // Set custom camera export settings
+            .getSettingsModel(CameraSettings.class)
+            .setExportDir(Directory.DCIM, FOLDER)
+            .setExportPrefix("camera_")
+            
+            // Set custom editor export settings
+            .getSettingsModel(EditorSaveSettings.class)
+            .setExportDir(Directory.DCIM, FOLDER)
+            .setExportPrefix("result_")
+            .setSavePolicy(
+                 EditorSaveSettings.SavePolicy.RETURN_ALWAYS_ONLY_OUTPUT
+            );
+            
+        // customizeMyConfig(settingsList);
+             
+        new CameraPreviewBuilder(this)
+                .setSettingsList(settingsList)
+                .startActivityForResult(this, CAMERA_PREVIEW_RESULT);
+    }
+    
+    // ...
+}
 ```
 
 ##### 4.2. Start Editor Activity standalone.
 
 ```java
-String myPicture = "PATH_TO_THE_IMAGE"
-settingsList
-	.getSettingsModel(EditorLoadSettings.class)
-	.setImageSourcePath(myPicture, true) // Load with delete protection true!
-	
-	.getSettingsModel(EditorSaveSettings.class)
-	.setExportDir(Directory.DCIM, FOLDER)
-	.setExportPrefix("result_")
-    .setSavePolicy(
-	    EditorSaveSettings.SavePolicy.KEEP_SOURCE_AND_CREATE_ALWAYS_OUTPUT
-	);
-
-	new PhotoEditorBuilder(this)
-	    .setSettingsList(settingsList)
-	    .startActivityForResult(this, CAMERA_PREVIEW_RESULT);
+public class MyActivity extends Activity implements PermissionRequest.Response {
+    
+    // ...
+    
+    // Start editor only
+    public void startEditor() {
+        String myPicture = "PATH_TO_THE_IMAGE";
+        
+        settingsList
+            .getSettingsModel(EditorLoadSettings.class)
+            .setImageSourcePath(myPicture, true) // Load with delete protection true!
+            
+            .getSettingsModel(EditorSaveSettings.class)
+            .setExportDir(Directory.DCIM, FOLDER)
+            .setExportPrefix("result_")
+            .setSavePolicy(
+                EditorSaveSettings.SavePolicy.KEEP_SOURCE_AND_CREATE_ALWAYS_OUTPUT
+            );
+            
+        // customizeMyConfig(settingsList);  
+        
+        new PhotoEditorBuilder(this)
+            .setSettingsList(settingsList)
+            .startActivityForResult(this, CAMERA_PREVIEW_RESULT);
+    }
+    
+    // ...
+}   
 ```
 
 ##### 5. Customize SDK config for your own Android App.
 
 ```java
-// Custom toolset modifications can be done by modify the SettingsList.
-
-SettingsList settingsList = new SettingsList();
-settingsList.setEventTracker(new CustomEventTracker(Application.ANALYTICS_TRACK_ID))
-settingsList.getConfig().setTools(
-    new CropEditorTool(R.string.tool_name_crop, R.drawable.icon_tool_crop),
-    new OrientationEditorTool(R.string.tool_name_rotate R.drawable.icon_tool_rotate),
-    new Divider(),
-    new FilterEditorTool(R.string.tool_name_filter, R.drawable.icon_tool_filters),
-    new ColorAdjustmentTool(R.string.tool_name_adjust, R.drawable.icon_tool_adjust),
-    new Divider(),
-    new TextEditorTool(R.string.tool_name_text, R.drawable.icon_tool_text),
-    new StickerEditorTool(R.string.tool_name_sticker, R.drawable.icon_tool_sticker),
-    new Divider(),
-    new FocusEditorTool(R.string.tool_name_focus, R.drawable.icon_tool_focus),
-    new Divider(),
-    new BrushEditorTool(R.string.tool_name_brush, R.drawable.icon_tool_brush)
-).setSticker(
-	new ImageStickerConfig(
-		R.string.sticker_name_glasses_normal, 
-		R.drawable.sticker_preview_glasses_normal, 
-		R.drawable.sticker_glasses_normal
-	),
-	new ImageStickerConfig(
-		R.string.sticker_name_glasses_nerd, 
-		R.drawable.sticker_preview_glasses_nerd, 
-		R.drawable.sticker_glasses_nerd
-	),
-	new ImageStickerConfig(
-		R.string.sticker_name_glasses_shutter_green, 
-		R.drawable.sticker_preview_glasses_shutter_green, 
-		R.drawable.sticker_glasses_shutter_green
-	),
-	new ImageStickerConfig(
-		R.string.sticker_name_glasses_shutter_yellow, 
-		R.drawable.sticker_preview_glasses_shutter_yellow, 
-		R.drawable.sticker_glasses_shutter_yellow
-	)
-);
+// Custom toolkit modifications can be done by modify the SettingsList.
+public class MyActivity extends Activity implements PermissionRequest.Response {
+    // ...
+    public void customizeMyConfig(SettingsList settingsList) {
+       
+        settingsList.getConfig().setTools(
+            new CropEditorTool(R.string.tool_name_crop, R.drawable.icon_tool_crop),
+            new OrientationEditorTool(R.string.tool_name_rotate, R.drawable.icon_tool_rotate),
+            new Divider(),
+            new FilterEditorTool(R.string.tool_name_filter, R.drawable.icon_tool_filters),
+            new ColorAdjustmentTool(R.string.tool_name_adjust, R.drawable.icon_tool_adjust),
+            new Divider(),
+            new TextEditorTool(R.string.tool_name_text, R.drawable.icon_tool_text),
+            new StickerEditorTool(R.string.tool_name_sticker, R.drawable.icon_tool_sticker),
+            new Divider(),
+            new FocusEditorTool(R.string.tool_name_focus, R.drawable.icon_tool_focus),
+            new Divider(),
+            new BrushEditorTool(R.string.tool_name_brush, R.drawable.icon_tool_brush)
+        ).setStickerLists (
+            new StickerCategoryConfig(
+                "Internal PNG Stickers",
+                ImageSource.create(Uri.parse("https://content.mydomain/stickers/external-stickers-category-icon.png")),
+                new ImageStickerConfig(
+                    R.string.sticker_name_glasses_normal, 
+                    R.drawable.sticker_preview_glasses_normal, 
+                    R.drawable.sticker_glasses_normal
+                ),
+                new ImageStickerConfig(
+                    R.string.sticker_name_glasses_nerd, 
+                    R.drawable.sticker_preview_glasses_nerd, 
+                    R.drawable.sticker_glasses_nerd
+                ),
+                new ImageStickerConfig(
+                    R.string.sticker_name_glasses_shutter_green, 
+                    R.drawable.sticker_preview_glasses_shutter_green, 
+                    R.drawable.sticker_glasses_shutter_green
+                ),
+                new ImageStickerConfig(
+                    R.string.sticker_name_glasses_shutter_yellow, 
+                    R.drawable.sticker_preview_glasses_shutter_yellow, 
+                    R.drawable.sticker_glasses_shutter_yellow
+                )
+            ),
+            new StickerCategoryConfig(
+                "Internal VectorDrawable Stickers",
+                ImageSource.create(Uri.parse("https://content.mydomain/stickers/external-stickers-category-icon.png")),
+                new ImageStickerConfig(
+                        R.string.imgly_sticker_name_toy_drum, 
+                        R.drawable.imgly_sticker_toy_drum, 
+                        R.drawable.imgly_sticker_toy_drum, 
+                        ImageStickerConfig.OPTION_MODE.INK_STICKER
+                ),
+                new ImageStickerConfig(
+                        R.string.imgly_sticker_name_toy_crayons, 
+                        R.drawable.imgly_sticker_toy_crayons, 
+                        R.drawable.imgly_sticker_toy_crayons, 
+                        ImageStickerConfig.OPTION_MODE.INK_STICKER
+                )
+            ),
+            new StickerCategoryConfig(
+                "External Stickers",
+                ImageSource.create(Uri.parse("https://content.mydomain/stickers/external-stickers-category-icon.png")),
+                new ImageStickerConfig(
+                        "My External PNG", 
+                        ImageSource.create(Uri.parse("https://content.mydomain/stickers/glasses-preview-128x128.png")), 
+                        ImageSource.create(Uri.parse("https://content.mydomain/stickers/glasses.png"))
+                ),
+                new ImageStickerConfig(
+                        "External VectorDrawable", 
+                        ImageSource.create(Uri.parse("https://content.mydomain/stickers/glasses-vector.xml")), 
+                        ImageSource.create(Uri.parse("https://content.mydomain/stickers/glasses-vector.xml"))
+                ),
+                new ImageStickerConfig(
+                        "My File", 
+                        ImageSource.create(Uri.fromFile(myPreviewFile)), 
+                        ImageSource.create(Uri.fromFile(myFile))
+                )
+            )
+        );
+        
+        // setMyEventTracker(settingsList);
+    }
+    
+    // ...
+}
 ```
 
 ##### 6. Set own event tracker. (e. g. Google Analytics...)
 
 ```java
-// Custom toolset modifications can be done by modify the SettingsList.
-
-SettingsList settingsList = new SettingsList();
-settingsList.setEventTracker(new CustomEventTracker(Application.ANALYTICS_TRACK_ID))
-
-//... set this SettingsList to a builder.
+// Custom toolkit modifications can be done by modify the SettingsList.
+public class MyActivity extends Activity implements PermissionRequest.Response {
+    // ...
+    public void setMyEventTracker(SettingsList settingsList) {
+        settingsList.setEventTracker(new CustomEventTracker(Application.ANALYTICS_TRACK_ID));
+    }
+    // ...
+}
 
 ```
-See [CustomEventTracker.java](./app/src/main/java/com/photoeditorsdk/android/app/CustomEventTracker.java) for an example implementation.
 
+See [CustomEventTracker.java](./example_files/CustomEventTracker.java) for an example implementation.
 
 ## Troubleshooting
 

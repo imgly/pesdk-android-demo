@@ -1,3 +1,18 @@
+<!--
+  ~ This file is part of the PhotoEditor Software Development Kit.
+  ~
+  ~ Copyright (C) 2017 9elements GmbH <contact@9elements.com>
+  ~ All rights reserved.
+  ~
+  ~ Redistribution and use in source and binary forms, without
+  ~ modification, are permitted provided that the following license agreement
+  ~ is approved and a legal/financial contract was signed by the user.
+  ~
+  ~ The license agreement can be found under the following link:
+  ~
+  ~ https://www.photoeditorsdk.com/LICENSE.txt
+  -->
+
 <resources>
 
     <!-- Base SDK theme. -->
@@ -8,6 +23,7 @@
         <item name="android:windowNoTitle">true</item>
         <item name="android:windowIsFloating">true</item>
         <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:visibility">gone</item>
     </style>
     
     <style name="Imgly" parent="@android:style/Theme.NoTitleBar.Fullscreen"/>
@@ -15,22 +31,6 @@
     <!-- Borderless Button Dummy v21 -->
 
     <style name="Imgly.Button" parent="Imgly"/>
-
-    <!-- Picker -->
-    <style name="Imgly.Picker" parent="Imgly"/>
-    <!-- Color Picker -->
-
-    <style name="Imgly.Picker.Color" parent="Imgly.Picker"/>
-
-    <style name="Imgly.Picker.Color.EditText" parent="Imgly">
-        <item name="android:layout_width">match_parent</item>
-        <item name="android:layout_height">wrap_content</item>
-        <item name="android:layout_margin">4dp</item>
-        <item name="android:imeOptions">actionNext</item>
-        <item name="android:singleLine">true</item>
-        <item name="android:textSize">22sp</item>
-        <item name="android:textColor">@color/imgly_textedit_text_color</item>
-    </style>
 
     <!-- Editor -->
     <style name="Imgly.Editor" parent="Imgly"/>
@@ -89,7 +89,6 @@
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">0dp</item>
         <item name="android:layout_weight">1</item>
-        <item name="android:background">@color/imgly_editor_toolbar_background</item>
     </style>
 
     <!-- Editor.Toolbar.Panels -->
@@ -100,7 +99,7 @@
 
     <style name="Imgly.Editor.Toolbar.Panels.OptionsContainer" parent="Imgly.Editor">
         <item name="android:layout_width">match_parent</item>
-        <item name="android:layout_height">80dp</item>
+        <item name="android:layout_height">88dp</item>
         <item name="android:layout_centerHorizontal">true</item>
         <item name="android:background">@color/imgly_editor_toolbar_background</item>
     </style>
@@ -111,7 +110,7 @@
     </style>
 
     <style name="Imgly.Editor.Toolbar.Panels.default.ItemLabel" parent="Imgly.Editor.Toolbar.Panels">
-        <item name="android:textSize">11dp</item>
+        <item name="android:textSize">12dp</item>
         <item name="android:paddingTop">0dp</item>
         <item name="android:paddingBottom">0dp</item>
         <item name="android:ellipsize">end</item>
@@ -130,7 +129,7 @@
 
     <style name="Imgly.SeekBar" parent="Imgly.Editor.Toolbar.Panels">
         <item name="android:layout_width">match_parent</item>
-        <item name="android:layout_height">16dp</item>
+        <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_gravity">center</item>
         <item name="android:layout_marginLeft">24dp</item>
         <item name="android:layout_marginRight">24dp</item>
@@ -145,6 +144,18 @@
         <item name="android:indeterminateDrawable">@drawable/imgly_slider_progress</item>
     </style>
 
+    <style name="Imgly.SeekSlider" parent="Imgly.Editor.Toolbar.Panels">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:background">@color/imgly_editor_toolbar_background</item>
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingTop">12dp</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:paddingRight">16dp</item>
+        <item name="rangeBackgroundColor">@color/imgly_slider_track_color</item>
+        <item name="selectedRangeBackgroundColor">@color/imgly_slider_progress_color</item>
+    </style>
+
     <style name="Imgly.SeekBarContainer" parent="Imgly.Editor.Toolbar.Panels">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">48dp</item>
@@ -157,8 +168,14 @@
         <item name="android:background">#13FFFFFF</item>
         <item name="android:layout_marginLeft">14dp</item>
         <item name="android:layout_marginRight">14dp</item>
-        <item name="android:layout_centerInParent">true</item>
+        <item name="android:layout_centerVertical">true</item>
     </style>
+
+    <style name="Imgly.Editor.Toolbar.Panels.QuickTools" parent="Imgly.Editor.Toolbar.Panels">
+        <item name="android:background">#4D000000</item>
+    </style>
+    <style name="Imgly.Editor.Toolbar.Panels.QuickTools.ItemIcon" parent="Imgly.Editor.Toolbar.Panels.default.ItemIcon"/>
+    <style name="Imgly.Editor.Toolbar.Panels.QuickTools.ItemLabel" parent="Imgly.Editor.Toolbar.Panels.default.ItemLabel"/>
 
     <style name="Imgly.Editor.Toolbar.Panels.Tool" parent="Imgly.Editor.Toolbar.Panels"/>
     <style name="Imgly.Editor.Toolbar.Panels.Tool.ItemIcon" parent="Imgly.Editor.Toolbar.Panels.default.ItemIcon"/>
@@ -169,7 +186,13 @@
     <style name="Imgly.Editor.Toolbar.Panels.Filter.ItemLabel" parent="Imgly.Editor.Toolbar.Panels.default.ItemLabel">
         <item name="android:textSize">11dp</item>
         <item name="android:textColor">#FFFFFFFF</item>
+        <item name="android:paddingTop">4dp</item>
         <item name="android:paddingBottom">4dp</item>
+        <item name="android:background">@drawable/imgly_item_filter_label_bg</item>
+    </style>
+    <style name="Imgly.Editor.Toolbar.Panels.Filter.ItemValue" parent="Imgly.Editor.Toolbar.Panels.default.ItemLabel">
+        <item name="android:textSize">18dp</item>
+        <item name="android:textColor">#FFFFFFFF</item>
     </style>
     <style name="Imgly.Editor.Toolbar.Panels.Filter.ItemSelectOverlay" parent="Imgly.Editor.Toolbar.Panels.default.ItemSelectOverlay">
         <item name="android:background">@drawable/imgly_item_filter_overlay</item>
@@ -181,11 +204,10 @@
 
     <style name="Imgly.Editor.Toolbar.Panels.Focus" parent="Imgly.Editor.Toolbar.Panels"/>
 
-    <style name="Imgly.Editor.Toolbar.Panels.Crop" parent="Imgly.Editor.Toolbar.Panels"/>
-    <style name="Imgly.Editor.Toolbar.Panels.Crop.ItemIcon" parent="Imgly.Editor.Toolbar.Panels.default.ItemIcon"/>
+    <style name="Imgly.Editor.Toolbar.Panels.Crop" parent="Imgly.Editor.Toolbar.Panels">
+        <item name="android:background">@drawable/imgly_item_sticker_category_border</item>
+    </style>
     <style name="Imgly.Editor.Toolbar.Panels.Crop.ItemLabel" parent="Imgly.Editor.Toolbar.Panels.default.ItemLabel"/>
-    <style name="Imgly.Editor.Toolbar.Panels.Crop.ItemSelectBackground" parent="Imgly.Editor.Toolbar.Panels.default.ItemSelectBackground"/>
-
 
     <style name="Imgly.Editor.Toolbar.Panels.Text" parent="Imgly.Editor.Toolbar.Panels"/>
     <style name="Imgly.Editor.Toolbar.Panels.Text.ItemIcon" parent="Imgly.Editor.Toolbar.Panels.default.ItemIcon"/>
@@ -194,9 +216,9 @@
     <style name="Imgly.Editor.Toolbar.Panels.Text.Font" parent="Imgly.Editor.Toolbar.Panels"/>
     <style name="Imgly.Editor.Toolbar.Panels.Text.Font.ItemText" parent="Imgly.Editor">
         <item name="android:layout_width">match_parent</item>
-        <item name="android:layout_height">47dp</item>
+        <item name="android:layout_height">57dp</item>
         <item name="android:padding">0dp</item>
-        <item name="android:textSize">30dp</item>
+        <item name="android:textSize">40dp</item>
         <item name="android:ellipsize">end</item>
         <item name="android:gravity">center</item>
         <item name="android:layout_marginTop">0dp</item>
@@ -218,9 +240,11 @@
     </style>
 
     <style name="Imgly.Editor.Toolbar.Panels.Text.FontVertical.Container" parent="Imgly.Editor.Toolbar">
+        <item name="android:layout_marginTop">14dp</item>
+        <item name="android:paddingTop">14dp</item>
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">match_parent</item>
-        <item name="android:background">#992B2B2B</item>
+        <item name="android:background">#d9000000</item>
     </style>
     <style name="Imgly.Editor.Toolbar.Panels.Text.FontVertical" parent="Imgly.Editor.Toolbar">
         <item name="android:layout_width">match_parent</item>
@@ -288,7 +312,7 @@
     </style>
 
     <style name="Imgly.Preview.Header.Button.FlashButton" parent="Imgly.Preview.Header.Button">
-        <item name="android:drawableLeft">@drawable/imgly_icon_flash</item>
+        <item name="android:drawableLeft">@drawable/imgly_icon_camera_flash</item>
         <item name="android:drawablePadding">10dp</item>
     </style>
     <style name="Imgly.Preview.Header.Button.HDRButton" parent="Imgly.Preview.Header.Button">
@@ -297,7 +321,7 @@
     </style>
     <style name="Imgly.Preview.Header.Button.SwitchCameraButton" parent="Imgly.Preview.Header.Button">
 
-        <item name="android:src">@drawable/imgly_icon_cam_switch</item>
+        <item name="android:src">@drawable/imgly_icon_camera_switch</item>
         <item name="android:scaleType">center</item>
     </style>
 

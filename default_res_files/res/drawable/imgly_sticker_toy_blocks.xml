@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ This file is part of the PhotoEditor Software Development Kit.
+  ~
+  ~ Copyright (C) 2017 9elements GmbH <contact@9elements.com>
+  ~ All rights reserved.
+  ~
+  ~ Redistribution and use in source and binary forms, without
+  ~ modification, are permitted provided that the following license agreement
+  ~ is approved and a legal/financial contract was signed by the user.
+  ~
+  ~ The license agreement can be found under the following link:
+  ~
+  ~ https://www.photoeditorsdk.com/LICENSE.txt
+  -->
+
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:viewportWidth="225"
+    android:viewportHeight="256"
+    android:width="225dp"
+    android:height="256dp">
+    <group
+        android:translateX="-1505"
+        android:translateY="-3063">
+        <group
+            android:translateX="1505.5"
+            android:translateY="3063">
+            <path
+                android:pathData="M4.4254999 144.3405H219.5745V251.915H4.4254999Z"
+                android:fillColor="#aece71" />
+            <path
+                android:pathData="M4.4254999 36.765999H219.5745V144.3405H4.4254999Z"
+                android:fillColor="#4ac4c3" />
+            <path
+                android:pathData="M16 4.085H65.0215V36.766H16Z"
+                android:fillColor="#0caaa9" />
+            <path
+                android:pathData="M87.489502 4.085H136.511V36.766H87.489502Z"
+                android:fillColor="#0caaa9" />
+            <path
+                android:pathData="M158.9785 4.085H208v32.681h-49.0215z"
+                android:fillColor="#0caaa9" />
+            <path
+                android:pathData="M186.8935 73.531998a4.085 4.085 0 0 1 -4.085 4.085 4.085 4.085 0 0 1 -4.085 -4.085 4.085 4.085 0 0 1 4.085 -4.085 4.085 4.085 0 0 1 4.085 4.085z"
+                android:fillColor="#700019" />
+            <path
+                android:pathData="M170.553 89.872498a4.085 4.085 0 0 1 -4.085 4.085 4.085 4.085 0 0 1 -4.085 -4.085 4.085 4.085 0 0 1 4.085 -4.085 4.085 4.085 0 0 1 4.085 4.085z"
+                android:fillColor="#700019" />
+            <path
+                android:pathData="M45.276502 215.149a4.085 4.085 0 0 1 -4.085 4.085 4.085 4.085 0 0 1 -4.085 -4.085 4.085 4.085 0 0 1 4.085 -4.085 4.085 4.085 0 0 1 4.085 4.085z"
+                android:fillColor="#700019" />
+            <path
+                android:pathData="M186.8935 73.531998a4.085 4.085 0 0 1 -4.085 4.085 4.085 4.085 0 0 1 -4.085 -4.085 4.085 4.085 0 0 1 4.085 -4.085 4.085 4.085 0 0 1 4.085 4.085z"
+                android:fillColor="#700019" />
+            <path
+                android:pathData="M170.553 89.872498a4.085 4.085 0 0 1 -4.085 4.085 4.085 4.085 0 0 1 -4.085 -4.085 4.085 4.085 0 0 1 4.085 -4.085 4.085 4.085 0 0 1 4.085 4.085z"
+                android:fillColor="#700019" />
+            <path
+                android:pathData="M45.276502 215.149a4.085 4.085 0 0 1 -4.085 4.085 4.085 4.085 0 0 1 -4.085 -4.085 4.085 4.085 0 0 1 4.085 -4.085 4.085 4.085 0 0 1 4.085 4.085z"
+                android:fillColor="#700019" />
+            <path
+                android:pathData="M219.5745 32.681H212.085V4.085C212.085 1.829 210.2565 0 208 0h-49.0215c-2.2565 0 -4.085 1.829 -4.085 4.085v28.5955h-14.298V4.085C140.5955 1.829 138.767 0 136.5105 0H87.489C85.233 0 83.404 1.829 83.404 4.085V32.6805H69.106V4.085C69.106 1.829 67.277 0 65.021 0H16C13.744 0 11.915 1.829 11.915 4.085V32.6805H4.4255c-2.256 0 -4.085 1.829 -4.085 4.085V251.915c0 2.256 1.829 4.085 4.085 4.085h215.149c2.2565 0 4.085 -1.829 4.085 -4.085V36.766c0 -2.256 -1.8285 -4.085 -4.085 -4.085zM163.064 8.17h40.851v24.5105h-40.851zm-71.4895 0h40.851v24.5105h-40.851zm-71.4895 0H60.936V32.6805H20.085ZM8.5105 247.83V148.4255H20.766c2.256 0 4.085 -1.829 4.085 -4.085 0 -2.256 -1.829 -4.085 -4.085 -4.085H8.5105V40.851H215.489v99.4045H37.1065c-2.256 0 -4.085 1.829 -4.085 4.085 0 2.256 1.829 4.085 4.085 4.085h178.383V247.83Z"
+                android:fillColor="#700019" />
+        </group>
+    </group>
+</vector>
