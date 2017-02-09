@@ -1,12 +1,12 @@
 
 
-<p aligntoolkitr">
-  <img src="https://camo.githubusercontent.com/4c4c8d90e242619972a11baa3c33acaaeb9bad00/687474703a2f2f692e696d6775722e636f6d2f666748314852742e706e67" />
+<p align="center">
+  <img src="http://static.photoeditorsdk.com/logo.png" />
 </p>
 <p align="center">
   <a href="http://developer.android.com/guide/topics/manifest/uses-sdk-element.html#ApiLevels">
     <img src="https://img.shields.io/badge/MIN_SDK-15-B8D529.svg?style=flat">
-    <img src="https://img.shields.io/badge/BUILD_SDK-24-92D230.svg?style=flat">
+    <img src="https://img.shields.io/badge/BUILD_SDK-25-92D230.svg?style=flat">
   </a>
   <a href="https://www.photoeditorsdk.com/documentation/android/getting-started">
     <img src="https://img.shields.io/badge/platform-android-2DC25C.svg?style=flat">
