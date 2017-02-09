@@ -21,9 +21,9 @@
 
 
 
-## img.ly SDK for Android
+## PhotoEditor SDK for Android by img.ly
 
-img.ly SDK for Android is for creating stunning images with a nice selection of premium filters.
+The [PhotoEditor SDK] (https://www.photoeditorsdk.com/?utm_source=Github&utm_medium=PESDK&utm_term=Android) for Android is for creating stunning images with a nice selection of premium filters.
 
 <a href="https://play.google.com/store/apps/details?id=com.photoeditorsdk.android.app&utm_source=global_co&utm_medium=prtnr&utm_content=Mar2515&utm_campaign=PartBadge&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1">
     <img height="60" alt="Get it on Google Play" src="https://play.google.com/intl/en_us/badges/images/generic/en-play-badge-border.png" >
@@ -70,7 +70,7 @@ editing tools. Export and integrate them in minutes!
 
 ### License
 
-img.ly SDK for Android is a licensed library which can be used for different purposes. <br/>
+The PhotoEditor SDK for Android is a licensed library which can be used for different purposes. <br/>
 Please see:
 
  [LICENSE.PROPIETARY](https://github.com/imgly/imgly-sdk-android/blob/master/LICENSE.PROPIETARY) for PROPIETARY usage.
@@ -79,12 +79,12 @@ Please see:
 
 &copy; 9elements GmbH <br/>
 [Email](mailto:eray.basar@9elements.com) <br/>
-[Homepage](http://www.9elements.com) <br/>
+[Homepage](https://www.photoeditorsdk.com/?utm_source=Github&utm_medium=PESDK&utm_term=Android) <br/>
 [Follow us on Twitter](https://twitter.com/9elements)
 
 ## Installation
 
-> This SDK requires a minimum deployment target of Android API 15 (4.0.4) and Device with HardwareLayer (for LivePreview) and LargeHeap Support (to operate and export large images)
+> The SDK requires a minimum deployment target of Android API 15 (4.0.4) and Device with HardwareLayer (for LivePreview) and LargeHeap Support (to operate and export large images)
 
 
 ##### 1. Add the imgly maven repo to the project build.gradle.
@@ -102,7 +102,7 @@ Please see:
 ```
 
 
-##### 2. Configure your Module build.gradle to import the img.ly SDK into your project with jCenter.
+##### 2. Configure your Module build.gradle to import the PhotoEditor SDK into your project with jCenter.
 
 There are few things we'll need to add here.
 See comments in the example code below.
@@ -194,14 +194,14 @@ public class Application extends android.app.Application {
 
 ##### 4. Add the License file
 
-Before using any components of the Photo Editor SDK, you have to add your license key file to your application assets folder.
+Before using any components of the PhotoEditor SDK, you have to add your license key file to your application assets folder.
 The default name of the license file is "LICENSE" change this by calling `PESDK.init(this, "FILENAME");` instead of `PESDK.init(this);`  
 
 The license is digitally signed so it can not be altered without becoming invalid. Our sample app comes with its own license, so you can try that right away. To try our SDK in your own app, you need to request a trial license because a license is bound to a bundle identifier. You can request a demo license at https://www.photoeditorsdk.com/pricing.
 
 Once you have the license file it can be used to unlock the view controller. The following example demonstrates the unlock the SDK.
 
-##### 5. Start img.ly SDK default UI.
+##### 5. Start PhotoEditor SDK default UI.
 
 This is what your Activity should look like. Follow the steps below to understand the individual workflow:
 
