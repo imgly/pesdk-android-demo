@@ -192,7 +192,16 @@ public class Application extends android.app.Application {
 }
 ```
 
-##### 4. Start img.ly SDK default UI.
+##### 4. Add the License file
+
+Before using any components of the Photo Editor SDK, you have to add your license key file to your application assets folder.
+The default name of the license file is "LICENSE" change this by calling `PESDK.init(this, "FILENAME");` instead of `PESDK.init(this);`  
+
+The license is digitally signed so it can not be altered without becoming invalid. Our sample app comes with its own license, so you can try that right away. To try our SDK in your own app, you need to request a trial license because a license is bound to a bundle identifier. You can request a demo license at https://www.photoeditorsdk.com/pricing.
+
+Once you have the license file it can be used to unlock the view controller. The following example demonstrates the unlock the SDK.
+
+##### 5. Start img.ly SDK default UI.
 
 This is what your Activity should look like. Follow the steps below to understand the individual workflow:
 
@@ -278,7 +287,7 @@ public class MyActivity extends Activity implements PermissionRequest.Response {
 
 __Do not forget to delegate the onRequestPermissionsResult to PermissionRequest.onRequestPermissionsResult. Otherwise it will not work on Android 6.0 and above.__
 
-##### 4.1. Start Camera Preview Activity with editor backend.
+##### 5.1. Start Camera Preview Activity with editor backend.
 
 ```java
 
@@ -314,7 +323,7 @@ public class MyActivity extends Activity implements PermissionRequest.Response {
 }
 ```
 
-##### 4.2. Start Editor Activity standalone.
+##### 5.2. Start Editor Activity standalone.
 
 ```java
 public class MyActivity extends Activity implements PermissionRequest.Response {
@@ -347,7 +356,7 @@ public class MyActivity extends Activity implements PermissionRequest.Response {
 }   
 ```
 
-##### 5. Customize SDK config for your own Android App.
+##### 6. Customize SDK config for your own Android App.
 
 ```java
 // Custom toolkit modifications can be done by modify the SettingsList.
@@ -437,7 +446,7 @@ public class MyActivity extends Activity implements PermissionRequest.Response {
 }
 ```
 
-##### 6. Set own event tracker. (e. g. Google Analytics...)
+##### 7. Set own event tracker. (e. g. Google Analytics...)
 
 ```java
 // Custom toolkit modifications can be done by modify the SettingsList.
