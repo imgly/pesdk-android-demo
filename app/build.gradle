@@ -50,6 +50,6 @@ android {
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
 
-    compile 'ly.img.android:photo-editor-sdk:3.0.2'
+    compile 'ly.img.android:photo-editor-sdk:3.0.3'
 
 }
