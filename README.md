@@ -151,7 +151,7 @@ android {
 
 dependencies {
     /* Make sure you are import the latest SDK version */
-    compile 'ly.img.android:photo-editor-sdk:3.0.1'
+    compile 'ly.img.android:photo-editor-sdk:3.0.2'
 }
 
 //...
