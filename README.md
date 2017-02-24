@@ -17,6 +17,9 @@
   <a href="http://twitter.com/PhotoEditorSDK">
     <img src="https://img.shields.io/badge/twitter-@PhotoEditorSDK-8646E2.svg?style=flat" alt="Twitter">
   </a>
+  <a href="https://pesdk-slack.herokuapp.com/">
+    <img src="https://pesdk-slack.herokuapp.com/badge.svg" alt="Slack Status">
+  </a>
 </p>
 
 
