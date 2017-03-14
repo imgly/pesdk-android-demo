@@ -22,7 +22,8 @@
     app:blurRadius="1dp"
     app:blurDownSample="5"
     app:blurSource="@+id/rootView"
-    android:background="#992B2B2B">
+    android:background="#992B2B2B"
+    android:clickable="false">
 
     <RelativeLayout
         android:id="@+id/contentView"

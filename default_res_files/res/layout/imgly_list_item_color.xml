@@ -40,7 +40,6 @@
         android:id="@+id/itemOptionIcon"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/imgly_icon_item_options"
         tool:srcCompat="@drawable/imgly_icon_item_options"
         android:scaleType="center"
         android:layout_alignParentBottom="true"

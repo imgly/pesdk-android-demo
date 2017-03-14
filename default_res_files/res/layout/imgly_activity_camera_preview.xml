@@ -25,7 +25,7 @@
         android:layout_height="match_parent"
         android:layout_centerInParent="true"
         >
-        <ly.img.android.acs.CamView
+        <ly.img.android.acs.CameraView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_centerInParent="true"
@@ -38,8 +38,10 @@
     </RelativeLayout>
 
     <RelativeLayout
+        android:id="@+id/cameraUi"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        >
         <RelativeLayout
             android:id="@+id/imglyActionBar"
             android:layout_alignParentTop="true"
@@ -47,56 +49,37 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             style="@style/Imgly.Preview.Header">
-            <!--AutoRotateLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentLeft="true"
-                tools:ignore="RelativeOverlap,RtlHardcoded">
-                <Button
-                    android:id="@+id/flashButton"
-                    android:layout_width="wrap_content"
-                    android:layout_height="50dp"
-                    android:layout_centerInParent="true"
-                    style="@style/Imgly.Preview.Header.Button.FlashButton"
-                    />
-            </AutoRotateLayout-->
-            <Button
+            <LinearLayout
                 android:id="@+id/flashButton"
-                android:layout_width="wrap_content"
-                android:layout_height="50dp"
-                android:layout_alignParentLeft="true"
-                style="@style/Imgly.Preview.Header.Button.FlashButton"
-                />
-            <!--AutoRotateLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerHorizontal="true"
-                tools:ignore="RelativeOverlap">
-                <ToggleButton
-                    android:id="@+id/hdrButton"
+                style="@style/Imgly.Preview.Header.Button.FlashButton">
+                <ly.img.android.ui.widgets.AutoRotateImageSource
+                    android:id="@+id/flashButtonIcon"
+                    style="@style/Imgly.Preview.Header.Button.FlashButton.Icon"
+                    />
+                <ly.img.android.ui.widgets.AutoRotateLayout
                     android:layout_width="wrap_content"
-                    android:layout_height="50dp"
-                    android:layout_centerInParent="true"
-                    style="@style/Imgly.Preview.Header.Button.HDRButton"/>
-            </AutoRotateLayout-->
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+                <TextView
+                    android:id="@+id/flashButtonLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/Imgly.Preview.Header.Button.FlashButton.Label"
+                    />
+                </ly.img.android.ui.widgets.AutoRotateLayout>
+            </LinearLayout>
             <ToggleButton
                 android:id="@+id/hdrButton"
                 android:layout_width="wrap_content"
                 android:layout_height="50dp"
                 android:layout_centerHorizontal="true"
                 style="@style/Imgly.Preview.Header.Button.HDRButton"/>
-            <ly.img.android.ui.widgets.AutoRotateLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+            <ly.img.android.ui.widgets.AutoRotateImageSource
+                android:id="@+id/switchCameraButton"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
                 android:layout_alignParentRight="true"
-                tools:ignore="RelativeOverlap,RtlHardcoded">
-                <ImageButton
-                    android:id="@+id/switchCameraButton"
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:layout_centerInParent="true"
-                    style="@style/Imgly.Preview.Header.Button.SwitchCameraButton"/>
-            </ly.img.android.ui.widgets.AutoRotateLayout>
+                style="@style/Imgly.Preview.Header.Button.SwitchCameraButton"/>
         </RelativeLayout>
 
         <TextView
