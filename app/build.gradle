@@ -6,7 +6,7 @@ buildscript {
         }
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:2.3.0-beta3'
+        classpath 'com.android.tools.build:gradle:2.3.0'
         classpath 'com.mutualmobile.gradle.plugins:dexinfo:0.1.2'
     }
 }
@@ -50,6 +50,6 @@ android {
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
 
-    compile 'ly.img.android:photo-editor-sdk:3.0.3'
+    compile 'ly.img.android:photo-editor-sdk:3.0.6'
 
 }
