@@ -26,7 +26,7 @@
 
 ## PhotoEditor SDK for Android by img.ly
 
-The [PhotoEditor SDK] (https://www.photoeditorsdk.com/?utm_campaign=Projects&utm_source=Github&utm_medium=PESDK&utm_term=Android) for Android is for creating stunning images with a nice selection of premium filters.
+The [PhotoEditor SDK](https://www.photoeditorsdk.com/?utm_campaign=Projects&utm_source=Github&utm_medium=PESDK&utm_term=Android) for Android is for creating stunning images with a nice selection of premium filters.
 
 <a href="https://play.google.com/store/apps/details?id=com.photoeditorsdk.android.app&utm_source=global_co&utm_medium=prtnr&utm_content=Mar2515&utm_campaign=PartBadge&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1">
     <img height="60" alt="Get it on Google Play" src="https://play.google.com/intl/en_us/badges/images/generic/en-play-badge-border.png" >
@@ -200,7 +200,7 @@ public class Application extends android.app.Application {
 Before using any components of the PhotoEditor SDK, you have to add your license key file to your application assets folder.
 The default name of the license file is "LICENSE" change this by calling `PESDK.init(this, "FILENAME");` instead of `PESDK.init(this);`  
 
-The license is digitally signed so it can not be altered without becoming invalid. Our sample app comes with its own license, so you can try that right away. To try our SDK in your own app, you need to request a trial license because a license is bound to a bundle identifier. You can start a free two week trial with a demo license [here] (https://www.photoeditorsdk.com/users/new/?utm_campaign=Projects&utm_source=Github&utm_medium=PESDK&utm_term=Android).
+The license is digitally signed so it can not be altered without becoming invalid. Our sample app comes with its own license, so you can try that right away. To try our SDK in your own app, you need to request a trial license because a license is bound to a bundle identifier. You can start a free two week trial with a demo license [here](https://www.photoeditorsdk.com/users/new/?utm_campaign=Projects&utm_source=Github&utm_medium=PESDK&utm_term=Android).
 
 Once you have the license file it can be used to unlock the view controller. The following example demonstrates the unlock the SDK.
 
