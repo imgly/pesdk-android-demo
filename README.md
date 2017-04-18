@@ -12,7 +12,7 @@
     <img src="https://img.shields.io/badge/platform-android-2DC25C.svg?style=flat">
   </a>
   <a href="https://artifactory.9elements.com/artifactory/imgly/ly/img/android/photo-editor-sdk/">
-    <img src="https://api.photoeditorsdk.com/badges/android.svg" alt="Maven">
+    <img src="https://api.photoeditorsdk.com/badges/android.svg?version=latest" alt="Maven">
   </a>
   <a href="http://twitter.com/PhotoEditorSDK">
     <img src="https://img.shields.io/badge/twitter-@PhotoEditorSDK-8646E2.svg?style=flat" alt="Twitter">
