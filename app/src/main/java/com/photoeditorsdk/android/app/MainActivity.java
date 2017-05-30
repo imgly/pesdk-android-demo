@@ -2,6 +2,7 @@ package com.photoeditorsdk.android.app;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.graphics.Matrix;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -10,6 +11,7 @@ import android.widget.Toast;
 import java.io.File;
 
 import ly.img.android.PESDK;
+import ly.img.android.acs.GPSLocationProvider;
 import ly.img.android.sdk.models.constant.Directory;
 import ly.img.android.sdk.models.state.CameraSettings;
 import ly.img.android.sdk.models.state.EditorSaveSettings;
@@ -32,6 +34,7 @@ public class MainActivity extends Activity implements PermissionRequest.Response
     protected void onResume() {
         super.onResume();
         SettingsList settingsList = new SettingsList();
+
 
         settingsList
                 .getSettingsModel(CameraSettings.class)

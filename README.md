@@ -1,5 +1,6 @@
 
 
+
 <p align="center">
   <img src="http://static.photoeditorsdk.com/logo.png" />
 </p>
@@ -8,11 +9,11 @@
     <img src="https://img.shields.io/badge/MIN_SDK-15-B8D529.svg?style=flat">
     <img src="https://img.shields.io/badge/BUILD_SDK-25-92D230.svg?style=flat">
   </a>
-  <a href="https://www.photoeditorsdk.com/documentation/android/getting-started/?utm_campaign=Projects&utm_source=Github&utm_medium=PESDK&utm_term=Android">
+  <a href="https://www.photoeditorsdk.com/documentation/android/getting-started">
     <img src="https://img.shields.io/badge/platform-android-2DC25C.svg?style=flat">
   </a>
   <a href="https://artifactory.9elements.com/artifactory/imgly/ly/img/android/photo-editor-sdk/">
-    <img src="https://api.photoeditorsdk.com/badges/android.svg?version=latest" alt="Maven">
+    <img src="https://api.photoeditorsdk.com/badges/android.svg?" alt="Maven">
   </a>
   <a href="http://twitter.com/PhotoEditorSDK">
     <img src="https://img.shields.io/badge/twitter-@PhotoEditorSDK-8646E2.svg?style=flat" alt="Twitter">
@@ -24,17 +25,21 @@
 
 
 
-## PhotoEditor SDK for Android by img.ly
+## img.ly SDK for Android
 
-The [PhotoEditor SDK](https://www.photoeditorsdk.com/?utm_campaign=Projects&utm_source=Github&utm_medium=PESDK&utm_term=Android) for Android is for creating stunning images with a nice selection of premium filters.
+img.ly SDK for Android is for creating stunning images with a nice selection of premium filters.
 
 <a href="https://play.google.com/store/apps/details?id=com.photoeditorsdk.android.app&utm_source=global_co&utm_medium=prtnr&utm_content=Mar2515&utm_campaign=PartBadge&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1">
     <img height="60" alt="Get it on Google Play" src="https://play.google.com/intl/en_us/badges/images/generic/en-play-badge-border.png" >
 </a>
 
+## License 
+The PhotoEditorSDK is a product of 9elements GmbH. 
+Please [order a license](https://www.photoeditorsdk.com/pricing#contact/?utm_campaign=Projects&utm_source=Github&utm_medium=Side_Projects&utm_content=Android-Demo). Please see the included [LICENSE.PROPIETARY](https://github.com/imgly/imgly-sdk-android/blob/master/LICENSE.PROPIETARY) for licensing details.
+
 ### Overview
 
-The img.ly [PhotoEditor SDK](https://www.photoeditorsdk.com/?utm_campaign=Projects&utm_source=Github&utm_medium=PESDK&utm_term=Android) provides a variety of tools and functions for creating photo applications for Android. It is licensed under a proprietary license and intended to be used as better alternative for free software applications such as the [GPUImage](https://github.com/CyberAgent/android-gpuimage) or similiar libraries. If you are interested in our SDK, please [contact us](#author--contact).
+The img.ly Photo Editor SDK provides a variety of tools and functions for creating photo applications for Android. It is licensed under a proprietary license and intended to be used as better alternative for free software applications such as the [GPUImage](https://github.com/CyberAgent/android-gpuimage) or similiar libraries. If you are interested in our SDK, please [contact us](#author--contact).
 
 #### SDK Core
 
@@ -56,7 +61,7 @@ Two Google support libraries needed or used by the SDK.
 
 ### Features
 
-* __Android API Level 15+__. Covers nearly 95% of all Android devices.
+* __Android API Level 16+__. Covers nearly 99% of all Android devices with touchscreen.
 * __Default UI__. for camera preview and editing. Based on Intents and Activities.
 * __Fast image export up to 4294 MegaPixel__. Even with large images and slow devices with low memory the export is done in adequate time with a intelligent unrivaled background processing technology.
 * __Generic camera support__. Integrated and featureful on the most Android phones.
@@ -71,23 +76,17 @@ editing tools. Export and integrate them in minutes!
 * __Low memory footprint__. even with high resolution images.
 * __Extensible and customizable toolkit interface__. Add your own customized filters with [Renderscript](https://developer.android.com/guide/topics/renderscript/index.html) and modify tool properties yourself.
 
-### License
-
-The PhotoEditor SDK for Android is a licensed library which can be used for different purposes. <br/>
-Please see:
-
- [LICENSE.PROPIETARY](https://github.com/imgly/imgly-sdk-android/blob/master/LICENSE.PROPIETARY) for PROPIETARY usage.
 
 ### Author & Contact
 
 &copy; 9elements GmbH <br/>
 [Email](mailto:eray.basar@9elements.com) <br/>
-[Homepage](https://www.photoeditorsdk.com/?utm_campaign=Projects&utm_source=Github&utm_medium=PESDK&utm_term=Android) <br/>
+[Homepage](http://www.9elements.com) <br/>
 [Follow us on Twitter](https://twitter.com/9elements)
 
 ## Installation
 
-> The SDK requires a minimum deployment target of Android API 15 (4.0.4) and Device with HardwareLayer (for LivePreview) and LargeHeap Support (to operate and export large images)
+> This SDK requires a minimum deployment target of Android API 15 (4.0.4) and Device with HardwareLayer (for LivePreview), but our official support is starting with API 16 (4.1)
 
 
 ##### 1. Add the imgly maven repo to the project build.gradle.
@@ -105,7 +104,7 @@ Please see:
 ```
 
 
-##### 2. Configure your Module build.gradle to import the PhotoEditor SDK into your project with jCenter.
+##### 2. Configure your Module build.gradle to import the img.ly SDK into your project with jCenter.
 
 There are few things we'll need to add here.
 See comments in the example code below.
@@ -114,6 +113,9 @@ __DO NOT FORGET TO ADD RENDERSCRIPT SUPPORT!__
 
 ```groovy
 apply plugin: 'com.android.application'
+
+/* Optional if you do not use the build-processor see below */
+apply plugin: 'com.neenbedankt.android-apt' 
 
 android {
     /* Set the Compile SDK and the Build SDK 25. */
@@ -131,7 +133,7 @@ android {
         /* Set the minimum supported SDK Version to 15 (Android 4.0.3) or higher */
         minSdkVersion 15
 
-        /* Set the target SDK Version at minimum to 24 or higher */
+        /* Set the target SDK Version at minimum to 25 or higher */
         targetSdkVersion 25
 
         /* Set your own Version Code and Version name */
@@ -154,7 +156,12 @@ android {
 
 dependencies {
     /* Make sure you are import the latest SDK version */
-    compile 'ly.img.android:photo-editor-sdk:3.1.0'
+    compile 'ly.img.android:photo-editor-sdk:4.0.0'
+    
+    /* This is optional if you do not want use an `EventTracker` and do not extend our SDK, otherwise it is required. 
+     * don't forget to apply the APT plugin see above
+     */
+    apt 'ly.img.android:build-processor:4.0.0' 
 }
 
 //...
@@ -197,14 +204,14 @@ public class Application extends android.app.Application {
 
 ##### 4. Add the License file
 
-Before using any components of the PhotoEditor SDK, you have to add your license key file to your application assets folder.
+Before using any components of the Photo Editor SDK, you have to add your license key file to your application assets folder.
 The default name of the license file is "LICENSE" change this by calling `PESDK.init(this, "FILENAME");` instead of `PESDK.init(this);`  
 
-The license is digitally signed so it can not be altered without becoming invalid. Our sample app comes with its own license, so you can try that right away. To try our SDK in your own app, you need to request a trial license because a license is bound to a bundle identifier. You can start a free two week trial with a demo license [here](https://www.photoeditorsdk.com/users/new/?utm_campaign=Projects&utm_source=Github&utm_medium=PESDK&utm_term=Android).
+The license is digitally signed so it can not be altered without becoming invalid. Our sample app comes with its own license, so you can try that right away. To try our SDK in your own app, you need to request a trial license because a license is bound to a bundle identifier. You can request a demo license at https://www.photoeditorsdk.com/pricing.
 
 Once you have the license file it can be used to unlock the view controller. The following example demonstrates the unlock the SDK.
 
-##### 5. Start PhotoEditor SDK default UI.
+##### 5. Start img.ly SDK default UI.
 
 This is what your Activity should look like. Follow the steps below to understand the individual workflow:
 
@@ -456,6 +463,7 @@ public class MyActivity extends Activity implements PermissionRequest.Response {
 public class MyActivity extends Activity implements PermissionRequest.Response {
     // ...
     public void setMyEventTracker(SettingsList settingsList) {
+        settingsList.setEventProcessor(your.packagename.PESDKEvents.clss);
         settingsList.setEventTracker(new CustomEventTracker(Application.ANALYTICS_TRACK_ID));
     }
     // ...
