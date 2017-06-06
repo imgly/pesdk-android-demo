@@ -1,5 +1,12 @@
 # PhotoEditor SDK - Changelog
 
+## v4.0.1
+
+### Fixed
+* Overlays sometimes not changed.
+* Native crash on Android <= 5.0 devices, because of a memory leak inside Googles Vector Drawable support library. (This is not our fault but we have found a Workaround)
+* The dismiss dialog appears, without any changes.
+
 ## v4.0.0
 
 ### Changed

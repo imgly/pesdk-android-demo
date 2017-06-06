@@ -52,7 +52,7 @@ android {
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
 
-    compile 'ly.img.android:photo-editor-sdk:4.0.0'
-        apt 'ly.img.android:build-processor:4.0.0'
+    compile 'ly.img.android:photo-editor-sdk:4.0.1'
+        apt 'ly.img.android:build-processor:4.0.1'
 
 }
