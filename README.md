@@ -25,9 +25,9 @@
 
 
 
-## img.ly SDK for Android
+## PhotoEditor SDK for Android
 
-img.ly SDK for Android is for creating stunning images with a nice selection of premium filters.
+PhotoEditor SDK for Android is for creating stunning images with a nice selection of premium filters.
 
 <a href="https://play.google.com/store/apps/details?id=com.photoeditorsdk.android.app&utm_source=global_co&utm_medium=prtnr&utm_content=Mar2515&utm_campaign=PartBadge&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1">
     <img height="60" alt="Get it on Google Play" src="https://play.google.com/intl/en_us/badges/images/generic/en-play-badge-border.png" >
@@ -35,11 +35,11 @@ img.ly SDK for Android is for creating stunning images with a nice selection of 
 
 ## License 
 The PhotoEditorSDK is a product of 9elements GmbH. 
-Please [order a license](https://www.photoeditorsdk.com/pricing#contact/?utm_campaign=Projects&utm_source=Github&utm_medium=Side_Projects&utm_content=Android-Demo). Please see the included [LICENSE](https://github.com/imgly/pesdk-android-demo/blob/master/LICENSE.md) for licensing details.
+Please [order a license](https://www.photoeditorsdk.com/pricing#contact/?utm_campaign=Projects&utm_source=Github&utm_medium=Side_Projects&utm_content=Android-Demo). Please see the included [LICENSE.md](./LICENSE.md) for licensing details.
 
 ### Overview
 
-The img.ly Photo Editor SDK provides a variety of tools and functions for creating photo applications for Android. It is licensed under a proprietary license and intended to be used as better alternative for free software applications such as the [GPUImage](https://github.com/CyberAgent/android-gpuimage) or similiar libraries. If you are interested in our SDK, please [contact us](#author--contact).
+The PhotoEditor Photo Editor SDK provides a variety of tools and functions for creating photo applications for Android. It is licensed under a proprietary license and intended to be used as better alternative for free software applications such as the [GPUImage](https://github.com/CyberAgent/android-gpuimage) or similiar libraries. If you are interested in our SDK, please [contact us](#author--contact).
 
 #### SDK Core
 
@@ -47,7 +47,7 @@ __ACS Component__ <br/>
 A generic Android Camera Stack library which is based on the [android.hardware.Camera](http://developer.android.com/reference/android/hardware/Camera.html) API. Supports front and rear cam, HDR, flash modes and much more.
 
 __SDK Component__ <br/>
-The img.ly core library for Android. Containing the OpenGL and toolkit implementation.
+The PhotoEditor core library for Android. Containing the OpenGL and toolkit implementation.
 
 __UI Component__ <br/>
 The default UI components consisting of LivePreview and Editor Activity.
@@ -80,9 +80,9 @@ editing tools. Export and integrate them in minutes!
 ### Author & Contact
 
 &copy; 9elements GmbH <br/>
-[Email](mailto:eray.basar@9elements.com) <br/>
-[Homepage](http://www.9elements.com) <br/>
-[Follow us on Twitter](https://twitter.com/9elements)
+[Email](mailto:support@photoeditorsdk.com) <br/>
+[Homepage](https://www.photoeditorsdk.com/) <br/>
+[Twitter](https://twitter.com/PhotoEditorSDK) <br/>
 
 ## Installation
 
@@ -104,7 +104,7 @@ editing tools. Export and integrate them in minutes!
 ```
 
 
-##### 2. Configure your Module build.gradle to import the img.ly SDK into your project with jCenter.
+##### 2. Configure your Module build.gradle to import the PhotoEditor SDK into your project with jCenter.
 
 There are few things we'll need to add here.
 See comments in the example code below.
@@ -156,12 +156,12 @@ android {
 
 dependencies {
     /* Make sure you are import the latest SDK version */
-    compile 'ly.img.android:photo-editor-sdk:4.0.1'
+    compile 'ly.img.android:photo-editor-sdk:4.0.2'
     
     /* This is optional if you do not want use an `EventTracker` and do not extend our SDK, otherwise it is required. 
      * don't forget to apply the APT plugin see above
      */
-    apt 'ly.img.android:build-processor:4.0.1' 
+    apt 'ly.img.android:build-processor:4.0.2' 
 }
 
 //...
@@ -211,7 +211,7 @@ The license is digitally signed so it can not be altered without becoming invali
 
 Once you have the license file it can be used to unlock the view controller. The following example demonstrates the unlock the SDK.
 
-##### 5. Start img.ly SDK default UI.
+##### 5. Start PhotoEditor SDK default UI.
 
 This is what your Activity should look like. Follow the steps below to understand the individual workflow:
 
