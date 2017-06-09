@@ -35,7 +35,7 @@ PhotoEditor SDK for Android is for creating stunning images with a nice selectio
 
 ## License 
 The PhotoEditorSDK is a product of 9elements GmbH. 
-Please [order a license](https://www.photoeditorsdk.com/pricing#contact/?utm_campaign=Projects&utm_source=Github&utm_medium=Side_Projects&utm_content=Android-Demo). Please see the included [LICENSE.md](./LICENSE.md) for licensing details.
+Please [order a license](https://www.photoeditorsdk.com/pricing/?utm_campaign=Projects&utm_source=Github&utm_medium=Side_Projects&utm_content=Android-Demo). Please see the included [LICENSE.md](./LICENSE.md) for licensing details.
 
 ### Overview
 
@@ -81,7 +81,7 @@ editing tools. Export and integrate them in minutes!
 
 &copy; 9elements GmbH <br/>
 [Email](mailto:support@photoeditorsdk.com) <br/>
-[Homepage](https://www.photoeditorsdk.com/) <br/>
+[Homepage](https://www.photoeditorsdk.com/?utm_campaign=Projects&utm_source=Github&utm_medium=Side_Projects&utm_content=Android-Demo) <br/>
 [Twitter](https://twitter.com/PhotoEditorSDK) <br/>
 
 ## Installation
@@ -207,7 +207,7 @@ public class Application extends android.app.Application {
 Before using any components of the Photo Editor SDK, you have to add your license key file to your application assets folder.
 The default name of the license file is "LICENSE" change this by calling `PESDK.init(this, "FILENAME");` instead of `PESDK.init(this);`  
 
-The license is digitally signed so it can not be altered without becoming invalid. Our sample app comes with its own license, so you can try that right away. To try our SDK in your own app, you need to request a trial license because a license is bound to a bundle identifier. You can request a demo license at https://www.photoeditorsdk.com/pricing#contact.
+The license is digitally signed so it can not be altered without becoming invalid. Our sample app comes with its own license, so you can try that right away. To try our SDK in your own app, you need to request a trial license because a license is bound to a bundle identifier. You can request a demo license [here](https://www.photoeditorsdk.com/pricing/?utm_campaign=Projects&utm_source=Github&utm_medium=Side_Projects&utm_content=Android-Demo).
 
 Once you have the license file it can be used to unlock the view controller. The following example demonstrates the unlock the SDK.
 
