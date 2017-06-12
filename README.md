@@ -2,7 +2,7 @@
 
 
 <p align="center">
-  <img src="http://static.photoeditorsdk.com/logo.png" />
+    <a target="_blank" href="https://www.photoeditorsdk.com/?utm_campaign=Projects&utm_source=Github&utm_medium=Side_Projects&utm_content=Android-Demo"><img src="http://static.photoeditorsdk.com/logo.png" alt="PhotoEditor SDK Logo"/></a>
 </p>
 <p align="center">
   <a href="http://developer.android.com/guide/topics/manifest/uses-sdk-element.html#ApiLevels">
