@@ -26,6 +26,7 @@
     <color name="imgly_theme_color_active">#FF0B67EF</color>
 
     <color name="imgly_icon_color">#FFFFFFFF</color>
+    <color name="imgly_icon_color_disabled">#33FFFFFF</color>
     <color name="imgly_icon_color_active">@color/imgly_theme_color</color>
 
     <color name="imgly_slider_thumb_color">#FFFFFFFF</color>

@@ -18,7 +18,7 @@
 
     <string name="imgly_color_filter_value" formatted="false">%d</string>
 
-    <string name="imgly_color_filter_name_default">NONE</string>
+    <string name="imgly_color_filter_name_default">None</string>
 
     <string name="imgly_color_filter_name_ad1920">1920</string>
     <string name="imgly_color_filter_name_ancient">Ancient</string>

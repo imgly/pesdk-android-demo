@@ -25,7 +25,92 @@
     <string name="imgly_sticker_option_to_front">To Front</string>
     <string name="imgly_sticker_option_straighten">Straighten</string>
 
-    <string name="imgly_sticker_name_sticker">Sticker</string>
+    <string name="imgly_sticker_category_name_emoticons">Emotions</string>
+
+    <string name="imgly_sticker_name_emoticons_alien">alien</string>
+    <string name="imgly_sticker_name_emoticons_angel">angel</string>
+    <string name="imgly_sticker_name_emoticons_angry">angry</string>
+    <string name="imgly_sticker_name_emoticons_anxious">anxious</string>
+    <string name="imgly_sticker_name_emoticons_asleep">asleep</string>
+    <string name="imgly_sticker_name_emoticons_attention">attention</string>
+    <string name="imgly_sticker_name_emoticons_baby_chicken">Baby chicken</string>
+    <string name="imgly_sticker_name_emoticons_batman">batman</string>
+    <string name="imgly_sticker_name_emoticons_beer">beer</string>
+    <string name="imgly_sticker_name_emoticons_blush">blush</string>
+    <string name="imgly_sticker_name_emoticons_boxer">boxer</string>
+    <string name="imgly_sticker_name_emoticons_business">business</string>
+    <string name="imgly_sticker_name_emoticons_chicken">chicken</string>
+    <string name="imgly_sticker_name_emoticons_cool">cool</string>
+    <string name="imgly_sticker_name_emoticons_cry">cry</string>
+    <string name="imgly_sticker_name_emoticons_deceased">deceased</string>
+    <string name="imgly_sticker_name_emoticons_devil">devil</string>
+    <string name="imgly_sticker_name_emoticons_duckface">duckface</string>
+    <string name="imgly_sticker_name_emoticons_furious">furious</string>
+    <string name="imgly_sticker_name_emoticons_grin">grin</string>
+    <string name="imgly_sticker_name_emoticons_guitar">guitar</string>
+    <string name="imgly_sticker_name_emoticons_harry_potter">Harry potter</string>
+    <string name="imgly_sticker_name_emoticons_hippie">hippie</string>
+    <string name="imgly_sticker_name_emoticons_hitman">hitman</string>
+    <string name="imgly_sticker_name_emoticons_humourous">humourous</string>
+    <string name="imgly_sticker_name_emoticons_idea">idea</string>
+    <string name="imgly_sticker_name_emoticons_impatient">impatient</string>
+    <string name="imgly_sticker_name_emoticons_kiss">kiss</string>
+    <string name="imgly_sticker_name_emoticons_kisses">kisses</string>
+    <string name="imgly_sticker_name_emoticons_laugh">laugh</string>
+    <string name="imgly_sticker_name_emoticons_loud_cry">Loud cry</string>
+    <string name="imgly_sticker_name_emoticons_loving">loving</string>
+    <string name="imgly_sticker_name_emoticons_masked">masked</string>
+    <string name="imgly_sticker_name_emoticons_music">music</string>
+    <string name="imgly_sticker_name_emoticons_nerd">nerd</string>
+    <string name="imgly_sticker_name_emoticons_ninja">ninja</string>
+    <string name="imgly_sticker_name_emoticons_not_speaking_to_you">Not speaking to you</string>
+    <string name="imgly_sticker_name_emoticons_pig">pig</string>
+    <string name="imgly_sticker_name_emoticons_pumpkin">pumpkin</string>
+    <string name="imgly_sticker_name_emoticons_question">question</string>
+    <string name="imgly_sticker_name_emoticons_rabbit">rabbit</string>
+    <string name="imgly_sticker_name_emoticons_sad">sad</string>
+    <string name="imgly_sticker_name_emoticons_sick">sick</string>
+    <string name="imgly_sticker_name_emoticons_skateboard">skateboard</string>
+    <string name="imgly_sticker_name_emoticons_skull">skull</string>
+    <string name="imgly_sticker_name_emoticons_sleepy">sleepy</string>
+    <string name="imgly_sticker_name_emoticons_smile">smile</string>
+    <string name="imgly_sticker_name_emoticons_smoking">smoking</string>
+    <string name="imgly_sticker_name_emoticons_sobbing">sobbing</string>
+    <string name="imgly_sticker_name_emoticons_star">star</string>
+    <string name="imgly_sticker_name_emoticons_steaming_furious">Steaming furious</string>
+    <string name="imgly_sticker_name_emoticons_sunbathing">sunbathing</string>
+    <string name="imgly_sticker_name_emoticons_tired">tired</string>
+    <string name="imgly_sticker_name_emoticons_tongue_out_wink">Tongue out wink</string>
+    <string name="imgly_sticker_name_emoticons_wave">wave</string>
+    <string name="imgly_sticker_name_emoticons_wide_grin">Wide grin</string>
+    <string name="imgly_sticker_name_emoticons_wink">wink</string>
+    <string name="imgly_sticker_name_emoticons_wrestler">wrestler</string>
+
+
+    <string name="imgly_sticker_category_name_shapes">Shapes</string>
+
+    <string name="imgly_sticker_name_shapes_arrow_02">arrow_02</string>
+    <string name="imgly_sticker_name_shapes_arrow_03">arrow_03</string>
+    <string name="imgly_sticker_name_shapes_badge_01">badge_01</string>
+    <string name="imgly_sticker_name_shapes_badge_04">badge_04</string>
+    <string name="imgly_sticker_name_shapes_badge_06">badge_06</string>
+    <string name="imgly_sticker_name_shapes_badge_08">badge_08</string>
+    <string name="imgly_sticker_name_shapes_badge_11">badge_11</string>
+    <string name="imgly_sticker_name_shapes_badge_12">badge_12</string>
+    <string name="imgly_sticker_name_shapes_badge_13">badge_13</string>
+    <string name="imgly_sticker_name_shapes_badge_15">badge_15</string>
+    <string name="imgly_sticker_name_shapes_badge_18">badge_18</string>
+    <string name="imgly_sticker_name_shapes_badge_19">badge_19</string>
+    <string name="imgly_sticker_name_shapes_badge_20">badge_20</string>
+    <string name="imgly_sticker_name_shapes_badge_28">badge_28</string>
+    <string name="imgly_sticker_name_shapes_badge_32">badge_32</string>
+    <string name="imgly_sticker_name_shapes_badge_35">badge_35</string>
+    <string name="imgly_sticker_name_shapes_badge_36">badge_36</string>
+    <string name="imgly_sticker_name_shapes_spray_01">spray_01</string>
+    <string name="imgly_sticker_name_shapes_spray_03">spray_03</string>
+    <string name="imgly_sticker_name_shapes_spray_04">spray_04</string>
+
+    <!--string name="imgly_sticker_name_sticker">Sticker</string>
     <string name="imgly_sticker_name_glasses_normal">Glasses</string>
     <string name="imgly_sticker_name_glasses_nerd">Nerd Glasses</string>
     <string name="imgly_sticker_name_glasses_shutter_green">Shutter Glasses</string>
@@ -73,7 +158,7 @@
     <string name="imgly_sticker_name_toy_castle">Castle</string>
     <string name="imgly_sticker_name_toy_blocks">Blocks</string>
     <string name="imgly_sticker_name_toy_blocks_tower">Tower</string>
-    <string name="imgly_sticker_name_toy_beach_ball">Beach Ball</string>
+    <string name="imgly_sticker_name_toy_beach_ball">Beach Ball</string-->
 
 
 </resources>

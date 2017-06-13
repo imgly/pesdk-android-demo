@@ -26,10 +26,12 @@
             android:id="@+id/cancelButton"
             android:scaleType="center"
             style="@style/Imgly.Editor.Header.Button.CancelButton" />
+
         <Space
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"/>
+
         <ly.img.android.ui.widgets.AutoRotateImageSource
             android:id="@+id/acceptButton"
             android:scaleType="center"

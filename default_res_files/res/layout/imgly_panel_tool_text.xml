@@ -14,14 +14,11 @@
   ~ https://www.photoeditorsdk.com/LICENSE.txt
   -->
 
-<ly.img.android.ui.widgets.RelativeBlurLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/rootView"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    app:blurRadius="1dp"
-    app:blurDownSample="5"
-    app:blurSource="@+id/rootView"
     android:background="#992B2B2B"
     android:clickable="false">
 
@@ -30,10 +27,11 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="#992B2B2B">
-        <EditText
+        <ly.img.android.ui.widgets.AutoFitEditText
             android:id="@+id/textInputField"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:padding="20dp"
             android:textSize="37dp"
             android:text=""
             android:hint="@string/imgly_text_panel_edit_text_placeholder"
@@ -41,9 +39,10 @@
             android:layout_centerInParent="true"
             android:textColor="#FFFFFFFF"
             android:imeOptions="actionDone"
-            android:inputType="textCapSentences|textAutoCorrect"
+            android:inputType="textCapSentences|textAutoCorrect|textMultiLine"
             android:background="@color/transparent"
-            android:maxLines="1"/>
+            android:lines="1"
+            android:maxLines="25"/>
     </RelativeLayout>
 
-</ly.img.android.ui.widgets.RelativeBlurLayout>
+</RelativeLayout>

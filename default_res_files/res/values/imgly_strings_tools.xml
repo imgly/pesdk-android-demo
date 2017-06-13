@@ -22,6 +22,7 @@
     <string name="imgly_tool_name_focus">Focus</string>
     <string name="imgly_tool_name_crop">Transform</string>
     <string name="imgly_tool_name_brush">Brush</string>
+    <string name="imgly_tool_name_overlay">Overlay</string>
     <string name="imgly_tool_name_frame">Frame</string>
     <string name="imgly_tool_name_brush_color">Brush Color</string>
     <string name="imgly_tool_name_adjust">Adjust</string>
@@ -32,6 +33,7 @@
     <string name="imgly_tool_name_adjust_contrast">Contrast</string>
     <string name="imgly_tool_name_adjust_saturation">Saturation</string>
     <string name="imgly_tool_name_adjust_claity">Clarity</string>
+    <string name="imgly_tool_name_adjust_gamma">Gamma</string>
     <string name="imgly_tool_name_sticker">Sticker</string>
     <string name="imgly_tool_name_sticker_options">Sticker Options</string>
     <string name="imgly_tool_name_text">Text</string>

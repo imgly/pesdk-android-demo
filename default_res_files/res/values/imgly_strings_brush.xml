@@ -22,4 +22,6 @@
     <string name="imgly_brush_option_backwards">Undo</string>
     <string name="imgly_brush_option_bring_to_front">To Front</string>
 
+    <string name="imgly_brush_buffer_overflow_warning">You draw to fast for your device, please wait.</string>
+
 </resources>

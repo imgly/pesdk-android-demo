@@ -52,14 +52,14 @@
 		<attr name="borderRadius" format="dimension"/>
 	</declare-styleable>
 
-	<declare-styleable name="RelativeBlurLayout">
+	<!--declare-styleable name="RelativeBlurLayout">
 		<attr name="blurRadius" format="dimension"/>
 		<attr name="blurDownSample" format="integer"/>
 		<attr name="blurSource" format="reference"/>
 		<attr name="blurRootSource" format="boolean"/>
 		<attr name="blurUpdateAtStart" format="boolean"/>
 		<attr name="blurUpdateOnInvalidate" format="boolean"/>
-	</declare-styleable>
+	</declare-styleable-->
 
 	<declare-styleable name="GridListView">
 		<attr name="spanSize" format="dimension"/>

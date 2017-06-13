@@ -40,6 +40,7 @@
         android:id="@+id/seekBar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:alpha="0.7"
         style="@style/Imgly.SeekSlider"/>
 
     <include layout="@layout/imgly_option_list"/>

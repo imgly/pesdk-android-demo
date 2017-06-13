@@ -13,37 +13,33 @@
   ~
   ~ https://www.photoeditorsdk.com/LICENSE.txt
   -->
-<LinearLayout
+<ly.img.android.ui.widgets.EditorRootView
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/rootView"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
-    <RelativeLayout style="@style/Imgly.Editor.Toolbar.Container">
-        <RelativeLayout style="@style/Imgly.Editor.Preview">
-            <ly.img.android.sdk.views.EditorPreview
-                android:id="@+id/editorImageView"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_centerInParent="true"
-                />
-            <ly.img.android.sdk.views.ProgressView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_centerInParent="true"
-                android:visibility="gone"
-                />
-        </RelativeLayout>
-        <ly.img.android.ui.widgets.ToolContainer
-            android:id="@+id/toolPanelContainer"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:minHeight="80dp"
-            android:layout_alignParentBottom="true"
-            />
-    </RelativeLayout>
+    <ly.img.android.sdk.views.EditorPreview
+        android:id="@+id/editorImageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="136dp"/>
+    <ly.img.android.sdk.views.ProgressView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:visibility="gone"/>
+    <ly.img.android.ui.widgets.ToolContainer
+        android:id="@+id/toolPanelContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="80dp"
+        android:layout_marginBottom="48dp"
+        android:layout_alignParentBottom="true"
+        />
     <ly.img.android.ui.widgets.ImgLyTitleBar
         android:id="@+id/imglyActionBar"
         android:layout_width="match_parent"
-        android:layout_height="48dp"/>
-</LinearLayout>
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"/>
+</ly.img.android.ui.widgets.EditorRootView>

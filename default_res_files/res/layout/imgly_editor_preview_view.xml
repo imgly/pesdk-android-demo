@@ -23,8 +23,9 @@
         android:layout_margin="0dp"
         android:layout_gravity="center"/>
 
-    <ly.img.android.sdk.views.UIOverlay
+    <!--ly.img.android.sdk.views.UIOverlay
         android:id="@+id/uiOverlayView"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent" /-->
+
 </merge>
