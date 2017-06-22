@@ -25,23 +25,54 @@
 
 
 
-## PhotoEditor SDK for Android
+# About PhotoEditor SDK for Android
 
-PhotoEditor SDK for Android is for creating stunning images with a nice selection of premium filters.
+## Overview
+
+The [PhotoEditor SDK](https://www.photoeditorsdk.com/?utm_campaign=Projects&utm_source=Github&utm_medium=PESDK&utm_content=Android-Demo&utm_term=Android) is a powerful and multifaceted tool which enables you to equip your Android application with high-performant photo editing capabilities. The PhotoEditor SDK is written in Java and can easily be customized to entirely blend with your CI and provide your users with the exact feature set your use-case requires. 
+
+The SDK ships with a large variety of filters, covering all state of the art style- and mood settings that can be previewed in real-time. Unlike other apps that allow a live preview of filters, the [PhotoEditor SDK](https://www.photoeditorsdk.com/?utm_campaign=Projects&utm_source=Github&utm_medium=PESDK&utm_content=Android-Demo&utm_term=Android) even provides a live preview when using high-resolution images.
+
+All operations are non-destructive which allows for fast and uncomplicated revision of the creatives at any given time and creates an intuitive and creative workflow for your users. Please see Features for a detailed list of the photo editing tools included in the [PhotoEditor SDK](https://www.photoeditorsdk.com/?utm_campaign=Projects&utm_source=Github&utm_medium=PESDK&utm_content=Android-Demo&utm_term=Android).
+
+
 
 <a href="https://play.google.com/store/apps/details?id=com.photoeditorsdk.android.app&utm_source=global_co&utm_medium=prtnr&utm_content=Mar2515&utm_campaign=PartBadge&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1">
     <img height="60" alt="Get it on Google Play" src="https://play.google.com/intl/en_us/badges/images/generic/en-play-badge-border.png" >
 </a>
 
 ## License 
-The PhotoEditorSDK is a product of 9elements GmbH. 
-Please [order a license](https://www.photoeditorsdk.com/pricing/?utm_campaign=Projects&utm_source=Github&utm_medium=Side_Projects&utm_content=Android-Demo). Please see the included [LICENSE.md](./LICENSE.md) for licensing details.
+The PhotoEditorSDK is a product of 9elements GmbH. Please make sure that you have a commercial [license](https://www.photoeditorsdk.com/pricing/?utm_campaign=Projects&utm_source=Github&utm_medium=PESDK&utm_content=Android-Demo&utm_term=Android) before releasing your app. A commercial license is required if you would like to integrate the SDK into any app, regardless of whether you monetize directly (paid app, subscription, service fee), indirectly (advertising, etc.) or are developing a free app. Every license for the PhotoEditor SDK is valid for one product only unless the products are closely related.
 
-### Overview
+If you’d like to use the PhotoEditor SDK for a charitable project, you can do so free of charge. However, please contact us anyway, so we can evaluate whether you qualify for a non-commercial license or not and handle your request accordingly. 
 
-The PhotoEditor SDK provides a variety of tools and functions for creating photo applications for Android. It is licensed under a proprietary license and intended to be used as better alternative for free software applications such as the [GPUImage](https://github.com/CyberAgent/android-gpuimage) or similiar libraries. If you are interested in our SDK, please [contact us](#author--contact).
+Please [get in touch](https://www.photoeditorsdk.com/pricing/?utm_campaign=Projects&utm_source=Github&utm_medium=PESDK&utm_content=Android-Demo&utm_term=Android) if you’d like to purchase a commercial license or require further information on our pricing and services. Please see the included [LICENSE.md](./LICENSE.md) for licensing details.
 
-#### SDK Core
+
+## Features
+
+* Over 60 handcrafted **Filters** covering all state of the art style- and mood settings to choose from. 
+* Design custom filters in Photoshop and other apps: The API of the PhotoEditor SDK enables you to expand the filter library with your own set of custom filters to define a unique visual language. Custom filters can easily be created by anyone using LUTs (Lookup Tables) from popular apps like Photoshop, GIMP or Lightroom. Design your filter and apply it onto the provided identity image. That will 'record' the filter response, now simply save it and add it as a new filter. Done. 
+* An **Overlay** Tool that can be used to create neat lighting effects like lens flare or bokeh but also to furnish pictures with textures like crumpled paper or plaster. You can easily expand the library by importing your own set of overlay assets.  
+* An **Adjustment section** that holds both essential and advanced photo editing features like brightness, contrast, saturation, clarity etc. that help tweak and fine tune images to create stunning creatives. 
+* A **Transform section** that unifies cropping, flipping and rotation in one feature.  
+* The robust **Text Feature** provides all necessary functions for quickly adding text to any picture or creative. The corresponding font library can easily be exchanged, reduced, or expanded.
+* A categorized **Sticker library** whose UI is optimized for exploration and discovery. You can easily complement the library with your own custom sticker packages.
+* A **Frame Tool** that works with any given photo size or ratio.   
+* A high performant **Brush Engine** optimized for touch screen that supports different brush strokes.  
+* A **Photo Roll** equipped with a wide range of stock photography and templates with presorted categories. The API allows for easy expansion, reduction and rearrangement of the assets. 
+* A clean and intuitive **UI** that ensures an unhindered flow of creativity and a seamless experience while composing creatives. The UI is designed to be customized to completely match your CI and blend with your app. 
+* You can strip out every feature you deem unnecessary to provide your users with the exact feature set your use case requires.
+
+* __Android API Level 16+__ Covers nearly 99% of all Android devices with touchscreen.
+* __Fast image export up to 4294 MegaPixel__
+* __Generic camera support__ for most Android phones.
+* __No native code__: Our backend is Renderscript based with highlevel OpenGL support, therefore we dodge all the nasty native library problems other frameworks face.
+* __Tablet support__: The PhotoEditor SDK uses auto layout for its views and adapts to each screen size.
+* **Non/destructive features and effects:** Quickly revise, redo or even discard your work. 
+
+
+## SDK Core
 
 __ACS Component__ <br/>
 A generic Android Camera Stack library which is based on the [android.hardware.Camera](http://developer.android.com/reference/android/hardware/Camera.html) API. Supports front and rear cam, HDR, flash modes and much more.
@@ -52,37 +83,23 @@ The PhotoEditor core library for Android. Containing the OpenGL and toolkit impl
 __UI Component__ <br/>
 The default UI components consisting of LivePreview and Editor Activity.
 
-#### Dependencies
+### Dependencies
 
 Two Google support libraries needed or used by the SDK.
 
 * com.android.support:recyclerview-v7
 * com.android.support:support-annotations
 
-### Features
 
-* __Android API Level 16+__. Covers nearly 99% of all Android devices with touchscreen.
-* __Default UI__. for camera preview and editing. Based on Intents and Activities.
-* __Fast image export up to 4294 MegaPixel__. Even with large images and slow devices with low memory the export is done in adequate time with a intelligent unrivaled background processing technology.
-* __Generic camera support__. Integrated and featureful on the most Android phones.
-* __Crop__, __Rotate__, __Stickers__, __Text Placement__, and __Colorize__. All essential photo editing functions wrapped into a simple, beautiful and customizable UI.
-* __57 Stunning filters__ which are builtin and work out of the box.
-* __No native code__. Our backend is Renderscript based with highlevel OpenGL support, therefore we dodge all the nasty native library problems other frameworks face.
-* __Tablet support__. Works great on tablets.
-* __Photoshop LUT__. Design color filters in Photoshop!
-With this feature it is possible to generate LUT (Look Up Table) color filters easily from different photo
-editing tools. Export and integrate them in minutes!
-* __Live Preview__. Filters can be previewed in high quality at realtime.
-* __Low memory footprint__. even with high resolution images.
-* __Extensible and customizable toolkit interface__. Add your own customized filters with [Renderscript](https://developer.android.com/guide/topics/renderscript/index.html) and modify tool properties yourself.
+## Documentation
+
+For a detailed documentation, please take a look [here](http://docs.photoeditorsdk.com/guides/android/?utm_campaign=Projects&utm_source=Github&utm_medium=PESDK&utm_content=Android-Demo&utm_term=Android).
 
 
-### Author & Contact
+## Author
 
-&copy; 9elements GmbH <br/>
-[Email](mailto:support@photoeditorsdk.com) <br/>
-[Homepage](https://www.photoeditorsdk.com/?utm_campaign=Projects&utm_source=Github&utm_medium=Side_Projects&utm_content=Android-Demo) <br/>
-[Twitter](https://twitter.com/PhotoEditorSDK) <br/>
+9elements GmbH, [@PhotoEditorSDK](https://twitter.com/PhotoEditorSDK), [www.photoeditorsdk.com](https://www.photoeditorsdk.com/?utm_campaign=Projects&utm_source=Github&utm_medium=PESDK&utm_content=Android-Demo&utm_term=Android)
+
 
 ## Installation
 
