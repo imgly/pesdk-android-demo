@@ -67,7 +67,6 @@ Please [get in touch](https://www.photoeditorsdk.com/pricing/?utm_campaign=Proje
 * __Android API Level 16+__ Covers nearly 99% of all Android devices with touchscreen.
 * __Fast image export up to 4294 MegaPixel__
 * __Generic camera support__ for most Android phones.
-* __No native code__: Our backend is Renderscript based with highlevel OpenGL support, therefore we dodge all the nasty native library problems other frameworks face.
 * __Tablet support__: The PhotoEditor SDK uses auto layout for its views and adapts to each screen size.
 * **Non/destructive features and effects:** Quickly revise, redo or even discard your work. 
 
