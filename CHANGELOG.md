@@ -1,10 +1,35 @@
 # PhotoEditor SDK - Changelog
 
+## v4.1.1
+
+### Changed
+* Configuration changes in PESDKConfig during the editor is open, are now updated instantly in the UI.
+
+### Fixed
+* Icon color of some icons is wrong if you change `@color/imgly_icon_color`
+
+## v4.1.0
+
+### Changed
+* Multiline Text feature like iOS.
+* Sticker category keep the last selection.
+
+### Fixed
+* Preview of transparent images is wrong.
+
+## v4.0.2
+
+### Fixed
+* Workaround: RenderScript crashes on Nexus devices with Android 7.1
+* NullPointer exception, by some camera modules
+* NullPointer exception, by a not reproduceable behavior.
+* Linear Focus handles, rotate in the wrong direction if the image is flipped
+
 ## v4.0.1
 
 ### Fixed
 * Overlays sometimes not changed.
-* Native crash on Android <= 5.0 devices, because of a memory leak inside Googles Vector Drawable support library. (This is not our fault but we have found a Workaround)
+* Native crash on Android <= 5.0 devices, because of a memory leak inside Googles Vector Drawable support library (This is not our fault but we have found a Workaround).
 * The dismiss dialog appears, without any changes.
 
 ## v4.0.0
