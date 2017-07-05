@@ -6,7 +6,7 @@
 * Configuration changes in PESDKConfig during the editor is open, are now updated instantly in the UI.
 
 ### Fixed
-* Icon color of some icons is wrong if you change `@color/imgly_icon_color`
+* Icon color of some icons is wrong if you change `@color/imgly_icon_color`.
 
 ## v4.1.0
 
