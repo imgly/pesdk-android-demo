@@ -1,5 +1,10 @@
 # PhotoEditor SDK - Changelog
 
+## v4.1.2
+
+### Changed
+* Add Ability to configure existing panel options by extend panels. Simply extend a panel like `AdjustmentToolPanel` and override the `createOptionList` (returns the icons in the list) or `createQuickOptionList` (returns the icon inside the image area) method.
+
 ## v4.1.1
 
 ### Changed
@@ -24,7 +29,7 @@
 * NullPointer exception, by some camera modules
 * NullPointer exception, by a not reproduceable behavior.
 * Linear Focus handles, rotate in the wrong direction if the image is flipped
-
+ 
 ## v4.0.1
 
 ### Fixed
@@ -104,4 +109,3 @@
 
 ### Changed
 * Show a warning and fix wrong scaled frames, if you put the frame assets in the wrong drawable directory.
-
