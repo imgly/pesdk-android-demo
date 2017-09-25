@@ -1,5 +1,33 @@
 # PhotoEditor SDK - Changelog
 
+## v4.1.5
+
+### Fixed
+* Overlay with transparency looks wrong after export.
+* Transform tool does not show the image, if an overlay is applied.
+* Crash with NullPointerException, when call StateHandler.hasChanges().
+* Crash with NullPointerException("BitmapRegionDecoder.getWidth() on a null object reference") when image format not support by tile decoder.
+* Crash with IllegalStateException("child already has a parent").
+
+### Known Bugs, but not fixable without API changes (please wait for upcoming v5.0).
+* Android 8.0 has display issues while Brush (Flickering for 1 Frame).
+* Some, issues with async events.
+* Sometimes, the dismiss dialog is displayed without changes.
+
+## v4.1.4
+
+### Changed
+* Remove unused ImgLyTitleBar reference. 
+
+### Fixed
+* Brush default color is transparent.
+
+## v4.1.3
+
+### Fixed
+* Dismiss edits dialog appears without any changes
+
+
 ## v4.1.2
 
 ### Changed
