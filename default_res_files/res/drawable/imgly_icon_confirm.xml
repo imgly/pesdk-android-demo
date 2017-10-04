@@ -21,5 +21,5 @@
         android:height="24dp">
     <path
         android:pathData="M20.999994 7l-1.4 -1.4 -10.6000001 10.6 -4.2 -4.2 -1.4 1.4 5.6 5.6z"
-        android:fillColor="#ffffff" />
+        android:fillColor="@color/imgly_icon_color" />
 </vector>

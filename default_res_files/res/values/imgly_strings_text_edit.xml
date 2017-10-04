@@ -19,6 +19,7 @@
     <string name="imgly_text_option_font">Font</string>
     <string name="imgly_text_option_color">Color</string>
     <string name="imgly_text_option_bg_color">BG Color</string>
+    <string name="imgly_text_option_align">Alignment</string>
 
     <string name="imgly_text_option_flip_v">@string/imgly_orientation_name_flip_v</string>
     <string name="imgly_text_option_flip_h">@string/imgly_orientation_name_flip_h</string>

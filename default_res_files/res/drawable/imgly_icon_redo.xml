@@ -22,11 +22,11 @@
     <group
         android:scaleX="-1"
         android:translateX="23">
+        <!--path
+            android:pathData="M21 10L21 9L7 9L7 6L2 10L7 14L7 11L19 11L19 17L21 17L21 10"
+            android:fillColor="#000000" /-->
         <path
             android:pathData="M21 10L21 9L7 9L7 6L2 10L7 14L7 11L19 11L19 17L21 17L21 10"
-            android:fillColor="#000000" />
-        <path
-            android:pathData="M21 10L21 9L7 9L7 6L2 10L7 14L7 11L19 11L19 17L21 17L21 10"
-            android:fillColor="#ffffff" />
+            android:fillColor="@color/imgly_icon_color" />
     </group>
 </vector>

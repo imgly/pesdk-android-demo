@@ -1,5 +1,63 @@
 # PhotoEditor SDK - Changelog
 
+## v5.0.2
+
+### Fixed
+* The save policy are handled correct now.
+* OpenGL Error after deserialize.
+
+### Not fixable at the moment
+* Deserialization / Rendering of text is not platform independent.
+
+## v5.0.1-RC1
+
+**This is pre release version and can have some bugs**
+
+### Fixed
+* Problems with Android 8.0
+
+### Changed
+* Performance improvements. Preview of Brush, Sticker and Text are now extremely fast on most of the devices.
+* Layer are now rendered in preview with OpenGL
+
+### Not fixable at the moment
+* Deserialization / Rendering of text is not platform independent.
+
+## v5.0.0-beta
+
+### Beta-Release-Notes
+
+**This is a beta version and has some known bugs**
+* Android 8.0.0 seams to have an issue with TextureView, this view is used by brush and cause display issues in preview.
+  This Bug is also happen in older SDK Versions, we will hat to fix it later by changing our general implementation.
+* Deserialization of text is not platform independent.
+* The save policy are currently not correct.
+* PNG and GIF can crash if the image is to big.
+
+### Added
+* GIF loading support for the first frame and exported as PNG or JPEG.
+* Global History for all Tools, Local History for some tools.
+* Support for serialization and deserialization with json schema v3.0.0 (platform independent, but with some issues).
+* The background color of the editor stage is now adjustable in the LayerListSettings.
+* The background color of the camera stage is now adjustable in the CameraSettings.
+
+### Changed
+* Version 2.1 of the Licence is now required. 
+* Assets now must have an unique id for the serialisation.
+* Method AbstractEditorTool.isRevertible() is now deprecated, please use isCancelable() and isAcceptable() instead.
+* Rename imgly_icon_download to imgly_icon_save.
+* Transform Tool now operates like iOS.
+* Event dispatcher is now Synchronized.
+* Object recycling for better performance and better thread stability.
+* New thread handler for better performance and better thread stability.
+
+### Fixed
+* Errors with the Event dispatcher.
+* Randomly icon change when using VectorDrawables.
+* VectorDrawable display issues.
+* Some short bugs.
+* Add two missing default ColorFilters.
+
 ## v4.1.5
 
 ### Fixed
@@ -25,8 +83,7 @@
 ## v4.1.3
 
 ### Fixed
-* Dismiss edits dialog appears without any changes
-
+* Dismiss edits dialog appears without any changes.
 
 ## v4.1.2
 
@@ -56,7 +113,7 @@
 * Workaround: RenderScript crashes on Nexus devices with Android 7.1
 * NullPointer exception, by some camera modules
 * NullPointer exception, by a not reproduceable behavior.
-* Linear Focus handles, rotate in the wrong direction if the image is flipped
+* Linear Focus handles, rotate in the wrong direction if the image is flipped.
  
 ## v4.0.1
 
@@ -80,7 +137,7 @@
 * Tool "Overlay".
 * GPS Tag Support for the Camera.
 * Pinch and Zoom in Main View and Brush Tool.
-* PNG export Support
+* PNG export Support.
 
 ### Fixed
 * A lot of bug fixes.
@@ -88,7 +145,7 @@
 ## v3.1.1
 
 ### Changed
-* Remove old Fonts an add improved fonts
+* Remove old Fonts an add improved fonts.
 
 ## v3.0.15
 
@@ -99,7 +156,7 @@
 ## v3.0.12
 
 ### Fixed
-* Small bugfixes
+* Small bugfixes.
 
 ## v3.0.11
 
@@ -111,7 +168,7 @@
 * Sticker straighten action if the image itself is rotated.
 
 ### Changed
-* Layout imgly_popup_confirm.xml has changed and is renamed to imgly_popup_confirm_dialog.xml
+* Layout imgly_popup_confirm.xml has changed and is renamed to imgly_popup_confirm_dialog.xml`.
 * Layout imgly_activity_photo_editor.xml has changed!
 
 ## v3.0.10
@@ -122,18 +179,19 @@
 ## v3.0.9
 
 ### Fixed
-* Dismiss edits dialog appears without any changes
-* ImageDecoder crash in some constellations
+* Dismiss edits dialog appears without any changes.
+* ImageDecoder crash in some constellations.
 * SettingsList configurations randomly ignored.
 * Force-Crop not working.
 * AutoRotation is sometimes wrong.
-* License validation sometimes take to long
+* License validation sometimes take to long.
 
 ## v3.0.7
 
 ### Fixed
 * Missing Linter Warning if you use Documents until API 19 and fix crash if you ignore this warning and use it until API 19.
-* Toggled list images if you use vector and rastered drawables together
+* Toggled list images if you use vector and rastered drawables together.
 
 ### Changed
 * Show a warning and fix wrong scaled frames, if you put the frame assets in the wrong drawable directory.
+
