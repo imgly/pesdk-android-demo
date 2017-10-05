@@ -1,5 +1,18 @@
 # PhotoEditor SDK - Changelog
 
+## v5.0.4
+
+### Changed
+* Add `ADJUSTMENT_OPTIONS` to Sticker Config, allow the user the change brightness, contrast and saturation of a sticker.  
+
+## v5.0.3
+
+### Fixed
+* Fix issues with loading gif and bmp images.
+* Licensing issues.
+* Filter always uses the placeholder photo. 
+* Image not centered by using a custom layout.
+
 ## v5.0.2
 
 ### Fixed
