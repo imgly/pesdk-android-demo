@@ -1,5 +1,12 @@
 # PhotoEditor SDK - Changelog
 
+## v5.0.3
+
+### Fixed
+* Licensing issues.
+* Filter always uses the placeholder photo. 
+* Image not centered by using a custom layout.
+
 ## v5.0.2
 
 ### Fixed
