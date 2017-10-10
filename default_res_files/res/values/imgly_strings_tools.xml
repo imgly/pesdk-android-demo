@@ -43,4 +43,7 @@
     <string name="imgly_tool_name_text_color">Text Color</string>
     <string name="imgly_tool_name_text_font">Font</string>
 
+    <string name="imgly_history_undo">Undo</string>
+    <string name="imgly_history_redo">Redo</string>
+
 </resources>

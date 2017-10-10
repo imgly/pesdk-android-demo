@@ -25,6 +25,10 @@
     <string name="imgly_sticker_option_to_front">To Front</string>
     <string name="imgly_sticker_option_straighten">Straighten</string>
 
+    <string name="imgly_sticker_option_contrast">Contrast</string>
+    <string name="imgly_sticker_option_saturation">Saturation</string>
+    <string name="imgly_sticker_option_brightness">Brightness</string>
+
     <string name="imgly_sticker_category_name_emoticons">Emotions</string>
 
     <string name="imgly_sticker_name_emoticons_alien">alien</string>

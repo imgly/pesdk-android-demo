@@ -14,7 +14,15 @@
   ~ https://www.photoeditorsdk.com/LICENSE.txt
   -->
 
-<selector xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:state_enabled="false" android:drawable="@drawable/imgly_icon_undo_disabled"/>
-    <item android:state_enabled="true" android:drawable="@drawable/imgly_icon_undo_enabled"/>
-</selector>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:viewportWidth="24"
+    android:viewportHeight="24"
+    android:width="24dp"
+    android:height="24dp">
+    <!--path
+        android:pathData="M21 10L21 9L7 9L7 6L2 10L7 14L7 11L19 11L19 17L21 17L21 10"
+        android:fillColor="#000000" /-->
+    <path
+        android:pathData="M21 10L21 9L7 9L7 6L2 10L7 14L7 11L19 11L19 17L21 17L21 10"
+        android:fillColor="@color/imgly_icon_color" />
+</vector>

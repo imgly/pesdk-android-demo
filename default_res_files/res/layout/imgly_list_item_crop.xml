@@ -28,12 +28,13 @@
         android:layout_centerInParent="true">
         <TextView
             android:id="@+id/label"
-            android:layout_width="72dp"
-            android:layout_height="72dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:text="@string/imgly_color_filter_name_default"
+            android:maxLines="5"
+            android:lines="5"
             android:gravity="center"
             style="@style/Imgly.Editor.Toolbar.Panels.Crop.ItemLabel"
-            android:lines="1"
             />
-    </ly.img.android.ui.widgets.AutoRotateLayout>>
+    </ly.img.android.ui.widgets.AutoRotateLayout>
 </RelativeLayout>

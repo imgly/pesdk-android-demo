@@ -22,7 +22,7 @@
         android:layout_width="match_parent"
         android:layout_height="48dp"
         style="@style/Imgly.Editor.Header">
-        <ly.img.android.ui.widgets.AutoRotateImageSource
+        <ly.img.android.ui.widgets.buttons.CancelButton
             android:id="@+id/cancelButton"
             android:scaleType="center"
             style="@style/Imgly.Editor.Header.Button.CancelButton" />
@@ -32,7 +32,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"/>
 
-        <ly.img.android.ui.widgets.AutoRotateImageSource
+        <ly.img.android.ui.widgets.buttons.AcceptButton
             android:id="@+id/acceptButton"
             android:scaleType="center"
             style="@style/Imgly.Editor.Header.Button.AcceptButton" />

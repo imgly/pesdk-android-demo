@@ -38,6 +38,7 @@
     <color name="imgly_text_color">#FFFFFF</color>
     <color name="imgly_editor_text_color">@color/imgly_text_color</color>
     <color name="imgly_preview_text_color">@color/imgly_text_color</color>
+    <color name="imgly_text_color_active">@color/imgly_theme_color</color>
 
     <color name="imgly_editor_text_color_secondary">#66FFFFFF</color>
 

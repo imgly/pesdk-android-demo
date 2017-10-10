@@ -1,5 +1,16 @@
 # PhotoEditor SDK - Changelog
 
+## v5.0.5
+
+### Changed
+* Changed crop ratio name to 'Free'.
+* Set rotation control dots invisible behind the value.
+* Set item label to blue if the item is selected.
+
+### Fixed
+* Flipped image rotates in the wrong direction.
+* Sticker not loading.
+
 ## v5.0.4
 
 ### Changed

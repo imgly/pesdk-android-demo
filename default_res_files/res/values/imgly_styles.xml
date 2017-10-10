@@ -130,8 +130,7 @@
         <item name="android:lines">1</item>
         <item name="android:layout_gravity">center</item>
         <item name="android:gravity">center</item>
-        <!--TODO:item name="android:textColor">@color/imgly_editor_text_color</item-->
-        <item name="android:textColor">#53FFFFFF</item>
+        <item name="android:textColor">@color/imgly_lable_color_states</item>
     </style>
 
     <style name="Imgly.Editor.Toolbar.Panels.default.ItemSelectOverlay" parent="Imgly.Editor.Toolbar.Panels"/>
