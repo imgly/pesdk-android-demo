@@ -1,5 +1,15 @@
 # PhotoEditor SDK - Changelog
 
+## v5.0.6
+
+### Fixed
+* Image export is truncated in special cases with exif rotation 8 (Viewport 270 CW)
+
+## v4.1.6
+
+### Fixed
+* Image export is truncated in special cases with exif rotation 8 (Viewport 270 CW)
+
 ## v5.0.5
 
 ### Changed
