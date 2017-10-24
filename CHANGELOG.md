@@ -1,5 +1,14 @@
 # PhotoEditor SDK - Changelog
 
+## v5.0.7
+
+### Fixed
+* Crashes when opening the brush tool while touching the canvas.
+* Doesn't loading the picture when open the frame and transform tool while touching the canvas.
+
+### Changed
+* Support for images smaller than 32px per side.
+
 ## v5.0.6
 
 ### Fixed
