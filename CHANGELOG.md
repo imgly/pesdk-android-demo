@@ -1,5 +1,16 @@
 # PhotoEditor SDK - Changelog
 
+## v5.0.9
+
+### Fixed
+* Overlay repeats after exporting but it shouldn't.
+* Crash while write serialisation, if the frame feature is disabled by licence. 
+
+## v5.0.8
+
+### Fixed
+* Image do not reload after change it.
+
 ## v5.0.7
 
 ### Fixed
