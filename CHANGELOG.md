@@ -4,7 +4,7 @@
 
 ### Fixed
 * Overlay repeats after exporting but it shouldn't.
-* Crash while write serialisation, if the frame feature is disabled by licence. 
+* Crash while writing serialization, if the frame feature is disabled by license. 
 
 ## v5.0.8
 
