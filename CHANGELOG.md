@@ -1,5 +1,14 @@
 # PhotoEditor SDK - Changelog
 
+## v5.0.11
+
+### Fixed
+* Artefacts on some devices with non-standard compliant OpenGL ES 2.0 implementation.
+* NullPointerException, if image loading interrupts because of a broken file stream.
+* Brush history produces color mismatch.
+* Sticker is being rotated incorrectly when the image is mirrored
+
+
 ## v5.0.9
 
 ### Fixed
