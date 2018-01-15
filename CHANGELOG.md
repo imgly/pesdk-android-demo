@@ -1,5 +1,22 @@
 # PhotoEditor SDK - Changelog
 
+## v5.0.12
+
+### Fixed
+* Frame image tiles are repeating incorrectly.
+* Frame tiles resolution is too low when frame is stretched.
+* Brush is in the wrong position after exporting the image.
+* Undoing brush steps creates artifacts when the image is too big.
+* Undoing brush steps creates artifacts when the image preview width is not divisible by eight.
+* Taking picture with front camera adds wrong exif rotation.
+* Wrong exif information handling, when exporting image, which adds a black stripe in some cases.
+* Wrong threading which freezes background gl threads.
+* Text cursor is not at the end of the text when text is re-edited.
+* License issues.
+
+### Changed
+* Performance improved.
+
 ## v5.0.11
 
 ### Fixed
