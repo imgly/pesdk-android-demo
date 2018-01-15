@@ -9,6 +9,7 @@ import android.support.annotation.NonNull;
 import android.widget.Toast;
 
 import java.io.File;
+import java.util.ArrayList;
 
 import ly.img.android.PESDK;
 import ly.img.android.acs.GPSLocationProvider;
@@ -19,6 +20,10 @@ import ly.img.android.sdk.models.state.manager.SettingsList;
 import ly.img.android.ui.activities.CameraPreviewBuilder;
 import ly.img.android.ui.activities.ImgLyIntent;
 import ly.img.android.ui.utilities.PermissionRequest;
+
+import ly.img.android.sdk.models.constant.BlendMode;
+import ly.img.android.sdk.models.config.OverlayConfig;
+import android.content.res.Resources;
 
 public class MainActivity extends Activity implements PermissionRequest.Response {
 
@@ -33,7 +38,9 @@ public class MainActivity extends Activity implements PermissionRequest.Response
     @Override
     protected void onResume() {
         super.onResume();
+
         SettingsList settingsList = new SettingsList();
+
 
 
         settingsList
@@ -47,9 +54,19 @@ public class MainActivity extends Activity implements PermissionRequest.Response
                 .setJpegQuality(80, false)
                 .setSavePolicy(EditorSaveSettings.SavePolicy.KEEP_SOURCE_AND_CREATE_ALWAYS_OUTPUT);
 
+
+        ArrayList<OverlayConfig> overlays = new ArrayList<>();
+        overlays.add(OverlayConfig.NON_BACKDROP);
+        Resources resources = getApplicationContext().getResources();
+        overlays.add(new OverlayConfig(resources.getString(R.string.keep_overlay_byob_white), R.string.keep_overlay_byob_white, R.drawable.keep_overlay_byob_white, R.drawable.keep_overlay_byob_white, BlendMode.NORMAL, 1f));
+        settingsList.getConfig().setOverlays(overlays);
+
+
         new CameraPreviewBuilder(this)
                 .setSettingsList(settingsList)
                 .startActivityForResult(this, CAMERA_PREVIEW_RESULT);
+
+
 
     }
 

@@ -4,4 +4,6 @@
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
 
+    <string name="keep_overlay_byob_white">BYOB</string>
+
 </resources>

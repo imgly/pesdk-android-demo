@@ -1,5 +1,41 @@
 # PhotoEditor SDK - Changelog
 
+## v5.0.12
+
+### Fixed
+* Frame image tiles are repeating incorrectly.
+* Frame tiles resolution is too low when frame is stretched.
+* Brush is in the wrong position after exporting the image.
+* Undoing brush steps creates artifacts when the image is too big.
+* Undoing brush steps creates artifacts when the image preview width is not divisible by eight.
+* Taking picture with front camera adds wrong exif rotation.
+* Wrong exif information handling, when exporting image, which adds a black stripe in some cases.
+* Wrong threading which freezes background gl threads.
+* Text cursor is not at the end of the text when text is re-edited.
+* License issues.
+
+### Changed
+* Performance improved.
+
+## v5.0.11
+
+### Fixed
+* Artefacts on some devices with non-standard compliant OpenGL ES 2.0 implementation.
+* NullPointerException, if image loading interrupts because of a broken file stream.
+* Brush history produces color mismatch.
+* Sticker is being rotated incorrectly when the image is mirrored
+
+## v5.0.9
+
+### Fixed
+* Overlay repeats after exporting but it shouldn't.
+* Crash while writing serialization, if the frame feature is disabled by license.
+
+## v5.0.8
+
+### Fixed
+* Image do not reload after change it.
+
 ## v5.0.7
 
 ### Fixed
@@ -211,8 +247,9 @@
 * Sticker straighten action if the image itself is rotated.
 
 ### Changed
-* Layout imgly_popup_confirm.xml has changed and is renamed to imgly_popup_confirm_dialog.xml`.
+* Layout imgly_popup_confirm.xml has changed and is renamed to `imgly_popup_confirm_dialog.xml`.
 * Layout imgly_activity_photo_editor.xml has changed!
+
 
 ## v3.0.10
 
