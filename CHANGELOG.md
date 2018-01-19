@@ -1,6 +1,19 @@
 # PhotoEditor SDK - Changelog
 
-## v5.0.12
+## v5.0.13
+
+### Fixed
+* Undoing brush steps reverts brush hardness, color and size.
+* Increasing the text size over the limit, increases the bounding box width.
+* Brush ignores transformation.
+* Typo in filter name.
+* OpenGl vertex index out of range error.
+* Renderscript crash while export on API 26.
+* Exception "Only one Looper may be created per thread".
+   * 🚨 This is a breaking change if you use the ThreadUtils.
+* Text is added upside down, if the image is flipped.
+
+## v5.0.12 __DEPRECATED!__
 
 ### Fixed
 * Frame image tiles are repeating incorrectly.
@@ -25,12 +38,11 @@
 * Brush history produces color mismatch.
 * Sticker is being rotated incorrectly when the image is mirrored
 
-
 ## v5.0.9
 
 ### Fixed
 * Overlay repeats after exporting but it shouldn't.
-* Crash while writing serialization, if the frame feature is disabled by license. 
+* Crash while writing serialization, if the frame feature is disabled by license.
 
 ## v5.0.8
 
@@ -248,7 +260,7 @@
 * Sticker straighten action if the image itself is rotated.
 
 ### Changed
-* Layout imgly_popup_confirm.xml has changed and is renamed to imgly_popup_confirm_dialog.xml`.
+* Layout imgly_popup_confirm.xml has changed and is renamed to `imgly_popup_confirm_dialog.xml`.
 * Layout imgly_activity_photo_editor.xml has changed!
 
 ## v3.0.10
