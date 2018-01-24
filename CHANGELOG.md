@@ -1,5 +1,10 @@
 # PhotoEditor SDK - Changelog
 
+## v5.0.14
+
+### Fixed
+* Images not saved if only text is added.
+
 ## v5.0.13
 
 ### Fixed
