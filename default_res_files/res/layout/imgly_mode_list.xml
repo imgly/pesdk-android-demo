@@ -18,7 +18,8 @@
     android:id="@+id/modeBar"
     xmlns:android="http://schemas.android.com/apk/res/android"
     style="@style/Imgly.Editor.Toolbar.Panels.ModesContainer"
-    android:clickable="true">
+    android:clickable="true"
+    android:focusable="true">
     <ly.img.android.ui.widgets.HorizontalListView
         android:id="@+id/modesList"
         android:layout_height="88dp"

@@ -28,7 +28,7 @@ android {
         minSdkVersion 15
         targetSdkVersion 25
         versionCode 1
-        versionName "5.0.13"
+        versionName "5.0.16"
         renderscriptTargetApi 23
         renderscriptSupportModeEnabled true
     }

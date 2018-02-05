@@ -67,14 +67,18 @@
         <item name="android:textColor">@color/imgly_editor_text_color</item>
         <item name="android:background">@drawable/imgly_button</item>
         <item name="android:paddingLeft">0dp</item>
+        <item name="android:paddingStart">0dp</item>
         <item name="android:paddingRight">0dp</item>
+        <item name="android:paddingEnd">0dp</item>
         <item name="android:layout_width">48dp</item>
         <item name="android:layout_height">48dp</item>
         <item name="android:layout_gravity">center_vertical</item>
         <item name="android:layout_centerVertical">true</item>
         <item name="android:layout_marginTop">0dp</item>
         <item name="android:layout_marginLeft">0dp</item>
+        <item name="android:layout_marginStart">0dp</item>
         <item name="android:layout_marginRight">0dp</item>
+        <item name="android:layout_marginEnd">0dp</item>
         <item name="android:layout_marginBottom">0dp</item>
     </style>
     <style name="Imgly.Editor.Header.Button.CancelButton" parent="Imgly.Editor.Header.Button">
@@ -144,11 +148,15 @@
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_gravity">center</item>
         <item name="android:layout_marginLeft">24dp</item>
+        <item name="android:layout_marginStart">24dp</item>
         <item name="android:layout_marginRight">24dp</item>
+        <item name="android:layout_marginEnd">24dp</item>
         <item name="android:layout_centerInParent">true</item>
         <item name="android:paddingTop">0dp</item>
         <item name="android:paddingLeft">8dp</item>
+        <item name="android:paddingStart">8dp</item>
         <item name="android:paddingRight">8dp</item>
+        <item name="android:paddingEnd">8dp</item>
         <item name="android:paddingBottom">0dp</item>
         <item name="android:thumb">@drawable/imgly_slider_thumb</item>
         <item name="android:background">@drawable/imgly_slider_background</item>
@@ -161,9 +169,11 @@
         <item name="android:layout_height">48dp</item>
         <item name="android:background">@color/imgly_editor_toolbar_background</item>
         <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingStart">16dp</item>
         <item name="android:paddingTop">12dp</item>
         <item name="android:paddingBottom">10dp</item>
         <item name="android:paddingRight">16dp</item>
+        <item name="android:paddingEnd">16dp</item>
         <item name="rangeBackgroundColor">@color/imgly_slider_track_color</item>
         <item name="selectedRangeBackgroundColor">@color/imgly_slider_progress_color</item>
     </style>
@@ -179,7 +189,9 @@
         <item name="android:layout_height">46dp</item>
         <item name="android:background">#13FFFFFF</item>
         <item name="android:layout_marginLeft">14dp</item>
+        <item name="android:layout_marginStart">14dp</item>
         <item name="android:layout_marginRight">14dp</item>
+        <item name="android:layout_marginEnd">14dp</item>
         <item name="android:layout_centerVertical">true</item>
     </style>
 
@@ -226,7 +238,9 @@
     </style>
     <style name="Imgly.Editor.Toolbar.Panels.BlendMode.ItemLabel" parent="Imgly.Editor.Toolbar.Panels.default.ItemLabel">
         <item name="android:paddingLeft">12dp</item>
+        <item name="android:paddingStart">12dp</item>
         <item name="android:paddingRight">12dp</item>
+        <item name="android:paddingEnd">12dp</item>
     </style>
 
     <style name="Imgly.Editor.Toolbar.Panels.Text" parent="Imgly.Editor.Toolbar.Panels"/>
@@ -318,7 +332,9 @@
 
     <style name="Imgly.Preview.Header" parent="Imgly.Preview">
         <item name="android:paddingLeft">0dp</item>
+        <item name="android:paddingStart">0dp</item>
         <item name="android:paddingRight">0dp</item>
+        <item name="android:paddingEnd">0dp</item>
         <item name="android:background">@color/imgly_preview_header_background</item>
     </style>
 
@@ -326,7 +342,9 @@
         <item name="android:paddingTop">4dp</item>
         <item name="android:paddingBottom">4dp</item>
         <item name="android:paddingLeft">4dp</item>
+        <item name="android:paddingStart">4dp</item>
         <item name="android:paddingRight">4dp</item>
+        <item name="android:paddingEnd">4dp</item>
         <item name="android:textColor">@color/imgly_preview_text_color</item>
         <item name="android:background">@drawable/imgly_button_click_overlay</item>
     </style>
@@ -335,6 +353,7 @@
         <item name="android:layout_height">50dp</item>
         <item name="android:layout_width">wrap_content</item>
         <item name="android:paddingRight">10dp</item>
+        <item name="android:paddingEnd">10dp</item>
     </style>
 
     <style name="Imgly.Preview.Header.Button.FlashButton.Icon" parent="Imgly">
@@ -346,7 +365,9 @@
         <item name="android:textColor">@color/imgly_preview_text_color</item>
         <item name="android:layout_gravity">center_vertical</item>
         <item name="android:paddingLeft">0dp</item>
+        <item name="android:paddingStart">0dp</item>
         <item name="android:paddingRight">0dp</item>
+        <item name="android:paddingEnd">0dp</item>
     </style>
 
     <style name="Imgly.Preview.Header.Button.HDRButton" parent="Imgly.Preview.Header.Button">

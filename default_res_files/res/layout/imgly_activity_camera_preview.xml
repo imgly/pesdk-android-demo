@@ -79,6 +79,7 @@
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
                 style="@style/Imgly.Preview.Header.Button.SwitchCameraButton"/>
         </RelativeLayout>
 
@@ -109,11 +110,13 @@
                 <ly.img.android.ui.widgets.AutoRotateLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    tools:ignore="RelativeOverlap,RtlHardcoded">
+                    tools:ignore="RelativeOverlap">
                     <ly.img.android.ui.widgets.buttons.GalleryButton
                         android:id="@+id/galleryButton"
                         android:layout_width="52dp"
                         android:layout_height="52dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/imgly_icon_camera_roll"
                         android:layout_gravity="center_vertical"/>
                 </ly.img.android.ui.widgets.AutoRotateLayout>
 

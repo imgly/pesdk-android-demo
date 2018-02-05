@@ -18,8 +18,10 @@
     android:id="@+id/contentHolder"
     android:layout_marginTop="8dp"
     android:layout_width="72dp"
-    android:layout_marginRight="0.5dp"
     android:layout_marginLeft="0.5dp"
+    android:layout_marginStart="0.5dp"
+    android:layout_marginRight="0.5dp"
+    android:layout_marginEnd="0.5dp"
     android:layout_height="72dp">
     <View
         android:padding="0dp"
@@ -58,7 +60,6 @@
             android:layout_height="wrap_content"
             android:text="@string/imgly_color_filter_name_default"
             style="@style/Imgly.Editor.Toolbar.Panels.Filter.ItemLabel"
-            android:layout_alignParentBottom="true"
             android:lines="1"
             />
     </LinearLayout>

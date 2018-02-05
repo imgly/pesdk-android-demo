@@ -17,6 +17,7 @@
 <resources>
 
     <string name="imgly_color_filter_value" formatted="false">%d</string>
+    <string name="imgly_transform_rotation_slider_value" formatted="false">%.1f</string>
 
     <string name="imgly_color_filter_name_default">None</string>
 
@@ -45,7 +46,7 @@
     <string name="imgly_color_filter_name_front">Front</string>
     <string name="imgly_color_filter_name_glam">Glam</string>
     <string name="imgly_color_filter_name_gobblin">Gobblin</string>
-    <string name="imgly_color_filter_name_highcarb">High Carp</string>
+    <string name="imgly_color_filter_name_highcarb">High Carb</string>
     <string name="imgly_color_filter_name_highcontrast">High Contrast</string>
     <string name="imgly_color_filter_name_identity">Identiy</string>
     <string name="imgly_color_filter_name_k1">K1</string>

@@ -1,5 +1,20 @@
 # PhotoEditor SDK - Changelog
 
+## v5.0.16
+
+### Hotfix
+* Multitouch gesture is unstable.
+
+### Fixed
+* Slider does not close when clicking "To Front" in the Brush tool.
+
+## v5.0.15 __DEPRECATED!__
+
+### Fixed
+* A 90 degree turn is not possible if no suitable aspect is found.
+* The "Gallery" button is sometimes not visible.
+* Layout problems with "right-to-left" languages.
+
 ## v5.0.14
 
 ### Fixed

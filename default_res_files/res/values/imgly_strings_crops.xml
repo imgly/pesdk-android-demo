@@ -17,13 +17,6 @@
 <resources>
 
     <string name="imgly_crop_name_custom">Free</string>
-    <string name="imgly_crop_name_square">1:1</string>
-    <string name="imgly_crop_name_16_9">16:9</string>
-    <string name="imgly_crop_name_4_3">4:3</string>
-    <string name="imgly_crop_name_9_16">9:16</string>
-    <string name="imgly_crop_name_3_4">3:4</string>
-
-    <string name="imgly_crop_name_3_2">3:2</string>
-    <string name="imgly_crop_name_2_3">2:3</string>
+    <string name="imgly_crop_ratio_value" formatted="false">%d</string>
 
 </resources>
