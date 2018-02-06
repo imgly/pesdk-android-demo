@@ -34,13 +34,13 @@ public class MainActivity extends Activity implements PermissionRequest.Response
     protected void onResume() {
         super.onResume();
         SettingsList settingsList = new SettingsList();
-
+        settingsList.setEventProcessor(com.photoeditorsdk.android.app.PESDKEvents.class);
+        settingsList.setEventTracker(new DummyEventTracker("1"));
 
         settingsList
                 .getSettingsModel(CameraSettings.class)
                 .setExportDir(Directory.DCIM, FOLDER)
                 .setExportPrefix("camera_")
-
                 .getSettingsModel(EditorSaveSettings.class)
                 .setExportDir(Directory.DCIM, FOLDER)
                 .setExportPrefix("result_")
