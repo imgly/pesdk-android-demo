@@ -17,3 +17,4 @@
 #}
 
 -keep class android.support.v8.renderscript.** { *; }
+-keep class com.photoeditorsdk.android.app.PESDKEvents { *; }
