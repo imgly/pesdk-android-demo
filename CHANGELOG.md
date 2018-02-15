@@ -1,5 +1,15 @@
 # PhotoEditor SDK - Changelog
 
+## v5.0.17
+
+### Fixed
+* Internal class TransformedMotionEvent creates wrong./G states in some cases.
+* Sticker matrix updated wrong which causes flickering.
+* Exporting many stickers crashes in some cases.
+* Image does not export if only the crop aspect has changed.
+* Sticker flickering while resizing on some devices.
+* Texture Memory is not free up while using with results in slightly slow down.
+
 ## v5.0.16
 
 ### Hotfix
@@ -53,7 +63,7 @@
 ## v5.0.11
 
 ### Fixed
-* Artefacts on some devices with non-standard compliant OpenGL ES 2.0 implementation.
+* Artifacts on some devices with non-standard compliant OpenGL ES 2.0 implementation.
 * NullPointerException, if image loading interrupts because of a broken file stream.
 * Brush history produces color mismatch.
 * Sticker is being rotated incorrectly when the image is mirrored
