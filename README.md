@@ -99,8 +99,11 @@ For a detailed documentation, please take a look [here](http://docs.photoeditors
 
 9elements GmbH, [@PhotoEditorSDK](https://twitter.com/PhotoEditorSDK), [www.photoeditorsdk.com](https://www.photoeditorsdk.com/?utm_campaign=Projects&utm_source=Github&utm_medium=PESDK&utm_content=Android-Demo&utm_term=Android)
 
+
 ## Support and License
-Use our [service desk](support.photoeditorsdk.com) for bug reports or support requests. To request a license, please use the [license request form](support.photoeditorsdk.com) on our website.
+
+Use our [service desk](http://support.photoeditorsdk.com) for bug reports or support requests. To request a commercial license, please use the [license request form](https://www.photoeditorsdk.com/pricing) on our website.
+
 
 ## Installation
 
