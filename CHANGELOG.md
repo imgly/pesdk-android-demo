@@ -1,5 +1,15 @@
 # PhotoEditor SDK - Changelog
 
+## v5.0.19
+
+### Fixed
+* Three of the default asset sticker shapes are missing after gradle 3.0 compiling.
+
+## v5.0.18
+
+### Fixed
+* Static frames are not loaded by the deserialization.
+
 ## v5.0.17
 
 ### Fixed
