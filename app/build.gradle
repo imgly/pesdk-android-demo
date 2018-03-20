@@ -1,32 +1,15 @@
-buildscript {
-    repositories {
-        jcenter()
-        maven {
-            url "https://artifactory.9elements.com/artifactory/imgly"
-        }
-    }
-    dependencies {
-        classpath 'com.android.tools.build:gradle:2.3.2'
-        classpath 'com.mutualmobile.gradle.plugins:dexinfo:0.1.2'
-        classpath 'com.neenbedankt.gradle.plugins:android-apt:1.8'
-    }
-}
 apply plugin: 'com.android.application'
-apply plugin: 'com.mutualmobile.gradle.plugins.dexinfo'
-apply plugin: 'com.neenbedankt.android-apt'
+apply plugin: 'ly.img.android.pesdk'
 
-repositories {
-    jcenter()
-}
 
 android {
-    compileSdkVersion 25
-    buildToolsVersion '25.0.2'
+    compileSdkVersion 27
+    buildToolsVersion '27.0.2'
 
     defaultConfig {
         applicationId "com.photoeditorsdk.android.app"
         minSdkVersion 15
-        targetSdkVersion 25
+        targetSdkVersion 27
         versionCode 1
         versionName "5.0.19"
         renderscriptTargetApi 23
@@ -40,19 +23,56 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
 
-        debug {
+        /*debug {
             minifyEnabled true
             shrinkResources true
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
-        }
+        }*/
     }
 
 }
 
-dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
+pesdkConfig {
+    licencePath "LICENSE"
+    pesdkVersion "6.0.0-beta"
+    supportLibVersion "27.0.2"
+    modules {
+        include 'ly.img.android.pesdk.operation:text'
+        include 'ly.img.android.pesdk.operation:frame'
+        include 'ly.img.android.pesdk.operation:focus'
+        include 'ly.img.android.pesdk.operation:focus'
+        include 'ly.img.android.pesdk.operation:brush'
+        include 'ly.img.android.pesdk.operation:camera'
+        include 'ly.img.android.pesdk.operation:filter'
+        include 'ly.img.android.pesdk.operation:sticker'
+        include 'ly.img.android.pesdk.operation:overlay'
+        include 'ly.img.android.pesdk.operation:adjustment'
+        include 'ly.img.android.pesdk.operation:abstract-sticker'
 
-    compile 'ly.img.android:photo-editor-sdk:5.0.19'
-        apt 'ly.img.android:build-processor:5.0.19'
+        //include 'ly.img.android.pesdk.operation:all'
+
+        include 'ly.img.android.pesdk.ui.mobile_ui:core'
+        include 'ly.img.android.pesdk.ui.mobile_ui:text'
+        include 'ly.img.android.pesdk.ui.mobile_ui:focus'
+        include 'ly.img.android.pesdk.ui.mobile_ui:frame'
+        include 'ly.img.android.pesdk.ui.mobile_ui:brush'
+        include 'ly.img.android.pesdk.ui.mobile_ui:filter'
+        include 'ly.img.android.pesdk.ui.mobile_ui:camera'
+        include 'ly.img.android.pesdk.ui.mobile_ui:sticker'
+        include 'ly.img.android.pesdk.ui.mobile_ui:overlay'
+        include 'ly.img.android.pesdk.ui.mobile_ui:transform'
+        include 'ly.img.android.pesdk.ui.mobile_ui:adjustment'
+
+        include 'ly.img.android.pesdk:serializer'
+
+        include 'ly.img.android.pesdk.assets:font-basic'
+        include 'ly.img.android.pesdk.assets:frame-basic'
+        include 'ly.img.android.pesdk.assets:overlay-basic'
+        include 'ly.img.android.pesdk.assets:sticker-shapes'
+        include 'ly.img.android.pesdk.assets:sticker-emoticons'
+    }
+}
+
+dependencies {
 
 }

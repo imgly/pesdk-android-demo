@@ -2,7 +2,6 @@ package com.photoeditorsdk.android.app;
 
 import android.app.Activity;
 import android.content.Intent;
-import android.graphics.Matrix;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -11,14 +10,13 @@ import android.widget.Toast;
 import java.io.File;
 
 import ly.img.android.PESDK;
-import ly.img.android.acs.GPSLocationProvider;
-import ly.img.android.sdk.models.constant.Directory;
-import ly.img.android.sdk.models.state.CameraSettings;
-import ly.img.android.sdk.models.state.EditorSaveSettings;
-import ly.img.android.sdk.models.state.manager.SettingsList;
-import ly.img.android.ui.activities.CameraPreviewBuilder;
-import ly.img.android.ui.activities.ImgLyIntent;
-import ly.img.android.ui.utilities.PermissionRequest;
+import ly.img.android.pesdk.backend.model.constant.Directory;
+import ly.img.android.pesdk.backend.model.state.CameraSettings;
+import ly.img.android.pesdk.backend.model.state.EditorSaveSettings;
+import ly.img.android.pesdk.backend.model.state.manager.SettingsList;
+import ly.img.android.pesdk.ui.activity.CameraPreviewBuilder;
+import ly.img.android.pesdk.ui.activity.ImgLyIntent;
+import ly.img.android.pesdk.ui.utils.PermissionRequest;
 
 public class MainActivity extends Activity implements PermissionRequest.Response {
 
@@ -34,7 +32,6 @@ public class MainActivity extends Activity implements PermissionRequest.Response
     protected void onResume() {
         super.onResume();
         SettingsList settingsList = new SettingsList();
-
 
         settingsList
                 .getSettingsModel(CameraSettings.class)
