@@ -1,5 +1,10 @@
 # PhotoEditor SDK - Changelog
 
+## v5.0.20
+
+### Hot-Fixed
+* Possible crash while revert text history
+
 ## v5.0.19
 
 ### Fixed
