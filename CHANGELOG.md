@@ -1,5 +1,10 @@
 # PhotoEditor SDK - Changelog
 
+## v5.0.21
+
+### Fixed
+* Undoing brush step does not work after changing color.
+
 ## v5.0.20
 
 ### Hot-Fixed
