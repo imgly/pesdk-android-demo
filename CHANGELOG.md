@@ -1,5 +1,13 @@
 # PhotoEditor SDK - Changelog
 
+## v5.0.22
+
+### Fixed
+* Frame list does not live update when config has changed.
+
+### Added
+* Optional text buttons for the action bar instead of icon buttons.
+
 ## v5.0.21
 
 ### Fixed
