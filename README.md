@@ -26,7 +26,7 @@
 
 ## Overview
 
-The [PhotoEditor SDK](https://www.photoeditorsdk.com/?utm_campaign=Projects&utm_source=Github&utm_medium=PESDK&utm_content=Android-Demo&utm_term=Android) is a powerful and multifaceted tool which enables you to equip your Android application with high-performant photo editing capabilities. The PhotoEditor SDK is written in Java and can easily be customized to entirely blend with your CI and provide your users with the exact feature set your use-case requires. 
+The [PhotoEditor SDK](https://www.photoeditorsdk.com/?utm_campaign=Projects&utm_source=Github&utm_medium=PESDK&utm_content=Android-Demo&utm_term=Android) is a powerful and multifaceted tool which enables you to equip your Android application with high-performant photo editing capabilities. The PhotoEditor SDK is written in Java and can easily be customized to entirely blend with your CI and provide your users with the exact feature set your use-case requires.
 
 The SDK ships with a large variety of filters, covering all state of the art style- and mood settings that can be previewed in real-time. Unlike other apps that allow a live preview of filters, the [PhotoEditor SDK](https://www.photoeditorsdk.com/?utm_campaign=Projects&utm_source=Github&utm_medium=PESDK&utm_content=Android-Demo&utm_term=Android) even provides a live preview when using high-resolution images.
 
@@ -38,34 +38,34 @@ All operations are non-destructive which allows for fast and uncomplicated revis
     <img height="60" alt="Get it on Google Play" src="https://play.google.com/intl/en_us/badges/images/generic/en-play-badge-border.png" >
 </a>
 
-## License 
+## License
 The PhotoEditorSDK is a product of 9elements GmbH. Please make sure that you have a commercial [license](https://www.photoeditorsdk.com/pricing/?utm_campaign=Projects&utm_source=Github&utm_medium=PESDK&utm_content=Android-Demo&utm_term=Android) before releasing your app. A commercial license is required if you would like to integrate the SDK into any app, regardless of whether you monetize directly (paid app, subscription, service fee), indirectly (advertising, etc.) or are developing a free app. Every license for the PhotoEditor SDK is valid for one product only unless the products are closely related.
 
-If you’d like to use the PhotoEditor SDK for a charitable project, you can do so free of charge. However, please contact us anyway, so we can evaluate whether you qualify for a non-commercial license or not and handle your request accordingly. 
+If you’d like to use the PhotoEditor SDK for a charitable project, you can do so free of charge. However, please contact us anyway, so we can evaluate whether you qualify for a non-commercial license or not and handle your request accordingly.
 
 Please [get in touch](https://www.photoeditorsdk.com/pricing/?utm_campaign=Projects&utm_source=Github&utm_medium=PESDK&utm_content=Android-Demo&utm_term=Android) if you’d like to purchase a commercial license or require further information on our pricing and services. Please see the included [LICENSE.md](./LICENSE.md) for licensing details.
 
 
 ## Features
 
-* Over 60 handcrafted **Filters** covering all state of the art style- and mood settings to choose from. 
-* Design custom filters in Photoshop and other apps: The API of the PhotoEditor SDK enables you to expand the filter library with your own set of custom filters to define a unique visual language. Custom filters can easily be created by anyone using LUTs (Lookup Tables) from popular apps like Photoshop, GIMP or Lightroom. Design your filter and apply it onto the provided identity image. That will 'record' the filter response, now simply save it and add it as a new filter. Done. 
-* An **Overlay** Tool that can be used to create neat lighting effects like lens flare or bokeh but also to furnish pictures with textures like crumpled paper or plaster. You can easily expand the library by importing your own set of overlay assets.  
-* An **Adjustment section** that holds both essential and advanced photo editing features like brightness, contrast, saturation, clarity etc. that help tweak and fine tune images to create stunning creatives. 
-* A **Transform section** that unifies cropping, flipping and rotation in one feature.  
+* Over 60 handcrafted **Filters** covering all state of the art style- and mood settings to choose from.
+* Design custom filters in Photoshop and other apps: The API of the PhotoEditor SDK enables you to expand the filter library with your own set of custom filters to define a unique visual language. Custom filters can easily be created by anyone using LUTs (Lookup Tables) from popular apps like Photoshop, GIMP or Lightroom. Design your filter and apply it onto the provided identity image. That will 'record' the filter response, now simply save it and add it as a new filter. Done.
+* An **Overlay** Tool that can be used to create neat lighting effects like lens flare or bokeh but also to furnish pictures with textures like crumpled paper or plaster. You can easily expand the library by importing your own set of overlay assets.
+* An **Adjustment section** that holds both essential and advanced photo editing features like brightness, contrast, saturation, clarity etc. that help tweak and fine tune images to create stunning creatives.
+* A **Transform section** that unifies cropping, flipping and rotation in one feature.
 * The robust **Text Feature** provides all necessary functions for quickly adding text to any picture or creative. The corresponding font library can easily be exchanged, reduced, or expanded.
 * A categorized **Sticker library** whose UI is optimized for exploration and discovery. You can easily complement the library with your own custom sticker packages.
-* A **Frame Tool** that works with any given photo size or ratio.   
-* A high performant **Brush Engine** optimized for touch screen that supports different brush strokes.  
-* A **Photo Roll** equipped with a wide range of stock photography and templates with presorted categories. The API allows for easy expansion, reduction and rearrangement of the assets. 
-* A clean and intuitive **UI** that ensures an unhindered flow of creativity and a seamless experience while composing creatives. The UI is designed to be customized to completely match your CI and blend with your app. 
+* A **Frame Tool** that works with any given photo size or ratio.
+* A high performant **Brush Engine** optimized for touch screen that supports different brush strokes.
+* A **Photo Roll** equipped with a wide range of stock photography and templates with presorted categories. The API allows for easy expansion, reduction and rearrangement of the assets.
+* A clean and intuitive **UI** that ensures an unhindered flow of creativity and a seamless experience while composing creatives. The UI is designed to be customized to completely match your CI and blend with your app.
 * You can strip out every feature you deem unnecessary to provide your users with the exact feature set your use case requires.
 
 * __Android API Level 16+__ Covers nearly 99% of all Android devices with touchscreen.
 * __Fast image export up to 4294 MegaPixel__
 * __Generic camera support__ for most Android phones.
 * __Tablet support__: The PhotoEditor SDK uses auto layout for its views and adapts to each screen size.
-* **Non/destructive features and effects:** Quickly revise, redo or even discard your work. 
+* **Non/destructive features and effects:** Quickly revise, redo or even discard your work.
 
 
 ## SDK Core
@@ -128,7 +128,7 @@ __DO NOT FORGET TO ADD RENDERSCRIPT SUPPORT!__
 apply plugin: 'com.android.application'
 
 /* Optional if you do not use the build-processor see below */
-apply plugin: 'com.neenbedankt.android-apt' 
+apply plugin: 'com.neenbedankt.android-apt'
 
 android {
     /* Set the Compile SDK and the Build SDK 25. */
@@ -170,11 +170,11 @@ android {
 dependencies {
     /* Make sure you are import the latest SDK version */
     compile 'ly.img.android:photo-editor-sdk:5.0.21'
-    
-    /* This is optional if you do not want use an `EventTracker` and do not extend our SDK, otherwise it is required. 
+
+    /* This is optional if you do not want use an `EventTracker` and do not extend our SDK, otherwise it is required.
      * don't forget to apply the APT plugin see above
      */
-    apt 'ly.img.android:build-processor:5.0.21' 
+    apt 'ly.img.android:build-processor:5.0.21'
 }
 
 //...
@@ -193,7 +193,7 @@ For more information about gradle look at http://developer.android.com/tools/bui
     package="..." >
 
     <application
-        android:name=".Application" 
+        android:name=".Application"
         android:icon="..."
         android:label="..."
         andSoOn="..." >
@@ -218,7 +218,7 @@ public class Application extends android.app.Application {
 ##### 4. Add the License file
 
 Before using any components of the Photo Editor SDK, you have to add your license key file to your application assets folder.
-The default name of the license file is "LICENSE" change this by calling `PESDK.init(this, "FILENAME");` instead of `PESDK.init(this);`  
+The default name of the license file is "LICENSE" change this by calling `PESDK.init(this, "FILENAME");` instead of `PESDK.init(this);`
 
 The license is digitally signed so it can not be altered without becoming invalid. Our sample app comes with its own license, so you can try that right away. To try our SDK in your own app, you need to request a trial license because a license is bound to a bundle identifier. You can get a free trial license [here](https://www.photoeditorsdk.com/users/new/?utm_campaign=Projects&utm_source=Github&utm_medium=Side_Projects&utm_content=Android-Demo). In case you want to purchase a license, please get in contact with our Sales Team [here](https://www.photoeditorsdk.com/pricing/?utm_campaign=Projects&utm_source=Github&utm_medium=Side_Projects&utm_content=Android-Demo).
 
@@ -238,20 +238,20 @@ public class MyActivity extends Activity implements PermissionRequest.Response {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-		SettingsList settingsList = new SettingsList();
-		settingsList
-					// Set custom camera export settings
+    SettingsList settingsList = new SettingsList();
+    settingsList
+          // Set custom camera export settings
                     .getSettingsModel(CameraSettings.class)
                     .setExportDir(Directory.DCIM, FOLDER)
                     .setExportPrefix("camera_")
-					// Set custom editor export settings
+          // Set custom editor export settings
                     .getSettingsModel(EditorSaveSettings.class)
                     .setExportDir(Directory.DCIM, FOLDER)
                     .setExportPrefix("result_")
                     .setSavePolicy(
                          EditorSaveSettings.SavePolicy.KEEP_SOURCE_AND_CREATE_ALWAYS_OUTPUT
                     );
-             
+
             new CameraPreviewBuilder(this)
                     .setSettingsList(settingsList)
                     .startActivityForResult(this, CAMERA_PREVIEW_RESULT);
@@ -261,13 +261,13 @@ public class MyActivity extends Activity implements PermissionRequest.Response {
     protected void onActivityResult(int requestCode, int resultCode, android.content.Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
         if (resultCode == RESULT_OK && requestCode == CAMERA_PREVIEW_RESULT) {
-            String resultPath = 
+            String resultPath =
                    data.getStringExtra(ImgLyIntent.RESULT_IMAGE_PATH);
             String sourcePath =
                    data.getStringExtra(ImgLyIntent.SOURCE_IMAGE_PATH);
 
             if (resultPath != null) {
-	            // Scan result file
+              // Scan result file
                 File file =  new File(resultPath);
                 Intent scanIntent = new Intent(Intent.ACTION_MEDIA_SCANNER_SCAN_FILE);
                 Uri contentUri = Uri.fromFile(file);
@@ -315,9 +315,9 @@ __Do not forget to delegate the onRequestPermissionsResult to PermissionRequest.
 ```java
 
 public class MyActivity extends Activity implements PermissionRequest.Response {
-    
+
     // ...
-    
+
     // Start camera with editor access.
     public void startCamera() {
         SettingsList settingsList = new SettingsList();
@@ -326,7 +326,7 @@ public class MyActivity extends Activity implements PermissionRequest.Response {
             .getSettingsModel(CameraSettings.class)
             .setExportDir(Directory.DCIM, FOLDER)
             .setExportPrefix("camera_")
-            
+
             // Set custom editor export settings
             .getSettingsModel(EditorSaveSettings.class)
             .setExportDir(Directory.DCIM, FOLDER)
@@ -334,14 +334,14 @@ public class MyActivity extends Activity implements PermissionRequest.Response {
             .setSavePolicy(
                  EditorSaveSettings.SavePolicy.RETURN_ALWAYS_ONLY_OUTPUT
             );
-            
+
         // customizeMyConfig(settingsList);
-             
+
         new CameraPreviewBuilder(this)
                 .setSettingsList(settingsList)
                 .startActivityForResult(this, CAMERA_PREVIEW_RESULT);
     }
-    
+
     // ...
 }
 ```
@@ -350,33 +350,33 @@ public class MyActivity extends Activity implements PermissionRequest.Response {
 
 ```java
 public class MyActivity extends Activity implements PermissionRequest.Response {
-    
+
     // ...
-    
+
     // Start editor only
     public void startEditor() {
         String myPicture = "PATH_TO_THE_IMAGE";
-        
+
         settingsList
             .getSettingsModel(EditorLoadSettings.class)
             .setImageSourcePath(myPicture, true) // Load with delete protection true!
-            
+
             .getSettingsModel(EditorSaveSettings.class)
             .setExportDir(Directory.DCIM, FOLDER)
             .setExportPrefix("result_")
             .setSavePolicy(
                 EditorSaveSettings.SavePolicy.KEEP_SOURCE_AND_CREATE_ALWAYS_OUTPUT
             );
-            
-        // customizeMyConfig(settingsList);  
-        
+
+        // customizeMyConfig(settingsList);
+
         new PhotoEditorBuilder(this)
             .setSettingsList(settingsList)
             .startActivityForResult(this, CAMERA_PREVIEW_RESULT);
     }
-    
+
     // ...
-}   
+}
 ```
 
 ##### 6. Customize SDK config for your own Android App.
@@ -386,7 +386,7 @@ public class MyActivity extends Activity implements PermissionRequest.Response {
 public class MyActivity extends Activity implements PermissionRequest.Response {
     // ...
     public void customizeMyConfig(SettingsList settingsList) {
-       
+
         settingsList.getConfig().setTools(
             new CropEditorTool(R.string.tool_name_crop, R.drawable.icon_tool_crop),
             new OrientationEditorTool(R.string.tool_name_rotate, R.drawable.icon_tool_rotate),
@@ -405,23 +405,27 @@ public class MyActivity extends Activity implements PermissionRequest.Response {
                 "Internal PNG Stickers",
                 ImageSource.create(Uri.parse("https://content.mydomain/stickers/external-stickers-category-icon.png")),
                 new ImageStickerConfig(
-                    R.string.sticker_name_glasses_normal, 
-                    R.drawable.sticker_preview_glasses_normal, 
+                    R.strings.sticker_id_glasses_normal,
+                    R.string.sticker_name_glasses_normal,
+                    R.drawable.sticker_preview_glasses_normal,
                     R.drawable.sticker_glasses_normal
                 ),
                 new ImageStickerConfig(
-                    R.string.sticker_name_glasses_nerd, 
-                    R.drawable.sticker_preview_glasses_nerd, 
+                    R.string.sticker_id_glasses_nerd,
+                    R.string.sticker_name_glasses_nerd,
+                    R.drawable.sticker_preview_glasses_nerd,
                     R.drawable.sticker_glasses_nerd
                 ),
                 new ImageStickerConfig(
-                    R.string.sticker_name_glasses_shutter_green, 
-                    R.drawable.sticker_preview_glasses_shutter_green, 
+                    R.string.sticker_id_glasses_shutter_green,
+                    R.string.sticker_name_glasses_shutter_green,
+                    R.drawable.sticker_preview_glasses_shutter_green,
                     R.drawable.sticker_glasses_shutter_green
                 ),
                 new ImageStickerConfig(
-                    R.string.sticker_name_glasses_shutter_yellow, 
-                    R.drawable.sticker_preview_glasses_shutter_yellow, 
+                    R.string.sticker_id_glasses_shutter_yellow,
+                    R.string.sticker_name_glasses_shutter_yellow,
+                    R.drawable.sticker_preview_glasses_shutter_yellow,
                     R.drawable.sticker_glasses_shutter_yellow
                 )
             ),
@@ -429,15 +433,17 @@ public class MyActivity extends Activity implements PermissionRequest.Response {
                 "Internal VectorDrawable Stickers",
                 ImageSource.create(Uri.parse("https://content.mydomain/stickers/external-stickers-category-icon.png")),
                 new ImageStickerConfig(
-                        R.string.imgly_sticker_name_toy_drum, 
-                        R.drawable.imgly_sticker_toy_drum, 
-                        R.drawable.imgly_sticker_toy_drum, 
+                        R.string.imgly_sticker_id_toy_drum,
+                        R.string.imgly_sticker_name_toy_drum,
+                        R.drawable.imgly_sticker_toy_drum,
+                        R.drawable.imgly_sticker_toy_drum,
                         ImageStickerConfig.OPTION_MODE.INK_STICKER
                 ),
                 new ImageStickerConfig(
-                        R.string.imgly_sticker_name_toy_crayons, 
-                        R.drawable.imgly_sticker_toy_crayons, 
-                        R.drawable.imgly_sticker_toy_crayons, 
+                        R.string.imgly_sticker_name_toy_crayons,
+                        R.string.imgly_sticker_name_toy_crayons,
+                        R.drawable.imgly_sticker_toy_crayons,
+                        R.drawable.imgly_sticker_toy_crayons,
                         ImageStickerConfig.OPTION_MODE.INK_STICKER
                 )
             ),
@@ -445,29 +451,34 @@ public class MyActivity extends Activity implements PermissionRequest.Response {
                 "External Stickers",
                 ImageSource.create(Uri.parse("https://content.mydomain/stickers/external-stickers-category-icon.png")),
                 new ImageStickerConfig(
-                        "My External PNG", 
-                        ImageSource.create(Uri.parse("https://content.mydomain/stickers/glasses-preview-128x128.png")), 
+                        "my_unique_id_glasses_normal_png",
+                        "My External PNG",
+                        ImageSource.create(Uri.parse("https://content.mydomain/stickers/glasses-preview-128x128.png")),
                         ImageSource.create(Uri.parse("https://content.mydomain/stickers/glasses.png"))
                 ),
                 new ImageStickerConfig(
-                        "External VectorDrawable", 
-                        ImageSource.create(Uri.parse("https://content.mydomain/stickers/glasses-vector.xml")), 
+                        "my_unique_id_glasses_normal_vector",
+                        "External VectorDrawable",
+                        ImageSource.create(Uri.parse("https://content.mydomain/stickers/glasses-vector.xml")),
                         ImageSource.create(Uri.parse("https://content.mydomain/stickers/glasses-vector.xml"))
                 ),
                 new ImageStickerConfig(
-                        "My File", 
-                        ImageSource.create(Uri.fromFile(myPreviewFile)), 
+                        "my_unique_id_glasses_normal_file",
+                        "My File",
+                        ImageSource.create(Uri.fromFile(myPreviewFile)),
                         ImageSource.create(Uri.fromFile(myFile))
                 )
             )
         );
-        
+
         // setMyEventTracker(settingsList);
     }
-    
+
     // ...
 }
 ```
+
+__The first parameter of ImageStickerConfig is the sticker identifier, this should be unique. It is currently used for serialization only.__
 
 ##### 7. Set own event tracker. (e. g. Google Analytics...)
 
