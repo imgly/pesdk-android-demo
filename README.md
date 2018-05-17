@@ -169,12 +169,12 @@ android {
 
 dependencies {
     /* Make sure you are import the latest SDK version */
-    compile 'ly.img.android:photo-editor-sdk:5.0.22'
+    compile 'ly.img.android:photo-editor-sdk:5.1.0'
 
     /* This is optional if you do not want use an `EventTracker` and do not extend our SDK, otherwise it is required.
      * don't forget to apply the APT plugin see above
      */
-    apt 'ly.img.android:build-processor:5.0.22'
+    apt 'ly.img.android:build-processor:5.1.0'
 }
 
 //...

@@ -1,5 +1,19 @@
 # PhotoEditor SDK - Changelog
 
+## 5.1.0
+
+### Fixed
+* SDK crashes if `ImageSource` source file is deleted while decoding (ArithmeticException).
+* Editor can be opened twice.
+* Serialized stickers are sometimes broken or missing after loading.
+* Add `onAttachedToList()` and `onDetachedFromList()`to the `DataSourceViewHolder`
+* Add URI Support `EditorLoadSettings.setImageSource()`
+ 
+### Breaking changes
+* `EditorLoadSettings.setImageSourcePath()`  is deprecated use `EditorLoadSettings.setImageSource()` instead.
+* `Intent.getStringExtra(ImgLyIntent.SOURCE_IMAGE_PATH)` is deprecated use `Uri source = Intent.getParcelableExtra(ImgLyIntent.SOURCE_IMAGE_URI);` instead.
+* `Intent.getStringExtra(ImgLyIntent.RESULT_IMAGE_PATH)` is deprecated use `Uri result = Intent.getParcelableExtra(ImgLyIntent.RESULT_IMAGE_URI);` instead.
+
 ## v5.0.22
 
 ### Fixed
