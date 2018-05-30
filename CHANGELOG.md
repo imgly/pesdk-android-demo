@@ -1,5 +1,10 @@
 # PhotoEditor SDK - Changelog
 
+## 5.1.1
+
+### Fixed
+* Radial and linear blur do not work on some devices.
+
 ## 5.1.0
 
 ### Fixed
