@@ -1,18 +1,18 @@
 # PhotoEditor SDK - Changelog
 
-## 5.1.2
+## v5.1.2
 
 ### Fixed
 * `CameraSettings.setOpenEditorAfterCapture` flag is not working.
 * `SOURCE_IMAGE_URI` is `null` if editor is canceled.
 * NullPointerException when input image is `null`.
 
-## 5.1.1
+## v5.1.1
 
 ### Fixed
 * Radial and linear blur do not work on some devices.
 
-## 5.1.0
+## v5.1.0
 
 ### Fixed
 * SDK crashes if `ImageSource` source file is deleted while decoding (ArithmeticException).
