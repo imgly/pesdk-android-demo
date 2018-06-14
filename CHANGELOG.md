@@ -1,5 +1,10 @@
 # PhotoEditor SDK - Changelog
 
+## v5.1.3
+
+### Added
+* Option `TextGlLayer.BOUNDING_BOX_WIDTH_AUTO_FIT = false` to prevent the Text Sticker bounding box from resizing when the font is changed.
+
 ## v5.1.2
 
 ### Fixed
