@@ -1,5 +1,11 @@
 # PhotoEditor SDK - Changelog
 
+## v5.1.4
+
+### Fixed
+* Alpha blending produces dark glow.
+* Clarity adjustment produces dark glow.
+
 ## v5.1.3
 
 ### Added
