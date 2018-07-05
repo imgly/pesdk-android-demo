@@ -1,5 +1,12 @@
 # PhotoEditor SDK - Changelog
 
+## v5.1.5
+
+### Fixed
+* SDK crashes if there is a missing font in the serialisation.
+* Radial focus creates an oval blur on non-rectangular images.
+* ArithmeticException if device's display is too small like on smartwatches.
+
 ## v5.1.4
 
 ### Fixed
