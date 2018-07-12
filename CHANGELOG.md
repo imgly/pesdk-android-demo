@@ -1,5 +1,10 @@
 # PhotoEditor SDK - Changelog
 
+## v5.1.6
+
+### Fixed
+* Camera GPS-EXIF latitude and longitude is converted wrong into DMS format.
+
 ## v5.1.5
 
 ### Fixed
