@@ -17,7 +17,5 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="29dp"
     android:layout_height="match_parent">
-
-    <View style="@style/Imgly.Editor.Toolbar.Panels.Divider" />
-
+    <View style="?attr/Imgly.PESDK.OptionList.DividerItem" />
 </RelativeLayout>

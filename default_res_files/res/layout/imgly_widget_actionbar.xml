@@ -16,32 +16,23 @@
 
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="48dp">
+    style="?attr/Imgly.PESDK.Widget.ActionBar">
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="48dp"
-        style="@style/Imgly.Editor.Header">
-        <ly.img.android.ui.widgets.buttons.CancelButton
+        android:layout_height="48dp">
+        <ly.img.android.pesdk.ui.widgets.buttons.CancelButton
             android:id="@+id/cancelButton"
-            android:scaleType="center"
-            style="@style/Imgly.Editor.Header.Button.CancelButton" />
-
+            style="?attr/Imgly.PESDK.Widget.ActionBar.Button.CancelButton" />
         <Space
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"/>
-
-        <ly.img.android.ui.widgets.buttons.AcceptButton
+        <ly.img.android.pesdk.ui.widgets.buttons.AcceptButton
             android:id="@+id/acceptButton"
-            android:scaleType="center"
-            style="@style/Imgly.Editor.Header.Button.AcceptButton" />
+            style="?attr/Imgly.PESDK.Widget.ActionBar.Button.AcceptButton" />
     </LinearLayout>
     <RelativeLayout
         android:id="@+id/actionBarTitleBox"
-        android:textSize="14sp"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        style="?attr/Imgly.PESDK.Widget.ActionBar.TitleAnimationContainer">
     </RelativeLayout>
-
 </RelativeLayout>

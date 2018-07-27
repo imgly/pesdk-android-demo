@@ -17,30 +17,17 @@
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/rootView"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@null">
-    <ly.img.android.ui.widgets.DraggableExpandView
+    style="?attr/Imgly.PESDK.Editor.Panel.Font">
+    <ly.img.android.pesdk.ui.widgets.DraggableExpandView
         android:id="@+id/expandView"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="88dp"
-        android:orientation="vertical">
-        <ly.img.android.ui.widgets.VerticalListView
+        style="?attr/Imgly.PESDK.Editor.Panel.Font.Expandable">
+        <ly.img.android.pesdk.ui.widgets.VerticalListView
             android:id="@+id/bigFontList"
-            style="@style/Imgly.Editor.Toolbar.Panels.Text.FontVertical.Container" />
+            style="?attr/Imgly.PESDK.Editor.Panel.Font.FontVertical.Container"/>
         <ImageView
-            android:id="@+id/draggerThumb"
-            android:layout_width="match_parent"
-            android:layout_height="14dp"
-            android:src="@drawable/imgly_list_thump_handle"
-            android:scaleType="center"
-            android:background="@drawable/imgly_list_thump"
-            />
-    </ly.img.android.ui.widgets.DraggableExpandView>
+            android:id="@id/draggerThumb"
+            style="?attr/Imgly.PESDK.Editor.Panel.Font.Thumb"/>
+    </ly.img.android.pesdk.ui.widgets.DraggableExpandView>
     <include layout="@layout/imgly_option_list"
-        android:layout_height="88dp"
-        android:layout_width="match_parent"
-        android:layout_alignParentBottom="true"/>
+             style="?attr/Imgly.PESDK.Editor.Panel.Font.OptionList"/>
 </RelativeLayout>

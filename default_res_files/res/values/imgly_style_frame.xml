@@ -1,0 +1,64 @@
+<!--
+  ~ This file is part of the PhotoEditor Software Development Kit.
+  ~
+  ~ Copyright (C) 2017 9elements GmbH <contact@9elements.com>
+  ~ All rights reserved.
+  ~
+  ~ Redistribution and use in source and binary forms, without
+  ~ modification, are permitted provided that the following license agreement
+  ~ is approved and a legal/financial contract was signed by the user.
+  ~
+  ~ The license agreement can be found under the following link:
+  ~
+  ~ https://www.photoeditorsdk.com/LICENSE.txt
+  -->
+
+<resources>
+
+    <attr name="Imgly.PESDK.Editor.Panel.Frame" format="reference"/>
+    <attr name="Imgly.PESDK.Editor.Panel.Frame.FrameItem" format="reference"/>
+    <attr name="Imgly.PESDK.Editor.Panel.Frame.FrameItem.Icon" format="reference"/>
+    <attr name="Imgly.PESDK.Editor.Panel.Frame.FrameItem.Label" format="reference"/>
+    <attr name="Imgly.PESDK.Editor.Panel.Frame.OptionList" format="reference"/>
+    <attr name="Imgly.PESDK.Editor.Panel.Frame.SeekSlider" format="reference"/>
+    <attr name="Imgly.PESDK.Editor.Panel.Frame.SmallOptionList" format="reference"/>
+
+    <style name="Imgly.PESDK.Editor.Panel.Frame" parent="Imgly.PESDK.Editor.Panel">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="Imgly.PESDK.Editor.Panel.Frame.FrameItem" parent="Imgly.PESDK.default.Item">
+        <item name="android:layout_marginTop">@dimen/container_item_marginTop</item>
+    </style>
+
+    <style name="Imgly.PESDK.Editor.Panel.Frame.FrameItem.Icon" parent="Imgly.PESDK.default.Item.Icon">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:padding">8dp</item>
+    </style>
+
+    <style name="Imgly.PESDK.Editor.Panel.Frame.FrameItem.Label" parent="Imgly.PESDK.default.Item.Label">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:visibility">gone</item>
+    </style>
+
+    <style name="Imgly.PESDK.Editor.Panel.Frame.SmallOptionList" parent="Imgly.PESDK">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">44dp</item>
+    </style>
+
+    <style name="Imgly.PESDK.Editor.Panel.Frame.SeekSlider" parent="Imgly.PESDK.SeekSlider">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:alpha">0</item>
+    </style>
+
+    <style name="Imgly.PESDK.Editor.Panel.Frame.OptionList" parent="Imgly.PESDK">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">88dp</item>
+    </style>
+
+</resources>

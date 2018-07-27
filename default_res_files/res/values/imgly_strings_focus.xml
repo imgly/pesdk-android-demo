@@ -15,9 +15,12 @@
   -->
 
 <resources>
+    <string name="pesdk_focus_title_name">Focus</string>
+    <string name="pesdk_focus_title_disabled">None</string>
+    <string name="pesdk_focus_button_radial">Radial</string>
+    <string name="pesdk_focus_button_linear">Linear</string>
+    <string name="pesdk_focus_button_mirrored">Mirrored</string>
+    <string name="pesdk_focus_button_gaussian">Gaussian</string>
 
-    <string name="imgly_focus_name_none">None</string>
-    <string name="imgly_focus_name_radial">Radial</string>
-    <string name="imgly_focus_name_linear">Linear</string>
 
 </resources>

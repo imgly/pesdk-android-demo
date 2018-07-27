@@ -14,33 +14,16 @@
   ~ https://www.photoeditorsdk.com/LICENSE.txt
   -->
 
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/rootView"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="#992B2B2B"
-    android:clickable="false">
-
+    style="?attr/Imgly.PESDK.Editor.Panel.Text">
     <RelativeLayout
         android:id="@+id/contentView"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="#992B2B2B">
+        android:layout_height="match_parent">
         <EditText
             android:id="@+id/textInputField"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textSize="30sp"
-            android:text=""
-            android:hint="@string/imgly_text_panel_edit_text_placeholder"
-            android:gravity="center"
-            android:layout_centerInParent="true"
-            android:textColor="#FFFFFFFF"
-            android:imeOptions="actionDone"
-            android:inputType="textCapSentences|textAutoCorrect"
-            android:background="@color/transparent"
-            android:maxLines="50"
-            android:lines="5"/>
+            style="?attr/Imgly.PESDK.Editor.Panel.Text.InputField"/>
     </RelativeLayout>
-
 </RelativeLayout>

@@ -24,13 +24,6 @@
     <drawable name="imgly_icon_option_sticker_color_bg">@drawable/imgly_icon_default_color_bg</drawable>
     <drawable name="imgly_icon_option_sticker_color_fill">@drawable/imgly_icon_default_color_fill</drawable>
 
-
-    <drawable name="imgly_icon_option_sticker_contrast">@drawable/imgly_icon_option_contrast</drawable>
-    <drawable name="imgly_icon_option_sticker_brightness">@drawable/imgly_icon_option_brightness</drawable>
-    <drawable name="imgly_icon_option_sticker_saturation">@drawable/imgly_icon_option_saturation</drawable>
-
-
     <drawable name="imgly_icon_download">@drawable/imgly_icon_save</drawable>
     <drawable name="imgly_icon_save_compat">@drawable/imgly_icon_download</drawable>
-
 </resources>

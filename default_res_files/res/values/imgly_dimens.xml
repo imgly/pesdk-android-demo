@@ -22,4 +22,15 @@
 	<dimen name="default_padding_side">10dp</dimen>
 	<dimen name="default_preview_height">40dp</dimen>
 	<dimen name="default_preview_image_height">36dp</dimen>
+	<dimen name="default_text_size">12dp</dimen>
+
+	<dimen name="item_label_text_size">11dp</dimen>
+
+	<dimen name="quick_option_margin_right">0.5dp</dimen>
+	<dimen name="quick_option_margin_left">0.5dp</dimen>
+
+	<dimen name="container_item_width">72dp</dimen>
+	<dimen name="container_item_height">72dp</dimen>
+	<dimen name="container_item_marginTop">8dp</dimen>
+
 </resources>

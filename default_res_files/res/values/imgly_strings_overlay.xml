@@ -16,23 +16,25 @@
 
 <resources>
 
-    <string name="imgly_overlay_value" formatted="false">%d</string>
+    <string name="pesdk_overlay_title_name">Overlay</string>
 
-    <string name="imgly_overlay_mode_normal">Normal</string>
-    <string name="imgly_overlay_mode_darken">Darken</string>
-    <string name="imgly_overlay_mode_screen">Screen</string>
-    <string name="imgly_overlay_mode_overlay">Overlay</string>
-    <string name="imgly_overlay_mode_lighten">Lighten</string>
-    <string name="imgly_overlay_mode_multiply">Multiply</string>
-    <string name="imgly_overlay_mode_color_burn">Color Burn</string>
-    <string name="imgly_overlay_mode_soft_light">Soft Light</string>
-    <string name="imgly_overlay_mode_hard_light">Hard Light</string>
+    <string name="pesdk_overlay_text_intensityValue" formatted="false">%d</string>
 
-    <string name="imgly_overlay_name_none">None</string>
-    <string name="imgly_overlay_name_golden">Golden</string>
-    <string name="imgly_overlay_name_lightleak1">Lightleak 1</string>
-    <string name="imgly_overlay_name_mosaic">Mosaic</string>
-    <string name="imgly_overlay_name_paper">Paper</string>
-    <string name="imgly_overlay_name_rain">Rain</string>
-    <string name="imgly_overlay_name_vintage">Vintage</string>
+    <string name="pesdk_overlay_button_blendModeNormal">Normal</string>
+    <string name="pesdk_overlay_button_blendModeDarken">Darken</string>
+    <string name="pesdk_overlay_button_blendModeScreen">Screen</string>
+    <string name="pesdk_overlay_button_blendModeOverlay">Overlay</string>
+    <string name="pesdk_overlay_button_blendModeLighten">Lighten</string>
+    <string name="pesdk_overlay_button_blendModeMultiply">Multiply</string>
+    <string name="pesdk_overlay_button_blendModeColorBurn">Color Burn</string>
+    <string name="pesdk_overlay_button_blendModeSoftLight">Soft Light</string>
+    <string name="pesdk_overlay_button_blendModeHardLight">Hard Light</string>
+
+    <string name="pesdk_overlay_asset_none">None</string>
+    <string name="pesdk_overlay_asset_golden">Golden</string>
+    <string name="pesdk_overlay_asset_lightleak1">Lightleak 1</string>
+    <string name="pesdk_overlay_asset_mosaic">Mosaic</string>
+    <string name="pesdk_overlay_asset_paper">Paper</string>
+    <string name="pesdk_overlay_asset_rain">Rain</string>
+    <string name="pesdk_overlay_asset_vintage">Vintage</string>
 </resources>

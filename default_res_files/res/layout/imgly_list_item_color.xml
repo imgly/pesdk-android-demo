@@ -15,37 +15,16 @@
 
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tool="http://schemas.android.com/apk/res-auto"
     android:id="@+id/contentHolder"
-    android:layout_marginTop="8dp"
-    android:layout_marginLeft="0.5dp"
-    android:layout_marginStart="0.5dp"
-    android:layout_marginRight="0.5dp"
-    android:layout_marginEnd="0.5dp"
-    android:layout_width="48dp"
-    android:layout_height="72dp">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="?attr/Imgly.PESDK.Editor.Panel.Color.ColorItem">
     <View
-        android:padding="0dp"
-        android:layout_width="48dp"
-        android:layout_height="72dp"
-        android:background="@drawable/imgly_transparent_identity"
-        style="@style/Imgly.Editor.Toolbar.Panels.Text.Color.ItemSelectOverlay"/>
+        style="?attr/Imgly.PESDK.Editor.Panel.Color.ColorItem.SelectOverlay"/>
     <View
         android:id="@+id/colorView"
-        android:layout_width="48dp"
-        android:layout_height="72dp"
-        android:src="@color/imgly_background"
-        android:scaleType="centerCrop"
-        android:background="#CCFF0000"
-        style="@style/Imgly.Editor.Toolbar.Panels.Text.Color.ItemIcon"/>
-    <ly.img.android.ui.widgets.ImageSourceView
+        style="?attr/Imgly.PESDK.Editor.Panel.Color.ColorItem.Background"/>
+    <ly.img.android.pesdk.ui.widgets.ImageSourceView
         android:id="@+id/itemOptionIcon"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        tool:srcCompat="@drawable/imgly_icon_item_options"
-        android:scaleType="center"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="5dp"
-        style="@style/Imgly.Editor.Toolbar.Panels.Text.Color.ItemIcon"/>
+        app:src="@drawable/imgly_icon_item_options"
+        style="?attr/Imgly.PESDK.Editor.Panel.Color.ColorItem.Icon"/>
 </RelativeLayout>

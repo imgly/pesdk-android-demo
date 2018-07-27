@@ -1,0 +1,30 @@
+<!--
+  ~ This file is part of the PhotoEditor Software Development Kit.
+  ~
+  ~ Copyright (C) 2017 9elements GmbH <contact@9elements.com>
+  ~ All rights reserved.
+  ~
+  ~ Redistribution and use in source and binary forms, without
+  ~ modification, are permitted provided that the following license agreement
+  ~ is approved and a legal/financial contract was signed by the user.
+  ~
+  ~ The license agreement can be found under the following link:
+  ~
+  ~ https://www.photoeditorsdk.com/LICENSE.txt
+  -->
+
+<ly.img.android.pesdk.ui.widgets.AutoRotateLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/contentHolder"
+    style="?attr/Imgly.PESDK.Editor.Panel.TextDesign.TextDesignItem">
+    <ly.img.android.pesdk.ui.widgets.ImageSourceView
+        android:id="@+id/image"
+        style="?attr/Imgly.PESDK.Editor.Panel.TextDesign.TextDesignItem.Icon"/>
+    <ly.img.android.pesdk.ui.widgets.ImageSourceView
+        android:id="@+id/shuffleImage"
+        android:background="@drawable/imgly_icon_text_design_shuffle"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_centerInParent="true"
+        style="?attr/Imgly.PESDK.default.Item.Icon"/>
+</ly.img.android.pesdk.ui.widgets.AutoRotateLayout>

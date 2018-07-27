@@ -13,54 +13,25 @@
   ~ https://www.photoeditorsdk.com/LICENSE.txt
   -->
 
-<ly.img.android.ui.widgets.AutoRotateLayout
+<ly.img.android.pesdk.ui.widgets.AutoRotateLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/contentHolder"
-    android:layout_marginTop="8dp"
-    android:layout_width="72dp"
-    android:layout_marginLeft="0.5dp"
-    android:layout_marginStart="0.5dp"
-    android:layout_marginRight="0.5dp"
-    android:layout_marginEnd="0.5dp"
-    android:layout_height="72dp">
-    <View
-        android:padding="0dp"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        style="@style/Imgly.Editor.Toolbar.Panels.Filter.ItemSelectBackground"/>
-    <ly.img.android.ui.widgets.ImageSourceView
+    style="?attr/Imgly.PESDK.Editor.Panel.Filter.FilterItem">
+    <ly.img.android.pesdk.ui.widgets.ImageSourceView
         android:id="@+id/image"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        style="@style/Imgly.Editor.Toolbar.Panels.Filter.ItemIcon"/>
+        style="?attr/Imgly.PESDK.Editor.Panel.Filter.FilterItem.Icon"/>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
         <RelativeLayout
-            android:padding="0dp"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            style="@style/Imgly.Editor.Toolbar.Panels.Filter.ItemSelectOverlay">
+            style="?attr/Imgly.PESDK.Editor.Panel.Filter.FilterItem.SelectOverlay">
             <TextView
                 android:id="@+id/value"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="100"
-                style="@style/Imgly.Editor.Toolbar.Panels.Filter.ItemValue"
-                android:layout_centerInParent="true"
-                android:lines="1"
-                android:visibility="invisible"
-                />
+                style="?attr/Imgly.PESDK.Editor.Panel.Filter.FilterItem.Value"/>
         </RelativeLayout>
         <TextView
             android:id="@+id/label"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/imgly_color_filter_name_default"
-            style="@style/Imgly.Editor.Toolbar.Panels.Filter.ItemLabel"
-            android:lines="1"
-            />
+            style="?attr/Imgly.PESDK.Editor.Panel.Filter.FilterItem.Label"/>
     </LinearLayout>
-</ly.img.android.ui.widgets.AutoRotateLayout>
+</ly.img.android.pesdk.ui.widgets.AutoRotateLayout>

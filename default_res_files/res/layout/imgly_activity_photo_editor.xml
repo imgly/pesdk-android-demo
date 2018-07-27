@@ -13,33 +13,20 @@
   ~
   ~ https://www.photoeditorsdk.com/LICENSE.txt
   -->
-<ly.img.android.ui.widgets.EditorRootView
+
+<ly.img.android.pesdk.ui.widgets.EditorRootView
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/rootView"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical">
-    <ly.img.android.sdk.views.EditorPreview
+    style="?attr/Imgly.PESDK.Editor.Activity">
+    <ly.img.android.pesdk.backend.views.EditorPreview
         android:id="@+id/editorImageView"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginBottom="136dp"/>
-    <ly.img.android.sdk.views.ProgressView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_centerInParent="true"
-        android:visibility="gone"/>
-    <ly.img.android.ui.widgets.ToolContainer
+        style="?attr/Imgly.PESDK.Editor.Activity.Preview"/>
+    <ly.img.android.pesdk.ui.widgets.ProgressView
+        style="?attr/Imgly.PESDK.Editor.Activity.Progress"/>
+    <ly.img.android.pesdk.ui.widgets.ToolContainer
         android:id="@+id/toolPanelContainer"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:minHeight="80dp"
-        android:layout_marginBottom="48dp"
-        android:layout_alignParentBottom="true"
-        />
-    <ly.img.android.ui.widgets.ImgLyTitleBar
+        style="?attr/Imgly.PESDK.Editor.Activity.ToolPanelContainer"/>
+    <ly.img.android.pesdk.ui.widgets.ImgLyTitleBar
         android:id="@+id/imglyActionBar"
-        android:layout_width="match_parent"
-        android:layout_height="48dp"
-        android:layout_alignParentBottom="true"/>
-</ly.img.android.ui.widgets.EditorRootView>
+        style="?attr/Imgly.PESDK.Editor.Activity.ActionBar"/>
+</ly.img.android.pesdk.ui.widgets.EditorRootView>

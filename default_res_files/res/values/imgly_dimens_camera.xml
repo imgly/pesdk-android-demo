@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="gallery_button_width">47dp</dimen>
+    <dimen name="gallery_button_height">47dp</dimen>
+
+</resources>

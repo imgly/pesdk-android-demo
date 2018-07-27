@@ -14,18 +14,13 @@
   ~ https://www.photoeditorsdk.com/LICENSE.txt
   -->
 
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/rootView"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:orientation="vertical">
-
-    <ly.img.android.ui.widgets.SeekSlider
+    style="?attr/Imgly.PESDK.Editor.Panel.Focus">
+    <ly.img.android.pesdk.ui.widgets.SeekSlider
         android:id="@+id/seekBar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        style="@style/Imgly.SeekSlider"/>
-
-    <include layout="@layout/imgly_option_list"/>
-
+        style="?attr/Imgly.PESDK.Editor.Panel.Focus.SeekSlider"/>
+    <include layout="@layout/imgly_option_list"
+             style="?attr/Imgly.PESDK.Editor.Panel.Focus.OptionContainer"/>
 </LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="overlay_list_margin_right">0.5dp</dimen>
+    <dimen name="overlay_list_margin_left">0.5dp</dimen>
+
+    <dimen name="blend_mode_margin_right">0.5dp</dimen>
+    <dimen name="blend_mode_margin_left">0.5dp</dimen>
+
+</resources>

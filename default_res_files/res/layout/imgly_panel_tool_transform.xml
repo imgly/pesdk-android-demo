@@ -14,33 +14,23 @@
   ~ https://www.photoeditorsdk.com/LICENSE.txt
   -->
 
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/rootView"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:orientation="vertical"
-    style="@style/Imgly.Editor.Toolbar.Panels.OptionsContainer" >
+    style="?attr/Imgly.PESDK.Editor.Panel.Transform">
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-        <ly.img.android.ui.widgets.AutoRotateImageSource
-            xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_height="wrap_content"
+        android:background="@color/imgly_editor_rotate_slider_background">
+        <ly.img.android.pesdk.ui.widgets.AutoRotateImageSource
             android:id="@+id/buttonHorizontalFlip"
-            android:layout_width="48dp"
-            android:layout_height="48dp"
-            android:scaleType="center"/>
-        <ly.img.android.ui.widgets.AdjustSlider
+            style="?attr/Imgly.PESDK.Editor.Panel.Transform.Button.Flip"/>
+        <ly.img.android.pesdk.ui.widgets.AdjustSlider
             android:id="@+id/slider"
-            android:layout_height="48dp"
-            android:layout_width="0dp"
-            android:layout_weight="1"/>
-        <ly.img.android.ui.widgets.AutoRotateImageSource
-            xmlns:android="http://schemas.android.com/apk/res/android"
+            style="?attr/Imgly.PESDK.Editor.Panel.Transform.Slider"/>
+        <ly.img.android.pesdk.ui.widgets.AutoRotateImageSource
             android:id="@+id/buttonRotateCCW"
-            android:layout_width="48dp"
-            android:layout_height="48dp"
-            android:scaleType="center"/>
+            style="?attr/Imgly.PESDK.Editor.Panel.Transform.Button.Rotate"/>
     </LinearLayout>
     <include layout="@layout/imgly_option_list"/>
-
 </LinearLayout>

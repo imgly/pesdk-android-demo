@@ -17,11 +17,8 @@
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/seekBarContainer"
-    android:layout_width="match_parent"
-    android:layout_height="48dp"
-    style="@style/Imgly.SeekBarContainer">
+    style="?attr/Imgly.PESDK.Widget.SeekSliderContainer">
     <SeekBar
         android:id="@+id/seekBarSlider"
-        style="@style/Imgly.SeekBar"
-        />
+        style="?attr/Imgly.PESDK.Widget.SeekSlider"/>
 </RelativeLayout>

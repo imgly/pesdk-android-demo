@@ -14,41 +14,23 @@
   ~ https://www.photoeditorsdk.com/LICENSE.txt
   -->
 
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              xmlns:app="http://schemas.android.com/apk/res-auto"
-              android:id="@+id/rootView"
-              android:layout_width="match_parent"
-              android:layout_height="match_parent">
-
-    <ly.img.android.ui.widgets.DraggableExpandView
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rootView"
+    style="?attr/Imgly.PESDK.Editor.Panel.Sticker">
+    <ly.img.android.pesdk.ui.widgets.DraggableExpandView
         android:id="@+id/expandView"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="88dp"
-        android:orientation="vertical">
-        <ly.img.android.ui.widgets.GridListView
+        style="?attr/Imgly.PESDK.Editor.Panel.Sticker.Expandable">
+        <ly.img.android.pesdk.ui.widgets.GridListView
             android:id="@+id/grid"
-            android:layout_marginTop="14dp"
-            android:paddingTop="14dp"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
             app:spanSize="64dp"
-            android:background="#d9000000"/>
+            style="?attr/Imgly.PESDK.Editor.Panel.Sticker.Expandable.Grid"/>
         <ImageView
-            android:id="@+id/draggerThumb"
-            android:layout_width="match_parent"
-            android:layout_height="14dp"
-            android:src="@drawable/imgly_list_thump_handle"
-            android:scaleType="center"
-            android:background="@drawable/imgly_list_thump"
-            />
-    </ly.img.android.ui.widgets.DraggableExpandView>
-
-    <include layout="@layout/imgly_option_list"
-             android:layout_height="88dp"
-             android:layout_width="match_parent"
-             android:layout_alignParentBottom="true"
-        />
-
+            android:id="@id/draggerThumb"
+            style="?attr/Imgly.PESDK.Editor.Panel.Sticker.Expandable.Thumb"/>
+    </ly.img.android.pesdk.ui.widgets.DraggableExpandView>
+    <include
+        layout="@layout/imgly_option_list"
+        style="?attr/Imgly.PESDK.Editor.Panel.Sticker.OptionList"/>
 </RelativeLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ This file is part of the PhotoEditor Software Development Kit.
+  ~
+  ~ Copyright (C) 2017 9elements GmbH <contact@9elements.com>
+  ~ All rights reserved.
+  ~
+  ~ Redistribution and use in source and binary forms, without
+  ~ modification, are permitted provided that the following license agreement
+  ~ is approved and a legal/financial contract was signed by the user.
+  ~
+  ~ The license agreement can be found under the following link:
+  ~
+  ~ https://www.photoeditorsdk.com/LICENSE.txt
+  -->
+
+<resources>
+
+    <string name="app_name"/>
+
+    <string name="pesdk_editor_title_name">Editor</string>
+    <string name="pesdk_editor_title_mainMenu"/>
+
+    <string name="pesdk_editor_title_closeEditorAlert">Close Editor?</string>
+    <string name="pesdk_editor_text_closeEditorAlert">Do you really want to discard the image?</string>
+    <string name="pesdk_editor_button_closeEditorAlertConfirmation">Yes</string>
+    <string name="pesdk_editor_button_closeEditorAlertCancelation">No</string>
+
+    <string name="pesdk_editor_text_exportProgressUnknown">Exporting image…</string>
+    <string name="pesdk_editor_text_exportProgress" formatted="false">Exporting image %s.</string>
+
+    <string name="pesdk_common_button_flipH">Flip H</string>
+    <string name="pesdk_common_button_flipV">Flip V</string>
+    <string name="pesdk_common_button_undo">Undo</string>
+    <string name="pesdk_common_button_redo">Redo</string>
+
+
+    <string name="pesdk_transform_title_name"/>
+    <string name="pesdk_filter_title_name"/>
+    <string name="pesdk_adjustments_title_name"/>
+    <string name="pesdk_sticker_title_name"/>
+    <string name="pesdk_text_title_name"/>
+    <string name="pesdk_textDesign_title_name"/>
+    <string name="pesdk_overlay_title_name"/>
+    <string name="pesdk_frame_title_name"/>
+    <string name="pesdk_brush_title_name"/>
+    <string name="pesdk_focus_title_name"/>
+
+    <string name="pesdk_color_item_00000000">Transparent</string>
+    <string name="pesdk_color_item_FFFFFFFF">White</string>
+    <string name="pesdk_color_item_FF7E7E7E">Gray</string>
+    <string name="pesdk_color_item_FF000000">Black</string>
+    <string name="pesdk_color_item_FF30E5E7">Light blue</string>
+    <string name="pesdk_color_item_FF6784FF">Blue</string>
+    <string name="pesdk_color_item_FF8B60FF">Purple</string>
+    <string name="pesdk_color_item_FFE161FF">Orchid</string>
+    <string name="pesdk_color_item_FFFF64CE">Pink</string>
+    <string name="pesdk_color_item_FFFF6688">Red</string>
+    <string name="pesdk_color_item_FFE74E49">Orange</string>
+    <string name="pesdk_color_item_FFF4744D">Gold</string>
+    <string name="pesdk_color_item_FFFFCD62">Yellow</string>
+    <string name="pesdk_color_item_FFC8FF5F">Olive</string>
+    <string name="pesdk_color_item_FF7EFF60">Green</string>
+    <string name="pesdk_color_item_FF3FFF84">Besch</string>
+    <string name="pesdk_color_item_FF42FFDC">Aquamarin</string>
+
+</resources>

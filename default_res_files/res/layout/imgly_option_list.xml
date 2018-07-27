@@ -17,13 +17,8 @@
 <RelativeLayout
     android:id="@+id/optionBar"
     xmlns:android="http://schemas.android.com/apk/res/android"
-    style="@style/Imgly.Editor.Toolbar.Panels.OptionsContainer"
-    android:clickable="true"
-    android:focusable="true">
-    <ly.img.android.ui.widgets.HorizontalListView
+    style="?attr/Imgly.PESDK.Editor.Panel.default.OptionContainer">
+    <ly.img.android.pesdk.ui.widgets.HorizontalListView
         android:id="@+id/optionList"
-        android:layout_height="88dp"
-        android:layout_width="wrap_content"
-        android:layout_centerHorizontal="true"
-        />
+        style="?attr/Imgly.PESDK.default.OptionList"/>
 </RelativeLayout>

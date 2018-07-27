@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="transform_SliderBar_height">48dp</dimen>
+    <dimen name="transform_SliderBar_width">0dp</dimen>
+    <dimen name="transform_SliderBar_button_width">48dp</dimen>
+
+</resources>

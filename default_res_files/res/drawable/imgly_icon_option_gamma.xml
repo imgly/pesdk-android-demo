@@ -2,7 +2,7 @@
 <!--
   ~ This file is part of the PhotoEditor Software Development Kit.
   ~
-  ~ Copyright (C) 2017 9elements GmbH <contact@9elements.com>
+  ~ Copyright (C) 2018 9elements GmbH <contact@9elements.com>
   ~ All rights reserved.
   ~
   ~ Redistribution and use in source and binary forms, without
@@ -15,6 +15,6 @@
   -->
 
 <selector xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:state_selected="false" android:drawable="@drawable/imgly_icon_option_focus_radial_normal"/>
-    <item android:state_selected="true" android:drawable="@drawable/imgly_icon_option_focus_radial_active"/>
+    <item android:state_selected="false" android:drawable="@drawable/imgly_icon_option_gamma_normal"/>
+    <item android:state_selected="true" android:drawable="@drawable/imgly_icon_option_gamma_active"/>
 </selector>

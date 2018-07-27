@@ -14,20 +14,19 @@
   ~ https://www.photoeditorsdk.com/LICENSE.txt
   -->
 
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              android:id="@+id/rootView"
-              android:layout_width="match_parent"
-              android:layout_height="wrap_content"
-              android:orientation="vertical">
-
-    <ly.img.android.ui.widgets.SeekSlider
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootView"
+    style="?attr/Imgly.PESDK.Editor.Panel.Overlay">
+    <ly.img.android.pesdk.ui.widgets.SeekSlider
         android:id="@+id/seekBar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        style="@style/Imgly.SeekSlider"/>
-
-    <include layout="@layout/imgly_mode_list"/>
-
+        style="?attr/Imgly.PESDK.Editor.Panel.Overlay.SeekSlider"/>
+    <RelativeLayout
+        android:id="@+id/modeBar"
+        style="?Imgly.PESDK.Editor.Panel.Overlay.ModeContainer">
+        <ly.img.android.pesdk.ui.widgets.HorizontalListView
+            android:id="@+id/modesList"
+            style="?attr/Imgly.PESDK.Editor.Panel.Overlay.ModeList"/>
+    </RelativeLayout>
     <include layout="@layout/imgly_option_list"/>
-
 </LinearLayout>

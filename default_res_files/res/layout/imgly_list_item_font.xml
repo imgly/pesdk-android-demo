@@ -13,24 +13,14 @@
   ~ https://www.photoeditorsdk.com/LICENSE.txt
   -->
 
-<ly.img.android.ui.widgets.AutoRotateLayout
+<ly.img.android.pesdk.ui.widgets.AutoRotateLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/contentHolder"
-    android:layout_marginTop="8dp"
-    android:layout_marginLeft="0.5dp"
-    android:layout_marginStart="0.5dp"
-    android:layout_marginRight="0.5dp"
-    android:layout_marginEnd="0.5dp"
-    android:layout_width="72dp"
-    android:layout_height="72dp"
-    style="@style/Imgly.Editor.Toolbar.Panels.Text.Font">
+    style="?attr/Imgly.PESDK.Editor.Panel.Font.FontItem">
     <TextView
         android:id="@+id/text"
-        style="@style/Imgly.Editor.Toolbar.Panels.Text.Font.ItemText"
-        />
+        style="?attr/Imgly.PESDK.Editor.Panel.Font.FontItem.Text"/>
     <TextView
         android:id="@+id/label"
-        android:text="@string/imgly_tool_name_text_font"
-        style="@style/Imgly.Editor.Toolbar.Panels.Text.Font.ItemLabel"
-        android:layout_alignParentBottom="true"/>
-</ly.img.android.ui.widgets.AutoRotateLayout>
+        style="?attr/Imgly.PESDK.Editor.Panel.Font.FontItem.Label"/>
+</ly.img.android.pesdk.ui.widgets.AutoRotateLayout>

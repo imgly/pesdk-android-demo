@@ -13,8 +13,6 @@
   ~
   ~ https://www.photoeditorsdk.com/LICENSE.txt
   -->
-
 <resources>
-	<item name="confirmCancelDialogId" type="id"/>
-	<item name="glGroundView" type="id"/>
+    <item name="draggerThumb" type="id"/>
 </resources>

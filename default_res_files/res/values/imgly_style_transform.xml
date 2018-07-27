@@ -1,0 +1,69 @@
+<!--
+  ~ This file is part of the PhotoEditor Software Development Kit.
+  ~
+  ~ Copyright (C) 2017 9elements GmbH <contact@9elements.com>
+  ~ All rights reserved.
+  ~
+  ~ Redistribution and use in source and binary forms, without
+  ~ modification, are permitted provided that the following license agreement
+  ~ is approved and a legal/financial contract was signed by the user.
+  ~
+  ~ The license agreement can be found under the following link:
+  ~
+  ~ https://www.photoeditorsdk.com/LICENSE.txt
+  -->
+
+<resources>
+
+    <attr name="Imgly.PESDK.Editor.Panel.Transform" format="reference"/>
+    <attr name="Imgly.PESDK.Editor.Panel.Transform.Button.Flip" format="reference"/>
+    <attr name="Imgly.PESDK.Editor.Panel.Transform.Button.Rotate" format="reference"/>
+    <attr name="Imgly.PESDK.Editor.Panel.Transform.Crop" format="reference"/>
+    <attr name="Imgly.PESDK.Editor.Panel.Transform.CropItem" format="reference"/>
+    <attr name="Imgly.PESDK.Editor.Panel.Transform.CropItem.Label" format="reference"/>
+    <attr name="Imgly.PESDK.Editor.Panel.Transform.Slider" format="reference"/>
+
+    <style name="Imgly.PESDK.Editor.Panel.Transform" parent="Imgly.PESDK.Editor.Panel">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="Imgly.PESDK.Editor.Panel.Transform.Crop" parent="Imgly.PESDK">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="Imgly.PESDK.Editor.Panel.Transform.CropItem" parent="Imgly.PESDK.default.Item">
+        <item name="android:layout_marginTop">@dimen/container_item_marginTop</item>
+        <item name="android:background">@drawable/imgly_item_border</item>
+    </style>
+
+    <style name="Imgly.PESDK.Editor.Panel.Transform.CropItem.Label" parent="Imgly.PESDK.default.Item.Label">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:maxLines">5</item>
+        <item name="android:lines">5</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="Imgly.PESDK.Editor.Panel.Transform.Button.Rotate" parent="Imgly.PESDK.Button">
+        <item name="android:layout_width">@dimen/transform_SliderBar_button_width</item>
+        <item name="android:layout_height">@dimen/transform_SliderBar_height</item>
+        <item name="android:scaleType">center</item>
+    </style>
+
+    <style name="Imgly.PESDK.Editor.Panel.Transform.Button.Flip" parent="Imgly.PESDK.Button">
+        <item name="android:layout_width">@dimen/transform_SliderBar_button_width</item>
+        <item name="android:layout_height">@dimen/transform_SliderBar_height</item>
+        <item name="android:scaleType">center</item>
+    </style>
+
+    <style name="Imgly.PESDK.Editor.Panel.Transform.Slider" parent="Imgly.PESDK">
+        <item name="android:layout_width">@dimen/transform_SliderBar_width</item>
+        <item name="android:layout_height">@dimen/transform_SliderBar_height</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+</resources>

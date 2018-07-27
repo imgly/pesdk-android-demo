@@ -14,150 +14,89 @@
   ~ https://www.photoeditorsdk.com/LICENSE.txt
   -->
 
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/rootView"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    style="?attr/Imgly.PESDK.Camera">
 
     <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_centerInParent="true"
-        >
+        android:id="@+id/cameraHolder"
+        style="?attr/Imgly.PESDK.Camera.CameraPreview">
         <ly.img.android.acs.CameraView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_centerInParent="true"
-            android:id="@+id/cameraView" />
-        <ly.img.android.acs.FocusRectView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_centerInParent="true"
-            android:id="@+id/FocusView" />
-    </RelativeLayout>
+            android:id="@+id/cameraView"
+            style="?attr/Imgly.PESDK.Camera.CameraPreview.Surface"/>
 
+        <ly.img.android.acs.FocusRectView
+            android:id="@+id/FocusView"
+            style="?attr/Imgly.PESDK.Camera.CameraPreview.Focus"/>
+    </RelativeLayout>
     <RelativeLayout
         android:id="@+id/cameraUi"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        >
+        style="?attr/Imgly.PESDK.Camera.UI">
         <RelativeLayout
             android:id="@+id/imglyActionBar"
-            android:layout_alignParentTop="true"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            style="@style/Imgly.Preview.Header">
+            style="?attr/Imgly.PESDK.Camera.UI.Header">
             <LinearLayout
                 android:id="@+id/flashButton"
-                style="@style/Imgly.Preview.Header.Button.FlashButton">
-                <ly.img.android.ui.widgets.AutoRotateImageSource
+                style="?attr/Imgly.PESDK.Camera.UI.Header.Button.FlashButton">
+                <ly.img.android.pesdk.ui.widgets.AutoRotateImageSource
                     android:id="@+id/flashButtonIcon"
-                    style="@style/Imgly.Preview.Header.Button.FlashButton.Icon"
-                    />
-                <ly.img.android.ui.widgets.AutoRotateLayout
+                    style="?attr/Imgly.PESDK.Camera.UI.Header.Button.FlashButton.Icon"/>
+                <ly.img.android.pesdk.ui.widgets.AutoRotateLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center">
-                <TextView
-                    android:id="@+id/flashButtonLabel"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    style="@style/Imgly.Preview.Header.Button.FlashButton.Label"
-                    />
-                </ly.img.android.ui.widgets.AutoRotateLayout>
+                    <TextView
+                        android:id="@+id/flashButtonLabel"
+                        style="?attr/Imgly.PESDK.Camera.UI.Header.Button.FlashButton.Label"/>
+                </ly.img.android.pesdk.ui.widgets.AutoRotateLayout>
             </LinearLayout>
             <ToggleButton
                 android:id="@+id/hdrButton"
-                android:layout_width="wrap_content"
-                android:layout_height="50dp"
-                android:layout_centerHorizontal="true"
-                style="@style/Imgly.Preview.Header.Button.HDRButton"/>
-            <ly.img.android.ui.widgets.AutoRotateImageSource
+                style="?attr/Imgly.PESDK.Camera.UI.Header.Button.HDRButton"/>
+            <ly.img.android.pesdk.ui.widgets.AutoRotateImageSource
                 android:id="@+id/switchCameraButton"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:layout_alignParentRight="true"
-                android:layout_alignParentEnd="true"
-                style="@style/Imgly.Preview.Header.Button.SwitchCameraButton"/>
+                style="?attr/Imgly.PESDK.Camera.UI.Header.Button.SwitchCameraButton"/>
         </RelativeLayout>
-
-        <TextView
-            android:layout_alignBottom="@id/imglyActionBar"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceSmall"
-            android:text="Small Text"
-            android:id="@+id/fpsTv"
-            android:visibility="gone"
-            android:layout_gravity="center_horizontal|top" />
-
         <LinearLayout
-            android:layout_alignParentBottom="true"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            style="@style/Imgly.Preview.Footer"
-            android:clipToPadding="false"
-            android:clipChildren="false">
-            
+            style="?attr/Imgly.PESDK.Camera.UI.Footer">
+            <ly.img.android.pesdk.ui.widgets.SeekSlider
+                android:id="@+id/seekBar"
+                style="?attr/Imgly.PESDK.Camera.UI.Footer.SeekSlider.Transparent"/>
             <LinearLayout
                 android:id="@+id/filterBar"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:padding="10dp">
-                <ly.img.android.ui.widgets.AutoRotateLayout
+                style="?attr/Imgly.PESDK.Camera.UI.Footer.Container">
+                <ly.img.android.pesdk.ui.widgets.AutoRotateLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     tools:ignore="RelativeOverlap">
-                    <ly.img.android.ui.widgets.buttons.GalleryButton
+                    <ly.img.android.pesdk.ui.activity.widgets.buttons.GalleryButton
                         android:id="@+id/galleryButton"
-                        android:layout_width="52dp"
-                        android:layout_height="52dp"
-                        android:scaleType="centerCrop"
-                        android:src="@drawable/imgly_icon_camera_roll"
-                        android:layout_gravity="center_vertical"/>
-                </ly.img.android.ui.widgets.AutoRotateLayout>
-
+                        style="?attr/Imgly.PESDK.Camera.UI.Footer.Button.GalleryButton"/>
+                </ly.img.android.pesdk.ui.widgets.AutoRotateLayout>
                 <Space
                     android:layout_weight="1"
                     android:layout_width="0dp"
-                    android:layout_height="1dp" />
-
-                <ly.img.android.ui.widgets.buttons.ShutterButton
+                    android:layout_height="1dp"/>
+                <ly.img.android.pesdk.ui.activity.widgets.buttons.ShutterButton
                     android:id="@+id/shutterButton"
-                    android:layout_gravity="center_vertical"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    />
+                    style="?attr/Imgly.PESDK.Camera.UI.Footer.Button.ShutterButton"/>
                 <Space
                     android:layout_weight="1"
                     android:layout_width="0dp"
-                    android:layout_height="1dp"
-                    />
-                <ly.img.android.ui.widgets.buttons.ExpandToggleButton
+                    android:layout_height="1dp"/>
+                <ly.img.android.pesdk.ui.activity.widgets.buttons.ExpandToggleButton
                     android:id="@+id/show_filter_button"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_vertical"
-                    />
-
+                    style="?attr/Imgly.PESDK.Camera.UI.Footer.Button.FilterButton"/>
             </LinearLayout>
-            <ly.img.android.ui.widgets.ExpandableView
+            <ly.img.android.pesdk.ui.widgets.ExpandableView
                 android:id="@+id/expandableView"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:clipToPadding="false"
-                android:clipChildren="false">
-                <ly.img.android.ui.widgets.HorizontalListView
+                style="?attr/Imgly.PESDK.Camera.UI.Footer.ExpandableContainer">
+                <ly.img.android.pesdk.ui.widgets.HorizontalListView
                     android:id="@+id/filterList"
-                    android:layout_width="match_parent"
-                    android:layout_height="88dp"
-                    android:clipToPadding="false"
-                    android:clipChildren="false"
-                    />
-            </ly.img.android.ui.widgets.ExpandableView>
+                    style="?attr/Imgly.PESDK.Camera.UI.Footer.ExpandableContainer.FilterList"/>
+            </ly.img.android.pesdk.ui.widgets.ExpandableView>
         </LinearLayout>
     </RelativeLayout>
 </RelativeLayout>

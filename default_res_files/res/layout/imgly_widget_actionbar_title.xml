@@ -17,4 +17,4 @@
 <TextView
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/editorTitle"
-    style="@style/Imgly.Editor.Header.Title"/>
+    style="?attr/Imgly.PESDK.Widget.ActionBar.TitleAnimationContainer.TitleItem"/>

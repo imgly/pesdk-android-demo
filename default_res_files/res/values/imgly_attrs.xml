@@ -32,4 +32,8 @@
 		<attr name="spanSize" format="dimension"/>
 	</declare-styleable>
 
+	<declare-styleable name="ImageSourceView">
+		<attr name="src" format="reference"/>
+	</declare-styleable>
+
 </resources>

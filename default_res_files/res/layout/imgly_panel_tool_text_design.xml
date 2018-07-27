@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ This file is part of the PhotoEditor Software Development Kit.
+  ~
+  ~ Copyright (C) 2018 9elements GmbH <contact@9elements.com>
+  ~ All rights reserved.
+  ~
+  ~ Redistribution and use in source and binary forms, without
+  ~ modification, are permitted provided that the following license agreement
+  ~ is approved and a legal/financial contract was signed by the user.
+  ~
+  ~ The license agreement can be found under the following link:
+  ~
+  ~ https://www.photoeditorsdk.com/LICENSE.txt
+  -->
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootView"
+    style="?attr/Imgly.PESDK.Editor.Panel.TextDesign">
+    <RelativeLayout
+        android:id="@+id/contentView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <EditText
+            android:id="@+id/textInputField"
+            style="?attr/Imgly.PESDK.Editor.Panel.TextDesign.InputField"/>
+    </RelativeLayout>
+    <!--Color selection-->
+    <android.support.v7.widget.RecyclerView
+    android:id="@+id/rv_text_colors"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true"
+    android:layout_marginLeft="0dp"
+    android:layout_marginStart="0dp"
+    android:layout_marginRight="0dp"
+    android:layout_marginEnd="0dp"
+    android:layout_marginTop="0dp"
+    android:layout_marginBottom="8dp"
+    android:layout_alignParentBottom="true"
+    android:rotation="180"/>
+</RelativeLayout>

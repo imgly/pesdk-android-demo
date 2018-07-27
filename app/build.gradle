@@ -1,58 +1,94 @@
-buildscript {
-    repositories {
-        jcenter()
-        maven {
-            url "https://artifactory.9elements.com/artifactory/imgly"
-        }
-    }
-    dependencies {
-        classpath 'com.android.tools.build:gradle:2.3.2'
-        classpath 'com.mutualmobile.gradle.plugins:dexinfo:0.1.2'
-        classpath 'com.neenbedankt.gradle.plugins:android-apt:1.8'
-    }
-}
 apply plugin: 'com.android.application'
-apply plugin: 'com.mutualmobile.gradle.plugins.dexinfo'
-apply plugin: 'com.neenbedankt.android-apt'
 
-repositories {
-    jcenter()
+apply plugin: 'kotlin-android'
+
+apply plugin: 'kotlin-android-extensions'
+
+apply plugin: 'ly.img.android.pesdk'
+
+pesdkConfig {
+
+    licencePath "LICENSE" // Name of the Licence file in the asset folder
+
+    // Insert the latest SDK version here. You will find it here https://github.com/imgly/pesdk-android-demo/releases
+    pesdkVersion "$pesdk_version"
+
+    // If you use another supportLibVersion ('com.android.support'), change this version here to update your own supportLibVersion
+    supportLibVersion "27.1.1"
+
+    // Define the modules you are need
+    modules {
+        // Add all the backend modules you need
+        include 'ly.img.android.pesdk.operation:text'
+        include 'ly.img.android.pesdk.operation:frame'
+        include 'ly.img.android.pesdk.operation:focus'
+        include 'ly.img.android.pesdk.operation:brush'
+        include 'ly.img.android.pesdk.operation:camera'
+        include 'ly.img.android.pesdk.operation:filter'
+        include 'ly.img.android.pesdk.operation:sticker'
+        include 'ly.img.android.pesdk.operation:overlay'
+        include 'ly.img.android.pesdk.operation:adjustment'
+        include 'ly.img.android.pesdk.operation:text-design'
+        include 'ly.img.android.pesdk.operation:abstract-sticker'
+
+        // Add all the UI modules you are need
+        include 'ly.img.android.pesdk.ui.mobile_ui:core'
+        include 'ly.img.android.pesdk.ui.mobile_ui:text'
+        include 'ly.img.android.pesdk.ui.mobile_ui:focus'
+        include 'ly.img.android.pesdk.ui.mobile_ui:frame'
+        include 'ly.img.android.pesdk.ui.mobile_ui:brush'
+        include 'ly.img.android.pesdk.ui.mobile_ui:filter'
+        include 'ly.img.android.pesdk.ui.mobile_ui:camera'
+        include 'ly.img.android.pesdk.ui.mobile_ui:sticker'
+        include 'ly.img.android.pesdk.ui.mobile_ui:overlay'
+        include 'ly.img.android.pesdk.ui.mobile_ui:transform'
+        include 'ly.img.android.pesdk.ui.mobile_ui:text-design'
+        include 'ly.img.android.pesdk.ui.mobile_ui:adjustment'
+
+        // Add the serializer if you need
+        include 'ly.img.android.pesdk:serializer'
+
+        // Add asset packs if you need
+        include 'ly.img.android.pesdk.assets:font-basic'
+        include 'ly.img.android.pesdk.assets:frame-basic'
+        include 'ly.img.android.pesdk.assets:overlay-basic'
+        include 'ly.img.android.pesdk.assets:sticker-shapes'
+        include 'ly.img.android.pesdk.assets:sticker-emoticons'
+    }
 }
 
 android {
-    compileSdkVersion 25
-    buildToolsVersion '25.0.2'
+    compileSdkVersion 27
+    buildToolsVersion '27.0.3'
 
     defaultConfig {
         applicationId "com.photoeditorsdk.android.app"
-        minSdkVersion 15
-        targetSdkVersion 25
+        minSdkVersion 16
+        targetSdkVersion 27
         versionCode 1
-        versionName "5.1.5"
-        renderscriptTargetApi 23
-        renderscriptSupportModeEnabled true
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        resValue 'string', 'pesdk_version', "v$pesdk_version"
     }
-
     buildTypes {
         release {
-            minifyEnabled true
-            shrinkResources true
-            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
-        }
-
-        debug {
-            minifyEnabled true
-            shrinkResources true
+            minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
 
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
 }
 
 dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
-
-    compile 'ly.img.android:photo-editor-sdk:5.1.5'
-        apt 'ly.img.android:build-processor:5.1.5'
-
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation"org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation 'com.android.support:appcompat-v7:27.1.1'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.2'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
 }

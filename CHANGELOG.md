@@ -1,9 +1,35 @@
 # PhotoEditor SDK - Changelog
 
-## v5.1.6
+## v6.0.0
+
+__PLEASE LOOK AT THE NEW DOCUMENTATION MANY THINGS HAS CHANGED__
+
+### Added
+* Licenced new feature "TextDesign", get a trail licence to test it.
+* Background exporting without UI.
+* Gradle integration plugin.
+* You can create and start the Editor with different Themes.
+* Two new Focus Modes.
+* Gamma adjustment.
+
+### Changed
+* Java version to 1.8.
+* Android SDK to 27.
+* Use of Gradle 3.1.3 build plugin for faster builds.
+* Split features into separate modules and asset packs, this makes it easier to control the sdk size.
+* Refactored Layouts and styles.
+* Rework of the focus tool with better single touch control.
+* UI is now optional and can completely replaced by your own UI.
+* The awkward tool class concept is removed, all functionality is now in the backend.
+* You can now add your own operations (you need to understand OpenGl and Renderscript).
+* Settings and state classes can be extended with your own code.
 
 ### Fixed
-* Camera GPS-EXIF latitude and longitude is converted wrong into DMS format.
+* Color mismatch at export.
+* Some blurry in the focus area.
+* Focus preview broken on some low end devices.
+* Cross platform issues with the serialisation.
+* `RecyclerView` sometimes scrolls in the wrong position.
 
 ## v5.1.5
 
@@ -43,7 +69,7 @@
 * Serialized stickers are sometimes broken or missing after loading.
 * Add `onAttachedToList()` and `onDetachedFromList()`to the `DataSourceViewHolder`
 * Add URI Support `EditorLoadSettings.setImageSource()`
- 
+
 ### Breaking changes
 * `EditorLoadSettings.setImageSourcePath()`  is deprecated use `EditorLoadSettings.setImageSource()` instead.
 * `Intent.getStringExtra(ImgLyIntent.SOURCE_IMAGE_PATH)` is deprecated use `Uri source = Intent.getParcelableExtra(ImgLyIntent.SOURCE_IMAGE_URI);` instead.
@@ -80,7 +106,7 @@
 ## v5.0.17
 
 ### Fixed
-* Internal class TransformedMotionEvent creates wrong./G states in some cases.
+* Internal class TransformedMotionEvent creates wrong states in some cases.
 * Sticker matrix updated wrong which causes flickering.
 * Exporting many stickers crashes in some cases.
 * Image does not export if only the crop aspect has changed.
@@ -393,4 +419,3 @@
 
 ### Changed
 * Show a warning and fix wrong scaled frames, if you put the frame assets in the wrong drawable directory.
-

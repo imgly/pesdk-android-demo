@@ -17,58 +17,25 @@
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/notificationBackground"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:focusable="true"
-    android:clickable="true"
-    >
+    style="?attr/Imgly.PESDK.Editor.Popup.Confirm">
     <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:padding="16dp"
-        android:layout_centerInParent="true"
-        android:background="@drawable/imgly_dialog_background">
+        style="?attr/Imgly.PESDK.Editor.Popup.Confirm.Background">
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/imgly_photo_editor_cancel_image_title"
-            android:textSize="15sp"
-            android:textColor="#FFFFFF"
-            android:textStyle="bold"
-            android:paddingBottom="30dp"
-            android:gravity="center"/>
+            android:text="@string/pesdk_editor_title_closeEditorAlert"
+            style="?attr/Imgly.PESDK.Editor.Popup.Confirm.Title"/>
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/imgly_photo_editor_cancel_image_content"
-            android:textSize="14sp"
-            android:textColor="#FFFFFF"
-            android:textStyle="normal"
-            android:paddingBottom="30dp"
-            android:gravity="center"/>
+            android:text="@string/pesdk_editor_text_closeEditorAlert"
+            style="?attr/Imgly.PESDK.Editor.Popup.Confirm.Text"/>
         <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="end">
+            style="?attr/Imgly.PESDK.Editor.Popup.ButtonContainer">
             <Button
                 android:id="@+id/disagreeButton"
-                android:layout_width="88dp"
-                android:layout_height="48dp"
-                android:text="@string/imgly_photo_editor_cancel_image_no"
-                android:clickable="false"
-                android:focusable="false"
-                android:background="@drawable/imgly_button_click_overlay"
-                android:textColor="@color/imgly_text_color"
-                style="@style/Imgly.Button"/>
+                android:text="@string/pesdk_editor_button_closeEditorAlertCancelation"
+                style="?attr/Imgly.PESDK.Editor.Popup.Button.Disagree"/>
             <Button
                 android:id="@+id/agreeButton"
-                android:layout_width="88dp"
-                android:layout_height="48dp"
-                android:text="@string/imgly_photo_editor_cancel_image_yes"
-                android:background="@drawable/imgly_button_click_overlay"
-                android:textColor="@color/imgly_text_color"
-                style="@style/Imgly.Button"/>
+                android:text="@string/pesdk_editor_button_closeEditorAlertConfirmation"
+                style="?attr/Imgly.PESDK.Editor.Popup.Button.Agree"/>
         </LinearLayout>
     </LinearLayout>
 </RelativeLayout>

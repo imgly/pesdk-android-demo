@@ -16,11 +16,10 @@
 
 <resources>
 
-    <string name="imgly_frame_name_none">No Frame</string>
-    <string name="imgly_frame_name_dia">Dia</string>
-    <string name="imgly_frame_name_wood_passepartoute">Wood</string>
-    <string name="imgly_frame_name_black_passepartout">Black</string>
-    <string name="imgly_frame_name_art_decor">Art Decor</string>
+    <string name="pesdk_frame_title_name">Frame</string>
 
+    <string name="pesdk_frame_button_bringToFront">To front</string>
+
+    <string name="pesdk_frame_button_none">No Frame</string>
 
 </resources>
