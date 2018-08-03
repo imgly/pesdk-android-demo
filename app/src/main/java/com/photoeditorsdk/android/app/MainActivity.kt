@@ -46,8 +46,8 @@ class MainActivity : Activity(), PermissionRequest.Response {
         // TODO: Show a hint to the user and try again.
     }
 
-    var GALLERY_RESULT = 1
     var PESDK_RESULT = 1
+    var GALLERY_RESULT = 2
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
