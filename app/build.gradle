@@ -8,10 +8,8 @@ apply plugin: 'ly.img.android.pesdk'
 
 pesdkConfig {
 
-    licencePath "LICENSE" // Name of the Licence file in the asset folder
-
-    // Insert the latest SDK version here. You will find it here https://github.com/imgly/pesdk-android-demo/releases
-    pesdkVersion "$pesdk_version"
+    // Name of the Licence file in the asset folder
+    licencePath "LICENSE"
 
     // If you use another supportLibVersion ('com.android.support'), change this version here to update your own supportLibVersion
     supportLibVersion "27.1.1"
@@ -50,7 +48,9 @@ pesdkConfig {
 
         // Add asset packs if you need
         include 'ly.img.android.pesdk.assets:font-basic'
+        include 'ly.img.android.pesdk.assets:font-text-design'
         include 'ly.img.android.pesdk.assets:frame-basic'
+        include 'ly.img.android.pesdk.assets:filter-basic'
         include 'ly.img.android.pesdk.assets:overlay-basic'
         include 'ly.img.android.pesdk.assets:sticker-shapes'
         include 'ly.img.android.pesdk.assets:sticker-emoticons'
@@ -68,11 +68,23 @@ android {
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
-        resValue 'string', 'pesdk_version', "v$pesdk_version"
+        
+        // Please ignore the next line :-)
+        resValue 'string', 'pesdk_version', "v$pesdk_version" 
     }
     buildTypes {
         release {
-            minifyEnabled false
+            minifyEnabled true
+            shrinkResources true
+            zipAlignEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+
+        debug {
+            useProguard true
+            minifyEnabled true
+            shrinkResources true
+            zipAlignEnabled true
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
@@ -85,10 +97,5 @@ android {
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-    implementation"org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
     implementation 'com.android.support:appcompat-v7:27.1.1'
-    implementation 'com.android.support.constraint:constraint-layout:1.1.2'
-    testImplementation 'junit:junit:4.12'
-    androidTestImplementation 'com.android.support.test:runner:1.0.2'
-    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
 }

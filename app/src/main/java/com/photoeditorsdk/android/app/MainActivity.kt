@@ -3,12 +3,12 @@ package com.photoeditorsdk.android.app
 import android.app.Activity
 import android.content.Intent
 import android.net.Uri
-import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Environment
 import android.provider.MediaStore
 import android.widget.Button
 import android.widget.Toast
+import ly.img.android.pesdk.assets.filter.basic.FilterPackBasic
 import ly.img.android.pesdk.assets.font.basic.FontPackBasic
 import ly.img.android.pesdk.assets.frame.basic.FramePackBasic
 import ly.img.android.pesdk.assets.overlay.basic.OverlayPackBasic
@@ -22,16 +22,18 @@ import ly.img.android.pesdk.backend.model.state.manager.SettingsList
 import ly.img.android.pesdk.ui.activity.CameraPreviewBuilder
 import ly.img.android.pesdk.ui.activity.ImgLyIntent
 import ly.img.android.pesdk.ui.activity.PhotoEditorBuilder
-import ly.img.android.pesdk.ui.model.state.UiConfigFrame
-import ly.img.android.pesdk.ui.model.state.UiConfigOverlay
-import ly.img.android.pesdk.ui.model.state.UiConfigSticker
-import ly.img.android.pesdk.ui.model.state.UiConfigText
+import ly.img.android.pesdk.ui.model.state.*
 import ly.img.android.pesdk.ui.utils.PermissionRequest
 import ly.img.android.serializer._3._0._0.PESDKFileWriter
 import java.io.File
 import java.io.IOException
 
 class MainActivity : Activity(), PermissionRequest.Response {
+
+    companion object {
+        var PESDK_RESULT = 1
+        var GALLERY_RESULT = 2
+    }
 
     // Important permission request for Android 6.0 and above, don't forget to add this!
     override fun onRequestPermissionsResult(requestCode: Int, permissions: Array<String>, grantResults: IntArray) {
@@ -46,15 +48,12 @@ class MainActivity : Activity(), PermissionRequest.Response {
         // TODO: Show a hint to the user and try again.
     }
 
-    var PESDK_RESULT = 1
-    var GALLERY_RESULT = 2
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        var startCamera = findViewById<Button>(R.id.startCamera)
-        var openGallery = findViewById<Button>(R.id.openGallery)
+        val startCamera = findViewById<Button>(R.id.startCamera)
+        val openGallery = findViewById<Button>(R.id.openGallery)
 
         startCamera.setOnClickListener {
             openCamera()
@@ -65,39 +64,45 @@ class MainActivity : Activity(), PermissionRequest.Response {
         }
     }
 
-    private fun createPesdkSettingsList(): SettingsList {
-
-        // Create a empty new SettingsList and apply the changes on this referance.
-        val settingsList = SettingsList()
+    private fun createPesdkSettingsList() = SettingsList().apply {
 
         // If you include our asset Packs and you use our UI you also need to add them to the UI,
         // otherwise they are only available for the backend
         // See the specific feature sections of our guides if you want to know how to add our own Assets.
 
-        settingsList.getSettingsModel(UiConfigText::class.java).setFontList(
-          FontPackBasic.getFontPack()
-        )
+        getSettingsModel(UiConfigFilter::class.java).apply {
+            setFilterList(FilterPackBasic.getFilterPack())
+        }
 
-        settingsList.getSettingsModel(UiConfigFrame::class.java).frameList = FramePackBasic.getFramePack()
+        getSettingsModel(UiConfigText::class.java).apply {
+            setFontList(FontPackBasic.getFontPack())
+        }
 
-        settingsList.getSettingsModel(UiConfigOverlay::class.java).overlayList = OverlayPackBasic.getOverlayPack()
+        getSettingsModel(UiConfigFrame::class.java).apply {
+            setFrameList(FramePackBasic.getFramePack())
+        }
 
-        settingsList.getSettingsModel(UiConfigSticker::class.java).setStickerLists(
-          StickerPackEmoticons.getStickerCategory(),
-          StickerPackShapes.getStickerCategory()
-        )
+        getSettingsModel(UiConfigOverlay::class.java).apply {
+            setOverlayList(OverlayPackBasic.getOverlayPack())
+        }
+
+        getSettingsModel(UiConfigSticker::class.java).apply {
+            setStickerLists(
+              StickerPackEmoticons.getStickerCategory(),
+              StickerPackShapes.getStickerCategory()
+            )
+        }
 
         // Set custom camera image export settings
-        settingsList.getSettingsModel(CameraSettings::class.java)
+        getSettingsModel(CameraSettings::class.java)
           .setExportDir(Directory.DCIM, "IMGLY")
           .setExportPrefix("camera_")
 
         // Set custom editor image export settings
-        settingsList.getSettingsModel(EditorSaveSettings::class.java)
+        getSettingsModel(EditorSaveSettings::class.java)
           .setExportDir(Directory.DCIM, "IMGLY")
           .setExportPrefix("result_").savePolicy = EditorSaveSettings.SavePolicy.RETURN_ALWAYS_ONLY_OUTPUT
 
-        return settingsList
     }
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent) {

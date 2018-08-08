@@ -1,5 +1,17 @@
 # PhotoEditor SDK - Changelog
 
+## v6.0.1
+
+### Changed
+* You can leave `pesdkVersion` from the `pesdkConfig` in you gradle config, the default value is now the plugin version.
+
+### Fixed
+* Missing ForceCrop option.
+* Missing ForceCrop Guides on the Page.
+* Missing `clear()` options for the assets.
+* Missing Kotlin dependency.
+* Crash without troubleshoot info, while creating the SettingList()
+
 ## v6.0.0
 
 __PLEASE LOOK AT THE NEW DOCUMENTATION MANY THINGS HAS CHANGED__
