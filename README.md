@@ -113,6 +113,9 @@ The license is digitally signed and can't be altered without becoming invalid. O
 
 Once the license file has been added the application will validate its presence upon launch.
 
+## Support or Contact
+Use our [service desk](http://support.photoeditorsdk.com) for bug reports or support requests. To request a commercial license, please use the [license request form](https://www.photoeditorsdk.com/pricing) on our website.
+
 ## Setting up the workspace
 
 You will have to add the pesdk plugin and PESDKConfig into your module's `build.gradle` file:
