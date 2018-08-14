@@ -1,9 +1,17 @@
 # PhotoEditor SDK - Changelog
 
+## v6.0.2
+
+### Fixed
+* Crash with some png color formats.
+* Plugin does not support `kotlin-kapt`.
+* Preview quality is bad on some pictures.
+* Latest text state (Colors and Font) is not restored.
+
 ## v6.0.1
 
 ### Changed
-* You can leave `pesdkVersion` from the `pesdkConfig` in you gradle config, the default value is now the plugin version.
+* You can remove `pesdkVersion` from the `pesdkConfig` in you gradle config, the default value is now the plugin version.
 
 ### Fixed
 * Missing ForceCrop option.
