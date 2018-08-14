@@ -8,6 +8,11 @@
 * Preview quality is bad on some pictures.
 * Latest text state (Colors and Font) is not restored.
 
+## v5.1.7
+
+### Fixed
+* Crash with some png color formats.
+
 ## v6.0.1
 
 ### Changed
