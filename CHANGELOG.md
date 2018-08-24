@@ -1,5 +1,16 @@
 # PhotoEditor SDK - Changelog
 
+## v6.0.3
+
+### Fixed
+* Stickers are sometimes blurry or do not load.
+
+## v5.1.8
+
+### Fixed
+* Fix compiler error in newer gradle versions.
+* Stickers are sometimes blurry or do not load.
+
 ## v6.0.2
 
 ### Fixed
