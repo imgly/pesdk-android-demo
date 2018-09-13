@@ -16,7 +16,7 @@
     <img src="https://img.shields.io/badge/platform-android-2DC25C.svg?style=flat">
   </a>
   <a href="https://artifactory.9elements.com/artifactory/imgly/ly/img/android/pesdk/">
-    <img src="https://img.shields.io/badge/VERSION-6.0.3-007ec6.svg?style=flat" alt="Maven">
+    <img src="https://img.shields.io/badge/VERSION-6.0.5-007ec6.svg?style=flat" alt="Maven">
   </a>
   <a href="http://twitter.com/PhotoEditorSDK">
     <img src="https://img.shields.io/badge/twitter-@PhotoEditorSDK-8646E2.svg?style=flat" alt="Twitter">
@@ -113,9 +113,6 @@ The license is digitally signed and can't be altered without becoming invalid. O
 
 Once the license file has been added the application will validate its presence upon launch.
 
-## Support or Contact
-Use our [service desk](http://support.photoeditorsdk.com) for bug reports or support requests. To request a commercial license, please use the [license request form](https://www.photoeditorsdk.com/pricing) on our website.
-
 ## Setting up the workspace
 
 You will have to add the pesdk plugin and PESDKConfig into your module's `build.gradle` file:
@@ -129,8 +126,14 @@ buildscript {
         maven { url "https://artifactory.9elements.com/artifactory/imgly" }
     }
     dependencies {
-        classpath 'ly.img.android.pesdk:PESDKPlugin:6.0.3'
+        classpath 'ly.img.android.pesdk:PESDKPlugin:6.0.5'
     }
+}
+
+repositories {
+    jcenter()
+    google()
+    maven { url "https://artifactory.9elements.com/artifactory/imgly" }
 }
 
 // Apply the Android Plugin
@@ -143,6 +146,9 @@ apply plugin: PESDKPlugin
 PESDKConfig {
 
     licencePath "LICENSE" // Name of the Licence file in the asset folder
+
+    // Write here the newest SDK verion you will here https://github.com/imgly/pesdk-android-demo/releases
+    pesdkVersion "6.0.5"
 
     // If you are using another supportLibVersion ('com.android.support') please change this version here our update your own supportLibVersion
     supportLibVersion "27.1.1"
@@ -341,6 +347,9 @@ public class CameraDemoActivity extends Activity implements PermissionRequest.Re
                 sendBroadcast(new Intent(Intent.ACTION_MEDIA_SCANNER_SCAN_FILE).setData(sourceURI));
             }
 
+            Log.i("PESDK", "Source image is located here " + sourceURI);
+            Log.i("PESDK", "Result image is located here " + resultURI);
+
             // TODO: Do something with the result image
 
             // OPTIONAL: read the latest state to save it as a serialisation
@@ -385,10 +394,12 @@ public class EditorDemoActivity extends Activity implements PermissionRequest.Re
          * Show a hint to the user and try again. */
     }
 
-    public static int GALLERY_RESULT = 1;
     public static int PESDK_RESULT = 1;
+    public static int GALLERY_RESULT = 2;
 
     private SettingsList createPesdkSettingsList() {
+
+
 
         // Create a empty new SettingsList and apply the changes on this referance.
         SettingsList settingsList = new SettingsList();
@@ -484,6 +495,9 @@ public class EditorDemoActivity extends Activity implements PermissionRequest.Re
                 sendBroadcast(new Intent(Intent.ACTION_MEDIA_SCANNER_SCAN_FILE).setData(sourceURI));
             }
 
+            Log.i("PESDK", "Source image is located here " + sourceURI);
+            Log.i("PESDK", "Result image is located here " + resultURI);
+
             // TODO: Do something with the result image
 
             // OPTIONAL: read the latest state to save it as a serialisation
@@ -503,3 +517,4 @@ public class EditorDemoActivity extends Activity implements PermissionRequest.Re
     }
 }
 ```
+

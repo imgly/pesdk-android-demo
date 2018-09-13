@@ -1,5 +1,24 @@
 # PhotoEditor SDK - Changelog
 
+## v6.0.5
+
+### Added
+* Adjustments: temperature, whites and blacks
+
+### Fixed
+* Crash after export if watermark is enabled.
+* Some classes are not protected against proguard, which cause in runtime crashes.
+* The title bar and therefore the confirm button of the Text and Text Design Tool is not reachable on some phones with a "notch".
+* Export of Images with transparency is sometimes not correct. 
+
+### Known issues
+* We are currently working on AndroidX support. Due to a bug in the Android RenderScript Support libraries we are actively looking into a workaround. 
+
+## v6.0.4
+
+### Added
+* The SDK can now be used for testing purposes without unlocking it with a license. A watermark image will be displayed above the edited photo in such cases. (Simply remove `licencePath` from `pesdkConfig`)
+
 ## v6.0.3
 
 ### Fixed
