@@ -25,4 +25,7 @@
     <string name="pesdk_adjustments_button_saturationTool">Saturation</string>
     <string name="pesdk_adjustments_button_clarityTool">Clarity</string>
     <string name="pesdk_adjustments_button_gammaTool">Gamma</string>
+    <string name="pesdk_adjustments_button_blacksTool">Blacks</string>
+    <string name="pesdk_adjustments_button_whitesTool">Whites</string>
+    <string name="pesdk_adjustments_button_temperatureTool">Temperature</string>
 </resources>
