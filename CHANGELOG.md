@@ -1,5 +1,10 @@
 # PhotoEditor SDK - Changelog
 
+## v6.0.6
+
+### Fixed
+* Unknown JPEG type cause Crash
+
 ## v6.0.5
 
 ### Added
