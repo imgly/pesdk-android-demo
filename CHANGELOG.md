@@ -1,5 +1,10 @@
 # PhotoEditor SDK - Changelog
 
+## v6.0.7
+
+### Fixed
+* The overlay intensity was ignored by some blend modes.
+
 ## v6.0.6
 
 ### Fixed
