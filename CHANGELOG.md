@@ -1,5 +1,10 @@
 # PhotoEditor SDK - Changelog
 
+## v6.0.8
+
+### Fixed
+* ArithmeticException in some cases while using dynamic frames.
+
 ## v6.0.7
 
 ### Fixed

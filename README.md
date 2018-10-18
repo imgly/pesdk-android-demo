@@ -10,13 +10,13 @@
 <p align="center">
   <a href="http://developer.android.com/guide/topics/manifest/uses-sdk-element.html#ApiLevels">
     <img src="https://img.shields.io/badge/MIN_SDK-15-B8D529.svg?style=flat">
-    <img src="https://img.shields.io/badge/BUILD_SDK-27-92D230.svg?style=flat">
+    <img src="https://img.shields.io/badge/BUILD_SDK-28-92D230.svg?style=flat">
   </a>
   <a href="https://www.photoeditorsdk.com/documentation/android/getting-started">
     <img src="https://img.shields.io/badge/platform-android-2DC25C.svg?style=flat">
   </a>
   <a href="https://artifactory.9elements.com/artifactory/imgly/ly/img/android/pesdk/">
-    <img src="https://img.shields.io/badge/VERSION-6.0.6-007ec6.svg?style=flat" alt="Maven">
+    <img src="https://img.shields.io/badge/VERSION-6.0.8-007ec6.svg?style=flat" alt="Maven">
   </a>
   <a href="http://twitter.com/PhotoEditorSDK">
     <img src="https://img.shields.io/badge/twitter-@PhotoEditorSDK-8646E2.svg?style=flat" alt="Twitter">
@@ -126,7 +126,7 @@ buildscript {
         maven { url "https://artifactory.9elements.com/artifactory/imgly" }
     }
     dependencies {
-        classpath 'ly.img.android.pesdk:PESDKPlugin:6.0.6'
+        classpath 'ly.img.android.pesdk:PESDKPlugin:6.0.8'
     }
 }
 
@@ -148,7 +148,7 @@ PESDKConfig {
     licencePath "LICENSE" // Name of the Licence file in the asset folder
 
     // Write here the newest SDK verion you will here https://github.com/imgly/pesdk-android-demo/releases
-    pesdkVersion "6.0.6"
+    pesdkVersion "6.0.8"
 
     // If you are using another supportLibVersion ('com.android.support') please change this version here our update your own supportLibVersion
     supportLibVersion "27.1.1"
@@ -196,11 +196,11 @@ PESDKConfig {
 
 // Do your Android Configurations... ex.
 android {
-    /* Set the compile SDK and the Build SDK min. at SDK 27 or grater.
+    /* Set the compile SDK and the Build SDK min. at SDK 28 or grater.
      * We can't provide support for Bugs, that are the result of older SDK versions.
      */
-    compileSdkVersion 27
-    buildToolsVersion '27.0.3'
+    compileSdkVersion 28
+    buildToolsVersion '28.0.3'
 
     defaultConfig {
         /*
