@@ -15,21 +15,6 @@
 
 <resources>
 
-    <attr name="Imgly.PESDK.Editor.Panel.Sticker" format="reference"/>
-    <attr name="Imgly.PESDK.Editor.Panel.Sticker.Expandable" format="reference"/>
-    <attr name="Imgly.PESDK.Editor.Panel.Sticker.Expandable.Grid" format="reference"/>
-    <attr name="Imgly.PESDK.Editor.Panel.Sticker.Expandable.Thumb" format="reference"/>
-    <attr name="Imgly.PESDK.Editor.Panel.Sticker.OptionList" format="reference"/>
-    <attr name="Imgly.PESDK.Editor.Panel.Sticker.SeekSlider" format="reference"/>
-    <attr name="Imgly.PESDK.Editor.Panel.Sticker.SmallOptionList" format="reference"/>
-    <attr name="Imgly.PESDK.Editor.Panel.Sticker.StickerCategoryItem" format="reference"/>
-    <attr name="Imgly.PESDK.Editor.Panel.Sticker.StickerCategoryItem.Icon" format="reference"/>
-    <attr name="Imgly.PESDK.Editor.Panel.Sticker.StickerCategoryItem.Label" format="reference"/>
-    <attr name="Imgly.PESDK.Editor.Panel.Sticker.StickerItem" format="reference"/>
-    <attr name="Imgly.PESDK.Editor.Panel.Sticker.StickerItem.Icon" format="reference"/>
-    <attr name="Imgly.PESDK.Editor.Panel.Sticker.StickerItem.Label" format="reference"/>
-    <attr name="Imgly.PESDK.Editor.Panel.Sticker.StickerOption" format="reference"/>
-
     <style name="Imgly.PESDK.Editor.Panel.Sticker" parent="Imgly.PESDK.Editor.Panel">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">match_parent</item>

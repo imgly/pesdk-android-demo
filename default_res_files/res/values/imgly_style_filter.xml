@@ -15,14 +15,6 @@
 
 <resources>
 
-    <attr name="Imgly.PESDK.Editor.Panel.Filter" format="reference"/>
-    <attr name="Imgly.PESDK.Editor.Panel.Filter.FilterItem" format="reference"/>
-    <attr name="Imgly.PESDK.Editor.Panel.Filter.FilterItem.Icon" format="reference"/>
-    <attr name="Imgly.PESDK.Editor.Panel.Filter.FilterItem.Label" format="reference"/>
-    <attr name="Imgly.PESDK.Editor.Panel.Filter.FilterItem.SelectOverlay" format="reference"/>
-    <attr name="Imgly.PESDK.Editor.Panel.Filter.FilterItem.Value" format="reference"/>
-    <attr name="Imgly.PESDK.Editor.Panel.Filter.SeekSlider" format="reference"/>
-
     <style name="Imgly.PESDK.Editor.Panel.Filter" parent="Imgly.PESDK.Editor.Panel">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>

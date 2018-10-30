@@ -15,32 +15,6 @@
 
 <resources>
 
-    <attr name="Imgly.PESDK.Camera" format="reference"/>
-    <attr name="Imgly.PESDK.Camera.CameraPreview" format="reference"/>
-    <attr name="Imgly.PESDK.Camera.CameraPreview.Focus" format="reference"/>
-    <attr name="Imgly.PESDK.Camera.CameraPreview.Surface" format="reference"/>
-    <attr name="Imgly.PESDK.Camera.UI" format="reference"/>
-    <attr name="Imgly.PESDK.Camera.UI.Container" format="reference"/>
-    <attr name="Imgly.PESDK.Camera.UI.Footer" format="reference"/>
-    <attr name="Imgly.PESDK.Camera.UI.Footer.Button.FilterButton" format="reference"/>
-    <attr name="Imgly.PESDK.Camera.UI.Footer.Button.GalleryButton" format="reference"/>
-    <attr name="Imgly.PESDK.Camera.UI.Footer.Button.ShutterButton" format="reference"/>
-    <attr name="Imgly.PESDK.Camera.UI.Footer.Container" format="reference"/>
-    <attr name="Imgly.PESDK.Camera.UI.Footer.ExpandableContainer" format="reference"/>
-    <attr name="Imgly.PESDK.Camera.UI.Footer.ExpandableContainer.FilterList" format="reference"/>
-    <attr name="Imgly.PESDK.Camera.UI.Footer.SeekSlider.Transparent" format="reference"/>
-    <attr name="Imgly.PESDK.Camera.UI.Header" format="reference"/>
-    <attr name="Imgly.PESDK.Camera.UI.Header.Button" format="reference"/>
-    <attr name="Imgly.PESDK.Camera.UI.Header.Button.FlashButton" format="reference"/>
-    <attr name="Imgly.PESDK.Camera.UI.Header.Button.FlashButton.Icon" format="reference"/>
-    <attr name="Imgly.PESDK.Camera.UI.Header.Button.FlashButton.Label" format="reference"/>
-    <attr name="Imgly.PESDK.Camera.UI.Header.Button.HDRButton" format="reference"/>
-    <attr name="Imgly.PESDK.Camera.UI.Header.Button.SwitchCameraButton" format="reference"/>
-
-    <attr name="Imgly.PESDK.Widget.GalleryButton" format="reference"/>
-    <attr name="Imgly.PESDK.Widget.GalleryButton.ClickOverlay" format="reference"/>
-    <attr name="Imgly.PESDK.Widget.GalleryButton.PreviewImage" format="reference"/>
-
     <style name="Imgly.PESDK.Camera" parent="Imgly.PESDK">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">match_parent</item>

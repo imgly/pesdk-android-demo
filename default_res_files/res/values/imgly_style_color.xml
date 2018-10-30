@@ -16,13 +16,6 @@
 
 <resources>
 
-    <attr name="Imgly.PESDK.Editor.Panel.Color" format="reference"/>
-    <attr name="Imgly.PESDK.Editor.Panel.Color.ColorItem" format="reference"/>
-    <attr name="Imgly.PESDK.Editor.Panel.Color.ColorItem.Background" format="reference"/>
-    <attr name="Imgly.PESDK.Editor.Panel.Color.ColorItem.Icon" format="reference"/>
-    <attr name="Imgly.PESDK.Editor.Panel.Color.ColorItem.SelectOverlay" format="reference"/>
-    <attr name="Imgly.PESDK.Editor.Panel.Color.ColorPicker" format="reference"/>
-
     <style name="Imgly.PESDK.Editor.Panel.Color" parent="Imgly.PESDK">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>

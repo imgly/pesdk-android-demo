@@ -15,19 +15,6 @@
 
 <resources>
 
-    <attr name="Imgly.PESDK.Editor.Panel.Overlay" format="reference"/>
-    <attr name="Imgly.PESDK.Editor.Panel.Overlay.BlendModeItem" format="reference"/>
-    <attr name="Imgly.PESDK.Editor.Panel.Overlay.BlendModeItem.Label" format="reference"/>
-    <attr name="Imgly.PESDK.Editor.Panel.Overlay.ModeContainer" format="reference"/>
-    <attr name="Imgly.PESDK.Editor.Panel.Overlay.ModeList" format="reference"/>
-    <attr name="Imgly.PESDK.Editor.Panel.Overlay.OverlayItem" format="reference"/>
-    <attr name="Imgly.PESDK.Editor.Panel.Overlay.OverlayItem.Icon" format="reference"/>
-    <attr name="Imgly.PESDK.Editor.Panel.Overlay.OverlayItem.Label" format="reference"/>
-    <attr name="Imgly.PESDK.Editor.Panel.Overlay.OverlayItem.SelectBackground" format="reference"/>
-    <attr name="Imgly.PESDK.Editor.Panel.Overlay.OverlayItem.SelectOverlay" format="reference"/>
-    <attr name="Imgly.PESDK.Editor.Panel.Overlay.OverlayItem.Value" format="reference"/>
-    <attr name="Imgly.PESDK.Editor.Panel.Overlay.SeekSlider" format="reference"/>
-
     <style name="Imgly.PESDK.Editor.Panel.Overlay" parent="Imgly.PESDK.Editor.Panel">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>

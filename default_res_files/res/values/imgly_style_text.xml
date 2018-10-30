@@ -15,12 +15,6 @@
 
 <resources>
 
-    <attr name="Imgly.PESDK.Editor.Panel.Text" format="reference"/>
-    <attr name="Imgly.PESDK.Editor.Panel.Text.InputField" format="reference"/>
-    <attr name="Imgly.PESDK.Editor.Panel.Text.OptionList" format="reference"/>
-    <attr name="Imgly.PESDK.Editor.Panel.Text.SmallOptionList" format="reference"/>
-    <attr name="Imgly.PESDK.Editor.Panel.Text.TextOptions" format="reference"/>
-
     <style name="Imgly.PESDK.Editor.Panel.Text" parent="Imgly.PESDK.Editor.Panel">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">match_parent</item>

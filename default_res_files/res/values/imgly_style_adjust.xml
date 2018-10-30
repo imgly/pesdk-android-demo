@@ -15,10 +15,6 @@
 
 <resources>
 
-    <attr name="Imgly.PESDK.Editor.Panel.Adjust" format="reference"/>
-    <attr name="Imgly.PESDK.Editor.Panel.Adjust.SeekSlider" format="reference"/>
-    <attr name="Imgly.PESDK.Editor.Panel.Adjust.SmallOptionList" format="reference"/>
-
     <style name="Imgly.PESDK.Editor.Panel.Adjust" parent="Imgly.PESDK.Editor.Panel">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>

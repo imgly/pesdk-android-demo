@@ -16,12 +16,6 @@
 
 <resources>
 
-    <attr name="Imgly.PESDK.Editor.Activity" format="reference"/>
-    <attr name="Imgly.PESDK.Editor.Activity.ActionBar" format="reference"/>
-    <attr name="Imgly.PESDK.Editor.Activity.Preview" format="reference"/>
-    <attr name="Imgly.PESDK.Editor.Activity.Progress" format="reference"/>
-    <attr name="Imgly.PESDK.Editor.Activity.ToolPanelContainer" format="reference"/>
-
     <style name="Imgly.PESDK.Editor.Activity" parent="Imgly.PESDK">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">match_parent</item>

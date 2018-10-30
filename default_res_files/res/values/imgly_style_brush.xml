@@ -15,15 +15,6 @@
 
 <resources>
 
-    <attr name="Imgly.PESDK.Editor.Panel.Brush" format="reference"/>
-    <attr name="Imgly.PESDK.Editor.Panel.Brush.SeekSlider" format="reference"/>
-    <attr name="Imgly.PESDK.Editor.Panel.Brush.SmallOptionList" format="reference"/>
-
-    <attr name="Imgly.PESDK.Editor.Popup.Brush" format="reference"/>
-    <attr name="Imgly.PESDK.Editor.Popup.Brush.BrushPreview" format="reference"/>
-    <attr name="Imgly.PESDK.Editor.Popup.Brush.BrushToolPreview" format="reference"/>
-    <attr name="Imgly.PESDK.Editor.Popup.Brush.HorizontalMargin" format="reference"/>
-
     <style name="Imgly.PESDK.Editor.Panel.Brush" parent="Imgly.PESDK.Editor.Panel">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">match_parent</item>

@@ -16,18 +16,6 @@
 
 <resources>
 
-    <attr name="Imgly.PESDK.Editor.Panel.Font" format="reference"/>
-    <attr name="Imgly.PESDK.Editor.Panel.Font.Expandable" format="reference"/>
-    <attr name="Imgly.PESDK.Editor.Panel.Font.FontItem" format="reference"/>
-    <attr name="Imgly.PESDK.Editor.Panel.Font.FontItem.Label" format="reference"/>
-    <attr name="Imgly.PESDK.Editor.Panel.Font.FontItem.Text" format="reference"/>
-    <attr name="Imgly.PESDK.Editor.Panel.Font.FontVertical.Container" format="reference"/>
-    <attr name="Imgly.PESDK.Editor.Panel.Font.FontVerticalItem" format="reference"/>
-    <attr name="Imgly.PESDK.Editor.Panel.Font.FontVerticalItem.Label" format="reference"/>
-    <attr name="Imgly.PESDK.Editor.Panel.Font.FontVerticalItem.Text" format="reference"/>
-    <attr name="Imgly.PESDK.Editor.Panel.Font.OptionList" format="reference"/>
-    <attr name="Imgly.PESDK.Editor.Panel.Font.Thumb" format="reference"/>
-
     <style name="Imgly.PESDK.Editor.Panel.Font" parent="Imgly.PESDK">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">match_parent</item>

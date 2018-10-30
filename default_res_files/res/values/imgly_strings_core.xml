@@ -34,18 +34,6 @@
     <string name="pesdk_common_button_undo">Undo</string>
     <string name="pesdk_common_button_redo">Redo</string>
 
-
-    <string name="pesdk_transform_title_name"/>
-    <string name="pesdk_filter_title_name"/>
-    <string name="pesdk_adjustments_title_name"/>
-    <string name="pesdk_sticker_title_name"/>
-    <string name="pesdk_text_title_name"/>
-    <string name="pesdk_textDesign_title_name"/>
-    <string name="pesdk_overlay_title_name"/>
-    <string name="pesdk_frame_title_name"/>
-    <string name="pesdk_brush_title_name"/>
-    <string name="pesdk_focus_title_name"/>
-
     <string name="pesdk_color_item_00000000">Transparent</string>
     <string name="pesdk_color_item_FFFFFFFF">White</string>
     <string name="pesdk_color_item_FF7E7E7E">Gray</string>

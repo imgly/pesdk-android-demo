@@ -15,14 +15,6 @@
 
 <resources>
 
-    <attr name="Imgly.PESDK.Editor.Panel.Transform" format="reference"/>
-    <attr name="Imgly.PESDK.Editor.Panel.Transform.Button.Flip" format="reference"/>
-    <attr name="Imgly.PESDK.Editor.Panel.Transform.Button.Rotate" format="reference"/>
-    <attr name="Imgly.PESDK.Editor.Panel.Transform.Crop" format="reference"/>
-    <attr name="Imgly.PESDK.Editor.Panel.Transform.CropItem" format="reference"/>
-    <attr name="Imgly.PESDK.Editor.Panel.Transform.CropItem.Label" format="reference"/>
-    <attr name="Imgly.PESDK.Editor.Panel.Transform.Slider" format="reference"/>
-
     <style name="Imgly.PESDK.Editor.Panel.Transform" parent="Imgly.PESDK.Editor.Panel">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>

@@ -15,10 +15,6 @@
 
 <resources>
 
-    <attr name="Imgly.PESDK.Editor.Panel.Focus" format="reference"/>
-    <attr name="Imgly.PESDK.Editor.Panel.Focus.OptionContainer" format="reference"/>
-    <attr name="Imgly.PESDK.Editor.Panel.Focus.SeekSlider" format="reference"/>
-
     <style name="Imgly.PESDK.Editor.Panel.Focus" parent="Imgly.PESDK.Editor.Panel">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>

@@ -15,15 +15,6 @@
 
 <resources>
 
-    <attr name="Imgly.PESDK.Editor.Panel.TextDesign" format="reference"/>
-    <attr name="Imgly.PESDK.Editor.Panel.TextDesign.ColorItem" format="reference"/>
-    <attr name="Imgly.PESDK.Editor.Panel.TextDesign.InputField" format="reference"/>
-    <attr name="Imgly.PESDK.Editor.Panel.TextDesign.OptionList" format="reference"/>
-    <attr name="Imgly.PESDK.Editor.Panel.TextDesign.SmallOptionList" format="reference"/>
-    <attr name="Imgly.PESDK.Editor.Panel.TextDesign.TextDesignItem" format="reference"/>
-    <attr name="Imgly.PESDK.Editor.Panel.TextDesign.TextDesignItem.Icon" format="reference"/>
-    <attr name="Imgly.PESDK.Editor.Panel.TextDesign.TextOptions" format="reference"/>
-
     <style name="Imgly.PESDK.Editor.Panel.TextDesign.TextDesignItem" parent="Imgly.PESDK.default.Item">
         <item name="android:background">@drawable/imgly_item_text_design_border</item>
         <item name="android:layout_marginTop">@dimen/container_item_marginTop</item>
