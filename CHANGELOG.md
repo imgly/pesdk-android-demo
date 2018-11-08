@@ -1,5 +1,10 @@
 # PhotoEditor SDK - Changelog
 
+## v6.0.9
+
+### Fixed
+* NullPointerException while changing text configuration.
+
 ## v6.0.8
 
 ### Fixed
