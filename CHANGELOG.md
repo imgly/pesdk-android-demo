@@ -1,5 +1,59 @@
 # PhotoEditor SDK - Changelog
 
+## v6.1.0
+
+### Fixed
+* Sticker icons reload by clicking the same sticker category twice.
+* The size of the image does not zoom out when you enter the frame tool.
+
+### Added
+* Possibility to add more than one `TextDesign` to canvas.
+* Possibility to change the background size of an inverted `TextDesign`.
+* Keeping the attributes of the most recently created `TextDesign`.
+* Keeping the attributes of the mist recently created `Text`
+* `FrameOptionToolPanel` which provides frame configuration.
+* Possibility to adjust the opacity and width of a `Frame`.
+* Possibility to adjust the opacity of a `Sticker`.
+* Replace button to `StickerOptionToolPanel`.
+* `ToggleAspectItem` which toggle between multiple `CropAspectItem`.
+* Option to the `Transform` tool to reset the configurations.
+* Option to the `Brush` tool to delete the layer.
+* Option to the `Adjustment` tool to reset the configurations.
+* Indicator line for the linear blur horizon.
+* Visual gab at the snap point of the seek slider.
+
+### Changed
+* Default tool order so that the Focus tool is next to the Adjust tool.
+* Default order and availability of options in `StickerOptionPanel`, `TextOptionToolPanel` and `TextDesignOptionToolPanel`.
+* Styling of `CropAspectItem`, `FilterItem`, `AdjustOption`, `StickerCategoryItem`, `TextDesignItem`, `OverlayItem`, `FrameItem` and `FocusOption`.
+* Overlay item toggle through the blend modes on click.
+* Multiple icons were replaced across the SDK.
+* None overlay item shows image preview instead of icon.
+
+### Breaking-Changes
+* The layout has been changed in some details. We offer a compatibility package to support the old layout files we provided in the demo repository.
+
+* Drawable with name `imgly_icon_focus_center_thump` is renamed to `imgly_icon_focus_center_thumb`.
+
+* We have corrected small cross platform deviations of the color
+** String with name "pesdk_color_item_00000000" is renamed to "pesdk_common_title_transparentColor"
+** String with name "pesdk_color_item_FFFFFFFF" is renamed to "pesdk_common_title_whiteColor"
+** String with name "pesdk_color_item_FF7E7E7E" is renamed to "pesdk_common_title_grayColor"
+** String with name "pesdk_color_item_FF000000" is renamed to "pesdk_common_title_blackColor"
+** String with name "pesdk_color_item_FF30E5E7" is renamed to "pesdk_common_title_lightBlueColor"
+** String with name "pesdk_color_item_FF6784FF" is renamed to "pesdk_common_title_blueColor"
+** String with name "pesdk_color_item_FF8B60FF" is renamed to "pesdk_common_title_purpleColor"
+** String with name "pesdk_color_item_FFE161FF" is renamed to "pesdk_common_title_orchidColor"
+** String with name "pesdk_color_item_FFFF64CE" is renamed to "pesdk_common_title_pinkColor"
+** String with name "pesdk_color_item_FFFF6688" is renamed to "pesdk_common_title_redColor"
+** String with name "pesdk_color_item_FFE74E49" is renamed to "pesdk_common_title_orangeColor"
+** String with name "pesdk_color_item_FFF4744D" is renamed to "pesdk_common_title_goldColor"
+** String with name "pesdk_color_item_FFFFCD62" is renamed to "pesdk_common_title_yellowColor"
+** String with name "pesdk_color_item_FFC8FF5F" is renamed to "pesdk_common_title_oliveColor"
+** String with name "pesdk_color_item_FF7EFF60" is renamed to "pesdk_common_title_greenColor"
+** String with name "pesdk_color_item_FF42FFDC" is renamed to "pesdk_common_title_aquamarinColor"
+** String with name "pesdk_color_item_FF3FFF84" is now unused and removed.
+
 ## v6.0.9
 
 ### Fixed
