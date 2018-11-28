@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ This file is part of the PhotoEditor Software Development Kit.
+  ~
+  ~ Copyright (C) 2017 9elements GmbH <contact@9elements.com>
+  ~ All rights reserved.
+  ~
+  ~ Redistribution and use in source and binary forms, without
+  ~ modification, are permitted provided that the following license agreement
+  ~ is approved and a legal/financial contract was signed by the user.
+  ~
+  ~ The license agreement can be found under the following link:
+  ~
+  ~ https://www.photoeditorsdk.com/LICENSE.txt
+  -->
+
+<resources>
+
+    <string name="pesdk_text_title_name">Text</string>
+    <string name="pesdk_text_title_options">Text Options</string>
+    <string name="pesdk_text_title_textColor">Text Color</string>
+    <string name="pesdk_text_title_font">Font</string>
+
+    <string name="pesdk_text_button_add">Add</string>
+    <string name="pesdk_text_button_edit">Edit</string>
+    <string name="pesdk_text_button_straighten">Straighten</string>
+
+    <string name="pesdk_text_button_font">Font</string>
+    <string name="pesdk_text_button_color">Color</string>
+    <string name="pesdk_text_button_backgroundColor">BG Color</string>
+    <string name="pesdk_text_button_alignment">Alignment</string>
+
+    <string name="pesdk_text_button_flipV">@string/pesdk_common_button_flipV</string>
+    <string name="pesdk_text_button_flipH">@string/pesdk_common_button_flipH</string>
+    <string name="pesdk_text_button_bringToFront">To Front</string>
+    <string name="pesdk_text_button_delete">Delete</string>
+
+    <string name="pesdk_text_text_editTextPlaceholder">Your text</string>
+
+    <string name="pesdk_text_button_fontPreview">Ag</string>
+
+</resources>

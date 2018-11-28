@@ -1,0 +1,80 @@
+<!--
+  ~ This file is part of the PhotoEditor Software Development Kit.
+  ~
+  ~ Copyright (C) 2017 9elements GmbH <contact@9elements.com>
+  ~ All rights reserved.
+  ~
+  ~ Redistribution and use in source and binary forms, without
+  ~ modification, are permitted provided that the following license agreement
+  ~ is approved and a legal/financial contract was signed by the user.
+  ~
+  ~ The license agreement can be found under the following link:
+  ~
+  ~ https://www.photoeditorsdk.com/LICENSE.txt
+  -->
+
+<resources>
+
+    <style name="Imgly.PESDK.Editor.Panel.Frame" parent="Imgly.PESDK.Editor.Panel">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="Imgly.PESDK.Editor.Panel.Frame.FrameItem" parent="Imgly.PESDK.default.Item">
+        <item name="android:padding">4dp</item>
+        <item name="android:layout_marginTop">@dimen/container_item_marginTop</item>
+        <item name="android:layout_marginLeft">@dimen/frame_margin_left</item>
+        <item name="android:layout_marginStart">@dimen/frame_margin_left</item>
+        <item name="android:layout_marginRight">@dimen/frame_margin_right</item>
+        <item name="android:layout_marginEnd">@dimen/frame_margin_right</item>
+        <item name="android:background">@drawable/imgly_item_border</item>
+    </style>
+
+    <style name="Imgly.PESDK.Editor.Panel.Frame.FrameItem.Icon" parent="Imgly.PESDK.default.Item.Icon">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="Imgly.PESDK.Editor.Panel.Frame.FrameItem.NoneIcon" parent="Imgly.PESDK">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:scaleType">center</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:paddingBottom">12dp</item>
+    </style>
+
+    <style name="Imgly.PESDK.Editor.Panel.Frame.FrameItem.Label" parent="Imgly.PESDK.default.Item.Label">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/item_label_text_size</item>
+        <item name="android:textColor">@color/imgly_lable_color_states</item>
+        <item name="android:paddingTop">4dp</item>
+        <item name="android:paddingBottom">4dp</item>
+        <item name="android:text">@string/pesdk_frame_button_none</item>
+        <item name="android:lines">1</item>
+        <item name="android:layout_alignParentBottom">true</item>
+    </style>
+
+    <style name="Imgly.PESDK.Editor.Panel.Frame.SmallOptionList" parent="Imgly.PESDK">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/small_option_container_height</item>
+        <item name="android:layout_marginTop">@dimen/small_option_container_margin</item>
+        <item name="android:layout_marginBottom">@dimen/small_option_container_margin</item>
+    </style>
+
+    <style name="Imgly.PESDK.Editor.Panel.Frame.SeekSlider" parent="Imgly.PESDK.SeekSlider">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:alpha">0</item>
+    </style>
+
+    <style name="Imgly.PESDK.Editor.Panel.Frame.OptionList" parent="Imgly.PESDK"/>
+
+    <style name="Imgly.PESDK.Editor.Panel.Frame.FrameOption" parent="Imgly.PESDK">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+</resources>

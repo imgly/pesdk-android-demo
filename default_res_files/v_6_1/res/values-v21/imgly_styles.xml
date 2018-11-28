@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ This file is part of the PhotoEditor Software Development Kit.
+  ~
+  ~ Copyright (C) 2017 9elements GmbH <contact@9elements.com>
+  ~ All rights reserved.
+  ~
+  ~ Redistribution and use in source and binary forms, without
+  ~ modification, are permitted provided that the following license agreement
+  ~ is approved and a legal/financial contract was signed by the user.
+  ~
+  ~ The license agreement can be found under the following link:
+  ~
+  ~ https://www.photoeditorsdk.com/LICENSE.txt
+  -->
+
+<resources>
+
+    <style name="Imgly.PESDK.Button">
+        <item name="android:stateListAnimator">@null</item>
+    </style>
+
+    <style name="Imgly.PESDK.Editor.Panel">
+        <item name="android:stateListAnimator">@null</item>
+        <item name="android:splitTrack">false</item>
+    </style>
+
+</resources>
