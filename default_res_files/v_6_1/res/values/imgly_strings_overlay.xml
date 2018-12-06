@@ -30,7 +30,7 @@
     <string name="pesdk_overlay_button_blendModeSoftLight">Soft Light</string>
     <string name="pesdk_overlay_button_blendModeHardLight">Hard Light</string>
 
-    <string name="pesdk_overlay_asset_none">None</string>
+    <string name="pesdk_overlay_asset_none">Original</string>
     <string name="pesdk_overlay_asset_golden">Golden</string>
     <string name="pesdk_overlay_asset_lightleak1">Lightleak 1</string>
     <string name="pesdk_overlay_asset_mosaic">Mosaic</string>

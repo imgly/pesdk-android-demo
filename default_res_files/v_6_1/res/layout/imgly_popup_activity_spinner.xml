@@ -17,12 +17,12 @@
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/progressView"
-    style="?attr/Imgly.PESDK.Editor.Popup.Progress">
+    style="@style/Imgly.PESDK.Editor.Popup.Progress">
     <ProgressBar
         android:id="@+id/progressBar"
-        style="?attr/Imgly.PESDK.Editor.Popup.Progress.ProgressBar"/>
+        style="@style/Imgly.PESDK.Editor.Popup.Progress.ProgressBar"/>
     <TextView
         android:id="@+id/progress"
         android:text="@string/pesdk_editor_text_exportProgressUnknown"
-        style="?attr/Imgly.PESDK.Editor.Popup.Progress.Value"/>
+        style="@style/Imgly.PESDK.Editor.Popup.Progress.Value"/>
 </RelativeLayout>

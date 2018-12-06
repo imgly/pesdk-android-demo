@@ -17,14 +17,14 @@
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/rootView"
-    style="?attr/Imgly.PESDK.Editor.Panel.Frame">
+    style="@style/Imgly.PESDK.Editor.Panel.Frame">
     <ly.img.android.pesdk.ui.widgets.HorizontalListView
         android:id="@+id/quickOptionList"
-        style="?attr/Imgly.PESDK.Editor.Panel.Frame.SmallOptionList"/>
+        style="@style/Imgly.PESDK.Editor.Panel.Frame.SmallOptionList"/>
     <ly.img.android.pesdk.ui.widgets.ImgLyFloatSlider
         android:id="@+id/seekBar"
-        style="?attr/Imgly.PESDK.Editor.Panel.Frame.SeekSlider"/>
+        style="@style/Imgly.PESDK.Editor.Panel.Frame.SeekSlider"/>
     <include
         layout="@layout/imgly_option_list"
-        style="?attr/Imgly.PESDK.Editor.Panel.Frame.OptionList"/>
+        style="@style/Imgly.PESDK.Editor.Panel.Frame.OptionList"/>
 </LinearLayout>

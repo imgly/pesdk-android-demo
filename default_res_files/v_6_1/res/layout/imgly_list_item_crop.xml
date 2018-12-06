@@ -16,14 +16,14 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/contentHolder"
-    style="?attr/Imgly.PESDK.Editor.Panel.Transform.CropItem">
+    style="@style/Imgly.PESDK.Editor.Panel.Transform.CropItem">
     <RelativeLayout
-        style="?attr/Imgly.PESDK.Editor.Panel.Transform.CropItem.Border">
+        style="@style/Imgly.PESDK.Editor.Panel.Transform.CropItem.Border">
         <ly.img.android.pesdk.ui.view.CropAspectView
             android:id="@+id/aspectImage"
             app:fillColor="@color/imgly_crop_item_fill_color_states"
             app:strokeColor="@color/imgly_crop_item_line_color_states"
-            style="?attr/Imgly.PESDK.Editor.Panel.Transform.CropItem.Icon"/>
+            style="@style/Imgly.PESDK.Editor.Panel.Transform.CropItem.Icon"/>
         <ly.img.android.pesdk.ui.widgets.ImageSourceView
             android:id="@+id/icon"
             android:layout_width="match_parent"
@@ -32,7 +32,7 @@
             android:layout_marginBottom="14dp"/>
         <TextView
             android:id="@+id/label"
-            style="?attr/Imgly.PESDK.Editor.Panel.Transform.CropItem.Label"/>
+            style="@style/Imgly.PESDK.Editor.Panel.Transform.CropItem.Label"/>
     </RelativeLayout>
 </RelativeLayout>
 

@@ -17,13 +17,13 @@
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/rootView"
-    style="?attr/Imgly.PESDK.Editor.Panel.Text">
+    style="@style/Imgly.PESDK.Editor.Panel.Text">
     <RelativeLayout
         android:id="@+id/contentView"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
         <EditText
             android:id="@+id/textInputField"
-            style="?attr/Imgly.PESDK.Editor.Panel.Text.InputField"/>
+            style="@style/Imgly.PESDK.Editor.Panel.Text.InputField"/>
     </RelativeLayout>
 </RelativeLayout>

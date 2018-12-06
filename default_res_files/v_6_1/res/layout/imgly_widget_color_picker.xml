@@ -16,14 +16,14 @@
 
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    style="?attr/Imgly.PESDK.Widget.ColorPicker.Background">
+    style="@style/Imgly.PESDK.Widget.ColorPicker.Background">
     <ly.img.android.pesdk.ui.widgets.colorpicker.HueView
         android:id="@+id/color_picker_hue"
-        style="?attr/Imgly.PESDK.Widget.ColorPicker.HueSlider"/>
+        style="@style/Imgly.PESDK.Widget.ColorPicker.HueSlider"/>
     <ly.img.android.pesdk.ui.widgets.colorpicker.SelectView
         android:id="@+id/color_picker_select"
-        style="?attr/Imgly.PESDK.Widget.ColorPicker.ColorValueSlider"/>
+        style="@style/Imgly.PESDK.Widget.ColorPicker.ColorValueSlider"/>
     <ly.img.android.pesdk.ui.widgets.colorpicker.AlphaView
         android:id="@+id/color_picker_alpha"
-        style="?attr/Imgly.PESDK.Widget.ColorPicker.AlphaSlider"/>
+        style="@style/Imgly.PESDK.Widget.ColorPicker.AlphaSlider"/>
 </LinearLayout>

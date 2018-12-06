@@ -17,8 +17,8 @@
 <RelativeLayout
     android:id="@+id/optionBar"
     xmlns:android="http://schemas.android.com/apk/res/android"
-    style="?attr/Imgly.PESDK.Editor.Panel.default.OptionContainer">
+    style="@style/Imgly.PESDK.Editor.Panel.default.OptionContainer">
     <ly.img.android.pesdk.ui.widgets.HorizontalListView
         android:id="@+id/optionList"
-        style="?attr/Imgly.PESDK.default.OptionList"/>
+        style="@style/Imgly.PESDK.default.OptionList"/>
 </RelativeLayout>

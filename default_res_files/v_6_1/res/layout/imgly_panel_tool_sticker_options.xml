@@ -17,14 +17,14 @@
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/rootView"
-    style="?attr/Imgly.PESDK.Editor.Panel.Sticker.StickerOption">
+    style="@style/Imgly.PESDK.Editor.Panel.Sticker.StickerOption">
     <ly.img.android.pesdk.ui.widgets.HorizontalListView
         android:id="@+id/quickOptionList"
-        style="?attr/Imgly.PESDK.Editor.Panel.Sticker.SmallOptionList"/>
+        style="@style/Imgly.PESDK.Editor.Panel.Sticker.SmallOptionList"/>
     <ly.img.android.pesdk.ui.widgets.SeekSlider
         android:id="@+id/seekBar"
-        style="?attr/Imgly.PESDK.Editor.Panel.Sticker.SeekSlider"/>
+        style="@style/Imgly.PESDK.Editor.Panel.Sticker.SeekSlider"/>
     <include
         layout="@layout/imgly_option_list"
-        style="?attr/Imgly.PESDK.Editor.Panel.Sticker.OptionList"/>
+        style="@style/Imgly.PESDK.Editor.Panel.Sticker.OptionList"/>
 </LinearLayout>

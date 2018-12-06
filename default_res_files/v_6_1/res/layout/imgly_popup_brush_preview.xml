@@ -2,7 +2,7 @@
 <RelativeLayout
     android:id="@+id/brushPreviewPopup"
     xmlns:android="http://schemas.android.com/apk/res/android"
-    style="?attr/Imgly.PESDK.Editor.Popup.Brush.BrushPreview">
+    style="@style/Imgly.PESDK.Editor.Popup.Brush.BrushPreview">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -23,10 +23,10 @@
             <RelativeLayout
                 android:id="@+id/blurView"
                 xmlns:android="http://schemas.android.com/apk/res/android"
-                style="?attr/Imgly.PESDK.Editor.Popup.Brush">
+                style="@style/Imgly.PESDK.Editor.Popup.Brush">
                 <ly.img.android.pesdk.ui.widgets.BrushToolPreviewView
                     android:id="@+id/brushToolPreview"
-                    style="?attr/Imgly.PESDK.Editor.Popup.Brush.BrushToolPreview"/>
+                    style="@style/Imgly.PESDK.Editor.Popup.Brush.BrushToolPreview"/>
             </RelativeLayout>
             <android.support.v4.widget.Space
                 android:layout_width="match_parent"

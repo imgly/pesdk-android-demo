@@ -17,11 +17,11 @@
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/rootView"
-    style="?attr/Imgly.PESDK.Editor.Panel.TextDesign.TextOptions">
+    style="@style/Imgly.PESDK.Editor.Panel.TextDesign.TextOptions">
     <ly.img.android.pesdk.ui.widgets.HorizontalListView
         android:id="@+id/quickOptionList"
-        style="?attr/Imgly.PESDK.Editor.Panel.TextDesign.SmallOptionList"/>
+        style="@style/Imgly.PESDK.Editor.Panel.TextDesign.SmallOptionList"/>
     <include
         layout="@layout/imgly_option_list"
-        style="?attr/Imgly.PESDK.Editor.Panel.TextDesign.OptionList"/>
+        style="@style/Imgly.PESDK.Editor.Panel.TextDesign.OptionList"/>
 </RelativeLayout>

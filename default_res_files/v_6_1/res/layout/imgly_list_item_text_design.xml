@@ -17,10 +17,10 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/contentHolder"
-    style="?attr/Imgly.PESDK.Editor.Panel.TextDesign.TextDesignItem">
+    style="@style/Imgly.PESDK.Editor.Panel.TextDesign.TextDesignItem">
     <ly.img.android.pesdk.ui.widgets.ImageSourceView
         android:id="@+id/image"
-        style="?attr/Imgly.PESDK.Editor.Panel.TextDesign.TextDesignItem.Icon"/>
+        style="@style/Imgly.PESDK.Editor.Panel.TextDesign.TextDesignItem.Icon"/>
     <ly.img.android.pesdk.ui.widgets.ImageSourceView
         android:id="@+id/selected_overlay"
         app:src="@drawable/imgly_item_selected_overlay"

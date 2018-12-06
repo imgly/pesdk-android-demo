@@ -16,8 +16,8 @@
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/contentHolder"
-    style="?attr/Imgly.PESDK.Editor.Panel.Overlay.BlendModeItem">
+    style="@style/Imgly.PESDK.Editor.Panel.Overlay.BlendModeItem">
     <TextView
         android:id="@+id/label"
-        style="?attr/Imgly.PESDK.Editor.Panel.Overlay.BlendModeItem.Label"/>
+        style="@style/Imgly.PESDK.Editor.Panel.Overlay.BlendModeItem.Label"/>
 </RelativeLayout>

@@ -17,10 +17,10 @@
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/rootView"
-    style="?attr/Imgly.PESDK.Editor.Panel.Overlay">
+    style="@style/Imgly.PESDK.Editor.Panel.Overlay">
     <RelativeLayout
         android:id="@+id/modeBar"
-        style="?Imgly.PESDK.Editor.Panel.Overlay.ModeContainer">
+        style="@style/Imgly.PESDK.Editor.Panel.Overlay.ModeContainer">
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -38,10 +38,10 @@
         </LinearLayout>
         <ly.img.android.pesdk.ui.widgets.HorizontalListView
             android:id="@+id/modesList"
-            style="?attr/Imgly.PESDK.Editor.Panel.Overlay.ModeList"/>
+            style="@style/Imgly.PESDK.Editor.Panel.Overlay.ModeList"/>
     </RelativeLayout>
     <ly.img.android.pesdk.ui.widgets.SeekSlider
         android:id="@+id/seekBar"
-        style="?attr/Imgly.PESDK.Editor.Panel.Overlay.SeekSlider"/>
+        style="@style/Imgly.PESDK.Editor.Panel.Overlay.SeekSlider"/>
     <include layout="@layout/imgly_option_list"/>
 </LinearLayout>

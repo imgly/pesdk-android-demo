@@ -17,17 +17,17 @@
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/rootView"
-    style="?attr/Imgly.PESDK.Editor.Panel.Font">
+    style="@style/Imgly.PESDK.Editor.Panel.Font">
     <ly.img.android.pesdk.ui.widgets.DraggableExpandView
         android:id="@+id/expandView"
-        style="?attr/Imgly.PESDK.Editor.Panel.Font.Expandable">
+        style="@style/Imgly.PESDK.Editor.Panel.Font.Expandable">
         <ly.img.android.pesdk.ui.widgets.VerticalListView
             android:id="@+id/bigFontList"
-            style="?attr/Imgly.PESDK.Editor.Panel.Font.FontVertical.Container"/>
+            style="@style/Imgly.PESDK.Editor.Panel.Font.FontVertical.Container"/>
         <ImageView
             android:id="@id/draggerThumb"
-            style="?attr/Imgly.PESDK.Editor.Panel.Font.Thumb"/>
+            style="@style/Imgly.PESDK.Editor.Panel.Font.Thumb"/>
     </ly.img.android.pesdk.ui.widgets.DraggableExpandView>
     <include layout="@layout/imgly_option_list"
-             style="?attr/Imgly.PESDK.Editor.Panel.Font.OptionList"/>
+             style="@style/Imgly.PESDK.Editor.Panel.Font.OptionList"/>
 </RelativeLayout>

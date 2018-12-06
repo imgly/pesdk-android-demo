@@ -17,20 +17,20 @@
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/rootView"
-    style="?attr/Imgly.PESDK.Editor.Panel.Transform">
+    style="@style/Imgly.PESDK.Editor.Panel.Transform">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/imgly_editor_rotate_slider_background">
         <ly.img.android.pesdk.ui.widgets.AutoRotateImageSource
             android:id="@+id/buttonHorizontalFlip"
-            style="?attr/Imgly.PESDK.Editor.Panel.Transform.Button.Flip"/>
+            style="@style/Imgly.PESDK.Editor.Panel.Transform.Button.Flip"/>
         <ly.img.android.pesdk.ui.widgets.AdjustSlider
             android:id="@+id/slider"
-            style="?attr/Imgly.PESDK.Editor.Panel.Transform.Slider"/>
+            style="@style/Imgly.PESDK.Editor.Panel.Transform.Slider"/>
         <ly.img.android.pesdk.ui.widgets.AutoRotateImageSource
             android:id="@+id/buttonRotateCCW"
-            style="?attr/Imgly.PESDK.Editor.Panel.Transform.Button.Rotate"/>
+            style="@style/Imgly.PESDK.Editor.Panel.Transform.Button.Rotate"/>
     </LinearLayout>
     <include layout="@layout/imgly_option_list"/>
 </LinearLayout>

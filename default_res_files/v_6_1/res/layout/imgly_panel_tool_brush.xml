@@ -16,7 +16,7 @@
 
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
               android:id="@+id/rootView"
-              style="?attr/Imgly.PESDK.Editor.Panel.Brush">
+              style="@style/Imgly.PESDK.Editor.Panel.Brush">
     <android.support.v4.widget.Space
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -28,9 +28,9 @@
         android:layout_weight="1"/>
     <ly.img.android.pesdk.ui.widgets.HorizontalListView
         android:id="@+id/quickOptionList"
-        style="?attr/Imgly.PESDK.Editor.Panel.Brush.SmallOptionList"/>
+        style="@style/Imgly.PESDK.Editor.Panel.Brush.SmallOptionList"/>
     <ly.img.android.pesdk.ui.widgets.SeekSlider
         android:id="@+id/seekBar"
-        style="?attr/Imgly.PESDK.Editor.Panel.Brush.SeekSlider"/>
+        style="@style/Imgly.PESDK.Editor.Panel.Brush.SeekSlider"/>
     <include layout="@layout/imgly_option_list"/>
 </LinearLayout>

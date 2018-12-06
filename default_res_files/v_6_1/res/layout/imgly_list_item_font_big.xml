@@ -16,11 +16,11 @@
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/contentHolder"
-    style="?attr/Imgly.PESDK.Editor.Panel.Font.FontVerticalItem">
+    style="@style/Imgly.PESDK.Editor.Panel.Font.FontVerticalItem">
     <TextView
         android:id="@+id/text"
-        style="?attr/Imgly.PESDK.Editor.Panel.Font.FontVerticalItem.Text"/>
+        style="@style/Imgly.PESDK.Editor.Panel.Font.FontVerticalItem.Text"/>
     <TextView
         android:id="@+id/label"
-        style="?attr/Imgly.PESDK.Editor.Panel.Font.FontVerticalItem.Label"/>
+        style="@style/Imgly.PESDK.Editor.Panel.Font.FontVerticalItem.Label"/>
 </LinearLayout>

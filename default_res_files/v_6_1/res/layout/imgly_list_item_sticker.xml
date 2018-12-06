@@ -17,12 +17,12 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/contentHolder"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    style="?attr/Imgly.PESDK.Editor.Panel.Sticker.StickerItem">
+    style="@style/Imgly.PESDK.Editor.Panel.Sticker.StickerItem">
     <ly.img.android.pesdk.ui.widgets.ImageSourceView
         android:id="@+id/image"
         app:src="@drawable/imgly_icon_wait"
-        style="?attr/Imgly.PESDK.Editor.Panel.Sticker.StickerItem.Icon"/>
+        style="@style/Imgly.PESDK.Editor.Panel.Sticker.StickerItem.Icon"/>
     <TextView
         android:id="@+id/label"
-        style="?attr/Imgly.PESDK.Editor.Panel.Sticker.StickerItem.Label"/>
+        style="@style/Imgly.PESDK.Editor.Panel.Sticker.StickerItem.Label"/>
 </ly.img.android.pesdk.ui.widgets.AutoRotateLayout>

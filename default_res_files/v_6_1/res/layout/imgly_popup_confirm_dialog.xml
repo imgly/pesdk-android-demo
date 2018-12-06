@@ -17,25 +17,25 @@
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/notificationBackground"
-    style="?attr/Imgly.PESDK.Editor.Popup.Confirm">
+    style="@style/Imgly.PESDK.Editor.Popup.Confirm">
     <LinearLayout
-        style="?attr/Imgly.PESDK.Editor.Popup.Confirm.Background">
+        style="@style/Imgly.PESDK.Editor.Popup.Confirm.Background">
         <TextView
             android:text="@string/pesdk_editor_title_closeEditorAlert"
-            style="?attr/Imgly.PESDK.Editor.Popup.Confirm.Title"/>
+            style="@style/Imgly.PESDK.Editor.Popup.Confirm.Title"/>
         <TextView
             android:text="@string/pesdk_editor_text_closeEditorAlert"
-            style="?attr/Imgly.PESDK.Editor.Popup.Confirm.Text"/>
+            style="@style/Imgly.PESDK.Editor.Popup.Confirm.Text"/>
         <LinearLayout
-            style="?attr/Imgly.PESDK.Editor.Popup.ButtonContainer">
+            style="@style/Imgly.PESDK.Editor.Popup.ButtonContainer">
             <Button
                 android:id="@+id/disagreeButton"
                 android:text="@string/pesdk_editor_button_closeEditorAlertCancelation"
-                style="?attr/Imgly.PESDK.Editor.Popup.Button.Disagree"/>
+                style="@style/Imgly.PESDK.Editor.Popup.Button.Disagree"/>
             <Button
                 android:id="@+id/agreeButton"
                 android:text="@string/pesdk_editor_button_closeEditorAlertConfirmation"
-                style="?attr/Imgly.PESDK.Editor.Popup.Button.Agree"/>
+                style="@style/Imgly.PESDK.Editor.Popup.Button.Agree"/>
         </LinearLayout>
     </LinearLayout>
 </RelativeLayout>

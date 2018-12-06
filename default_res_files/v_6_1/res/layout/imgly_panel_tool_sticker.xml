@@ -18,19 +18,19 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/rootView"
-    style="?attr/Imgly.PESDK.Editor.Panel.Sticker">
+    style="@style/Imgly.PESDK.Editor.Panel.Sticker">
     <ly.img.android.pesdk.ui.widgets.DraggableExpandView
         android:id="@+id/expandView"
-        style="?attr/Imgly.PESDK.Editor.Panel.Sticker.Expandable">
+        style="@style/Imgly.PESDK.Editor.Panel.Sticker.Expandable">
         <ly.img.android.pesdk.ui.widgets.GridListView
             android:id="@+id/grid"
             app:spanSize="64dp"
-            style="?attr/Imgly.PESDK.Editor.Panel.Sticker.Expandable.Grid"/>
+            style="@style/Imgly.PESDK.Editor.Panel.Sticker.Expandable.Grid"/>
         <ImageView
             android:id="@id/draggerThumb"
-            style="?attr/Imgly.PESDK.Editor.Panel.Sticker.Expandable.Thumb"/>
+            style="@style/Imgly.PESDK.Editor.Panel.Sticker.Expandable.Thumb"/>
     </ly.img.android.pesdk.ui.widgets.DraggableExpandView>
     <include
         layout="@layout/imgly_option_list"
-        style="?attr/Imgly.PESDK.Editor.Panel.Sticker.OptionList"/>
+        style="@style/Imgly.PESDK.Editor.Panel.Sticker.OptionList"/>
 </RelativeLayout>

@@ -16,11 +16,11 @@
 <ly.img.android.pesdk.ui.widgets.AutoRotateLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/contentHolder"
-    style="?attr/Imgly.PESDK.Editor.Panel.Sticker.StickerCategoryItem">
+    style="@style/Imgly.PESDK.Editor.Panel.Sticker.StickerCategoryItem">
     <ly.img.android.pesdk.ui.widgets.ImageSourceView
         android:id="@+id/image"
-        style="?attr/Imgly.PESDK.Editor.Panel.Sticker.StickerCategoryItem.Icon"/>
+        style="@style/Imgly.PESDK.Editor.Panel.Sticker.StickerCategoryItem.Icon"/>
     <TextView
         android:id="@+id/label"
-        style="?attr/Imgly.PESDK.Editor.Panel.Sticker.StickerCategoryItem.Label"/>
+        style="@style/Imgly.PESDK.Editor.Panel.Sticker.StickerCategoryItem.Label"/>
 </ly.img.android.pesdk.ui.widgets.AutoRotateLayout>

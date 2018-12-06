@@ -17,17 +17,17 @@
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/rootView"
-    style="?attr/Imgly.PESDK.Editor.Panel.TextDesign">
+    style="@style/Imgly.PESDK.Editor.Panel.TextDesign">
     <RelativeLayout
         android:id="@+id/contentView"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
         <EditText
             android:id="@+id/textInputField"
-            style="?attr/Imgly.PESDK.Editor.Panel.TextDesign.InputField"/>
+            style="@style/Imgly.PESDK.Editor.Panel.TextDesign.InputField"/>
     </RelativeLayout>
     <!--Color selection-->
     <android.support.v7.widget.RecyclerView
     android:id="@+id/rv_text_colors"
-    style="?attr/Imgly.PESDK.Editor.Panel.TextDesign.ColorList"/>
+    style="@style/Imgly.PESDK.Editor.Panel.TextDesign.ColorList"/>
 </RelativeLayout>

@@ -16,16 +16,16 @@
 <ly.img.android.pesdk.ui.widgets.AutoRotateLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    style="?attr/Imgly.PESDK.Editor.Panel.Tool">
+    style="@style/Imgly.PESDK.Editor.Panel.Tool">
     <LinearLayout
         android:id="@+id/contentHolder"
         tools:ignore="UseCompoundDrawables"
-        style="?attr/Imgly.PESDK.Editor.Panel.Tool.ToolItem">
+        style="@style/Imgly.PESDK.Editor.Panel.Tool.ToolItem">
         <ly.img.android.pesdk.ui.widgets.ImageSourceView
             android:id="@+id/image"
-            style="?attr/Imgly.PESDK.Editor.Panel.Tool.ToolItem.Icon"/>
+            style="@style/Imgly.PESDK.Editor.Panel.Tool.ToolItem.Icon"/>
         <TextView
             android:id="@+id/label"
-            style="?attr/Imgly.PESDK.Editor.Panel.Tool.ToolItem.Label"/>
+            style="@style/Imgly.PESDK.Editor.Panel.Tool.ToolItem.Label"/>
     </LinearLayout>
 </ly.img.android.pesdk.ui.widgets.AutoRotateLayout>

@@ -16,14 +16,14 @@
 <ly.img.android.pesdk.ui.widgets.AutoRotateLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/contentHolder"
-    style="?attr/Imgly.PESDK.Editor.Panel.Filter.FilterItem">
+    style="@style/Imgly.PESDK.Editor.Panel.Filter.FilterItem">
     <ly.img.android.pesdk.ui.widgets.ImageSourceView
         android:id="@+id/image"
-        style="?attr/Imgly.PESDK.Editor.Panel.Filter.FilterItem.Icon"/>
+        style="@style/Imgly.PESDK.Editor.Panel.Filter.FilterItem.Icon"/>
     <RelativeLayout
-        style="?attr/Imgly.PESDK.Editor.Panel.Filter.FilterItem.Border">
+        style="@style/Imgly.PESDK.Editor.Panel.Filter.FilterItem.Border">
         <TextView
             android:id="@+id/label"
-            style="?attr/Imgly.PESDK.Editor.Panel.Filter.FilterItem.Label"/>
+            style="@style/Imgly.PESDK.Editor.Panel.Filter.FilterItem.Label"/>
     </RelativeLayout>
 </ly.img.android.pesdk.ui.widgets.AutoRotateLayout>

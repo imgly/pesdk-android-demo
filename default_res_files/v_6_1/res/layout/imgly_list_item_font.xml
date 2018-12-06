@@ -16,11 +16,11 @@
 <ly.img.android.pesdk.ui.widgets.AutoRotateLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/contentHolder"
-    style="?attr/Imgly.PESDK.Editor.Panel.Font.FontItem">
+    style="@style/Imgly.PESDK.Editor.Panel.Font.FontItem">
     <TextView
         android:id="@+id/text"
-        style="?attr/Imgly.PESDK.Editor.Panel.Font.FontItem.Text"/>
+        style="@style/Imgly.PESDK.Editor.Panel.Font.FontItem.Text"/>
     <TextView
         android:id="@+id/label"
-        style="?attr/Imgly.PESDK.Editor.Panel.Font.FontItem.Label"/>
+        style="@style/Imgly.PESDK.Editor.Panel.Font.FontItem.Label"/>
 </ly.img.android.pesdk.ui.widgets.AutoRotateLayout>

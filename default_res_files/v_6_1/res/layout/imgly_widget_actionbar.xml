@@ -16,23 +16,23 @@
 
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    style="?attr/Imgly.PESDK.Widget.ActionBar">
+    style="@style/Imgly.PESDK.Widget.ActionBar">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="48dp">
         <ly.img.android.pesdk.ui.widgets.buttons.CancelButton
             android:id="@+id/cancelButton"
-            style="?attr/Imgly.PESDK.Widget.ActionBar.Button.CancelButton" />
+            style="@style/Imgly.PESDK.Widget.ActionBar.Button.CancelButton" />
         <Space
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"/>
         <ly.img.android.pesdk.ui.widgets.buttons.AcceptButton
             android:id="@+id/acceptButton"
-            style="?attr/Imgly.PESDK.Widget.ActionBar.Button.AcceptButton" />
+            style="@style/Imgly.PESDK.Widget.ActionBar.Button.AcceptButton" />
     </LinearLayout>
     <RelativeLayout
         android:id="@+id/actionBarTitleBox"
-        style="?attr/Imgly.PESDK.Widget.ActionBar.TitleAnimationContainer">
+        style="@style/Imgly.PESDK.Widget.ActionBar.TitleAnimationContainer">
     </RelativeLayout>
 </RelativeLayout>

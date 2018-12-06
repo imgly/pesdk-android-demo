@@ -56,6 +56,8 @@
 
     <style name="Imgly.PESDK.default.Item.Value" parent="Imgly.PESDK"/>
 
+    <style name="Imgly.PESDK.Editor.Popup" parent="Imgly.PESDK"/>
+
     <style name="Imgly.PESDK.Editor.Popup.Confirm.default.Background" parent="Imgly.PESDK"/>
 
     <style name="Imgly.PESDK.Editor.Panel.default.OptionContainer" parent="Imgly.PESDK">
