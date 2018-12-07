@@ -1,5 +1,27 @@
 # PhotoEditor SDK - Changelog
 
+## v6.1.2
+
+### Fixed
+* The input image is cached, which resulting in the image containing the correct edits, but on a different image than the input image after export.
+
+## v6.1.1
+
+### Fixed
+* NullPointerException while entering the `Frame` tool.
+* NumberFormatException while inflating layout.
+* The editor can not load WebP images.
+* Label of the `Original` item in the `Overlay` tool.
+
+### Improved
+* Speed to take a picture.
+
+## v5.1.9
+
+### Fixed
+* The editor can not load WebP images.
+* InflateException in combination with Android Bundles.  
+
 ## v6.1.0
 
 ### Fixed
@@ -52,7 +74,7 @@
 ** String with name "pesdk_color_item_FFC8FF5F" is renamed to "pesdk_common_title_oliveColor"
 ** String with name "pesdk_color_item_FF7EFF60" is renamed to "pesdk_common_title_greenColor"
 ** String with name "pesdk_color_item_FF42FFDC" is renamed to "pesdk_common_title_aquamarinColor"
-** String with name "pesdk_color_item_FF3FFF84" is now unused and removed.
+** String with name "pesdk_color_item_FF3FFF84" is now unused and removed. 
 
 ## v6.0.9
 
