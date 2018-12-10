@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ This file is part of the PhotoEditor Software Development Kit.
+  ~
+  ~ Copyright (C) 2017 9elements GmbH <contact@9elements.com>
+  ~ All rights reserved.
+  ~
+  ~ Redistribution and use in source and binary forms, without
+  ~ modification, are permitted provided that the following license agreement
+  ~ is approved and a legal/financial contract was signed by the user.
+  ~
+  ~ The license agreement can be found under the following link:
+  ~
+  ~ https://www.photoeditorsdk.com/LICENSE.txt
+  -->
+
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+        android:viewportWidth="48"
+        android:viewportHeight="48"
+        android:width="48dp"
+        android:height="48dp">
+    <path
+        android:pathData="M13.4986 34.5099c-0.278 0.001 -0.5 -0.221 -0.499 -0.499 0.007 -1.388 0.142 -5.299 1.418 -6.576 1.562 -1.562 4.095 -1.562 5.657 0 1.562 1.562 1.562 4.095 0 5.657 -1.276 1.276 -5.188 1.411 -6.576 1.418zm18.5968 -14.853l-4.243 -4.243 2.122 -2.121c0.39 -0.39 1.023 -0.39 1.414 0l2.828 2.828c0.391 0.391 0.391 1.024 0 1.415l-2.121 2.121zm-9.1924 9.1924l-4.272 -4.272 8.485 -8.485 4.272 4.272 -8.485 8.485z"
+        android:fillColor="@color/imgly_icon_color" />
+</vector>

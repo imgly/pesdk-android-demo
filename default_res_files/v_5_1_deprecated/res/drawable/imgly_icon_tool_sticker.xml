@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ This file is part of the PhotoEditor Software Development Kit.
+  ~
+  ~ Copyright (C) 2017 9elements GmbH <contact@9elements.com>
+  ~ All rights reserved.
+  ~
+  ~ Redistribution and use in source and binary forms, without
+  ~ modification, are permitted provided that the following license agreement
+  ~ is approved and a legal/financial contract was signed by the user.
+  ~
+  ~ The license agreement can be found under the following link:
+  ~
+  ~ https://www.photoeditorsdk.com/LICENSE.txt
+  -->
+
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+        android:viewportWidth="48"
+        android:viewportHeight="48"
+        android:width="48dp"
+        android:height="48dp">
+    <path
+        android:pathData="M24 12C17.38 12 12 17.38 12 24C12 29.95 16.35 34.9 22.03 35.84C22.01 35.56 22 35.28 22 35C22 34.6 22.02 34.21 22.06 33.82C17.48 32.91 14 28.85 14 24C14 18.49 18.49 14 24 14C28.85 14 32.91 17.48 33.82 22.06C34.21 22.02 34.6 22 35 22C35.28 22 35.56 22.01 35.84 22.03C34.9 16.35 29.95 12 24 12M36 24L24 36C23.68 36 23.36 35.99 23.04 35.96C23.01 35.64 23 35.32 23 35C23 34.59 23.02 34.19 23.06 33.79C23.06 33.77 23.06 33.74 23.07 33.72C23.09 33.54 23.11 33.35 23.14 33.17C23.16 33.01 23.19 32.85 23.22 32.69C23.34 32.06 23.52 31.45 23.73 30.86C23.74 30.85 23.75 30.83 23.76 30.8C23.87544 30.49215 24.00245 30.19124 24.14104 29.89617C24.00245 30.19124 23.87544 30.49215 23.76 30.8C23.99 30.16 24.28 29.54 24.63 28.96C24.56625 29.07063 24.50426 29.18195 24.44402 29.29405C24.50426 29.18195 24.56625 29.07063 24.63 28.96C24.81 28.66 25 28.37 25.19 28.09C25.39 27.81 25.6 27.53 25.82 27.27C26.27 26.75 26.75 26.27 27.27 25.82C27.53 25.6 27.81 25.39 28.09 25.19C28.37 25 28.66 24.81 28.96 24.63C29.53 24.3 30.13 24.02 30.75 23.78C30.77 23.77 30.79 23.77 30.8 23.76C31.41 23.53 32.04 23.35 32.69 23.22C32.85 23.19 33.01 23.16 33.17 23.14C33.35 23.11 33.54 23.09 33.72 23.07C33.74 23.06 33.77 23.06 33.79 23.06C34.19 23.02 34.59 23 35 23C35.32 23 35.64 23.01 35.96 23.04C35.99 23.36 36 23.68 36 24"
+        android:fillColor="@color/imgly_icon_color" />
+</vector>

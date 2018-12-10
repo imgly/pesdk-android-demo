@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ This file is part of the PhotoEditor Software Development Kit.
+  ~
+  ~ Copyright (C) 2017 9elements GmbH <contact@9elements.com>
+  ~ All rights reserved.
+  ~
+  ~ Redistribution and use in source and binary forms, without
+  ~ modification, are permitted provided that the following license agreement
+  ~ is approved and a legal/financial contract was signed by the user.
+  ~
+  ~ The license agreement can be found under the following link:
+  ~
+  ~ https://www.photoeditorsdk.com/LICENSE.txt
+  -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        >
+        <ly.img.android.acs.CameraView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:id="@+id/cameraView" />
+        <ly.img.android.acs.FocusRectView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:id="@+id/FocusView" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/cameraUi"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <RelativeLayout
+            android:id="@+id/imglyActionBar"
+            android:layout_alignParentTop="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            style="@style/Imgly.Preview.Header">
+            <LinearLayout
+                android:id="@+id/flashButton"
+                style="@style/Imgly.Preview.Header.Button.FlashButton">
+                <ly.img.android.ui.widgets.AutoRotateImageSource
+                    android:id="@+id/flashButtonIcon"
+                    style="@style/Imgly.Preview.Header.Button.FlashButton.Icon"
+                    />
+                <ly.img.android.ui.widgets.AutoRotateLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+                <TextView
+                    android:id="@+id/flashButtonLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/Imgly.Preview.Header.Button.FlashButton.Label"
+                    />
+                </ly.img.android.ui.widgets.AutoRotateLayout>
+            </LinearLayout>
+            <ToggleButton
+                android:id="@+id/hdrButton"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_centerHorizontal="true"
+                style="@style/Imgly.Preview.Header.Button.HDRButton"/>
+            <ly.img.android.ui.widgets.AutoRotateImageSource
+                android:id="@+id/switchCameraButton"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                style="@style/Imgly.Preview.Header.Button.SwitchCameraButton"/>
+        </RelativeLayout>
+
+        <TextView
+            android:layout_alignBottom="@id/imglyActionBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Small Text"
+            android:id="@+id/fpsTv"
+            android:visibility="gone"
+            android:layout_gravity="center_horizontal|top" />
+
+        <LinearLayout
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            style="@style/Imgly.Preview.Footer"
+            android:clipToPadding="false"
+            android:clipChildren="false">
+            
+            <LinearLayout
+                android:id="@+id/filterBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
+                <ly.img.android.ui.widgets.AutoRotateLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:ignore="RelativeOverlap">
+                    <ly.img.android.ui.widgets.buttons.GalleryButton
+                        android:id="@+id/galleryButton"
+                        android:layout_width="52dp"
+                        android:layout_height="52dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/imgly_icon_camera_roll"
+                        android:layout_gravity="center_vertical"/>
+                </ly.img.android.ui.widgets.AutoRotateLayout>
+
+                <Space
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="1dp" />
+
+                <ly.img.android.ui.widgets.buttons.ShutterButton
+                    android:id="@+id/shutterButton"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    />
+                <Space
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    />
+                <ly.img.android.ui.widgets.buttons.ExpandToggleButton
+                    android:id="@+id/show_filter_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    />
+
+            </LinearLayout>
+            <ly.img.android.ui.widgets.ExpandableView
+                android:id="@+id/expandableView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipToPadding="false"
+                android:clipChildren="false">
+                <ly.img.android.ui.widgets.HorizontalListView
+                    android:id="@+id/filterList"
+                    android:layout_width="match_parent"
+                    android:layout_height="88dp"
+                    android:clipToPadding="false"
+                    android:clipChildren="false"
+                    />
+            </ly.img.android.ui.widgets.ExpandableView>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,42 @@
+<!--
+  ~ This file is part of the PhotoEditor Software Development Kit.
+  ~
+  ~ Copyright (C) 2017 9elements GmbH <contact@9elements.com>
+  ~ All rights reserved.
+  ~
+  ~ Redistribution and use in source and binary forms, without
+  ~ modification, are permitted provided that the following license agreement
+  ~ is approved and a legal/financial contract was signed by the user.
+  ~
+  ~ The license agreement can be found under the following link:
+  ~
+  ~ https://www.photoeditorsdk.com/LICENSE.txt
+  -->
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_marginTop="8dp"
+    android:layout_width="72dp"
+    android:layout_height="72dp"
+    android:layout_marginLeft="0.5dp"
+    android:layout_marginStart="0.5dp"
+    android:layout_marginRight="0.5dp"
+    android:layout_marginEnd="0.5dp"
+    android:id="@+id/contentHolder"
+    style="@style/Imgly.Editor.Toolbar.Panels.Crop">
+    <ly.img.android.ui.widgets.AutoRotateLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+        <TextView
+            android:id="@+id/label"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/imgly_color_filter_name_default"
+            android:maxLines="5"
+            android:lines="5"
+            android:gravity="center"
+            style="@style/Imgly.Editor.Toolbar.Panels.Crop.ItemLabel"
+            />
+    </ly.img.android.ui.widgets.AutoRotateLayout>
+</RelativeLayout>

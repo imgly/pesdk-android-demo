@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ This file is part of the PhotoEditor Software Development Kit.
+  ~
+  ~ Copyright (C) 2017 9elements GmbH <contact@9elements.com>
+  ~ All rights reserved.
+  ~
+  ~ Redistribution and use in source and binary forms, without
+  ~ modification, are permitted provided that the following license agreement
+  ~ is approved and a legal/financial contract was signed by the user.
+  ~
+  ~ The license agreement can be found under the following link:
+  ~
+  ~ https://www.photoeditorsdk.com/LICENSE.txt
+  -->
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/notificationBackground"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:clickable="true"
+    >
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/imgly_dialog_background">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/imgly_photo_editor_cancel_image_title"
+            android:textSize="15sp"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:paddingBottom="30dp"
+            android:gravity="center"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/imgly_photo_editor_cancel_image_content"
+            android:textSize="14sp"
+            android:textColor="#FFFFFF"
+            android:textStyle="normal"
+            android:paddingBottom="30dp"
+            android:gravity="center"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end">
+            <Button
+                android:id="@+id/disagreeButton"
+                android:layout_width="88dp"
+                android:layout_height="48dp"
+                android:text="@string/imgly_photo_editor_cancel_image_no"
+                android:clickable="false"
+                android:focusable="false"
+                android:background="@drawable/imgly_button_click_overlay"
+                android:textColor="@color/imgly_text_color"
+                style="@style/Imgly.Button"/>
+            <Button
+                android:id="@+id/agreeButton"
+                android:layout_width="88dp"
+                android:layout_height="48dp"
+                android:text="@string/imgly_photo_editor_cancel_image_yes"
+                android:background="@drawable/imgly_button_click_overlay"
+                android:textColor="@color/imgly_text_color"
+                style="@style/Imgly.Button"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

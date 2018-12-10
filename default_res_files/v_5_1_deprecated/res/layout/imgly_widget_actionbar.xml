@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ This file is part of the PhotoEditor Software Development Kit.
+  ~
+  ~ Copyright (C) 2017 9elements GmbH <contact@9elements.com>
+  ~ All rights reserved.
+  ~
+  ~ Redistribution and use in source and binary forms, without
+  ~ modification, are permitted provided that the following license agreement
+  ~ is approved and a legal/financial contract was signed by the user.
+  ~
+  ~ The license agreement can be found under the following link:
+  ~
+  ~ https://www.photoeditorsdk.com/LICENSE.txt
+  -->
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="48dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        style="@style/Imgly.Editor.Header">
+        <ly.img.android.ui.widgets.buttons.CancelButton
+            android:id="@+id/cancelButton"
+            android:scaleType="center"
+            style="@style/Imgly.Editor.Header.Button.CancelButton" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+        <ly.img.android.ui.widgets.buttons.AcceptButton
+            android:id="@+id/acceptButton"
+            android:scaleType="center"
+            style="@style/Imgly.Editor.Header.Button.AcceptButton" />
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/actionBarTitleBox"
+        android:textSize="14sp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </RelativeLayout>
+
+</RelativeLayout>

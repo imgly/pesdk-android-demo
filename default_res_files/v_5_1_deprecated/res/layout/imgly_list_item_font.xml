@@ -1,0 +1,36 @@
+<!--
+  ~ This file is part of the PhotoEditor Software Development Kit.
+  ~
+  ~ Copyright (C) 2017 9elements GmbH <contact@9elements.com>
+  ~ All rights reserved.
+  ~
+  ~ Redistribution and use in source and binary forms, without
+  ~ modification, are permitted provided that the following license agreement
+  ~ is approved and a legal/financial contract was signed by the user.
+  ~
+  ~ The license agreement can be found under the following link:
+  ~
+  ~ https://www.photoeditorsdk.com/LICENSE.txt
+  -->
+
+<ly.img.android.ui.widgets.AutoRotateLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/contentHolder"
+    android:layout_marginTop="8dp"
+    android:layout_marginLeft="0.5dp"
+    android:layout_marginStart="0.5dp"
+    android:layout_marginRight="0.5dp"
+    android:layout_marginEnd="0.5dp"
+    android:layout_width="72dp"
+    android:layout_height="72dp"
+    style="@style/Imgly.Editor.Toolbar.Panels.Text.Font">
+    <TextView
+        android:id="@+id/text"
+        style="@style/Imgly.Editor.Toolbar.Panels.Text.Font.ItemText"
+        />
+    <TextView
+        android:id="@+id/label"
+        android:text="@string/imgly_tool_name_text_font"
+        style="@style/Imgly.Editor.Toolbar.Panels.Text.Font.ItemLabel"
+        android:layout_alignParentBottom="true"/>
+</ly.img.android.ui.widgets.AutoRotateLayout>

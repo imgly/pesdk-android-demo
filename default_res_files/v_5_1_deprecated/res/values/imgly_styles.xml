@@ -1,0 +1,387 @@
+<!--
+  ~ This file is part of the PhotoEditor Software Development Kit.
+  ~
+  ~ Copyright (C) 2017 9elements GmbH <contact@9elements.com>
+  ~ All rights reserved.
+  ~
+  ~ Redistribution and use in source and binary forms, without
+  ~ modification, are permitted provided that the following license agreement
+  ~ is approved and a legal/financial contract was signed by the user.
+  ~
+  ~ The license agreement can be found under the following link:
+  ~
+  ~ https://www.photoeditorsdk.com/LICENSE.txt
+  -->
+
+<resources>
+
+    <!-- Base SDK theme. -->
+    <style name="TransparentDialog" parent="android:Theme.Dialog">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:visibility">gone</item>
+    </style>
+    
+    <style name="Imgly" parent="@android:style/Theme.NoTitleBar.Fullscreen"/>
+
+    <!-- Borderless Button Dummy v21 -->
+
+    <style name="Imgly.Button" parent="Imgly"/>
+
+    <!-- Editor -->
+    <style name="Imgly.Editor" parent="Imgly"/>
+
+    <style name="Imgly.Editor.Container" parent="Imgly.Editor">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:paddingBottom">48dp</item>
+    </style>
+
+    <style name="Imgly.Editor.Preview" parent="Imgly.Editor">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_marginBottom">80dp</item>
+        <item name="android:background">@color/imgly_editor_background</item>
+    </style>
+
+    <!-- Editor.Header -->
+
+    <style name="Imgly.Editor.Header" parent="Imgly.Editor">
+        <item name="android:background">@color/imgly_editor_header_background</item>
+    </style>
+
+    <style name="Imgly.Editor.Header.Title" parent="Imgly.Editor">
+        <item name="android:text">@string/imgly_photo_editor_title</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/imgly_editor_text_color</item>
+        <item name="android:layout_centerInParent">true</item>
+    </style>
+
+    <style name="Imgly.Editor.Header.Button" parent="Imgly.Button">
+        <item name="android:textColor">@color/imgly_editor_text_color</item>
+        <item name="android:background">@drawable/imgly_button</item>
+        <item name="android:paddingLeft">0dp</item>
+        <item name="android:paddingStart">0dp</item>
+        <item name="android:paddingRight">0dp</item>
+        <item name="android:paddingEnd">0dp</item>
+        <item name="android:layout_width">48dp</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_marginTop">0dp</item>
+        <item name="android:layout_marginLeft">0dp</item>
+        <item name="android:layout_marginStart">0dp</item>
+        <item name="android:layout_marginRight">0dp</item>
+        <item name="android:layout_marginEnd">0dp</item>
+        <item name="android:layout_marginBottom">0dp</item>
+    </style>
+    <style name="Imgly.Editor.Header.Button.CancelButton" parent="Imgly.Editor.Header.Button">
+        <!--item name="android:drawableRight">@drawable/imgly_icon_cancel</item-->
+    </style>
+    <style name="Imgly.Editor.Header.Button.SaveButton"   parent="Imgly.Editor.Header.Button"/>
+    <style name="Imgly.Editor.Header.Button.AcceptButton" parent="Imgly.Editor.Header.Button">
+        <!--item name="android:drawableRight">@drawable/imgly_icon_confirm</item-->
+    </style>
+
+
+    <!-- Editor.Toolbar -->
+
+    <style name="Imgly.Editor.Toolbar" parent="Imgly.Editor"/>
+
+    <style name="Imgly.Editor.Toolbar.Container" parent="Imgly.Editor">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <!--item name="android:layout_height">0dp</item>
+        <item name="android:layout_weight">1</item-->
+    </style>
+
+    <!-- Editor.Toolbar.Panels -->
+
+    <style name="Imgly.Editor.Toolbar.Panels" parent="Imgly.Editor.Toolbar">
+        <item name="android:textColor">@color/imgly_editor_text_color</item>
+    </style>
+
+    <style name="Imgly.Editor.Toolbar.Panels.OptionsContainer" parent="Imgly.Editor">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">88dp</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:background">@color/imgly_editor_toolbar_background</item>
+    </style>
+
+    <style name="Imgly.Editor.Toolbar.Panels.ModesContainer" parent="Imgly.Editor">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:background">@color/imgly_editor_toolbar_background</item>
+    </style>
+
+    <style name="Imgly.Editor.Toolbar.Panels.default.ItemIcon" parent="Imgly.Editor.Toolbar.Panels">
+        <item name="android:layout_gravity">center</item>
+        <item name="android:padding">0dp</item>
+    </style>
+
+    <style name="Imgly.Editor.Toolbar.Panels.default.ItemLabel" parent="Imgly.Editor.Toolbar.Panels">
+        <item name="android:textSize">12dp</item>
+        <item name="android:paddingTop">0dp</item>
+        <item name="android:paddingBottom">0dp</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:lines">1</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/imgly_lable_color_states</item>
+    </style>
+
+    <style name="Imgly.Editor.Toolbar.Panels.default.ItemSelectOverlay" parent="Imgly.Editor.Toolbar.Panels"/>
+    <style name="Imgly.Editor.Toolbar.Panels.default.ItemSelectBackground" parent="Imgly.Editor.Toolbar.Panels">
+        <item name="android:visibility">gone</item>
+    </style>
+
+
+    <style name="Imgly.SeekBar" parent="Imgly.Editor.Toolbar.Panels">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_marginLeft">24dp</item>
+        <item name="android:layout_marginStart">24dp</item>
+        <item name="android:layout_marginRight">24dp</item>
+        <item name="android:layout_marginEnd">24dp</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:paddingTop">0dp</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:paddingStart">8dp</item>
+        <item name="android:paddingRight">8dp</item>
+        <item name="android:paddingEnd">8dp</item>
+        <item name="android:paddingBottom">0dp</item>
+        <item name="android:thumb">@drawable/imgly_slider_thumb</item>
+        <item name="android:background">@drawable/imgly_slider_background</item>
+        <item name="android:progressDrawable">@drawable/imgly_slider_progress</item>
+        <item name="android:indeterminateDrawable">@drawable/imgly_slider_progress</item>
+    </style>
+
+    <style name="Imgly.SeekSlider" parent="Imgly.Editor.Toolbar.Panels">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:background">@color/imgly_editor_toolbar_background</item>
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingStart">16dp</item>
+        <item name="android:paddingTop">12dp</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:paddingRight">16dp</item>
+        <item name="android:paddingEnd">16dp</item>
+        <item name="rangeBackgroundColor">@color/imgly_slider_track_color</item>
+        <item name="selectedRangeBackgroundColor">@color/imgly_slider_progress_color</item>
+    </style>
+
+    <style name="Imgly.SeekBarContainer" parent="Imgly.Editor.Toolbar.Panels">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:background">#B3000000</item>
+    </style>
+
+    <style name="Imgly.Editor.Toolbar.Panels.Divider" parent="Imgly.Editor.Toolbar.Panels">
+        <item name="android:layout_width">1dp</item>
+        <item name="android:layout_height">46dp</item>
+        <item name="android:background">#13FFFFFF</item>
+        <item name="android:layout_marginLeft">14dp</item>
+        <item name="android:layout_marginStart">14dp</item>
+        <item name="android:layout_marginRight">14dp</item>
+        <item name="android:layout_marginEnd">14dp</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+
+    <style name="Imgly.Editor.Toolbar.Panels.QuickTools" parent="Imgly.Editor.Toolbar.Panels">
+        <item name="android:background">#4D000000</item>
+    </style>
+    <style name="Imgly.Editor.Toolbar.Panels.QuickTools.ItemIcon" parent="Imgly.Editor.Toolbar.Panels.default.ItemIcon"/>
+    <style name="Imgly.Editor.Toolbar.Panels.QuickTools.ItemLabel" parent="Imgly.Editor.Toolbar.Panels.default.ItemLabel"/>
+
+    <style name="Imgly.Editor.Toolbar.Panels.Tool" parent="Imgly.Editor.Toolbar.Panels"/>
+    <style name="Imgly.Editor.Toolbar.Panels.Tool.ItemIcon" parent="Imgly.Editor.Toolbar.Panels.default.ItemIcon"/>
+    <style name="Imgly.Editor.Toolbar.Panels.Tool.ItemLabel" parent="Imgly.Editor.Toolbar.Panels.default.ItemLabel"/>
+
+    <style name="Imgly.Editor.Toolbar.Panels.Filter" parent="Imgly.Editor.Toolbar.Panels"/>
+    <style name="Imgly.Editor.Toolbar.Panels.Filter.ItemIcon" parent="Imgly.Editor.Toolbar.Panels.default.ItemIcon"/>
+    <style name="Imgly.Editor.Toolbar.Panels.Filter.ItemLabel" parent="Imgly.Editor.Toolbar.Panels.default.ItemLabel">
+        <item name="android:textSize">11dp</item>
+        <item name="android:textColor">#FFFFFFFF</item>
+        <item name="android:paddingTop">4dp</item>
+        <item name="android:paddingBottom">4dp</item>
+        <item name="android:background">@drawable/imgly_item_filter_label_bg</item>
+    </style>
+    <style name="Imgly.Editor.Toolbar.Panels.Filter.ItemValue" parent="Imgly.Editor.Toolbar.Panels.default.ItemLabel">
+        <item name="android:textSize">18dp</item>
+        <item name="android:textColor">#FFFFFFFF</item>
+    </style>
+    <style name="Imgly.Editor.Toolbar.Panels.Filter.ItemSelectOverlay" parent="Imgly.Editor.Toolbar.Panels.default.ItemSelectOverlay">
+        <item name="android:background">@drawable/imgly_item_filter_overlay</item>
+    </style>
+    <style name="Imgly.Editor.Toolbar.Panels.Filter.ItemSelectBackground" parent="Imgly.Editor.Toolbar.Panels.default.ItemSelectBackground"/>
+
+
+    <style name="Imgly.Editor.Toolbar.Panels.Adjust" parent="Imgly.Editor.Toolbar.Panels"/>
+
+    <style name="Imgly.Editor.Toolbar.Panels.Focus" parent="Imgly.Editor.Toolbar.Panels"/>
+
+    <style name="Imgly.Editor.Toolbar.Panels.Crop" parent="Imgly.Editor.Toolbar.Panels">
+        <item name="android:background">@drawable/imgly_item_border</item>
+    </style>
+    <style name="Imgly.Editor.Toolbar.Panels.Crop.ItemLabel" parent="Imgly.Editor.Toolbar.Panels.default.ItemLabel"/>
+
+    <style name="Imgly.Editor.Toolbar.Panels.BlendMode" parent="Imgly.Editor.Toolbar.Panels">
+        <item name="android:background">@drawable/imgly_item_border</item>
+    </style>
+    <style name="Imgly.Editor.Toolbar.Panels.BlendMode.ItemLabel" parent="Imgly.Editor.Toolbar.Panels.default.ItemLabel">
+        <item name="android:paddingLeft">12dp</item>
+        <item name="android:paddingStart">12dp</item>
+        <item name="android:paddingRight">12dp</item>
+        <item name="android:paddingEnd">12dp</item>
+    </style>
+
+    <style name="Imgly.Editor.Toolbar.Panels.Text" parent="Imgly.Editor.Toolbar.Panels"/>
+    <style name="Imgly.Editor.Toolbar.Panels.Text.ItemIcon" parent="Imgly.Editor.Toolbar.Panels.default.ItemIcon"/>
+    <style name="Imgly.Editor.Toolbar.Panels.Text.ItemLabel" parent="Imgly.Editor.Toolbar.Panels.default.ItemLabel"/>
+
+    <style name="Imgly.Editor.Toolbar.Panels.Text.Font" parent="Imgly.Editor.Toolbar.Panels"/>
+    <style name="Imgly.Editor.Toolbar.Panels.Text.Font.ItemText" parent="Imgly.Editor">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">57dp</item>
+        <item name="android:padding">0dp</item>
+        <item name="android:textSize">40dp</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginTop">0dp</item>
+        <item name="android:layout_marginBottom">0dp</item>
+        <item name="android:textColor">@color/imgly_editor_text_color</item>
+        <item name="android:text">Ag</item>
+    </style>
+    <style name="Imgly.Editor.Toolbar.Panels.Text.Font.ItemLabel" parent="Imgly.Editor">
+        <item name="android:lines">1</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">0dp</item>
+        <item name="android:textSize">12dp</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginTop">0dp</item>
+        <item name="android:layout_marginBottom">4dp</item>
+        <item name="android:textColor">@color/imgly_editor_text_color_secondary</item>
+    </style>
+
+    <style name="Imgly.Editor.Toolbar.Panels.Text.FontVertical.Container" parent="Imgly.Editor.Toolbar">
+        <item name="android:layout_marginTop">14dp</item>
+        <item name="android:paddingTop">14dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">#d9000000</item>
+    </style>
+    <style name="Imgly.Editor.Toolbar.Panels.Text.FontVertical" parent="Imgly.Editor.Toolbar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="Imgly.Editor.Toolbar.Panels.Text.FontVertical.ItemText" parent="Imgly.Editor">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">0dp</item>
+        <item name="android:textSize">30dp</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginTop">9dp</item>
+        <item name="android:layout_marginBottom">0dp</item>
+        <item name="android:textColor">@color/imgly_editor_text_color</item>
+    </style>
+    <style name="Imgly.Editor.Toolbar.Panels.Text.FontVertical.ItemLabel" parent="Imgly.Editor">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">0dp</item>
+        <item name="android:textSize">12dp</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginTop">1dp</item>
+        <item name="android:layout_marginBottom">0dp</item>
+        <item name="android:textColor">@color/imgly_editor_text_color_secondary</item>
+    </style>
+
+    <style name="Imgly.Editor.Toolbar.Panels.Text.Color" parent="Imgly.Editor.Toolbar.Panels"/>
+    <style name="Imgly.Editor.Toolbar.Panels.Text.Color.ColorPicker" parent="Imgly.Editor.Toolbar.Panels">
+        <item name="android:layout_width" >wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+    <style name="Imgly.Editor.Toolbar.Panels.Text.Color.ItemIcon" parent="Imgly.Editor.Toolbar.Panels.default.ItemIcon"/>
+    <style name="Imgly.Editor.Toolbar.Panels.Text.Color.ItemSelectOverlay" parent="Imgly.Editor.Toolbar.Panels.default.ItemSelectOverlay">
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:background">@drawable/imgly_item_color_overlay</item>
+    </style>
+
+    <style name="Imgly.Editor.Toolbar.Panels.Sticker" parent="Imgly.Editor.Toolbar.Panels"/>
+    <style name="Imgly.Editor.Toolbar.Panels.Sticker.ItemIcon" parent="Imgly.Editor.Toolbar.Panels.default.ItemIcon"/>
+    <style name="Imgly.Editor.Toolbar.Panels.Sticker.ItemLabel" parent="Imgly.Editor.Toolbar.Panels.default.ItemLabel"/>
+
+    <style name="Imgly.Editor.Toolbar.Panels.Rotate" parent="Imgly.Editor.Toolbar.Panels"/>
+    <style name="Imgly.Editor.Toolbar.Panels.Rotate.ItemIcon" parent="Imgly.Editor.Toolbar.Panels.default.ItemIcon"/>
+    <style name="Imgly.Editor.Toolbar.Panels.Rotate.ItemLabel" parent="Imgly.Editor.Toolbar.Panels.default.ItemLabel"/>
+
+    <!-- Camera Preview -->
+
+    <style name="Imgly.Preview" parent="Imgly"/>
+
+    <style name="Imgly.Preview.Header" parent="Imgly.Preview">
+        <item name="android:paddingLeft">0dp</item>
+        <item name="android:paddingStart">0dp</item>
+        <item name="android:paddingRight">0dp</item>
+        <item name="android:paddingEnd">0dp</item>
+        <item name="android:background">@color/imgly_preview_header_background</item>
+    </style>
+
+    <style name="Imgly.Preview.Header.Button" parent="Imgly.Button">
+        <item name="android:paddingTop">4dp</item>
+        <item name="android:paddingBottom">4dp</item>
+        <item name="android:paddingLeft">4dp</item>
+        <item name="android:paddingStart">4dp</item>
+        <item name="android:paddingRight">4dp</item>
+        <item name="android:paddingEnd">4dp</item>
+        <item name="android:textColor">@color/imgly_preview_text_color</item>
+        <item name="android:background">@drawable/imgly_button_click_overlay</item>
+    </style>
+
+    <style name="Imgly.Preview.Header.Button.FlashButton" parent="Imgly.Preview.Header.Button">
+        <item name="android:layout_height">50dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:paddingEnd">10dp</item>
+    </style>
+
+    <style name="Imgly.Preview.Header.Button.FlashButton.Icon" parent="Imgly">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:scaleType">center</item>
+    </style>
+    <style name="Imgly.Preview.Header.Button.FlashButton.Label" parent="Imgly">
+        <item name="android:textColor">@color/imgly_preview_text_color</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:paddingLeft">0dp</item>
+        <item name="android:paddingStart">0dp</item>
+        <item name="android:paddingRight">0dp</item>
+        <item name="android:paddingEnd">0dp</item>
+    </style>
+
+    <style name="Imgly.Preview.Header.Button.HDRButton" parent="Imgly.Preview.Header.Button">
+        <item name="android:textOn">@string/imgly_camera_preview_hdr_on</item>
+        <item name="android:textOff">@string/imgly_camera_preview_hdr_off</item>
+    </style>
+    <style name="Imgly.Preview.Header.Button.SwitchCameraButton" parent="Imgly.Preview.Header.Button">
+
+        <!--item name="android:src">@drawable/imgly_icon_camera_switch</item-->
+        <item name="android:scaleType">center</item>
+    </style>
+
+    <style name="Imgly.Preview.Footer" parent="Imgly.Preview">
+        <item name="android:background">@color/imgly_preview_header_background</item>
+    </style>
+
+</resources>

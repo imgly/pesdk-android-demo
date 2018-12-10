@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ This file is part of the PhotoEditor Software Development Kit.
+  ~
+  ~ Copyright (C) 2017 9elements GmbH <contact@9elements.com>
+  ~ All rights reserved.
+  ~
+  ~ Redistribution and use in source and binary forms, without
+  ~ modification, are permitted provided that the following license agreement
+  ~ is approved and a legal/financial contract was signed by the user.
+  ~
+  ~ The license agreement can be found under the following link:
+  ~
+  ~ https://www.photoeditorsdk.com/LICENSE.txt
+  -->
+
+<resources>
+    <color name="transparent" >#00000000</color>
+
+    <color name="imgly_button_color">#00000000</color>
+    <color name="imgly_button_pressed_color">#FF203E61</color>
+    <color name="imgly_button_disabled_color">#66333333</color>
+
+
+    <color name="imgly_theme_color">#FF1B77FF</color>
+    <color name="imgly_theme_color_active">#FF0B67EF</color>
+
+    <color name="imgly_icon_color">#FFFFFFFF</color>
+    <color name="imgly_icon_color_disabled">#33FFFFFF</color>
+    <color name="imgly_icon_color_active">@color/imgly_theme_color</color>
+
+    <color name="imgly_slider_thumb_color">#FFFFFFFF</color>
+    <color name="imgly_slider_thumb_pressed_color">#FFEEEEEE</color>
+    <color name="imgly_slider_thumb_disabled_color">#66FFFFFF</color>
+    <color name="imgly_slider_track_color">#FF969697</color>
+    <color name="imgly_slider_progress_color">@color/imgly_theme_color</color>
+
+    <color name="imgly_text_color">#FFFFFF</color>
+    <color name="imgly_editor_text_color">@color/imgly_text_color</color>
+    <color name="imgly_preview_text_color">@color/imgly_text_color</color>
+    <color name="imgly_text_color_active">@color/imgly_theme_color</color>
+
+    <color name="imgly_editor_text_color_secondary">#66FFFFFF</color>
+
+    <color name="imgly_background">#000000</color>
+    <color name="imgly_editor_background">#FF111111</color>
+    <color name="imgly_editor_header_background">#FF222222</color>
+    <color name="imgly_editor_toolbar_background">#FF1C1C1D</color>
+    <color name="imgly_editor_overlay_panel_background">#CC1B1B1B</color>
+
+
+    <color name="imgly_preview_background">@color/imgly_background</color>
+
+    <color name="imgly_preview_header_background">#27000000</color>
+    <color name="imgly_preview_footer_background">#73000000</color>
+
+</resources>

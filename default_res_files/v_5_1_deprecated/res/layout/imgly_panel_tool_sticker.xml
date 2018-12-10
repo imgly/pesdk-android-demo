@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ This file is part of the PhotoEditor Software Development Kit.
+  ~
+  ~ Copyright (C) 2017 9elements GmbH <contact@9elements.com>
+  ~ All rights reserved.
+  ~
+  ~ Redistribution and use in source and binary forms, without
+  ~ modification, are permitted provided that the following license agreement
+  ~ is approved and a legal/financial contract was signed by the user.
+  ~
+  ~ The license agreement can be found under the following link:
+  ~
+  ~ https://www.photoeditorsdk.com/LICENSE.txt
+  -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:id="@+id/rootView"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <ly.img.android.ui.widgets.DraggableExpandView
+        android:id="@+id/expandView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="88dp"
+        android:orientation="vertical">
+        <ly.img.android.ui.widgets.GridListView
+            android:id="@+id/grid"
+            android:layout_marginTop="14dp"
+            android:paddingTop="14dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:spanSize="64dp"
+            android:background="#d9000000"/>
+        <ImageView
+            android:id="@+id/draggerThumb"
+            android:layout_width="match_parent"
+            android:layout_height="14dp"
+            android:src="@drawable/imgly_list_thump_handle"
+            android:scaleType="center"
+            android:background="@drawable/imgly_list_thump"
+            />
+    </ly.img.android.ui.widgets.DraggableExpandView>
+
+    <include layout="@layout/imgly_option_list"
+             android:layout_height="88dp"
+             android:layout_width="match_parent"
+             android:layout_alignParentBottom="true"
+        />
+
+</RelativeLayout>

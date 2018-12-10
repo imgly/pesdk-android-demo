@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ This file is part of the PhotoEditor Software Development Kit.
+  ~
+  ~ Copyright (C) 2017 9elements GmbH <contact@9elements.com>
+  ~ All rights reserved.
+  ~
+  ~ Redistribution and use in source and binary forms, without
+  ~ modification, are permitted provided that the following license agreement
+  ~ is approved and a legal/financial contract was signed by the user.
+  ~
+  ~ The license agreement can be found under the following link:
+  ~
+  ~ https://www.photoeditorsdk.com/LICENSE.txt
+  -->
+
+<resources>
+
+    <string name="imgly_tool_name_magic">Magic</string>
+    <string name="imgly_tool_name_filter">Filter</string>
+    <string name="imgly_tool_name_orientation">Orientation</string>
+    <string name="imgly_tool_name_focus">Focus</string>
+    <string name="imgly_tool_name_crop">Transform</string>
+    <string name="imgly_tool_name_brush">Brush</string>
+    <string name="imgly_tool_name_overlay">Overlay</string>
+    <string name="imgly_tool_name_frame">Frame</string>
+    <string name="imgly_tool_name_brush_color">Brush Color</string>
+    <string name="imgly_tool_name_adjust">Adjust</string>
+    <string name="imgly_tool_name_adjust_shadow">Shadow</string>
+    <string name="imgly_tool_name_adjust_exposure">Exposure</string>
+    <string name="imgly_tool_name_adjust_highlight">Highlight</string>
+    <string name="imgly_tool_name_adjust_brightness">Brightness</string>
+    <string name="imgly_tool_name_adjust_contrast">Contrast</string>
+    <string name="imgly_tool_name_adjust_saturation">Saturation</string>
+    <string name="imgly_tool_name_adjust_claity">Clarity</string>
+    <string name="imgly_tool_name_adjust_gamma">Gamma</string>
+    <string name="imgly_tool_name_sticker">Sticker</string>
+    <string name="imgly_tool_name_sticker_options">Sticker Options</string>
+    <string name="imgly_tool_name_text">Text</string>
+    <string name="imgly_tool_name_text_add">Text</string>
+    <string name="imgly_tool_name_text_edit">Edit Text</string>
+    <string name="imgly_tool_name_text_options">Text Options</string>
+    <string name="imgly_tool_name_text_color">Text Color</string>
+    <string name="imgly_tool_name_text_font">Font</string>
+
+    <string name="imgly_history_undo">Undo</string>
+    <string name="imgly_history_redo">Redo</string>
+
+</resources>

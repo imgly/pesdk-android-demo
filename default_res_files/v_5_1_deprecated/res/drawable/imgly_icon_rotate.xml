@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ This file is part of the PhotoEditor Software Development Kit.
+  ~
+  ~ Copyright (C) 2017 9elements GmbH <contact@9elements.com>
+  ~ All rights reserved.
+  ~
+  ~ Redistribution and use in source and binary forms, without
+  ~ modification, are permitted provided that the following license agreement
+  ~ is approved and a legal/financial contract was signed by the user.
+  ~
+  ~ The license agreement can be found under the following link:
+  ~
+  ~ https://www.photoeditorsdk.com/LICENSE.txt
+  -->
+
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+        android:viewportWidth="24"
+        android:viewportHeight="24"
+        android:width="24dp"
+        android:height="24dp">
+    <group
+        android:rotation="-45"
+        android:translateX="-4.970519"
+        android:translateY="12.00011">
+        <path
+            android:pathData="M3.075 13.166C3.025 12.783 3 12.391 3 12 3.001 11.599 3.027 11.199 3.079 10.811l1.982 0.262c-0.04 0.303 -0.06 0.615 -0.061 0.928 0 0.304 0.02 0.61 0.058 0.908l-1.983 0.257zm1.788 4.317C4.382 16.857 3.985 16.172 3.683 15.444l1.848 -0.765c0.234 0.565 0.543 1.098 0.917 1.586l-1.585 1.218zm3.709 2.842C7.843 20.023 7.156 19.628 6.531 19.148l1.216 -1.587c0.487 0.373 1.021 0.681 1.589 0.915L8.572 20.325ZM12.0003 21c-0.38 0 -0.76 -0.02 -1.12 -0.07l0.25 -1.98c0.28 0.03 0.57 0.05 0.87 0.05 3.86 0 7 -3.14 7 -7 0 -3.86 -3.14 -7 -7 -7l0 -1 0 -1c4.96 0 9 4.04 9 9 0 4.96 -4.04 9 -9 9z"
+            android:fillColor="@color/imgly_icon_color" />
+    </group>
+    <path
+        android:pathData="M4 9L9 9 4 4Z"
+        android:fillColor="@color/imgly_icon_color" />
+    <path
+        android:pathData="M12 3c4.970563 0 9 4.0294372 9 9 0 4.970563 -4.029437 9 -9 9 -3.4566508 0 -6.4581591 -1.948697 -7.9658706 -4.807437l1.7701935 -0.93168C6.9769874 17.484347 9.3114938 19 12 19c3.865993 0 7 -3.134007 7 -7 0 -3.8659933 -3.134007 -7 -7 -7l0 -2z"
+        android:fillColor="@color/imgly_icon_color" />
+</vector>
