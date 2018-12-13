@@ -18,6 +18,6 @@
 
     <string name="pesdk_filter_title_name">Filter</string>
     <string name="pesdk_filter_text_intensityValue" formatted="false">%d</string>
-    <string name="pesdk_filter_asset_none">Original</string>
+    <string name="pesdk_filter_asset_none">None</string>
 
 </resources>

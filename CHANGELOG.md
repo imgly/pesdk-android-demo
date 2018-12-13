@@ -1,5 +1,12 @@
 # PhotoEditor SDK - Changelog
 
+## v6.1.3
+
+### Fixed
+* Exif data is not copied.
+* Text alignment configuration is not preserved.
+* Style of the transform icon is not identical to other platforms.
+
 ## v6.1.2
 
 ### Fixed
