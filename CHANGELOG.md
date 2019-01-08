@@ -1,5 +1,10 @@
 # PhotoEditor SDK - Changelog
 
+## v6.1.4
+
+### Fixed
+* Exporting image crashes app, when certain text conditions are met.
+
 ## v6.1.3
 
 ### Fixed
