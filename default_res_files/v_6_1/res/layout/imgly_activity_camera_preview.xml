@@ -16,6 +16,7 @@
 
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/rootView"
     style="@style/Imgly.PESDK.Camera">
@@ -25,6 +26,8 @@
         style="@style/Imgly.PESDK.Camera.CameraPreview">
         <ly.img.android.acs.CameraView
             android:id="@+id/cameraView"
+            app:header="@id/imglyActionBar"
+            app:footer="@id/filterBar"
             style="@style/Imgly.PESDK.Camera.CameraPreview.Surface"/>
 
         <ly.img.android.acs.FocusRectView
@@ -60,6 +63,7 @@
                 style="@style/Imgly.PESDK.Camera.UI.Header.Button.SwitchCameraButton"/>
         </RelativeLayout>
         <LinearLayout
+            android:id="@+id/footer"
             style="@style/Imgly.PESDK.Camera.UI.Footer">
             <ly.img.android.pesdk.ui.widgets.SeekSlider
                 android:id="@+id/seekBar"

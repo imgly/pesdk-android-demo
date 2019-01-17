@@ -26,6 +26,10 @@
     <string name="pesdk_editor_button_closeEditorAlertConfirmation">Yes</string>
     <string name="pesdk_editor_button_closeEditorAlertCancelation">No</string>
 
+    <string name="pesdk_editor_cancel">Cancel</string>
+    <string name="pesdk_editor_accept">Accept</string>
+    <string name="pesdk_editor_save">Save</string>
+
     <string name="pesdk_editor_text_exportProgressUnknown">Exporting image…</string>
     <string name="pesdk_editor_text_exportProgress" formatted="false">Exporting image %s.</string>
 
@@ -33,7 +37,6 @@
     <string name="pesdk_common_button_flipV">Flip V</string>
     <string name="pesdk_common_button_undo">Undo</string>
     <string name="pesdk_common_button_redo">Redo</string>
-
 
     <string name="pesdk_transform_title_name"/>
     <string name="pesdk_filter_title_name"/>
@@ -62,6 +65,5 @@
     <string name="pesdk_common_title_oliveColor">Olive</string>
     <string name="pesdk_common_title_greenColor">Green</string>
     <string name="pesdk_common_title_aquamarinColor">Aquamarin</string>
-
 
 </resources>

@@ -1,5 +1,17 @@
 # PhotoEditor SDK - Changelog
 
+## v6.1.5
+
+### Fixed
+* Blacks and Whites Adjustment destroy alpha channel.
+
+### Improved
+* Camera preview position calculation for some devices.
+* Invalidate renderscript caches.
+
+### Added
+* `AcceptTextButton` and `CancelTextButton` to allow text instead of icons in the `ActionBar`.
+
 ## v6.1.4
 
 ### Fixed

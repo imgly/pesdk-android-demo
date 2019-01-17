@@ -105,33 +105,28 @@ class MainActivity : Activity(), PermissionRequest.Response {
 
     }
 
-    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent) {
+    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)
 
         if (resultCode == Activity.RESULT_OK && requestCode == GALLERY_RESULT) {
             // Open Editor with some uri in this case with an image selected from the system gallery.
-            val selectedImage = data.data
-            openEditor(selectedImage)
+            data?.data?.let { selectedImage ->
+                openEditor(selectedImage)
+            }
 
         } else if (resultCode == Activity.RESULT_OK && requestCode == PESDK_RESULT) {
             // Editor has saved an Image.
-            val resultURI = data.getParcelableExtra<Uri>(ImgLyIntent.RESULT_IMAGE_URI)
-            val sourceURI = data.getParcelableExtra<Uri>(ImgLyIntent.SOURCE_IMAGE_URI)
-
-            // Scan result uri to show it up in the Gallery
-            if (resultURI != null) {
-                sendBroadcast(Intent(Intent.ACTION_MEDIA_SCANNER_SCAN_FILE).setData(resultURI))
+            val resultURI = data?.getParcelableExtra<Uri>(ImgLyIntent.RESULT_IMAGE_URI).also {
+                sendBroadcast(Intent(Intent.ACTION_MEDIA_SCANNER_SCAN_FILE).setData(it))
             }
-
-            // Scan source uri to show it up in the Gallery
-            if (sourceURI != null) {
-                sendBroadcast(Intent(Intent.ACTION_MEDIA_SCANNER_SCAN_FILE).setData(sourceURI))
+            val sourceURI = data?.getParcelableExtra<Uri>(ImgLyIntent.SOURCE_IMAGE_URI).also {
+                sendBroadcast(Intent(Intent.ACTION_MEDIA_SCANNER_SCAN_FILE).setData(it))
             }
 
             // TODO: Do something with the result image
 
             // OPTIONAL: read the latest state to save it as a serialisation
-            val lastState = data.getParcelableExtra<SettingsList>(ImgLyIntent.SETTINGS_LIST)
+            val lastState = data?.getParcelableExtra<SettingsList>(ImgLyIntent.SETTINGS_LIST)
             try {
                 val pesdkFileWriter = PESDKFileWriter(lastState)
                 pesdkFileWriter.writeJson(File(
@@ -144,11 +139,10 @@ class MainActivity : Activity(), PermissionRequest.Response {
 
         } else if (resultCode == Activity.RESULT_CANCELED && requestCode == PESDK_RESULT) {
             // Editor was canceled
-            val sourceURI = data.getParcelableExtra<Uri>(ImgLyIntent.SOURCE_IMAGE_URI)
+            val sourceURI = data?.getParcelableExtra<Uri>(ImgLyIntent.SOURCE_IMAGE_URI)
             // TODO: Do something with the source...
         }
     }
-
 
     fun openSystemGalleryToSelectAnImage() {
         val intent = Intent(Intent.ACTION_PICK, MediaStore.Images.Media.EXTERNAL_CONTENT_URI)
