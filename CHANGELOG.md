@@ -1,5 +1,15 @@
 # PhotoEditor SDK - Changelog
 
+## v6.2.0
+
+### Fixed
+* Sticker Tint mode is converted into ink mode after read a serialization.
+* Fatal Exception: java.lang.NumberFormatException: Invalid int: "drawable/%"
+
+### Added
+* New `FilterAsset` called `DuotoneFilterAsset`.
+* Missing renderscript proguard rule for androidx.
+
 ## v6.1.5
 
 ### Fixed
