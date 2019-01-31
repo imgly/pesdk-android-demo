@@ -1,5 +1,11 @@
 # PhotoEditor SDK - Changelog
 
+## v6.2.1
+
+### Fixed
+* Wrong renderscript proguard rule for androidx.
+* Some vector drawables are broken with android api level 21. 
+
 ## v6.2.0
 
 ### Fixed
