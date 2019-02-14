@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/brushPreviewPopup"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Imgly.PESDK.Editor.Popup.Brush.BrushPreview">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+        <android.support.v4.widget.Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="25"/>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="50">
+            <android.support.v4.widget.Space
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="30"/>
+            <RelativeLayout
+                android:id="@+id/blurView"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                style="@style/Imgly.PESDK.Editor.Popup.Brush">
+                <ly.img.android.pesdk.ui.widgets.BrushToolPreviewView
+                    android:id="@+id/brushToolPreview"
+                    style="@style/Imgly.PESDK.Editor.Popup.Brush.BrushToolPreview"/>
+            </RelativeLayout>
+            <android.support.v4.widget.Space
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="30"/>
+        </LinearLayout>
+        <android.support.v4.widget.Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="25"/>
+    </LinearLayout>
+</RelativeLayout>

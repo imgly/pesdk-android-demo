@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+        android:viewportWidth="48"
+        android:viewportHeight="48"
+        android:width="48dp"
+        android:height="48dp">
+        <group
+            android:translateX="14"
+            android:translateY="14">
+                <path
+                    android:pathData="M6 12l6 0 0 2 -6 0 0 2 -4 -3 4 -3 0 2zm8 -6l0 -2 4 3 -4 3 0 -2 -6 0 0 -2 6 0z"
+                    android:fillColor="@color/imgly_icon_color_active" />
+        </group>
+</vector>

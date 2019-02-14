@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ This file is part of the PhotoEditor Software Development Kit.
+  ~
+  ~ Copyright (C) 2017 9elements GmbH <contact@9elements.com>
+  ~ All rights reserved.
+  ~
+  ~ Redistribution and use in source and binary forms, without
+  ~ modification, are permitted provided that the following license agreement
+  ~ is approved and a legal/financial contract was signed by the user.
+  ~
+  ~ The license agreement can be found under the following link:
+  ~
+  ~ https://www.photoeditorsdk.com/LICENSE.txt
+  -->
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rootView"
+    style="@style/Imgly.PESDK.Editor.Panel.Sticker">
+    <ly.img.android.pesdk.ui.widgets.DraggableExpandView
+        android:id="@+id/expandView"
+        style="@style/Imgly.PESDK.Editor.Panel.Sticker.Expandable">
+        <ly.img.android.pesdk.ui.widgets.GridListView
+            android:id="@+id/grid"
+            app:spanSize="64dp"
+            style="@style/Imgly.PESDK.Editor.Panel.Sticker.Expandable.Grid"/>
+        <ImageView
+            android:id="@id/draggerThumb"
+            style="@style/Imgly.PESDK.Editor.Panel.Sticker.Expandable.Thumb"/>
+    </ly.img.android.pesdk.ui.widgets.DraggableExpandView>
+    <include
+        layout="@layout/imgly_option_list"
+        style="@style/Imgly.PESDK.Editor.Panel.Sticker.OptionList"/>
+</RelativeLayout>

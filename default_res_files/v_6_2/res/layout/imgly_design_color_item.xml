@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/contentHolder"
+    style="@style/Imgly.PESDK.Editor.Panel.TextDesign.ColorItem">
+    <View
+        android:id="@+id/colorView"
+        style="@style/Imgly.PESDK.Editor.Panel.TextDesign.ColorItem.Icon"/>
+</FrameLayout>

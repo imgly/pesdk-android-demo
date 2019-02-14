@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ This file is part of the PhotoEditor Software Development Kit.
+  ~
+  ~ Copyright (C) 2017 9elements GmbH <contact@9elements.com>
+  ~ All rights reserved.
+  ~
+  ~ Redistribution and use in source and binary forms, without
+  ~ modification, are permitted provided that the following license agreement
+  ~ is approved and a legal/financial contract was signed by the user.
+  ~
+  ~ The license agreement can be found under the following link:
+  ~
+  ~ https://www.photoeditorsdk.com/LICENSE.txt
+  -->
+
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:top="0dp" android:right="0dp" android:bottom="0dp" android:left="0dp">
+        <shape android:shape="oval">
+            <size android:width="34dp" android:height="38dp"/>
+        </shape>
+    </item>
+    <item android:top="8dp" android:right="5dp" android:bottom="7dp" android:left="5dp" >
+        <shape android:shape="oval">
+            <size android:width="24dp" android:height="24dp"/>
+            <solid android:color="@color/imgly_editor_toolbar_background"/>
+        </shape>
+    </item>
+    <item android:top="4dp" android:right="0dp" android:bottom="0dp" android:left="0dp">
+        <shape android:shape="oval">
+            <stroke android:color="#07000000" android:width="10dp"/>
+        </shape>
+    </item>
+    <item android:top="5dp" android:right="1dp" android:bottom="1dp" android:left="1dp">
+        <shape android:shape="oval">
+            <stroke android:color="#07000000" android:width="8dp"/>
+        </shape>
+    </item>
+    <item android:top="6dp" android:right="2dp" android:bottom="2dp" android:left="2dp">
+        <shape android:shape="oval">
+            <stroke android:color="#07000000" android:width="6dp"/>
+        </shape>
+    </item>
+    <item android:top="7dp" android:right="3dp" android:bottom="3dp" android:left="3dp">
+        <shape android:shape="oval">
+            <stroke android:color="#07000000" android:width="4dp"/>
+        </shape>
+    </item>
+    <item android:top="8dp" android:right="4dp" android:bottom="4dp" android:left="4dp">
+        <shape android:shape="oval">
+            <stroke android:color="#07000000" android:width="2dp"/>
+        </shape>
+    </item>
+    <item android:top="8dp" android:right="5dp" android:bottom="7dp" android:left="5dp" >
+        <shape android:shape="oval">
+            <size android:width="24dp" android:height="24dp"/>
+            <stroke android:color="@color/imgly_theme_color" android:width="2dp"/>
+        </shape>
+    </item>
+</layer-list>

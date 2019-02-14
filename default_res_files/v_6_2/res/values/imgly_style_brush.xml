@@ -1,0 +1,64 @@
+<!--
+  ~ This file is part of the PhotoEditor Software Development Kit.
+  ~
+  ~ Copyright (C) 2017 9elements GmbH <contact@9elements.com>
+  ~ All rights reserved.
+  ~
+  ~ Redistribution and use in source and binary forms, without
+  ~ modification, are permitted provided that the following license agreement
+  ~ is approved and a legal/financial contract was signed by the user.
+  ~
+  ~ The license agreement can be found under the following link:
+  ~
+  ~ https://www.photoeditorsdk.com/LICENSE.txt
+  -->
+
+<resources>
+
+    <style name="Imgly.PESDK.Editor.Panel.Brush" parent="Imgly.PESDK.Editor.Panel">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:duplicateParentState">true</item>
+    </style>
+
+    <style name="Imgly.PESDK.Editor.Panel.Brush.SeekSlider" parent="Imgly.PESDK.SeekSlider">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:alpha">0.7</item>
+    </style>
+
+    <style name="Imgly.PESDK.Editor.Panel.Brush.SmallOptionList" parent="Imgly.PESDK">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/small_option_container_height</item>
+        <item name="android:layout_marginTop">@dimen/small_option_container_margin</item>
+        <item name="android:layout_marginBottom">@dimen/small_option_container_margin</item>
+    </style>
+
+    <style name="Imgly.PESDK.Editor.Popup.Brush.BrushPreview" parent="Imgly.PESDK">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_weight">10</item>
+    </style>
+
+    <style name="Imgly.PESDK.Editor.Popup.Brush" parent="Imgly.PESDK">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_weight">40</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:background">@drawable/imgly_dialog_background</item>
+    </style>
+
+    <style name="Imgly.PESDK.Editor.Popup.Brush.BrushToolPreview" parent="Imgly.PESDK">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_centerInParent">true</item>
+    </style>
+
+    <style name="Imgly.PESDK.Editor.Popup.Brush.HorizontalMargin" parent="Imgly.PESDK">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">25</item>
+    </style>
+
+</resources>
