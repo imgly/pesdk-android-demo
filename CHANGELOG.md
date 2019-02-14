@@ -1,5 +1,13 @@
 # PhotoEditor SDK - Changelog
 
+## v6.2.2
+
+### Added
+* Possibility to use a color pipette.
+
+### Fixed
+* Wrong parceling of brush color list.
+
 ## v6.2.1
 
 ### Fixed
