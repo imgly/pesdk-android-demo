@@ -1,5 +1,11 @@
 # PhotoEditor SDK - Changelog
 
+## v6.2.3
+
+### Fixed
+* NPE if not all backend modules are included.
+* NPE on load serialization from iOS with enabled autoEnhancement.
+
 ## v6.2.2
 
 ### Added
