@@ -2,7 +2,7 @@
 <!--
   ~ This file is part of the PhotoEditor Software Development Kit.
   ~
-  ~ Copyright (C) 2017 9elements GmbH <contact@9elements.com>
+  ~ Copyright (C) 2019 img.ly GmbH <contact@img.ly>
   ~ All rights reserved.
   ~
   ~ Redistribution and use in source and binary forms, without
@@ -13,10 +13,11 @@
   ~
   ~ https://www.photoeditorsdk.com/LICENSE.txt
   -->
-<vector xmlns:android="http://schemas.android.com/apk/res/android"
-        android:viewportWidth="48"
-        android:viewportHeight="48"
-        android:width="48dp"
-        android:height="48dp">
-    <path/>
-</vector>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:width="48dp" android:height="48dp" android:top="0dp" android:left="0dp" android:right="0dp" android:bottom="0dp">
+        <shape>
+            <solid android:color="@color/transparent" />
+            <size android:width="48dp" android:height="48dp" />
+        </shape>
+    </item>
+</layer-list>

@@ -1,5 +1,17 @@
 # PhotoEditor SDK - Changelog
 
+## v6.2.4
+
+### Changed
+* Parceling from strict type to dynamic type.
+
+### Added
+* Setter method for brush color list.
+
+### Fixed
+* NPE, when loading broken vector drawables.
+* Broken vector drawables.
+
 ## v6.2.3
 
 ### Fixed

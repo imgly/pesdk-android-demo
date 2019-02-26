@@ -15,8 +15,8 @@
   <a href="https://www.photoeditorsdk.com/documentation/android/getting-started">
     <img src="https://img.shields.io/badge/platform-android-2DC25C.svg?style=flat">
   </a>
-  <a href="https://artifactory.9elements.com/artifactory/imgly/ly/img/android/pesdk/">
-    <img src="https://img.shields.io/badge/VERSION-6.2.3-007ec6.svg?style=flat" alt="Maven">
+  <a href="https://artifactory.img.ly/artifactory/imgly/ly/img/android/pesdk/">
+    <img src="https://img.shields.io/badge/VERSION-6.2.4-007ec6.svg?style=flat" alt="Maven">
   </a>
   <a href="http://twitter.com/PhotoEditorSDK">
     <img src="https://img.shields.io/badge/twitter-@PhotoEditorSDK-8646E2.svg?style=flat" alt="Twitter">
@@ -115,7 +115,7 @@ Once the license file has been added the application will validate its presence 
 
 ## Setting up the workspace
 
-You will have to add the pesdk plugin and PESDKConfig into your module's `build.gradle` file:
+Please ensure that our artifactory repository is listed in your repositories in the project’s build.gradle file:
 
 ```groovy
 // Add the PESDK repository and plugin dependency
@@ -123,19 +123,18 @@ buildscript {
     repositories {
         jcenter()
         google()
-        maven { url "https://artifactory.9elements.com/artifactory/imgly" }
+        maven { url "https://artifactory.img.ly/artifactory/imgly" }
     }
     dependencies {
-        classpath 'ly.img.android.pesdk:PESDKPlugin:6.2.3'
+        classpath 'ly.img.android.pesdk:PESDKPlugin:6.2.4'
     }
 }
 
-repositories {
-    jcenter()
-    google()
-    maven { url "https://artifactory.9elements.com/artifactory/imgly" }
-}
+```
 
+You will have to add the pesdk plugin and PESDKConfig into your module's `build.gradle` file:
+
+```groovy
 // Apply the Android Plugin
 apply plugin: 'com.android.application'
 
@@ -148,7 +147,7 @@ PESDKConfig {
     licencePath "LICENSE" // Name of the Licence file in the asset folder
 
     // Write here the newest SDK verion you will here https://github.com/imgly/pesdk-android-demo/releases
-    pesdkVersion "6.2.3"
+    pesdkVersion "6.2.4"
 
     // If you are using another supportLibVersion ('com.android.support') please change this version here our update your own supportLibVersion
     supportLibVersion "27.1.1"
@@ -226,7 +225,6 @@ android {
         targetCompatibility JavaVersion.VERSION_1_8
     }
 }
-
 
 ```
 
