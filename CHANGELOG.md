@@ -1,5 +1,10 @@
 # PhotoEditor SDK - Changelog
 
+## v6.2.6
+
+### Fixed
+* Wrong parceling of tool list.
+
 ## v6.2.5
 
 ### Added
