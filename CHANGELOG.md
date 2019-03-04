@@ -1,5 +1,10 @@
 # PhotoEditor SDK - Changelog
 
+## v6.2.5
+
+### Added
+* Constructor to `PESDKFileReader` to pass `StateHandler` parameter.
+
 ## v6.2.4
 
 ### Changed
