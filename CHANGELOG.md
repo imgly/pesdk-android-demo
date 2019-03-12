@@ -1,5 +1,13 @@
 # PhotoEditor SDK - Changelog
 
+## v6.2.7
+
+### Added
+* Missing style attribute of `SeekSlider`.
+
+### Fixed
+* Wrong parceling of adjust options.
+
 ## v6.2.6
 
 ### Fixed
