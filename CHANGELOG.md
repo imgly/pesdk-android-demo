@@ -1,5 +1,14 @@
 # PhotoEditor SDK - Changelog
 
+## v6.2.8
+
+### Added
+* `ColorPipetteItem` to color lists.
+ 
+### Fixed
+* Issue with multiple layouts.
+* Events not fired after replacing a state or a settings class.
+
 ## v6.2.7
 
 ### Added
