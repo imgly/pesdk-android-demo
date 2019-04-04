@@ -1,5 +1,17 @@
 # PhotoEditor SDK - Changelog
 
+## v6.3.0
+
+### Added
+* Folders to the `FilterToolPanel` to group related filters together and to reduce clutter in the menu. To disable folders and get back the old behavior, simply use `getFilterPackWithoutFolders()` from `FilterPackBasic`.
+* Duotone filters to default filter pack.
+
+### Fixed
+* Wrong save policy when using camera.
+
+### Changed
+* Displayed name of a couple of filters.
+
 ## v6.2.8
 
 ### Added

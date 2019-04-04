@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ This file is part of the PhotoEditor Software Development Kit.
+  ~
+  ~ Copyright (C) 2019 img.ly GmbH <contact@img.ly>
+  ~ All rights reserved.
+  ~
+  ~ Redistribution and use in source and binary forms, without
+  ~ modification, are permitted provided that the following license agreement
+  ~ is approved and a legal/financial contract was signed by the user.
+  ~
+  ~ The license agreement can be found under the following link:
+  ~
+  ~ https://www.photoeditorsdk.com/LICENSE.txt
+  -->
+
+
+
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+        android:viewportWidth="48"
+        android:viewportHeight="48"
+        android:width="48dp"
+        android:height="48dp">
+    <path
+        android:pathData="M24 36C30.62742 36 36 30.62742 36 24C36 17.37258 30.62742 12 24 12C17.37258 12 12 17.37258 12 24C12 30.62742 17.37258 36 24 36ZM24 34C18.47715 34 14 29.52285 14 24C14 18.47715 18.47715 14 24 14C29.52285 14 34 18.47715 34 24C34 29.52285 29.52285 34 24 34Z"
+        android:fillColor="@color/imgly_icon_color" />
+    <path
+        android:pathData="M33 24a9 9 0 0 1 -9 9 9 9 0 0 1 -9 -9 9 9 0 0 1 9 -9 9 9 0 0 1 9 9z"
+        android:fillColor="@color/imgly_icon_color" />
+    <path
+        android:pathData="M30.70832 30C31.70846 28.88256 32.4335 27.51374 32.77699 26L30 26L30 30L30.70832 30M30 26L30 22L26 22L26 26L30 26M30 22L32.77699 22C32.4335 20.48626 31.70846 19.11744 30.70832 18L30 18L30 22M30 18L30 17.29168C28.88256 16.29154 27.51374 15.5665 26 15.22302L26 18L30 18M26 18L22 18L22 22L26 22L26 18M22 18L22 15.22302C20.48626 15.5665 19.11744 16.29154 18 17.29168L18 18L22 18M18 18L17.29168 18C16.29154 19.11744 15.5665 20.48626 15.22302 22L18 22L18 18M18 22L18 26L22 26L22 22L18 22M18 26L15.22302 26C15.5665 27.51374 16.29154 28.88256 17.29168 30L18 30L18 26M18 30L18 30.70832C19.11744 31.70846 20.48626 32.4335 22 32.77699L22 30L18 30M22 30L26 30L26 26L22 26L22 30M26 30L26 32.77699C27.51374 32.4335 28.88256 31.70846 30 30.70832L30 30L26 30"
+        android:fillColor="#d3d3d3" />
+</vector>

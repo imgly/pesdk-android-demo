@@ -16,7 +16,7 @@
     <img src="https://img.shields.io/badge/platform-android-2DC25C.svg?style=flat">
   </a>
   <a href="https://artifactory.img.ly/artifactory/imgly/ly/img/android/pesdk/">
-    <img src="https://img.shields.io/badge/VERSION-6.2.8-007ec6.svg?style=flat" alt="Maven">
+    <img src="https://img.shields.io/badge/VERSION-6.3.0-007ec6.svg?style=flat" alt="Maven">
   </a>
   <a href="http://twitter.com/PhotoEditorSDK">
     <img src="https://img.shields.io/badge/twitter-@PhotoEditorSDK-8646E2.svg?style=flat" alt="Twitter">
@@ -42,7 +42,7 @@ All operations are non-destructive which allows for fast and uncomplicated revis
 </a>
 
 ## License
-The PhotoEditorSDK is a product of 9elements GmbH. Please make sure that you have a commercial [license](https://www.photoeditorsdk.com/pricing/?utm_campaign=Projects&utm_source=Github&utm_medium=PESDK&utm_content=Android-Demo&utm_term=Android) before releasing your app. A commercial license is required if you would like to integrate the SDK into any app, regardless of whether you monetize directly (paid app, subscription, service fee), indirectly (advertising, etc.) or are developing a free app. Every license for the PhotoEditor SDK is valid for one product only unless the products are closely related.
+The PhotoEditorSDK is a product of img.ly GmbH. Please make sure that you have a commercial [license](https://www.photoeditorsdk.com/pricing/?utm_campaign=Projects&utm_source=Github&utm_medium=PESDK&utm_content=Android-Demo&utm_term=Android) before releasing your app. A commercial license is required if you would like to integrate the SDK into any app, regardless of whether you monetize directly (paid app, subscription, service fee), indirectly (advertising, etc.) or are developing a free app. Every license for the PhotoEditor SDK is valid for one product only unless the products are closely related.
 
 If you’d like to use the PhotoEditor SDK for a charitable project, you can do so free of charge. However, please contact us anyway, so we can evaluate whether you qualify for a non-commercial license or not and handle your request accordingly.
 
@@ -97,7 +97,7 @@ For a detailed documentation, please take a look [here](http://docs.photoeditors
 
 ## Author
 
-9elements GmbH, [@PhotoEditorSDK](https://twitter.com/PhotoEditorSDK), [www.photoeditorsdk.com](https://www.photoeditorsdk.com/?utm_campaign=Projects&utm_source=Github&utm_medium=PESDK&utm_content=Android-Demo&utm_term=Android)
+img.ly GmbH, [@PhotoEditorSDK](https://twitter.com/PhotoEditorSDK), [www.photoeditorsdk.com](https://www.photoeditorsdk.com/?utm_campaign=Projects&utm_source=Github&utm_medium=PESDK&utm_content=Android-Demo&utm_term=Android)
 
 
 ## Installation
@@ -126,7 +126,7 @@ buildscript {
         maven { url "https://artifactory.img.ly/artifactory/imgly" }
     }
     dependencies {
-        classpath 'ly.img.android.pesdk:PESDKPlugin:6.2.8'
+        classpath 'ly.img.android.pesdk:PESDKPlugin:6.3.0'
     }
 }
 
@@ -147,7 +147,7 @@ PESDKConfig {
     licencePath "LICENSE" // Name of the Licence file in the asset folder
 
     // Write here the newest SDK verion you will here https://github.com/imgly/pesdk-android-demo/releases
-    pesdkVersion "6.2.8"
+    pesdkVersion "6.3.0"
 
     // If you are using another supportLibVersion ('com.android.support') please change this version here our update your own supportLibVersion
     supportLibVersion "27.1.1"
