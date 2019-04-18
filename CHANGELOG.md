@@ -1,5 +1,10 @@
 # PhotoEditor SDK - Changelog
 
+## v6.3.1
+
+### Fixed
+* Wrong proguard rules.
+
 ## v6.3.0
 
 ### Added
