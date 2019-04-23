@@ -1,9 +1,14 @@
 # PhotoEditor SDK - Changelog
 
-## v6.3.1
-
+## v6.3.2
 ### Fixed
-* Wrong proguard rules.
+* Incorrect proguard rules prevent proguard from optimizing optimally.
+
+## ~~v6.3.1~~
+* Because of an mistake, this release is equal to v6.3.0 and released without any fixes.
+
+### ~~Fixed~~
+~~* Wrong proguard rules.~~  
 
 ## v6.3.0
 
@@ -42,7 +47,7 @@
 ## v6.2.5
 
 ### Added
-* Constructor to `PESDKFileReader` to pass `StateHandler` parameter. 
+* Constructor to `PESDKFileReader` to pass `StateHandler` parameter.
 
 ## v6.2.4
 
