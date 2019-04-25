@@ -1,5 +1,15 @@
 # PhotoEditor SDK - Changelog
 
+## v6.4.0
+### Dependency changes
+* RenderscriptTargetApi version migrated from 19 to 28.
+
+### Added
+* 64bit compatibility.
+
+### Fixed
+* Some renderscript crashes.
+
 ## v6.3.2
 ### Fixed
 * Incorrect proguard rules prevent proguard from optimizing optimally.
