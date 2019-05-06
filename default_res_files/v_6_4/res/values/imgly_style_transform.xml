@@ -1,0 +1,85 @@
+<!--
+  ~ This file is part of the PhotoEditor Software Development Kit.
+  ~
+  ~ Copyright (C) 2019 img.ly GmbH <contact@img.ly>
+  ~ All rights reserved.
+  ~
+  ~ Redistribution and use in source and binary forms, without
+  ~ modification, are permitted provided that the following license agreement
+  ~ is approved and a legal/financial contract was signed by the user.
+  ~
+  ~ The license agreement can be found under the following link:
+  ~
+  ~ https://www.photoeditorsdk.com/LICENSE.txt
+  -->
+
+
+<resources>
+
+    <style name="Imgly.PESDK.Editor.Panel.Transform" parent="Imgly.PESDK.Editor.Panel">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="Imgly.PESDK.Editor.Panel.Transform.Crop" parent="Imgly.PESDK">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="Imgly.PESDK.Editor.Panel.Transform.CropItem" parent="Imgly.PESDK.default.Item">
+        <item name="android:layout_marginTop">@dimen/container_item_marginTop</item>
+    </style>
+
+    <style name="Imgly.PESDK.Editor.Panel.Transform.CropItem.Icon" parent="Imgly.PESDK.default.Item.Icon">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:padding">12dp</item>
+        <item name="android:layout_marginBottom">16dp</item>
+    </style>
+
+    <style name="Imgly.PESDK.Editor.Panel.Transform.CropItem.Label" parent="Imgly.PESDK.default.Item.Label">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/item_label_text_size</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:paddingBottom">8dp</item>
+        <item name="android:lines">1</item>
+        <item name="android:layout_alignParentBottom">true</item>
+    </style>
+
+    <style name="Imgly.PESDK.Editor.Panel.Transform.Button.Rotate" parent="Imgly.PESDK.Button">
+        <item name="android:layout_width">@dimen/transform_SliderBar_button_width</item>
+        <item name="android:layout_height">@dimen/transform_SliderBar_height</item>
+        <item name="android:scaleType">center</item>
+    </style>
+
+    <style name="Imgly.PESDK.Editor.Panel.Transform.Button.Flip" parent="Imgly.PESDK.Button">
+        <item name="android:layout_width">@dimen/transform_SliderBar_button_width</item>
+        <item name="android:layout_height">@dimen/transform_SliderBar_height</item>
+        <item name="android:scaleType">center</item>
+    </style>
+
+    <style name="Imgly.PESDK.Editor.Panel.Transform.Slider" parent="Imgly.PESDK">
+        <item name="android:layout_width">@dimen/transform_SliderBar_width</item>
+        <item name="android:layout_height">@dimen/transform_SliderBar_height</item>
+        <item name="android:textSize">15dp</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <style name="Imgly.PESDK.Editor.Panel.Transform.CropItem.Border" parent="Imgly.PESDK">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@drawable/imgly_item_border</item>
+    </style>
+
+    <style name="Imgly.PESDK.Editor.Panel.Transform.CropItem.Overlay.Icon" parent="Imgly.PESDK">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:paddingBottom">16dp</item>
+        <item name="android:scaleType">center</item>
+    </style>
+
+</resources>

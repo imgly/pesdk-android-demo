@@ -1,0 +1,189 @@
+<!--
+  ~ This file is part of the PhotoEditor Software Development Kit.
+  ~
+  ~ Copyright (C) 2019 img.ly GmbH <contact@img.ly>
+  ~ All rights reserved.
+  ~
+  ~ Redistribution and use in source and binary forms, without
+  ~ modification, are permitted provided that the following license agreement
+  ~ is approved and a legal/financial contract was signed by the user.
+  ~
+  ~ The license agreement can be found under the following link:
+  ~
+  ~ https://www.photoeditorsdk.com/LICENSE.txt
+  -->
+
+
+
+<resources>
+
+    <style name="Imgly.PESDK.Camera" parent="Imgly.PESDK">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="Imgly.PESDK.Camera.CameraPreview" parent="Imgly.PESDK">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:background">@color/imgly_background</item>
+    </style>
+
+    <style name="Imgly.PESDK.Camera.CameraPreview.Surface" parent="Imgly.PESDK">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_centerInParent">true</item>
+    </style>
+
+    <style name="Imgly.PESDK.Camera.CameraPreview.Focus" parent="Imgly.PESDK">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_centerInParent">true</item>
+    </style>
+
+    <style name="Imgly.PESDK.Camera.UI" parent="Imgly.PESDK">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="Imgly.PESDK.Camera.UI.Container" parent="Imgly.PESDK">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <!--Header-->
+    <style name="Imgly.PESDK.Camera.UI.Header" parent="Imgly.PESDK">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentTop">true</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="Imgly.PESDK.Camera.UI.Header.Button" parent="Imgly.PESDK.Button">
+        <item name="android:paddingTop">4dp</item>
+        <item name="android:paddingBottom">4dp</item>
+        <item name="android:paddingLeft">4dp</item>
+        <item name="android:paddingStart">4dp</item>
+        <item name="android:paddingRight">4dp</item>
+        <item name="android:paddingEnd">4dp</item>
+        <item name="android:textColor">@color/imgly_preview_text_color</item>
+        <item name="android:background">@drawable/imgly_button_click_overlay</item>
+    </style>
+
+    <style name="Imgly.PESDK.Camera.UI.Header.Button.HDRButton" parent="Imgly.PESDK.Camera.UI.Header.Button">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:textOn">@string/pesdk_camera_button_hdrOn</item>
+        <item name="android:textOff">@string/pesdk_camera_button_hdrOff</item>
+        <item name="android:layout_centerHorizontal">true</item>
+    </style>
+
+    <style name="Imgly.PESDK.Camera.UI.Header.Button.SwitchCameraButton" parent="Imgly.PESDK.Camera.UI.Header.Button">
+        <item name="android:layout_width">50dp</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:scaleType">center</item>
+        <item name="android:layout_alignParentRight">true</item>
+    </style>
+
+    <style name="Imgly.PESDK.Camera.UI.Header.Button.FlashButton" parent="Imgly.PESDK.Camera.UI.Header.Button">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:paddingRight">10dp</item>
+    </style>
+
+    <style name="Imgly.PESDK.Camera.UI.Header.Button.FlashButton.Icon" parent="Imgly.PESDK.default.Item.Icon">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:scaleType">center</item>
+    </style>
+
+    <style name="Imgly.PESDK.Camera.UI.Header.Button.FlashButton.Label" parent="Imgly.PESDK.default.Item.Label">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/imgly_preview_text_color</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:paddingLeft">0dp</item>
+        <item name="android:paddingStart">0dp</item>
+        <item name="android:paddingRight">0dp</item>
+        <item name="android:paddingEnd">0dp</item>
+    </style>
+
+    <!--Footer-->
+    <style name="Imgly.PESDK.Camera.UI.Footer" parent="Imgly.PESDK.Camera">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:clipToPadding">false</item>
+        <item name="android:clipChildren">false</item>
+    </style>
+
+    <style name="Imgly.PESDK.Camera.UI.Footer.Button.ShutterButton" parent="Imgly.PESDK.Button">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_vertical</item>
+    </style>
+
+    <style name="Imgly.PESDK.Camera.UI.Footer.Button.FilterButton" parent="Imgly.PESDK.Button">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_vertical</item>
+    </style>
+
+    <style name="Imgly.PESDK.Camera.UI.Footer.Button.GalleryButton" parent="Imgly.PESDK.Button">
+        <item name="android:layout_width">52dp</item>
+        <item name="android:layout_height">52dp</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:background">@drawable/imgly_icon_camera_roll</item>
+    </style>
+
+    <style name="Imgly.PESDK.Camera.UI.Footer.Container" parent="Imgly.PESDK">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:background">@color/imgly_preview_footer_background</item>
+    </style>
+
+    <style name="Imgly.PESDK.Camera.UI.Footer.ExpandableContainer" parent="Imgly.PESDK">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:clipToPadding">false</item>
+        <item name="android:clipChildren">false</item>
+    </style>
+
+    <style name="Imgly.PESDK.Camera.UI.Footer.ExpandableContainer.FilterList" parent="Imgly.PESDK">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">88dp</item>
+        <item name="android:clipToPadding">false</item>
+        <item name="android:clipChildren">false</item>
+        <item name="android:background">@color/imgly_preview_footer_background</item>
+    </style>
+
+    <style name="Imgly.PESDK.Camera.UI.Footer.SeekSlider.Transparent" parent="Imgly.PESDK.SeekSlider.Transparent">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:alpha">0</item>
+    </style>
+
+    <!--Widget-->
+    <style name="Imgly.PESDK.Widget.GalleryButton" parent="Imgly.PESDK.Button">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+    </style>
+
+    <style name="Imgly.PESDK.Widget.GalleryButton.ClickOverlay" parent="Imgly.PESDK">
+        <item name="android:layout_width">@dimen/gallery_button_width</item>
+        <item name="android:layout_height">@dimen/gallery_button_height</item>
+        <item name="android:background">@drawable/imgly_button_click_overlay</item>
+    </style>
+
+    <style name="Imgly.PESDK.Widget.GalleryButton.PreviewImage" parent="Imgly.PESDK">
+        <item name="android:layout_width">@dimen/gallery_button_width</item>
+        <item name="android:layout_height">@dimen/gallery_button_height</item>
+        <item name="android:scaleType">centerCrop</item>
+        <item name="android:src">@drawable/imgly_icon_camera_roll</item>
+    </style>
+
+</resources>

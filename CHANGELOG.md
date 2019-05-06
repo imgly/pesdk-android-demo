@@ -1,5 +1,9 @@
 # PhotoEditor SDK - Changelog
 
+## v6.4.1
+### Added
+* Support for `com.android.tools.build:gradle` v3.4
+
 ## v6.4.0
 ### Dependency changes
 * RenderscriptTargetApi version migrated from 19 to 28.
