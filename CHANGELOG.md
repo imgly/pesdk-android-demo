@@ -1,5 +1,15 @@
 # PhotoEditor SDK - Changelog
 
+## v6.4.2
+### Fixed
+* Typo in the filter name 'High Carp'.
+
+### Changed
+* Name of filter 'Gysmo' to 'Colorful'.
+* Name of filter 'Cotton Candy' to 'Candy'.
+* Name of filter 'High Contrast' to 'Hicon'.
+* Order of some filters to be equal to other platforms.
+
 ## v6.4.1
 ### Added
 * Support for `com.android.tools.build:gradle` v3.4
