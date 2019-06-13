@@ -16,7 +16,7 @@
     <img src="https://img.shields.io/badge/platform-android-2DC25C.svg?style=flat">
   </a>
   <a href="https://artifactory.img.ly/artifactory/imgly/ly/img/android/pesdk/">
-    <img src="https://img.shields.io/badge/VERSION-6.5.0-007ec6.svg?style=flat" alt="Maven">
+    <img src="https://img.shields.io/badge/VERSION-6.5.1-007ec6.svg?style=flat" alt="Maven">
   </a>
   <a href="http://twitter.com/PhotoEditorSDK">
     <img src="https://img.shields.io/badge/twitter-@PhotoEditorSDK-8646E2.svg?style=flat" alt="Twitter">
@@ -126,7 +126,7 @@ buildscript {
         maven { url "https://artifactory.img.ly/artifactory/imgly" }
     }
     dependencies {
-        classpath 'ly.img.android.pesdk:PESDKPlugin:6.5.0'
+        classpath 'ly.img.android.pesdk:plugin:6.5.1'
     }
 }
 
@@ -147,7 +147,7 @@ PESDKConfig {
     licencePath "LICENSE" // Name of the Licence file in the asset folder
 
     // Write here the newest SDK verion you will here https://github.com/imgly/pesdk-android-demo/releases
-    pesdkVersion "6.5.0"
+    pesdkVersion "6.5.1"
 
     // If you are using another supportLibVersion ('com.android.support') please change this version here our update your own supportLibVersion
     supportLibVersion "27.1.1"
@@ -164,7 +164,6 @@ PESDKConfig {
         include 'ly.img.android.pesdk.operation:sticker'
         include 'ly.img.android.pesdk.operation:overlay'
         include 'ly.img.android.pesdk.operation:adjustment'
-        include 'ly.img.android.pesdk.operation:abstract-sticker'
 
         // Add all the UI modules you are need
         include 'ly.img.android.pesdk.ui.mobile_ui:core'
@@ -184,7 +183,6 @@ PESDKConfig {
 
         // Add asset packs if you need
         include 'ly.img.android.pesdk.assets:font-basic'
-        include 'ly.img.android.pesdk.assets:font-text-design'
         include 'ly.img.android.pesdk.assets:frame-basic'
         include 'ly.img.android.pesdk.assets:filter-basic'
         include 'ly.img.android.pesdk.assets:overlay-basic'

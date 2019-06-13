@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ This file is part of the PhotoEditor Software Development Kit.
+  ~
+  ~ Copyright (C) 2019 img.ly GmbH <contact@img.ly>
+  ~ All rights reserved.
+  ~
+  ~ Redistribution and use in source and binary forms, without
+  ~ modification, are permitted provided that the following license agreement
+  ~ is approved and a legal/financial contract was signed by the user.
+  ~
+  ~ The license agreement can be found under the following link:
+  ~
+  ~ https://www.photoeditorsdk.com/LICENSE.txt
+  -->
+
+
+
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:top="0dp" android:left="0dp">
+        <shape>
+            <solid android:color="#FFd3d3d3"/>
+        </shape>
+    </item>
+    <item android:top="0dp" android:left="10dp">
+        <shape>
+            <solid android:color="#FFFFFFFF"/>
+        </shape>
+    </item>
+    <item android:top="0dp" android:left="20dp">
+        <shape>
+            <solid android:color="#FFd3d3d3"/>
+        </shape>
+    </item>
+    <item android:top="0dp" android:left="30dp">
+        <shape>
+            <solid android:color="#FFFFFFFF"/>
+        </shape>
+    </item>
+    <item android:top="0dp" android:left="40dp">
+        <shape>
+            <solid android:color="#FFd3d3d3"/>
+        </shape>
+    </item>
+    <item android:top="0dp" android:left="50dp">
+        <shape>
+            <solid android:color="#FFFFFFFF"/>
+        </shape>
+    </item>
+
+    <item android:top="10dp" android:left="0dp">
+        <shape>
+            <solid android:color="#FFFFFFFF"/>
+        </shape>
+    </item>
+    <item android:top="10dp" android:left="10dp">
+        <shape>
+            <solid android:color="#FFd3d3d3"/>
+        </shape>
+    </item>
+    <item android:top="10dp" android:left="20dp">
+        <shape>
+            <solid android:color="#FFFFFFFF"/>
+        </shape>
+    </item>
+    <item android:top="10dp" android:left="30dp">
+        <shape>
+            <solid android:color="#FFd3d3d3"/>
+        </shape>
+    </item>
+    <item android:top="10dp" android:left="40dp">
+        <shape>
+            <solid android:color="#FFFFFFFF"/>
+        </shape>
+    </item>
+    <item android:top="10dp" android:left="50dp">
+        <shape>
+            <solid android:color="#FFd3d3d3"/>
+        </shape>
+    </item>
+
+
+    <item android:top="20dp" android:left="0dp">
+        <shape>
+            <solid android:color="#FFd3d3d3"/>
+        </shape>
+    </item>
+    <item android:top="20dp" android:left="10dp">
+        <shape>
+            <solid android:color="#FFFFFFFF"/>
+        </shape>
+    </item>
+    <item android:top="20dp" android:left="20dp">
+        <shape>
+            <solid android:color="#FFd3d3d3"/>
+        </shape>
+    </item>
+    <item android:top="20dp" android:left="30dp">
+        <shape>
+            <solid android:color="#FFFFFFFF"/>
+        </shape>
+    </item>
+    <item android:top="20dp" android:left="40dp">
+        <shape>
+            <solid android:color="#FFd3d3d3"/>
+        </shape>
+    </item>
+    <item android:top="20dp" android:left="50dp">
+        <shape>
+            <solid android:color="#FFFFFFFF"/>
+        </shape>
+    </item>
+
+    <item android:top="30dp" android:left="0dp">
+        <shape>
+            <solid android:color="#FFFFFFFF"/>
+        </shape>
+    </item>
+    <item android:top="30dp" android:left="10dp">
+        <shape>
+            <solid android:color="#FFd3d3d3"/>
+        </shape>
+    </item>
+    <item android:top="30dp" android:left="20dp">
+        <shape>
+            <solid android:color="#FFFFFFFF"/>
+        </shape>
+    </item>
+    <item android:top="30dp" android:left="30dp">
+        <shape>
+            <solid android:color="#FFd3d3d3"/>
+        </shape>
+    </item>
+    <item android:top="30dp" android:left="40dp">
+        <shape>
+            <solid android:color="#FFFFFFFF"/>
+        </shape>
+    </item>
+    <item android:top="30dp" android:left="50dp">
+        <shape>
+            <solid android:color="#FFd3d3d3"/>
+        </shape>
+    </item>
+
+    <item android:top="40dp" android:left="0dp">
+        <shape>
+            <solid android:color="#FFd3d3d3"/>
+        </shape>
+    </item>
+    <item android:top="40dp" android:left="10dp">
+        <shape>
+            <solid android:color="#FFFFFFFF"/>
+        </shape>
+    </item>
+    <item android:top="40dp" android:left="20dp">
+        <shape>
+            <solid android:color="#FFd3d3d3"/>
+        </shape>
+    </item>
+    <item android:top="40dp" android:left="30dp">
+        <shape>
+            <solid android:color="#FFFFFFFF"/>
+        </shape>
+    </item>
+    <item android:top="40dp" android:left="40dp">
+        <shape>
+            <solid android:color="#FFd3d3d3"/>
+        </shape>
+    </item>
+    <item android:top="40dp" android:left="50dp">
+        <shape>
+            <solid android:color="#FFFFFFFF"/>
+        </shape>
+    </item>
+
+    <item android:top="50dp" android:left="0dp">
+        <shape>
+            <solid android:color="#FFFFFFFF"/>
+        </shape>
+    </item>
+    <item android:top="50dp" android:left="10dp">
+        <shape>
+            <solid android:color="#FFd3d3d3"/>
+        </shape>
+    </item>
+    <item android:top="50dp" android:left="20dp">
+        <shape>
+            <solid android:color="#FFFFFFFF"/>
+        </shape>
+    </item>
+    <item android:top="50dp" android:left="30dp">
+        <shape>
+            <solid android:color="#FFd3d3d3"/>
+        </shape>
+    </item>
+    <item android:top="50dp" android:left="40dp">
+        <shape>
+            <solid android:color="#FFFFFFFF"/>
+        </shape>
+    </item>
+    <item android:top="50dp" android:left="50dp">
+        <shape>
+            <solid android:color="#FFd3d3d3"/>
+        </shape>
+    </item>
+
+    <item android:top="60dp" android:left="0dp">
+        <shape>
+            <solid android:color="#FFd3d3d3"/>
+        </shape>
+    </item>
+    <item android:top="60dp" android:left="10dp">
+        <shape>
+            <solid android:color="#FFFFFFFF"/>
+        </shape>
+    </item>
+    <item android:top="60dp" android:left="20dp">
+        <shape>
+            <solid android:color="#FFd3d3d3"/>
+        </shape>
+    </item>
+    <item android:top="60dp" android:left="30dp">
+        <shape>
+            <solid android:color="#FFFFFFFF"/>
+        </shape>
+    </item>
+    <item android:top="60dp" android:left="40dp">
+        <shape>
+            <solid android:color="#FFd3d3d3"/>
+        </shape>
+    </item>
+    <item android:top="60dp" android:left="50dp">
+        <shape>
+            <solid android:color="#FFFFFFFF"/>
+        </shape>
+    </item>
+
+    <item android:top="70dp" android:left="0dp">
+        <shape>
+            <solid android:color="#FFFFFFFF"/>
+        </shape>
+    </item>
+    <item android:top="70dp" android:left="10dp">
+        <shape>
+            <solid android:color="#FFd3d3d3"/>
+        </shape>
+    </item>
+    <item android:top="70dp" android:left="20dp">
+        <shape>
+            <solid android:color="#FFFFFFFF"/>
+        </shape>
+    </item>
+    <item android:top="70dp" android:left="30dp">
+        <shape>
+            <solid android:color="#FFd3d3d3"/>
+        </shape>
+    </item>
+    <item android:top="70dp" android:left="40dp">
+        <shape>
+            <solid android:color="#FFFFFFFF"/>
+        </shape>
+    </item>
+    <item android:top="70dp" android:left="50dp">
+        <shape>
+            <solid android:color="#FFd3d3d3"/>
+        </shape>
+    </item>
+
+</layer-list>

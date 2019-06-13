@@ -1,5 +1,53 @@
 # PhotoEditor SDK - Changelog
 
+## v6.5.1
+
+### Added
+* `Sharpness` as a new adjustment value.
+
+### Changed
+* Kotlin version to `1.3.31`.
+
+### Fixed
+* TextDesign `Summer Feeling` has no lines (old Serialisation HTML5 and Android < 3.5.0 and iOS < 3.1.1 restore the old design).
+* Bounding box of TextDesign `Deko` is too big (old Serialisation HTML5 and Android < 3.5.0 and iOS < 3.1.1 restore the old design).
+* `Blacks` and `Whites` adjustment applied to alpha values.
+* The serialization will not be serialized / deserialized properly if some modules are not included.
+* Resource deprecation warning, keeps alive until restart gradle daemon.
+
+## v5.1.12
+
+### Fixed
+* Wrong save policy when using camera.
+* Wrong label of sticker color selection tool.
+
+## v6.5.0
+
+### Added
+* Example light theme color schema to `imgly_colors.xml` and documentation. Due to a limitation of Android 4, it is currently not possible to change the colors theme at runtime, you need to add these colors at compile time.
+* Color identifier to be able to customize in more detail.
+
+### Fixed
+* Background thread workload not balanced.
+* Thumbnails not shown under certain conditions.
+* Wrong tool stack handling.
+* Wrong tool event calls on certain conditions. `LEAVE_TOOL` and `ENTER_TOOL` sometimes were in wrong order.
+* Wrong PESDK plugin classpath in the `README.md`.
+
+### Changed
+* Rename internal renderscript files to trigger recompiling
+* Layout order of `imgly_list_item_filter.xml`, `imgly_list_item_filter_folder_subitem.xml` and `imgly_list_item_overlay.xml`.
+* Names of some old color identifier.
+* We've removed some legacy styles, make sure you stop using them or that you have a copy from an old version.
+** `Imgly.PESDK.Editor.Popup.Brush.HorizontalMargin`
+** `Imgly.PESDK.Camera.UI.Container`
+** `Imgly.PESDK.Editor.Panel.default.Item.SelectBackground`
+** `Imgly.PESDK.Editor.Panel.Overlay.OverlayItem.Value`
+** `Imgly.PESDK.Editor.Panel.Transform.Crop`
+** `Imgly.PESDK.Widget.GalleryButton`
+** `Imgly.PESDK.Widget.GalleryButton.ClickOverlay`
+** `Imgly.PESDK.Widget.GalleryButton.PreviewImage`
+
 ## v6.4.2
 ### Fixed
 * Typo in the filter name 'High Carp'.
