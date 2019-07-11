@@ -28,4 +28,7 @@
 
     <drawable name="imgly_icon_download">@drawable/imgly_icon_save</drawable>
     <drawable name="imgly_icon_save_compat">@drawable/imgly_icon_download</drawable>
+
+    <drawable name="imgly_transparent_identity_color_item">@drawable/imgly_transparent_identity</drawable>
+
 </resources>

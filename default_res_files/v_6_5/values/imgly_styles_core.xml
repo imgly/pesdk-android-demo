@@ -279,7 +279,7 @@
 
     <!-- Widgets -->
     <style name="Imgly.PESDK.Widget.default.ColorPicker" parent="Imgly.PESDK">
-        <item name="android:layout_width">50dp</item>
+        <item name="android:layout_width">60dp</item>
         <item name="android:layout_height">match_parent</item>
         <item name="android:paddingTop">20dp</item>
         <item name="android:paddingBottom">20dp</item>
@@ -472,6 +472,7 @@
         <item name="imgly_icon_color_secondary">@color/imgly_icon_color_secondary</item>
         <item name="imgly_camera_background_color">@color/imgly_camera_background_color</item>
         <item name="imgly_camera_icon_color">@color/imgly_camera_icon_color</item>
+        <item name="imgly_transform_background_color">@color/imgly_transform_background_color</item>
     </style>
 
 </resources>

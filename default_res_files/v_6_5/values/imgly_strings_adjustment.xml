@@ -19,9 +19,9 @@
 <resources>
     <string name="pesdk_adjustments_title_name">Adjust</string>
 
-    <string name="pesdk_adjustments_button_shadowTool">Shadow</string>
+    <string name="pesdk_adjustments_button_shadowTool">Shadows</string>
     <string name="pesdk_adjustments_button_exposureTool">Exposure</string>
-    <string name="pesdk_adjustments_button_highlightTool">Highlight</string>
+    <string name="pesdk_adjustments_button_highlightTool">Highlights</string>
     <string name="pesdk_adjustments_button_brightnessTool">Brightness</string>
     <string name="pesdk_adjustments_button_contrastTool">Contrast</string>
     <string name="pesdk_adjustments_button_saturationTool">Saturation</string>

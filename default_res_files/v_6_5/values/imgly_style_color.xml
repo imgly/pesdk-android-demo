@@ -44,7 +44,7 @@
         <item name="android:layout_height">72dp</item>
         <item name="android:padding">0dp</item>
         <item name="android:layout_centerInParent">true</item>
-        <item name="android:background">@drawable/imgly_transparent_identity</item>
+        <item name="android:background">@drawable/imgly_transparent_identity_color_item</item>
     </style>
 
     <style name="Imgly.PESDK.Editor.Panel.Color.ColorItem.Background" parent="Imgly.PESDK.default.Item.Icon">

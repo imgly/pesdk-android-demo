@@ -1,5 +1,24 @@
 # PhotoEditor SDK - Changelog
 
+## Update for AndroidX
+Recently, we have come across a bug that, unfortunately, affects our PhotoEditor SDK for Android if it is being updated with AndroidX. After some investigation on this matter, we found out that Google knows about it, but has not yet been able to solve it. In this reference (https://issuetracker.google.com/issues/119582492) you will currently find further information. However, we are currently working on a fix by establishing a new renderer for this matter. *Generally, we’d kindly ask you to refrain from updating to Android X at this stage*. We will keep you posted once our solution for the PhotoEditor SDK allows you to use AndroidX without any constraints or concerns.
+
+## v6.5.2
+
+### Added
+* Drawable alias `imgly_transparent_identity_color_item` and `imgly_transparent_identity_image_bg` which refer to `imgly_transparent_identity` to make them separately customizable.
+* 🚨 Drawable `imgly_transparent_identity_alpha_slider`. (Please download the default_res_files of the newest version to accept the new behavior.)
+* New color resource `imgly_transform_background_color` for better customization.
+
+### Changed
+* Size of some elements of the color picker to achieve equality of the platforms.
+* Size of the checker board texture `imgly_transparent_identity` to achieve equality of the platforms.
+* Transform crop grid lines can set to 0 to be invisible.
+
+### Fixed
+* Typos in the adjustments `Shadows` and `Highlights`.
+* Some color identifiers are overwritten incorrectly.
+
 ## v6.5.1
 
 ### Added
@@ -20,6 +39,7 @@
 ### Fixed
 * Wrong save policy when using camera.
 * Wrong label of sticker color selection tool.
+
 
 ## v6.5.0
 
@@ -49,6 +69,7 @@
 ** `Imgly.PESDK.Widget.GalleryButton.PreviewImage`
 
 ## v6.4.2
+
 ### Fixed
 * Typo in the filter name 'High Carp'.
 
@@ -59,10 +80,12 @@
 * Order of some filters to be equal to other platforms.
 
 ## v6.4.1
+
 ### Added
 * Support for `com.android.tools.build:gradle` v3.4
 
 ## v6.4.0
+
 ### Dependency changes
 * RenderscriptTargetApi version migrated from 19 to 28.
 
@@ -73,6 +96,7 @@
 * Some renderscript crashes.
 
 ## v6.3.2
+
 ### Fixed
 * Incorrect proguard rules prevent proguard from optimizing optimally.
 

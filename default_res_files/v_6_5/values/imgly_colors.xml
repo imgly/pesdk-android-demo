@@ -61,6 +61,7 @@
     <attr name="imgly_icon_color_secondary" format="color" />
     <attr name="imgly_camera_background_color" format="color" />
     <attr name="imgly_camera_icon_color" format="color" />
+    <attr name="imgly_transform_background_color" format="color" />
 
     <!-- Dark theme colors -->
     <color name="imgly_transparent_color">#00000000</color>
@@ -106,6 +107,7 @@
     <color name="imgly_icon_color_secondary">#99FFFFFF</color>
     <color name="imgly_camera_background_color">#FF000000</color>
     <color name="imgly_camera_icon_color">#CCFFFFFF</color>
+    <color name="imgly_transform_background_color">#80000000</color>
 
     <!-- To apply the light theme, simply use the following colors instead of the above colors! -->
 
@@ -152,6 +154,7 @@
     <color name="imgly_icon_color_on_canvas_disabled">#66FFFFFF</color>
     <color name="imgly_icon_color_secondary">#99000000</color>
     <color name="imgly_camera_background_color">#FF000000</color>
-    <color name="imgly_camera_icon_color">#CCFFFFFF</color>-->
+    <color name="imgly_camera_icon_color">#CCFFFFFF</color>
+    <color name="imgly_transform_background_color">#80000000</color>-->
 
 </resources>
