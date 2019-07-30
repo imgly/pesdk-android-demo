@@ -3,6 +3,20 @@
 ## Update for AndroidX
 Recently, we have come across a bug that, unfortunately, affects our PhotoEditor SDK for Android if it is being updated with AndroidX. After some investigation on this matter, we found out that Google knows about it, but has not yet been able to solve it. In this reference (https://issuetracker.google.com/issues/119582492) you will currently find further information. However, we are currently working on a fix by establishing a new renderer for this matter. *Generally, we’d kindly ask you to refrain from updating to Android X at this stage*. We will keep you posted once our solution for the PhotoEditor SDK allows you to use AndroidX without any constraints or concerns.
 
+## 6.6.0
+
+### Fixed
+* Doubled file extension suffix in the export when using names with only one letter.
+* Text input field has wrong position, if activity is not in fullscreen mode.
+* Broken style of text design color list.
+
+### Added
+* New themes `Imgly.Theme`, `Imgly.Theme.NoFullscreen`, `Imgly.Theme.TopActionBar` and `Imgly.Theme.TopActionBar.NoFullscreen` which you can set the fullscreen mode on/off and also the position of the actionbar to the top/bottom.
+
+### 🚨 Changed Layouts (We need that due to an bugfix, please make sure you are using the new version from the default_res_files.)
+** Remove wrong `rotation` attribute from `Imgly.PESDK.Editor.Panel.TextDesign.ColorList` style.
+*  Changed View class of the text design color list view (`@+id/rv_text_colors`) from `RecyclerView` to `HorizontalListView` in the `imgly_panel_tool_text_design.xml` layout file.
+
 ## v6.5.2
 
 ### Added
