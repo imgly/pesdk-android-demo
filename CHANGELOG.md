@@ -3,7 +3,12 @@
 ## Update for AndroidX
 Recently, we have come across a bug that, unfortunately, affects our PhotoEditor SDK for Android if it is being updated with AndroidX. After some investigation on this matter, we found out that Google knows about it, but has not yet been able to solve it. In this reference (https://issuetracker.google.com/issues/119582492) you will currently find further information. However, we are currently working on a fix by establishing a new renderer for this matter. *Generally, we’d kindly ask you to refrain from updating to Android X at this stage*. We will keep you posted once our solution for the PhotoEditor SDK allows you to use AndroidX without any constraints or concerns.
 
-## 6.6.0
+## v6.6.1
+
+### Fixed
+* Deleting the last item of a `DataSourceArrayList` results in an IndexOutOfBoundsException.
+
+## v6.6.0
 
 ### Fixed
 * Doubled file extension suffix in the export when using names with only one letter.
@@ -53,7 +58,6 @@ Recently, we have come across a bug that, unfortunately, affects our PhotoEditor
 ### Fixed
 * Wrong save policy when using camera.
 * Wrong label of sticker color selection tool.
-
 
 ## v6.5.0
 
