@@ -1,91 +1,65 @@
 apply plugin: 'com.android.application'
 
 apply plugin: 'kotlin-android'
-
-apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
 
 apply plugin: 'ly.img.android.pesdk'
 
 pesdkConfig {
 
     // Name of the Licence file in the asset folder
-    licencePath "LICENSE"
+    licencePath 'LICENSE'
 
     // If you use another supportLibVersion ('com.android.support'), change this version here to update your own supportLibVersion
-    supportLibVersion "27.1.1"
+    supportLibVersion "28.0.0"
 
     // Define the modules you are need
     modules {
-        // Add all the backend modules you need
-        include 'ly.img.android.pesdk.operation:text'
-        include 'ly.img.android.pesdk.operation:frame'
-        include 'ly.img.android.pesdk.operation:focus'
-        include 'ly.img.android.pesdk.operation:brush'
-        include 'ly.img.android.pesdk.operation:camera'
-        include 'ly.img.android.pesdk.operation:filter'
-        include 'ly.img.android.pesdk.operation:sticker'
-        include 'ly.img.android.pesdk.operation:overlay'
-        include 'ly.img.android.pesdk.operation:adjustment'
-        include 'ly.img.android.pesdk.operation:text-design'
-        include 'ly.img.android.pesdk.operation:abstract-sticker'
-
         // Add all the UI modules you are need
-        include 'ly.img.android.pesdk.ui.mobile_ui:core'
-        include 'ly.img.android.pesdk.ui.mobile_ui:text'
-        include 'ly.img.android.pesdk.ui.mobile_ui:focus'
-        include 'ly.img.android.pesdk.ui.mobile_ui:frame'
-        include 'ly.img.android.pesdk.ui.mobile_ui:brush'
-        include 'ly.img.android.pesdk.ui.mobile_ui:filter'
-        include 'ly.img.android.pesdk.ui.mobile_ui:camera'
-        include 'ly.img.android.pesdk.ui.mobile_ui:sticker'
-        include 'ly.img.android.pesdk.ui.mobile_ui:overlay'
-        include 'ly.img.android.pesdk.ui.mobile_ui:transform'
-        include 'ly.img.android.pesdk.ui.mobile_ui:text-design'
-        include 'ly.img.android.pesdk.ui.mobile_ui:adjustment'
+        include 'ui:core'
+        include 'ui:text'
+        include 'ui:focus'
+        include 'ui:frame'
+        include 'ui:brush'
+        include 'ui:filter'
+        include 'ui:camera'
+        include 'ui:sticker'
+        include 'ui:overlay'
+        include 'ui:transform'
+        include 'ui:adjustment'
+        include 'ui:text-design'
 
         // Add the serializer if you need
-        include 'ly.img.android.pesdk:serializer'
+        include 'backend:serializer'
 
         // Add asset packs if you need
-        include 'ly.img.android.pesdk.assets:font-basic'
-        include 'ly.img.android.pesdk.assets:font-text-design'
-        include 'ly.img.android.pesdk.assets:frame-basic'
-        include 'ly.img.android.pesdk.assets:filter-basic'
-        include 'ly.img.android.pesdk.assets:overlay-basic'
-        include 'ly.img.android.pesdk.assets:sticker-shapes'
-        include 'ly.img.android.pesdk.assets:sticker-emoticons'
+        include 'assets:font-basic'
+        include 'assets:frame-basic'
+        include 'assets:filter-basic'
+        include 'assets:overlay-basic'
+        include 'assets:sticker-shapes'
+        include 'assets:sticker-emoticons'
     }
 }
 
 android {
-    compileSdkVersion 27
+    compileSdkVersion 28
     buildToolsVersion '28.0.3'
 
     defaultConfig {
         applicationId "com.photoeditorsdk.android.app"
         minSdkVersion 16
-        targetSdkVersion 27
+        targetSdkVersion 28
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
-        
-        // Please ignore the next line :-)
-        resValue 'string', 'pesdk_version', "v$pesdk_version" 
+
+        resValue 'string', 'pesdk_version', "v$pesdk_version"
     }
     buildTypes {
         release {
-            minifyEnabled true
-            shrinkResources true
-            zipAlignEnabled true
-            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
-        }
-
-        debug {
-            useProguard true
-            minifyEnabled true
-            shrinkResources true
-            zipAlignEnabled true
-            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
 
@@ -97,5 +71,6 @@ android {
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-    implementation 'com.android.support:appcompat-v7:27.1.1'
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation 'com.android.support:appcompat-v7:28.0.0'
 }
