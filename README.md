@@ -16,7 +16,7 @@
     <img src="https://img.shields.io/badge/platform-android-2DC25C.svg?style=flat">
   </a>
   <a href="https://artifactory.img.ly/artifactory/imgly/ly/img/android/pesdk/">
-    <img src="https://img.shields.io/badge/VERSION-6.6.1-007ec6.svg?style=flat" alt="Maven">
+    <img src="https://img.shields.io/badge/VERSION-7.0.1-007ec6.svg?style=flat" alt="Maven">
   </a>
   <a href="http://twitter.com/PhotoEditorSDK">
     <img src="https://img.shields.io/badge/twitter-@PhotoEditorSDK-8646E2.svg?style=flat" alt="Twitter">
@@ -126,7 +126,7 @@ buildscript {
         maven { url "https://artifactory.img.ly/artifactory/imgly" }
     }
     dependencies {
-        classpath 'ly.img.android.pesdk:plugin:6.6.1'
+        classpath 'ly.img.android.pesdk:plugin:7.0.1'
     }
 }
 
@@ -138,56 +138,52 @@ You will have to add the pesdk plugin and PESDKConfig into your module's `build.
 // Apply the Android Plugin
 apply plugin: 'com.android.application'
 
-// Apply the PESDKPlugin
-apply plugin: PESDKPlugin
+// Apply the IMGLYPlugin
+apply plugin: 'ly.img.android.sdk'
 
 // Configure the PESDKPlugin
-PESDKConfig {
+imglyConfig {
 
-    licencePath "LICENSE" // Name of the Licence file in the asset folder
-
-    // Write here the newest SDK verion you will here https://github.com/imgly/pesdk-android-demo/releases
-    pesdkVersion "6.6.1"
+    // Optional: Enable the VideoEditor SDK
+    vesdk {
+        enabled true 
+        licencePath 'vesdk_android_license.dms'
+    }
+    
+    // Optional: Enable the PhotoEditor SDK
+    pesdk {
+        enabled true
+        licencePath 'pesdk_android_license.dms'
+    }
 
     // If you are using another supportLibVersion ('com.android.support') please change this version here our update your own supportLibVersion
-    supportLibVersion "27.1.1"
+    supportLibVersion "28.0.0"
 
     // Define the modules you are need
     modules {
-        // Add all the backend modules you need
-        include 'ly.img.android.pesdk.operation:text'
-        include 'ly.img.android.pesdk.operation:frame'
-        include 'ly.img.android.pesdk.operation:focus'
-        include 'ly.img.android.pesdk.operation:brush'
-        include 'ly.img.android.pesdk.operation:camera'
-        include 'ly.img.android.pesdk.operation:filter'
-        include 'ly.img.android.pesdk.operation:sticker'
-        include 'ly.img.android.pesdk.operation:overlay'
-        include 'ly.img.android.pesdk.operation:adjustment'
-
         // Add all the UI modules you are need
-        include 'ly.img.android.pesdk.ui.mobile_ui:core'
-        include 'ly.img.android.pesdk.ui.mobile_ui:text'
-        include 'ly.img.android.pesdk.ui.mobile_ui:focus'
-        include 'ly.img.android.pesdk.ui.mobile_ui:frame'
-        include 'ly.img.android.pesdk.ui.mobile_ui:brush'
-        include 'ly.img.android.pesdk.ui.mobile_ui:filter'
-        include 'ly.img.android.pesdk.ui.mobile_ui:camera'
-        include 'ly.img.android.pesdk.ui.mobile_ui:sticker'
-        include 'ly.img.android.pesdk.ui.mobile_ui:overlay'
-        include 'ly.img.android.pesdk.ui.mobile_ui:transform'
-        include 'ly.img.android.pesdk.ui.mobile_ui:adjustment'
+        include 'ui:core'
+        include 'ui:text'
+        include 'ui:focus'
+        include 'ui:frame'
+        include 'ui:brush'
+        include 'ui:filter'
+        include 'ui:camera'
+        include 'ui:sticker'
+        include 'ui:overlay'
+        include 'ui:transform'
+        include 'ui:adjustment'
 
         // Add the serializer if you need
-        include 'ly.img.android.pesdk:serializer'
+        include 'backend:serializer'
 
         // Add asset packs if you need
-        include 'ly.img.android.pesdk.assets:font-basic'
-        include 'ly.img.android.pesdk.assets:frame-basic'
-        include 'ly.img.android.pesdk.assets:filter-basic'
-        include 'ly.img.android.pesdk.assets:overlay-basic'
-        include 'ly.img.android.pesdk.assets:sticker-shapes'
-        include 'ly.img.android.pesdk.assets:sticker-emoticons'
+        include 'assets:font-basic'
+        include 'assets:frame-basic'
+        include 'assets:filter-basic'
+        include 'assets:overlay-basic'
+        include 'assets:sticker-shapes'
+        include 'assets:sticker-emoticons'
     }
 }
 
@@ -301,10 +297,10 @@ public class CameraDemoActivity extends Activity implements PermissionRequest.Re
           .setExportPrefix("camera_");
 
         // Set custom editor image export settings
-        settingsList.getSettingsModel(EditorSaveSettings.class)
+        settingsList.getSettingsModel(SaveSettings.class)
           .setExportDir(Directory.DCIM, "SomeFolderName")
           .setExportPrefix("result_")
-          .setSavePolicy(EditorSaveSettings.SavePolicy.RETURN_ALWAYS_ONLY_OUTPUT);
+          .setSavePolicy(SaveSettings.SavePolicy.RETURN_ALWAYS_ONLY_OUTPUT);
 
         return settingsList;
     }
@@ -426,10 +422,10 @@ public class EditorDemoActivity extends Activity implements PermissionRequest.Re
         );
 
         // Set custom editor image export settings
-        settingsList.getSettingsModel(EditorSaveSettings.class)
+        settingsList.getSettingsModel(SaveSettings.class)
           .setExportDir(Directory.DCIM, "SomeFolderName")
           .setExportPrefix("result_")
-          .setSavePolicy(EditorSaveSettings.SavePolicy.RETURN_ALWAYS_ONLY_OUTPUT);
+          .setSavePolicy(SaveSettings.SavePolicy.RETURN_ALWAYS_ONLY_OUTPUT);
 
         return settingsList;
     }
@@ -459,10 +455,9 @@ public class EditorDemoActivity extends Activity implements PermissionRequest.Re
         SettingsList settingsList = createPesdkSettingsList();
 
         // Set input image
-        settingsList.getSettingsModel(EditorLoadSettings.class)
-          .setImageSource(inputImage);
+        settingsList.getSettingsModel(LoadSettings.class).setSource(inputImage);
 
-        new PhotoEditorBuilder(this)
+        new EditorBuilder(this)
           .setSettingsList(settingsList)
           .startActivityForResult(this, PESDK_RESULT);
     }
