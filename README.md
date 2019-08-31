@@ -139,7 +139,7 @@ You will have to add the pesdk plugin and PESDKConfig into your module's `build.
 apply plugin: 'com.android.application'
 
 // Apply the PESDKPlugin
-apply plugin: PESDKPlugin
+apply plugin: 'ly.img.android.pesdk'
 
 // Configure the PESDKPlugin
 PESDKConfig {
