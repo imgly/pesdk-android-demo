@@ -1,5 +1,35 @@
 # PhotoEditor SDK - Changelog
 
+## v7.0.5
+
+### Improved
+* Video decoding speed.
+* JPEG encoding speed.
+
+### Fixed
+* Layer randomly not serialized (sometimes cause crashes)
+* Sticker position is wrong after loading a serialisation.
+* NPE with some limited licenses combinations. 
+* StickerCategoryItem equals method ignores id. 
+* The default focus highlight rect appears sometimes.
+* Text disappears unexpectedly after cancel font or color changes.
+* TextDesign sometimes shifted after loading form serialization.
+* Sticker not movable after click event.
+* After leaving the transform tool the image is not fit to screen.
+* Random NPE in Focus Tool.
+
+## v6.6.3
+
+### Fixed
+* StickerCategoryItem equals method ignores id.
+* The default focus highlight rect appears sometimes.
+* Text disappears unexpectedly after cancel font or color changes.
+* TextDesign sometimes shifted after loading form serialization.
+* Sticker not movable after click event.
+* Random crash after fast tool change. 
+* After leaving the transform tool the image is not fit to screen.
+* Random NPE in Focus Tool.
+
 ## v7.0.4
 
 ### Fixed
