@@ -1,5 +1,15 @@
 # PhotoEditor SDK - Changelog
 
+## v7.0.6
+
+### Fixed
+* Some focus operations are not correctly serialized.
+* Frame disappears after accepting in frame tool panel.
+* Color pipette picks are not reverted after cancel.
+* NPE if brush is not part of the license feature list.
+* Tool list can't be changed.
+* migration task crash with `No signature of method: java.lang.String.findIndexOf()` 
+
 ## v7.0.5
 
 ### Improved
@@ -7,7 +17,7 @@
 * JPEG encoding speed.
 
 ### Fixed
-* Layer randomly not serialized (sometimes cause crashes)
+* Layer randomly not serialized (sometimes cause crashes).
 * Sticker position is wrong after loading a serialisation.
 * NPE with some limited licenses combinations. 
 * StickerCategoryItem equals method ignores id. 
