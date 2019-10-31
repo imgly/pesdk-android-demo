@@ -1,5 +1,18 @@
 # PhotoEditor SDK - Changelog
 
+## v7.0.7
+
+### Added
+* Option for the user to choose a sticker from your gallery, add `new PersonalStickerAddItem()` to your StickerList config to enable it.
+
+### Fixed
+* Serialization is written with wrong sizes if the image rotation is adjusted.
+
+## v6.6.4
+
+### Fixed
+* Serialization is written with wrong sizes if the image rotation is adjusted.
+
 ## v7.0.6
 
 ### Fixed
