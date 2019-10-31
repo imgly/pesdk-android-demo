@@ -5,14 +5,14 @@
  |-- ------------------------------------------------------- --|
  |-- ------------------------------------------------------- -->
 <p align="center">
-    <a target="_blank" href="https://www.photoeditorsdk.com/?utm_campaign=Projects&utm_source=Github&utm_medium=PESDK&utm_content=Android&utm_term=Android"><img src="http://static.photoeditorsdk.com/logo.png" alt="PhotoEditor SDK Logo"/></a>
+    <a target="_blank" href="https://www.photoeditorsdk.com/?utm_campaign=Projects&utm_source=Github&utm_medium=PESDK&utm_content=Android-Demo"><img src="http://static.photoeditorsdk.com/logo.png" alt="PhotoEditor SDK Logo"/></a>
 </p>
 <p align="center">
   <a href="http://developer.android.com/guide/topics/manifest/uses-sdk-element.html#ApiLevels">
     <img src="https://img.shields.io/badge/MIN_SDK-15-B8D529.svg?style=flat">
     <img src="https://img.shields.io/badge/BUILD_SDK-28-92D230.svg?style=flat">
   </a>
-  <a href="https://www.photoeditorsdk.com/documentation/android/getting-started">
+  <a href="https://www.photoeditorsdk.com/documentation/android/getting-started/?utm_campaign=Projects&utm_source=Github&utm_medium=PESDK&utm_content=Android-Demo">
     <img src="https://img.shields.io/badge/platform-android-2DC25C.svg?style=flat">
   </a>
   <a href="https://artifactory.img.ly/artifactory/imgly/ly/img/android/pesdk/">
@@ -29,11 +29,11 @@
 
 ## Overview
 
-The [PhotoEditor SDK](https://www.photoeditorsdk.com/?utm_campaign=Projects&utm_source=Github&utm_medium=PESDK&utm_content=Android-Demo&utm_term=Android) is a powerful and multifaceted tool which enables you to equip your Android application with high-performant photo editing capabilities. The PhotoEditor SDK is written in Java and can easily be customized to entirely blend with your CI and provide your users with the exact feature set your use-case requires.
+The [PhotoEditor SDK](https://www.photoeditorsdk.com/?utm_campaign=Projects&utm_source=Github&utm_medium=PESDK&utm_content=Android-Demo) is a powerful and multifaceted tool which enables you to equip your Android application with high-performant photo editing capabilities. The PhotoEditor SDK is written in Java and can easily be customized to entirely blend with your CI and provide your users with the exact feature set your use-case requires.
 
-The SDK ships with a large variety of filters, covering all state of the art style- and mood settings that can be previewed in real-time. Unlike other apps that allow a live preview of filters, the [PhotoEditor SDK](https://www.photoeditorsdk.com/?utm_campaign=Projects&utm_source=Github&utm_medium=PESDK&utm_content=Android-Demo&utm_term=Android) even provides a live preview when using high-resolution images.
+The SDK ships with a large variety of filters, covering all state of the art style- and mood settings that can be previewed in real-time. Unlike other apps that allow a live preview of filters, the [PhotoEditor SDK](https://www.photoeditorsdk.com/?utm_campaign=Projects&utm_source=Github&utm_medium=PESDK&utm_content=Android-Demo) even provides a live preview when using high-resolution images.
 
-All operations are non-destructive which allows for fast and uncomplicated revision of the creatives at any given time and creates an intuitive and creative workflow for your users. Please see Features for a detailed list of the photo editing tools included in the [PhotoEditor SDK](https://www.photoeditorsdk.com/?utm_campaign=Projects&utm_source=Github&utm_medium=PESDK&utm_content=Android-Demo&utm_term=Android).
+All operations are non-destructive which allows for fast and uncomplicated revision of the creatives at any given time and creates an intuitive and creative workflow for your users. Please see Features for a detailed list of the photo editing tools included in the [PhotoEditor SDK](https://www.photoeditorsdk.com/?utm_campaign=Projects&utm_source=Github&utm_medium=PESDK&utm_content=Android-Demo).
 
 
 
@@ -42,11 +42,11 @@ All operations are non-destructive which allows for fast and uncomplicated revis
 </a>
 
 ## License
-The PhotoEditorSDK is a product of img.ly GmbH. Please make sure that you have a commercial [license](https://www.photoeditorsdk.com/pricing/?utm_campaign=Projects&utm_source=Github&utm_medium=PESDK&utm_content=Android-Demo&utm_term=Android) before releasing your app. A commercial license is required if you would like to integrate the SDK into any app, regardless of whether you monetize directly (paid app, subscription, service fee), indirectly (advertising, etc.) or are developing a free app. Every license for the PhotoEditor SDK is valid for one product only unless the products are closely related.
+The PhotoEditorSDK is a product of img.ly GmbH. Please make sure that you have a commercial [license](https://account.photoeditorsdk.com/pricing/?utm_campaign=Projects&utm_source=Github&utm_medium=PESDK&utm_content=Android-Demo) before releasing your app. A commercial license is required if you would like to integrate the SDK into any app, regardless of whether you monetize directly (paid app, subscription, service fee), indirectly (advertising, etc.) or are developing a free app. Every license for the PhotoEditor SDK is valid for one product only unless the products are closely related.
 
 If you’d like to use the PhotoEditor SDK for a charitable project, you can do so free of charge. However, please contact us anyway, so we can evaluate whether you qualify for a non-commercial license or not and handle your request accordingly.
 
-Please [get in touch](https://www.photoeditorsdk.com/pricing/?utm_campaign=Projects&utm_source=Github&utm_medium=PESDK&utm_content=Android-Demo&utm_term=Android) if you’d like to purchase a commercial license or require further information on our pricing and services. Please see the included [LICENSE.md](./LICENSE.md) for licensing details.
+Please [get in touch](https://account.photoeditorsdk.com/pricing/?utm_campaign=Projects&utm_source=Github&utm_medium=PESDK&utm_content=Android-Demo) if you’d like to purchase a commercial license or require further information on our pricing and services. Please see the included [LICENSE.md](./LICENSE.md) for licensing details.
 
 
 ## Features
@@ -92,12 +92,12 @@ Two Google support libraries needed or used by the SDK.
 
 ## Documentation
 
-For a detailed documentation, please take a look [here](http://docs.photoeditorsdk.com/guides/android/?utm_campaign=Projects&utm_source=Github&utm_medium=PESDK&utm_content=Android-Demo&utm_term=Android).
+For a detailed documentation, please take a look [here](http://docs.photoeditorsdk.com/guides/android/?utm_campaign=Projects&utm_source=Github&utm_medium=PESDK&utm_content=Android-Demo).
 
 
 ## Author
 
-img.ly GmbH, [@PhotoEditorSDK](https://twitter.com/PhotoEditorSDK), [www.photoeditorsdk.com](https://www.photoeditorsdk.com/?utm_campaign=Projects&utm_source=Github&utm_medium=PESDK&utm_content=Android-Demo&utm_term=Android)
+img.ly GmbH, [@PhotoEditorSDK](https://twitter.com/PhotoEditorSDK), [www.photoeditorsdk.com](https://www.photoeditorsdk.com/?utm_campaign=Projects&utm_source=Github&utm_medium=PESDK&utm_content=Android-Demo)
 
 
 ## Installation
@@ -109,7 +109,7 @@ img.ly GmbH, [@PhotoEditorSDK](https://twitter.com/PhotoEditorSDK), [www.photoed
 Before using any components of the PhotoEditor SDK, you have to add your license file to your applications assets folder.
 The expected default name of the license file is "LICENSE". In order to change this, see licencePath option of PESDKConfig in your gradle file.
 
-The license is digitally signed and can't be altered without becoming invalid. Our sample app comes with its own license, so you can try that right away. To try our SDK in your own app, you need to request a trial license that's bound to your bundle identifier. You can start a trial [here](https://www.photoeditorsdk.com/users/new) and download your license file from your [dashboard](https://www.photoeditorsdk.com/dashboard).
+The license is digitally signed and can't be altered without becoming invalid. Our sample app comes with its own license, so you can try that right away. To try our SDK in your own app, you need to request a trial license that's bound to your bundle identifier. You can start a trial [here](https://www.photoeditorsdk.com/signup/?utm_campaign=Projects&utm_source=Github&utm_medium=PESDK&utm_content=Android-Demo) and download your license file from your [dashboard](https://www.photoeditorsdk.com/dashboard).
 
 Once the license file has been added the application will validate its presence upon launch.
 
