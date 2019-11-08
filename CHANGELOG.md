@@ -166,7 +166,7 @@
 
 ## v7.0.0
 
-###Added
+### Added
 * First release of VideoEditorSDK [videoeditorsdk.com](https://videoeditorsdk.com).
 * You can use SourceType.detectTypeSafe() on WorkerThread to detect supported images and videos now.
 * You can use SourceType.detectTypeFast() on AnyThread to detect images and videos by name.
