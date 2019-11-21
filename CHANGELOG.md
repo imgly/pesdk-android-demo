@@ -1,5 +1,20 @@
 # PhotoEditor SDK - Changelog
 
+## v7.0.10
+
+### Fixed
+* QuickOptions are sometimes not shown.
+* Rotation snapping guides are incorrect when the image is rotated. 
+* TransformSettings.setForceCrop() choose the wrong ratio after loading a serialization.
+* Issue when using ConfigMap.addOrReplace(). 
+* \[VESDK\] Video with special audio specs, does not export.
+* \[VESDK\] Video with special audio specs, sound is fast forwarding in preview.
+
+### Added
+* We cut out left and right screen area of HorizontalListView and Seek Slider from system gestures in Android 10, to preserve a intuitive handling.
+* `AssetConfig.addAsset(Boolean overrideExisting, @NonNull AbstractAsset... configs)` allow you to override existing assets.
+* `ConfigMap.remove(String id)`.
+
 ## v7.0.9
 
 ### Fixed
