@@ -1,17 +1,14 @@
 apply plugin: 'com.android.application'
 
+apply plugin: 'ly.img.android.sdk'
 apply plugin: 'kotlin-android'
-apply plugin: 'kotlin-kapt'
 
-apply plugin: 'ly.img.android.pesdk'
+imglyConfig {
 
-pesdkConfig {
-
-    // Name of the Licence file in the asset folder
-    licencePath 'LICENSE'
-
-    // If you use another supportLibVersion ('com.android.support'), change this version here to update your own supportLibVersion
-    supportLibVersion "28.0.0"
+    pesdk {
+        enabled true
+        licencePath 'LICENSE' // Name of the Licence file in the asset folder
+    }
 
     // Define the modules you are need
     modules {
@@ -43,13 +40,13 @@ pesdkConfig {
 }
 
 android {
-    compileSdkVersion 28
-    buildToolsVersion '28.0.3'
+    compileSdkVersion 29
+    buildToolsVersion '29.0.2'
 
     defaultConfig {
         applicationId "com.photoeditorsdk.android.app"
         minSdkVersion 16
-        targetSdkVersion 28
+        targetSdkVersion 29
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
