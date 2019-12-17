@@ -1,5 +1,16 @@
 # PhotoEditor SDK - Changelog
 
+## v7.1.4
+
+### Added
+* Universal config loader for frameworks like react native.
+
+### Changed 
+* 🚨 Some of the public API method has changed when accessed from kotlin. This is because we have convert some of our Code from JAVA to Kotlin internally.  
+
+### Fixed
+* JPEG Quality is bad, because of a wrong discrete cosine transformation.
+
 ## v7.0.10
 
 ### Fixed
