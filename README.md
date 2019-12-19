@@ -10,13 +10,13 @@
 <p align="center">
   <a href="http://developer.android.com/guide/topics/manifest/uses-sdk-element.html#ApiLevels">
     <img src="https://img.shields.io/badge/MIN_SDK-15-B8D529.svg?style=flat">
-    <img src="https://img.shields.io/badge/BUILD_SDK-28-92D230.svg?style=flat">
+    <img src="https://img.shields.io/badge/BUILD_SDK-29-92D230.svg?style=flat">
   </a>
   <a href="https://www.photoeditorsdk.com/documentation/android/getting-started">
     <img src="https://img.shields.io/badge/platform-android-2DC25C.svg?style=flat">
   </a>
   <a href="https://artifactory.img.ly/artifactory/imgly/ly/img/android/pesdk/">
-    <img src="https://img.shields.io/badge/VERSION-7.0.1-007ec6.svg?style=flat" alt="Maven">
+    <img src="https://img.shields.io/badge/VERSION-7.1.5-007ec6.svg?style=flat" alt="Maven">
   </a>
   <a href="http://twitter.com/PhotoEditorSDK">
     <img src="https://img.shields.io/badge/twitter-@PhotoEditorSDK-8646E2.svg?style=flat" alt="Twitter">
@@ -126,7 +126,7 @@ buildscript {
         maven { url "https://artifactory.img.ly/artifactory/imgly" }
     }
     dependencies {
-        classpath 'ly.img.android.pesdk:plugin:7.0.6'
+        classpath 'ly.img.android.pesdk:plugin:7.1.5'
     }
 }
 
@@ -189,11 +189,11 @@ imglyConfig {
 
 // Do your Android Configurations... ex.
 android {
-    /* Set the compile SDK and the Build SDK min. at SDK 28 or grater.
+    /* Set the compile SDK and the Build SDK min. at SDK 29 or grater.
      * We can't provide support for Bugs, that are the result of older SDK versions.
      */
-    compileSdkVersion 28
-    buildToolsVersion '28.0.3'
+    compileSdkVersion 29
+    buildToolsVersion '29.0.2'
 
     defaultConfig {
         /*
@@ -205,8 +205,8 @@ android {
         /* Set the minimum supported SDK Version to 16 (Android 4.1.0) or higher */
         minSdkVersion 16
 
-        /* Set the target SDK Version at minimum to 28 or higher */
-        targetSdkVersion 28
+        /* Set the target SDK Version at minimum to 29 or higher */
+        targetSdkVersion 29
 
         /* Set your own Version Code and Version Name */
         versionCode 1
@@ -508,4 +508,3 @@ public class EditorDemoActivity extends Activity implements PermissionRequest.Re
     }
 }
 ```
-
