@@ -1,5 +1,19 @@
 # PhotoEditor SDK - Changelog
 
+## v7.1.5
+
+### Added
+* Child friendly version of `StickerPackEmoticons`.
+
+### Fixed
+* Wrong item type in default `UIConfigSticker.quickOptionList`.
+* A circular crop mask is in the defaults.
+* Choose of a wrong force crop for landscape images.
+* Video timer calculation shows wrong time.
+
+### Removed
+* Circular crop mask.
+
 ## v7.1.4
 
 ### Added
