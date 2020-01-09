@@ -1,5 +1,17 @@
 # PhotoEditor SDK - Changelog
 
+## v7.1.6
+
+### Fixed
+* Blur rendering quality sometimes bad.
+* Text element still exists after deleting the content.
+* Text design element still exist after deleting the content.
+* Uploading a custom sticker causes a crash.
+* Loading frame serialization can cause a crash.
+
+### Improved
+* Image export preview.
+
 ## v7.1.5
 
 ### Added
