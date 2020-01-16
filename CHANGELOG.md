@@ -1,5 +1,16 @@
 # PhotoEditor SDK - Changelog
 
+## v7.1.7
+
+### Fixed
+* `ConfigLoader` does ignore items property of `ExistingCategory`.
+* Crashes or black images parts on some devices because of a OpenGl driver bug.
+* Loading frame serialization can cause a crash.
+* Configurations got ignored when using `SaveSettings`.
+* Filter and Focus maybe broken.
+* Exported image sometimes displaying green.
+* Crash that sometimes occurred when loading serialization.
+
 ## v7.1.6
 
 ### Fixed

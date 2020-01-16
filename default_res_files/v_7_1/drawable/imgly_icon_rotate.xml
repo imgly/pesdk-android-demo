@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ This file is part of the PhotoEditor Software Development Kit.
+  ~
+  ~ Copyright (C) 2019 img.ly GmbH <contact@img.ly>
+  ~ All rights reserved.
+  ~
+  ~ Redistribution and use in source and binary forms, without
+  ~ modification, are permitted provided that the following license agreement
+  ~ is approved and a legal/financial contract was signed by the user.
+  ~
+  ~ The license agreement can be found under the following link:
+  ~
+  ~ https://www.photoeditorsdk.com/LICENSE.txt
+  -->
+
+
+
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+        android:viewportWidth="16"
+        android:viewportHeight="16"
+        android:width="16dp"
+        android:height="16dp">
+    <group
+        android:translateX="-2"
+        android:translateY="-2">
+        <group
+            android:scaleX="-1"
+            android:scaleY="-1"
+            android:translateX="18"
+            android:translateY="19">
+            <group
+                android:scaleX="-1"
+                android:scaleY="-1"
+                android:translateX="15.6297"
+                android:translateY="17.99512">
+                <path
+                    android:pathData="M13.29 14.657559c-0.33 0.33 -0.67 0.62 -1.04 0.859 -1.38 0.991 -2.9999999 1.481 -4.6199999 1.481l0 -2c1.22 0 2.4399999 -0.37 3.4699999 -1.111 0.27 -0.189 0.53 -0.409 0.77 -0.649 2.34 -2.34 2.34 -6.1400004 0 -8.4800004 -2.1009999 -2.1 -5.3899999 -2.32 -7.7299999 -0.63l1.49 1.87 -4.99999999 0 0.99999999 -5.00000001 1.25 1.57000001c3.13 -2.32000001 7.5699999 -2.06000001 10.4099999 0.77 3.12 3.13 3.12 8.1900004 0 11.3200004zm-10.5502999 -2.1797l-1.63 1.159 0 -0.01c0 0 -0.01 0 -0.01 -0.009 0 0 0 -0.01 -0.01 -0.01l0 -0.011 -0.01 0 0 -0.01c-0.01 0 -0.01 -0.009 -0.01 -0.009l0 -0.01 -0.01 0 0 -0.011 -0.01 0 0 -0.01c0 -0.009 -0.01 -0.009 -0.01 -0.009l0 -0.01c-0.01 0 -0.01 0 -0.01 -0.011 -0.26999999 -0.39 -0.48999999 -0.789 -0.67999999 -1.21 -0.01 0 -0.01 -0.01 -0.01 -0.01l0 -0.009 -0.01 0 0 -0.021 -0.01 -0.01 0 -0.009c0 -0.01 -0.01 -0.01 -0.01 -0.01l0 -0.01 0 -0.011 -0.01 0 0 -0.01 0 -0.009 -0.01 0 0 -0.01 0 -0.021 -0.01 0 0 -0.009 0 -0.01 -0.01 0 0 -0.021c-0.01 0 -0.01 0 -0.01 -0.009l0 -0.01c-0.1 -0.231 -0.19 -0.471 -0.25999999556 -0.7L1.9097001 10.796859c0.18 0.601 0.47 1.17 0.83 1.681zm1.32 1.34c0.5 0.38 1.06 0.67 1.66 0.87l-0.64 1.89c-0.51 -0.17 -1.01 -0.39 -1.48 -0.67 -0.01 0 -0.02 -0.01 -0.03 -0.01l0 -0.011 -0.01 0 -0.01 0 0 -0.01 -0.01 0c0 -0.009 -0.01 -0.009 -0.01 -0.009l-0.01 0 0 -0.01 -0.01 0 -0.01 0 0 -0.011 -0.01 0 -0.01 -0.01c0 0 -0.01 0 -0.01 -0.009l-0.01 0c-0.2 -0.121 -0.4 -0.26 -0.6 -0.401l1.2 -1.609z"
+                    android:fillColor="@color/imgly_icon_color_active" />
+            </group>
+        </group>
+    </group>
+</vector>
