@@ -1,5 +1,12 @@
 # PhotoEditor SDK - Changelog
 
+## v7.1.8
+
+### Fixed
+* Configuration of some frames are wrong.
+* Missing exif information after export.
+* `GlSurfaceView` is sometimes not rendering correctly.
+
 ## v7.1.7
 
 ### Fixed
