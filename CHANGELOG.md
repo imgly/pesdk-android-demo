@@ -1,5 +1,17 @@
 # PhotoEditor SDK - Changelog
 
+## v7.1.9
+
+### Fixed
+* `OutOfMemoryException` after several image exports caused by the JPEG encoder.
+* `ConcurrentModificationException` while loading a serialization.
+* Deserialize an image with a fixed crop aspect ratio yields wrong result.
+* Some feature combinations can cause a `IndexOutOfBoundsException`.
+* Set an `Imgly.Theme` got ignored.
+
+### Added
+* `IllegalArgumentException` if selecting `CropAspectAsset.FREE_CROP` for static frames.
+
 ## v7.1.8
 
 ### Fixed
