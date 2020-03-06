@@ -1,5 +1,11 @@
 # PhotoEditor SDK - Changelog
 
+## v7.1.10
+
+### Fixed
+* Workaround: Broken URI-parsing within React Native in the release mode.
+* The video export freezes if audio track not exist or if it is broken.
+
 ## v7.1.9
 
 ### Fixed
