@@ -1,5 +1,13 @@
 # PhotoEditor SDK - Changelog
 
+## v7.1.11
+
+### Fixed
+* Focus blur creates artifacts when exporting large images.
+* Frame export is different to frame preview.
+* Serialization wrote wrong crop identifier and do not set the dimensions.
+* Proguard rules of config loader necessary for React Native / Expo.
+
 ## v7.1.10
 
 ### Fixed
