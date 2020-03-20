@@ -1,5 +1,14 @@
 # PhotoEditor SDK - Changelog
 
+## v7.1.12
+
+### Added
+* Support for URIs with `asset` schema necessary for bundling static assets with Expo.
+
+### Fixed
+* Frame not displayed correctly while exporting.
+* Options not serialized correctly in some cases.
+
 ## v7.1.11
 
 ### Fixed
