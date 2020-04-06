@@ -1,5 +1,37 @@
 # PhotoEditor SDK - Changelog
 
+## v7.1.13
+
+### Changed
+
+* Developer behavior
+  * `IllegalArgumentException` if there is no `CropAspectAsset` defined.
+
+* ConfigLoader (React Native)
+  * 🚨 Default behavior of custom LUT filter.
+  
+### Fixed
+
+* General
+  * `ConcurrentModificationException` in some cases while loading a serialization file.
+
+* Rendering
+  * Bad export quality of text.
+  * Bad export quality of frame on a large image.
+  * Crashes and freezes when rendering headless.
+  * Wrong configuration of some frames (no noteworthy visual change).
+  * Wrong image sizes for JPEG export in some cases.
+
+* Video
+  * 🚨 TrimToolPanel UI differences to iOS platform.
+  * 🚨 TrimToolPanel just fade in, instead of translate and fade.
+
+* ConfigLoader (React Native)
+  * 🚨 Default serialization export type.
+  * Wrong behavior if no crop aspect is defined and force crop is enabled.
+  * Relative import paths are converted incorrectly, which leads to an export crash.
+
+  
 ## v7.1.12
 
 ### Added
