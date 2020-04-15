@@ -46,7 +46,7 @@
   * Wrong behavior if no crop aspect is defined and force crop is enabled.
   * Relative import paths are converted incorrectly, which leads to an export crash.
 
-  
+
 ## v7.1.12
 
 ### Added
@@ -107,7 +107,7 @@
 * Text element still exists after deleting the content.
 * Text design element still exist after deleting the content.
 * Uploading a custom sticker causes a crash.
-* Loading frame serialization can cause a crash.
+* Config Loader ignores personal sticker property if category property was defined.
 
 ### Improved
 * Image export preview.
@@ -186,7 +186,7 @@
 * Color pipette picks are not reverted after cancel.
 * NPE if brush is not part of the license feature list.
 * Tool list can't be changed.
-* migration task crash with `No signature of method: java.lang.String.findIndexOf()` 
+* Migration task crash with `No signature of method: java.lang.String.findIndexOf()` 
 
 ## v7.0.5
 
@@ -278,7 +278,7 @@
 
 ## v7.0.0
 
-### Added
+###Added
 * First release of VideoEditorSDK [videoeditorsdk.com](https://videoeditorsdk.com).
 * You can use SourceType.detectTypeSafe() on WorkerThread to detect supported images and videos now.
 * You can use SourceType.detectTypeFast() on AnyThread to detect images and videos by name.
