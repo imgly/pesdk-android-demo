@@ -16,7 +16,7 @@
     <img src="https://img.shields.io/badge/platform-android-2DC25C.svg?style=flat">
   </a>
   <a href="https://artifactory.img.ly/artifactory/imgly/ly/img/android/pesdk/">
-    <img src="https://img.shields.io/badge/VERSION-7.1.13-007ec6.svg?style=flat" alt="Maven">
+    <img src="https://img.shields.io/badge/VERSION-7.2.0-007ec6.svg?style=flat" alt="Maven">
   </a>
   <a href="http://twitter.com/PhotoEditorSDK">
     <img src="https://img.shields.io/badge/twitter-@PhotoEditorSDK-8646E2.svg?style=flat" alt="Twitter">
@@ -126,7 +126,7 @@ buildscript {
         maven { url "https://artifactory.img.ly/artifactory/imgly" }
     }
     dependencies {
-        classpath 'ly.img.android.pesdk:plugin:7.1.13'
+        classpath 'ly.img.android.pesdk:plugin:7.2.0'
     }
 }
 
@@ -347,7 +347,7 @@ public class CameraDemoActivity extends Activity implements PermissionRequest.Re
             // OPTIONAL: read the latest state to save it as a serialisation
             SettingsList lastState = data.getParcelableExtra(ImgLyIntent.SETTINGS_LIST);
             try {
-                new PESDKFileWriter(lastState).writeJson(new File(
+                new IMGLYFileWriter(lastState).writeJson(new File(
                   Environment.getExternalStorageDirectory(),
                   "serialisationReadyToReadWithPESDKFileReader.json"
                 ));
@@ -494,7 +494,7 @@ public class EditorDemoActivity extends Activity implements PermissionRequest.Re
             // OPTIONAL: read the latest state to save it as a serialisation
             SettingsList lastState = data.getParcelableExtra(ImgLyIntent.SETTINGS_LIST);
             try {
-                new PESDKFileWriter(lastState).writeJson(new File(
+                new IMGLYFileWriter(lastState).writeJson(new File(
                   Environment.getExternalStorageDirectory(),
                   "serialisationReadyToReadWithPESDKFileReader.json"
                 ));

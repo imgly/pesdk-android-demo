@@ -1,5 +1,20 @@
 # PhotoEditor SDK - Changelog
 
+## v7.2.0
+
+### Fixed
+* Exported image has shifted lines sometimes.
+* Broken behavior if changing the crop size of an rotated image, manually.
+
+### Added
+* Use `startActivityForBroadcast(Activity/Fragment context, final String broadcastReceiverName)` to enable background exporting (see [Background Exporting](https://docs.videoeditorsdk.com/guides/android/v7_2/concepts/background_export).
+* Set `RenderService.createNotification = {(notification) -> }` to change the Notification Style.
+* Set `RenderService.updateNotification = {(notification, progress) -> }` to change the Notification Update Style.
+
+### Changed
+* Export starts a foreground service to continue exporting while app is in background.
+
+
 ## v7.1.13
 
 ### Changed

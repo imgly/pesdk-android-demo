@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ This file is part of the PhotoEditor Software Development Kit.
+  ~
+  ~ Copyright (C) 2019 img.ly GmbH <contact@img.ly>
+  ~ All rights reserved.
+  ~
+  ~ Redistribution and use in source and binary forms, without
+  ~ modification, are permitted provided that the following license agreement
+  ~ is approved and a legal/financial contract was signed by the user.
+  ~
+  ~ The license agreement can be found under the following link:
+  ~
+  ~ https://www.photoeditorsdk.com/LICENSE.txt
+  -->
+
+
+
+<resources>
+
+    <attr name="imgly_transparent_color" format="color" />
+    <attr name="imgly_background_color" format="color" />
+    <attr name="imgly_camera_header_background_color" format="color" />
+    <attr name="imgly_camera_footer_background_color" format="color" />
+    <attr name="imgly_highlight_color" format="color" />
+    <attr name="imgly_icon_border_color_active" format="color" />
+    <attr name="imgly_slider_track_color_progress" format="color" />
+    <attr name="imgly_text_color" format="color" />
+    <attr name="imgly_editor_text_color" format="color" />
+    <attr name="imgly_camera_text_color" format="color" />
+    <attr name="imgly_text_color_active" format="color" />
+    <attr name="imgly_sprite_handle_thumb_color" format="color" />
+    <attr name="imgly_text_on_image_color" format="color" />
+    <attr name="imgly_icon_color_active" format="color" />
+    <attr name="imgly_shuffle_icon_color" format="color" />
+    <attr name="imgly_text_on_image_color_secondary" format="color" />
+    <attr name="imgly_button_color" format="color" />
+    <attr name="imgly_button_color_pressed" format="color" />
+    <attr name="imgly_button_color_disabled" format="color" />
+    <attr name="imgly_icon_color" format="color" />
+    <attr name="imgly_editor_text_color_secondary" format="color" />
+    <attr name="imgly_slider_thumb_color_disabled" format="color" />
+    <attr name="imgly_icon_color_disabled" format="color" />
+    <attr name="imgly_crop_icon_fill_color_active" format="color" />
+    <attr name="imgly_crop_icon_fill_color" format="color" />
+    <attr name="imgly_slider_track_color" format="color" />
+    <attr name="imgly_text_input_background_color" format="color" />
+    <attr name="imgly_sticker_selection_background_color" format="color" />
+    <attr name="imgly_actionBar_background_color" format="color" />
+    <attr name="imgly_optionToolBar_background_color" format="color" />
+    <attr name="imgly_slider_thumb_color" format="color" />
+    <attr name="imgly_slider_background_color" format="color" />
+    <attr name="imgly_quickOptionToolBar_background_color" format="color" />
+    <attr name="imgly_dialog_background_color" format="color" />
+    <attr name="imgly_shuffle_icon_overlay_color" format="color" />
+    <attr name="imgly_text_on_image_background_color" format="color" />
+    <attr name="imgly_sprite_handle_line_color" format="color" />
+    <attr name="imgly_brush_preview_background_color" format="color" />
+    <attr name="imgly_icon_color_on_canvas" format="color" />
+    <attr name="imgly_icon_color_on_canvas_disabled" format="color" />
+    <attr name="imgly_icon_color_secondary" format="color" />
+    <attr name="imgly_camera_background_color" format="color" />
+    <attr name="imgly_camera_icon_color" format="color" />
+    <attr name="imgly_transform_background_color" format="color" />
+
+    <!-- Dark theme colors -->
+    <color name="imgly_transparent_color">#00000000</color>
+    <color name="imgly_background_color">#FF000000</color>
+    <color name="imgly_camera_header_background_color">#27000000</color>
+    <color name="imgly_camera_footer_background_color">#27000000</color>
+    <color name="imgly_highlight_color">#FF1B77FF</color>
+    <color name="imgly_icon_border_color_active">@color/imgly_highlight_color</color>
+    <color name="imgly_slider_track_color_progress">@color/imgly_highlight_color</color>
+    <color name="imgly_text_color">#FFFFFFFF</color>
+    <color name="imgly_editor_text_color">@color/imgly_text_color</color>
+    <color name="imgly_camera_text_color">@color/imgly_text_color</color>
+    <color name="imgly_text_color_active">#FFFFFFFF</color>
+    <color name="imgly_sprite_handle_thumb_color">#FFFFFFFF</color>
+    <color name="imgly_thumb_handle_color">#FFFFFFFF</color>
+    <color name="imgly_text_on_image_color">#FFFFFFFF</color>
+    <color name="imgly_icon_color_active">#FFFFFFFF</color>
+    <color name="imgly_shuffle_icon_color">@color/imgly_icon_color_active</color>
+    <color name="imgly_text_on_image_color_secondary">#99FFFFFF</color>
+    <color name="imgly_button_color">#00000000</color>
+    <color name="imgly_button_color_pressed">#FF203E61</color>
+    <color name="imgly_button_color_disabled">#66333333</color>
+    <color name="imgly_icon_color">#CCFFFFFF</color>
+    <color name="imgly_editor_text_color_secondary">#99FFFFFF</color>
+    <color name="imgly_slider_thumb_color_disabled">#66FFFFFF</color>
+    <color name="imgly_icon_color_disabled">#66FFFFFF</color>
+    <color name="imgly_crop_icon_fill_color_active">#33FFFFFF</color>
+    <color name="imgly_crop_icon_fill_color">#29FFFFFF</color>
+    <color name="imgly_slider_track_color">#99FFFFFF</color>
+    <color name="imgly_text_input_background_color">#D9000000</color>
+    <color name="imgly_sticker_selection_background_color">#D9000000</color>
+    <color name="imgly_actionBar_background_color">#FF222222</color>
+    <color name="imgly_optionToolBar_background_color">#FF1C1C1C</color>
+    <color name="imgly_slider_thumb_color">@color/imgly_optionToolBar_background_color</color>
+    <color name="imgly_slider_background_color">@color/imgly_optionToolBar_background_color</color>
+    <color name="imgly_quickOptionToolBar_background_color">#4D000000</color>
+    <color name="imgly_dialog_background_color">#DD1C1C1C</color>
+    <color name="imgly_shuffle_icon_overlay_color">#DD1C1C1C</color>
+    <color name="imgly_text_on_image_background_color">#99000000</color>
+    <color name="imgly_sprite_handle_line_color">#80FFFFFF</color>
+    <color name="imgly_brush_preview_background_color">#DD1C1C1C</color>
+    <color name="imgly_icon_color_on_canvas">#FFFFFFFF</color>
+    <color name="imgly_icon_color_on_canvas_disabled">#66FFFFFF</color>
+    <color name="imgly_icon_color_secondary">#99FFFFFF</color>
+    <color name="imgly_camera_background_color">#FF000000</color>
+    <color name="imgly_camera_icon_color">#CCFFFFFF</color>
+    <color name="imgly_transform_background_color">#80000000</color>
+
+    <!-- To apply the light theme, simply use the following colors instead of the above colors! -->
+
+    <!-- Light theme colors -->
+<!--    <color name="imgly_transparent_color">#00000000</color>
+    <color name="imgly_background_color">#FFFFFFFF</color>
+    <color name="imgly_camera_header_background_color">#27000000</color>
+    <color name="imgly_camera_footer_background_color">#27000000</color>
+    <color name="imgly_highlight_color">#FF1B77FF</color>
+    <color name="imgly_icon_border_color_active">#FF1B77FF</color>
+    <color name="imgly_slider_track_color_progress">#FF1B77FF</color>
+    <color name="imgly_text_color">#FF000000</color>
+    <color name="imgly_editor_text_color">#FF000000</color>
+    <color name="imgly_camera_text_color">#FFFFFFFF</color>
+    <color name="imgly_text_color_active">#FF000000</color>
+    <color name="imgly_sprite_handle_thumb_color">#FFFFFFFF</color>
+    <color name="imgly_thumb_handle_color">#FFFFFFFF</color>
+    <color name="imgly_text_on_image_color">#FFFFFFFF</color>
+    <color name="imgly_icon_color_active">#FF000000</color>
+    <color name="imgly_shuffle_icon_color">#FF000000</color>
+    <color name="imgly_text_on_image_color_secondary">#99FFFFFF</color>
+    <color name="imgly_button_color">#00000000</color>
+    <color name="imgly_button_color_pressed">#FF203E61</color>
+    <color name="imgly_button_color_disabled">#CCCCCCCC</color>
+    <color name="imgly_icon_color">#CC000000</color>
+    <color name="imgly_editor_text_color_secondary">#99000000</color>
+    <color name="imgly_slider_thumb_color_disabled">#66000000</color>
+    <color name="imgly_icon_color_disabled">#66000000</color>
+    <color name="imgly_crop_icon_fill_color_active">#33000000</color>
+    <color name="imgly_crop_icon_fill_color">#29000000</color>
+    <color name="imgly_slider_track_color">#99000000</color>
+    <color name="imgly_text_input_background_color">#D9000000</color>
+    <color name="imgly_sticker_selection_background_color">#D9000000</color>
+    <color name="imgly_actionBar_background_color">#FFDDDDDD</color>
+    <color name="imgly_optionToolBar_background_color">#FFE3E3E3</color>
+    <color name="imgly_slider_thumb_color">#FFE3E3E3</color>
+    <color name="imgly_slider_background_color">#FFE3E3E3</color>
+    <color name="imgly_quickOptionToolBar_background_color">#4D000000</color>
+    <color name="imgly_dialog_background_color">#DDE3E3E3</color>
+    <color name="imgly_shuffle_icon_overlay_color">#DDE3E3E3</color>
+    <color name="imgly_text_on_image_background_color">#99000000</color>
+    <color name="imgly_sprite_handle_line_color">#80FFFFFF</color>
+    <color name="imgly_brush_preview_background_color">#DD1C1C1C</color>
+    <color name="imgly_icon_color_on_canvas">#FFFFFFFF</color>
+    <color name="imgly_icon_color_on_canvas_disabled">#66FFFFFF</color>
+    <color name="imgly_icon_color_secondary">#99000000</color>
+    <color name="imgly_camera_background_color">#FF000000</color>
+    <color name="imgly_camera_icon_color">#CCFFFFFF</color>
+    <color name="imgly_transform_background_color">#80000000</color>-->
+
+</resources>
