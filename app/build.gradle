@@ -28,6 +28,9 @@ imglyConfig {
 
         // Add the serializer if you need
         include 'backend:serializer'
+        
+        // Allow Background Encoding [Optional]
+        include 'backend:headless'
 
         // Add asset packs if you need
         include 'assets:font-basic'
