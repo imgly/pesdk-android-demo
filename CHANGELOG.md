@@ -1,6 +1,19 @@
 # PhotoEditor SDK - Changelog
 
-## v7.2.0
+## v7.2.1
+
+### Fixed
+* Android preview freeze after pause and resume the app.
+* EditorSDKResult.notifyGallery() parameter are ignored, notify always for source and result.
+* "Unsupported save policy" RuntimeException.
+* New app permissions are needed for headless export, without using headless export. 
+    * 🚨 We fixed that issue by making Headless rendering optional, is not longer available by default (opt-in)!
+    * 🚨 Add the `include 'backend:headless'` to the `modules` in the `imglyConfig` of your build.gradle file to enable it.
+
+### Added
+* `VideoEditorSaveSettings.setAllowFastTrim(true|false)` option for speed up trimming only operation without transcoding.  
+
+## ~~v7.2.0~~ (Deprecated version, don't use it!)
 
 ### Fixed
 * Exported image has shifted lines sometimes.
@@ -19,7 +32,7 @@
 
 ### Changed
 
-* Developer behavior
+* Developer behavior 
   * `IllegalArgumentException` if there is no `CropAspectAsset` defined.
 
 * ConfigLoader (React Native)
