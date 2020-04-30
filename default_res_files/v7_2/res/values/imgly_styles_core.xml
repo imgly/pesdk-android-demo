@@ -170,11 +170,11 @@
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">48dp</item>
         <item name="android:background">@color/imgly_slider_background_color</item>
-        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingLeft">32dp</item>
         <item name="android:paddingStart">16dp</item>
         <item name="android:paddingTop">12dp</item>
         <item name="android:paddingBottom">10dp</item>
-        <item name="android:paddingRight">16dp</item>
+        <item name="android:paddingRight">32dp</item>
         <item name="android:paddingEnd">16dp</item>
         <item name="rangeBackgroundColor">@color/imgly_slider_track_color</item>
         <item name="selectedRangeBackgroundColor">@color/imgly_slider_track_color_progress</item>
@@ -473,6 +473,9 @@
         <item name="imgly_camera_background_color">@color/imgly_camera_background_color</item>
         <item name="imgly_camera_icon_color">@color/imgly_camera_icon_color</item>
         <item name="imgly_transform_background_color">@color/imgly_transform_background_color</item>
+        <item name="imgly_editor_position_snap_indicator_color">@color/imgly_editor_position_snap_indicator_color</item>
+        <item name="imgly_editor_rotation_snap_indicator_color">@color/imgly_editor_rotation_snap_indicator_color</item>
+        <item name="imgly_editor_bounding_snap_indicator_color">@color/imgly_editor_bounding_snap_indicator_color</item>
         <item name="android:windowBackground">@color/imgly_text_on_image_background_color</item>
     </style>
 

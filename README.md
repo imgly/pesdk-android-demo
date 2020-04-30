@@ -16,7 +16,7 @@
     <img src="https://img.shields.io/badge/platform-android-2DC25C.svg?style=flat">
   </a>
   <a href="https://artifactory.img.ly/artifactory/imgly/ly/img/android/pesdk/">
-    <img src="https://img.shields.io/badge/VERSION-7.2.1-007ec6.svg?style=flat" alt="Maven">
+    <img src="https://img.shields.io/badge/VERSION-7.2.2-007ec6.svg?style=flat" alt="Maven">
   </a>
   <a href="http://twitter.com/PhotoEditorSDK">
     <img src="https://img.shields.io/badge/twitter-@PhotoEditorSDK-8646E2.svg?style=flat" alt="Twitter">
@@ -126,7 +126,7 @@ buildscript {
         maven { url "https://artifactory.img.ly/artifactory/imgly" }
     }
     dependencies {
-        classpath 'ly.img.android.pesdk:plugin:7.2.1'
+        classpath 'ly.img.android.pesdk:plugin:7.2.2'
     }
 }
 
@@ -466,36 +466,29 @@ public class EditorDemoActivity extends Activity implements PermissionRequest.Re
     }
 
     @Override
-    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-        super.onActivityResult(requestCode, resultCode, data);
+    protected void onActivityResult(int requestCode, int resultCode, Intent intent) {
+        super.onActivityResult(requestCode, resultCode, intent);
 
         if (resultCode == RESULT_OK && requestCode == GALLERY_RESULT) {
             // Open Editor with some uri in this case with an image selected from the system gallery.
-            Uri selectedImage = data.getData();
+            Uri selectedImage = intent.getData();
             openEditor(selectedImage);
 
         } else if (resultCode == RESULT_OK && requestCode == PESDK_RESULT) {
             // Editor has saved an Image.
-            Uri resultURI = data.getParcelableExtra(ImgLyIntent.RESULT_IMAGE_URI);
-            Uri sourceURI = data.getParcelableExtra(ImgLyIntent.SOURCE_IMAGE_URI);
 
-            // Scan result uri to show it up in the Gallery
-            if (resultURI != null) {
-                sendBroadcast(new Intent(Intent.ACTION_MEDIA_SCANNER_SCAN_FILE).setData(resultURI));
-            }
+            EditorSDKResult data = new EditorSDKResult(intent);
 
-            // Scan source uri to show it up in the Gallery
-            if (sourceURI != null) {
-                sendBroadcast(new Intent(Intent.ACTION_MEDIA_SCANNER_SCAN_FILE).setData(sourceURI));
-            }
+            // This adds the result and source image to Android's gallery
+            data.notifyGallery(EditorSDKResult.UPDATE_RESULT & EditorSDKResult.UPDATE_SOURCE);
 
-            Log.i("PESDK", "Source image is located here " + sourceURI);
-            Log.i("PESDK", "Result image is located here " + resultURI);
+            Log.i("PESDK", "Source image is located here " + data.getSourceUri());
+            Log.i("PESDK", "Result image is located here " + data.getResultUri());
 
             // TODO: Do something with the result image
 
             // OPTIONAL: read the latest state to save it as a serialisation
-            SettingsList lastState = data.getParcelableExtra(ImgLyIntent.SETTINGS_LIST);
+            SettingsList lastState = data.getSettingsList();
             try {
                 new IMGLYFileWriter(lastState).writeJson(new File(
                   Environment.getExternalStorageDirectory(),
@@ -504,8 +497,10 @@ public class EditorDemoActivity extends Activity implements PermissionRequest.Re
             } catch (IOException e) { e.printStackTrace(); }
 
         } else if (resultCode == RESULT_CANCELED && requestCode == PESDK_RESULT) {
+            EditorSDKResult data = new EditorSDKResult(intent);
+
             // Editor was canceled
-            Uri sourceURI = data.getParcelableExtra(ImgLyIntent.SOURCE_IMAGE_URI);
+            Uri sourceURI = data.getSourceUri();
             // TODO: Do something with the source...
         }
     }

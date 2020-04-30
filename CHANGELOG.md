@@ -1,6 +1,20 @@
 # PhotoEditor SDK - Changelog
 
-## v7.2.1
+## v7.2.2
+
+### Added
+* Colors: `imgly_editor_position_snap_indicator_color`, `imgly_editor_rotation_snap_indicator_color` and `imgly_editor_bounding_snap_indicator_color` to the `imgly_color.xml` to make the colors of the snapping indicator customizable.
+* `NotAnImglyResultException` if intent is not a valid `EditorSDKResult`.
+
+### Fixed
+* None frame asset just included in the `assets:frame-basic` package.
+* `imgly_sprite_handle_line_color` and `imgly_sprite_handle_thumb_color` got ignored when used to customize the sprite handle's colors.
+
+### Changed
+* Getting started guides and activity examples no longer display legacy code. 
+
+
+## [Edited]v7.2.1
 
 ### Fixed
 * Android preview freeze after pause and resume the app.
@@ -11,7 +25,9 @@
     * 🚨 Add the `include 'backend:headless'` to the `modules` in the `imglyConfig` of your build.gradle file to enable it.
 
 ### Added
-* `VideoEditorSaveSettings.setAllowFastTrim(true|false)` option for speed up trimming only operation without transcoding.  
+* `VideoEditorSaveSettings.setAllowFastTrim(true|false)` option for speed up trimming only operation without transcoding.
+[Edited] * `EditorSDKResult` to wrap the intent for better API access.
+
 
 ## ~~v7.2.0~~ (Deprecated version, don't use it!)
 
