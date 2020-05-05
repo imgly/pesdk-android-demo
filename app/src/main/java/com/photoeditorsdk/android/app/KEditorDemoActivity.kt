@@ -18,7 +18,8 @@ import ly.img.android.pesdk.assets.sticker.emoticons.StickerPackEmoticons
 import ly.img.android.pesdk.assets.sticker.shapes.StickerPackShapes
 import ly.img.android.pesdk.backend.model.EditorSDKResult
 import ly.img.android.pesdk.backend.model.constant.Directory
-import ly.img.android.pesdk.backend.model.state.*
+import ly.img.android.pesdk.backend.model.state.LoadSettings
+import ly.img.android.pesdk.backend.model.state.SaveSettings
 import ly.img.android.pesdk.ui.activity.PhotoEditorBuilder
 import ly.img.android.pesdk.ui.model.state.*
 import ly.img.android.pesdk.ui.utils.PermissionRequest
@@ -121,8 +122,8 @@ class KEditorDemoActivity : Activity(), PermissionRequest.Response {
 
         if (resultCode == RESULT_OK && requestCode == GALLERY_RESULT) {
             // Open Editor with some uri in this case with an image selected from the system gallery.
-            openEditor(intent.data)
-
+            val selectedImage = intent.data
+            openEditor(selectedImage)
         } else if (resultCode == RESULT_OK && requestCode == PESDK_RESULT) { // Editor has saved an Image.
             // Editor has saved an Image.
             val data = EditorSDKResult(intent)
@@ -148,6 +149,7 @@ class KEditorDemoActivity : Activity(), PermissionRequest.Response {
         } else if (resultCode == RESULT_CANCELED && requestCode == PESDK_RESULT) {
             // Editor was canceled
             val data = EditorSDKResult(intent)
+
             val sourceURI = data.sourceUri
             // TODO: Do something with the source...
         }
