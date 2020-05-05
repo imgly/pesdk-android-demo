@@ -30,7 +30,7 @@ imglyConfig {
         include 'backend:serializer'
         
         // Allow Background Encoding [Optional]
-        include 'backend:headless'
+        //include 'backend:headless'
 
         // Add asset packs if you need
         include 'assets:font-basic'
