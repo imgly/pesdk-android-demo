@@ -1,5 +1,12 @@
 # PhotoEditor SDK - Changelog
 
+## 7.2.3
+
+### Fixed
+* `SORTED_ROTATION_SNAP_POINTS_45` and `SORTED_ROTATION_SNAP_POINTS` of `TextDesignGlLayer` are not customizable.
+* `IllegalArgumentException` when exporting a video and a remote uri was used.
+
+
 ## v7.2.2
 
 ### Added
