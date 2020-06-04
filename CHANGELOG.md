@@ -1,6 +1,20 @@
 # PhotoEditor SDK - Changelog
 
-## 7.2.3
+## v7.2.5
+ 
+### Fixed
+* `NullPointerException` if a captured image was exported with `SavePolicy.RETURN_ALWAYS_ONLY_OUTPUT`.
+* External FontAssets created with URI are sometimes not loaded correctly.
+* Exported Video aspect is not correct after cropping on some devices.
+
+
+## v7.2.4
+ 
+### Fixed
+* In exceptional cases, the preview image is not displayed.
+
+
+## v7.2.3
 
 ### Fixed
 * `SORTED_ROTATION_SNAP_POINTS_45` and `SORTED_ROTATION_SNAP_POINTS` of `TextDesignGlLayer` are not customizable.
