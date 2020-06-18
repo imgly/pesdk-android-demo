@@ -1,5 +1,14 @@
 # PhotoEditor SDK - Changelog
 
+## v7.2.6
+
+### Fixed
+* Possible dead lock of the main thread after restart Video editing.
+* Sticker, Text and TextDesign is sometimes missing at the first frames of a video.
+* Sticker, Text and TextDesign is sometimes black after recover app from background.
+* Text preview is shifted and stretched.
+
+
 ## v7.2.5
  
 ### Fixed
