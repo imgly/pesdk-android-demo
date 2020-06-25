@@ -1,5 +1,17 @@
 # PhotoEditor SDK - Changelog
 
+## v7.3.0
+
+## Added
+* [VideoEditorSDK] Animated GIF Support, `include 'backend:sticker-animated'` to enable it.
+
+### Fixed
+* Broken limits for moving the stickers outside the image border.
+
+### Know issues
+* [VideoEditorSDK] Background rendering with animated GIF has currently an undefined behaviour, don't use `startActivityForBroadcast()` together with the `'backend:sticker-animated'` module.
+
+
 ## v7.2.6
 
 ### Fixed
