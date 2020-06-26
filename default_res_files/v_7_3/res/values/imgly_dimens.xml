@@ -1,0 +1,43 @@
+<!--
+  ~ This file is part of the PhotoEditor Software Development Kit.
+  ~
+  ~ Copyright (C) 2019 img.ly GmbH <contact@img.ly>
+  ~ All rights reserved.
+  ~
+  ~ Redistribution and use in source and binary forms, without
+  ~ modification, are permitted provided that the following license agreement
+  ~ is approved and a legal/financial contract was signed by the user.
+  ~
+  ~ The license agreement can be found under the following link:
+  ~
+  ~ https://www.photoeditorsdk.com/LICENSE.txt
+  -->
+
+
+
+<resources>
+    <!-- Default screen margins, per the Android Design guidelinesMode. -->
+    <dimen name="default_slider_height">36dp</dimen>
+    <dimen name="default_slider_margin">4dp</dimen>
+    <dimen name="default_slider_bar_height">4dp</dimen>
+    <dimen name="default_slider_handler_radius">10dp</dimen>
+    <dimen name="default_padding_side">10dp</dimen>
+    <dimen name="default_preview_height">40dp</dimen>
+    <dimen name="default_preview_image_height">36dp</dimen>
+    <dimen name="default_text_size">11dp</dimen>
+    <dimen name="item_label_text_size">@dimen/default_text_size</dimen>
+
+    <dimen name="quick_option_margin_right">0.5dp</dimen>
+    <dimen name="quick_option_margin_left">0.5dp</dimen>
+
+    <dimen name="container_item_width">72dp</dimen>
+    <dimen name="container_item_height">72dp</dimen>
+    <dimen name="container_item_marginTop">8dp</dimen>
+
+    <dimen name="small_option_container_height">44dp</dimen>
+    <dimen name="small_option_container_margin">10dp</dimen>
+
+    <dimen name="folder_list_margin_right">0.5dp</dimen>
+    <dimen name="folder_list_margin_left">0.5dp</dimen>
+
+</resources>

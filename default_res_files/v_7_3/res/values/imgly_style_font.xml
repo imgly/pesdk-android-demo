@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ This file is part of the PhotoEditor Software Development Kit.
+  ~
+  ~ Copyright (C) 2019 img.ly GmbH <contact@img.ly>
+  ~ All rights reserved.
+  ~
+  ~ Redistribution and use in source and binary forms, without
+  ~ modification, are permitted provided that the following license agreement
+  ~ is approved and a legal/financial contract was signed by the user.
+  ~
+  ~ The license agreement can be found under the following link:
+  ~
+  ~ https://www.photoeditorsdk.com/LICENSE.txt
+  -->
+
+
+
+<resources>
+
+    <style name="Imgly.PESDK.Editor.Panel.Font" parent="Imgly.PESDK">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@null</item>
+    </style>
+
+    <style name="Imgly.PESDK.Editor.Panel.Font.FontItem" parent="Imgly.PESDK.default.Item">
+        <item name="android:layout_marginTop">@dimen/container_item_marginTop</item>
+        <item name="android:background">@drawable/imgly_item_border</item>
+    </style>
+
+    <style name="Imgly.PESDK.Editor.Panel.Font.FontItem.Text" parent="Imgly.PESDK">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">57dp</item>
+        <item name="android:padding">0dp</item>
+        <item name="android:textSize">40dp</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginTop">0dp</item>
+        <item name="android:layout_marginBottom">0dp</item>
+        <item name="android:textColor">@color/imgly_editor_text_color</item>
+        <item name="android:text">Ag</item>
+    </style>
+
+    <style name="Imgly.PESDK.Editor.Panel.Font.FontItem.Label" parent="Imgly.PESDK.default.Item.Label">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:lines">1</item>
+        <item name="android:padding">0dp</item>
+        <item name="android:textSize">12dp</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginTop">0dp</item>
+        <item name="android:layout_marginBottom">4dp</item>
+        <item name="android:textColor">@color/imgly_lable_color_states</item>
+        <item name="android:text">@string/pesdk_text_title_font</item>
+        <item name="android:layout_alignParentBottom">true</item>
+    </style>
+
+    <style name="Imgly.PESDK.Editor.Panel.Font.FontVerticalItem" parent="Imgly.PESDK">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:layout_marginBottom">5dp</item>
+    </style>
+
+    <style name="Imgly.PESDK.Editor.Panel.Font.FontVerticalItem.Text" parent="Imgly.PESDK.Editor">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">0dp</item>
+        <item name="android:textSize">30dp</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginTop">9dp</item>
+        <item name="android:layout_marginBottom">0dp</item>
+        <item name="android:textColor">@color/imgly_text_on_image_color</item>
+        <item name="android:text">Agöb</item>
+        <item name="android:lines">1</item>
+    </style>
+
+    <style name="Imgly.PESDK.Editor.Panel.Font.FontVerticalItem.Label" parent="Imgly.PESDK.Editor">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">0dp</item>
+        <item name="android:textSize">12dp</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginTop">1dp</item>
+        <item name="android:layout_marginBottom">0dp</item>
+        <item name="android:textColor">@color/imgly_text_on_image_color_secondary</item>
+        <item name="android:text">Agöb</item>
+        <item name="android:lines">1</item>
+    </style>
+
+    <style name="Imgly.PESDK.Editor.Panel.Font.FontVertical.Container" parent="Imgly.PESDK">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_marginTop">14dp</item>
+        <item name="android:paddingTop">14dp</item>
+        <item name="android:background">@color/imgly_text_input_background_color</item>
+    </style>
+
+    <style name="Imgly.PESDK.Editor.Panel.Font.Thumb" parent="Imgly.PESDK">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">14dp</item>
+        <item name="android:src">@drawable/imgly_list_thumb_handle</item>
+        <item name="android:scaleType">center</item>
+        <item name="android:background">@drawable/imgly_list_thumb</item>
+    </style>
+
+    <style name="Imgly.PESDK.Editor.Panel.Font.OptionList" parent="Imgly.PESDK">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">88dp</item>
+        <item name="android:layout_alignParentBottom">true</item>
+    </style>
+
+    <style name="Imgly.PESDK.Editor.Panel.Font.Expandable" parent="Imgly.PESDK">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:layout_marginBottom">88dp</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+</resources>
