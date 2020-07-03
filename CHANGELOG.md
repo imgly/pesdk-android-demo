@@ -1,5 +1,24 @@
 # PhotoEditor SDK - Changelog
 
+## v7.3.1
+
+### Improved
+* Performance of the user interface.
+* Resolved some compile-time warnings.
+
+### Fixed
+* HistoryOption Button is flickering while editing the image.
+* Icons are sometimes not loading.
+* `ConcurrentModificationException` in `TextInBoundsDrawer`.
+* `NullPointerException` in `EditorShowState`.
+* Some OnEvent annotations are not called initially, which resulted in the wrong UI state.
+* [VideoEditorSDK] Export hangs if the video is stopped in preview.
+* [VideoEditorSDK] Seeking preview sometimes hangs.
+
+### Known issue
+* `StateUnbindedException` is thrown under rare and unknown conditions but `StateUnbindedException` was the wrong exception. Because we can't reproduce the issue, we have corrected the Exception, it's now a RuntimeException with a more detailed stack trace. Now we need to wait on your customer feedback to fix this issue. Thank you for your understanding.
+
+
 ## v7.3.0
 
 ## Added
@@ -9,7 +28,7 @@
 * Broken limits for moving the stickers outside the image border.
 
 ### Know issues
-* [VideoEditorSDK] Background rendering with animated GIF has currently an undefined behaviour, don't use `startActivityForBroadcast()` together with the `'backend:sticker-animated'` module.
+* [VideoEditorSDK] Background rendering with animated GIF has currently an undefined behaviour, don't use `startActivityForBroadcast()` together with the `'backend:sticker-animated'` module. 
 
 
 ## v7.2.6
