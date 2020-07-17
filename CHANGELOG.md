@@ -1,5 +1,22 @@
 # PhotoEditor SDK - Changelog
 
+## v7.4.0
+
+### Fixed
+* Source type is `UNKNOWN` instead of `BROKEN` if `IS_READY` event is called.
+* Gallery of the Camera module did not explicitly select only photos.
+* Personal sticker upload allows to select a video which results in a broken sticker.
+* Camera has wrong size after resume the activity.
+* Emoticons are not filtered by text and text design.
+* `OPTION_TO_FRONT` is disabled and the `bring to front` button is not greyed out if the selected layer is already at the front. (Make sure the item is a `ToggleOption` item and your drawable is a `SelectionList` with enabled state.)
+* TextDesgin and Text stickers can be reduced too much in size.
+
+### Added
+* Popup dialog box that appears when an incorrect data format is passed to the editor.
+* `ToggleOption` item can be used to customize an Option that can be disabled and enabled.
+* `MIN_STICKER_SCALING` and `MAX_STICKER_SCALING` to `TextLayerSettings`, `TextDesignLayerSettings` and `ImageStickerLayerSettings`.
+
+
 ## v7.3.1
 
 ### Improved
