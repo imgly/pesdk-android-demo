@@ -1,5 +1,20 @@
 # PhotoEditor SDK - Changelog
 
+## v7.5.0
+
+### Added
+* Smart Sticker module `:backend-sticker-smart` containing `SmartStickerPack` with 6 predefined SmartSticker.
+* `WeatherProvider` base class for `SmartWeatherCloudSticker` and `SmartWeatherThermostatSticker` 
+* `CanvasDecoder.Drawable` can be used to implement your own SmartSticker.
+* `StickerPackAnimated` which includes gif stickers for VideoEditor SDK. If used in PESDK the first frame is displayed.
+
+### Changed
+* The sticker category of `StickerPackEmoticons` contains Smart Stickers if the `:backend-sticker-smart` is included.
+
+### Fixed
+* `Bring to front` button is not greyed out if the brush layer is already at the front.
+
+
 ## v7.4.0
 
 ### Fixed

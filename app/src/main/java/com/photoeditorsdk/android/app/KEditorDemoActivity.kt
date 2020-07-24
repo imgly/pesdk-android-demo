@@ -22,6 +22,7 @@ import ly.img.android.pesdk.backend.model.state.LoadSettings
 import ly.img.android.pesdk.backend.model.state.SaveSettings
 import ly.img.android.pesdk.ui.activity.PhotoEditorBuilder
 import ly.img.android.pesdk.ui.model.state.*
+import ly.img.android.pesdk.ui.panels.item.PersonalStickerAddItem
 import ly.img.android.pesdk.ui.utils.PermissionRequest
 import ly.img.android.serializer._3.IMGLYFileWriter
 import java.io.File
@@ -67,8 +68,9 @@ class KEditorDemoActivity : Activity(), PermissionRequest.Response {
         }
         .configure<UiConfigSticker> {
             it.setStickerLists(
-              StickerPackEmoticons.getStickerCategory(),
-              StickerPackShapes.getStickerCategory()
+                PersonalStickerAddItem(),
+                StickerPackEmoticons.getStickerCategory(),
+                StickerPackShapes.getStickerCategory()
             )
         }
         .configure<SaveSettings> {

@@ -16,7 +16,7 @@
     <img src="https://img.shields.io/badge/platform-android-2DC25C.svg?style=flat">
   </a>
   <a href="https://artifactory.img.ly/artifactory/imgly/ly/img/android/pesdk/">
-    <img src="https://img.shields.io/badge/VERSION-7.4.0-007ec6.svg?style=flat" alt="Maven">
+    <img src="https://img.shields.io/badge/VERSION-7.5.0-007ec6.svg?style=flat" alt="Maven">
   </a>
   <a href="http://twitter.com/PhotoEditorSDK">
     <img src="https://img.shields.io/badge/twitter-@PhotoEditorSDK-8646E2.svg?style=flat" alt="Twitter">
@@ -126,7 +126,7 @@ buildscript {
         maven { url "https://artifactory.img.ly/artifactory/imgly" }
     }
     dependencies {
-        classpath 'ly.img.android.pesdk:plugin:7.4.0'
+        classpath 'ly.img.android.pesdk:plugin:7.5.0'
     }
 }
 
@@ -146,10 +146,10 @@ imglyConfig {
 
     // Optional: Enable the VideoEditor SDK
     vesdk {
-        enabled true
+        enabled true 
         licencePath 'vesdk_android_license.dms'
     }
-
+    
     // Optional: Enable the PhotoEditor SDK
     pesdk {
         enabled true
