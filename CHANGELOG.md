@@ -1,5 +1,17 @@
 # PhotoEditor SDK - Changelog
 
+## v7.6.0
+
+### Added
+* `ExternalVideoCaptureBuilder` which opens the system's default video recorder app.
+
+### Fixed
+* Wrong icons for opacity and replace in the frame options.
+* First chunk render sometimes in bad quality.
+* Crop reset does not reset the crop area correctly.
+* SmartStickers can crash in release version. Because of a missing Proguard / R8 rule. 
+
+
 ## v7.5.0
 
 ### Added
