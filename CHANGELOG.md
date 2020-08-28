@@ -1,5 +1,11 @@
 # PhotoEditor SDK - Changelog
 
+## v7.6.2
+
+### Fixed
+* The rotation of exported videos being incorrect in some cases.
+
+
 ## v7.6.1
 
 ### Fixed
