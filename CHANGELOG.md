@@ -12,7 +12,7 @@
 * The brush color default values ​​are overwriting the custom brush colors.
 * WeatherSticker not updated in UI.
 * WeatherSticker can freeze the UI.
-* The rotation of exported videos being incorrect in some cases.
+* ~~The rotation of exported videos being incorrect in some cases.~~ (See v7.6.2)
 
 
 ## v7.6.0
