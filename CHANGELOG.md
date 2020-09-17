@@ -1,5 +1,13 @@
 # PhotoEditor SDK - Changelog
 
+## v7.6.3
+
+### Fixed
+* 🚨 [VideoEditorSDK] The 'backend:headless' module produced an "attempting to declare permission" error while installing. Please look how to update your AndroidManifest.xml at https://docs.videoeditorsdk.com/guides/android/v7_6/concepts/background_export
+* Trim settings are not serialized correctly.
+* The checkerboard texture of transparent image areas being displayed incorrectly.
+
+
 ## v7.6.2
 
 ### Fixed
