@@ -1,5 +1,11 @@
 # PhotoEditor SDK - Changelog
 
+## v7.6.4
+
+### Fixed
+* `ArrayIndexOutOfBoundsException` in `TextInBoundsDrawer`.
+
+
 ## v7.6.3
 
 ### Fixed
