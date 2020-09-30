@@ -1,5 +1,15 @@
 # PhotoEditor SDK - Changelog
 
+## v7.6.5
+
+### Fixed
+* Font preview not centered in UI, please update your `imgly_list_item_font_big.xml` and `imgly_list_item_font.xml` layouts.
+* Missing frame aspect tolerance value (`FRAME_THRESHOLD`) in `FrameAsset`.
+
+### Changed
+* Replaced several fonts with new fonts and added additional new fonts.
+
+
 ## v7.6.4
 
 ### Fixed
