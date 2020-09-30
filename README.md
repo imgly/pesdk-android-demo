@@ -16,7 +16,7 @@
     <img src="https://img.shields.io/badge/platform-android-2DC25C.svg?style=flat">
   </a>
   <a href="https://artifactory.img.ly/artifactory/imgly/ly/img/android/pesdk/">
-    <img src="https://img.shields.io/badge/VERSION-7.6.5-007ec6.svg?style=flat" alt="Maven">
+    <img src="https://img.shields.io/badge/VERSION-8.0.0-007ec6.svg?style=flat" alt="Maven">
   </a>
   <a href="http://twitter.com/PhotoEditorSDK">
     <img src="https://img.shields.io/badge/twitter-@PhotoEditorSDK-8646E2.svg?style=flat" alt="Twitter">
@@ -126,7 +126,7 @@ buildscript {
         maven { url "https://artifactory.img.ly/artifactory/imgly" }
     }
     dependencies {
-        classpath 'ly.img.android.pesdk:plugin:7.6.5'
+        classpath 'ly.img.android.pesdk:plugin:8.0.0'
     }
 }
 
@@ -261,10 +261,10 @@ public class CameraDemoActivity extends Activity implements PermissionRequest.Re
 
     public static int PESDK_RESULT = 1;
 
-    private SettingsList createPesdkSettingsList() {
+    private PhotoEditorSettingsList createPesdkSettingsList() {
 
         // Create a empty new SettingsList and apply the changes on this referance.
-        SettingsList settingsList = new SettingsList();
+        PhotoEditorSettingsList settingsList = new PhotoEditorSettingsList();
 
         // If you include our asset Packs and you use our UI you also need to add them to the UI,
         // otherwise they are only available for the backend
@@ -291,17 +291,6 @@ public class CameraDemoActivity extends Activity implements PermissionRequest.Re
           StickerPackShapes.getStickerCategory()
         );
 
-        // Set custom camera image export settings
-        settingsList.getSettingsModel(CameraSettings.class)
-          .setExportDir(Directory.DCIM, "SomeFolderName")
-          .setExportPrefix("camera_");
-
-        // Set custom editor image export settings
-        settingsList.getSettingsModel(SaveSettings.class)
-          .setExportDir(Directory.DCIM, "SomeFolderName")
-          .setExportPrefix("result_")
-          .setSavePolicy(SaveSettings.SavePolicy.RETURN_ALWAYS_ONLY_OUTPUT);
-
         return settingsList;
     }
 
@@ -314,11 +303,11 @@ public class CameraDemoActivity extends Activity implements PermissionRequest.Re
     }
 
     private void openCamera() {
-        SettingsList settingsList = createPesdkSettingsList();
+        PhotoEditorSettingsList settingsList = createPesdkSettingsList();
 
         new CameraPreviewBuilder(this)
           .setSettingsList(settingsList)
-          .startActivityForResult(this, PESDK_RESULT);
+          .startActivityForResult(this, PESDK_RESULT,  PermissionRequest.NEEDED_PREVIEW_PERMISSIONS_AND_FINE_LOCATION);
     }
 
     @Override
@@ -384,10 +373,8 @@ public class EditorDemoActivity extends Activity implements PermissionRequest.Re
 
     private SettingsList createPesdkSettingsList() {
 
-
-
         // Create a empty new SettingsList and apply the changes on this referance.
-        SettingsList settingsList = new SettingsList();
+        PhotoEditorSettingsList settingsList = new PhotoEditorSettingsList();
 
         // If you include our asset Packs and you use our UI you also need to add them to the UI,
         // otherwise they are only available for the backend
@@ -413,12 +400,6 @@ public class EditorDemoActivity extends Activity implements PermissionRequest.Re
           StickerPackEmoticons.getStickerCategory(),
           StickerPackShapes.getStickerCategory()
         );
-
-        // Set custom editor image export settings
-        settingsList.getSettingsModel(SaveSettings.class)
-          .setExportDir(Directory.DCIM, "SomeFolderName")
-          .setExportPrefix("result_")
-          .setSavePolicy(SaveSettings.SavePolicy.RETURN_ALWAYS_ONLY_OUTPUT);
 
         return settingsList;
     }
@@ -449,6 +430,8 @@ public class EditorDemoActivity extends Activity implements PermissionRequest.Re
 
         // Set input image
         settingsList.getSettingsModel(LoadSettings.class).setSource(inputImage);
+
+        settingsList.getSettingsModel(SaveSettings.class).setOutputToGallery(Environment.DIRECTORY_DCIM);
 
         new EditorBuilder(this)
           .setSettingsList(settingsList)

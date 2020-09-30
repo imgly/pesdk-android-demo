@@ -3,12 +3,15 @@ package com.photoeditorsdk.android.app
 import android.app.Activity
 import android.content.Intent
 import android.net.Uri
+import android.os.Build
 import android.os.Bundle
 import android.os.Environment
 import android.provider.MediaStore
 import android.util.Log
 import android.widget.Button
 import android.widget.Toast
+import java.io.File
+import java.io.IOException
 import ly.img.android.pesdk.PhotoEditorSettingsList
 import ly.img.android.pesdk.assets.filter.basic.FilterPackBasic
 import ly.img.android.pesdk.assets.font.basic.FontPackBasic
@@ -17,16 +20,14 @@ import ly.img.android.pesdk.assets.overlay.basic.OverlayPackBasic
 import ly.img.android.pesdk.assets.sticker.emoticons.StickerPackEmoticons
 import ly.img.android.pesdk.assets.sticker.shapes.StickerPackShapes
 import ly.img.android.pesdk.backend.model.EditorSDKResult
-import ly.img.android.pesdk.backend.model.constant.Directory
+import ly.img.android.pesdk.backend.model.constant.OutputMode
 import ly.img.android.pesdk.backend.model.state.LoadSettings
-import ly.img.android.pesdk.backend.model.state.SaveSettings
+import ly.img.android.pesdk.backend.model.state.PhotoEditorSaveSettings
 import ly.img.android.pesdk.ui.activity.PhotoEditorBuilder
 import ly.img.android.pesdk.ui.model.state.*
 import ly.img.android.pesdk.ui.panels.item.PersonalStickerAddItem
 import ly.img.android.pesdk.ui.utils.PermissionRequest
 import ly.img.android.serializer._3.IMGLYFileWriter
-import java.io.File
-import java.io.IOException
 
 class KEditorDemoActivity : Activity(), PermissionRequest.Response {
 
@@ -73,11 +74,10 @@ class KEditorDemoActivity : Activity(), PermissionRequest.Response {
                 StickerPackShapes.getStickerCategory()
             )
         }
-        .configure<SaveSettings> {
+        .configure<PhotoEditorSaveSettings> {
             // Set custom editor image export settings
-            it.setExportDir(Directory.DCIM, "SomeFolderName")
-            it.setExportPrefix("result_")
-            it.savePolicy = SaveSettings.SavePolicy.RETURN_ALWAYS_ONLY_OUTPUT
+            it.setOutputToGallery(Environment.DIRECTORY_DCIM)
+            it.outputMode = OutputMode.EXPORT_IF_NECESSARY
         }
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -92,14 +92,19 @@ class KEditorDemoActivity : Activity(), PermissionRequest.Response {
     }
 
     fun openSystemGalleryToSelectAnImage() {
-        val intent = Intent(Intent.ACTION_PICK, MediaStore.Images.Media.EXTERNAL_CONTENT_URI)
+        val intent = Intent(Intent.ACTION_PICK)
+        if (Build.VERSION.SDK_INT <= Build.VERSION_CODES.KITKAT) {
+            intent.type = "image/*"
+        } else {
+            intent.setDataAndType(MediaStore.Images.Media.EXTERNAL_CONTENT_URI, "image/*")
+        }
         if (intent.resolveActivity(packageManager) != null) {
             startActivityForResult(intent, GALLERY_RESULT)
         } else {
             Toast.makeText(
-              this,
-              "No Gallery APP installed",
-              Toast.LENGTH_LONG
+                this,
+                "No Gallery APP installed",
+                Toast.LENGTH_LONG
             ).show()
         }
     }
@@ -111,27 +116,26 @@ class KEditorDemoActivity : Activity(), PermissionRequest.Response {
             it.source = inputImage
         }
 
-        settingsList[LoadSettings::class].source = inputImage
-
         PhotoEditorBuilder(this)
           .setSettingsList(settingsList)
           .startActivityForResult(this, PESDK_RESULT)
     }
 
 
-    override fun onActivityResult(requestCode: Int, resultCode: Int, intent: Intent) {
+    override fun onActivityResult(requestCode: Int, resultCode: Int, intent: Intent?) {
         super.onActivityResult(requestCode, resultCode, intent)
+
+        intent ?: return
 
         if (resultCode == RESULT_OK && requestCode == GALLERY_RESULT) {
             // Open Editor with some uri in this case with an image selected from the system gallery.
-            val selectedImage = intent.data
-            openEditor(selectedImage)
-        } else if (resultCode == RESULT_OK && requestCode == PESDK_RESULT) { // Editor has saved an Image.
+            val selectedImage = intent?.data
+            if (selectedImage != null) {
+                openEditor(selectedImage)
+            }
+        } else if (resultCode == RESULT_OK && requestCode == PESDK_RESULT) {
             // Editor has saved an Image.
             val data = EditorSDKResult(intent)
-
-            // This adds the result and source image to Android's gallery
-            data.notifyGallery(EditorSDKResult.UPDATE_RESULT and EditorSDKResult.UPDATE_SOURCE)
 
             Log.i("PESDK", "Source image is located here ${data.sourceUri}")
             Log.i("PESDK", "Result image is located here ${data.resultUri}")
@@ -142,18 +146,19 @@ class KEditorDemoActivity : Activity(), PermissionRequest.Response {
             val lastState = data.settingsList
             try {
                 IMGLYFileWriter(lastState).writeJson(File(
-                        Environment.getExternalStorageDirectory(),
-                        "serialisationReadyToReadWithPESDKFileReader.json"
+                    Environment.getExternalStorageDirectory(),
+                    "serialisationReadyToReadWithPESDKFileReader.json"
                 ))
             } catch (e: IOException) {
                 e.printStackTrace()
             }
+
         } else if (resultCode == RESULT_CANCELED && requestCode == PESDK_RESULT) {
             // Editor was canceled
             val data = EditorSDKResult(intent)
 
             val sourceURI = data.sourceUri
-            // TODO: Do something with the source...
+            // TODO: Do something with the source...*/
         }
     }
 

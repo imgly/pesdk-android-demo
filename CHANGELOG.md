@@ -1,5 +1,13 @@
 # PhotoEditor SDK - Changelog
 
+## v8.0.0
+
+### Added
+* Android 10 and Android 11 scoped storage support.
+* Kotlin 1.4.10 support.
+* Gradle 6 compatibility.
+
+
 ## v7.6.5
 
 ### Fixed
