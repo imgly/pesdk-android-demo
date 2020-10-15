@@ -98,15 +98,9 @@ class KEditorDemoActivity : Activity(), PermissionRequest.Response {
         } else {
             intent.setDataAndType(MediaStore.Images.Media.EXTERNAL_CONTENT_URI, "image/*")
         }
-        if (intent.resolveActivity(packageManager) != null) {
-            startActivityForResult(intent, GALLERY_RESULT)
-        } else {
-            Toast.makeText(
-                this,
-                "No Gallery APP installed",
-                Toast.LENGTH_LONG
-            ).show()
-        }
+
+        startActivityForResult(intent, GALLERY_RESULT)
+
     }
 
     fun openEditor(inputImage: Uri?) {
