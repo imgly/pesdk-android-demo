@@ -1,5 +1,30 @@
 # PhotoEditor SDK - Changelog
 
+## v7.6.6
+
+### Fixed
+* Brush size is sometimes too big.
+* Android 11 ScopedStorage `requestLegacyExternalStorage="true"` attribute together with target 29 is not working.
+
+__________________________________________________________________
+
+🚨 
+__This is the latest update of v7, we will not support v7 anymore please update to v8 as soon as possible__
+
+V7 will only run with `targetSdkVersion 29` and `requestLegacyExternalStorage="true"`.
+
+We recommend updating to v8 follow our migration guides [Migration from v7](https://docs.photoeditorsdk.com/guides/android/v8/introduction/migration). 
+v8 it will run with `targetSdkVersion 29` and above with or without `requestLegacyExternalStorage`. 
+
+As of October 15th. In 2020, Google will continue to allow `targetSdkVersion 29` and has not yet announced an end of support date. 
+
+Please inform yourself regularly on the following website.:<br>
+[Google Play’s target API level requirements](https://support.google.com/googleplay/android-developer/answer/113469#targetsdk) <br>
+[Meet Google Play's target API level requirement](https://developer.android.com/distribute/best-practices/develop/target-sdk)
+
+__________________________________________________________________
+
+
 ## v7.6.5
 
 ### Fixed
