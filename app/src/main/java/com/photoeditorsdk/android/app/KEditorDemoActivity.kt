@@ -99,8 +99,15 @@ class KEditorDemoActivity : Activity(), PermissionRequest.Response {
             intent.setDataAndType(MediaStore.Images.Media.EXTERNAL_CONTENT_URI, "image/*")
         }
 
-        startActivityForResult(intent, GALLERY_RESULT)
-
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.R || intent.resolveActivity(packageManager) != null) {
+            startActivityForResult(intent, GALLERY_RESULT)
+        } else {
+            Toast.makeText(
+                this,
+                "No Gallery APP installed",
+                Toast.LENGTH_LONG
+            ).show()
+        }
     }
 
     fun openEditor(inputImage: Uri?) {
@@ -123,7 +130,7 @@ class KEditorDemoActivity : Activity(), PermissionRequest.Response {
 
         if (resultCode == RESULT_OK && requestCode == GALLERY_RESULT) {
             // Open Editor with some uri in this case with an image selected from the system gallery.
-            val selectedImage = intent?.data
+            val selectedImage = intent.data
             if (selectedImage != null) {
                 openEditor(selectedImage)
             }
