@@ -1,3 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+
 <!--
   ~ This file is part of the PhotoEditor Software Development Kit.
   ~
@@ -202,6 +204,8 @@
         <item name="android:clickable">true</item>
     </style>
 
+    <style name="Imgly.PESDK.Editor.Popup.Error" parent="Imgly.PESDK.Editor.Popup.Confirm"/>
+
     <style name="Imgly.PESDK.Editor.Popup.Confirm.Background" parent="Imgly.PESDK.Editor.Popup.Confirm.default.Background">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
@@ -210,6 +214,8 @@
         <item name="android:layout_centerInParent">true</item>
         <item name="android:background">@drawable/imgly_dialog_background</item>
     </style>
+
+    <style name="Imgly.PESDK.Editor.Popup.Error.Background" parent="Imgly.PESDK.Editor.Popup.Confirm.Background"/>
 
     <style name="Imgly.PESDK.Editor.Popup.Confirm.Title" parent="Imgly.PESDK">
         <item name="android:layout_width">wrap_content</item>
@@ -221,6 +227,8 @@
         <item name="android:gravity">center</item>
     </style>
 
+    <style name="Imgly.PESDK.Editor.Popup.Error.Title" parent="Imgly.PESDK.Editor.Popup.Confirm.Title"/>
+
     <style name="Imgly.PESDK.Editor.Popup.Confirm.Text" parent="Imgly.PESDK">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
@@ -231,11 +239,17 @@
         <item name="android:gravity">center</item>
     </style>
 
+    <style name="Imgly.PESDK.Editor.Popup.Error.Text" parent="Imgly.PESDK.Editor.Popup.Confirm.Text"/>
+
     <style name="Imgly.PESDK.Editor.Popup.ButtonContainer" parent="Imgly.PESDK">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:gravity">end</item>
     </style>
+
+    <style name="Imgly.PESDK.Editor.Popup.Confirm.ButtonContainer" parent="Imgly.PESDK.Editor.Popup.ButtonContainer"/>
+
+    <style name="Imgly.PESDK.Editor.Popup.Error.ButtonContainer" parent="Imgly.PESDK.Editor.Popup.ButtonContainer"/>
 
     <style name="Imgly.PESDK.Editor.Popup.Button.Agree" parent="Imgly.PESDK.Button">
         <item name="android:layout_width">88dp</item>
@@ -243,6 +257,10 @@
         <item name="android:background">@drawable/imgly_button_click_overlay</item>
         <item name="android:textColor">@color/imgly_text_color</item>
     </style>
+
+    <style name="Imgly.PESDK.Editor.Popup.Confirm.Button.Agree" parent="Imgly.PESDK.Editor.Popup.Button.Agree"/>
+
+    <style name="Imgly.PESDK.Editor.Popup.Error.Button.Agree" parent="Imgly.PESDK.Editor.Popup.Button.Agree"/>
 
     <style name="Imgly.PESDK.Editor.Popup.Button.Disagree" parent="Imgly.PESDK.Button">
         <item name="android:layout_width">88dp</item>

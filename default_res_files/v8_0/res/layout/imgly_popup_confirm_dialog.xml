@@ -29,7 +29,7 @@
             android:text="@string/pesdk_editor_text_closeEditorAlert"
             style="@style/Imgly.PESDK.Editor.Popup.Confirm.Text"/>
         <LinearLayout
-            style="@style/Imgly.PESDK.Editor.Popup.ButtonContainer">
+            style="@style/Imgly.PESDK.Editor.Popup.Confirm.ButtonContainer">
             <Button
                 android:id="@+id/disagreeButton"
                 android:text="@string/pesdk_editor_button_closeEditorAlertCancelation"
@@ -37,7 +37,7 @@
             <Button
                 android:id="@+id/agreeButton"
                 android:text="@string/pesdk_editor_button_closeEditorAlertConfirmation"
-                style="@style/Imgly.PESDK.Editor.Popup.Button.Agree"/>
+                style="@style/Imgly.PESDK.Editor.Popup.Confirm.Button.Agree"/>
         </LinearLayout>
     </LinearLayout>
 </RelativeLayout>

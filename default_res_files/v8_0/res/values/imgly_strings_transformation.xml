@@ -21,6 +21,7 @@
     <string name="pesdk_transform_button_freeCrop">Custom</string>
     <string name="pesdk_transform_button_resetCrop">Reset</string>
     <string name="pesdk_transform_button_squareCrop">Square</string>
+    <string name="pesdk_transform_button_circleCropMask">Circle</string>
     <string name="pesdk_transform_title_name">Transform</string>
 
 </resources>

@@ -1,5 +1,15 @@
 # PhotoEditor SDK - Changelog
 
+## v8.0.3
+
+### Fixed
+* HEIC images does not orientated correctly.
+* Brush tool colorize the whole picture in some cases.
+* The color of the text font icons are always overwritten with white. It is now using `imgly_icon_color` as color resource.
+* Trim settings and serialization are ignored at startup.
+* Overriding annotation processor arguments.
+
+
 ## v8.0.2
 
 ### Fixed

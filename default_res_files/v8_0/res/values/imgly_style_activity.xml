@@ -19,6 +19,7 @@
 <resources>
 
     <style name="Imgly.PESDK.Editor.Activity" parent="Imgly.PESDK">
+        <item name="android:defaultFocusHighlightEnabled">false</item>
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">match_parent</item>
         <item name="android:orientation">vertical</item>
@@ -38,6 +39,7 @@
     </style>
 
     <style name="Imgly.PESDK.Editor.Activity.ToolPanelContainer" parent="Imgly.PESDK">
+        <item name="android:defaultFocusHighlightEnabled">false</item>
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:minHeight">80dp</item>

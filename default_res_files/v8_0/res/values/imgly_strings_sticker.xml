@@ -36,4 +36,6 @@
     <string name="pesdk_sticker_button_saturation">Saturation</string>
     <string name="pesdk_sticker_button_brightness">Brightness</string>
 
+    <string name="pesdk_sticker_category_name_custom">Uploads</string>
+
 </resources>

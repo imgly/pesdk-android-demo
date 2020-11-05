@@ -28,6 +28,10 @@
     <string name="pesdk_editor_button_closeEditorAlertConfirmation">Yes</string>
     <string name="pesdk_editor_button_closeEditorAlertCancelation">No</string>
 
+    <string name="pesdk_editor_title_somethingWentWrongAlert">Something went wrong.</string>
+    <string name="pesdk_editor_text_somethingWentWrongAlert">Couldn\'t load Photo/Video.</string>
+    <string name="pesdk_editor_button_somethingWentWrongCloseEditor">Close</string>
+
     <string name="pesdk_editor_cancel">Cancel</string>
     <string name="pesdk_editor_accept">Accept</string>
     <string name="pesdk_editor_save">Save</string>

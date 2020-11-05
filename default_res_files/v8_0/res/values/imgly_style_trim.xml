@@ -1,3 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+
 <!--
   ~ This file is part of the PhotoEditor Software Development Kit.
   ~
@@ -18,6 +20,7 @@
     <style name="Imgly.PESDK.Editor.Panel.VideoTrim" parent="Imgly.PESDK.Editor.Panel">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@color/imgly_optionToolBar_background_color</item>
     </style>
 
     <!--style name="Imgly.PESDK.Editor.Panel.Filter" parent="Imgly.PESDK.Editor.Panel">

@@ -1,3 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+
 <!--
   ~ This file is part of the PhotoEditor Software Development Kit.
   ~
@@ -37,6 +39,34 @@
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">match_parent</item>
         <item name="android:padding">8dp</item>
+    </style>
+
+    <style name="Imgly.PESDK.Editor.Panel.Sticker.StickerUploadItem" parent="Imgly.PESDK.default.Item">
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_width">72dp</item>
+        <item name="android:layout_height">72dp</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:padding">0dp</item>
+    </style>
+
+    <style name="Imgly.PESDK.Editor.Panel.Sticker.StickerUploadItem.Label" parent="Imgly.PESDK.default.Item.Label">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:text">@string/pesdk_sticker_button_add</item>
+        <item name="android:textSize">@dimen/default_text_size</item>
+        <item name="android:paddingTop">0dp</item>
+        <item name="android:paddingBottom">0dp</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:lines">1</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/imgly_lable_color_states</item>
+    </style>
+
+    <style name="Imgly.PESDK.Editor.Panel.Sticker.StickerUploadItem.Icon" parent="Imgly.PESDK.default.Item.Icon">
+        <item name="android:layout_width">48dp</item>
+        <item name="android:layout_height">48dp</item>
     </style>
 
     <style name="Imgly.PESDK.Editor.Panel.Sticker.StickerCategoryItem" parent="Imgly.PESDK.default.Item">

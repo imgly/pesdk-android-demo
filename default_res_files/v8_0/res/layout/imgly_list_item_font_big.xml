@@ -1,3 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+
 <!--
   ~ This file is part of the PhotoEditor Software Development Kit.
   ~
@@ -19,7 +21,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/contentHolder"
     style="@style/Imgly.PESDK.Editor.Panel.Font.FontVerticalItem">
-    <TextView
+    <ly.img.android.pesdk.ui.model.FontStyleTextView
         android:id="@+id/text"
         style="@style/Imgly.PESDK.Editor.Panel.Font.FontVerticalItem.Text"/>
     <TextView

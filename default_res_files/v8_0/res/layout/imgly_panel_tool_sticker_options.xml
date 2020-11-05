@@ -15,18 +15,19 @@
   -->
 
 
-
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/rootView"
     style="@style/Imgly.PESDK.Editor.Panel.Sticker.StickerOption">
     <ly.img.android.pesdk.ui.widgets.HorizontalListView
         android:id="@+id/quickOptionList"
+        app:animateItems="false"
         style="@style/Imgly.PESDK.Editor.Panel.Sticker.SmallOptionList"/>
     <ly.img.android.pesdk.ui.widgets.SeekSlider
         android:id="@+id/seekBar"
         style="@style/Imgly.PESDK.Editor.Panel.Sticker.SeekSlider"/>
     <include
         layout="@layout/imgly_option_list"
+        app:animateItems="false"
         style="@style/Imgly.PESDK.Editor.Panel.Sticker.OptionList"/>
 </LinearLayout>
