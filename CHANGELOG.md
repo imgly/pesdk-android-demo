@@ -1,5 +1,17 @@
 # PhotoEditor SDK - Changelog
 
+## v8.0.4
+
+### Fixed
+* Some assets are removed by history.
+* Sound is broken while preview and export.
+* Editor crashes without configuring `VideoEditorSaveSettings` or `PhotoEditorSaveSettings`.
+* Filename of exported videos are prefixed with "img_" by default.
+* `CameraPreviewActivity` is not open to be extensionable.
+* Adding multiple stickers at the same time. 
+* Fast trim video export crashes on some devices.
+
+
 ## v8.0.3
 
 ### Fixed
