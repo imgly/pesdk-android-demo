@@ -16,7 +16,7 @@
     <img src="https://img.shields.io/badge/platform-android-2DC25C.svg?style=flat">
   </a>
   <a href="https://artifactory.img.ly/artifactory/imgly/ly/img/android/pesdk/">
-    <img src="https://img.shields.io/badge/VERSION-8.0.4-007ec6.svg?style=flat" alt="Maven">
+    <img src="https://img.shields.io/badge/VERSION-8.0.5-007ec6.svg?style=flat" alt="Maven">
   </a>
   <a href="http://twitter.com/PhotoEditorSDK">
     <img src="https://img.shields.io/badge/twitter-@PhotoEditorSDK-8646E2.svg?style=flat" alt="Twitter">
@@ -126,7 +126,7 @@ buildscript {
         maven { url "https://artifactory.img.ly/artifactory/imgly" }
     }
     dependencies {
-        classpath 'ly.img.android.pesdk:plugin:8.0.4'
+        classpath 'ly.img.android.pesdk:plugin:8.0.5'
     }
 }
 
@@ -431,7 +431,7 @@ public class EditorDemoActivity extends Activity implements PermissionRequest.Re
         // Set input image
         settingsList.getSettingsModel(LoadSettings.class).setSource(inputImage);
 
-        settingsList.getSettingsModel(SaveSettings.class).setOutputToGallery(Environment.DIRECTORY_DCIM);
+        settingsList.getSettingsModel(PhotoEditorSaveSettings.class).setOutputToGallery(Environment.DIRECTORY_DCIM);
 
         new EditorBuilder(this)
           .setSettingsList(settingsList)

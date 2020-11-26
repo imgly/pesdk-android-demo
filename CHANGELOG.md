@@ -1,5 +1,14 @@
 # PhotoEditor SDK - Changelog
 
+## v8.0.5
+
+### Fixed
+* Camera do not capture an image if `doOpenEditorAfterCapture` is false.
+* Font icons of `TextTool` not rendered correctly on API 23 and below.
+* Some classes and methods are not open as in version 7.
+* Editor crashes when using `SaveSettings` instead of `VideoEditorSaveSettings` or `PhotoEditorSaveSettings`.
+
+
 ## v8.0.4
 
 ### Fixed
