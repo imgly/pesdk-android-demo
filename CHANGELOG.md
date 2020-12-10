@@ -1,5 +1,14 @@
 # PhotoEditor SDK - Changelog
 
+## v8.0.6
+
+### Fixed
+* 🚨 `WRITE_EXTERNAL_STORAGE` was notated with a maximum API level of 28.
+* Font icons of `TextTool` not rendered correctly at all. v8.0.3 and v8.0.5 does not fixing this issue.
+* Artifacts on some devices while loading image or video.
+* Serialization rewritten for better performance, smaller code, and removing of third-party library.
+
+
 ## v8.0.5
 
 ### Fixed
