@@ -94,8 +94,8 @@ class KEditorDemoActivity : Activity(), PermissionRequest.Response {
             it.presetList.also { presets ->
                 presets.add(BrushPresetItem("Red", 0.01f, 0.5f, ColorValue(1.0f, 255, 0, 0)))
                 presets.add(BrushPresetItem("Green", 0.01f, 0.5f, ColorValue(1.0f, 0, 255, 0)))
-                presets.add(BrushPresetItem("Marker", 0.1f, 1f, ColorValue(0.25f, 255, 255, 0)))
-                presets.add(BrushPresetCustomItem("Marker", 0.1f, 1f, ColorValue(0.25f, 255, 255, 0)))
+                presets.add(BrushPresetItem("Marker", 0.03f, 1f, ColorValue(0.5f, 255, 255, 0)))
+                presets.add(BrushPresetCustomItem("Default"))
             }
         }
 
