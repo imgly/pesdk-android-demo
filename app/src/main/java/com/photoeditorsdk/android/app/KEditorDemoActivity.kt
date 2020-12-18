@@ -10,10 +10,6 @@ import android.provider.MediaStore
 import android.util.Log
 import android.widget.Button
 import android.widget.Toast
-import com.photoeditorsdk.android.app.presets.BrushPresetCustomItem
-import com.photoeditorsdk.android.app.presets.BrushPresetItem
-import com.photoeditorsdk.android.app.presets.BrushPresetPanel
-import com.photoeditorsdk.android.app.presets.BrushPresetSettings
 import java.io.File
 import java.io.IOException
 import ly.img.android.pesdk.PhotoEditorSettingsList
@@ -27,7 +23,6 @@ import ly.img.android.pesdk.backend.model.EditorSDKResult
 import ly.img.android.pesdk.backend.model.constant.OutputMode
 import ly.img.android.pesdk.backend.model.state.LoadSettings
 import ly.img.android.pesdk.backend.model.state.PhotoEditorSaveSettings
-import ly.img.android.pesdk.kotlin_extension.ColorValue
 import ly.img.android.pesdk.ui.activity.PhotoEditorBuilder
 import ly.img.android.pesdk.ui.model.state.*
 import ly.img.android.pesdk.ui.panels.item.PersonalStickerAddItem
@@ -83,20 +78,6 @@ class KEditorDemoActivity : Activity(), PermissionRequest.Response {
             // Set custom editor image export settings
             it.setOutputToGallery(Environment.DIRECTORY_DCIM)
             it.outputMode = OutputMode.EXPORT_IF_NECESSARY
-        }.also {
-            enableBrushPresets(it)
-        }
-
-    private fun enableBrushPresets(settingsList: PhotoEditorSettingsList) =
-      settingsList
-        .configure<BrushPresetSettings> {
-            BrushPresetPanel.Companion // This line is necessary to be sure that the static initialisation is done and the tool is replaced.
-            it.presetList.also { presets ->
-                presets.add(BrushPresetItem("Red", 0.01f, 0.5f, ColorValue(1.0f, 255, 0, 0)))
-                presets.add(BrushPresetItem("Green", 0.01f, 0.5f, ColorValue(1.0f, 0, 255, 0)))
-                presets.add(BrushPresetItem("Marker", 0.1f, 1f, ColorValue(0.25f, 255, 255, 0)))
-                presets.add(BrushPresetCustomItem("Marker", 0.1f, 1f, ColorValue(0.25f, 255, 255, 0)))
-            }
         }
 
     override fun onCreate(savedInstanceState: Bundle?) {
