@@ -1,5 +1,19 @@
 # PhotoEditor SDK - Changelog
 
+## v8.0.7
+
+### Fixed
+* Write serialization as ByteArray is broken.
+* ConfigLoader (React Native, Cordova)
+  * Aspect Ratio labels do not display.
+* LayerSettings are not replaceable by `StateHandler.replaceStateClass`.
+* [VideoEditorSDK] Video disappears when resume from background.
+* [PhotoEditorSDK] Image disappears when resume from background.
+* Some classes and methods are not open as in version 7.
+* `OutOfMemoryException` of the brush tool.
+* v8.0.6 is not compilable with ReactNative or Cordova wrapper.
+
+
 ## v8.0.6
 
 ### Fixed
