@@ -1,5 +1,19 @@
 # PhotoEditor SDK - Changelog
 
+
+## v8.0.8
+
+### Fixed
+* ConfigLoader (React Native, Cordova/Ionic).
+  * 🚨 Wrapper always exports even without changes.
+* EditorSDKResult.resultIsDifferentThenSource is always true.
+* 🚨 The result URI is null if export would be skipped, but should be the source URI instead.
+* Crash when drawing with a large brush face on a huge image.
+* Brush is sometimes not drawn completely.
+* Colored brush has bad quality.
+* Maximum Video resolution is calculated wrong, results in an endless loop while export. 
+
+
 ## v8.0.7
 
 ### Fixed
