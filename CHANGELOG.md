@@ -1,5 +1,21 @@
 # PhotoEditor SDK - Changelog
 
+## v8.0.9
+
+### Fixed
+* The app freezes when the export finishes while the editor is in the background.
+* The `hasChanges` flag is true if the user changes something but revert it.
+  * This can result in exports even if nothing has changed.
+* The Editor preview is broken after export.
+* The @throws annotation of some methods are broken since v8.0.0 because of internal kotlin changes.
+* Video export progress is wrong if export is trimmed.
+* The `TransformTool` opens even if there is a `CropAspectAsset` which fits the aspect ratio and the `ForceCrop.SHOW_TOOL_WHEN_CROP_UNMATCHED` is selected.
+* Videos with odd width or height of the crop results in a crash and an endless loop while exporting.
+
+### Added
+* Overridable `onExportDone(result: EditorSDKResult) : Boolean` in EditorActivity, allows to exports multiple times.
+* Overridable `onExportStart(stateHandler: StateHandler)` in EditorActivity, allows to change settings before starting to export.
+
 
 ## v8.0.8
 
