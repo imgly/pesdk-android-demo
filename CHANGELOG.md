@@ -1,5 +1,23 @@
 # PhotoEditor SDK - Changelog
 
+## v8.1.0
+
+### Improved
+* Reduced the methods count of the serializer module by about 12,5k methods.
+
+### Fixed
+* IllegalArgumentException: "Cannot round NaN value" when adding `TextGlLayer` before staring the editor.
+* Sticker tint color is not written to serialization.
+* Color lists does not scroll to the position of the selected color.
+
+## Changed
+* The displayed title of text input changed to "Add Text".
+* Default blend mode of the vintage overlay has changed from `BlendMode.MULTIPLY` to `BlendMode.OVERLAY`.
+
+## Added
+* `pesdk_text_title_input` and `pesdk_textDesign_title_input` to string values to make the text input titles configurable.
+
+
 ## v8.0.9
 
 ### Fixed

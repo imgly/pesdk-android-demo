@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+  ~ This file is part of the PhotoEditor Software Development Kit.
+  ~
+  ~ Copyright (C) 2017 9elements GmbH <contact@9elements.com>
+  ~ All rights reserved.
+  ~
+  ~ Redistribution and use in source and binary forms, without
+  ~ modification, are permitted provided that the following license agreement
+  ~ is approved and a legal/financial contract was signed by the user.
+  ~
+  ~ The license agreement can be found under the following link:
+  ~
+  ~ https://www.photoeditorsdk.com/LICENSE.txt
+  -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="72dp"
+    android:orientation="horizontal">
+
+    <ly.img.android.pesdk.ui.widgets.AutoRotateLayout
+        android:id="@+id/contentHolder"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        style="@style/Imgly.PESDK.Editor.Panel.Tool.FolderItem">
+
+        <ly.img.android.pesdk.ui.widgets.ImageSourceView
+            android:id="@+id/image"
+            style="@style/Imgly.PESDK.Editor.Panel.Tool.FolderItem.Icon"/>
+
+        <View
+            android:id="@+id/selected_overlay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/imgly_item_folder_overlay"/>
+
+        <TextView
+            android:id="@+id/label"
+            style="@style/Imgly.PESDK.Editor.Panel.Tool.FolderItem.Label"/>
+    </ly.img.android.pesdk.ui.widgets.AutoRotateLayout>
+</LinearLayout>
