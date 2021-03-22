@@ -32,7 +32,7 @@
             style="@style/Imgly.PESDK.Editor.Popup.Error.ButtonContainer">
             <Button
                 android:id="@+id/agreeButton"
-                android:text="Close"
+                android:text="@string/pesdk_editor_button_somethingWentWrongCloseEditor"
                 style="@style/Imgly.PESDK.Editor.Popup.Error.Button.Agree"/>
         </LinearLayout>
     </LinearLayout>

@@ -1,5 +1,13 @@
 # PhotoEditor SDK - Changelog
 
+## v8.1.1
+
+### Fixed
+* `NetworkOnMainThreadException` while reading or writing serialization. (Please make sure to read and write the serialization only from a WorkerThread.)
+* Out-of-index OpenGL warnings thrown by some GPU drivers.
+* `pesdk_editor_button_somethingWentWrongCloseEditor` string value was never used by the `imgly_popup_error_dialog.xml`.
+
+
 ## v8.1.0
 
 ### Improved
