@@ -1,5 +1,14 @@
 # PhotoEditor SDK - Changelog
 
+## v8.1.2
+
+### Fixed
+* "Configuration with name 'compile' not found" issue while compiling with newer Gradle version.
+* Text alignment is not serialized correctly.
+* Exporting in some specific resolutions results in an endless export spinner.
+* The sticker `imgly_sticker_emoticons_grin` got a wrong option mode.
+
+
 ## v8.1.1
 
 ### Fixed

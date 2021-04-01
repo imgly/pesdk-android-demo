@@ -16,7 +16,7 @@
     <img src="https://img.shields.io/badge/platform-android-2DC25C.svg?style=flat">
   </a>
   <a href="https://artifactory.img.ly/artifactory/imgly/ly/img/android/pesdk/">
-    <img src="https://img.shields.io/badge/VERSION-8.1.1-007ec6.svg?style=flat" alt="Maven">
+    <img src="https://img.shields.io/badge/VERSION-8.1.2-007ec6.svg?style=flat" alt="Maven">
   </a>
   <a href="http://twitter.com/PhotoEditorSDK">
     <img src="https://img.shields.io/badge/twitter-@PhotoEditorSDK-8646E2.svg?style=flat" alt="Twitter">
@@ -121,12 +121,12 @@ Please ensure that our artifactory repository is listed in your repositories in 
 // Add the PESDK repository and plugin dependency
 buildscript {
     repositories {
-        jcenter()
         google()
+        gradlePluginPortal()
         maven { url "https://artifactory.img.ly/artifactory/imgly" }
     }
     dependencies {
-        classpath 'ly.img.android.pesdk:plugin:8.1.1'
+        classpath 'ly.img.android.pesdk:plugin:8.1.2'
     }
 }
 
@@ -147,13 +147,13 @@ imglyConfig {
     // Optional: Enable the VideoEditor SDK
     vesdk {
         enabled true 
-        licencePath 'vesdk_android_license.dms'
+        licencePath 'vesdk_android_license'
     }
     
     // Optional: Enable the PhotoEditor SDK
     pesdk {
         enabled true
-        licencePath 'pesdk_android_license.dms'
+        licencePath 'pesdk_android_license'
     }
 
     // If you are using another supportLibVersion ('com.android.support') please change this version here our update your own supportLibVersion
