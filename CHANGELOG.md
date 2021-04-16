@@ -1,5 +1,13 @@
 # PhotoEditor SDK - Changelog
 
+## v8.1.3
+
+### Fixed
+* Constructors of some classes are handled incorrectly which results in `IllegalArgumentException`.
+* Missing keep annotation in ProGuard rules.
+* The Alpha channel of exported transparent images has the wrong colors.
+
+
 ## v8.1.2
 
 ### Fixed

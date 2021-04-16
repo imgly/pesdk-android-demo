@@ -7,7 +7,7 @@ imglyConfig {
 
     pesdk {
         enabled true
-        licencePath 'LICENSE' // Name of the Licence file in the asset folder
+        licencePath 'pesdk_android_license' // Name of the Licence file in the asset folder
     }
 
     // Define the modules you are need
@@ -60,7 +60,7 @@ android {
     buildTypes {
         release {
             minifyEnabled true
-            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
 
