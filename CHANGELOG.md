@@ -1,5 +1,17 @@
 # PhotoEditor SDK - Changelog
 
+## v8.2.0
+
+### Added
+* [VideoEditorSDK] Added composition tool for creating video compositions from multiple video clips. (Licence required)
+* [VideoEditorSDK] Added play/pause overlay button to the `MenuToolPanel`.
+* [VideoEditorSDK] Added sound on/off overlay button to the `MenuToolPanel` which mutes and unmutes the audio in the preview player and removes the audio track for exported videos if audio was muted in the preview.
+
+### Fixed
+* Slower export speed if background module is included.
+* High workload on main thread, while editor starts. 
+
+
 ## v8.1.3
 
 ### Fixed
