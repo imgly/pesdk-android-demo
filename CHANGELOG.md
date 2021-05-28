@@ -1,5 +1,15 @@
 # PhotoEditor SDK - Changelog
 
+## v8.3.0
+
+### Added
+* [VideoEditorSDK] Added video clip library for adding predefined video clips to video compositions.
+* [VideoEditorSDK] Added audio tool for adding overlay audio tracks to the edited video.
+
+### Fixed
+* Poor utilization of available resources resulting in bad background thread performance.
+
+
 ## v8.2.0
 
 ### Added
