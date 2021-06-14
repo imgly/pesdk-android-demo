@@ -1,6 +1,24 @@
 # PhotoEditor SDK - Changelog
 
-## v8.3.0
+## v8.3.1
+
+### Fixed
+* ConfigLoader (React Native, Cordova/Ionic).
+  * Auto generated video thumbnails are missing.
+  * `clipTrim` settings are ignored.
+* Some colors of the light color theme were not correct.
+* Filter live view thumbnails loose context when getting app back from background or not using it for a while.
+* Dynamic Time sticker doesn't represent current value all the time.
+* Single Brush points not rendered.
+* The value for the frame width is displayed inaccurately.
+* The `OutputMode.EXPORT_IF_NECESSARY` output mode does not work.
+* Entering gallery from `CameraPreviewActivity` did not work on Android API 30 or higher.
+* [VideoEditorSDK] Video output resolution is sometimes too low. (Se also `VideoEditorSaveSettings.allowOrientationMatrixMetadata`)
+* 🚨 The minimum size of a text sticker was too big compared to iOS. (To restore the old behavior, set `TextLayerSettings.MIN_STICKER_SCALING = 0.05`.)
+
+### Added
+* [VideoEditorSDK] Enable VideoEditorSaveSettings.allowOrientationMatrixMetadata, can increase the output resolution of portrait video on low-end phones. (Note that some video players may choose to ignore the matrix metadata.)
+
 
 ### Added
 * [VideoEditorSDK] Added video clip library for adding predefined video clips to video compositions.
