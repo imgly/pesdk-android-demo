@@ -1,5 +1,16 @@
 # PhotoEditor SDK - Changelog
 
+## v8.3.2
+
+### Fixed
+* Typo in IMGLYPlugin config. Renamed `licencePath` to `licensePath`  
+* Typo in property `resultIsDifferentThanSource` of `EditorSDKResult`
+* The transparency pattern is drawn to the full size of the canvas, rather than just the image area.
+* Thumbnail for custom stickers group wasn't getting updated on adding a new custom sticker.
+* Color is applied to the wrong sticker layer when another sticker layer is selected from the color tool panel.
+* Color is applied to the wrong text layer when another text layer is selected from the color tool panel.
+
+
 ## v8.3.1
 
 ### Fixed
