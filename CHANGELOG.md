@@ -1,5 +1,27 @@
 # PhotoEditor SDK - Changelog
 
+## v8.3.3
+
+### Fixed
+* TextDesign has added flipped horizontally if the image is horizontally flipped. 
+* If the image is flipped after adding Text, Text is flipped horizontally (while TextDesign is not). 
+* Poor video quality, when using `TAKE_SOURCE_BIT_RATE`.
+* `UnsupportedClassVersionError` when applying the `IMGLYPlugin` in projects compiling using JDK 1.8.
+* The history sometimes contains duplicate entries.
+* The history sometimes changes the UI state.
+* Sometimes the history is destroyed or in the wrong order.
+* Personal sticker rotation is incorrect after undo.
+* Incorrect orientation of HEIF images.
+* After resuming the app without a license, the editor preview is black.
+* The editor preview becomes black after resuming while in the overlay tool.
+* Editor crashes after closing with a `StateUnbindedException`. 
+* Exception is named `StateUnbindedException` instead of `StateUnboundedException`.
+* `LOADING_START` was getting dispatched along with `LOADING_FINISH` and vice versa.
+
+### Added
+* `VideoEditorSaveSettings.bitsPerPixel` as alternative to `VideoEditorSaveSettings.bitRate`.
+
+
 ## v8.3.2
 
 ### Fixed
