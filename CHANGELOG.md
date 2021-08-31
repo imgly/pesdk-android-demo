@@ -1,5 +1,17 @@
 # PhotoEditor SDK - Changelog
 
+## v8.3.4
+
+### Fixed
+
+* In some cases, a non-local content URI can cause an `IllegalArgumentException("column '_data' does not exist")` resulting in a crash.
+* Export of images imported using MediaStore Uri was failing on Android 10 and above.
+    * To preserve GPS-IFD EXIF tags in the exported image, ACCESS_MEDIA_LOCATION permission is required on Android 10 and above.
+* `EditorShowState.Event.PREVIEW_IS_READY` was getting dispatched along with `EditorShowState.Event.IS_READY` and vice versa.
+* `VideoComposition.Event.STATE_REVERTED` was getting dispatched along with `AudioOverlaySettings.Event.STATE_REVERTED` and vice versa.
+* [VideoEditorSDK] "Add more clips" is now a translatable string. It is now called "vesdk_trim_add_clip_button".
+
+
 ## v8.3.3
 
 ### Fixed
