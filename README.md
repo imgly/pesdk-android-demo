@@ -16,7 +16,7 @@
     <img src="https://img.shields.io/badge/platform-android-2DC25C.svg?style=flat">
   </a>
   <a href="https://artifactory.img.ly/artifactory/imgly/ly/img/android/pesdk/">
-    <img src="https://img.shields.io/badge/VERSION-8.3.4-007ec6.svg?style=flat" alt="Maven">
+    <img src="https://img.shields.io/badge/VERSION-9.0.0-007ec6.svg?style=flat" alt="Maven">
   </a>
   <a href="http://twitter.com/PhotoEditorSDK">
     <img src="https://img.shields.io/badge/twitter-@PhotoEditorSDK-8646E2.svg?style=flat" alt="Twitter">
@@ -82,13 +82,6 @@ The PhotoEditor core library for Android. Containing the OpenGL and toolkit impl
 __UI Component__ <br/>
 The default UI components consisting of LivePreview and Editor Activity.
 
-### Dependencies
-
-Two Google support libraries needed or used by the SDK.
-
-* com.android.support:recyclerview-v7
-* com.android.support:support-annotations
-
 
 ## Documentation
 
@@ -126,7 +119,7 @@ buildscript {
         maven { url "https://artifactory.img.ly/artifactory/imgly" }
     }
     dependencies {
-        classpath 'ly.img.android.pesdk:plugin:8.3.2'
+        classpath 'ly.img.android.pesdk:plugin:9.0.0'
     }
 }
 
@@ -155,9 +148,6 @@ imglyConfig {
         enabled true
         licencePath 'pesdk_android_license'
     }
-
-    // If you are using another supportLibVersion ('com.android.support') please change this version here our update your own supportLibVersion
-    supportLibVersion "28.0.0"
 
     // Define the modules you are need
     modules {
