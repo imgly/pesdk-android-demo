@@ -1,5 +1,16 @@
 # PhotoEditor SDK - Changelog
 
+## v9.0.0
+
+### Changed
+
+* Migrated to AndroidX
+
+__________________________________________________________________
+🚨 __We do not plan to release new feature updates to v8. Only the most critical bug fixes will be back-ported to v8.__
+__________________________________________________________________
+
+
 ## v8.3.4
 
 ### Fixed

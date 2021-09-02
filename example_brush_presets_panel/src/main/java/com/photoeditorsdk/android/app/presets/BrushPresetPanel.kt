@@ -5,7 +5,7 @@ import android.animation.AnimatorListenerAdapter
 import android.animation.AnimatorSet
 import android.animation.ObjectAnimator
 import android.content.Context
-import android.support.annotation.MainThread
+import androidx.annotation.MainThread
 import android.view.View
 import com.photoeditorsdk.android.app.R
 import ly.img.android.pesdk.annotations.OnEvent
