@@ -205,6 +205,15 @@ open class BrushPresetPanel(stateHandler: StateHandler) : AbstractToolPanel(stat
         }
     }
 
+    @OnEvent(value = [EditorShowState.Event.LAYER_TOUCH_END], triggerDelay = 30) 
+    fun saveHistoryOnTouchEnd(menuState: UiStateMenu) {
+        if (menuState.currentPanelData.panelClass == this.javaClass
+            || menuState.currentPanelData.panelClass == ColorOptionBrushToolPanel::class.java
+        ) {
+            saveLocalState()
+        }
+    }
+
     @MainThread @OnEvent(value = [UiStateMenu.Event.TOOL_STACK_CHANGED], triggerDelay = 30)
     open fun changeQuickOptionVisibility(menuState: UiStateMenu) {
         val visibility = if (menuState.currentTool === this) View.VISIBLE else View.INVISIBLE
