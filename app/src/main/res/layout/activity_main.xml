@@ -12,59 +12,79 @@
   ~
   ~ https://www.photoeditorsdk.com/LICENSE.txt
   -->
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              xmlns:tools="http://schemas.android.com/tools"
-              android:layout_width="match_parent"
-              android:layout_height="match_parent"
-              android:orientation="vertical"
-              android:paddingLeft="16dp"
-              android:paddingRight="16dp"
-              android:paddingTop="16dp"
-              android:paddingBottom="16dp"
-              tools:context=".KEditorDemoActivity"
-              android:background="#FFFFFF"
-              android:layout_alignParentTop="true">
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_black"
+    tools:context=".KEditorDemoActivity">
 
-    <ly.img.android.pesdk.ui.widgets.ImageSourceView
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="2"
-        android:src="@drawable/imgly_logo_launcher"
-        android:layout_gravity="center_horizontal"/>
-
-    <Button
-        android:id="@+id/openGallery"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:layout_margin="8dp"
-        android:textSize="12sp"
-        android:text="TAKE FROM GALLERY"
-        android:textColor="#4C4C4C"
-        android:textStyle="bold"
-        android:layout_gravity="center_horizontal"
-        android:background="@drawable/button_launcher_background"/>
-
-    <TextView
-        android:id="@+id/infoText"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:text=""/>
-
-    <Space
-        android:layout_width="wrap_content"
-        android:layout_height="0dp"
-        android:layout_weight="1"/>
-
-    <TextView
-        android:id="@+id/showVersion"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="left|start"
-        android:text="@string/pesdk_version"
-        android:textSize="12sp"
-        android:textColor="#4C4C4C" />
+        android:layout_gravity="center"
+        android:layout_marginBottom="45dp"
+        android:gravity="center"
+        android:orientation="vertical">
 
-</LinearLayout>
+        <ly.img.android.pesdk.ui.widgets.ImageSourceView
+            android:id="@+id/pesdk_logo"
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:src="@drawable/imgly_logo_pesdk" />
+
+        <Button
+            android:id="@+id/openGallery"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:background="@drawable/button_launcher_background"
+            android:padding="16dp"
+            android:text="TAKE FROM GALLERY"
+            android:textAllCaps="true"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp">
+
+        <TextView
+            android:id="@+id/showVersion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:alpha="0.5"
+            android:text="@string/pesdk_version"
+            android:textColor="#ffffff"
+            android:textSize="12sp" />
+
+        <ly.img.android.pesdk.ui.widgets.ImageSourceView
+            android:layout_width="72dp"
+            android:layout_height="45dp"
+            android:layout_centerInParent="true"
+            android:alpha="0.5"
+            android:src="@drawable/imgly_logo" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:alpha="0.5"
+            android:text="@string/copyright_text"
+            android:textColor="#ffffffff" />
+
+    </RelativeLayout>
+
+</FrameLayout>
 
