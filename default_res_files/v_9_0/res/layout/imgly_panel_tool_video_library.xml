@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ This file is part of the PhotoEditor Software Development Kit.
+  ~
+  ~ Copyright (C) 2019 img.ly GmbH <contact@img.ly>
+  ~ All rights reserved.
+  ~
+  ~ Redistribution and use in source and binary forms, without
+  ~ modification, are permitted provided that the following license agreement
+  ~ is approved and a legal/financial contract was signed by the user.
+  ~
+  ~ The license agreement can be found under the following link:
+  ~
+  ~ https://www.photoeditorsdk.com/LICENSE.txt
+  -->
+
+
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rootView"
+    style="@style/Imgly.PESDK.Editor.Panel.VideoLibrary">
+    <ly.img.android.pesdk.ui.widgets.DraggableExpandView
+        android:id="@+id/expandView"
+        style="@style/Imgly.PESDK.Editor.Panel.VideoLibrary.Expandable">
+        <ly.img.android.pesdk.ui.widgets.GridListView
+            android:id="@+id/grid"
+            app:spanSize="120dp"
+            android:background="#FF000000"
+            style="@style/Imgly.PESDK.Editor.Panel.AudioGallery.VideoLibraryGrid.Container"/>
+        <ImageView
+            android:id="@id/draggerThumb"
+            style="@style/Imgly.PESDK.Editor.Panel.VideoLibrary.Thumb"/>
+    </ly.img.android.pesdk.ui.widgets.DraggableExpandView>
+    <include layout="@layout/imgly_option_list"
+        style="@style/Imgly.PESDK.Editor.Panel.VideoLibrary.OptionList"/>
+</RelativeLayout>

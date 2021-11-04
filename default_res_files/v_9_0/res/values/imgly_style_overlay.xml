@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+  ~ This file is part of the PhotoEditor Software Development Kit.
+  ~
+  ~ Copyright (C) 2019 img.ly GmbH <contact@img.ly>
+  ~ All rights reserved.
+  ~
+  ~ Redistribution and use in source and binary forms, without
+  ~ modification, are permitted provided that the following license agreement
+  ~ is approved and a legal/financial contract was signed by the user.
+  ~
+  ~ The license agreement can be found under the following link:
+  ~
+  ~ https://www.photoeditorsdk.com/LICENSE.txt
+  -->
+
+
+
+<resources>
+
+    <style name="Imgly.PESDK.Editor.Panel.Overlay" parent="Imgly.PESDK.Editor.Panel">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="Imgly.PESDK.Editor.Panel.Overlay.OverlayItem" parent="Imgly.PESDK.default.Item">
+        <item name="android:layout_marginTop">@dimen/container_item_marginTop</item>
+    </style>
+
+    <style name="Imgly.PESDK.Editor.Panel.Overlay.OverlayItem.Icon" parent="Imgly.PESDK.default.Item.Icon">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_marginLeft">@dimen/overlay_list_margin_left</item>
+        <item name="android:layout_marginStart">@dimen/overlay_list_margin_left</item>
+        <item name="android:layout_marginRight">@dimen/overlay_list_margin_right</item>
+        <item name="android:layout_marginEnd">@dimen/overlay_list_margin_right</item>
+    </style>
+
+    <style name="Imgly.PESDK.Editor.Panel.Overlay.OverlayItem.Label" parent="Imgly.PESDK.default.Item.Label">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/item_label_text_size</item>
+        <item name="android:textColor">@color/imgly_text_on_image_color</item>
+        <item name="android:paddingTop">4dp</item>
+        <item name="android:paddingBottom">4dp</item>
+        <item name="android:background">@drawable/imgly_list_item_label_background</item>
+        <item name="android:text">@string/pesdk_overlay_title_name</item>
+        <item name="android:lines">1</item>
+        <item name="android:layout_alignParentBottom">true</item>
+    </style>
+
+    <style name="Imgly.PESDK.Editor.Panel.Overlay.BlendModeItem" parent="Imgly.PESDK">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">24dp</item>
+        <item name="android:layout_marginTop">12dp</item>
+        <item name="android:layout_marginBottom">12dp</item>
+        <item name="android:layout_marginLeft">@dimen/blend_mode_margin_left</item>
+        <item name="android:layout_marginStart">@dimen/blend_mode_margin_left</item>
+        <item name="android:layout_marginRight">@dimen/blend_mode_margin_right</item>
+        <item name="android:layout_marginEnd">@dimen/blend_mode_margin_right</item>
+    </style>
+
+    <style name="Imgly.PESDK.Editor.Panel.Overlay.BlendModeItem.Label" parent="Imgly.PESDK.default.Item.Label">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">24dp</item>
+        <item name="android:paddingLeft">12dp</item>
+        <item name="android:paddingStart">6dp</item>
+        <item name="android:paddingRight">6dp</item>
+        <item name="android:paddingEnd">12dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:lines">1</item>
+        <item name="android:textSize">18dp</item>
+        <item name="android:textColor">@color/imgly_text_on_image_color</item>
+    </style>
+
+    <style name="Imgly.PESDK.Editor.Panel.Overlay.ModeList" parent="Imgly.PESDK">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">88dp</item>
+        <item name="android:layout_centerHorizontal">true</item>
+    </style>
+
+    <style name="Imgly.PESDK.Editor.Panel.Overlay.SeekSlider" parent="Imgly.PESDK.SeekSlider">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="Imgly.PESDK.Editor.Panel.Overlay.ModeContainer" parent="Imgly.PESDK">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:clickable">true</item>
+    </style>
+
+    <style name="Imgly.PESDK.Editor.Panel.Overlay.OverlayItem.Overlay" parent="Imgly.PESDK">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="Imgly.PESDK.Editor.Panel.Overlay.OverlayItem.Overlay.Icon" parent="Imgly.PESDK">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">12dp</item>
+        <item name="android:layout_marginStart">12dp</item>
+        <item name="android:layout_marginRight">12dp</item>
+        <item name="android:layout_marginEnd">12dp</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:scaleType">center</item>
+    </style>
+
+    <style name="Imgly.PESDK.Editor.Panel.Overlay.OverlayItem.Border" parent="Imgly.PESDK">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@drawable/imgly_item_border</item>
+    </style>
+
+</resources>

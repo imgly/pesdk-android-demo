@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ This file is part of the PhotoEditor Software Development Kit.
+  ~
+  ~ Copyright (C) 2017 9elements GmbH <contact@9elements.com>
+  ~ All rights reserved.
+  ~
+  ~ Redistribution and use in source and binary forms, without
+  ~ modification, are permitted provided that the following license agreement
+  ~ is approved and a legal/financial contract was signed by the user.
+  ~
+  ~ The license agreement can be found under the following link:
+  ~
+  ~ https://www.photoeditorsdk.com/LICENSE.txt
+  -->
+
+
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="48dp"
+    android:height="48dp"
+    android:viewportWidth="48"
+    android:viewportHeight="48">
+    <path
+        android:pathData="M23,17L18,21H14V27H18L23,31V17Z"
+        android:strokeLineJoin="round"
+        android:strokeWidth="2"
+        android:strokeColor="@color/imgly_icon_color_on_canvas"
+        android:strokeLineCap="round"/>
+    <path
+        android:pathData="M27.54,20.46C28.4774,21.3976 29.004,22.6691 29.004,23.995C29.004,25.3208 28.4774,26.5923 27.54,27.53"
+        android:strokeLineJoin="round"
+        android:strokeWidth="2"
+        android:strokeColor="@color/imgly_icon_color_on_canvas"/>
+    <path
+        android:pathData="M30,16C31.9209,18.122 33,20.9996 33,24C33,27.0004 31.9209,29.878 30,32"
+        android:strokeLineJoin="round"
+        android:strokeWidth="2"
+        android:strokeColor="@color/imgly_icon_color_on_canvas"/>
+</vector>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ This file is part of the PhotoEditor Software Development Kit.
+  ~
+  ~ Copyright (C) 2019 img.ly GmbH <contact@img.ly>
+  ~ All rights reserved.
+  ~
+  ~ Redistribution and use in source and binary forms, without
+  ~ modification, are permitted provided that the following license agreement
+  ~ is approved and a legal/financial contract was signed by the user.
+  ~
+  ~ The license agreement can be found under the following link:
+  ~
+  ~ https://www.photoeditorsdk.com/LICENSE.txt
+  -->
+
+
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:viewportWidth="48"
+    android:viewportHeight="48"
+    android:width="48dp"
+    android:height="48dp">
+    <path
+        android:pathData="M32 32.467619V14H16v18.467619l8 -4.8zM16 12h16c1.104569 0 2 0.895431 2 2V36L24 30 14 36V14c0 -1.104569 0.895431 -2 2 -2zm9.441811 11.338809H22.557544L21.6 26h-1.849204l3.481206 -9h1.524385L28.5 26h-1.85zm-2.440112 -1.332466h1.995957l-1.003462 -2.988452z"
+        android:fillColor="@color/imgly_icon_color" />
+</vector>
