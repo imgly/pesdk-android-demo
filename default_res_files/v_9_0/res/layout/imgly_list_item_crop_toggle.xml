@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+  ~ This file is part of the PhotoEditor Software Development Kit.
+  ~
+  ~ Copyright (C) 2019 img.ly GmbH <contact@img.ly>
+  ~ All rights reserved.
+  ~
+  ~ Redistribution and use in source and binary forms, without
+  ~ modification, are permitted provided that the following license agreement
+  ~ is approved and a legal/financial contract was signed by the user.
+  ~
+  ~ The license agreement can be found under the following link:
+  ~
+  ~ https://www.photoeditorsdk.com/LICENSE.txt
+  -->
+
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/contentHolder"
+    style="@style/Imgly.PESDK.Editor.Panel.Transform.CropItem">
+    <RelativeLayout
+        style="@style/Imgly.PESDK.Editor.Panel.Transform.CropItem.Border">
+        <ly.img.android.pesdk.ui.view.CropAspectView
+            android:id="@+id/aspectImage"
+            app:fillColor="@color/imgly_crop_item_fill_color_states"
+            app:strokeColor="@color/imgly_crop_item_line_color_states"
+            style="@style/Imgly.PESDK.Editor.Panel.Transform.CropItem.Icon"/>
+        <ly.img.android.pesdk.ui.widgets.ImageSourceView
+            android:id="@+id/icon"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="6dp"
+            android:layout_marginBottom="14dp"/>
+        <ly.img.android.pesdk.ui.widgets.ImageSourceView
+            android:id="@+id/selected_shuffle"
+            app:src="@drawable/imgly_icon_swap"
+            style="@style/Imgly.PESDK.Editor.Panel.Transform.CropItem.Overlay.Icon"/>
+        <TextView
+            android:id="@+id/label"
+            style="@style/Imgly.PESDK.Editor.Panel.Transform.CropItem.Label"/>
+    </RelativeLayout>
+</RelativeLayout>
+

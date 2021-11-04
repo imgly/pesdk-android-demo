@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+  ~ This file is part of the PhotoEditor Software Development Kit.
+  ~
+  ~ Copyright (C) 2017 9elements GmbH <contact@9elements.com>
+  ~ All rights reserved.
+  ~
+  ~ Redistribution and use in source and binary forms, without
+  ~ modification, are permitted provided that the following license agreement
+  ~ is approved and a legal/financial contract was signed by the user.
+  ~
+  ~ The license agreement can be found under the following link:
+  ~
+  ~ https://www.photoeditorsdk.com/LICENSE.txt
+  -->
+
+<resources>
+
+    <style name="Imgly.PESDK.Editor.Panel.AudioComposition.SeekSlider" parent="Imgly.PESDK.SeekSlider">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+
+    <style name="Imgly.PESDK.Editor.Panel.AudioComposition" parent="Imgly.PESDK.Editor.Panel">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@color/imgly_optionToolBar_background_color</item>
+    </style>
+
+
+    <style name="Imgly.PESDK.Editor.Panel.AudioComposition.AudioOverlaySlider" parent="Imgly.PESDK">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">72dp</item>
+        <item name="android:layout_marginLeft">0dp</item>
+        <item name="android:layout_marginRight">0dp</item>
+        <item name="android:paddingTop">12dp</item>
+        <item name="android:paddingBottom">12dp</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+    </style>
+
+    
+    <style name="Imgly.PESDK.Editor.Panel.AudioGallery" parent="Imgly.PESDK">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@null</item>
+    </style>
+
+    <style name="Imgly.PESDK.Editor.Panel.AudioGallery.AudioGalleryVerticalItem" parent="Imgly.PESDK">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:layout_marginBottom">5dp</item>
+        <item name="android:background">@drawable/imgly_audio_selection_item_background</item>
+    </style>
+
+    <style name="Imgly.PESDK.Editor.Panel.AudioGallery.AudioGalleryVerticalItem.Artist" parent="Imgly.PESDK.Editor">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">0dp</item>
+        <item name="android:textSize">12dp</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:textColor">@color/imgly_editor_text_color_secondary</item>
+        <item name="android:lines">1</item>
+    </style>
+
+    <style name="Imgly.PESDK.Editor.Panel.AudioGallery.AudioGalleryVerticalItem.Label" parent="Imgly.PESDK.Editor">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">0dp</item>
+        <item name="android:textSize">16dp</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:textColor">@color/imgly_editor_text_color</item>
+        <item name="android:lines">1</item>
+    </style>
+
+    <style name="Imgly.PESDK.Editor.Panel.AudioGallery.AudioGalleryVerticalItem.Duration" parent="Imgly.PESDK.Editor">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">16dp</item>
+        <item name="android:textSize">12dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textColor">@color/imgly_editor_text_color</item>
+        <item name="android:lines">1</item>
+    </style>
+
+    <style name="Imgly.PESDK.Editor.Panel.AudioGallery.AudioGalleryVertical.Container" parent="Imgly.PESDK">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_marginTop">14dp</item>
+        <item name="android:paddingTop">14dp</item>
+        <item name="android:background">@color/imgly_audio_selection_background_color</item>
+    </style>
+
+    <style name="Imgly.PESDK.Editor.Panel.AudioGallery.Thumb" parent="Imgly.PESDK">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">14dp</item>
+        <item name="android:src">@drawable/imgly_list_thumb_handle</item>
+        <item name="android:scaleType">center</item>
+        <item name="android:background">@drawable/imgly_list_thumb</item>
+    </style>
+
+    <style name="Imgly.PESDK.Editor.Panel.AudioGallery.OptionList" parent="Imgly.PESDK">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">88dp</item>
+        <item name="android:layout_alignParentBottom">true</item>
+    </style>
+
+    <style name="Imgly.PESDK.Editor.Panel.AudioGallery.Expandable" parent="Imgly.PESDK">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:layout_marginBottom">88dp</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="Imgly.PESDK.Editor.Panel.Audio.AudioCategoryItem" parent="Imgly.PESDK.default.Item">
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_width">72dp</item>
+        <item name="android:layout_height">80dp</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:paddingTop">8dp</item>
+    </style>
+
+    <style name="Imgly.PESDK.Editor.Panel.Audio.AudioCategoryItem.Label" parent="Imgly.PESDK.default.Item.Label">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/item_label_text_size</item>
+        <item name="android:textColor">@color/imgly_text_on_image_color</item>
+        <item name="android:paddingTop">4dp</item>
+        <item name="android:paddingBottom">4dp</item>
+        <item name="android:background">@drawable/imgly_list_item_label_background</item>
+        <item name="android:text"></item>
+        <item name="android:lines">1</item>
+        <item name="android:layout_alignParentBottom">true</item>
+    </style>
+
+    <style name="Imgly.PESDK.Editor.Panel.Audio.AudioCategoryItem.Icon" parent="Imgly.PESDK.default.Item.Icon">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_margin">0.5dp</item>
+    </style>
+
+    <style name="Imgly.PESDK.Editor.Panel.Audio.AudioCategoryItem.Border" parent="Imgly.PESDK">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@drawable/imgly_item_border</item>
+    </style>
+
+    <style name="Imgly.PESDK.Editor.Panel.Audio.AudioCategoryIconItem" parent="Imgly.PESDK.default.Item">
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_width">72dp</item>
+        <item name="android:layout_height">72dp</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:layout_marginTop">8dp</item>
+    </style>
+
+    <style name="Imgly.PESDK.Editor.Panel.Audio.AudioCategoryIconItem.Label" parent="Imgly.PESDK.default.Item.Label">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:text">Agöb</item>
+    </style>
+
+    <style name="Imgly.PESDK.Editor.Panel.Audio.AudioCategoryIconItem.Icon" parent="Imgly.PESDK.default.Item.Icon">
+        <item name="android:layout_width">48dp</item>
+        <item name="android:layout_height">48dp</item>
+    </style>
+
+    <style name="Imgly.PESDK.Editor.Panel.Audio.AudioCategoryIconItem.Border" parent="Imgly.PESDK">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@drawable/imgly_item_border</item>
+    </style>
+
+</resources>

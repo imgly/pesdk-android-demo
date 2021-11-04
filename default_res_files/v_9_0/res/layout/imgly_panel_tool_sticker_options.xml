@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ This file is part of the PhotoEditor Software Development Kit.
+  ~
+  ~ Copyright (C) 2019 img.ly GmbH <contact@img.ly>
+  ~ All rights reserved.
+  ~
+  ~ Redistribution and use in source and binary forms, without
+  ~ modification, are permitted provided that the following license agreement
+  ~ is approved and a legal/financial contract was signed by the user.
+  ~
+  ~ The license agreement can be found under the following link:
+  ~
+  ~ https://www.photoeditorsdk.com/LICENSE.txt
+  -->
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rootView"
+    style="@style/Imgly.PESDK.Editor.Panel.Sticker.StickerOption">
+    <ly.img.android.pesdk.ui.widgets.HorizontalListView
+        android:id="@+id/quickOptionList"
+        app:animateItems="false"
+        style="@style/Imgly.PESDK.Editor.Panel.Sticker.SmallOptionList"/>
+    <ly.img.android.pesdk.ui.widgets.SeekSlider
+        android:id="@+id/seekBar"
+        style="@style/Imgly.PESDK.Editor.Panel.Sticker.SeekSlider"/>
+    <include
+        layout="@layout/imgly_option_list"
+        app:animateItems="false"
+        style="@style/Imgly.PESDK.Editor.Panel.Sticker.OptionList"/>
+</LinearLayout>

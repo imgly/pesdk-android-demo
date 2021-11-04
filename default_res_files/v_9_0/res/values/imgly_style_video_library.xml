@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+  ~ This file is part of the PhotoEditor Software Development Kit.
+  ~
+  ~ Copyright (C) 2017 9elements GmbH <contact@9elements.com>
+  ~ All rights reserved.
+  ~
+  ~ Redistribution and use in source and binary forms, without
+  ~ modification, are permitted provided that the following license agreement
+  ~ is approved and a legal/financial contract was signed by the user.
+  ~
+  ~ The license agreement can be found under the following link:
+  ~
+  ~ https://www.photoeditorsdk.com/LICENSE.txt
+  -->
+
+<resources>
+
+    <style name="Imgly.PESDK.Editor.Panel.VideoLibrary" parent="Imgly.PESDK">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@null</item>
+    </style>
+
+    <style name="Imgly.PESDK.Editor.Panel.VideoLibrary.Thumb" parent="Imgly.PESDK">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">14dp</item>
+        <item name="android:src">@drawable/imgly_list_thumb_handle</item>
+        <item name="android:scaleType">center</item>
+        <item name="android:background">@drawable/imgly_list_thumb</item>
+    </style>
+
+    <style name="Imgly.PESDK.Editor.Panel.VideoLibrary.OptionList" parent="Imgly.PESDK">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">88dp</item>
+        <item name="android:layout_alignParentBottom">true</item>
+    </style>
+
+    <style name="Imgly.PESDK.Editor.Panel.VideoLibrary.Expandable" parent="Imgly.PESDK">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:layout_marginBottom">88dp</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="Imgly.PESDK.Editor.Panel.AudioGallery.VideoLibraryGrid.Container" parent="Imgly.PESDK">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_marginTop">14dp</item>
+        <item name="android:paddingTop">14dp</item>
+        <item name="android:background">@color/imgly_audio_selection_background_color</item>
+    </style>
+
+    <style name="Imgly.PESDK.Editor.Panel.Video.VideoCategoryItem" parent="Imgly.PESDK.default.Item">
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_width">72dp</item>
+        <item name="android:layout_height">80dp</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:paddingTop">8dp</item>
+    </style>
+
+    <style name="Imgly.PESDK.Editor.Panel.Video.VideoCategoryItem.Label" parent="Imgly.PESDK.default.Item.Label">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/item_label_text_size</item>
+        <item name="android:textColor">@color/imgly_text_on_image_color</item>
+        <item name="android:paddingTop">4dp</item>
+        <item name="android:paddingBottom">4dp</item>
+        <item name="android:background">@drawable/imgly_list_item_label_background</item>
+        <item name="android:text"></item>
+        <item name="android:lines">1</item>
+        <item name="android:layout_alignParentBottom">true</item>
+    </style>
+
+    <style name="Imgly.PESDK.Editor.Panel.Video.VideoCategoryItem.Icon" parent="Imgly.PESDK.default.Item.Icon">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_margin">0.5dp</item>
+    </style>
+
+    <style name="Imgly.PESDK.Editor.Panel.Video.VideoCategoryItem.Border" parent="Imgly.PESDK">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@drawable/imgly_item_border</item>
+    </style>
+
+    <style name="Imgly.PESDK.Editor.Panel.Video.VideoCategoryIconItem" parent="Imgly.PESDK.default.Item">
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_width">72dp</item>
+        <item name="android:layout_height">72dp</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:layout_marginTop">8dp</item>
+    </style>
+
+    <style name="Imgly.PESDK.Editor.Panel.Video.VideoCategoryIconItem.Label" parent="Imgly.PESDK.default.Item.Label">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:text">Agöb</item>
+    </style>
+
+    <style name="Imgly.PESDK.Editor.Panel.Video.VideoCategoryIconItem.Icon" parent="Imgly.PESDK.default.Item.Icon">
+        <item name="android:layout_width">48dp</item>
+        <item name="android:layout_height">48dp</item>
+    </style>
+
+    <style name="Imgly.PESDK.Editor.Panel.Video.VideoCategoryIconItem.Border" parent="Imgly.PESDK">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@drawable/imgly_item_border</item>
+    </style>
+
+</resources>
