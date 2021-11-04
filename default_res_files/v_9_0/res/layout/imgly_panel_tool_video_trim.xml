@@ -33,7 +33,7 @@
             android:layout_height="wrap_content"
             android:text="00:15" />
 
-        <android.support.v4.widget.Space
+        <Space
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1" />
@@ -46,7 +46,7 @@
             android:textOff=""
             android:textOn="" />
 
-        <android.support.v4.widget.Space
+        <Space
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1" />

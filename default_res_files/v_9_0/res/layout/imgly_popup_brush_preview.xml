@@ -22,7 +22,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="horizontal">
-        <android.support.v4.widget.Space
+        <Space
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="25"/>
@@ -31,7 +31,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="50">
-            <android.support.v4.widget.Space
+            <Space
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="30"/>
@@ -43,12 +43,12 @@
                     android:id="@+id/brushToolPreview"
                     style="@style/Imgly.PESDK.Editor.Popup.Brush.BrushToolPreview"/>
             </RelativeLayout>
-            <android.support.v4.widget.Space
+            <Space
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="30"/>
         </LinearLayout>
-        <android.support.v4.widget.Space
+        <Space
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="25"/>
