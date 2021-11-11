@@ -24,6 +24,7 @@ allprojects {
     repositories {
         google()
         mavenCentral()
+        maven { url 'https://artifactory.img.ly/artifactory/imgly' }
     }
 }
 
