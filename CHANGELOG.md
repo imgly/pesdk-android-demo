@@ -1,5 +1,31 @@
 # PhotoEditor SDK - Changelog
 
+## v9.1.0
+
+### Fixed
+
+* Unable to open photo/video picker when targeting Android API 30+.
+* Panel title wasn't getting updated on locale change.
+* Crash when all required permissions were not granted on opening Camera.
+* IMG.LY plugin incompatibility issue with Kotlin Gradle plugin 1.5.30+.
+* Crop aspect ratio icons were not getting updated correctly on scroll.
+* [VideoEditorSDK] Background export was not working.
+
+### Added
+* AudioOverlay to serialisation.
+* Support for loading static frames from remote URLs.
+* Support for the new ActivityResult API via [PhotoEditorActivityResultContract], [VideoEditorActivityResultContract], and [CameraPreviewActivityResultContract].
+
+### Changed
+
+* Removed unused Renderscript flags from Android defaultConfig block.
+* All Kotlin classes extending from `ImglySettings` are now open.
+* Added missing `@Throws` annotation for some methods in `ly.img.android.serializer` package.
+* Removed unused `android:label` and `android:supportsRtl` attributes from `<application>`.
+* 🚨 img.ly maven repository is no longer automatically added to your project by the plugin.
+    * Refer to our new Getting Started guide for instructions on how to add it.
+  
+
 ## v9.0.0
 
 ### Changed
@@ -48,13 +74,12 @@ __________________________________________________________________
 ## v8.3.2
 
 ### Fixed
-* Typo in IMGLYPlugin config. Renamed `licencePath` to `licensePath`  
-* Typo in property `resultIsDifferentThanSource` of `EditorSDKResult`
+* Typo in IMGLYPlugin config. Renamed `licencePath` to `licensePath`.  
+* Typo in property `resultIsDifferentThanSource` of `EditorSDKResult`.
 * The transparency pattern is drawn to the full size of the canvas, rather than just the image area.
 * Thumbnail for custom stickers group wasn't getting updated on adding a new custom sticker.
 * Color is applied to the wrong sticker layer when another sticker layer is selected from the color tool panel.
 * Color is applied to the wrong text layer when another text layer is selected from the color tool panel.
-
 
 ## v8.3.1
 
@@ -75,6 +100,8 @@ __________________________________________________________________
 ### Added
 * [VideoEditorSDK] Enable VideoEditorSaveSettings.allowOrientationMatrixMetadata, can increase the output resolution of portrait video on low-end phones. (Note that some video players may choose to ignore the matrix metadata.)
 
+
+## v8.3.0
 
 ### Added
 * [VideoEditorSDK] Added video clip library for adding predefined video clips to video compositions.
@@ -143,7 +170,7 @@ __________________________________________________________________
 
 ### Fixed
 * The app freezes when the export finishes while the editor is in the background.
-* The `hasChanges` flag is true if the user changes something but revert it.
+* The `hasChanges` flag is true if the user changes something but revert it. 
   * This can result in exports even if nothing has changed.
 * The Editor preview is broken after export.
 * The @throws annotation of some methods are broken since v8.0.0 because of internal kotlin changes.
@@ -160,7 +187,7 @@ __________________________________________________________________
 
 ### Fixed
 * ConfigLoader (React Native, Cordova/Ionic).
-  * 🚨 Wrapper always exports even without changes.
+  * 🚨 Wrapper, always export even without changes.
 * EditorSDKResult.resultIsDifferentThenSource is always true.
 * 🚨 The result URI is null if export would be skipped, but should be the source URI instead.
 * Crash when drawing with a large brush face on a huge image.
@@ -173,7 +200,7 @@ __________________________________________________________________
 
 ### Fixed
 * Write serialization as ByteArray is broken.
-* ConfigLoader (React Native, Cordova)
+* ConfigLoader (React Native, Cordova/Ionic).
   * Aspect Ratio labels do not display.
 * LayerSettings are not replaceable by `StateHandler.replaceStateClass`.
 * [VideoEditorSDK] Video disappears when resume from background.
@@ -307,7 +334,7 @@ __________________________________________________________________
 * The brush color default values ​​are overwriting the custom brush colors.
 * WeatherSticker not updated in UI.
 * WeatherSticker can freeze the UI.
-* ~~The rotation of exported videos being incorrect in some cases.~~ (See v7.6.2)
+~~* The rotation of exported videos being incorrect in some cases.~~ (See v7.6.2)
 
 
 ## v7.6.0
