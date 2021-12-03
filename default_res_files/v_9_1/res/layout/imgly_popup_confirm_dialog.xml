@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ This file is part of the PhotoEditor Software Development Kit.
+  ~
+  ~ Copyright (C) 2019 img.ly GmbH <contact@img.ly>
+  ~ All rights reserved.
+  ~
+  ~ Redistribution and use in source and binary forms, without
+  ~ modification, are permitted provided that the following license agreement
+  ~ is approved and a legal/financial contract was signed by the user.
+  ~
+  ~ The license agreement can be found under the following link:
+  ~
+  ~ https://www.photoeditorsdk.com/LICENSE.txt
+  -->
+
+
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/notificationBackground"
+    style="?attr/Imgly.PESDK.Editor.Popup.Confirm">
+    <LinearLayout
+        style="?attr/Imgly.PESDK.Editor.Popup.Confirm.Background">
+        <TextView
+            android:id="@+id/titleText"
+            android:text="@string/pesdk_editor_title_closeEditorAlert"
+            style="?attr/Imgly.PESDK.Editor.Popup.Confirm.Title"/>
+        <TextView
+            android:id="@+id/contentText"
+            android:text="@string/pesdk_editor_text_closeEditorAlert"
+            style="?attr/Imgly.PESDK.Editor.Popup.Confirm.Text"/>
+        <LinearLayout
+            style="?attr/Imgly.PESDK.Editor.Popup.Confirm.ButtonContainer">
+            <Button
+                android:id="@+id/disagreeButton"
+                android:text="@string/pesdk_editor_button_closeEditorAlertCancelation"
+                style="?attr/Imgly.PESDK.Editor.Popup.Button.Disagree"/>
+            <Button
+                android:id="@+id/agreeButton"
+                android:text="@string/pesdk_editor_button_closeEditorAlertConfirmation"
+                style="?attr/Imgly.PESDK.Editor.Popup.Confirm.Button.Agree"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

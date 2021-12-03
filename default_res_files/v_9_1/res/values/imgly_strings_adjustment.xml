@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ This file is part of the PhotoEditor Software Development Kit.
+  ~
+  ~ Copyright (C) 2019 img.ly GmbH <contact@img.ly>
+  ~ All rights reserved.
+  ~
+  ~ Redistribution and use in source and binary forms, without
+  ~ modification, are permitted provided that the following license agreement
+  ~ is approved and a legal/financial contract was signed by the user.
+  ~
+  ~ The license agreement can be found under the following link:
+  ~
+  ~ https://www.photoeditorsdk.com/LICENSE.txt
+  -->
+
+
+
+<resources>
+    <string name="pesdk_adjustments_title_name">Adjust</string>
+
+    <string name="pesdk_adjustments_button_shadowTool">Shadows</string>
+    <string name="pesdk_adjustments_button_exposureTool">Exposure</string>
+    <string name="pesdk_adjustments_button_highlightTool">Highlights</string>
+    <string name="pesdk_adjustments_button_brightnessTool">Brightness</string>
+    <string name="pesdk_adjustments_button_contrastTool">Contrast</string>
+    <string name="pesdk_adjustments_button_saturationTool">Saturation</string>
+    <string name="pesdk_adjustments_button_clarityTool">Clarity</string>
+    <string name="pesdk_adjustments_button_gammaTool">Gamma</string>
+    <string name="pesdk_adjustments_button_blacksTool">Blacks</string>
+    <string name="pesdk_adjustments_button_whitesTool">Whites</string>
+    <string name="pesdk_adjustments_button_temperatureTool">Temperature</string>
+    <string name="pesdk_adjustments_button_sharpnessTool">Sharpness</string>
+    <string name="pesdk_adjustments_button_reset">Reset</string>
+
+</resources>

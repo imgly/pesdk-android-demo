@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+  ~ This file is part of the PhotoEditor Software Development Kit.
+  ~
+  ~ Copyright (C) 2019 img.ly GmbH <contact@img.ly>
+  ~ All rights reserved.
+  ~
+  ~ Redistribution and use in source and binary forms, without
+  ~ modification, are permitted provided that the following license agreement
+  ~ is approved and a legal/financial contract was signed by the user.
+  ~
+  ~ The license agreement can be found under the following link:
+  ~
+  ~ https://www.photoeditorsdk.com/LICENSE.txt
+  -->
+
+
+
+<ly.img.android.pesdk.ui.widgets.AutoRotateLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/contentHolder"
+    style="?attr/Imgly.PESDK.Editor.Panel.Overlay.OverlayItem">
+    <ly.img.android.pesdk.ui.panels.ThumbnailView
+        style="?attr/Imgly.PESDK.Editor.Panel.Overlay.OverlayItem.Icon"/>
+    <ly.img.android.pesdk.ui.widgets.ImageSourceView
+        android:id="@+id/selected_overlay"
+        app:src="@drawable/imgly_item_selected_overlay_dark"
+        style="?attr/Imgly.PESDK.Editor.Panel.Overlay.OverlayItem.Overlay"/>
+    <ly.img.android.pesdk.ui.widgets.ImageSourceView
+        android:id="@+id/selected_shuffle"
+        app:src="@drawable/imgly_icon_shuffle_light"
+        style="?attr/Imgly.PESDK.Editor.Panel.Overlay.OverlayItem.Overlay.Icon"/>
+    <TextView
+        android:id="@+id/label"
+        style="?attr/Imgly.PESDK.Editor.Panel.Overlay.OverlayItem.Label"/>
+    <View
+        style="?attr/Imgly.PESDK.Editor.Panel.Overlay.OverlayItem.Border"/>
+</ly.img.android.pesdk.ui.widgets.AutoRotateLayout>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+  ~ This file is part of the PhotoEditor Software Development Kit.
+  ~
+  ~ Copyright (C) 2019 img.ly GmbH <contact@img.ly>
+  ~ All rights reserved.
+  ~
+  ~ Redistribution and use in source and binary forms, without
+  ~ modification, are permitted provided that the following license agreement
+  ~ is approved and a legal/financial contract was signed by the user.
+  ~
+  ~ The license agreement can be found under the following link:
+  ~
+  ~ https://www.photoeditorsdk.com/LICENSE.txt
+  -->
+
+
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/contentHolder"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="?attr/Imgly.PESDK.Editor.Panel.Color.ColorItem">
+    <View
+        style="?attr/Imgly.PESDK.Editor.Panel.Color.ColorItem.SelectOverlay"/>
+    <View
+        android:id="@+id/colorView"
+        style="?attr/Imgly.PESDK.Editor.Panel.Color.ColorItem.Background"/>
+    <ly.img.android.pesdk.ui.widgets.ImageSourceView
+        android:id="@+id/itemOptionIcon"
+        app:src="@drawable/imgly_icon_item_options"
+        style="?attr/Imgly.PESDK.Editor.Panel.Color.ColorItem.Icon"/>
+</RelativeLayout>

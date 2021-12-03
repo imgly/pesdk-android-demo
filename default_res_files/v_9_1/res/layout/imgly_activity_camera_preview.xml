@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ This file is part of the PhotoEditor Software Development Kit.
+  ~
+  ~ Copyright (C) 2019 img.ly GmbH <contact@img.ly>
+  ~ All rights reserved.
+  ~
+  ~ Redistribution and use in source and binary forms, without
+  ~ modification, are permitted provided that the following license agreement
+  ~ is approved and a legal/financial contract was signed by the user.
+  ~
+  ~ The license agreement can be found under the following link:
+  ~
+  ~ https://www.photoeditorsdk.com/LICENSE.txt
+  -->
+
+
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootView"
+    style="?attr/Imgly.PESDK.Camera">
+
+    <RelativeLayout
+        android:id="@+id/cameraHolder"
+        style="?attr/Imgly.PESDK.Camera.CameraPreview">
+        <ly.img.android.acs.CameraView
+            android:id="@+id/cameraView"
+            app:header="@id/imglyActionBar"
+            app:footer="@id/filterBar"
+            style="?attr/Imgly.PESDK.Camera.CameraPreview.Surface"/>
+
+        <ly.img.android.acs.FocusRectView
+            android:id="@+id/FocusView"
+            style="?attr/Imgly.PESDK.Camera.CameraPreview.Focus"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/cameraUi"
+        style="?attr/Imgly.PESDK.Camera.UI">
+        <RelativeLayout
+            android:id="@+id/imglyActionBar"
+            style="?attr/Imgly.PESDK.Camera.UI.Header">
+            <LinearLayout
+                android:id="@+id/flashButton"
+                style="?attr/Imgly.PESDK.Camera.UI.Header.Button.FlashButton">
+                <ly.img.android.pesdk.ui.widgets.AutoRotateImageSource
+                    android:id="@+id/flashButtonIcon"
+                    style="?attr/Imgly.PESDK.Camera.UI.Header.Button.FlashButton.Icon"/>
+                <ly.img.android.pesdk.ui.widgets.AutoRotateLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+                    <TextView
+                        android:id="@+id/flashButtonLabel"
+                        style="?attr/Imgly.PESDK.Camera.UI.Header.Button.FlashButton.Label"/>
+                </ly.img.android.pesdk.ui.widgets.AutoRotateLayout>
+            </LinearLayout>
+            <ToggleButton
+                android:id="@+id/hdrButton"
+                style="?attr/Imgly.PESDK.Camera.UI.Header.Button.HDRButton"/>
+            <ly.img.android.pesdk.ui.widgets.AutoRotateImageSource
+                android:id="@+id/switchCameraButton"
+                style="?attr/Imgly.PESDK.Camera.UI.Header.Button.SwitchCameraButton"/>
+        </RelativeLayout>
+        <LinearLayout
+            android:id="@+id/footer"
+            style="?attr/Imgly.PESDK.Camera.UI.Footer">
+            <ly.img.android.pesdk.ui.widgets.SeekSlider
+                android:id="@+id/seekBar"
+                style="?attr/Imgly.PESDK.Camera.UI.Footer.SeekSlider.Transparent"/>
+            <LinearLayout
+                android:id="@+id/filterBar"
+                style="?attr/Imgly.PESDK.Camera.UI.Footer.Container">
+                <ly.img.android.pesdk.ui.widgets.AutoRotateLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:ignore="RelativeOverlap">
+                    <ly.img.android.pesdk.ui.activity.widgets.buttons.GalleryButton
+                        android:id="@+id/galleryButton"
+                        style="?attr/Imgly.PESDK.Camera.UI.Footer.Button.GalleryButton"/>
+                </ly.img.android.pesdk.ui.widgets.AutoRotateLayout>
+                <Space
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"/>
+                <ly.img.android.pesdk.ui.activity.widgets.buttons.ShutterButton
+                    android:id="@+id/shutterButton"
+                    style="?attr/Imgly.PESDK.Camera.UI.Footer.Button.ShutterButton"/>
+                <Space
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"/>
+                <ly.img.android.pesdk.ui.activity.widgets.buttons.ExpandToggleButton
+                    android:id="@+id/show_filter_button"
+                    style="?attr/Imgly.PESDK.Camera.UI.Footer.Button.FilterButton"/>
+            </LinearLayout>
+            <ly.img.android.pesdk.ui.widgets.ExpandableView
+                android:id="@+id/expandableView"
+                style="?attr/Imgly.PESDK.Camera.UI.Footer.ExpandableContainer">
+                <ly.img.android.pesdk.ui.widgets.HorizontalListView
+                    android:id="@+id/filterList"
+                    app:animateItems="true"
+                    style="?attr/Imgly.PESDK.Camera.UI.Footer.ExpandableContainer.FilterList"/>
+            </ly.img.android.pesdk.ui.widgets.ExpandableView>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>
