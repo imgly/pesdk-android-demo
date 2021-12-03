@@ -18,10 +18,7 @@
 
 <resources>
 
-    <string name="app_name"/>
-
     <string name="pesdk_editor_title_name">Editor</string>
-    <string name="pesdk_editor_title_mainMenu"/>
 
     <string name="pesdk_editor_title_closeEditorAlert">Close Editor?</string>
     <string name="pesdk_editor_text_closeEditorAlert">Do you really want to discard the image?</string>
@@ -55,21 +52,6 @@
     <string name="pesdk_common_button_flipV">Flip V</string>
     <string name="pesdk_common_button_undo">Undo</string>
     <string name="pesdk_common_button_redo">Redo</string>
-
-    <string name="vesdk_video_trim_title_name"/>
-    <string name="vesdk_video_composition_title_name"/>
-    <string name="vesdk_audio_composition_title_name"/>
-    <string name="pesdk_transform_title_name"/>
-    <string name="pesdk_filter_title_name"/>
-    <string name="pesdk_adjustments_title_name"/>
-    <string name="pesdk_sticker_title_name"/>
-    <string name="pesdk_text_title_name"/>
-    <string name="pesdk_textDesign_title_name"/>
-    <string name="pesdk_overlay_title_name"/>
-    <string name="pesdk_frame_title_name"/>
-    <string name="pesdk_brush_title_name"/>
-    <string name="pesdk_focus_title_name"/>
-
 
     <string name="pesdk_common_title_colorPicker">Color Picker</string>
     <string name="pesdk_common_title_transparentColor">Transparent</string>
