@@ -119,7 +119,7 @@ buildscript {
         maven { url "https://artifactory.img.ly/artifactory/imgly" }
     }
     dependencies {
-        classpath 'ly.img.android.pesdk:plugin:'
+        classpath 'ly.img.android.pesdk:plugin:9.1.0'
     }
 }
 
