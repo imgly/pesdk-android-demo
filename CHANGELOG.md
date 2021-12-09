@@ -1,5 +1,18 @@
 # PhotoEditor SDK - Changelog
 
+## v9.1.1
+
+### Fixed
+
+* Trim cannot be serialized if you select only start or end time.
+* Some videos play audio with artifacts, because of broken time header.
+* Discarding text change removes text sprite.
+* NullPointerException when loading a Uri with null authority.
+* Video and/or video thumbnails may turn black after resuming the application.
+* Video parts could hang if only two videos be composed.
+* In cases where more than one video part is composed, video parts could be black after app recovery.
+
+
 ## v9.1.0
 
 ### Fixed
