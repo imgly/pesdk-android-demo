@@ -1,5 +1,30 @@
 # PhotoEditor SDK - Changelog
 
+## v9.2.0
+
+### Added
+
+* Support for a custom watermark image.
+
+### Fixed
+* `ConfigLoader` (React Native, Flutter, Cordova/Ionic).
+  * Crash if the system language is Turkish, because the `i` is converted to a `ı`.
+  * `personalVideoClips` was being ignored in the `composition` object.
+* OutOfMemoryError in `AudioPlayWindowSliderView` when all video composition parts are removed.
+* NullPointerException on denying `WRITE_EXTERNAL_STORAGE` permission when exporting media on Android API versions < 29.
+* NullPointerException when trimming a video.
+* Memory leak in `DataSourceListAdapter`.
+* Memory leak after removing Sticker, Text design or Text.
+* Menu items for unavailable modules were being added to `UiConfigMainMenu` by default.
+* NullPointerException caused by invalid IFD0 offset during EXIF parsing.
+* Audio tool panel doesn't work if `Trim` feature is not included in the license.
+* Exporting video in background doesn't respect specified duration limits.
+* Image overflow on applying frame if UI lifecycle state changes.
+* Missing filter categories thumbnail for existing categories.
+* Export hangs if the audio track is unsupported or broken.
+    * Those tracks that can't be decoded, such as ALAC (Apple Lossless Audio Codec) encoded tracks, are ignored.
+    
+
 ## v9.1.1
 
 ### Fixed
@@ -11,7 +36,6 @@
 * Video and/or video thumbnails may turn black after resuming the application.
 * Video parts could hang if only two videos be composed.
 * In cases where more than one video part is composed, video parts could be black after app recovery.
-
 
 ## v9.1.0
 
