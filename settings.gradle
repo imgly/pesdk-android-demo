@@ -1,1 +1,1 @@
-include ':app', ':example_brush_presets_panel', ':custom_sticker_layer'
+include ':app', ':example_brush_presets_panel', ':custom_sticker_layer', ':example_custom_sticker_gallery_tool'
