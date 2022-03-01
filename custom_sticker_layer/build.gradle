@@ -7,7 +7,7 @@ imglyConfig {
 
     pesdk {
         enabled true
-        licencePath 'pesdk_android_license' // Name of the Licence file in the asset folder
+        licencePath 'LICENSE' // Name of the Licence file in the asset folder
     }
 
     // Define the modules you are need
@@ -44,13 +44,13 @@ imglyConfig {
 }
 
 android {
-    compileSdkVersion 31
-    buildToolsVersion '30.0.3'
+    compileSdkVersion 30
+    buildToolsVersion '30.0.2'
 
     defaultConfig {
         applicationId "com.photoeditorsdk.android.app"
         minSdkVersion 16
-        targetSdkVersion 31
+        targetSdkVersion 30
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner 'androidx.test.runner.AndroidJUnitRunner'
@@ -59,7 +59,7 @@ android {
     }
     buildTypes {
         release {
-            minifyEnabled true
+            minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
