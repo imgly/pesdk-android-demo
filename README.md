@@ -95,7 +95,7 @@ img.ly GmbH, [@imgly](https://twitter.com/imgly), [img.ly](https://img.ly/?utm_c
 
 ## Installation
 
-> This SDK requires a minimum deployment target of Android API 15 (4.0.4) with OpenGl ES 2.0 supported Device but our official support is starting with API 16 (4.1.0)
+> The PhotoEditor SDK supports Android 5.0+ API 21 as the `minSdkVersion`, but it must be compiled with `compileSdkVersion` 31+.
 
 ## Add your license file
 
