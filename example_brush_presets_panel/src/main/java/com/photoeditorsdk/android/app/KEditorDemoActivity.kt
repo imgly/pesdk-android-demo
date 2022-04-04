@@ -1,6 +1,7 @@
 package com.photoeditorsdk.android.app
 
 import android.app.Activity
+import android.content.ActivityNotFoundException
 import android.content.Intent
 import android.net.Uri
 import android.os.Build
@@ -34,32 +35,19 @@ import ly.img.android.pesdk.ui.panels.item.PersonalStickerAddItem
 import ly.img.android.pesdk.ui.utils.PermissionRequest
 import ly.img.android.serializer._3.IMGLYFileWriter
 
-class KEditorDemoActivity : Activity(), PermissionRequest.Response {
+class KEditorDemoActivity : Activity() {
 
     companion object {
         const val PESDK_RESULT = 1
         const val GALLERY_RESULT = 2
     }
 
-    // Important permission request for Android 6.0 and above, don't forget to add this!
-    override fun onRequestPermissionsResult(requestCode: Int, permissions: Array<String>, grantResults: IntArray) {
-        PermissionRequest.onRequestPermissionsResult(requestCode, permissions, grantResults)
-        super.onRequestPermissionsResult(requestCode, permissions, grantResults)
-    }
-
-    override fun permissionGranted() {}
-
-    override fun permissionDenied() {
-        /* TODO: The Permission was rejected by the user. The Editor was not opened,
-         * Show a hint to the user and try again. */
-    }
-
     // Create a empty new SettingsList and apply the changes on this reference.
-    // If you include our asset Packs and use our UI you also need to add them to the UI,
+    // If you include our asset Packs and use our UI you also need to add them to the UI Config,
     // otherwise they are only available for the backend (like Serialisation)
-    // See the specific feature sections of our guides if you want to know how to add our own Assets.
+    // See the specific feature sections of our guides if you want to know how to add your own Assets.
     private fun createPesdkSettingsList() =
-      PhotoEditorSettingsList()
+      PhotoEditorSettingsList(true)
         .configure<UiConfigFilter> {
             it.setFilterList(FilterPackBasic.getFilterPack())
         }
@@ -111,16 +99,10 @@ class KEditorDemoActivity : Activity(), PermissionRequest.Response {
     }
 
     fun openSystemGalleryToSelectAnImage() {
-        val intent = Intent(Intent.ACTION_PICK)
-        if (Build.VERSION.SDK_INT <= Build.VERSION_CODES.KITKAT) {
-            intent.type = "image/*"
-        } else {
-            intent.setDataAndType(MediaStore.Images.Media.EXTERNAL_CONTENT_URI, "image/*")
-        }
-
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.R || intent.resolveActivity(packageManager) != null) {
+        val intent = Intent(Intent.ACTION_PICK, MediaStore.Images.Media.EXTERNAL_CONTENT_URI)
+        try {
             startActivityForResult(intent, GALLERY_RESULT)
-        } else {
+        } catch (ex: ActivityNotFoundException) {
             Toast.makeText(
                 this,
                 "No Gallery APP installed",
@@ -139,6 +121,8 @@ class KEditorDemoActivity : Activity(), PermissionRequest.Response {
         PhotoEditorBuilder(this)
           .setSettingsList(settingsList)
           .startActivityForResult(this, PESDK_RESULT)
+
+        settingsList.release()
     }
 
 
@@ -172,6 +156,8 @@ class KEditorDemoActivity : Activity(), PermissionRequest.Response {
             } catch (e: IOException) {
                 e.printStackTrace()
             }
+
+            lastState.release()
 
         } else if (resultCode == RESULT_CANCELED && requestCode == PESDK_RESULT) {
             // Editor was canceled

@@ -1,5 +1,41 @@
 # PhotoEditor SDK - Changelog
 
+## v10.0.0
+
+### Changed
+
+* Bumped `minSdkVersion` to 21.
+* Bumped `compileSdkVersion` to 31 and `buildToolsVersion` to 31.0.0.  
+* Our activities now extend from `AppCompatActivity` instead of `Activity`.
+* `PESDKMobileUIDefaultTheme` is now `Theme.Imgly`.
+* `Imgly.Theme` is now `Theme.Imgly`.  
+* `RoxOperation::onReleaseOperator()` renamed to `RoxOperation::onOperatorReleased()`.
+* `startActivityForBroadcast()` is deprecated. Use `DocumentRenderWorker` instead.
+* `ly.img.android.pesdk.backend.model.state.VideoCompositionSettings.VideoPart` deprecated in favor of `ly.img.android.pesdk.backend.model.VideoPart`.
+* `VideoCompositionSettings.Event.VIDEO_SELECTED` deprecated in favor of `VideoState.Event.VIDEO_SELECTED`.
+* `EditorBuilder::startActivityForResult()` is now in sync with `PhotoEditorBuilder::startActivityForResult()` and `VideoEditorBuilder::startActivityForResult()` and doesn't ask for any permissions.
+* Certain parameters in the following functions were incorrectly declared as nullable which could lead to a `RuntimeException`. They are now non-null.
+  * `ImglyIntent::startActivityForBroadcast()`.
+  * `PhotoEditorBuilder::startActivityForBroadcast()`.
+  * `VideoEditorBuilder::startActivityForBroadcast()` and `VideoEditorBuilder::startActivityForResult()`.
+  * `EditorBuilder` and its subclasses' constructors.
+
+### Added
+
+* Light(`Theme.Imgly.Light`) theme variant.
+* Batch background renderer.
+* New constructor in `PhotoEditorBuilder` and `VideoEditorBuilder` to open a custom `Activity`.
+
+### Fixed
+* Audio surge.
+* A couple of Video crashes.
+* Unable to replace sticker sometimes.
+* Serialisation compatibility issues with iOS/Web.
+* Time units used in "Video too short" dialog are now translatable (`imgly_hour_unit`, `imgly_minute_unit`, etc.).
+* Blinking effect when image/video is loaded in the editor.
+  * 🚨 `android:windowBackground` now refers to `?attr/imgly_background_color`.
+* Close Editor alert message adjusted based on PE/VE SDK (`pesdk_editor_text_closeImageEditorAlert`, `pesdk_editor_text_closeVideoEditorAlert`).
+
 ## v9.2.0
 
 ### Added
@@ -23,7 +59,6 @@
 * Missing filter categories thumbnail for existing categories.
 * Export hangs if the audio track is unsupported or broken.
     * Those tracks that can't be decoded, such as ALAC (Apple Lossless Audio Codec) encoded tracks, are ignored.
-    
 
 ## v9.1.1
 
