@@ -9,8 +9,8 @@
 </p>
 <p align="center">
   <a href="http://developer.android.com/guide/topics/manifest/uses-sdk-element.html#ApiLevels">
-    <img src="https://img.shields.io/badge/MIN_SDK-15-B8D529.svg?style=flat">
-    <img src="https://img.shields.io/badge/BUILD_SDK-29-92D230.svg?style=flat">
+    <img src="https://img.shields.io/badge/MIN_SDK-21-B8D529.svg?style=flat">
+    <img src="https://img.shields.io/badge/BUILD_SDK-31-92D230.svg?style=flat">
   </a>
   <a href="https://img.ly/docs/pesdk/android/introduction/getting_started">
     <img src="https://img.shields.io/badge/platform-android-2DC25C.svg?style=flat">
