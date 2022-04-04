@@ -16,7 +16,7 @@
     <img src="https://img.shields.io/badge/platform-android-2DC25C.svg?style=flat">
   </a>
   <a href="https://artifactory.img.ly/artifactory/imgly/ly/img/android/pesdk/">
-    <img src="https://img.shields.io/badge/VERSION-9.2.0-007ec6.svg?style=flat" alt="Maven">
+    <img src="https://img.shields.io/badge/VERSION-10.0.0-007ec6.svg?style=flat" alt="Maven">
   </a>
   <a href="http://twitter.com/PhotoEditorSDK">
     <img src="https://img.shields.io/badge/twitter-@PhotoEditorSDK-8646E2.svg?style=flat" alt="Twitter">
@@ -64,7 +64,7 @@ Please [get in touch](https://img.ly/pricing/?utm_campaign=Projects&utm_source=G
 * A clean and intuitive **UI** that ensures an unhindered flow of creativity and a seamless experience while composing creatives. The UI is designed to be customized to completely match your CI and blend with your app.
 * You can strip out every feature you deem unnecessary to provide your users with the exact feature set your use case requires.
 
-* __Android API Level 16+__ Covers nearly 99% of all Android devices with touchscreen.
+* __Android API Level 21+__ Covers nearly 98% of all Android devices with touchscreen.
 * __Fast image export up to 4294 MegaPixel__
 * __Generic camera support__ for most Android phones.
 * __Tablet support__: The PhotoEditor SDK uses auto layout for its views and adapts to each screen size.
@@ -119,13 +119,13 @@ buildscript {
         maven { url "https://artifactory.img.ly/artifactory/imgly" }
     }
     dependencies {
-        classpath 'ly.img.android.pesdk:plugin:9.2.0'
+        classpath 'ly.img.android.pesdk:plugin:10.0.0'
     }
 }
 
 ```
 
-You will have to add the pesdk plugin and PESDKConfig into your module's `build.gradle` file:
+Apply the img.ly plugin and add the imglyConfig block into your module's `build.gradle` file:
 
 ```groovy
 // Apply the Android Plugin
@@ -179,11 +179,11 @@ imglyConfig {
 
 // Do your Android Configurations... ex.
 android {
-    /* Set the compile SDK and the Build SDK min. at SDK 29 or grater.
-     * We can't provide support for Bugs, that are the result of older SDK versions.
+    /* Set the compileSdkVersion at 31 or greater and set the buildToolsVersion at '31.0.0' or greater.
+     * We can't provide support for bugs, that are the result of older SDK versions.
      */
-    compileSdkVersion 29
-    buildToolsVersion '29.0.2'
+    compileSdkVersion 31
+    buildToolsVersion '31.0.0'
 
     defaultConfig {
         /*
@@ -192,8 +192,8 @@ android {
          */
         applicationId "my.domain.application"
 
-        /* Set the minimum supported SDK Version to 16 (Android 4.1.0) or higher */
-        minSdkVersion 16
+        /* Set the minimum supported SDK Version to 21 (Android 5.0) or higher */
+        minSdkVersion 21
 
         /* Set the target SDK Version at minimum to 29 or higher */
         targetSdkVersion 29
@@ -224,248 +224,225 @@ __Please take a look at the hint in the next step in order to integrate the Andr
 
 ## Integration
 
-In order to open the camera preview and pass the resulting image to the editor, create a
-`CameraPreviewBuilder` and start the `CameraPreviewActivity` with `startActivityForResult(activity, custom_id)`:
-
-> __Please make sure you delegate the `onRequestPermissionsResult` to `PermissionRequest.onRequestPermissionsResult`
-as demonstrated in the following example. This ensures correct behavior on Android 6.0 and above.__
-
-```java
-public class CameraDemoActivity extends Activity implements PermissionRequest.Response {
-
-    // Important permission request for Android 6.0 and above, don't forget to add this!
-    @Override
-    public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
-        PermissionRequest.onRequestPermissionsResult(requestCode, permissions, grantResults);
-        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
-    }
-
-    @Override
-    public void permissionGranted() {}
-
-    @Override
-    public void permissionDenied() {
-        /* TODO: The Permission was rejected by the user. The Editor was not opened,
-         * Show a hint to the user and try again. */
-    }
-
-    public static int PESDK_RESULT = 1;
-
-    private PhotoEditorSettingsList createPesdkSettingsList() {
-
-        // Create a empty new SettingsList and apply the changes on this referance.
-        PhotoEditorSettingsList settingsList = new PhotoEditorSettingsList();
-
-        // If you include our asset Packs and you use our UI you also need to add them to the UI,
-        // otherwise they are only available for the backend
-        // See the specific feature sections of our guides if you want to know how to add our own Assets.
-
-        settingsList.getSettingsModel(UiConfigFilter.class).setFilterList(
-          FilterPackBasic.getFilterPack()
-        );
-
-        settingsList.getSettingsModel(UiConfigText.class).setFontList(
-          FontPackBasic.getFontPack()
-        );
-
-        settingsList.getSettingsModel(UiConfigFrame.class).setFrameList(
-          FramePackBasic.getFramePack()
-        );
-
-        settingsList.getSettingsModel(UiConfigOverlay.class).setOverlayList(
-          OverlayPackBasic.getOverlayPack()
-        );
-
-        settingsList.getSettingsModel(UiConfigSticker.class).setStickerLists(
-          StickerPackEmoticons.getStickerCategory(),
-          StickerPackShapes.getStickerCategory()
-        );
-
-        return settingsList;
-    }
-
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-
-        openCamera();
-    }
-
-    private void openCamera() {
-        PhotoEditorSettingsList settingsList = createPesdkSettingsList();
-
-        new CameraPreviewBuilder(this)
-          .setSettingsList(settingsList)
-          .startActivityForResult(this, PESDK_RESULT,  PermissionRequest.NEEDED_PREVIEW_PERMISSIONS_AND_FINE_LOCATION);
-    }
-
-    @Override
-    protected void onActivityResult(int requestCode, int resultCode, android.content.Intent intent) {
-        super.onActivityResult(requestCode, resultCode, intent);
-
-        if (resultCode == RESULT_OK && requestCode == PESDK_RESULT) {
-            // Editor has saved an Image.
-            EditorSDKResult data = new EditorSDKResult(intent);
-
-            data.notifyGallery(EditorSDKResult.UPDATE_RESULT & EditorSDKResult.UPDATE_SOURCE);
-
-            Log.i("PESDK", "Source image is located here " + data.getSourceUri());
-            Log.i("PESDK", "Result image is located here " + data.getResultUri());
-
-            // TODO: Do something with the result image
-
-            // OPTIONAL: read the latest state to save it as a serialisation
-            SettingsList lastState = data.getSettingsList();
-            try {
-                new IMGLYFileWriter(lastState).writeJson(new File(
-                  Environment.getExternalStorageDirectory(),
-                  "serialisationReadyToReadWithPESDKFileReader.json"
-                ));
-            } catch (IOException e) { e.printStackTrace(); }
-
-        } else if (resultCode == RESULT_CANCELED && requestCode == PESDK_RESULT) {
-            // Editor was canceled
-            EditorSDKResult data = new EditorSDKResult(intent);
-
-            Uri sourceURI = data.getSourceUri();
-            // TODO: Do something...
-        }
-    }
-}
-```
-
-### Start Editor standalone (without camera).
+### Start Editor standalone
 
 If you want to open the editor directly with an existing image look at this example:
 
-```java
-public class EditorDemoActivity extends Activity implements PermissionRequest.Response {
+```kotlin
+class KEditorDemoActivity : Activity() {
 
-    // Important permission request for Android 6.0 and above, don't forget to add this!
-    @Override
-    public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
-        PermissionRequest.onRequestPermissionsResult(requestCode, permissions, grantResults);
-        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
+    companion object {
+        const val PESDK_RESULT = 1
+        const val GALLERY_RESULT = 2
     }
 
-    @Override
-    public void permissionGranted() {}
+    // Create a empty new SettingsList and apply the changes on this reference.
+    // If you include our asset Packs and use our UI you also need to add them to the UI Config,
+    // otherwise they are only available for the backend (like Serialisation)
+    // See the specific feature sections of our guides if you want to know how to add your own Assets.
+    private fun createPESDKSettingsList() =
+        PhotoEditorSettingsList(true)
+            .configure<UiConfigFilter> {
+                it.setFilterList(FilterPackBasic.getFilterPack())
+            }
+            .configure<UiConfigText> {
+                it.setFontList(FontPackBasic.getFontPack())
+            }
+            .configure<UiConfigFrame> {
+                it.setFrameList(FramePackBasic.getFramePack())
+            }
+            .configure<UiConfigOverlay> {
+                it.setOverlayList(OverlayPackBasic.getOverlayPack())
+            }
+            .configure<UiConfigSticker> {
+                it.setStickerLists(
+                    StickerPackEmoticons.getStickerCategory(),
+                    StickerPackShapes.getStickerCategory()
+                )
+            }
+            .configure<PhotoEditorSaveSettings> {
+                it.setOutputToGallery(Environment.DIRECTORY_DCIM)
+            }
 
-    @Override
-    public void permissionDenied() {
-        /* TODO: The Permission was rejected by the user. The Editor was not opened,
-         * Show a hint to the user and try again. */
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_main)
+
+        openSystemGalleryToSelectAnImage()
     }
 
-    public static int PESDK_RESULT = 1;
-    public static int GALLERY_RESULT = 2;
-
-    private SettingsList createPesdkSettingsList() {
-
-        // Create a empty new SettingsList and apply the changes on this referance.
-        PhotoEditorSettingsList settingsList = new PhotoEditorSettingsList();
-
-        // If you include our asset Packs and you use our UI you also need to add them to the UI,
-        // otherwise they are only available for the backend
-        // See the specific feature sections of our guides if you want to know how to add our own Assets.
-
-        settingsList.getSettingsModel(UiConfigFilter.class).setFilterList(
-            FilterPackBasic.getFilterPack()
-        );
-
-        settingsList.getSettingsModel(UiConfigText.class).setFontList(
-          FontPackBasic.getFontPack()
-        );
-
-        settingsList.getSettingsModel(UiConfigFrame.class).setFrameList(
-          FramePackBasic.getFramePack()
-        );
-
-        settingsList.getSettingsModel(UiConfigOverlay.class).setOverlayList(
-          OverlayPackBasic.getOverlayPack()
-        );
-
-        settingsList.getSettingsModel(UiConfigSticker.class).setStickerLists(
-          StickerPackEmoticons.getStickerCategory(),
-          StickerPackShapes.getStickerCategory()
-        );
-
-        return settingsList;
-    }
-
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-
-        openSystemGalleryToSelectAnImage();
-    }
-
-    private void openSystemGalleryToSelectAnImage() {
-        Intent intent = new Intent(Intent.ACTION_PICK, MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
-        if (intent.resolveActivity(getPackageManager()) != null) {
-            startActivityForResult(intent, GALLERY_RESULT);
-        } else {
+    fun openSystemGalleryToSelectAnImage() {
+        val intent = Intent(Intent.ACTION_PICK, MediaStore.Images.Media.EXTERNAL_CONTENT_URI)
+        try {
+            startActivityForResult(intent, GALLERY_RESULT)
+        } catch (ex: ActivityNotFoundException) {
             Toast.makeText(
-              this,
-              "No Gallery APP installed",
-              Toast.LENGTH_LONG
-            ).show();
+                this,
+                "No Gallery APP installed",
+                Toast.LENGTH_LONG
+            ).show()
         }
     }
 
-    private void openEditor(Uri inputImage) {
-        SettingsList settingsList = createPesdkSettingsList();
+    fun openEditor(inputImage: Uri?) {
+        val settingsList = createPESDKSettingsList()
 
-        // Set input image
-        settingsList.getSettingsModel(LoadSettings.class).setSource(inputImage);
+        settingsList.configure<LoadSettings> {
+            it.source = inputImage
+        }
 
-        settingsList.getSettingsModel(PhotoEditorSaveSettings.class).setOutputToGallery(Environment.DIRECTORY_DCIM);
-
-        new EditorBuilder(this)
-          .setSettingsList(settingsList)
-          .startActivityForResult(this, PESDK_RESULT);
+        PhotoEditorBuilder(this)
+            .setSettingsList(settingsList)
+            .startActivityForResult(this, PESDK_RESULT)
+        
+        settingsList.release()
     }
 
-    @Override
-    protected void onActivityResult(int requestCode, int resultCode, Intent intent) {
-        super.onActivityResult(requestCode, resultCode, intent);
+
+    override fun onActivityResult(requestCode: Int, resultCode: Int, intent: Intent) {
+        super.onActivityResult(requestCode, resultCode, intent)
 
         if (resultCode == RESULT_OK && requestCode == GALLERY_RESULT) {
             // Open Editor with some uri in this case with an image selected from the system gallery.
-            Uri selectedImage = intent.getData();
-            openEditor(selectedImage);
+            openEditor(intent.data)
 
         } else if (resultCode == RESULT_OK && requestCode == PESDK_RESULT) {
             // Editor has saved an Image.
-            EditorSDKResult data = new EditorSDKResult(intent);
+            val data = EditorSDKResult(intent)
 
-            // This adds the result and source image to Android's gallery
-            data.notifyGallery(EditorSDKResult.UPDATE_RESULT & EditorSDKResult.UPDATE_SOURCE);
-
-            Log.i("PESDK", "Source image is located here " + data.getSourceUri());
-            Log.i("PESDK", "Result image is located here " + data.getResultUri());
+            Log.i("PESDK", "Source image is located here ${data.sourceUri}")
+            Log.i("PESDK", "Result image is located here ${data.resultUri}")
 
             // TODO: Do something with the result image
 
             // OPTIONAL: read the latest state to save it as a serialisation
-            SettingsList lastState = data.getSettingsList();
+            val lastState = data.settingsList
             try {
-                new IMGLYFileWriter(lastState).writeJson(new File(
-                  Environment.getExternalStorageDirectory(),
-                  "serialisationReadyToReadWithPESDKFileReader.json"
-                ));
-            } catch (IOException e) { e.printStackTrace(); }
+                IMGLYFileWriter(lastState).writeJson(File(
+                    getExternalFilesDir(null),
+                    "serialisationReadyToReadWithPESDKFileReader.json"
+                ))
+            } catch (e: IOException) {
+                e.printStackTrace()
+            }
+            
+            lastState.release()
 
         } else if (resultCode == RESULT_CANCELED && requestCode == PESDK_RESULT) {
             // Editor was canceled
-            EditorSDKResult data = new EditorSDKResult(intent);
+            val data = EditorSDKResult(intent)
 
-            Uri sourceURI = data.getSourceUri();
+            val sourceURI = data.sourceUri
             // TODO: Do something with the source...
         }
     }
 }
 ```
 
+### Start Editor (with camera)
+
+In order to open the camera preview and pass the resulting image to the editor, create a
+[`CameraPreviewBuilder`](https://img.ly/docs/pesdk/apidocs/android/v10/pesdk-mobile_ui-camera/ly.img.android.pesdk.ui.activity/-camera-preview-builder/index.html) and start the [`CameraPreviewActivity`](https://img.ly/docs/pesdk/apidocs/android/v10/pesdk-mobile_ui-camera/ly.img.android.pesdk.ui.activity/-camera-preview-activity/index.html) with [`startActivityForResult(android.app.Activity, int)`](https://img.ly/docs/pesdk/apidocs/android/v10/pesdk-mobile_ui-camera/ly.img.android.pesdk.ui.activity/-camera-preview-builder/index.html#1501569930%2FFunctions%2F-594191830):
+
+The camera module requires two permissions: The "_Write access to external storage_" and the "_Camera_" permission.
+You can grant these permissions yourself otherwise the SDK will automatically grant these permissions.
+
+> **Please make sure you delegate the [`onRequestPermissionsResult()`](https://developer.android.com/reference/android/app/Activity#onRequestPermissionsResult(int,%20java.lang.String[],%20int[])) to [`PermissionRequest.onRequestPermissionsResult()`](https://img.ly/docs/pesdk/apidocs/android/v10/pesdk-backend-core/ly.img.android.pesdk.ui.utils/-permission-request/index.html#-390511216%2FFunctions%2F-68773581)
+> as demonstrated in the following example. This ensures correct behavior on Android 6.0 and above.**
+
+```kotlin
+class KCameraDemoActivity : Activity(), PermissionRequest.Response {
+
+    companion object {
+        const val PESDK_RESULT = 1
+    }
+
+    // Important permission request for Android 6.0 and above, don't forget to add this!
+    override fun onRequestPermissionsResult(requestCode: Int, permissions: Array<String>, grantResults: IntArray) {
+        PermissionRequest.onRequestPermissionsResult(requestCode, permissions, grantResults)
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults)
+    }
+
+    override fun permissionGranted() {}
+
+    override fun permissionDenied() {
+        /* TODO: The Permission was rejected by the user. The Editor was not opened,
+         * Show a hint to the user and try again. */
+    }
+
+    // Create a empty new SettingsList and apply the changes on this reference.
+    // If you have included our asset Packs and you want to use our default UI you also need to add them to the UI config,
+    // otherwise they are only available for the backend link serialisation.
+    // See the specific feature sections of our guides if you want to know how to add your own assets.
+    private fun createPESDKSettingsList() = PhotoEditorSettingsList(true)
+        .configure<UiConfigFilter> {
+            it.setFilterList(FilterPackBasic.getFilterPack())
+        }
+        .configure<UiConfigText> {
+            it.setFontList(FontPackBasic.getFontPack())
+        }
+        .configure<UiConfigFrame> {
+            it.setFrameList(FramePackBasic.getFramePack())
+        }
+        .configure<UiConfigOverlay> {
+            it.setOverlayList(OverlayPackBasic.getOverlayPack())
+        }
+        .configure<UiConfigSticker> {
+            it.setStickerLists(
+                StickerPackEmoticons.getStickerCategory(),
+                StickerPackShapes.getStickerCategory()
+            )
+        }
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_main)
+        openCamera()
+    }
+
+    private fun openCamera() {
+        val settingsList = createPESDKSettingsList()
+
+        CameraPreviewBuilder(this)
+            .setSettingsList(settingsList)
+            .startActivityForResult(this, PESDK_RESULT)
+
+        settingsList.release()
+    }
+
+    override fun onActivityResult(requestCode: Int, resultCode: Int, intent: Intent) {
+        super.onActivityResult(requestCode, resultCode, intent)
+
+        if (resultCode == RESULT_OK && requestCode == PESDK_RESULT) {
+            // Editor has saved an Image.
+            val data = EditorSDKResult(intent)
+
+            Log.i("PESDK", "Source image is located here ${data.sourceUri}")
+            Log.i("PESDK", "Result image is located here ${data.resultUri}")
+
+            // TODO: Do something with the result image
+
+            // OPTIONAL: read the latest state to save it as a serialisation
+            val lastState = data.settingsList
+            try {
+                IMGLYFileWriter(lastState).writeJson(File(
+                    getExternalFilesDir(null),
+                    "serialisationReadyToReadWithPESDKFileReader.json"
+                ))
+            } catch (e: IOException) {
+                e.printStackTrace()
+            }
+
+            lastState.release()
+
+        } else if (resultCode == RESULT_CANCELED && requestCode == PESDK_RESULT) {
+            // Editor was canceled
+            val data = EditorSDKResult(intent)
+
+            val sourceURI = data.sourceUri
+            // TODO: Do something...
+        }
+    }
+}
+```
