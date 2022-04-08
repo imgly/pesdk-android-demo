@@ -1,6 +1,11 @@
 # PhotoEditor SDK - Changelog
 
-## v10.0.0
+## v10.0.1
+
+### Fixed
+* Crash caused by incorrect API usage due to incorrect Android documentation.
+
+## ~~v10.0.0~~ (Broken release, don't use it!)
 
 ### Changed
 
