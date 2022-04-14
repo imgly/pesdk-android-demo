@@ -1,0 +1,1317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ This file is part of the PhotoEditor Software Development Kit.
+  ~
+  ~ Copyright (C) 2019 img.ly GmbH <contact@img.ly>
+  ~ All rights reserved.
+  ~
+  ~ Redistribution and use in source and binary forms, without
+  ~ modification, are permitted provided that the following license agreement
+  ~ is approved and a legal/financial contract was signed by the user.
+  ~
+  ~ The license agreement can be found under the following link:
+  ~
+  ~ https://www.photoeditorsdk.com/LICENSE.txt
+  -->
+
+
+
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:top="0dp" android:left="0dp">
+        <shape>
+            <size android:width="56dp" android:height="72dp"/>
+            <solid android:color="#FFd3d3d3"/>
+        </shape>
+    </item>
+    <item android:top="0dp" android:left="4dp">
+        <shape>
+            <solid android:color="#FFFFFFFF"/>
+        </shape>
+    </item>
+    <item android:top="0dp" android:left="8dp">
+        <shape>
+            <solid android:color="#FFd3d3d3"/>
+        </shape>
+    </item>
+    <item android:top="0dp" android:left="12dp">
+        <shape>
+            <solid android:color="#FFFFFFFF"/>
+        </shape>
+    </item>
+    <item android:top="0dp" android:left="16dp">
+        <shape>
+            <solid android:color="#FFd3d3d3"/>
+        </shape>
+    </item>
+    <item android:top="0dp" android:left="20dp">
+        <shape>
+            <solid android:color="#FFFFFFFF"/>
+        </shape>
+    </item>
+    <item android:top="0dp" android:left="24dp">
+        <shape>
+            <solid android:color="#FFd3d3d3"/>
+        </shape>
+    </item>
+    <item android:top="0dp" android:left="28dp">
+        <shape>
+            <solid android:color="#FFFFFFFF"/>
+        </shape>
+    </item>
+    <item android:top="0dp" android:left="32dp">
+        <shape>
+            <solid android:color="#FFd3d3d3"/>
+        </shape>
+    </item>
+    <item android:top="0dp" android:left="36dp">
+        <shape>
+            <solid android:color="#FFFFFFFF"/>
+        </shape>
+    </item>
+    <item android:top="0dp" android:left="40dp">
+        <shape>
+            <solid android:color="#FFd3d3d3"/>
+        </shape>
+    </item>
+    <item android:top="0dp" android:left="44dp">
+        <shape>
+            <solid android:color="#FFFFFFFF"/>
+        </shape>
+    </item>
+    <item android:top="0dp" android:left="48dp">
+        <shape>
+            <solid android:color="#FFd3d3d3"/>
+        </shape>
+    </item>
+    <item android:top="0dp" android:left="52dp">
+        <shape>
+            <solid android:color="#FFFFFFFF"/>
+        </shape>
+    </item>
+
+
+    <item android:top="4dp" android:left="0dp">
+        <shape>
+            <solid android:color="#FFFFFFFF"/>
+        </shape>
+    </item>
+    <item android:top="4dp" android:left="4dp">
+        <shape>
+            <solid android:color="#FFd3d3d3"/>
+        </shape>
+    </item>
+    <item android:top="4dp" android:left="8dp">
+        <shape>
+            <solid android:color="#FFFFFFFF"/>
+        </shape>
+    </item>
+    <item android:top="4dp" android:left="12dp">
+        <shape>
+            <solid android:color="#FFd3d3d3"/>
+        </shape>
+    </item>
+    <item android:top="4dp" android:left="16dp">
+        <shape>
+            <solid android:color="#FFFFFFFF"/>
+        </shape>
+    </item>
+    <item android:top="4dp" android:left="20dp">
+        <shape>
+            <solid android:color="#FFd3d3d3"/>
+        </shape>
+    </item>
+    <item android:top="4dp" android:left="24dp">
+        <shape>
+            <solid android:color="#FFFFFFFF"/>
+        </shape>
+    </item>
+    <item android:top="4dp" android:left="28dp">
+        <shape>
+            <solid android:color="#FFd3d3d3"/>
+        </shape>
+    </item>
+    <item android:top="4dp" android:left="32dp">
+        <shape>
+            <solid android:color="#FFFFFFFF"/>
+        </shape>
+    </item>
+    <item android:top="4dp" android:left="36dp">
+        <shape>
+            <solid android:color="#FFd3d3d3"/>
+        </shape>
+    </item>
+    <item android:top="4dp" android:left="40dp">
+        <shape>
+            <solid android:color="#FFFFFFFF"/>
+        </shape>
+    </item>
+    <item android:top="4dp" android:left="44dp">
+        <shape>
+            <solid android:color="#FFd3d3d3"/>
+        </shape>
+    </item>
+    <item android:top="4dp" android:left="48dp">
+        <shape>
+            <solid android:color="#FFFFFFFF"/>
+        </shape>
+    </item>
+    <item android:top="4dp" android:left="52dp">
+        <shape>
+            <solid android:color="#FFd3d3d3"/>
+        </shape>
+    </item>
+
+
+    <item android:top="8dp" android:left="0dp">
+        <shape>
+            <solid android:color="#FFd3d3d3"/>
+        </shape>
+    </item>
+    <item android:top="8dp" android:left="4dp">
+        <shape>
+            <solid android:color="#FFFFFFFF"/>
+        </shape>
+    </item>
+    <item android:top="8dp" android:left="8dp">
+        <shape>
+            <solid android:color="#FFd3d3d3"/>
+        </shape>
+    </item>
+    <item android:top="8dp" android:left="12dp">
+        <shape>
+            <solid android:color="#FFFFFFFF"/>
+        </shape>
+    </item>
+    <item android:top="8dp" android:left="16dp">
+        <shape>
+            <solid android:color="#FFd3d3d3"/>
+        </shape>
+    </item>
+    <item android:top="8dp" android:left="20dp">
+        <shape>
+            <solid android:color="#FFFFFFFF"/>
+        </shape>
+    </item>
+    <item android:top="8dp" android:left="24dp">
+        <shape>
+            <solid android:color="#FFd3d3d3"/>
+        </shape>
+    </item>
+    <item android:top="8dp" android:left="28dp">
+        <shape>
+            <solid android:color="#FFFFFFFF"/>
+        </shape>
+    </item>
+    <item android:top="8dp" android:left="32dp">
+        <shape>
+            <solid android:color="#FFd3d3d3"/>
+        </shape>
+    </item>
+    <item android:top="8dp" android:left="36dp">
+        <shape>
+            <solid android:color="#FFFFFFFF"/>
+        </shape>
+    </item>
+    <item android:top="8dp" android:left="40dp">
+        <shape>
+            <solid android:color="#FFd3d3d3"/>
+        </shape>
+    </item>
+    <item android:top="8dp" android:left="44dp">
+        <shape>
+            <solid android:color="#FFFFFFFF"/>
+        </shape>
+    </item>
+    <item android:top="8dp" android:left="48dp">
+        <shape>
+            <solid android:color="#FFd3d3d3"/>
+        </shape>
+    </item>
+    <item android:top="8dp" android:left="52dp">
+        <shape>
+            <solid android:color="#FFFFFFFF"/>
+        </shape>
+    </item>
+
+
+    <item android:top="12dp" android:left="0dp">
+        <shape>
+            <solid android:color="#FFFFFFFF"/>
+        </shape>
+    </item>
+    <item android:top="12dp" android:left="4dp">
+        <shape>
+            <solid android:color="#FFd3d3d3"/>
+        </shape>
+    </item>
+    <item android:top="12dp" android:left="8dp">
+        <shape>
+            <solid android:color="#FFFFFFFF"/>
+        </shape>
+    </item>
+    <item android:top="12dp" android:left="12dp">
+        <shape>
+            <solid android:color="#FFd3d3d3"/>
+        </shape>
+    </item>
+    <item android:top="12dp" android:left="16dp">
+        <shape>
+            <solid android:color="#FFFFFFFF"/>
+        </shape>
+    </item>
+    <item android:top="12dp" android:left="20dp">
+        <shape>
+            <solid android:color="#FFd3d3d3"/>
+        </shape>
+    </item>
+    <item android:top="12dp" android:left="24dp">
+        <shape>
+            <solid android:color="#FFFFFFFF"/>
+        </shape>
+    </item>
+    <item android:top="12dp" android:left="28dp">
+        <shape>
+            <solid android:color="#FFd3d3d3"/>
+        </shape>
+    </item>
+    <item android:top="12dp" android:left="32dp">
+        <shape>
+            <solid android:color="#FFFFFFFF"/>
+        </shape>
+    </item>
+    <item android:top="12dp" android:left="36dp">
+        <shape>
+            <solid android:color="#FFd3d3d3"/>
+        </shape>
+    </item>
+    <item android:top="12dp" android:left="40dp">
+        <shape>
+            <solid android:color="#FFFFFFFF"/>
+        </shape>
+    </item>
+    <item android:top="12dp" android:left="44dp">
+        <shape>
+            <solid android:color="#FFd3d3d3"/>
+        </shape>
+    </item>
+    <item android:top="12dp" android:left="48dp">
+        <shape>
+            <solid android:color="#FFFFFFFF"/>
+        </shape>
+    </item>
+    <item android:top="12dp" android:left="52dp">
+        <shape>
+            <solid android:color="#FFd3d3d3"/>
+        </shape>
+    </item>
+
+
+    <item android:top="16dp" android:left="0dp">
+        <shape>
+            <solid android:color="#FFd3d3d3"/>
+        </shape>
+    </item>
+    <item android:top="16dp" android:left="4dp">
+        <shape>
+            <solid android:color="#FFFFFFFF"/>
+        </shape>
+    </item>
+    <item android:top="16dp" android:left="8dp">
+        <shape>
+            <solid android:color="#FFd3d3d3"/>
+        </shape>
+    </item>
+    <item android:top="16dp" android:left="12dp">
+        <shape>
+            <solid android:color="#FFFFFFFF"/>
+        </shape>
+    </item>
+    <item android:top="16dp" android:left="16dp">
+        <shape>
+            <solid android:color="#FFd3d3d3"/>
+        </shape>
+    </item>
+    <item android:top="16dp" android:left="20dp">
+        <shape>
+            <solid android:color="#FFFFFFFF"/>
+        </shape>
+    </item>
+    <item android:top="16dp" android:left="24dp">
+        <shape>
+            <solid android:color="#FFd3d3d3"/>
+        </shape>
+    </item>
+    <item android:top="16dp" android:left="28dp">
+        <shape>
+            <solid android:color="#FFFFFFFF"/>
+        </shape>
+    </item>
+    <item android:top="16dp" android:left="32dp">
+        <shape>
+            <solid android:color="#FFd3d3d3"/>
+        </shape>
+    </item>
+    <item android:top="16dp" android:left="36dp">
+        <shape>
+            <solid android:color="#FFFFFFFF"/>
+        </shape>
+    </item>
+    <item android:top="16dp" android:left="40dp">
+        <shape>
+            <solid android:color="#FFd3d3d3"/>
+        </shape>
+    </item>
+    <item android:top="16dp" android:left="44dp">
+        <shape>
+            <solid android:color="#FFFFFFFF"/>
+        </shape>
+    </item>
+    <item android:top="16dp" android:left="48dp">
+        <shape>
+            <solid android:color="#FFd3d3d3"/>
+        </shape>
+    </item>
+    <item android:top="16dp" android:left="52dp">
+        <shape>
+            <solid android:color="#FFFFFFFF"/>
+        </shape>
+    </item>
+
+
+    <item android:top="20dp" android:left="0dp">
+        <shape>
+            <solid android:color="#FFFFFFFF"/>
+        </shape>
+    </item>
+    <item android:top="20dp" android:left="4dp">
+        <shape>
+            <solid android:color="#FFd3d3d3"/>
+        </shape>
+    </item>
+    <item android:top="20dp" android:left="8dp">
+        <shape>
+            <solid android:color="#FFFFFFFF"/>
+        </shape>
+    </item>
+    <item android:top="20dp" android:left="12dp">
+        <shape>
+            <solid android:color="#FFd3d3d3"/>
+        </shape>
+    </item>
+    <item android:top="20dp" android:left="16dp">
+        <shape>
+            <solid android:color="#FFFFFFFF"/>
+        </shape>
+    </item>
+    <item android:top="20dp" android:left="20dp">
+        <shape>
+            <solid android:color="#FFd3d3d3"/>
+        </shape>
+    </item>
+    <item android:top="20dp" android:left="24dp">
+        <shape>
+            <solid android:color="#FFFFFFFF"/>
+        </shape>
+    </item>
+    <item android:top="20dp" android:left="28dp">
+        <shape>
+            <solid android:color="#FFd3d3d3"/>
+        </shape>
+    </item>
+    <item android:top="20dp" android:left="32dp">
+        <shape>
+            <solid android:color="#FFFFFFFF"/>
+        </shape>
+    </item>
+    <item android:top="20dp" android:left="36dp">
+        <shape>
+            <solid android:color="#FFd3d3d3"/>
+        </shape>
+    </item>
+    <item android:top="20dp" android:left="40dp">
+        <shape>
+            <solid android:color="#FFFFFFFF"/>
+        </shape>
+    </item>
+    <item android:top="20dp" android:left="44dp">
+        <shape>
+            <solid android:color="#FFd3d3d3"/>
+        </shape>
+    </item>
+    <item android:top="20dp" android:left="48dp">
+        <shape>
+            <solid android:color="#FFFFFFFF"/>
+        </shape>
+    </item>
+    <item android:top="20dp" android:left="52dp">
+        <shape>
+            <solid android:color="#FFd3d3d3"/>
+        </shape>
+    </item>
+
+
+    <item android:top="24dp" android:left="0dp">
+        <shape>
+            <solid android:color="#FFd3d3d3"/>
+        </shape>
+    </item>
+    <item android:top="24dp" android:left="4dp">
+        <shape>
+            <solid android:color="#FFFFFFFF"/>
+        </shape>
+    </item>
+    <item android:top="24dp" android:left="8dp">
+        <shape>
+            <solid android:color="#FFd3d3d3"/>
+        </shape>
+    </item>
+    <item android:top="24dp" android:left="12dp">
+        <shape>
+            <solid android:color="#FFFFFFFF"/>
+        </shape>
+    </item>
+    <item android:top="24dp" android:left="16dp">
+        <shape>
+            <solid android:color="#FFd3d3d3"/>
+        </shape>
+    </item>
+    <item android:top="24dp" android:left="20dp">
+        <shape>
+            <solid android:color="#FFFFFFFF"/>
+        </shape>
+    </item>
+    <item android:top="24dp" android:left="24dp">
+        <shape>
+            <solid android:color="#FFd3d3d3"/>
+        </shape>
+    </item>
+    <item android:top="24dp" android:left="28dp">
+        <shape>
+            <solid android:color="#FFFFFFFF"/>
+        </shape>
+    </item>
+    <item android:top="24dp" android:left="32dp">
+        <shape>
+            <solid android:color="#FFd3d3d3"/>
+        </shape>
+    </item>
+    <item android:top="24dp" android:left="36dp">
+        <shape>
+            <solid android:color="#FFFFFFFF"/>
+        </shape>
+    </item>
+    <item android:top="24dp" android:left="40dp">
+        <shape>
+            <solid android:color="#FFd3d3d3"/>
+        </shape>
+    </item>
+    <item android:top="24dp" android:left="44dp">
+        <shape>
+            <solid android:color="#FFFFFFFF"/>
+        </shape>
+    </item>
+    <item android:top="24dp" android:left="48dp">
+        <shape>
+            <solid android:color="#FFd3d3d3"/>
+        </shape>
+    </item>
+    <item android:top="24dp" android:left="52dp">
+        <shape>
+            <solid android:color="#FFFFFFFF"/>
+        </shape>
+    </item>
+
+
+    <item android:top="28dp" android:left="0dp">
+        <shape>
+            <solid android:color="#FFFFFFFF"/>
+        </shape>
+    </item>
+    <item android:top="28dp" android:left="4dp">
+        <shape>
+            <solid android:color="#FFd3d3d3"/>
+        </shape>
+    </item>
+    <item android:top="28dp" android:left="8dp">
+        <shape>
+            <solid android:color="#FFFFFFFF"/>
+        </shape>
+    </item>
+    <item android:top="28dp" android:left="12dp">
+        <shape>
+            <solid android:color="#FFd3d3d3"/>
+        </shape>
+    </item>
+    <item android:top="28dp" android:left="16dp">
+        <shape>
+            <solid android:color="#FFFFFFFF"/>
+        </shape>
+    </item>
+    <item android:top="28dp" android:left="20dp">
+        <shape>
+            <solid android:color="#FFd3d3d3"/>
+        </shape>
+    </item>
+    <item android:top="28dp" android:left="24dp">
+        <shape>
+            <solid android:color="#FFFFFFFF"/>
+        </shape>
+    </item>
+    <item android:top="28dp" android:left="28dp">
+        <shape>
+            <solid android:color="#FFd3d3d3"/>
+        </shape>
+    </item>
+    <item android:top="28dp" android:left="32dp">
+        <shape>
+            <solid android:color="#FFFFFFFF"/>
+        </shape>
+    </item>
+    <item android:top="28dp" android:left="36dp">
+        <shape>
+            <solid android:color="#FFd3d3d3"/>
+        </shape>
+    </item>
+    <item android:top="28dp" android:left="40dp">
+        <shape>
+            <solid android:color="#FFFFFFFF"/>
+        </shape>
+    </item>
+    <item android:top="28dp" android:left="44dp">
+        <shape>
+            <solid android:color="#FFd3d3d3"/>
+        </shape>
+    </item>
+    <item android:top="28dp" android:left="48dp">
+        <shape>
+            <solid android:color="#FFFFFFFF"/>
+        </shape>
+    </item>
+    <item android:top="28dp" android:left="52dp">
+        <shape>
+            <solid android:color="#FFd3d3d3"/>
+        </shape>
+    </item>
+
+
+    <item android:top="32dp" android:left="0dp">
+        <shape>
+            <solid android:color="#FFd3d3d3"/>
+        </shape>
+    </item>
+    <item android:top="32dp" android:left="4dp">
+        <shape>
+            <solid android:color="#FFFFFFFF"/>
+        </shape>
+    </item>
+    <item android:top="32dp" android:left="8dp">
+        <shape>
+            <solid android:color="#FFd3d3d3"/>
+        </shape>
+    </item>
+    <item android:top="32dp" android:left="12dp">
+        <shape>
+            <solid android:color="#FFFFFFFF"/>
+        </shape>
+    </item>
+    <item android:top="32dp" android:left="16dp">
+        <shape>
+            <solid android:color="#FFd3d3d3"/>
+        </shape>
+    </item>
+    <item android:top="32dp" android:left="20dp">
+        <shape>
+            <solid android:color="#FFFFFFFF"/>
+        </shape>
+    </item>
+    <item android:top="32dp" android:left="24dp">
+        <shape>
+            <solid android:color="#FFd3d3d3"/>
+        </shape>
+    </item>
+    <item android:top="32dp" android:left="28dp">
+        <shape>
+            <solid android:color="#FFFFFFFF"/>
+        </shape>
+    </item>
+    <item android:top="32dp" android:left="32dp">
+        <shape>
+            <solid android:color="#FFd3d3d3"/>
+        </shape>
+    </item>
+    <item android:top="32dp" android:left="36dp">
+        <shape>
+            <solid android:color="#FFFFFFFF"/>
+        </shape>
+    </item>
+    <item android:top="32dp" android:left="40dp">
+        <shape>
+            <solid android:color="#FFd3d3d3"/>
+        </shape>
+    </item>
+    <item android:top="32dp" android:left="44dp">
+        <shape>
+            <solid android:color="#FFFFFFFF"/>
+        </shape>
+    </item>
+    <item android:top="32dp" android:left="48dp">
+        <shape>
+            <solid android:color="#FFd3d3d3"/>
+        </shape>
+    </item>
+    <item android:top="32dp" android:left="52dp">
+        <shape>
+            <solid android:color="#FFFFFFFF"/>
+        </shape>
+    </item>
+
+
+    <item android:top="36dp" android:left="0dp">
+        <shape>
+            <solid android:color="#FFFFFFFF"/>
+        </shape>
+    </item>
+    <item android:top="36dp" android:left="4dp">
+        <shape>
+            <solid android:color="#FFd3d3d3"/>
+        </shape>
+    </item>
+    <item android:top="36dp" android:left="8dp">
+        <shape>
+            <solid android:color="#FFFFFFFF"/>
+        </shape>
+    </item>
+    <item android:top="36dp" android:left="12dp">
+        <shape>
+            <solid android:color="#FFd3d3d3"/>
+        </shape>
+    </item>
+    <item android:top="36dp" android:left="16dp">
+        <shape>
+            <solid android:color="#FFFFFFFF"/>
+        </shape>
+    </item>
+    <item android:top="36dp" android:left="20dp">
+        <shape>
+            <solid android:color="#FFd3d3d3"/>
+        </shape>
+    </item>
+    <item android:top="36dp" android:left="24dp">
+        <shape>
+            <solid android:color="#FFFFFFFF"/>
+        </shape>
+    </item>
+    <item android:top="36dp" android:left="28dp">
+        <shape>
+            <solid android:color="#FFd3d3d3"/>
+        </shape>
+    </item>
+    <item android:top="36dp" android:left="32dp">
+        <shape>
+            <solid android:color="#FFFFFFFF"/>
+        </shape>
+    </item>
+    <item android:top="36dp" android:left="36dp">
+        <shape>
+            <solid android:color="#FFd3d3d3"/>
+        </shape>
+    </item>
+    <item android:top="36dp" android:left="40dp">
+        <shape>
+            <solid android:color="#FFFFFFFF"/>
+        </shape>
+    </item>
+    <item android:top="36dp" android:left="44dp">
+        <shape>
+            <solid android:color="#FFd3d3d3"/>
+        </shape>
+    </item>
+    <item android:top="36dp" android:left="48dp">
+        <shape>
+            <solid android:color="#FFFFFFFF"/>
+        </shape>
+    </item>
+    <item android:top="36dp" android:left="52dp">
+        <shape>
+            <solid android:color="#FFd3d3d3"/>
+        </shape>
+    </item>
+
+
+    <item android:top="40dp" android:left="0dp">
+        <shape>
+            <solid android:color="#FFd3d3d3"/>
+        </shape>
+    </item>
+    <item android:top="40dp" android:left="4dp">
+        <shape>
+            <solid android:color="#FFFFFFFF"/>
+        </shape>
+    </item>
+    <item android:top="40dp" android:left="8dp">
+        <shape>
+            <solid android:color="#FFd3d3d3"/>
+        </shape>
+    </item>
+    <item android:top="40dp" android:left="12dp">
+        <shape>
+            <solid android:color="#FFFFFFFF"/>
+        </shape>
+    </item>
+    <item android:top="40dp" android:left="16dp">
+        <shape>
+            <solid android:color="#FFd3d3d3"/>
+        </shape>
+    </item>
+    <item android:top="40dp" android:left="20dp">
+        <shape>
+            <solid android:color="#FFFFFFFF"/>
+        </shape>
+    </item>
+    <item android:top="40dp" android:left="24dp">
+        <shape>
+            <solid android:color="#FFd3d3d3"/>
+        </shape>
+    </item>
+    <item android:top="40dp" android:left="28dp">
+        <shape>
+            <solid android:color="#FFFFFFFF"/>
+        </shape>
+    </item>
+    <item android:top="40dp" android:left="32dp">
+        <shape>
+            <solid android:color="#FFd3d3d3"/>
+        </shape>
+    </item>
+    <item android:top="40dp" android:left="36dp">
+        <shape>
+            <solid android:color="#FFFFFFFF"/>
+        </shape>
+    </item>
+    <item android:top="40dp" android:left="40dp">
+        <shape>
+            <solid android:color="#FFd3d3d3"/>
+        </shape>
+    </item>
+    <item android:top="40dp" android:left="44dp">
+        <shape>
+            <solid android:color="#FFFFFFFF"/>
+        </shape>
+    </item>
+    <item android:top="40dp" android:left="48dp">
+        <shape>
+            <solid android:color="#FFd3d3d3"/>
+        </shape>
+    </item>
+    <item android:top="40dp" android:left="52dp">
+        <shape>
+            <solid android:color="#FFFFFFFF"/>
+        </shape>
+    </item>
+
+
+    <item android:top="44dp" android:left="0dp">
+        <shape>
+            <solid android:color="#FFFFFFFF"/>
+        </shape>
+    </item>
+    <item android:top="44dp" android:left="4dp">
+        <shape>
+            <solid android:color="#FFd3d3d3"/>
+        </shape>
+    </item>
+    <item android:top="44dp" android:left="8dp">
+        <shape>
+            <solid android:color="#FFFFFFFF"/>
+        </shape>
+    </item>
+    <item android:top="44dp" android:left="12dp">
+        <shape>
+            <solid android:color="#FFd3d3d3"/>
+        </shape>
+    </item>
+    <item android:top="44dp" android:left="16dp">
+        <shape>
+            <solid android:color="#FFFFFFFF"/>
+        </shape>
+    </item>
+    <item android:top="44dp" android:left="20dp">
+        <shape>
+            <solid android:color="#FFd3d3d3"/>
+        </shape>
+    </item>
+    <item android:top="44dp" android:left="24dp">
+        <shape>
+            <solid android:color="#FFFFFFFF"/>
+        </shape>
+    </item>
+    <item android:top="44dp" android:left="28dp">
+        <shape>
+            <solid android:color="#FFd3d3d3"/>
+        </shape>
+    </item>
+    <item android:top="44dp" android:left="32dp">
+        <shape>
+            <solid android:color="#FFFFFFFF"/>
+        </shape>
+    </item>
+    <item android:top="44dp" android:left="36dp">
+        <shape>
+            <solid android:color="#FFd3d3d3"/>
+        </shape>
+    </item>
+    <item android:top="44dp" android:left="40dp">
+        <shape>
+            <solid android:color="#FFFFFFFF"/>
+        </shape>
+    </item>
+    <item android:top="44dp" android:left="44dp">
+        <shape>
+            <solid android:color="#FFd3d3d3"/>
+        </shape>
+    </item>
+    <item android:top="44dp" android:left="48dp">
+        <shape>
+            <solid android:color="#FFFFFFFF"/>
+        </shape>
+    </item>
+    <item android:top="44dp" android:left="52dp">
+        <shape>
+            <solid android:color="#FFd3d3d3"/>
+        </shape>
+    </item>
+
+
+    <item android:top="48dp" android:left="0dp">
+        <shape>
+            <solid android:color="#FFd3d3d3"/>
+        </shape>
+    </item>
+    <item android:top="48dp" android:left="4dp">
+        <shape>
+            <solid android:color="#FFFFFFFF"/>
+        </shape>
+    </item>
+    <item android:top="48dp" android:left="8dp">
+        <shape>
+            <solid android:color="#FFd3d3d3"/>
+        </shape>
+    </item>
+    <item android:top="48dp" android:left="12dp">
+        <shape>
+            <solid android:color="#FFFFFFFF"/>
+        </shape>
+    </item>
+    <item android:top="48dp" android:left="16dp">
+        <shape>
+            <solid android:color="#FFd3d3d3"/>
+        </shape>
+    </item>
+    <item android:top="48dp" android:left="20dp">
+        <shape>
+            <solid android:color="#FFFFFFFF"/>
+        </shape>
+    </item>
+    <item android:top="48dp" android:left="24dp">
+        <shape>
+            <solid android:color="#FFd3d3d3"/>
+        </shape>
+    </item>
+    <item android:top="48dp" android:left="28dp">
+        <shape>
+            <solid android:color="#FFFFFFFF"/>
+        </shape>
+    </item>
+    <item android:top="48dp" android:left="32dp">
+        <shape>
+            <solid android:color="#FFd3d3d3"/>
+        </shape>
+    </item>
+    <item android:top="48dp" android:left="36dp">
+        <shape>
+            <solid android:color="#FFFFFFFF"/>
+        </shape>
+    </item>
+    <item android:top="48dp" android:left="40dp">
+        <shape>
+            <solid android:color="#FFd3d3d3"/>
+        </shape>
+    </item>
+    <item android:top="48dp" android:left="44dp">
+        <shape>
+            <solid android:color="#FFFFFFFF"/>
+        </shape>
+    </item>
+    <item android:top="48dp" android:left="48dp">
+        <shape>
+            <solid android:color="#FFd3d3d3"/>
+        </shape>
+    </item>
+    <item android:top="48dp" android:left="52dp">
+        <shape>
+            <solid android:color="#FFFFFFFF"/>
+        </shape>
+    </item>
+
+
+    <item android:top="52dp" android:left="0dp">
+        <shape>
+            <solid android:color="#FFFFFFFF"/>
+        </shape>
+    </item>
+    <item android:top="52dp" android:left="4dp">
+        <shape>
+            <solid android:color="#FFd3d3d3"/>
+        </shape>
+    </item>
+    <item android:top="52dp" android:left="8dp">
+        <shape>
+            <solid android:color="#FFFFFFFF"/>
+        </shape>
+    </item>
+    <item android:top="52dp" android:left="12dp">
+        <shape>
+            <solid android:color="#FFd3d3d3"/>
+        </shape>
+    </item>
+    <item android:top="52dp" android:left="16dp">
+        <shape>
+            <solid android:color="#FFFFFFFF"/>
+        </shape>
+    </item>
+    <item android:top="52dp" android:left="20dp">
+        <shape>
+            <solid android:color="#FFd3d3d3"/>
+        </shape>
+    </item>
+    <item android:top="52dp" android:left="24dp">
+        <shape>
+            <solid android:color="#FFFFFFFF"/>
+        </shape>
+    </item>
+    <item android:top="52dp" android:left="28dp">
+        <shape>
+            <solid android:color="#FFd3d3d3"/>
+        </shape>
+    </item>
+    <item android:top="52dp" android:left="32dp">
+        <shape>
+            <solid android:color="#FFFFFFFF"/>
+        </shape>
+    </item>
+    <item android:top="52dp" android:left="36dp">
+        <shape>
+            <solid android:color="#FFd3d3d3"/>
+        </shape>
+    </item>
+    <item android:top="52dp" android:left="40dp">
+        <shape>
+            <solid android:color="#FFFFFFFF"/>
+        </shape>
+    </item>
+    <item android:top="52dp" android:left="44dp">
+        <shape>
+            <solid android:color="#FFd3d3d3"/>
+        </shape>
+    </item>
+    <item android:top="52dp" android:left="48dp">
+        <shape>
+            <solid android:color="#FFFFFFFF"/>
+        </shape>
+    </item>
+    <item android:top="52dp" android:left="52dp">
+        <shape>
+            <solid android:color="#FFd3d3d3"/>
+        </shape>
+    </item>
+
+
+    <item android:top="56dp" android:left="0dp">
+        <shape>
+            <solid android:color="#FFd3d3d3"/>
+        </shape>
+    </item>
+    <item android:top="56dp" android:left="4dp">
+        <shape>
+            <solid android:color="#FFFFFFFF"/>
+        </shape>
+    </item>
+    <item android:top="56dp" android:left="8dp">
+        <shape>
+            <solid android:color="#FFd3d3d3"/>
+        </shape>
+    </item>
+    <item android:top="56dp" android:left="12dp">
+        <shape>
+            <solid android:color="#FFFFFFFF"/>
+        </shape>
+    </item>
+    <item android:top="56dp" android:left="16dp">
+        <shape>
+            <solid android:color="#FFd3d3d3"/>
+        </shape>
+    </item>
+    <item android:top="56dp" android:left="20dp">
+        <shape>
+            <solid android:color="#FFFFFFFF"/>
+        </shape>
+    </item>
+    <item android:top="56dp" android:left="24dp">
+        <shape>
+            <solid android:color="#FFd3d3d3"/>
+        </shape>
+    </item>
+    <item android:top="56dp" android:left="28dp">
+        <shape>
+            <solid android:color="#FFFFFFFF"/>
+        </shape>
+    </item>
+    <item android:top="56dp" android:left="32dp">
+        <shape>
+            <solid android:color="#FFd3d3d3"/>
+        </shape>
+    </item>
+    <item android:top="56dp" android:left="36dp">
+        <shape>
+            <solid android:color="#FFFFFFFF"/>
+        </shape>
+    </item>
+    <item android:top="56dp" android:left="40dp">
+        <shape>
+            <solid android:color="#FFd3d3d3"/>
+        </shape>
+    </item>
+    <item android:top="56dp" android:left="44dp">
+        <shape>
+            <solid android:color="#FFFFFFFF"/>
+        </shape>
+    </item>
+    <item android:top="56dp" android:left="48dp">
+        <shape>
+            <solid android:color="#FFd3d3d3"/>
+        </shape>
+    </item>
+    <item android:top="56dp" android:left="52dp">
+        <shape>
+            <solid android:color="#FFFFFFFF"/>
+        </shape>
+    </item>
+
+
+    <item android:top="60dp" android:left="0dp">
+        <shape>
+            <solid android:color="#FFFFFFFF"/>
+        </shape>
+    </item>
+    <item android:top="60dp" android:left="4dp">
+        <shape>
+            <solid android:color="#FFd3d3d3"/>
+        </shape>
+    </item>
+    <item android:top="60dp" android:left="8dp">
+        <shape>
+            <solid android:color="#FFFFFFFF"/>
+        </shape>
+    </item>
+    <item android:top="60dp" android:left="12dp">
+        <shape>
+            <solid android:color="#FFd3d3d3"/>
+        </shape>
+    </item>
+    <item android:top="60dp" android:left="16dp">
+        <shape>
+            <solid android:color="#FFFFFFFF"/>
+        </shape>
+    </item>
+    <item android:top="60dp" android:left="20dp">
+        <shape>
+            <solid android:color="#FFd3d3d3"/>
+        </shape>
+    </item>
+    <item android:top="60dp" android:left="24dp">
+        <shape>
+            <solid android:color="#FFFFFFFF"/>
+        </shape>
+    </item>
+    <item android:top="60dp" android:left="28dp">
+        <shape>
+            <solid android:color="#FFd3d3d3"/>
+        </shape>
+    </item>
+    <item android:top="60dp" android:left="32dp">
+        <shape>
+            <solid android:color="#FFFFFFFF"/>
+        </shape>
+    </item>
+    <item android:top="60dp" android:left="36dp">
+        <shape>
+            <solid android:color="#FFd3d3d3"/>
+        </shape>
+    </item>
+    <item android:top="60dp" android:left="40dp">
+        <shape>
+            <solid android:color="#FFFFFFFF"/>
+        </shape>
+    </item>
+    <item android:top="60dp" android:left="44dp">
+        <shape>
+            <solid android:color="#FFd3d3d3"/>
+        </shape>
+    </item>
+    <item android:top="60dp" android:left="48dp">
+        <shape>
+            <solid android:color="#FFFFFFFF"/>
+        </shape>
+    </item>
+    <item android:top="60dp" android:left="52dp">
+        <shape>
+            <solid android:color="#FFd3d3d3"/>
+        </shape>
+    </item>
+
+
+    <item android:top="64dp" android:left="0dp">
+        <shape>
+            <solid android:color="#FFd3d3d3"/>
+        </shape>
+    </item>
+    <item android:top="64dp" android:left="4dp">
+        <shape>
+            <solid android:color="#FFFFFFFF"/>
+        </shape>
+    </item>
+    <item android:top="64dp" android:left="8dp">
+        <shape>
+            <solid android:color="#FFd3d3d3"/>
+        </shape>
+    </item>
+    <item android:top="64dp" android:left="12dp">
+        <shape>
+            <solid android:color="#FFFFFFFF"/>
+        </shape>
+    </item>
+    <item android:top="64dp" android:left="16dp">
+        <shape>
+            <solid android:color="#FFd3d3d3"/>
+        </shape>
+    </item>
+    <item android:top="64dp" android:left="20dp">
+        <shape>
+            <solid android:color="#FFFFFFFF"/>
+        </shape>
+    </item>
+    <item android:top="64dp" android:left="24dp">
+        <shape>
+            <solid android:color="#FFd3d3d3"/>
+        </shape>
+    </item>
+    <item android:top="64dp" android:left="28dp">
+        <shape>
+            <solid android:color="#FFFFFFFF"/>
+        </shape>
+    </item>
+    <item android:top="64dp" android:left="32dp">
+        <shape>
+            <solid android:color="#FFd3d3d3"/>
+        </shape>
+    </item>
+    <item android:top="64dp" android:left="36dp">
+        <shape>
+            <solid android:color="#FFFFFFFF"/>
+        </shape>
+    </item>
+    <item android:top="64dp" android:left="40dp">
+        <shape>
+            <solid android:color="#FFd3d3d3"/>
+        </shape>
+    </item>
+    <item android:top="64dp" android:left="44dp">
+        <shape>
+            <solid android:color="#FFFFFFFF"/>
+        </shape>
+    </item>
+    <item android:top="64dp" android:left="48dp">
+        <shape>
+            <solid android:color="#FFd3d3d3"/>
+        </shape>
+    </item>
+    <item android:top="64dp" android:left="52dp">
+        <shape>
+            <solid android:color="#FFFFFFFF"/>
+        </shape>
+    </item>
+
+
+    <item android:top="68dp" android:left="0dp">
+        <shape>
+            <solid android:color="#FFFFFFFF"/>
+        </shape>
+    </item>
+    <item android:top="68dp" android:left="4dp">
+        <shape>
+            <solid android:color="#FFd3d3d3"/>
+        </shape>
+    </item>
+    <item android:top="68dp" android:left="8dp">
+        <shape>
+            <solid android:color="#FFFFFFFF"/>
+        </shape>
+    </item>
+    <item android:top="68dp" android:left="12dp">
+        <shape>
+            <solid android:color="#FFd3d3d3"/>
+        </shape>
+    </item>
+    <item android:top="68dp" android:left="16dp">
+        <shape>
+            <solid android:color="#FFFFFFFF"/>
+        </shape>
+    </item>
+    <item android:top="68dp" android:left="20dp">
+        <shape>
+            <solid android:color="#FFd3d3d3"/>
+        </shape>
+    </item>
+    <item android:top="68dp" android:left="24dp">
+        <shape>
+            <solid android:color="#FFFFFFFF"/>
+        </shape>
+    </item>
+    <item android:top="68dp" android:left="28dp">
+        <shape>
+            <solid android:color="#FFd3d3d3"/>
+        </shape>
+    </item>
+    <item android:top="68dp" android:left="32dp">
+        <shape>
+            <solid android:color="#FFFFFFFF"/>
+        </shape>
+    </item>
+    <item android:top="68dp" android:left="36dp">
+        <shape>
+            <solid android:color="#FFd3d3d3"/>
+        </shape>
+    </item>
+    <item android:top="68dp" android:left="40dp">
+        <shape>
+            <solid android:color="#FFFFFFFF"/>
+        </shape>
+    </item>
+    <item android:top="68dp" android:left="44dp">
+        <shape>
+            <solid android:color="#FFd3d3d3"/>
+        </shape>
+    </item>
+    <item android:top="68dp" android:left="48dp">
+        <shape>
+            <solid android:color="#FFFFFFFF"/>
+        </shape>
+    </item>
+    <item android:top="68dp" android:left="52dp">
+        <shape>
+            <solid android:color="#FFd3d3d3"/>
+        </shape>
+    </item>
+
+</layer-list>
