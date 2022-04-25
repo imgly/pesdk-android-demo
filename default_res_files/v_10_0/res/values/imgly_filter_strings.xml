@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ This file is part of the PhotoEditor Software Development Kit.
+  ~
+  ~ Copyright (C) 2019 img.ly GmbH <contact@img.ly>
+  ~ All rights reserved.
+  ~
+  ~ Redistribution and use in source and binary forms, without
+  ~ modification, are permitted provided that the following license agreement
+  ~ is approved and a legal/financial contract was signed by the user.
+  ~
+  ~ The license agreement can be found under the following link:
+  ~
+  ~ https://www.photoeditorsdk.com/LICENSE.txt
+  -->
+
+
+
+<resources>
+    <string name="pesdk_filter_asset_none">None</string>
+    <string name="pesdk_filter_asset_ad1920">1920 A.D.</string>
+    <string name="pesdk_filter_asset_ancient">Ancient</string>
+    <string name="pesdk_filter_asset_bleached">Kalmen</string>
+    <string name="pesdk_filter_asset_bBlue">Joran</string>
+    <string name="pesdk_filter_asset_blues">Polaroid</string>
+    <string name="pesdk_filter_asset_blueShade">Zephyr</string>
+    <string name="pesdk_filter_asset_breeze">Levante</string>
+    <string name="pesdk_filter_asset_bw">Greyed</string>
+    <string name="pesdk_filter_asset_celsius">Inferno</string>
+    <string name="pesdk_filter_asset_chest">Chestnut</string>
+    <string name="pesdk_filter_asset_classic">Classic</string>
+    <string name="pesdk_filter_asset_colorful">Colorful</string>
+    <string name="pesdk_filter_asset_cool">Snappy</string>
+    <string name="pesdk_filter_asset_candy">Candy</string>
+    <string name="pesdk_filter_asset_creamy">Creamy</string>
+    <string name="pesdk_filter_asset_80s">Low Fire</string>
+    <string name="pesdk_filter_asset_elder">Colla</string>
+    <string name="pesdk_filter_asset_evening">Sunrise</string>
+    <string name="pesdk_filter_asset_fall">Moss</string>
+    <string name="pesdk_filter_asset_fixie">Fixie</string>
+    <string name="pesdk_filter_asset_food">Food</string>
+    <string name="pesdk_filter_asset_fridge">Fridge</string>
+    <string name="pesdk_filter_asset_front">Sunny 70s</string>
+    <string name="pesdk_filter_asset_glam">Glam</string>
+    <string name="pesdk_filter_asset_goblin">Gobblin</string>
+    <string name="pesdk_filter_asset_carb">High Carb</string>
+    <string name="pesdk_filter_asset_hicon">Hicon</string>
+    <string name="pesdk_filter_asset_identity">Identity</string>
+    <string name="pesdk_filter_asset_k1">K1</string>
+    <string name="pesdk_filter_asset_k2">Flat Black</string>
+    <string name="pesdk_filter_asset_k6">K6</string>
+    <string name="pesdk_filter_asset_dynamic">Pebble</string>
+    <string name="pesdk_filter_asset_keen">Keen</string>
+    <string name="pesdk_filter_asset_lenin">Lemon</string>
+    <string name="pesdk_filter_asset_litho">Litho</string>
+    <string name="pesdk_filter_asset_lomo">Lomo</string>
+    <string name="pesdk_filter_asset_lomo100">Lomo 100</string>
+    <string name="pesdk_filter_asset_lucid">Lucid</string>
+    <string name="pesdk_filter_asset_mellow">Mellow</string>
+    <string name="pesdk_filter_asset_neat">Neat</string>
+    <string name="pesdk_filter_asset_noGreen">Pumpkin</string>
+    <string name="pesdk_filter_asset_orchid">Solanus</string>
+    <string name="pesdk_filter_asset_pale">Pale</string>
+    <string name="pesdk_filter_asset_pitched">Pitched</string>
+    <string name="pesdk_filter_asset_plate">Weathered</string>
+    <string name="pesdk_filter_asset_669">Green Gap</string>
+    <string name="pesdk_filter_asset_sx">Pola SX</string>
+    <string name="pesdk_filter_asset_pro400">Pro 400</string>
+    <string name="pesdk_filter_asset_quozi">Quozi</string>
+    <string name="pesdk_filter_asset_sepiaHigh">Sepia</string>
+    <string name="pesdk_filter_asset_settled">Settled</string>
+    <string name="pesdk_filter_asset_70s">Seventies</string>
+    <string name="pesdk_filter_asset_sin">Hard Stuff</string>
+    <string name="pesdk_filter_asset_soft">Soft</string>
+    <string name="pesdk_filter_asset_steel">Steel</string>
+    <string name="pesdk_filter_asset_summer">Summer</string>
+    <string name="pesdk_filter_asset_sunset">Golden</string>
+    <string name="pesdk_filter_asset_tender">Tender</string>
+    <string name="pesdk_filter_asset_texas">Oldtimer</string>
+    <string name="pesdk_filter_asset_twilight">Twilight</string>
+    <string name="pesdk_filter_asset_winter">Softy</string>
+    <string name="pesdk_filter_asset_x400">Dusty</string>
+
+    <string name="pesdk_filter_asset_duotoneDesert">Desert</string>
+    <string name="pesdk_filter_asset_duotonePeach">Peach</string>
+    <string name="pesdk_filter_asset_duotoneClash">Clash</string>
+    <string name="pesdk_filter_asset_duotonePlum">Plum</string>
+    <string name="pesdk_filter_asset_duotoneBreezy">Breezy</string>
+    <string name="pesdk_filter_asset_duotoneDeepBlue">Deep Blue</string>
+    <string name="pesdk_filter_asset_duotoneFrog">Frog</string>
+    <string name="pesdk_filter_asset_duotoneSunset">Sunset</string>
+
+    <string name="pesdk_filter_folder_duotone">Duotone</string>
+    <string name="pesdk_filter_folder_b_and_w">B &amp; W</string>
+    <string name="pesdk_filter_folder_vintage">Vintage</string>
+    <string name="pesdk_filter_folder_smooth">Smooth</string>
+    <string name="pesdk_filter_folder_cold">Cold</string>
+    <string name="pesdk_filter_folder_warm">Warm</string>
+    <string name="pesdk_filter_folder_legacy">Legacy</string>
+
+</resources>

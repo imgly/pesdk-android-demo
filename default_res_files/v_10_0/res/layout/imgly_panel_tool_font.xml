@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ This file is part of the PhotoEditor Software Development Kit.
+  ~
+  ~ Copyright (C) 2019 img.ly GmbH <contact@img.ly>
+  ~ All rights reserved.
+  ~
+  ~ Redistribution and use in source and binary forms, without
+  ~ modification, are permitted provided that the following license agreement
+  ~ is approved and a legal/financial contract was signed by the user.
+  ~
+  ~ The license agreement can be found under the following link:
+  ~
+  ~ https://www.photoeditorsdk.com/LICENSE.txt
+  -->
+
+
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootView"
+    style="?attr/Imgly.PESDK.Editor.Panel.Font">
+    <ly.img.android.pesdk.ui.widgets.DraggableExpandView
+        android:id="@+id/expandView"
+        style="?attr/Imgly.PESDK.Editor.Panel.Font.Expandable">
+        <ly.img.android.pesdk.ui.widgets.VerticalListView
+            android:id="@+id/bigFontList"
+            style="?attr/Imgly.PESDK.Editor.Panel.Font.FontVertical.Container"/>
+        <ImageView
+            android:id="@id/draggerThumb"
+            style="?attr/Imgly.PESDK.Editor.Panel.Font.Thumb"/>
+    </ly.img.android.pesdk.ui.widgets.DraggableExpandView>
+    <include layout="@layout/imgly_option_list"
+             style="?attr/Imgly.PESDK.Editor.Panel.Font.OptionList"/>
+</RelativeLayout>
