@@ -1,8 +1,25 @@
 # PhotoEditor SDK - Changelog
 
+## v10.1.0
+
+### Added
+
+* Support for background removal on photos and stickers.
+* Support for custom sticker selection fragment.
+* Giphy sticker provider integration with Sticker Tool.
+
+### Fixed
+
+* `InflateException` in `VideoCompositionToolPanel` when `ui:adjustment` module not included.
+* `VideoTrimToolPanel` not showing in trial mode with default configuration.
+* `UiConfigComposition.allowAddVideoClips` was being ignored.
+*  Confirm Popup chopped off CTAs when description is small.
+*  `NetworkOnMainThreadException` when using remote sticker sources.
+
 ## v10.0.1
 
 ### Fixed
+
 * Crash caused by incorrect API usage due to incorrect Android documentation.
 
 ## ~~v10.0.0~~ (Broken release, don't use it!)
@@ -32,6 +49,7 @@
 * New constructor in `PhotoEditorBuilder` and `VideoEditorBuilder` to open a custom `Activity`.
 
 ### Fixed
+
 * Audio surge.
 * A couple of Video crashes.
 * Unable to replace sticker sometimes.
