@@ -1,5 +1,15 @@
 # PhotoEditor SDK - Changelog
 
+## v10.1.1
+
+### Added
+
+* Plugin marker artifact to support `plugins` DSL block.
+
+### Fixed
+
+* Both `backend-video-core` & `backend-photo-core` were erroneously getting included in PE/VE SDK only projects.
+
 ## v10.1.0
 
 ### Added
