@@ -1,5 +1,31 @@
 # PhotoEditor SDK - Changelog
 
+## v10.2.0
+
+### Changed
+* `PhotoEditorSettingsList` and `VideoEditorSettingsList` now includes basic assets by default (if present in runtime classpath).
+* Bumped `compileSdkVersion` and `targetSdkVersion` to 33 and `buildToolsVersion` to 33.0.0.
+
+### Added
+* Refactored IMG.LY Gradle plugin to support new Gradle versions.
+* Screen orientation support via `UIConfigScreenOrientation`
+* DayNight theme variant (`Theme.Imgly.DayNight`)
+* Added notification permission and new image picker support for devices running on Android 13 and newer OS versions via `AndroidConfiguration` class. 
+
+### Fixed
+* `CompostionPart` trim values are not preserved after closing the video editor.
+* Changing `LoadSettings.source` did not change the video source at runtime.
+* `android.permission.CAMERA` was being added even without including the `ui:camera` module.
+* IMG.LY Gradle plugin did not support some build flags:
+  * `android.defaults.buildfeatures.buildconfig=false`
+  * `android.defaults.buildfeatures.resvalues=false`
+  * `android.nonTransitiveRClass=true`
+* Color defaulted to transparent on dismissing panel without selecting any color.
+* GPU Memory leak on configuration changes.
+* `java.io.IOException: Failed to instantiate extractor` crash.
+* Giphy stickers inconsistent grid ratio.
+* ClassCastException when `onOperatorReleased()` was called before `render()` in `RoxVideoCompositionOperation`.
+
 ## v10.1.1
 
 ### Added

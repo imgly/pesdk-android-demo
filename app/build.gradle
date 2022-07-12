@@ -19,7 +19,6 @@ imglyConfig {
         include 'ui:frame'
         include 'ui:brush'
         include 'ui:filter'
-        include 'ui:camera'
         include 'ui:sticker'
         include 'ui:overlay'
         include 'ui:transform'
@@ -62,6 +61,10 @@ android {
             minifyEnabled true
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
+    }
+
+    lintOptions {
+        abortOnError false
     }
 
     compileOptions {
