@@ -1,11 +1,13 @@
 package com.photoeditorsdk.android.app.presets
 
 import android.os.Parcel
-import com.photoeditorsdk.android.app.R
+
 import ly.img.android.pesdk.backend.decoder.ImageSource
 import ly.img.android.pesdk.backend.model.constant.RevertStrategy
 import ly.img.android.pesdk.backend.model.state.manager.ImglySettings
+
 import ly.img.android.pesdk.kotlin_extension.parcelableCreator
+import ly.img.android.pesdk.ui.brush.R
 import ly.img.android.pesdk.ui.panels.BrushToolPanel
 import ly.img.android.pesdk.ui.panels.item.HistoryOption
 import ly.img.android.pesdk.ui.panels.item.OptionItem
@@ -13,6 +15,7 @@ import ly.img.android.pesdk.ui.panels.item.QuickOptionItem
 import ly.img.android.pesdk.ui.panels.item.SpaceFillItem
 import ly.img.android.pesdk.ui.panels.item.SpaceItem
 import ly.img.android.pesdk.ui.panels.item.ToggleOption
+
 import ly.img.android.pesdk.utils.DataSourceArrayList
 
 class BrushPresetSettings @JvmOverloads constructor(parcel: Parcel? = null) : ImglySettings(parcel) {
