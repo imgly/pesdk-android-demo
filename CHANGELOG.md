@@ -1,5 +1,10 @@
 # PhotoEditor SDK - Changelog
 
+## v10.2.1
+
+### Hotfix
+* `NoClassDefFoundError: Failed resolution of: Lly/img/android/pesdk/ui/audio_composition/R$id` crash.
+
 ## v10.2.0
 
 ### Changed
