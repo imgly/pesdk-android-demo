@@ -1,5 +1,17 @@
 # PhotoEditor SDK - Changelog
 
+## v10.3.0
+
+### Fixed
+* Overlapping dialogs when video source is broken.
+* Source generating task not getting registered for dynamic feature modules.
+* `ClassCastException` when using `UiConfigText.setFontList()` with a list that is not a `DataSourceIdItemList` or its subclass.
+* `NullPointerException` when checking for Uri permission on Vivo devices.
+* Possible Fatal Error 6 native crash on Android 8/9 devices, when using the composition or trim feature.
+
+### Added
+* [VideoEditorSDK] Added duration action for text and stickers. 
+
 ## v10.2.1
 
 ### Hotfix
