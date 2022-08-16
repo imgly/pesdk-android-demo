@@ -1,0 +1,24 @@
+<!--
+  ~ This file is part of the IMG.LY Software Development Kit.
+  ~
+  ~ Copyright (C) 2022 IMG.LY GmbH <contact@img.ly>
+  ~ All rights reserved.
+  ~
+  ~ Redistribution and use in source and binary forms, without
+  ~ modification, are permitted provided that the following license agreement
+  ~ is approved and a legal/financial contract was signed by the user.
+  ~
+  ~ The license agreement can be found under the following link:
+  ~ https://img.ly/tos
+  -->
+
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="32dp"
+    android:height="32dp"
+    android:viewportWidth="32"
+    android:viewportHeight="32">
+  <path
+      android:pathData="M5.2414,6.4142L26.2414,27.4142L27.6556,26L25.3458,23.6902C26.9468,22.6127 28,20.7838 28,18.7089C28,15.3952 25.3137,12.7089 22,12.7089C21.9764,12.7089 21.9527,12.709 21.9292,12.7093C21.4441,9.3168 18.5266,6.7089 15,6.7089C13.1597,6.7089 11.4853,7.4191 10.2358,8.5802L6.6556,5L5.2414,6.4142ZM11.6513,9.9957C12.5392,9.194 13.7119,8.7089 15,8.7089C17.5173,8.7089 19.6031,10.5711 19.9493,12.9924L20.1977,14.7295L21.9523,14.7092L22,14.7089C24.2091,14.7089 26,16.4998 26,18.7089C26,20.2343 25.1462,21.5602 23.8905,22.2349L11.6513,9.9957ZM18.5876,22.7089L20.5876,24.7089H14H12V24.707C7.5817,24.707 4,21.1252 4,16.707C4,14.3488 5.0203,12.229 6.6435,10.7648L8.06,12.1813C6.7973,13.282 6,14.9025 6,16.707C6,20.0207 8.6863,22.707 12,22.707H14V22.7089H18.5876Z"
+      android:fillColor="?attr/imgly_giphy_sticker_resource_color"
+      android:fillType="evenOdd"/>
+</vector>

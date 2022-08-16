@@ -1,0 +1,32 @@
+<!--
+  ~ This file is part of the IMG.LY Software Development Kit.
+  ~
+  ~ Copyright (C) 2022 IMG.LY GmbH <contact@img.ly>
+  ~ All rights reserved.
+  ~
+  ~ Redistribution and use in source and binary forms, without
+  ~ modification, are permitted provided that the following license agreement
+  ~ is approved and a legal/financial contract was signed by the user.
+  ~
+  ~ The license agreement can be found under the following link:
+  ~ https://img.ly/tos
+  -->
+
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="48dp"
+    android:height="48dp"
+    android:viewportWidth="48"
+    android:viewportHeight="48">
+    <group
+        android:translateX="8"
+        android:translateY="8">
+        <path
+            android:fillColor="?attr/imgly_icon_color"
+            android:fillType="evenOdd"
+            android:pathData="M9.6949,8.6852C9.402,9.0825 9.1484,9.5051 8.9365,9.9472L4.1734,5.1841C4.3741,4.7356 4.735,4.3746 5.1834,4.1738L9.6949,8.6852ZM11.4805,6.9353C11.8856,6.6492 12.3158,6.403 12.7648,6.1993L10.5655,4H8.5452L11.4805,6.9353ZM28,17.899L23.8238,13.7228C23.8303,13.5934 23.8335,13.4635 23.8335,13.3333C23.8335,12.7082 23.7588,12.0907 23.6143,11.493L28,15.8787V17.899ZM28,21.4345L23.1341,16.5687C22.9305,17.0177 22.6843,17.4479 22.3982,17.853L28,23.4548V21.4345ZM16.0002,5.5C16.6253,5.5 17.2428,5.5747 17.8405,5.7192L16.1213,4H14.101L15.6107,5.5097C15.7401,5.5032 15.87,5.5 16.0002,5.5ZM8.1668,13.3333C8.1668,13.1332 8.1745,12.934 8.1896,12.7358L4,8.5462V10.5665L8.3229,14.8894C8.2198,14.381 8.1668,13.8599 8.1668,13.3333ZM4,14.102L9.7133,19.8154C9.2153,19.9923 8.7411,20.1926 8.2934,20.4158L4,16.1224V14.102ZM4,19.6579L6.1687,21.8266C5.809,22.144 5.478,22.4899 5.1851,22.8633L4,21.6782V19.6579ZM4,25.2609L4.0093,25.2231L4,25.2137V25.2609ZM28,12.3432V10.3229L21.6771,4H19.6568L28,12.3432ZM28,6V6.7873L25.2127,4H26C27.1046,4 28,4.8954 28,6Z" />
+        <path
+            android:fillColor="?attr/imgly_icon_color"
+            android:fillType="evenOdd"
+            android:pathData="M25.6668,28H6.3335V26.6667C6.3335,23.72 10.1068,21.3333 16.0002,21.3333C21.8935,21.3333 25.6668,23.72 25.6668,26.6667V28ZM19.7714,9.5621C18.7712,8.5619 17.4147,8 16.0002,8C14.5857,8 13.2291,8.5619 12.2289,9.5621C11.2287,10.5623 10.6668,11.9188 10.6668,13.3333C10.6668,14.7478 11.2287,16.1044 12.2289,17.1046C13.2291,18.1048 14.5857,18.6667 16.0002,18.6667C17.4147,18.6667 18.7712,18.1048 19.7714,17.1046C20.7716,16.1044 21.3335,14.7478 21.3335,13.3333C21.3335,11.9188 20.7716,10.5623 19.7714,9.5621Z" />
+    </group>
+</vector>

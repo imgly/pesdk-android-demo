@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+  ~ This file is part of the IMG.LY Software Development Kit.
+  ~
+  ~ Copyright (C) 2022 IMG.LY GmbH <contact@img.ly>
+  ~ All rights reserved.
+  ~
+  ~ Redistribution and use in source and binary forms, without
+  ~ modification, are permitted provided that the following license agreement
+  ~ is approved and a legal/financial contract was signed by the user.
+  ~
+  ~ The license agreement can be found under the following link:
+  ~ https://img.ly/tos
+  -->
+
+
+
+<resources>
+    <string name="imgly_sticker_category_name_emoticons">Emotions</string>
+
+    <string name="imgly_sticker_name_emoticons_alien">alien</string>
+    <string name="imgly_sticker_name_emoticons_angel">angel</string>
+    <string name="imgly_sticker_name_emoticons_angry">angry</string>
+    <string name="imgly_sticker_name_emoticons_anxious">anxious</string>
+    <string name="imgly_sticker_name_emoticons_asleep">asleep</string>
+    <string name="imgly_sticker_name_emoticons_attention">attention</string>
+    <string name="imgly_sticker_name_emoticons_baby_chicken">Baby chicken</string>
+    <string name="imgly_sticker_name_emoticons_batman">batman</string>
+    <string name="imgly_sticker_name_emoticons_beer">beer</string>
+    <string name="imgly_sticker_name_emoticons_blush">blush</string>
+    <string name="imgly_sticker_name_emoticons_boxer">boxer</string>
+    <string name="imgly_sticker_name_emoticons_business">business</string>
+    <string name="imgly_sticker_name_emoticons_chicken">chicken</string>
+    <string name="imgly_sticker_name_emoticons_cool">cool</string>
+    <string name="imgly_sticker_name_emoticons_cry">cry</string>
+    <string name="imgly_sticker_name_emoticons_deceased">deceased</string>
+    <string name="imgly_sticker_name_emoticons_devil">devil</string>
+    <string name="imgly_sticker_name_emoticons_duckface">duckface</string>
+    <string name="imgly_sticker_name_emoticons_furious">furious</string>
+    <string name="imgly_sticker_name_emoticons_grin">grin</string>
+    <string name="imgly_sticker_name_emoticons_guitar">guitar</string>
+    <string name="imgly_sticker_name_emoticons_harry_potter">Harry potter</string>
+    <string name="imgly_sticker_name_emoticons_hippie">hippie</string>
+    <string name="imgly_sticker_name_emoticons_hitman">hitman</string>
+    <string name="imgly_sticker_name_emoticons_humourous">humourous</string>
+    <string name="imgly_sticker_name_emoticons_idea">idea</string>
+    <string name="imgly_sticker_name_emoticons_impatient">impatient</string>
+    <string name="imgly_sticker_name_emoticons_kiss">kiss</string>
+    <string name="imgly_sticker_name_emoticons_kisses">kisses</string>
+    <string name="imgly_sticker_name_emoticons_laugh">laugh</string>
+    <string name="imgly_sticker_name_emoticons_loud_cry">Loud cry</string>
+    <string name="imgly_sticker_name_emoticons_loving">loving</string>
+    <string name="imgly_sticker_name_emoticons_masked">masked</string>
+    <string name="imgly_sticker_name_emoticons_music">music</string>
+    <string name="imgly_sticker_name_emoticons_nerd">nerd</string>
+    <string name="imgly_sticker_name_emoticons_ninja">ninja</string>
+    <string name="imgly_sticker_name_emoticons_not_speaking_to_you">Not speaking to you</string>
+    <string name="imgly_sticker_name_emoticons_pig">pig</string>
+    <string name="imgly_sticker_name_emoticons_pumpkin">pumpkin</string>
+    <string name="imgly_sticker_name_emoticons_question">question</string>
+    <string name="imgly_sticker_name_emoticons_rabbit">rabbit</string>
+    <string name="imgly_sticker_name_emoticons_sad">sad</string>
+    <string name="imgly_sticker_name_emoticons_sick">sick</string>
+    <string name="imgly_sticker_name_emoticons_skateboard">skateboard</string>
+    <string name="imgly_sticker_name_emoticons_skull">skull</string>
+    <string name="imgly_sticker_name_emoticons_sleepy">sleepy</string>
+    <string name="imgly_sticker_name_emoticons_smile">smile</string>
+    <string name="imgly_sticker_name_emoticons_smoking">smoking</string>
+    <string name="imgly_sticker_name_emoticons_sobbing">sobbing</string>
+    <string name="imgly_sticker_name_emoticons_star">star</string>
+    <string name="imgly_sticker_name_emoticons_steaming_furious">Steaming furious</string>
+    <string name="imgly_sticker_name_emoticons_sunbathing">sunbathing</string>
+    <string name="imgly_sticker_name_emoticons_tired">tired</string>
+    <string name="imgly_sticker_name_emoticons_tongue_out_wink">Tongue out wink</string>
+    <string name="imgly_sticker_name_emoticons_wave">wave</string>
+    <string name="imgly_sticker_name_emoticons_wide_grin">Wide grin</string>
+    <string name="imgly_sticker_name_emoticons_wink">wink</string>
+    <string name="imgly_sticker_name_emoticons_wrestler">wrestler</string>
+    
+</resources>

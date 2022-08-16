@@ -1,0 +1,845 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ This file is part of the IMG.LY Software Development Kit.
+  ~
+  ~ Copyright (C) 2022 IMG.LY GmbH <contact@img.ly>
+  ~ All rights reserved.
+  ~
+  ~ Redistribution and use in source and binary forms, without
+  ~ modification, are permitted provided that the following license agreement
+  ~ is approved and a legal/financial contract was signed by the user.
+  ~
+  ~ The license agreement can be found under the following link:
+  ~ https://img.ly/tos
+  -->
+
+<resources>
+
+    <style name="Theme.Imgly" parent="@style/Theme.AppCompat.NoActionBar">
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+
+        <item name="imgly_transparent_color">@color/imgly_transparent_color</item>
+        <item name="imgly_background_color">@color/imgly_background_color</item>
+        <item name="imgly_camera_header_background_color">@color/imgly_camera_header_background_color</item>
+        <item name="imgly_camera_footer_background_color">@color/imgly_camera_footer_background_color</item>
+        <item name="imgly_highlight_color">@color/imgly_highlight_color</item>
+        <item name="imgly_icon_border_color_active">@color/imgly_icon_border_color_active</item>
+        <item name="imgly_slider_track_color_progress">@color/imgly_slider_track_color_progress</item>
+        <item name="imgly_text_color">@color/imgly_text_color</item>
+        <item name="imgly_editor_text_color">@color/imgly_editor_text_color</item>
+        <item name="imgly_camera_text_color">@color/imgly_camera_text_color</item>
+        <item name="imgly_text_color_active">@color/imgly_text_color_active</item>
+        <item name="imgly_text_on_image_color">@color/imgly_text_on_image_color</item>
+        <item name="imgly_icon_color_active">@color/imgly_icon_color_active</item>
+        <item name="imgly_shuffle_icon_color">@color/imgly_shuffle_icon_color</item>
+        <item name="imgly_text_on_image_color_secondary">@color/imgly_text_on_image_color_secondary</item>
+        <item name="imgly_button_color">@color/imgly_button_color</item>
+        <item name="imgly_button_color_pressed">@color/imgly_button_color_pressed</item>
+        <item name="imgly_button_color_disabled">@color/imgly_button_color_disabled</item>
+        <item name="imgly_icon_color">@color/imgly_icon_color</item>
+        <item name="imgly_editor_text_color_secondary">@color/imgly_editor_text_color_secondary</item>
+        <item name="imgly_slider_thumb_color_disabled">@color/imgly_slider_thumb_color_disabled</item>
+        <item name="imgly_icon_color_disabled">@color/imgly_icon_color_disabled</item>
+        <item name="imgly_crop_icon_fill_color_active">@color/imgly_crop_icon_fill_color_active</item>
+        <item name="imgly_crop_icon_fill_color">@color/imgly_crop_icon_fill_color</item>
+        <item name="imgly_slider_track_color">@color/imgly_slider_track_color</item>
+        <item name="imgly_text_input_background_color">@color/imgly_text_input_background_color</item>
+        <item name="imgly_sticker_selection_background_color">@color/imgly_sticker_selection_background_color</item>
+        <item name="imgly_audio_selection_background_color">@color/imgly_audio_selection_background_color</item>
+        <item name="imgly_audio_selection_background_color_selected">@color/imgly_audio_selection_background_color_selected</item>
+        <item name="imgly_actionBar_background_color">@color/imgly_actionBar_background_color</item>
+        <item name="imgly_optionToolBar_background_color">@color/imgly_optionToolBar_background_color</item>
+        <item name="imgly_slider_thumb_color">@color/imgly_slider_thumb_color</item>
+        <item name="imgly_slider_background_color">@color/imgly_slider_background_color</item>
+        <item name="imgly_quickOptionToolBar_background_color">@color/imgly_quickOptionToolBar_background_color</item>
+        <item name="imgly_dialog_background_color">@color/imgly_dialog_background_color</item>
+        <item name="imgly_shuffle_icon_overlay_color">@color/imgly_shuffle_icon_overlay_color</item>
+        <item name="imgly_text_on_image_background_color">@color/imgly_text_on_image_background_color</item>
+        <item name="imgly_brush_preview_background_color">@color/imgly_brush_preview_background_color</item>
+        <item name="imgly_icon_color_on_canvas">@color/imgly_icon_color_on_canvas</item>
+        <item name="imgly_icon_color_on_canvas_disabled">@color/imgly_icon_color_on_canvas_disabled</item>
+        <item name="imgly_icon_color_secondary">@color/imgly_icon_color_secondary</item>
+        <item name="imgly_camera_background_color">@color/imgly_camera_background_color</item>
+        <item name="imgly_camera_icon_color">@color/imgly_camera_icon_color</item>
+        <item name="imgly_transform_background_color">@color/imgly_transform_background_color</item>
+        <item name="imgly_editor_position_snap_indicator_color">@color/imgly_editor_position_snap_indicator_color</item>
+        <item name="imgly_editor_rotation_snap_indicator_color">@color/imgly_editor_rotation_snap_indicator_color</item>
+        <item name="imgly_editor_bounding_snap_indicator_color">@color/imgly_editor_bounding_snap_indicator_color</item>
+        <item name="imgly_tooltip_background_color">@color/imgly_tooltip_background_color</item>
+        <item name="imgly_time_line_range_limit_reached_color">@color/imgly_time_line_range_limit_reached_color</item>
+        <item name="imgly_time_line_selected_area_color">@color/imgly_time_line_selected_area_color</item>
+        <item name="imgly_thumb_handle_has_default_value">@color/imgly_thumb_handle_has_default_value</item>
+        <item name="imgly_thumb_handle_limit_reached_color">@color/imgly_thumb_handle_limit_reached_color</item>
+        <item name="imgly_time_line_range_color">@color/imgly_time_line_range_color</item>
+        <item name="imgly_thumb_handle_color">@color/imgly_thumb_handle_color</item>
+        <item name="android:windowBackground">@color/imgly_text_on_image_background_color</item>
+        <item name="imgly_giphy_sticker_resource_color">@color/imgly_giphy_sticker_resource_color</item>
+        <item name="imgly_giphy_sticker_text_color">@color/imgly_giphy_sticker_text_color</item>
+
+        <item name="Imgly">@style/Imgly</item>
+        <item name="Imgly.PESDK">@style/Imgly.PESDK</item>
+        <item name="Imgly.PESDK.Button">@style/Imgly.PESDK.Button</item>
+        <item name="Imgly.PESDK.Camera">@style/Imgly.PESDK.Camera</item>
+        <item name="Imgly.PESDK.Camera.CameraPreview">@style/Imgly.PESDK.Camera.CameraPreview</item>
+        <item name="Imgly.PESDK.Camera.CameraPreview.Focus">@style/Imgly.PESDK.Camera.CameraPreview.Focus</item>
+        <item name="Imgly.PESDK.Camera.CameraPreview.Surface">@style/Imgly.PESDK.Camera.CameraPreview.Surface</item>
+        <item name="Imgly.PESDK.Camera.UI">@style/Imgly.PESDK.Camera.UI</item>
+        <item name="Imgly.PESDK.Camera.UI.Footer">@style/Imgly.PESDK.Camera.UI.Footer</item>
+        <item name="Imgly.PESDK.Camera.UI.Footer.Button.FilterButton">@style/Imgly.PESDK.Camera.UI.Footer.Button.FilterButton</item>
+        <item name="Imgly.PESDK.Camera.UI.Footer.Button.GalleryButton">@style/Imgly.PESDK.Camera.UI.Footer.Button.GalleryButton</item>
+        <item name="Imgly.PESDK.Camera.UI.Footer.Button.ShutterButton">@style/Imgly.PESDK.Camera.UI.Footer.Button.ShutterButton</item>
+        <item name="Imgly.PESDK.Camera.UI.Footer.Container">@style/Imgly.PESDK.Camera.UI.Footer.Container</item>
+        <item name="Imgly.PESDK.Camera.UI.Footer.ExpandableContainer">@style/Imgly.PESDK.Camera.UI.Footer.ExpandableContainer</item>
+        <item name="Imgly.PESDK.Camera.UI.Footer.ExpandableContainer.FilterList">
+            @style/Imgly.PESDK.Camera.UI.Footer.ExpandableContainer.FilterList
+        </item>
+        <item name="Imgly.PESDK.Camera.UI.Footer.SeekSlider.Transparent">@style/Imgly.PESDK.Camera.UI.Footer.SeekSlider.Transparent</item>
+        <item name="Imgly.PESDK.Camera.UI.Header">@style/Imgly.PESDK.Camera.UI.Header</item>
+        <item name="Imgly.PESDK.Camera.UI.Header.Button">@style/Imgly.PESDK.Camera.UI.Header.Button</item>
+        <item name="Imgly.PESDK.Camera.UI.Header.Button.FlashButton">@style/Imgly.PESDK.Camera.UI.Header.Button.FlashButton</item>
+        <item name="Imgly.PESDK.Camera.UI.Header.Button.FlashButton.Icon">@style/Imgly.PESDK.Camera.UI.Header.Button.FlashButton.Icon</item>
+        <item name="Imgly.PESDK.Camera.UI.Header.Button.FlashButton.Label">@style/Imgly.PESDK.Camera.UI.Header.Button.FlashButton.Label
+        </item>
+        <item name="Imgly.PESDK.Camera.UI.Header.Button.HDRButton">@style/Imgly.PESDK.Camera.UI.Header.Button.HDRButton</item>
+        <item name="Imgly.PESDK.Camera.UI.Header.Button.SwitchCameraButton">@style/Imgly.PESDK.Camera.UI.Header.Button.SwitchCameraButton
+        </item>
+        <item name="Imgly.PESDK.Editor">@style/Imgly.PESDK.Editor</item>
+        <item name="Imgly.PESDK.Editor.Activity">@style/Imgly.PESDK.Editor.Activity</item>
+        <item name="Imgly.PESDK.Editor.Activity.ActionBar">@style/Imgly.PESDK.Editor.Activity.ActionBar</item>
+        <item name="Imgly.PESDK.Editor.Activity.ActionBar.BottomActionBar">@style/Imgly.PESDK.Editor.Activity.ActionBar.BottomActionBar
+        </item>
+        <item name="Imgly.PESDK.Editor.Activity.ActionBar.TopActionBar">@style/Imgly.PESDK.Editor.Activity.ActionBar.TopActionBar</item>
+        <item name="Imgly.PESDK.Editor.Activity.Preview">@style/Imgly.PESDK.Editor.Activity.Preview</item>
+        <item name="Imgly.PESDK.Editor.Activity.Preview.BottomActionBar">@style/Imgly.PESDK.Editor.Activity.Preview.BottomActionBar</item>
+        <item name="Imgly.PESDK.Editor.Activity.Preview.TopActionBar">@style/Imgly.PESDK.Editor.Activity.Preview.TopActionBar</item>
+        <item name="Imgly.PESDK.Editor.Activity.Progress">@style/Imgly.PESDK.Editor.Activity.Progress</item>
+        <item name="Imgly.PESDK.Editor.Activity.ToolPanelContainer">@style/Imgly.PESDK.Editor.Activity.ToolPanelContainer</item>
+        <item name="Imgly.PESDK.Editor.Activity.ToolPanelContainer.BottomActionBar">
+            @style/Imgly.PESDK.Editor.Activity.ToolPanelContainer.BottomActionBar
+        </item>
+        <item name="Imgly.PESDK.Editor.Activity.ToolPanelContainer.TopActionBar">
+            @style/Imgly.PESDK.Editor.Activity.ToolPanelContainer.TopActionBar
+        </item>
+        <item name="Imgly.PESDK.Editor.Panel">@style/Imgly.PESDK.Editor.Panel</item>
+        <item name="Imgly.PESDK.Editor.Panel.Adjust">@style/Imgly.PESDK.Editor.Panel.Adjust</item>
+        <item name="Imgly.PESDK.Editor.Panel.Adjust.SeekSlider">@style/Imgly.PESDK.Editor.Panel.Adjust.SeekSlider</item>
+        <item name="Imgly.PESDK.Editor.Panel.Adjust.SmallOptionList">@style/Imgly.PESDK.Editor.Panel.Adjust.SmallOptionList</item>
+        <item name="Imgly.PESDK.Editor.Panel.Audio.AudioCategoryIconItem">@style/Imgly.PESDK.Editor.Panel.Audio.AudioCategoryIconItem</item>
+        <item name="Imgly.PESDK.Editor.Panel.Audio.AudioCategoryIconItem.Border">
+            @style/Imgly.PESDK.Editor.Panel.Audio.AudioCategoryIconItem.Border
+        </item>
+        <item name="Imgly.PESDK.Editor.Panel.Audio.AudioCategoryIconItem.Icon">
+            @style/Imgly.PESDK.Editor.Panel.Audio.AudioCategoryIconItem.Icon
+        </item>
+        <item name="Imgly.PESDK.Editor.Panel.Audio.AudioCategoryIconItem.Label">
+            @style/Imgly.PESDK.Editor.Panel.Audio.AudioCategoryIconItem.Label
+        </item>
+        <item name="Imgly.PESDK.Editor.Panel.Audio.AudioCategoryItem">@style/Imgly.PESDK.Editor.Panel.Audio.AudioCategoryItem</item>
+        <item name="Imgly.PESDK.Editor.Panel.Audio.AudioCategoryItem.Border">
+            @style/Imgly.PESDK.Editor.Panel.Audio.AudioCategoryItem.Border
+        </item>
+        <item name="Imgly.PESDK.Editor.Panel.Audio.AudioCategoryItem.Icon">@style/Imgly.PESDK.Editor.Panel.Audio.AudioCategoryItem.Icon
+        </item>
+        <item name="Imgly.PESDK.Editor.Panel.Audio.AudioCategoryItem.Label">@style/Imgly.PESDK.Editor.Panel.Audio.AudioCategoryItem.Label
+        </item>
+        <item name="Imgly.PESDK.Editor.Panel.AudioComposition">@style/Imgly.PESDK.Editor.Panel.AudioComposition</item>
+        <item name="Imgly.PESDK.Editor.Panel.AudioComposition.AudioOverlaySlider">
+            @style/Imgly.PESDK.Editor.Panel.AudioComposition.AudioOverlaySlider
+        </item>
+        <item name="Imgly.PESDK.Editor.Panel.AudioComposition.SeekSlider">@style/Imgly.PESDK.Editor.Panel.AudioComposition.SeekSlider</item>
+        <item name="Imgly.PESDK.Editor.Panel.AudioGallery">@style/Imgly.PESDK.Editor.Panel.AudioGallery</item>
+        <item name="Imgly.PESDK.Editor.Panel.AudioGallery.AudioGalleryVertical.Container">
+            @style/Imgly.PESDK.Editor.Panel.AudioGallery.AudioGalleryVertical.Container
+        </item>
+        <item name="Imgly.PESDK.Editor.Panel.AudioGallery.AudioGalleryVerticalItem">
+            @style/Imgly.PESDK.Editor.Panel.AudioGallery.AudioGalleryVerticalItem
+        </item>
+        <item name="Imgly.PESDK.Editor.Panel.AudioGallery.AudioGalleryVerticalItem.Artist">
+            @style/Imgly.PESDK.Editor.Panel.AudioGallery.AudioGalleryVerticalItem.Artist
+        </item>
+        <item name="Imgly.PESDK.Editor.Panel.AudioGallery.AudioGalleryVerticalItem.Duration">
+            @style/Imgly.PESDK.Editor.Panel.AudioGallery.AudioGalleryVerticalItem.Duration
+        </item>
+        <item name="Imgly.PESDK.Editor.Panel.AudioGallery.AudioGalleryVerticalItem.Label">
+            @style/Imgly.PESDK.Editor.Panel.AudioGallery.AudioGalleryVerticalItem.Label
+        </item>
+        <item name="Imgly.PESDK.Editor.Panel.AudioGallery.Expandable">@style/Imgly.PESDK.Editor.Panel.AudioGallery.Expandable</item>
+        <item name="Imgly.PESDK.Editor.Panel.AudioGallery.OptionList">@style/Imgly.PESDK.Editor.Panel.AudioGallery.OptionList</item>
+        <item name="Imgly.PESDK.Editor.Panel.AudioGallery.Thumb">@style/Imgly.PESDK.Editor.Panel.AudioGallery.Thumb</item>
+        <item name="Imgly.PESDK.Editor.Panel.AudioGallery.VideoLibraryGrid.Container">
+            @style/Imgly.PESDK.Editor.Panel.AudioGallery.VideoLibraryGrid.Container
+        </item>
+        <item name="Imgly.PESDK.Editor.Panel.Brush">@style/Imgly.PESDK.Editor.Panel.Brush</item>
+        <item name="Imgly.PESDK.Editor.Panel.Brush.SeekSlider">@style/Imgly.PESDK.Editor.Panel.Brush.SeekSlider</item>
+        <item name="Imgly.PESDK.Editor.Panel.Brush.SmallOptionList">@style/Imgly.PESDK.Editor.Panel.Brush.SmallOptionList</item>
+        <item name="Imgly.PESDK.Editor.Panel.Color">@style/Imgly.PESDK.Editor.Panel.Color</item>
+        <item name="Imgly.PESDK.Editor.Panel.Color.ColorItem">@style/Imgly.PESDK.Editor.Panel.Color.ColorItem</item>
+        <item name="Imgly.PESDK.Editor.Panel.Color.ColorItem.Background">@style/Imgly.PESDK.Editor.Panel.Color.ColorItem.Background</item>
+        <item name="Imgly.PESDK.Editor.Panel.Color.ColorItem.Icon">@style/Imgly.PESDK.Editor.Panel.Color.ColorItem.Icon</item>
+        <item name="Imgly.PESDK.Editor.Panel.Color.ColorItem.SelectOverlay">@style/Imgly.PESDK.Editor.Panel.Color.ColorItem.SelectOverlay
+        </item>
+        <item name="Imgly.PESDK.Editor.Panel.Color.ColorPicker">@style/Imgly.PESDK.Editor.Panel.Color.ColorPicker</item>
+        <item name="Imgly.PESDK.Editor.Panel.Color.ColorPipetteItem.Border">@style/Imgly.PESDK.Editor.Panel.Color.ColorPipetteItem.Border
+        </item>
+        <item name="Imgly.PESDK.Editor.Panel.Color.ColorPipetteItem.Icon">@style/Imgly.PESDK.Editor.Panel.Color.ColorPipetteItem.Icon</item>
+        <item name="Imgly.PESDK.Editor.Panel.Filter">@style/Imgly.PESDK.Editor.Panel.Filter</item>
+        <item name="Imgly.PESDK.Editor.Panel.Filter.FilterItem">@style/Imgly.PESDK.Editor.Panel.Filter.FilterItem</item>
+        <item name="Imgly.PESDK.Editor.Panel.Filter.FilterItem.Border">@style/Imgly.PESDK.Editor.Panel.Filter.FilterItem.Border</item>
+        <item name="Imgly.PESDK.Editor.Panel.Filter.FilterItem.Icon">@style/Imgly.PESDK.Editor.Panel.Filter.FilterItem.Icon</item>
+        <item name="Imgly.PESDK.Editor.Panel.Filter.FilterItem.Label">@style/Imgly.PESDK.Editor.Panel.Filter.FilterItem.Label</item>
+        <item name="Imgly.PESDK.Editor.Panel.Filter.SeekSlider">@style/Imgly.PESDK.Editor.Panel.Filter.SeekSlider</item>
+        <item name="Imgly.PESDK.Editor.Panel.Focus">@style/Imgly.PESDK.Editor.Panel.Focus</item>
+        <item name="Imgly.PESDK.Editor.Panel.Focus.OptionContainer">@style/Imgly.PESDK.Editor.Panel.Focus.OptionContainer</item>
+        <item name="Imgly.PESDK.Editor.Panel.Focus.SeekSlider">@style/Imgly.PESDK.Editor.Panel.Focus.SeekSlider</item>
+        <item name="Imgly.PESDK.Editor.Panel.Font">@style/Imgly.PESDK.Editor.Panel.Font</item>
+        <item name="Imgly.PESDK.Editor.Panel.Font.Expandable">@style/Imgly.PESDK.Editor.Panel.Font.Expandable</item>
+        <item name="Imgly.PESDK.Editor.Panel.Font.Expandable.BottomActionBar">
+            @style/Imgly.PESDK.Editor.Panel.Font.Expandable.BottomActionBar
+        </item>
+        <item name="Imgly.PESDK.Editor.Panel.Font.Expandable.TopActionBar">@style/Imgly.PESDK.Editor.Panel.Font.Expandable.TopActionBar
+        </item>
+        <item name="Imgly.PESDK.Editor.Panel.Font.FontItem">@style/Imgly.PESDK.Editor.Panel.Font.FontItem</item>
+        <item name="Imgly.PESDK.Editor.Panel.Font.FontItem.Label">@style/Imgly.PESDK.Editor.Panel.Font.FontItem.Label</item>
+        <item name="Imgly.PESDK.Editor.Panel.Font.FontItem.Text">@style/Imgly.PESDK.Editor.Panel.Font.FontItem.Text</item>
+        <item name="Imgly.PESDK.Editor.Panel.Font.FontVertical.Container">@style/Imgly.PESDK.Editor.Panel.Font.FontVertical.Container</item>
+        <item name="Imgly.PESDK.Editor.Panel.Font.FontVerticalItem">@style/Imgly.PESDK.Editor.Panel.Font.FontVerticalItem</item>
+        <item name="Imgly.PESDK.Editor.Panel.Font.FontVerticalItem.Label">@style/Imgly.PESDK.Editor.Panel.Font.FontVerticalItem.Label</item>
+        <item name="Imgly.PESDK.Editor.Panel.Font.FontVerticalItem.Text">@style/Imgly.PESDK.Editor.Panel.Font.FontVerticalItem.Text</item>
+        <item name="Imgly.PESDK.Editor.Panel.Font.OptionList">@style/Imgly.PESDK.Editor.Panel.Font.OptionList</item>
+        <item name="Imgly.PESDK.Editor.Panel.Font.Thumb">@style/Imgly.PESDK.Editor.Panel.Font.Thumb</item>
+        <item name="Imgly.PESDK.Editor.Panel.Frame">@style/Imgly.PESDK.Editor.Panel.Frame</item>
+        <item name="Imgly.PESDK.Editor.Panel.Frame.FrameItem">@style/Imgly.PESDK.Editor.Panel.Frame.FrameItem</item>
+        <item name="Imgly.PESDK.Editor.Panel.Frame.FrameItem.Icon">@style/Imgly.PESDK.Editor.Panel.Frame.FrameItem.Icon</item>
+        <item name="Imgly.PESDK.Editor.Panel.Frame.FrameItem.Label">@style/Imgly.PESDK.Editor.Panel.Frame.FrameItem.Label</item>
+        <item name="Imgly.PESDK.Editor.Panel.Frame.FrameItem.NoneIcon">@style/Imgly.PESDK.Editor.Panel.Frame.FrameItem.NoneIcon</item>
+        <item name="Imgly.PESDK.Editor.Panel.Frame.FrameOption">@style/Imgly.PESDK.Editor.Panel.Frame.FrameOption</item>
+        <item name="Imgly.PESDK.Editor.Panel.Frame.OptionList">@style/Imgly.PESDK.Editor.Panel.Frame.OptionList</item>
+        <item name="Imgly.PESDK.Editor.Panel.Frame.SeekSlider">@style/Imgly.PESDK.Editor.Panel.Frame.SeekSlider</item>
+        <item name="Imgly.PESDK.Editor.Panel.Frame.SmallOptionList">@style/Imgly.PESDK.Editor.Panel.Frame.SmallOptionList</item>
+        <item name="Imgly.PESDK.Editor.Panel.Menu">@style/Imgly.PESDK.Editor.Panel.Menu</item>
+        <item name="Imgly.PESDK.Editor.Panel.Menu.OptionList">@style/Imgly.PESDK.Editor.Panel.Menu.OptionList</item>
+        <item name="Imgly.PESDK.Editor.Panel.Menu.SmallOptionList">@style/Imgly.PESDK.Editor.Panel.Menu.SmallOptionList</item>
+        <item name="Imgly.PESDK.Editor.Panel.Option">@style/Imgly.PESDK.Editor.Panel.Option</item>
+        <item name="Imgly.PESDK.Editor.Panel.Option.OptionItem">@style/Imgly.PESDK.Editor.Panel.Option.OptionItem</item>
+        <item name="Imgly.PESDK.Editor.Panel.Option.ActivatableOptionItem">@style/Imgly.PESDK.Editor.Panel.Option.ActivatableOptionItem</item>
+        <item name="Imgly.PESDK.Editor.Panel.Option.OptionItem.Icon">@style/Imgly.PESDK.Editor.Panel.Option.OptionItem.Icon</item>
+        <item name="Imgly.PESDK.Editor.Panel.Option.OptionItem.Label">@style/Imgly.PESDK.Editor.Panel.Option.OptionItem.Label</item>
+        <item name="Imgly.PESDK.Editor.Panel.Overlay">@style/Imgly.PESDK.Editor.Panel.Overlay</item>
+        <item name="Imgly.PESDK.Editor.Panel.Overlay.BlendModeItem">@style/Imgly.PESDK.Editor.Panel.Overlay.BlendModeItem</item>
+        <item name="Imgly.PESDK.Editor.Panel.Overlay.BlendModeItem.Label">@style/Imgly.PESDK.Editor.Panel.Overlay.BlendModeItem.Label</item>
+        <item name="Imgly.PESDK.Editor.Panel.Overlay.ModeContainer">@style/Imgly.PESDK.Editor.Panel.Overlay.ModeContainer</item>
+        <item name="Imgly.PESDK.Editor.Panel.Overlay.ModeList">@style/Imgly.PESDK.Editor.Panel.Overlay.ModeList</item>
+        <item name="Imgly.PESDK.Editor.Panel.Overlay.OverlayItem">@style/Imgly.PESDK.Editor.Panel.Overlay.OverlayItem</item>
+        <item name="Imgly.PESDK.Editor.Panel.Overlay.OverlayItem.Border">@style/Imgly.PESDK.Editor.Panel.Overlay.OverlayItem.Border</item>
+        <item name="Imgly.PESDK.Editor.Panel.Overlay.OverlayItem.Icon">@style/Imgly.PESDK.Editor.Panel.Overlay.OverlayItem.Icon</item>
+        <item name="Imgly.PESDK.Editor.Panel.Overlay.OverlayItem.Label">@style/Imgly.PESDK.Editor.Panel.Overlay.OverlayItem.Label</item>
+        <item name="Imgly.PESDK.Editor.Panel.Overlay.OverlayItem.Overlay">@style/Imgly.PESDK.Editor.Panel.Overlay.OverlayItem.Overlay</item>
+        <item name="Imgly.PESDK.Editor.Panel.Overlay.OverlayItem.Overlay.Icon">
+            @style/Imgly.PESDK.Editor.Panel.Overlay.OverlayItem.Overlay.Icon
+        </item>
+        <item name="Imgly.PESDK.Editor.Panel.Overlay.SeekSlider">@style/Imgly.PESDK.Editor.Panel.Overlay.SeekSlider</item>
+        <item name="Imgly.PESDK.Editor.Panel.SmallOptionItem">@style/Imgly.PESDK.Editor.Panel.SmallOptionItem</item>
+        <item name="Imgly.PESDK.Editor.Panel.SmallOptionItem.Icon">@style/Imgly.PESDK.Editor.Panel.SmallOptionItem.Icon</item>
+        <item name="Imgly.PESDK.Editor.Panel.Sticker">@style/Imgly.PESDK.Editor.Panel.Sticker</item>
+        <item name="Imgly.PESDK.Editor.Panel.Sticker.Expandable">@style/Imgly.PESDK.Editor.Panel.Sticker.Expandable</item>
+        <item name="Imgly.PESDK.Editor.Panel.Sticker.Expandable.BottomActionBar">
+            @style/Imgly.PESDK.Editor.Panel.Sticker.Expandable.BottomActionBar
+        </item>
+        <item name="Imgly.PESDK.Editor.Panel.Sticker.Expandable.Grid">@style/Imgly.PESDK.Editor.Panel.Sticker.Expandable.Grid</item>
+        <item name="Imgly.PESDK.Editor.Panel.Sticker.Expandable.Thumb">@style/Imgly.PESDK.Editor.Panel.Sticker.Expandable.Thumb</item>
+        <item name="Imgly.PESDK.Editor.Panel.Sticker.Expandable.TopActionBar">
+            @style/Imgly.PESDK.Editor.Panel.Sticker.Expandable.TopActionBar
+        </item>
+        <item name="Imgly.PESDK.Editor.Panel.Sticker.Giphy.SearchBox">@style/Imgly.PESDK.Editor.Panel.Sticker.Giphy.SearchBox</item>
+        <item name="Imgly.PESDK.Editor.Panel.Sticker.Giphy.Retry">@style/Imgly.PESDK.Editor.Panel.Sticker.Giphy.Retry</item>
+        <item name="Imgly.PESDK.Editor.Panel.Sticker.Giphy.Error">@style/Imgly.PESDK.Editor.Panel.Sticker.Giphy.Error</item>
+        <item name="Imgly.PESDK.Editor.Panel.Sticker.Giphy.Empty">@style/Imgly.PESDK.Editor.Panel.Sticker.Giphy.Empty</item>
+
+        <item name="Imgly.PESDK.Editor.Panel.Sticker.OptionList">@style/Imgly.PESDK.Editor.Panel.Sticker.OptionList</item>
+        <item name="Imgly.PESDK.Editor.Panel.Sticker.SeekSlider">@style/Imgly.PESDK.Editor.Panel.Sticker.SeekSlider</item>
+        <item name="Imgly.PESDK.Editor.Panel.Sticker.SmallOptionList">@style/Imgly.PESDK.Editor.Panel.Sticker.SmallOptionList</item>
+        <item name="Imgly.PESDK.Editor.Panel.Sticker.StickerCategoryItem">@style/Imgly.PESDK.Editor.Panel.Sticker.StickerCategoryItem</item>
+        <item name="Imgly.PESDK.Editor.Panel.Sticker.StickerCategoryItem.Icon">
+            @style/Imgly.PESDK.Editor.Panel.Sticker.StickerCategoryItem.Icon
+        </item>
+        <item name="Imgly.PESDK.Editor.Panel.Sticker.StickerCategoryItem.Label">
+            @style/Imgly.PESDK.Editor.Panel.Sticker.StickerCategoryItem.Label
+        </item>
+        <item name="Imgly.PESDK.Editor.Panel.Sticker.StickerItem">@style/Imgly.PESDK.Editor.Panel.Sticker.StickerItem</item>
+        <item name="Imgly.PESDK.Editor.Panel.Sticker.StickerItem.Icon">@style/Imgly.PESDK.Editor.Panel.Sticker.StickerItem.Icon</item>
+        <item name="Imgly.PESDK.Editor.Panel.Sticker.StickerItem.Label">@style/Imgly.PESDK.Editor.Panel.Sticker.StickerItem.Label</item>
+        <item name="Imgly.PESDK.Editor.Panel.Sticker.StickerOption">@style/Imgly.PESDK.Editor.Panel.Sticker.StickerOption</item>
+        <item name="Imgly.PESDK.Editor.Panel.Sticker.StickerUploadItem">@style/Imgly.PESDK.Editor.Panel.Sticker.StickerUploadItem</item>
+        <item name="Imgly.PESDK.Editor.Panel.Sticker.StickerUploadItem.Icon">
+            @style/Imgly.PESDK.Editor.Panel.Sticker.StickerUploadItem.Icon
+        </item>
+        <item name="Imgly.PESDK.Editor.Panel.Sticker.StickerUploadItem.Label">
+            @style/Imgly.PESDK.Editor.Panel.Sticker.StickerUploadItem.Label
+        </item>
+        <item name="Imgly.PESDK.Editor.Panel.SpriteDuration">@style/Imgly.PESDK.Editor.Panel.SpriteDuration</item>
+        <item name="Imgly.PESDK.Editor.Panel.SpriteDuration.SmallOptionList">@style/Imgly.PESDK.Editor.Panel.SpriteDuration.SmallOptionList</item>
+        <item name="Imgly.PESDK.Editor.Panel.SpriteDuration.TrimSpriteSlider">@style/Imgly.PESDK.Editor.Panel.SpriteDuration.TrimSpriteSlider</item>
+        <item name="Imgly.PESDK.Editor.Panel.Text">@style/Imgly.PESDK.Editor.Panel.Text</item>
+        <item name="Imgly.PESDK.Editor.Panel.Text.InputField">@style/Imgly.PESDK.Editor.Panel.Text.InputField</item>
+        <item name="Imgly.PESDK.Editor.Panel.Text.OptionList">@style/Imgly.PESDK.Editor.Panel.Text.OptionList</item>
+        <item name="Imgly.PESDK.Editor.Panel.Text.SmallOptionList">@style/Imgly.PESDK.Editor.Panel.Text.SmallOptionList</item>
+        <item name="Imgly.PESDK.Editor.Panel.Text.TextOptions">@style/Imgly.PESDK.Editor.Panel.Text.TextOptions</item>
+        <item name="Imgly.PESDK.Editor.Panel.TextDesign">@style/Imgly.PESDK.Editor.Panel.TextDesign</item>
+        <item name="Imgly.PESDK.Editor.Panel.TextDesign.ColorItem">@style/Imgly.PESDK.Editor.Panel.TextDesign.ColorItem</item>
+        <item name="Imgly.PESDK.Editor.Panel.TextDesign.ColorItem.Icon">@style/Imgly.PESDK.Editor.Panel.TextDesign.ColorItem.Icon</item>
+        <item name="Imgly.PESDK.Editor.Panel.TextDesign.ColorList">@style/Imgly.PESDK.Editor.Panel.TextDesign.ColorList</item>
+        <item name="Imgly.PESDK.Editor.Panel.TextDesign.InputField">@style/Imgly.PESDK.Editor.Panel.TextDesign.InputField</item>
+        <item name="Imgly.PESDK.Editor.Panel.TextDesign.OptionList">@style/Imgly.PESDK.Editor.Panel.TextDesign.OptionList</item>
+        <item name="Imgly.PESDK.Editor.Panel.TextDesign.SmallOptionList">@style/Imgly.PESDK.Editor.Panel.TextDesign.SmallOptionList</item>
+        <item name="Imgly.PESDK.Editor.Panel.TextDesign.TextDesignItem">@style/Imgly.PESDK.Editor.Panel.TextDesign.TextDesignItem</item>
+        <item name="Imgly.PESDK.Editor.Panel.TextDesign.TextDesignItem.Border">
+            @style/Imgly.PESDK.Editor.Panel.TextDesign.TextDesignItem.Border
+        </item>
+        <item name="Imgly.PESDK.Editor.Panel.TextDesign.TextDesignItem.Icon">
+            @style/Imgly.PESDK.Editor.Panel.TextDesign.TextDesignItem.Icon
+        </item>
+        <item name="Imgly.PESDK.Editor.Panel.TextDesign.TextDesignItem.Overlay">
+            @style/Imgly.PESDK.Editor.Panel.TextDesign.TextDesignItem.Overlay
+        </item>
+        <item name="Imgly.PESDK.Editor.Panel.TextDesign.TextDesignItem.Overlay.Icon">
+            @style/Imgly.PESDK.Editor.Panel.TextDesign.TextDesignItem.Overlay.Icon
+        </item>
+        <item name="Imgly.PESDK.Editor.Panel.TextDesign.TextOptions">@style/Imgly.PESDK.Editor.Panel.TextDesign.TextOptions</item>
+        <item name="Imgly.PESDK.Editor.Panel.Tool">@style/Imgly.PESDK.Editor.Panel.Tool</item>
+        <item name="Imgly.PESDK.Editor.Panel.Tool.FolderItem">@style/Imgly.PESDK.Editor.Panel.Tool.FolderItem</item>
+        <item name="Imgly.PESDK.Editor.Panel.Tool.FolderItem.Border">@style/Imgly.PESDK.Editor.Panel.Tool.FolderItem.Border</item>
+        <item name="Imgly.PESDK.Editor.Panel.Tool.FolderItem.Icon">@style/Imgly.PESDK.Editor.Panel.Tool.FolderItem.Icon</item>
+        <item name="Imgly.PESDK.Editor.Panel.Tool.FolderItem.Label">@style/Imgly.PESDK.Editor.Panel.Tool.FolderItem.Label</item>
+        <item name="Imgly.PESDK.Editor.Panel.Tool.ToolItem">@style/Imgly.PESDK.Editor.Panel.Tool.ToolItem</item>
+        <item name="Imgly.PESDK.Editor.Panel.Tool.ToolItem.Icon">@style/Imgly.PESDK.Editor.Panel.Tool.ToolItem.Icon</item>
+        <item name="Imgly.PESDK.Editor.Panel.Tool.ToolItem.Label">@style/Imgly.PESDK.Editor.Panel.Tool.ToolItem.Label</item>
+        <item name="Imgly.PESDK.Editor.Panel.Transform">@style/Imgly.PESDK.Editor.Panel.Transform</item>
+        <item name="Imgly.PESDK.Editor.Panel.Transform.Button.Flip">@style/Imgly.PESDK.Editor.Panel.Transform.Button.Flip</item>
+        <item name="Imgly.PESDK.Editor.Panel.Transform.Button.Rotate">@style/Imgly.PESDK.Editor.Panel.Transform.Button.Rotate</item>
+        <item name="Imgly.PESDK.Editor.Panel.Transform.CropItem">@style/Imgly.PESDK.Editor.Panel.Transform.CropItem</item>
+        <item name="Imgly.PESDK.Editor.Panel.Transform.CropItem.Border">@style/Imgly.PESDK.Editor.Panel.Transform.CropItem.Border</item>
+        <item name="Imgly.PESDK.Editor.Panel.Transform.CropItem.Icon">@style/Imgly.PESDK.Editor.Panel.Transform.CropItem.Icon</item>
+        <item name="Imgly.PESDK.Editor.Panel.Transform.CropItem.Label">@style/Imgly.PESDK.Editor.Panel.Transform.CropItem.Label</item>
+        <item name="Imgly.PESDK.Editor.Panel.Transform.CropItem.Overlay.Icon">
+            @style/Imgly.PESDK.Editor.Panel.Transform.CropItem.Overlay.Icon
+        </item>
+        <item name="Imgly.PESDK.Editor.Panel.Transform.Slider">@style/Imgly.PESDK.Editor.Panel.Transform.Slider</item>
+        <item name="Imgly.PESDK.Editor.Panel.Video.VideoCategoryIconItem">@style/Imgly.PESDK.Editor.Panel.Video.VideoCategoryIconItem</item>
+        <item name="Imgly.PESDK.Editor.Panel.Video.VideoCategoryIconItem.Border">
+            @style/Imgly.PESDK.Editor.Panel.Video.VideoCategoryIconItem.Border
+        </item>
+        <item name="Imgly.PESDK.Editor.Panel.Video.VideoCategoryIconItem.Icon">
+            @style/Imgly.PESDK.Editor.Panel.Video.VideoCategoryIconItem.Icon
+        </item>
+        <item name="Imgly.PESDK.Editor.Panel.Video.VideoCategoryIconItem.Label">
+            @style/Imgly.PESDK.Editor.Panel.Video.VideoCategoryIconItem.Label
+        </item>
+        <item name="Imgly.PESDK.Editor.Panel.Video.VideoCategoryItem">@style/Imgly.PESDK.Editor.Panel.Video.VideoCategoryItem</item>
+        <item name="Imgly.PESDK.Editor.Panel.Video.VideoCategoryItem.Border">
+            @style/Imgly.PESDK.Editor.Panel.Video.VideoCategoryItem.Border
+        </item>
+        <item name="Imgly.PESDK.Editor.Panel.Video.VideoCategoryItem.Icon">@style/Imgly.PESDK.Editor.Panel.Video.VideoCategoryItem.Icon
+        </item>
+        <item name="Imgly.PESDK.Editor.Panel.Video.VideoCategoryItem.Label">@style/Imgly.PESDK.Editor.Panel.Video.VideoCategoryItem.Label
+        </item>
+        <item name="Imgly.PESDK.Editor.Panel.VideoComposition">@style/Imgly.PESDK.Editor.Panel.VideoComposition</item>
+        <item name="Imgly.PESDK.Editor.Panel.VideoComposition.VideoItem">@style/Imgly.PESDK.Editor.Panel.VideoComposition.VideoItem</item>
+        <item name="Imgly.PESDK.Editor.Panel.VideoComposition.VideoItem.Holder">
+            @style/Imgly.PESDK.Editor.Panel.VideoComposition.VideoItem.Holder
+        </item>
+        <item name="Imgly.PESDK.Editor.Panel.VideoComposition.VideoItem.Icon">
+            @style/Imgly.PESDK.Editor.Panel.VideoComposition.VideoItem.Icon
+        </item>
+        <item name="Imgly.PESDK.Editor.Panel.VideoLibrary">@style/Imgly.PESDK.Editor.Panel.VideoLibrary</item>
+        <item name="Imgly.PESDK.Editor.Panel.VideoLibrary.Expandable">@style/Imgly.PESDK.Editor.Panel.VideoLibrary.Expandable</item>
+        <item name="Imgly.PESDK.Editor.Panel.VideoLibrary.OptionList">@style/Imgly.PESDK.Editor.Panel.VideoLibrary.OptionList</item>
+        <item name="Imgly.PESDK.Editor.Panel.VideoLibrary.Thumb">@style/Imgly.PESDK.Editor.Panel.VideoLibrary.Thumb</item>
+        <item name="Imgly.PESDK.Editor.Panel.VideoTrim">@style/Imgly.PESDK.Editor.Panel.VideoTrim</item>
+        <item name="Imgly.PESDK.Editor.Panel.default.OptionContainer">@style/Imgly.PESDK.Editor.Panel.default.OptionContainer</item>
+        <item name="Imgly.PESDK.Editor.Popup">@style/Imgly.PESDK.Editor.Popup</item>
+        <item name="Imgly.PESDK.Editor.Popup.Brush">@style/Imgly.PESDK.Editor.Popup.Brush</item>
+        <item name="Imgly.PESDK.Editor.Popup.Brush.BrushPreview">@style/Imgly.PESDK.Editor.Popup.Brush.BrushPreview</item>
+        <item name="Imgly.PESDK.Editor.Popup.Brush.BrushToolPreview">@style/Imgly.PESDK.Editor.Popup.Brush.BrushToolPreview</item>
+        <item name="Imgly.PESDK.Editor.Popup.Button.Agree">@style/Imgly.PESDK.Editor.Popup.Button.Agree</item>
+        <item name="Imgly.PESDK.Editor.Popup.Button.Disagree">@style/Imgly.PESDK.Editor.Popup.Button.Disagree</item>
+        <item name="Imgly.PESDK.Editor.Popup.ButtonContainer">@style/Imgly.PESDK.Editor.Popup.ButtonContainer</item>
+        <item name="Imgly.PESDK.Editor.Popup.Confirm">@style/Imgly.PESDK.Editor.Popup.Confirm</item>
+        <item name="Imgly.PESDK.Editor.Popup.Confirm.Background">@style/Imgly.PESDK.Editor.Popup.Confirm.Background</item>
+        <item name="Imgly.PESDK.Editor.Popup.Confirm.Button.Agree">@style/Imgly.PESDK.Editor.Popup.Confirm.Button.Agree</item>
+        <item name="Imgly.PESDK.Editor.Popup.Confirm.ButtonContainer">@style/Imgly.PESDK.Editor.Popup.Confirm.ButtonContainer</item>
+        <item name="Imgly.PESDK.Editor.Popup.Confirm.Text">@style/Imgly.PESDK.Editor.Popup.Confirm.Text</item>
+        <item name="Imgly.PESDK.Editor.Popup.Confirm.Title">@style/Imgly.PESDK.Editor.Popup.Confirm.Title</item>
+        <item name="Imgly.PESDK.Editor.Popup.Confirm.default.Background">@style/Imgly.PESDK.Editor.Popup.Confirm.default.Background</item>
+        <item name="Imgly.PESDK.Editor.Popup.Error">@style/Imgly.PESDK.Editor.Popup.Error</item>
+        <item name="Imgly.PESDK.Editor.Popup.Error.Background">@style/Imgly.PESDK.Editor.Popup.Error.Background</item>
+        <item name="Imgly.PESDK.Editor.Popup.Error.Button.Agree">@style/Imgly.PESDK.Editor.Popup.Error.Button.Agree</item>
+        <item name="Imgly.PESDK.Editor.Popup.Error.ButtonContainer">@style/Imgly.PESDK.Editor.Popup.Error.ButtonContainer</item>
+        <item name="Imgly.PESDK.Editor.Popup.Error.Text">@style/Imgly.PESDK.Editor.Popup.Error.Text</item>
+        <item name="Imgly.PESDK.Editor.Popup.Error.Title">@style/Imgly.PESDK.Editor.Popup.Error.Title</item>
+        <item name="Imgly.PESDK.Editor.Popup.Progress">@style/Imgly.PESDK.Editor.Popup.Progress</item>
+        <item name="Imgly.PESDK.Editor.Popup.Progress.ProgressBar">@style/Imgly.PESDK.Editor.Popup.Progress.ProgressBar</item>
+        <item name="Imgly.PESDK.Editor.Popup.Progress.Value">@style/Imgly.PESDK.Editor.Popup.Progress.Value</item>
+        <item name="Imgly.PESDK.SeekSlider">@style/Imgly.PESDK.SeekSlider</item>
+        <item name="Imgly.PESDK.SeekSlider.Transparent">@style/Imgly.PESDK.SeekSlider.Transparent</item>
+        <item name="Imgly.PESDK.Widget.ActionBar">@style/Imgly.PESDK.Widget.ActionBar</item>
+        <item name="Imgly.PESDK.Widget.ActionBar.Button.AcceptButton">@style/Imgly.PESDK.Widget.ActionBar.Button.AcceptButton</item>
+        <item name="Imgly.PESDK.Widget.ActionBar.Button.CancelButton">@style/Imgly.PESDK.Widget.ActionBar.Button.CancelButton</item>
+        <item name="Imgly.PESDK.Widget.ActionBar.TabBar">@style/Imgly.PESDK.Widget.ActionBar.TabBar</item>
+        <item name="Imgly.PESDK.Widget.ActionBar.TabBar.Tab">@style/Imgly.PESDK.Widget.ActionBar.TabBar.Tab</item>
+        <item name="Imgly.PESDK.Widget.ActionBar.TabBar.Tabs">@style/Imgly.PESDK.Widget.ActionBar.TabBar.Tabs</item>
+        <item name="Imgly.PESDK.Widget.ActionBar.TitleAnimationContainer">@style/Imgly.PESDK.Widget.ActionBar.TitleAnimationContainer</item>
+        <item name="Imgly.PESDK.Widget.ActionBar.TitleAnimationContainer.TitleItem">
+            @style/Imgly.PESDK.Widget.ActionBar.TitleAnimationContainer.TitleItem
+        </item>
+        <item name="Imgly.PESDK.Widget.ActionBar.default.Button">@style/Imgly.PESDK.Widget.ActionBar.default.Button</item>
+        <item name="Imgly.PESDK.Widget.ColorPicker.AlphaSlider">@style/Imgly.PESDK.Widget.ColorPicker.AlphaSlider</item>
+        <item name="Imgly.PESDK.Widget.ColorPicker.Background">@style/Imgly.PESDK.Widget.ColorPicker.Background</item>
+        <item name="Imgly.PESDK.Widget.ColorPicker.ColorValueSlider">@style/Imgly.PESDK.Widget.ColorPicker.ColorValueSlider</item>
+        <item name="Imgly.PESDK.Widget.ColorPicker.HueSlider">@style/Imgly.PESDK.Widget.ColorPicker.HueSlider</item>
+        <item name="Imgly.PESDK.Widget.SeekSlider">@style/Imgly.PESDK.Widget.SeekSlider</item>
+        <item name="Imgly.PESDK.Widget.SeekSliderContainer">@style/Imgly.PESDK.Widget.SeekSliderContainer</item>
+        <item name="Imgly.PESDK.Widget.default.ColorPicker">@style/Imgly.PESDK.Widget.default.ColorPicker</item>
+        <item name="Imgly.PESDK.default.Item">@style/Imgly.PESDK.default.Item</item>
+        <item name="Imgly.PESDK.default.Item.Icon">@style/Imgly.PESDK.default.Item.Icon</item>
+        <item name="Imgly.PESDK.default.Item.Label">@style/Imgly.PESDK.default.Item.Label</item>
+        <item name="Imgly.PESDK.default.Item.SelectOverlay">@style/Imgly.PESDK.default.Item.SelectOverlay</item>
+        <item name="Imgly.PESDK.default.Item.Value">@style/Imgly.PESDK.default.Item.Value</item>
+        <item name="Imgly.PESDK.default.OptionList">@style/Imgly.PESDK.default.OptionList</item>
+    </style>
+
+    <style name="Theme.Imgly.NoFullscreen">
+        <item name="android:windowFullscreen">false</item>
+    </style>
+
+    <style name="Theme.Imgly.TopActionBar">
+        <item name="Imgly.PESDK.Editor.Activity.ActionBar">@style/Imgly.PESDK.Editor.Activity.ActionBar.TopActionBar</item>
+        <item name="Imgly.PESDK.Editor.Activity.Preview">@style/Imgly.PESDK.Editor.Activity.Preview.TopActionBar</item>
+        <item name="Imgly.PESDK.Editor.Activity.ToolPanelContainer">@style/Imgly.PESDK.Editor.Activity.ToolPanelContainer.TopActionBar
+        </item>
+        <item name="Imgly.PESDK.Editor.Panel.Font.Expandable">@style/Imgly.PESDK.Editor.Panel.Font.Expandable.TopActionBar</item>
+        <item name="Imgly.PESDK.Editor.Panel.Sticker.Expandable">@style/Imgly.PESDK.Editor.Panel.Sticker.Expandable.TopActionBar</item>
+    </style>
+
+    <style name="Theme.Imgly.TopActionBar.NoFullscreen">
+        <item name="android:windowFullscreen">false</item>
+    </style>
+
+    <style name="Theme.Imgly.Light" parent="@style/Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+
+        <item name="imgly_transparent_color">@color/imgly_transparent_color</item>
+        <item name="imgly_background_color">@color/imgly_background_color_light</item>
+        <item name="imgly_camera_header_background_color">@color/imgly_camera_header_background_color_light</item>
+        <item name="imgly_camera_footer_background_color">@color/imgly_camera_footer_background_color_light</item>
+        <item name="imgly_highlight_color">@color/imgly_highlight_color_light</item>
+        <item name="imgly_icon_border_color_active">@color/imgly_icon_border_color_active_light</item>
+        <item name="imgly_slider_track_color_progress">@color/imgly_slider_track_color_progress_light</item>
+        <item name="imgly_text_color">@color/imgly_text_color_light</item>
+        <item name="imgly_editor_text_color">@color/imgly_editor_text_color_light</item>
+        <item name="imgly_camera_text_color">@color/imgly_camera_text_color_light</item>
+        <item name="imgly_text_color_active">@color/imgly_text_color_active_light</item>
+        <item name="imgly_text_on_image_color">@color/imgly_text_on_image_color_light</item>
+        <item name="imgly_icon_color_active">@color/imgly_icon_color_active_light</item>
+        <item name="imgly_shuffle_icon_color">@color/imgly_shuffle_icon_color_light</item>
+        <item name="imgly_text_on_image_color_secondary">@color/imgly_text_on_image_color_secondary_light</item>
+        <item name="imgly_button_color">@color/imgly_button_color_light</item>
+        <item name="imgly_button_color_pressed">@color/imgly_button_color_pressed_light</item>
+        <item name="imgly_button_color_disabled">@color/imgly_button_color_disabled_light</item>
+        <item name="imgly_icon_color">@color/imgly_icon_color_light</item>
+        <item name="imgly_editor_text_color_secondary">@color/imgly_editor_text_color_secondary_light</item>
+        <item name="imgly_slider_thumb_color_disabled">@color/imgly_slider_thumb_color_disabled_light</item>
+        <item name="imgly_icon_color_disabled">@color/imgly_icon_color_disabled_light</item>
+        <item name="imgly_crop_icon_fill_color_active">@color/imgly_crop_icon_fill_color_active_light</item>
+        <item name="imgly_crop_icon_fill_color">@color/imgly_crop_icon_fill_color_light</item>
+        <item name="imgly_slider_track_color">@color/imgly_slider_track_color_light</item>
+        <item name="imgly_text_input_background_color">@color/imgly_text_input_background_color_light</item>
+        <item name="imgly_sticker_selection_background_color">@color/imgly_sticker_selection_background_color_light</item>
+        <item name="imgly_audio_selection_background_color">@color/imgly_audio_selection_background_color_light</item>
+        <item name="imgly_audio_selection_background_color_selected">@color/imgly_audio_selection_background_color_selected_light</item>
+        <item name="imgly_actionBar_background_color">@color/imgly_actionBar_background_color_light</item>
+        <item name="imgly_optionToolBar_background_color">@color/imgly_optionToolBar_background_color_light</item>
+        <item name="imgly_slider_thumb_color">@color/imgly_slider_thumb_color_light</item>
+        <item name="imgly_slider_background_color">@color/imgly_slider_background_color_light</item>
+        <item name="imgly_quickOptionToolBar_background_color">@color/imgly_quickOptionToolBar_background_color_light</item>
+        <item name="imgly_dialog_background_color">@color/imgly_dialog_background_color_light</item>
+        <item name="imgly_shuffle_icon_overlay_color">@color/imgly_shuffle_icon_overlay_color_light</item>
+        <item name="imgly_text_on_image_background_color">@color/imgly_text_on_image_background_color_light</item>
+        <item name="imgly_brush_preview_background_color">@color/imgly_brush_preview_background_color_light</item>
+        <item name="imgly_icon_color_on_canvas">@color/imgly_icon_color_on_canvas_light</item>
+        <item name="imgly_icon_color_on_canvas_disabled">@color/imgly_icon_color_on_canvas_disabled_light</item>
+        <item name="imgly_icon_color_secondary">@color/imgly_icon_color_secondary_light</item>
+        <item name="imgly_camera_background_color">@color/imgly_camera_background_color_light</item>
+        <item name="imgly_camera_icon_color">@color/imgly_camera_icon_color_light</item>
+        <item name="imgly_transform_background_color">@color/imgly_transform_background_color_light</item>
+        <item name="imgly_editor_position_snap_indicator_color">@color/imgly_editor_position_snap_indicator_color_light</item>
+        <item name="imgly_editor_rotation_snap_indicator_color">@color/imgly_editor_rotation_snap_indicator_color_light</item>
+        <item name="imgly_editor_bounding_snap_indicator_color">@color/imgly_editor_bounding_snap_indicator_color_light</item>
+        <item name="imgly_tooltip_background_color">@color/imgly_tooltip_background_color_light</item>
+        <item name="imgly_time_line_range_limit_reached_color">@color/imgly_time_line_range_limit_reached_color_light</item>
+        <item name="imgly_time_line_selected_area_color">@color/imgly_time_line_selected_area_color_light</item>
+        <item name="imgly_thumb_handle_has_default_value">@color/imgly_thumb_handle_has_default_value_light</item>
+        <item name="imgly_thumb_handle_limit_reached_color">@color/imgly_thumb_handle_limit_reached_color_light</item>
+        <item name="imgly_time_line_range_color">@color/imgly_time_line_range_color_light</item>
+        <item name="imgly_thumb_handle_color">@color/imgly_thumb_handle_color_light</item>
+        <item name="android:windowBackground">@color/imgly_text_on_image_background_color_light</item>
+        <item name="imgly_giphy_sticker_resource_color">@color/imgly_giphy_sticker_resource_color</item>
+        <item name="imgly_giphy_sticker_text_color">@color/imgly_giphy_sticker_text_color</item>
+
+        <item name="Imgly">@style/Imgly</item>
+        <item name="Imgly.PESDK">@style/Imgly.PESDK</item>
+        <item name="Imgly.PESDK.Button">@style/Imgly.PESDK.Button</item>
+        <item name="Imgly.PESDK.Camera">@style/Imgly.PESDK.Camera</item>
+        <item name="Imgly.PESDK.Camera.CameraPreview">@style/Imgly.PESDK.Camera.CameraPreview</item>
+        <item name="Imgly.PESDK.Camera.CameraPreview.Focus">@style/Imgly.PESDK.Camera.CameraPreview.Focus</item>
+        <item name="Imgly.PESDK.Camera.CameraPreview.Surface">@style/Imgly.PESDK.Camera.CameraPreview.Surface</item>
+        <item name="Imgly.PESDK.Camera.UI">@style/Imgly.PESDK.Camera.UI</item>
+        <item name="Imgly.PESDK.Camera.UI.Footer">@style/Imgly.PESDK.Camera.UI.Footer</item>
+        <item name="Imgly.PESDK.Camera.UI.Footer.Button.FilterButton">@style/Imgly.PESDK.Camera.UI.Footer.Button.FilterButton</item>
+        <item name="Imgly.PESDK.Camera.UI.Footer.Button.GalleryButton">@style/Imgly.PESDK.Camera.UI.Footer.Button.GalleryButton</item>
+        <item name="Imgly.PESDK.Camera.UI.Footer.Button.ShutterButton">@style/Imgly.PESDK.Camera.UI.Footer.Button.ShutterButton</item>
+        <item name="Imgly.PESDK.Camera.UI.Footer.Container">@style/Imgly.PESDK.Camera.UI.Footer.Container</item>
+        <item name="Imgly.PESDK.Camera.UI.Footer.ExpandableContainer">@style/Imgly.PESDK.Camera.UI.Footer.ExpandableContainer</item>
+        <item name="Imgly.PESDK.Camera.UI.Footer.ExpandableContainer.FilterList">
+            @style/Imgly.PESDK.Camera.UI.Footer.ExpandableContainer.FilterList
+        </item>
+        <item name="Imgly.PESDK.Camera.UI.Footer.SeekSlider.Transparent">@style/Imgly.PESDK.Camera.UI.Footer.SeekSlider.Transparent</item>
+        <item name="Imgly.PESDK.Camera.UI.Header">@style/Imgly.PESDK.Camera.UI.Header</item>
+        <item name="Imgly.PESDK.Camera.UI.Header.Button">@style/Imgly.PESDK.Camera.UI.Header.Button</item>
+        <item name="Imgly.PESDK.Camera.UI.Header.Button.FlashButton">@style/Imgly.PESDK.Camera.UI.Header.Button.FlashButton</item>
+        <item name="Imgly.PESDK.Camera.UI.Header.Button.FlashButton.Icon">@style/Imgly.PESDK.Camera.UI.Header.Button.FlashButton.Icon</item>
+        <item name="Imgly.PESDK.Camera.UI.Header.Button.FlashButton.Label">@style/Imgly.PESDK.Camera.UI.Header.Button.FlashButton.Label
+        </item>
+        <item name="Imgly.PESDK.Camera.UI.Header.Button.HDRButton">@style/Imgly.PESDK.Camera.UI.Header.Button.HDRButton</item>
+        <item name="Imgly.PESDK.Camera.UI.Header.Button.SwitchCameraButton">@style/Imgly.PESDK.Camera.UI.Header.Button.SwitchCameraButton
+        </item>
+        <item name="Imgly.PESDK.Editor">@style/Imgly.PESDK.Editor</item>
+        <item name="Imgly.PESDK.Editor.Activity">@style/Imgly.PESDK.Editor.Activity</item>
+        <item name="Imgly.PESDK.Editor.Activity.ActionBar">@style/Imgly.PESDK.Editor.Activity.ActionBar</item>
+        <item name="Imgly.PESDK.Editor.Activity.ActionBar.BottomActionBar">@style/Imgly.PESDK.Editor.Activity.ActionBar.BottomActionBar
+        </item>
+        <item name="Imgly.PESDK.Editor.Activity.ActionBar.TopActionBar">@style/Imgly.PESDK.Editor.Activity.ActionBar.TopActionBar</item>
+        <item name="Imgly.PESDK.Editor.Activity.Preview">@style/Imgly.PESDK.Editor.Activity.Preview</item>
+        <item name="Imgly.PESDK.Editor.Activity.Preview.BottomActionBar">@style/Imgly.PESDK.Editor.Activity.Preview.BottomActionBar</item>
+        <item name="Imgly.PESDK.Editor.Activity.Preview.TopActionBar">@style/Imgly.PESDK.Editor.Activity.Preview.TopActionBar</item>
+        <item name="Imgly.PESDK.Editor.Activity.Progress">@style/Imgly.PESDK.Editor.Activity.Progress</item>
+        <item name="Imgly.PESDK.Editor.Activity.ToolPanelContainer">@style/Imgly.PESDK.Editor.Activity.ToolPanelContainer</item>
+        <item name="Imgly.PESDK.Editor.Activity.ToolPanelContainer.BottomActionBar">
+            @style/Imgly.PESDK.Editor.Activity.ToolPanelContainer.BottomActionBar
+        </item>
+        <item name="Imgly.PESDK.Editor.Activity.ToolPanelContainer.TopActionBar">
+            @style/Imgly.PESDK.Editor.Activity.ToolPanelContainer.TopActionBar
+        </item>
+        <item name="Imgly.PESDK.Editor.Panel">@style/Imgly.PESDK.Editor.Panel</item>
+        <item name="Imgly.PESDK.Editor.Panel.Adjust">@style/Imgly.PESDK.Editor.Panel.Adjust</item>
+        <item name="Imgly.PESDK.Editor.Panel.Adjust.SeekSlider">@style/Imgly.PESDK.Editor.Panel.Adjust.SeekSlider</item>
+        <item name="Imgly.PESDK.Editor.Panel.Adjust.SmallOptionList">@style/Imgly.PESDK.Editor.Panel.Adjust.SmallOptionList</item>
+        <item name="Imgly.PESDK.Editor.Panel.Audio.AudioCategoryIconItem">@style/Imgly.PESDK.Editor.Panel.Audio.AudioCategoryIconItem</item>
+        <item name="Imgly.PESDK.Editor.Panel.Audio.AudioCategoryIconItem.Border">
+            @style/Imgly.PESDK.Editor.Panel.Audio.AudioCategoryIconItem.Border
+        </item>
+        <item name="Imgly.PESDK.Editor.Panel.Audio.AudioCategoryIconItem.Icon">
+            @style/Imgly.PESDK.Editor.Panel.Audio.AudioCategoryIconItem.Icon
+        </item>
+        <item name="Imgly.PESDK.Editor.Panel.Audio.AudioCategoryIconItem.Label">
+            @style/Imgly.PESDK.Editor.Panel.Audio.AudioCategoryIconItem.Label
+        </item>
+        <item name="Imgly.PESDK.Editor.Panel.Audio.AudioCategoryItem">@style/Imgly.PESDK.Editor.Panel.Audio.AudioCategoryItem</item>
+        <item name="Imgly.PESDK.Editor.Panel.Audio.AudioCategoryItem.Border">
+            @style/Imgly.PESDK.Editor.Panel.Audio.AudioCategoryItem.Border
+        </item>
+        <item name="Imgly.PESDK.Editor.Panel.Audio.AudioCategoryItem.Icon">@style/Imgly.PESDK.Editor.Panel.Audio.AudioCategoryItem.Icon
+        </item>
+        <item name="Imgly.PESDK.Editor.Panel.Audio.AudioCategoryItem.Label">@style/Imgly.PESDK.Editor.Panel.Audio.AudioCategoryItem.Label
+        </item>
+        <item name="Imgly.PESDK.Editor.Panel.AudioComposition">@style/Imgly.PESDK.Editor.Panel.AudioComposition</item>
+        <item name="Imgly.PESDK.Editor.Panel.AudioComposition.AudioOverlaySlider">
+            @style/Imgly.PESDK.Editor.Panel.AudioComposition.AudioOverlaySlider
+        </item>
+        <item name="Imgly.PESDK.Editor.Panel.AudioComposition.SeekSlider">@style/Imgly.PESDK.Editor.Panel.AudioComposition.SeekSlider</item>
+        <item name="Imgly.PESDK.Editor.Panel.AudioGallery">@style/Imgly.PESDK.Editor.Panel.AudioGallery</item>
+        <item name="Imgly.PESDK.Editor.Panel.AudioGallery.AudioGalleryVertical.Container">
+            @style/Imgly.PESDK.Editor.Panel.AudioGallery.AudioGalleryVertical.Container
+        </item>
+        <item name="Imgly.PESDK.Editor.Panel.AudioGallery.AudioGalleryVerticalItem">
+            @style/Imgly.PESDK.Editor.Panel.AudioGallery.AudioGalleryVerticalItem
+        </item>
+        <item name="Imgly.PESDK.Editor.Panel.AudioGallery.AudioGalleryVerticalItem.Artist">
+            @style/Imgly.PESDK.Editor.Panel.AudioGallery.AudioGalleryVerticalItem.Artist
+        </item>
+        <item name="Imgly.PESDK.Editor.Panel.AudioGallery.AudioGalleryVerticalItem.Duration">
+            @style/Imgly.PESDK.Editor.Panel.AudioGallery.AudioGalleryVerticalItem.Duration
+        </item>
+        <item name="Imgly.PESDK.Editor.Panel.AudioGallery.AudioGalleryVerticalItem.Label">
+            @style/Imgly.PESDK.Editor.Panel.AudioGallery.AudioGalleryVerticalItem.Label
+        </item>
+        <item name="Imgly.PESDK.Editor.Panel.AudioGallery.Expandable">@style/Imgly.PESDK.Editor.Panel.AudioGallery.Expandable</item>
+        <item name="Imgly.PESDK.Editor.Panel.AudioGallery.OptionList">@style/Imgly.PESDK.Editor.Panel.AudioGallery.OptionList</item>
+        <item name="Imgly.PESDK.Editor.Panel.AudioGallery.Thumb">@style/Imgly.PESDK.Editor.Panel.AudioGallery.Thumb</item>
+        <item name="Imgly.PESDK.Editor.Panel.AudioGallery.VideoLibraryGrid.Container">
+            @style/Imgly.PESDK.Editor.Panel.AudioGallery.VideoLibraryGrid.Container
+        </item>
+        <item name="Imgly.PESDK.Editor.Panel.Brush">@style/Imgly.PESDK.Editor.Panel.Brush</item>
+        <item name="Imgly.PESDK.Editor.Panel.Brush.SeekSlider">@style/Imgly.PESDK.Editor.Panel.Brush.SeekSlider</item>
+        <item name="Imgly.PESDK.Editor.Panel.Brush.SmallOptionList">@style/Imgly.PESDK.Editor.Panel.Brush.SmallOptionList</item>
+        <item name="Imgly.PESDK.Editor.Panel.Color">@style/Imgly.PESDK.Editor.Panel.Color</item>
+        <item name="Imgly.PESDK.Editor.Panel.Color.ColorItem">@style/Imgly.PESDK.Editor.Panel.Color.ColorItem</item>
+        <item name="Imgly.PESDK.Editor.Panel.Color.ColorItem.Background">@style/Imgly.PESDK.Editor.Panel.Color.ColorItem.Background</item>
+        <item name="Imgly.PESDK.Editor.Panel.Color.ColorItem.Icon">@style/Imgly.PESDK.Editor.Panel.Color.ColorItem.Icon</item>
+        <item name="Imgly.PESDK.Editor.Panel.Color.ColorItem.SelectOverlay">@style/Imgly.PESDK.Editor.Panel.Color.ColorItem.SelectOverlay
+        </item>
+        <item name="Imgly.PESDK.Editor.Panel.Color.ColorPicker">@style/Imgly.PESDK.Editor.Panel.Color.ColorPicker</item>
+        <item name="Imgly.PESDK.Editor.Panel.Color.ColorPipetteItem.Border">@style/Imgly.PESDK.Editor.Panel.Color.ColorPipetteItem.Border
+        </item>
+        <item name="Imgly.PESDK.Editor.Panel.Color.ColorPipetteItem.Icon">@style/Imgly.PESDK.Editor.Panel.Color.ColorPipetteItem.Icon</item>
+        <item name="Imgly.PESDK.Editor.Panel.Filter">@style/Imgly.PESDK.Editor.Panel.Filter</item>
+        <item name="Imgly.PESDK.Editor.Panel.Filter.FilterItem">@style/Imgly.PESDK.Editor.Panel.Filter.FilterItem</item>
+        <item name="Imgly.PESDK.Editor.Panel.Filter.FilterItem.Border">@style/Imgly.PESDK.Editor.Panel.Filter.FilterItem.Border</item>
+        <item name="Imgly.PESDK.Editor.Panel.Filter.FilterItem.Icon">@style/Imgly.PESDK.Editor.Panel.Filter.FilterItem.Icon</item>
+        <item name="Imgly.PESDK.Editor.Panel.Filter.FilterItem.Label">@style/Imgly.PESDK.Editor.Panel.Filter.FilterItem.Label</item>
+        <item name="Imgly.PESDK.Editor.Panel.Filter.SeekSlider">@style/Imgly.PESDK.Editor.Panel.Filter.SeekSlider</item>
+        <item name="Imgly.PESDK.Editor.Panel.Focus">@style/Imgly.PESDK.Editor.Panel.Focus</item>
+        <item name="Imgly.PESDK.Editor.Panel.Focus.OptionContainer">@style/Imgly.PESDK.Editor.Panel.Focus.OptionContainer</item>
+        <item name="Imgly.PESDK.Editor.Panel.Focus.SeekSlider">@style/Imgly.PESDK.Editor.Panel.Focus.SeekSlider</item>
+        <item name="Imgly.PESDK.Editor.Panel.Font">@style/Imgly.PESDK.Editor.Panel.Font</item>
+        <item name="Imgly.PESDK.Editor.Panel.Font.Expandable">@style/Imgly.PESDK.Editor.Panel.Font.Expandable</item>
+        <item name="Imgly.PESDK.Editor.Panel.Font.Expandable.BottomActionBar">
+            @style/Imgly.PESDK.Editor.Panel.Font.Expandable.BottomActionBar
+        </item>
+        <item name="Imgly.PESDK.Editor.Panel.Font.Expandable.TopActionBar">@style/Imgly.PESDK.Editor.Panel.Font.Expandable.TopActionBar
+        </item>
+        <item name="Imgly.PESDK.Editor.Panel.Font.FontItem">@style/Imgly.PESDK.Editor.Panel.Font.FontItem</item>
+        <item name="Imgly.PESDK.Editor.Panel.Font.FontItem.Label">@style/Imgly.PESDK.Editor.Panel.Font.FontItem.Label</item>
+        <item name="Imgly.PESDK.Editor.Panel.Font.FontItem.Text">@style/Imgly.PESDK.Editor.Panel.Font.FontItem.Text</item>
+        <item name="Imgly.PESDK.Editor.Panel.Font.FontVertical.Container">@style/Imgly.PESDK.Editor.Panel.Font.FontVertical.Container</item>
+        <item name="Imgly.PESDK.Editor.Panel.Font.FontVerticalItem">@style/Imgly.PESDK.Editor.Panel.Font.FontVerticalItem</item>
+        <item name="Imgly.PESDK.Editor.Panel.Font.FontVerticalItem.Label">@style/Imgly.PESDK.Editor.Panel.Font.FontVerticalItem.Label</item>
+        <item name="Imgly.PESDK.Editor.Panel.Font.FontVerticalItem.Text">@style/Imgly.PESDK.Editor.Panel.Font.FontVerticalItem.Text</item>
+        <item name="Imgly.PESDK.Editor.Panel.Font.OptionList">@style/Imgly.PESDK.Editor.Panel.Font.OptionList</item>
+        <item name="Imgly.PESDK.Editor.Panel.Font.Thumb">@style/Imgly.PESDK.Editor.Panel.Font.Thumb</item>
+        <item name="Imgly.PESDK.Editor.Panel.Frame">@style/Imgly.PESDK.Editor.Panel.Frame</item>
+        <item name="Imgly.PESDK.Editor.Panel.Frame.FrameItem">@style/Imgly.PESDK.Editor.Panel.Frame.FrameItem</item>
+        <item name="Imgly.PESDK.Editor.Panel.Frame.FrameItem.Icon">@style/Imgly.PESDK.Editor.Panel.Frame.FrameItem.Icon</item>
+        <item name="Imgly.PESDK.Editor.Panel.Frame.FrameItem.Label">@style/Imgly.PESDK.Editor.Panel.Frame.FrameItem.Label</item>
+        <item name="Imgly.PESDK.Editor.Panel.Frame.FrameItem.NoneIcon">@style/Imgly.PESDK.Editor.Panel.Frame.FrameItem.NoneIcon</item>
+        <item name="Imgly.PESDK.Editor.Panel.Frame.FrameOption">@style/Imgly.PESDK.Editor.Panel.Frame.FrameOption</item>
+        <item name="Imgly.PESDK.Editor.Panel.Frame.OptionList">@style/Imgly.PESDK.Editor.Panel.Frame.OptionList</item>
+        <item name="Imgly.PESDK.Editor.Panel.Frame.SeekSlider">@style/Imgly.PESDK.Editor.Panel.Frame.SeekSlider</item>
+        <item name="Imgly.PESDK.Editor.Panel.Frame.SmallOptionList">@style/Imgly.PESDK.Editor.Panel.Frame.SmallOptionList</item>
+        <item name="Imgly.PESDK.Editor.Panel.Menu">@style/Imgly.PESDK.Editor.Panel.Menu</item>
+        <item name="Imgly.PESDK.Editor.Panel.Menu.OptionList">@style/Imgly.PESDK.Editor.Panel.Menu.OptionList</item>
+        <item name="Imgly.PESDK.Editor.Panel.Menu.SmallOptionList">@style/Imgly.PESDK.Editor.Panel.Menu.SmallOptionList</item>
+        <item name="Imgly.PESDK.Editor.Panel.Option">@style/Imgly.PESDK.Editor.Panel.Option</item>
+        <item name="Imgly.PESDK.Editor.Panel.Option.OptionItem">@style/Imgly.PESDK.Editor.Panel.Option.OptionItem</item>
+        <item name="Imgly.PESDK.Editor.Panel.Option.ActivatableOptionItem">@style/Imgly.PESDK.Editor.Panel.Option.ActivatableOptionItem</item>
+        <item name="Imgly.PESDK.Editor.Panel.Option.OptionItem.Icon">@style/Imgly.PESDK.Editor.Panel.Option.OptionItem.Icon</item>
+        <item name="Imgly.PESDK.Editor.Panel.Option.OptionItem.Label">@style/Imgly.PESDK.Editor.Panel.Option.OptionItem.Label</item>
+        <item name="Imgly.PESDK.Editor.Panel.Overlay">@style/Imgly.PESDK.Editor.Panel.Overlay</item>
+        <item name="Imgly.PESDK.Editor.Panel.Overlay.BlendModeItem">@style/Imgly.PESDK.Editor.Panel.Overlay.BlendModeItem</item>
+        <item name="Imgly.PESDK.Editor.Panel.Overlay.BlendModeItem.Label">@style/Imgly.PESDK.Editor.Panel.Overlay.BlendModeItem.Label</item>
+        <item name="Imgly.PESDK.Editor.Panel.Overlay.ModeContainer">@style/Imgly.PESDK.Editor.Panel.Overlay.ModeContainer</item>
+        <item name="Imgly.PESDK.Editor.Panel.Overlay.ModeList">@style/Imgly.PESDK.Editor.Panel.Overlay.ModeList</item>
+        <item name="Imgly.PESDK.Editor.Panel.Overlay.OverlayItem">@style/Imgly.PESDK.Editor.Panel.Overlay.OverlayItem</item>
+        <item name="Imgly.PESDK.Editor.Panel.Overlay.OverlayItem.Border">@style/Imgly.PESDK.Editor.Panel.Overlay.OverlayItem.Border</item>
+        <item name="Imgly.PESDK.Editor.Panel.Overlay.OverlayItem.Icon">@style/Imgly.PESDK.Editor.Panel.Overlay.OverlayItem.Icon</item>
+        <item name="Imgly.PESDK.Editor.Panel.Overlay.OverlayItem.Label">@style/Imgly.PESDK.Editor.Panel.Overlay.OverlayItem.Label</item>
+        <item name="Imgly.PESDK.Editor.Panel.Overlay.OverlayItem.Overlay">@style/Imgly.PESDK.Editor.Panel.Overlay.OverlayItem.Overlay</item>
+        <item name="Imgly.PESDK.Editor.Panel.Overlay.OverlayItem.Overlay.Icon">
+            @style/Imgly.PESDK.Editor.Panel.Overlay.OverlayItem.Overlay.Icon
+        </item>
+        <item name="Imgly.PESDK.Editor.Panel.Overlay.SeekSlider">@style/Imgly.PESDK.Editor.Panel.Overlay.SeekSlider</item>
+        <item name="Imgly.PESDK.Editor.Panel.SmallOptionItem">@style/Imgly.PESDK.Editor.Panel.SmallOptionItem</item>
+        <item name="Imgly.PESDK.Editor.Panel.SmallOptionItem.Icon">@style/Imgly.PESDK.Editor.Panel.SmallOptionItem.Icon</item>
+        <item name="Imgly.PESDK.Editor.Panel.Sticker">@style/Imgly.PESDK.Editor.Panel.Sticker</item>
+        <item name="Imgly.PESDK.Editor.Panel.Sticker.Expandable">@style/Imgly.PESDK.Editor.Panel.Sticker.Expandable</item>
+        <item name="Imgly.PESDK.Editor.Panel.Sticker.Expandable.BottomActionBar">
+            @style/Imgly.PESDK.Editor.Panel.Sticker.Expandable.BottomActionBar
+        </item>
+        <item name="Imgly.PESDK.Editor.Panel.Sticker.Expandable.Grid">@style/Imgly.PESDK.Editor.Panel.Sticker.Expandable.Grid</item>
+        <item name="Imgly.PESDK.Editor.Panel.Sticker.Expandable.Thumb">@style/Imgly.PESDK.Editor.Panel.Sticker.Expandable.Thumb</item>
+        <item name="Imgly.PESDK.Editor.Panel.Sticker.Expandable.TopActionBar">
+            @style/Imgly.PESDK.Editor.Panel.Sticker.Expandable.TopActionBar
+        </item>
+        <item name="Imgly.PESDK.Editor.Panel.Sticker.Giphy.SearchBox">@style/Imgly.PESDK.Editor.Panel.Sticker.Giphy.SearchBox</item>
+        <item name="Imgly.PESDK.Editor.Panel.Sticker.Giphy.Retry">@style/Imgly.PESDK.Editor.Panel.Sticker.Giphy.Retry</item>
+        <item name="Imgly.PESDK.Editor.Panel.Sticker.Giphy.Error">@style/Imgly.PESDK.Editor.Panel.Sticker.Giphy.Error</item>
+        <item name="Imgly.PESDK.Editor.Panel.Sticker.Giphy.Empty">@style/Imgly.PESDK.Editor.Panel.Sticker.Giphy.Empty</item>
+
+        <item name="Imgly.PESDK.Editor.Panel.Sticker.OptionList">@style/Imgly.PESDK.Editor.Panel.Sticker.OptionList</item>
+        <item name="Imgly.PESDK.Editor.Panel.Sticker.SeekSlider">@style/Imgly.PESDK.Editor.Panel.Sticker.SeekSlider</item>
+        <item name="Imgly.PESDK.Editor.Panel.Sticker.SmallOptionList">@style/Imgly.PESDK.Editor.Panel.Sticker.SmallOptionList</item>
+        <item name="Imgly.PESDK.Editor.Panel.Sticker.StickerCategoryItem">@style/Imgly.PESDK.Editor.Panel.Sticker.StickerCategoryItem</item>
+        <item name="Imgly.PESDK.Editor.Panel.Sticker.StickerCategoryItem.Icon">
+            @style/Imgly.PESDK.Editor.Panel.Sticker.StickerCategoryItem.Icon
+        </item>
+        <item name="Imgly.PESDK.Editor.Panel.Sticker.StickerCategoryItem.Label">
+            @style/Imgly.PESDK.Editor.Panel.Sticker.StickerCategoryItem.Label
+        </item>
+        <item name="Imgly.PESDK.Editor.Panel.Sticker.StickerItem">@style/Imgly.PESDK.Editor.Panel.Sticker.StickerItem</item>
+        <item name="Imgly.PESDK.Editor.Panel.Sticker.StickerItem.Icon">@style/Imgly.PESDK.Editor.Panel.Sticker.StickerItem.Icon</item>
+        <item name="Imgly.PESDK.Editor.Panel.Sticker.StickerItem.Label">@style/Imgly.PESDK.Editor.Panel.Sticker.StickerItem.Label</item>
+        <item name="Imgly.PESDK.Editor.Panel.Sticker.StickerOption">@style/Imgly.PESDK.Editor.Panel.Sticker.StickerOption</item>
+        <item name="Imgly.PESDK.Editor.Panel.Sticker.StickerUploadItem">@style/Imgly.PESDK.Editor.Panel.Sticker.StickerUploadItem</item>
+        <item name="Imgly.PESDK.Editor.Panel.Sticker.StickerUploadItem.Icon">
+            @style/Imgly.PESDK.Editor.Panel.Sticker.StickerUploadItem.Icon
+        </item>
+        <item name="Imgly.PESDK.Editor.Panel.Sticker.StickerUploadItem.Label">
+            @style/Imgly.PESDK.Editor.Panel.Sticker.StickerUploadItem.Label
+        </item>
+        <item name="Imgly.PESDK.Editor.Panel.SpriteDuration">@style/Imgly.PESDK.Editor.Panel.SpriteDuration</item>
+        <item name="Imgly.PESDK.Editor.Panel.SpriteDuration.SmallOptionList">@style/Imgly.PESDK.Editor.Panel.SpriteDuration.SmallOptionList</item>
+        <item name="Imgly.PESDK.Editor.Panel.SpriteDuration.TrimSpriteSlider">@style/Imgly.PESDK.Editor.Panel.SpriteDuration.TrimSpriteSlider</item>
+        <item name="Imgly.PESDK.Editor.Panel.Text">@style/Imgly.PESDK.Editor.Panel.Text</item>
+        <item name="Imgly.PESDK.Editor.Panel.Text.InputField">@style/Imgly.PESDK.Editor.Panel.Text.InputField</item>
+        <item name="Imgly.PESDK.Editor.Panel.Text.OptionList">@style/Imgly.PESDK.Editor.Panel.Text.OptionList</item>
+        <item name="Imgly.PESDK.Editor.Panel.Text.SmallOptionList">@style/Imgly.PESDK.Editor.Panel.Text.SmallOptionList</item>
+        <item name="Imgly.PESDK.Editor.Panel.Text.TextOptions">@style/Imgly.PESDK.Editor.Panel.Text.TextOptions</item>
+        <item name="Imgly.PESDK.Editor.Panel.TextDesign">@style/Imgly.PESDK.Editor.Panel.TextDesign</item>
+        <item name="Imgly.PESDK.Editor.Panel.TextDesign.ColorItem">@style/Imgly.PESDK.Editor.Panel.TextDesign.ColorItem</item>
+        <item name="Imgly.PESDK.Editor.Panel.TextDesign.ColorItem.Icon">@style/Imgly.PESDK.Editor.Panel.TextDesign.ColorItem.Icon</item>
+        <item name="Imgly.PESDK.Editor.Panel.TextDesign.ColorList">@style/Imgly.PESDK.Editor.Panel.TextDesign.ColorList</item>
+        <item name="Imgly.PESDK.Editor.Panel.TextDesign.InputField">@style/Imgly.PESDK.Editor.Panel.TextDesign.InputField</item>
+        <item name="Imgly.PESDK.Editor.Panel.TextDesign.OptionList">@style/Imgly.PESDK.Editor.Panel.TextDesign.OptionList</item>
+        <item name="Imgly.PESDK.Editor.Panel.TextDesign.SmallOptionList">@style/Imgly.PESDK.Editor.Panel.TextDesign.SmallOptionList</item>
+        <item name="Imgly.PESDK.Editor.Panel.TextDesign.TextDesignItem">@style/Imgly.PESDK.Editor.Panel.TextDesign.TextDesignItem</item>
+        <item name="Imgly.PESDK.Editor.Panel.TextDesign.TextDesignItem.Border">
+            @style/Imgly.PESDK.Editor.Panel.TextDesign.TextDesignItem.Border
+        </item>
+        <item name="Imgly.PESDK.Editor.Panel.TextDesign.TextDesignItem.Icon">
+            @style/Imgly.PESDK.Editor.Panel.TextDesign.TextDesignItem.Icon
+        </item>
+        <item name="Imgly.PESDK.Editor.Panel.TextDesign.TextDesignItem.Overlay">
+            @style/Imgly.PESDK.Editor.Panel.TextDesign.TextDesignItem.Overlay
+        </item>
+        <item name="Imgly.PESDK.Editor.Panel.TextDesign.TextDesignItem.Overlay.Icon">
+            @style/Imgly.PESDK.Editor.Panel.TextDesign.TextDesignItem.Overlay.Icon
+        </item>
+        <item name="Imgly.PESDK.Editor.Panel.TextDesign.TextOptions">@style/Imgly.PESDK.Editor.Panel.TextDesign.TextOptions</item>
+        <item name="Imgly.PESDK.Editor.Panel.Tool">@style/Imgly.PESDK.Editor.Panel.Tool</item>
+        <item name="Imgly.PESDK.Editor.Panel.Tool.FolderItem">@style/Imgly.PESDK.Editor.Panel.Tool.FolderItem</item>
+        <item name="Imgly.PESDK.Editor.Panel.Tool.FolderItem.Border">@style/Imgly.PESDK.Editor.Panel.Tool.FolderItem.Border</item>
+        <item name="Imgly.PESDK.Editor.Panel.Tool.FolderItem.Icon">@style/Imgly.PESDK.Editor.Panel.Tool.FolderItem.Icon</item>
+        <item name="Imgly.PESDK.Editor.Panel.Tool.FolderItem.Label">@style/Imgly.PESDK.Editor.Panel.Tool.FolderItem.Label</item>
+        <item name="Imgly.PESDK.Editor.Panel.Tool.ToolItem">@style/Imgly.PESDK.Editor.Panel.Tool.ToolItem</item>
+        <item name="Imgly.PESDK.Editor.Panel.Tool.ToolItem.Icon">@style/Imgly.PESDK.Editor.Panel.Tool.ToolItem.Icon</item>
+        <item name="Imgly.PESDK.Editor.Panel.Tool.ToolItem.Label">@style/Imgly.PESDK.Editor.Panel.Tool.ToolItem.Label</item>
+        <item name="Imgly.PESDK.Editor.Panel.Transform">@style/Imgly.PESDK.Editor.Panel.Transform</item>
+        <item name="Imgly.PESDK.Editor.Panel.Transform.Button.Flip">@style/Imgly.PESDK.Editor.Panel.Transform.Button.Flip</item>
+        <item name="Imgly.PESDK.Editor.Panel.Transform.Button.Rotate">@style/Imgly.PESDK.Editor.Panel.Transform.Button.Rotate</item>
+        <item name="Imgly.PESDK.Editor.Panel.Transform.CropItem">@style/Imgly.PESDK.Editor.Panel.Transform.CropItem</item>
+        <item name="Imgly.PESDK.Editor.Panel.Transform.CropItem.Border">@style/Imgly.PESDK.Editor.Panel.Transform.CropItem.Border</item>
+        <item name="Imgly.PESDK.Editor.Panel.Transform.CropItem.Icon">@style/Imgly.PESDK.Editor.Panel.Transform.CropItem.Icon</item>
+        <item name="Imgly.PESDK.Editor.Panel.Transform.CropItem.Label">@style/Imgly.PESDK.Editor.Panel.Transform.CropItem.Label</item>
+        <item name="Imgly.PESDK.Editor.Panel.Transform.CropItem.Overlay.Icon">
+            @style/Imgly.PESDK.Editor.Panel.Transform.CropItem.Overlay.Icon
+        </item>
+        <item name="Imgly.PESDK.Editor.Panel.Transform.Slider">@style/Imgly.PESDK.Editor.Panel.Transform.Slider</item>
+        <item name="Imgly.PESDK.Editor.Panel.Video.VideoCategoryIconItem">@style/Imgly.PESDK.Editor.Panel.Video.VideoCategoryIconItem</item>
+        <item name="Imgly.PESDK.Editor.Panel.Video.VideoCategoryIconItem.Border">
+            @style/Imgly.PESDK.Editor.Panel.Video.VideoCategoryIconItem.Border
+        </item>
+        <item name="Imgly.PESDK.Editor.Panel.Video.VideoCategoryIconItem.Icon">
+            @style/Imgly.PESDK.Editor.Panel.Video.VideoCategoryIconItem.Icon
+        </item>
+        <item name="Imgly.PESDK.Editor.Panel.Video.VideoCategoryIconItem.Label">
+            @style/Imgly.PESDK.Editor.Panel.Video.VideoCategoryIconItem.Label
+        </item>
+        <item name="Imgly.PESDK.Editor.Panel.Video.VideoCategoryItem">@style/Imgly.PESDK.Editor.Panel.Video.VideoCategoryItem</item>
+        <item name="Imgly.PESDK.Editor.Panel.Video.VideoCategoryItem.Border">
+            @style/Imgly.PESDK.Editor.Panel.Video.VideoCategoryItem.Border
+        </item>
+        <item name="Imgly.PESDK.Editor.Panel.Video.VideoCategoryItem.Icon">@style/Imgly.PESDK.Editor.Panel.Video.VideoCategoryItem.Icon
+        </item>
+        <item name="Imgly.PESDK.Editor.Panel.Video.VideoCategoryItem.Label">@style/Imgly.PESDK.Editor.Panel.Video.VideoCategoryItem.Label
+        </item>
+        <item name="Imgly.PESDK.Editor.Panel.VideoComposition">@style/Imgly.PESDK.Editor.Panel.VideoComposition</item>
+        <item name="Imgly.PESDK.Editor.Panel.VideoComposition.VideoItem">@style/Imgly.PESDK.Editor.Panel.VideoComposition.VideoItem</item>
+        <item name="Imgly.PESDK.Editor.Panel.VideoComposition.VideoItem.Holder">
+            @style/Imgly.PESDK.Editor.Panel.VideoComposition.VideoItem.Holder
+        </item>
+        <item name="Imgly.PESDK.Editor.Panel.VideoComposition.VideoItem.Icon">
+            @style/Imgly.PESDK.Editor.Panel.VideoComposition.VideoItem.Icon
+        </item>
+        <item name="Imgly.PESDK.Editor.Panel.VideoLibrary">@style/Imgly.PESDK.Editor.Panel.VideoLibrary</item>
+        <item name="Imgly.PESDK.Editor.Panel.VideoLibrary.Expandable">@style/Imgly.PESDK.Editor.Panel.VideoLibrary.Expandable</item>
+        <item name="Imgly.PESDK.Editor.Panel.VideoLibrary.OptionList">@style/Imgly.PESDK.Editor.Panel.VideoLibrary.OptionList</item>
+        <item name="Imgly.PESDK.Editor.Panel.VideoLibrary.Thumb">@style/Imgly.PESDK.Editor.Panel.VideoLibrary.Thumb</item>
+        <item name="Imgly.PESDK.Editor.Panel.VideoTrim">@style/Imgly.PESDK.Editor.Panel.VideoTrim</item>
+        <item name="Imgly.PESDK.Editor.Panel.default.OptionContainer">@style/Imgly.PESDK.Editor.Panel.default.OptionContainer</item>
+        <item name="Imgly.PESDK.Editor.Popup">@style/Imgly.PESDK.Editor.Popup</item>
+        <item name="Imgly.PESDK.Editor.Popup.Brush">@style/Imgly.PESDK.Editor.Popup.Brush</item>
+        <item name="Imgly.PESDK.Editor.Popup.Brush.BrushPreview">@style/Imgly.PESDK.Editor.Popup.Brush.BrushPreview</item>
+        <item name="Imgly.PESDK.Editor.Popup.Brush.BrushToolPreview">@style/Imgly.PESDK.Editor.Popup.Brush.BrushToolPreview</item>
+        <item name="Imgly.PESDK.Editor.Popup.Button.Agree">@style/Imgly.PESDK.Editor.Popup.Button.Agree</item>
+        <item name="Imgly.PESDK.Editor.Popup.Button.Disagree">@style/Imgly.PESDK.Editor.Popup.Button.Disagree</item>
+        <item name="Imgly.PESDK.Editor.Popup.ButtonContainer">@style/Imgly.PESDK.Editor.Popup.ButtonContainer</item>
+        <item name="Imgly.PESDK.Editor.Popup.Confirm">@style/Imgly.PESDK.Editor.Popup.Confirm</item>
+        <item name="Imgly.PESDK.Editor.Popup.Confirm.Background">@style/Imgly.PESDK.Editor.Popup.Confirm.Background</item>
+        <item name="Imgly.PESDK.Editor.Popup.Confirm.Button.Agree">@style/Imgly.PESDK.Editor.Popup.Confirm.Button.Agree</item>
+        <item name="Imgly.PESDK.Editor.Popup.Confirm.ButtonContainer">@style/Imgly.PESDK.Editor.Popup.Confirm.ButtonContainer</item>
+        <item name="Imgly.PESDK.Editor.Popup.Confirm.Text">@style/Imgly.PESDK.Editor.Popup.Confirm.Text</item>
+        <item name="Imgly.PESDK.Editor.Popup.Confirm.Title">@style/Imgly.PESDK.Editor.Popup.Confirm.Title</item>
+        <item name="Imgly.PESDK.Editor.Popup.Confirm.default.Background">@style/Imgly.PESDK.Editor.Popup.Confirm.default.Background</item>
+        <item name="Imgly.PESDK.Editor.Popup.Error">@style/Imgly.PESDK.Editor.Popup.Error</item>
+        <item name="Imgly.PESDK.Editor.Popup.Error.Background">@style/Imgly.PESDK.Editor.Popup.Error.Background</item>
+        <item name="Imgly.PESDK.Editor.Popup.Error.Button.Agree">@style/Imgly.PESDK.Editor.Popup.Error.Button.Agree</item>
+        <item name="Imgly.PESDK.Editor.Popup.Error.ButtonContainer">@style/Imgly.PESDK.Editor.Popup.Error.ButtonContainer</item>
+        <item name="Imgly.PESDK.Editor.Popup.Error.Text">@style/Imgly.PESDK.Editor.Popup.Error.Text</item>
+        <item name="Imgly.PESDK.Editor.Popup.Error.Title">@style/Imgly.PESDK.Editor.Popup.Error.Title</item>
+        <item name="Imgly.PESDK.Editor.Popup.Progress">@style/Imgly.PESDK.Editor.Popup.Progress</item>
+        <item name="Imgly.PESDK.Editor.Popup.Progress.ProgressBar">@style/Imgly.PESDK.Editor.Popup.Progress.ProgressBar</item>
+        <item name="Imgly.PESDK.Editor.Popup.Progress.Value">@style/Imgly.PESDK.Editor.Popup.Progress.Value</item>
+        <item name="Imgly.PESDK.SeekSlider">@style/Imgly.PESDK.SeekSlider</item>
+        <item name="Imgly.PESDK.SeekSlider.Transparent">@style/Imgly.PESDK.SeekSlider.Transparent</item>
+        <item name="Imgly.PESDK.Widget.ActionBar">@style/Imgly.PESDK.Widget.ActionBar</item>
+        <item name="Imgly.PESDK.Widget.ActionBar.Button.AcceptButton">@style/Imgly.PESDK.Widget.ActionBar.Button.AcceptButton</item>
+        <item name="Imgly.PESDK.Widget.ActionBar.Button.CancelButton">@style/Imgly.PESDK.Widget.ActionBar.Button.CancelButton</item>
+        <item name="Imgly.PESDK.Widget.ActionBar.TabBar">@style/Imgly.PESDK.Widget.ActionBar.TabBar</item>
+        <item name="Imgly.PESDK.Widget.ActionBar.TabBar.Tab">@style/Imgly.PESDK.Widget.ActionBar.TabBar.Tab</item>
+        <item name="Imgly.PESDK.Widget.ActionBar.TabBar.Tabs">@style/Imgly.PESDK.Widget.ActionBar.TabBar.Tabs</item>
+        <item name="Imgly.PESDK.Widget.ActionBar.TitleAnimationContainer">@style/Imgly.PESDK.Widget.ActionBar.TitleAnimationContainer</item>
+        <item name="Imgly.PESDK.Widget.ActionBar.TitleAnimationContainer.TitleItem">
+            @style/Imgly.PESDK.Widget.ActionBar.TitleAnimationContainer.TitleItem
+        </item>
+        <item name="Imgly.PESDK.Widget.ActionBar.default.Button">@style/Imgly.PESDK.Widget.ActionBar.default.Button</item>
+        <item name="Imgly.PESDK.Widget.ColorPicker.AlphaSlider">@style/Imgly.PESDK.Widget.ColorPicker.AlphaSlider</item>
+        <item name="Imgly.PESDK.Widget.ColorPicker.Background">@style/Imgly.PESDK.Widget.ColorPicker.Background</item>
+        <item name="Imgly.PESDK.Widget.ColorPicker.ColorValueSlider">@style/Imgly.PESDK.Widget.ColorPicker.ColorValueSlider</item>
+        <item name="Imgly.PESDK.Widget.ColorPicker.HueSlider">@style/Imgly.PESDK.Widget.ColorPicker.HueSlider</item>
+        <item name="Imgly.PESDK.Widget.SeekSlider">@style/Imgly.PESDK.Widget.SeekSlider</item>
+        <item name="Imgly.PESDK.Widget.SeekSliderContainer">@style/Imgly.PESDK.Widget.SeekSliderContainer</item>
+        <item name="Imgly.PESDK.Widget.default.ColorPicker">@style/Imgly.PESDK.Widget.default.ColorPicker</item>
+        <item name="Imgly.PESDK.default.Item">@style/Imgly.PESDK.default.Item</item>
+        <item name="Imgly.PESDK.default.Item.Icon">@style/Imgly.PESDK.default.Item.Icon</item>
+        <item name="Imgly.PESDK.default.Item.Label">@style/Imgly.PESDK.default.Item.Label</item>
+        <item name="Imgly.PESDK.default.Item.SelectOverlay">@style/Imgly.PESDK.default.Item.SelectOverlay</item>
+        <item name="Imgly.PESDK.default.Item.Value">@style/Imgly.PESDK.default.Item.Value</item>
+        <item name="Imgly.PESDK.default.OptionList">@style/Imgly.PESDK.default.OptionList</item>
+    </style>
+
+    <style name="Theme.Imgly.Light.NoFullscreen">
+        <item name="android:windowFullscreen">false</item>
+    </style>
+
+    <style name="Theme.Imgly.Light.TopActionBar">
+        <item name="Imgly.PESDK.Editor.Activity.ActionBar">@style/Imgly.PESDK.Editor.Activity.ActionBar.TopActionBar</item>
+        <item name="Imgly.PESDK.Editor.Activity.Preview">@style/Imgly.PESDK.Editor.Activity.Preview.TopActionBar</item>
+        <item name="Imgly.PESDK.Editor.Activity.ToolPanelContainer">@style/Imgly.PESDK.Editor.Activity.ToolPanelContainer.TopActionBar
+        </item>
+        <item name="Imgly.PESDK.Editor.Panel.Font.Expandable">@style/Imgly.PESDK.Editor.Panel.Font.Expandable.TopActionBar</item>
+        <item name="Imgly.PESDK.Editor.Panel.Sticker.Expandable">@style/Imgly.PESDK.Editor.Panel.Sticker.Expandable.TopActionBar</item>
+    </style>
+
+    <style name="Theme.Imgly.Light.TopActionBar.NoFullscreen">
+        <item name="android:windowFullscreen">false</item>
+    </style>
+
+    <style name="Theme.Imgly.DayNight" parent="Theme.Imgly.Light" />
+
+    <style name="Theme.Imgly.DayNight.NoFullscreen" parent="Theme.Imgly.Light.NoFullscreen" />
+
+    <style name="Theme.Imgly.DayNight.TopActionBar" parent="Theme.Imgly.Light.TopActionBar" />
+
+    <style name="Theme.Imgly.DayNight.TopActionBar.NoFullscreen" parent="Theme.Imgly.Light.TopActionBar.NoFullscreen" />
+</resources>

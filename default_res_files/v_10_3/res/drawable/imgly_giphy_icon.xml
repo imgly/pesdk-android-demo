@@ -1,0 +1,52 @@
+<!--
+  ~ This file is part of the IMG.LY Software Development Kit.
+  ~
+  ~ Copyright (C) 2022 IMG.LY GmbH <contact@img.ly>
+  ~ All rights reserved.
+  ~
+  ~ Redistribution and use in source and binary forms, without
+  ~ modification, are permitted provided that the following license agreement
+  ~ is approved and a legal/financial contract was signed by the user.
+  ~
+  ~ The license agreement can be found under the following link:
+  ~ https://img.ly/tos
+  -->
+
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="300dp"
+    android:height="300dp"
+    android:viewportWidth="300"
+    android:viewportHeight="300">
+  <path
+      android:pathData="M80,67l0,22.19l0,22.86l0,22.86l0,22.85l0,22.86l0,22.86l0,23.52l20,0l0,-23.52l0,-22.86l0,-22.86l0,-22.85l0,-22.86l0,-22.86l0,-22.19l-20,0z"
+      android:fillColor="#0f9"
+      android:fillType="evenOdd"/>
+  <path
+      android:pathData="M200,107l0,23.33l0,24l0,24l0,24l0,24.67l20,0l0,-24.67l0,-24l0,-24l0,-24l0,-23.33l-20,0z"
+      android:fillColor="#93f"
+      android:fillType="evenOdd"/>
+  <path
+      android:pathData="M147.5,60l-22.5,0l-22.5,0l-22.5,0l0,20l22.5,0l22.5,0l22.5,0l19.5,0l0,-20l-19.5,0z"
+      android:fillColor="#fff35c"
+      android:fillType="evenOdd"/>
+  <path
+      android:fillColor="#FF000000"
+      android:pathData="M140,80l30,0l-10,-20l-20,20z"
+      android:strokeAlpha="0.4"
+      android:fillType="evenOdd"
+      android:fillAlpha="0.4"/>
+  <path
+      android:fillColor="#FF000000"
+      android:pathData="M220,120l-20,-10l0,30l20,-20z"
+      android:strokeAlpha="0.4"
+      android:fillType="evenOdd"
+      android:fillAlpha="0.4"/>
+  <path
+      android:pathData="M200,220l-20,0l-20,0l-20,0l-20,0l-20,0l-20,0l0,20l20,0l20,0l20,0l20,0l20,0l20,0l20,0l0,-20l-20,0z"
+      android:fillColor="#0cf"
+      android:fillType="evenOdd"/>
+  <path
+      android:pathData="M200,100l0,-20l-20,0l0,-20l-20,0l0,16.33l0,20l0,23.67l20,0l20,0l20,0l0,-20l-20,0z"
+      android:fillColor="#f66"
+      android:fillType="evenOdd"/>
+</vector>
