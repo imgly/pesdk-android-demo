@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+  ~ This file is part of the IMG.LY Software Development Kit.
+  ~
+  ~ Copyright (C) 2022 IMG.LY GmbH <contact@img.ly>
+  ~ All rights reserved.
+  ~
+  ~ Redistribution and use in source and binary forms, without
+  ~ modification, are permitted provided that the following license agreement
+  ~ is approved and a legal/financial contract was signed by the user.
+  ~
+  ~ The license agreement can be found under the following link:
+  ~ https://img.ly/tos
+  -->
+
+
+
+<resources>
+    <string name="imgly_sticker_category_name_shapes">Shapes</string>
+
+    <string name="imgly_sticker_name_shapes_arrow_02">arrow_02</string>
+    <string name="imgly_sticker_name_shapes_arrow_03">arrow_03</string>
+    <string name="imgly_sticker_name_shapes_badge_01">badge_01</string>
+    <string name="imgly_sticker_name_shapes_badge_04">badge_04</string>
+    <string name="imgly_sticker_name_shapes_badge_06">badge_06</string>
+    <string name="imgly_sticker_name_shapes_badge_08">badge_08</string>
+    <string name="imgly_sticker_name_shapes_badge_11">badge_11</string>
+    <string name="imgly_sticker_name_shapes_badge_12">badge_12</string>
+    <string name="imgly_sticker_name_shapes_badge_13">badge_13</string>
+    <string name="imgly_sticker_name_shapes_badge_15">badge_15</string>
+    <string name="imgly_sticker_name_shapes_badge_18">badge_18</string>
+    <string name="imgly_sticker_name_shapes_badge_19">badge_19</string>
+    <string name="imgly_sticker_name_shapes_badge_20">badge_20</string>
+    <string name="imgly_sticker_name_shapes_badge_28">badge_28</string>
+    <string name="imgly_sticker_name_shapes_badge_32">badge_32</string>
+    <string name="imgly_sticker_name_shapes_badge_35">badge_35</string>
+    <string name="imgly_sticker_name_shapes_badge_36">badge_36</string>
+    <string name="imgly_sticker_name_shapes_spray_01">spray_01</string>
+    <string name="imgly_sticker_name_shapes_spray_03">spray_03</string>
+    <string name="imgly_sticker_name_shapes_spray_04">spray_04</string>
+</resources>

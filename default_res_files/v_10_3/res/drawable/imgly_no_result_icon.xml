@@ -1,0 +1,30 @@
+<!--
+  ~ This file is part of the IMG.LY Software Development Kit.
+  ~
+  ~ Copyright (C) 2022 IMG.LY GmbH <contact@img.ly>
+  ~ All rights reserved.
+  ~
+  ~ Redistribution and use in source and binary forms, without
+  ~ modification, are permitted provided that the following license agreement
+  ~ is approved and a legal/financial contract was signed by the user.
+  ~
+  ~ The license agreement can be found under the following link:
+  ~ https://img.ly/tos
+  -->
+
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="32dp"
+    android:height="32dp"
+    android:viewportWidth="32"
+    android:viewportHeight="32">
+  <path
+      android:pathData="M25,28L19,22L18.5,20L19,19.5L21,20L27,26L25,28Z"
+      android:fillColor="?attr/imgly_giphy_sticker_resource_color"
+      android:fillAlpha="0.9"
+      android:fillType="evenOdd"/>
+  <path
+      android:pathData="M13,13m-8,0a8,8 0,1 1,16 0a8,8 0,1 1,-16 0"
+      android:strokeAlpha="0.9"
+      android:strokeWidth="2"
+      android:strokeColor="?attr/imgly_giphy_sticker_resource_color"/>
+</vector>

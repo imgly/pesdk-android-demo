@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ This file is part of the IMG.LY Software Development Kit.
+  ~
+  ~ Copyright (C) 2022 IMG.LY GmbH <contact@img.ly>
+  ~ All rights reserved.
+  ~
+  ~ Redistribution and use in source and binary forms, without
+  ~ modification, are permitted provided that the following license agreement
+  ~ is approved and a legal/financial contract was signed by the user.
+  ~
+  ~ The license agreement can be found under the following link:
+  ~ https://img.ly/tos
+  -->
+
+
+
+<resources>
+    <string name="pesdk_frame_button_none">None</string>
+    <string name="pesdk_frame_asset_dia">Dia</string>
+    <string name="pesdk_frame_asset_woodPassepartout">Wood</string>
+    <string name="pesdk_frame_asset_blackPassepartout">Black</string>
+    <string name="pesdk_frame_asset_artDecor">Art Decor</string>
+</resources>

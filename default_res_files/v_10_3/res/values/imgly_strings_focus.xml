@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ This file is part of the IMG.LY Software Development Kit.
+  ~
+  ~ Copyright (C) 2022 IMG.LY GmbH <contact@img.ly>
+  ~ All rights reserved.
+  ~
+  ~ Redistribution and use in source and binary forms, without
+  ~ modification, are permitted provided that the following license agreement
+  ~ is approved and a legal/financial contract was signed by the user.
+  ~
+  ~ The license agreement can be found under the following link:
+  ~ https://img.ly/tos
+  -->
+
+
+
+<resources>
+    <string name="pesdk_focus_title_name">Focus</string>
+    <string name="pesdk_focus_title_disabled">None</string>
+    <string name="pesdk_focus_button_radial">Radial</string>
+    <string name="pesdk_focus_button_linear">Linear</string>
+    <string name="pesdk_focus_button_mirrored">Mirrored</string>
+    <string name="pesdk_focus_button_gaussian">Gaussian</string>
+
+
+</resources>

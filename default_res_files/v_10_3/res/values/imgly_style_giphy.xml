@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ This file is part of the IMG.LY Software Development Kit.
+  ~
+  ~ Copyright (C) 2022 IMG.LY GmbH <contact@img.ly>
+  ~ All rights reserved.
+  ~
+  ~ Redistribution and use in source and binary forms, without
+  ~ modification, are permitted provided that the following license agreement
+  ~ is approved and a legal/financial contract was signed by the user.
+  ~
+  ~ The license agreement can be found under the following link:
+  ~ https://img.ly/tos
+  -->
+
+<resources>
+
+    <style name="Imgly.PESDK.Editor.Panel.Sticker.Giphy.SearchBox" parent="Imgly.PESDK">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/imgly_search_box</item>
+        <item name="android:textColor">?attr/imgly_giphy_sticker_text_color</item>
+        <item name="android:textColorHint">?attr/imgly_giphy_sticker_text_color</item>
+        <item name="android:layout_margin">16dp</item>
+        <item name="android:padding">12dp</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="Imgly.PESDK.Editor.Panel.Sticker.Giphy.Retry" parent="Imgly.PESDK">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">32dp</item>
+        <item name="android:background">@drawable/imgly_search_box</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">?attr/imgly_giphy_sticker_text_color</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="Imgly.PESDK.Editor.Panel.Sticker.Giphy.Error" parent="Imgly.PESDK">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:drawableTop">@drawable/imgly_ic_cloud_connection</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">?attr/imgly_giphy_sticker_text_color</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+    <style name="Imgly.PESDK.Editor.Panel.Sticker.Giphy.Empty" parent="Imgly.PESDK">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:drawableTop">@drawable/imgly_no_result_icon</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">?attr/imgly_giphy_sticker_text_color</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+</resources>

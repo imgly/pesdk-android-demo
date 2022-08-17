@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ This file is part of the IMG.LY Software Development Kit.
+  ~
+  ~ Copyright (C) 2022 IMG.LY GmbH <contact@img.ly>
+  ~ All rights reserved.
+  ~
+  ~ Redistribution and use in source and binary forms, without
+  ~ modification, are permitted provided that the following license agreement
+  ~ is approved and a legal/financial contract was signed by the user.
+  ~
+  ~ The license agreement can be found under the following link:
+  ~ https://img.ly/tos
+  -->
+
+<resources>
+    <string name="cloud_error">Cannot connect to service</string>
+    <string name="no_result">No results found for %s</string>
+    <string name="retry">Retry</string>
+    <string name="valid_giphy_key_error">Please provide a valid giphy api Key.</string>
+    <string name="search_hint">Search</string>
+</resources>

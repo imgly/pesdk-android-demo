@@ -1,0 +1,24 @@
+<!--
+  ~ This file is part of the IMG.LY Software Development Kit.
+  ~
+  ~ Copyright (C) 2022 IMG.LY GmbH <contact@img.ly>
+  ~ All rights reserved.
+  ~
+  ~ Redistribution and use in source and binary forms, without
+  ~ modification, are permitted provided that the following license agreement
+  ~ is approved and a legal/financial contract was signed by the user.
+  ~
+  ~ The license agreement can be found under the following link:
+  ~ https://img.ly/tos
+  -->
+
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="7dp"
+    android:height="50dp"
+    android:viewportWidth="7"
+    android:viewportHeight="50">
+  <path
+      android:pathData="M7,1H3C1.8954,1 1,1.8954 1,3V47C1,48.1046 1.8954,49 3,49H7"
+      android:strokeWidth="2"
+      android:strokeColor="?attr/imgly_icon_border_color_active"/>
+</vector>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ This file is part of the IMG.LY Software Development Kit.
+  ~
+  ~ Copyright (C) 2022 IMG.LY GmbH <contact@img.ly>
+  ~ All rights reserved.
+  ~
+  ~ Redistribution and use in source and binary forms, without
+  ~ modification, are permitted provided that the following license agreement
+  ~ is approved and a legal/financial contract was signed by the user.
+  ~
+  ~ The license agreement can be found under the following link:
+  ~ https://img.ly/tos
+  -->
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/search"
+            style="?attr/Imgly.PESDK.Editor.Panel.Sticker.Giphy.SearchBox"
+            android:hint="@string/search_hint"
+            tools:background="@drawable/imgly_search_box"
+            tools:layout_height="wrap_content"
+            tools:layout_margin="16dp"
+            tools:layout_width="match_parent"
+            tools:padding="12dp"
+            tools:textSize="12sp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="8dp"
+            tools:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+            tools:spanCount="5"
+            tools:itemCount="100"
+            tools:listitem="@layout/imgly_image_view" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/errorView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/errorText"
+            style="?attr/Imgly.PESDK.Editor.Panel.Sticker.Giphy.Error"
+            android:text="@string/cloud_error"
+            tools:drawableTop="@drawable/imgly_ic_cloud_connection"
+            tools:layout_height="wrap_content"
+            tools:layout_width="wrap_content"
+            tools:textColor="?attr/imgly_giphy_sticker_text_color" />
+
+        <Button
+            android:id="@+id/retry"
+            style="?attr/Imgly.PESDK.Editor.Panel.Sticker.Giphy.Retry"
+            android:layout_marginTop="32dp"
+            android:text="@string/retry"
+            tools:background="@drawable/imgly_search_box"
+            tools:layout_height="32dp"
+            tools:layout_width="wrap_content"
+            tools:textAllCaps="false"
+            tools:textColor="?attr/imgly_giphy_sticker_text_color"
+            tools:textSize="12sp" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/emptyView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:visibility="gone"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/emptyText"
+            style="?attr/Imgly.PESDK.Editor.Panel.Sticker.Giphy.Empty"
+            android:text="@string/no_result"
+            tools:drawableTop="@drawable/imgly_no_result_icon"
+            tools:layout_height="wrap_content"
+            tools:layout_width="wrap_content"
+            tools:textColor="?attr/imgly_giphy_sticker_text_color" />
+
+    </LinearLayout>
+</FrameLayout>

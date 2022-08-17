@@ -1,0 +1,27 @@
+<!--
+  ~ This file is part of the IMG.LY Software Development Kit.
+  ~
+  ~ Copyright (C) 2022 IMG.LY GmbH <contact@img.ly>
+  ~ All rights reserved.
+  ~
+  ~ Redistribution and use in source and binary forms, without
+  ~ modification, are permitted provided that the following license agreement
+  ~ is approved and a legal/financial contract was signed by the user.
+  ~
+  ~ The license agreement can be found under the following link:
+  ~ https://img.ly/tos
+  -->
+
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="32dp"
+    android:height="32dp"
+    android:viewportWidth="32"
+    android:viewportHeight="32">
+  <path
+      android:fillColor="?attr/imgly_icon_color_on_canvas"
+      android:fillType="evenOdd"
+      android:pathData="M17.8201,17.5629C19.1142,16.9005 20,15.5537 20,14C20,11.7909 18.2091,10 16,10C13.7909,10 12,11.7909 12,14C12,15.5537 12.8858,16.9005 14.1799,17.5629C13.4239,17.756 12.679,18.0336 12.0322,18.3116C10.7372,18.8682 10,20.1901 10,21.5996V28.0007H22V21.5996C22,20.1901 21.2628,18.8682 19.9678,18.3116C19.321,18.0336 18.5761,17.756 17.8201,17.5629Z" />
+  <path
+      android:fillColor="?attr/imgly_icon_color_on_canvas"
+      android:pathData="M7,6H25V4H7V6ZM26,7V25H28V7H26ZM25,26H7V28H25V26ZM6,25V7H4V25H6ZM7,26C6.4477,26 6,25.5523 6,25H4C4,26.6569 5.3431,28 7,28V26ZM26,25C26,25.5523 25.5523,26 25,26V28C26.6569,28 28,26.6569 28,25H26ZM25,6C25.5523,6 26,6.4477 26,7H28C28,5.3432 26.6569,4 25,4V6ZM7,4C5.3432,4 4,5.3431 4,7H6C6,6.4477 6.4477,6 7,6V4Z" />
+</vector>

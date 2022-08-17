@@ -1,0 +1,455 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ This file is part of the IMG.LY Software Development Kit.
+  ~
+  ~ Copyright (C) 2022 IMG.LY GmbH <contact@img.ly>
+  ~ All rights reserved.
+  ~
+  ~ Redistribution and use in source and binary forms, without
+  ~ modification, are permitted provided that the following license agreement
+  ~ is approved and a legal/financial contract was signed by the user.
+  ~
+  ~ The license agreement can be found under the following link:
+  ~ https://img.ly/tos
+  -->
+<resources>
+	<!--region Attributes-->
+	<attr name="Imgly" format="reference"/>
+	<attr name="Imgly.PESDK" format="reference"/>
+	<attr name="Imgly.PESDK.Button" format="reference"/>
+	<attr name="Imgly.PESDK.Camera" format="reference"/>
+	<attr name="Imgly.PESDK.Camera.CameraPreview" format="reference"/>
+	<attr name="Imgly.PESDK.Camera.CameraPreview.Focus" format="reference"/>
+	<attr name="Imgly.PESDK.Camera.CameraPreview.Surface" format="reference"/>
+	<attr name="Imgly.PESDK.Camera.UI" format="reference"/>
+	<attr name="Imgly.PESDK.Camera.UI.Footer" format="reference"/>
+	<attr name="Imgly.PESDK.Camera.UI.Footer.Button.FilterButton" format="reference"/>
+	<attr name="Imgly.PESDK.Camera.UI.Footer.Button.GalleryButton" format="reference"/>
+	<attr name="Imgly.PESDK.Camera.UI.Footer.Button.ShutterButton" format="reference"/>
+	<attr name="Imgly.PESDK.Camera.UI.Footer.Container" format="reference"/>
+	<attr name="Imgly.PESDK.Camera.UI.Footer.ExpandableContainer" format="reference"/>
+	<attr name="Imgly.PESDK.Camera.UI.Footer.ExpandableContainer.FilterList" format="reference"/>
+	<attr name="Imgly.PESDK.Camera.UI.Footer.SeekSlider.Transparent" format="reference"/>
+	<attr name="Imgly.PESDK.Camera.UI.Header" format="reference"/>
+	<attr name="Imgly.PESDK.Camera.UI.Header.Button" format="reference"/>
+	<attr name="Imgly.PESDK.Camera.UI.Header.Button.FlashButton" format="reference"/>
+	<attr name="Imgly.PESDK.Camera.UI.Header.Button.FlashButton.Icon" format="reference"/>
+	<attr name="Imgly.PESDK.Camera.UI.Header.Button.FlashButton.Label" format="reference"/>
+	<attr name="Imgly.PESDK.Camera.UI.Header.Button.HDRButton" format="reference"/>
+	<attr name="Imgly.PESDK.Camera.UI.Header.Button.SwitchCameraButton" format="reference"/>
+	<attr name="Imgly.PESDK.Editor" format="reference"/>
+	<attr name="Imgly.PESDK.Editor.Activity" format="reference"/>
+	<attr name="Imgly.PESDK.Editor.Activity.ActionBar" format="reference"/>
+	<attr name="Imgly.PESDK.Editor.Activity.ActionBar.BottomActionBar" format="reference"/>
+	<attr name="Imgly.PESDK.Editor.Activity.ActionBar.TopActionBar" format="reference"/>
+	<attr name="Imgly.PESDK.Editor.Activity.Preview" format="reference"/>
+	<attr name="Imgly.PESDK.Editor.Activity.Preview.BottomActionBar" format="reference"/>
+	<attr name="Imgly.PESDK.Editor.Activity.Preview.TopActionBar" format="reference"/>
+	<attr name="Imgly.PESDK.Editor.Activity.Progress" format="reference"/>
+	<attr name="Imgly.PESDK.Editor.Activity.ToolPanelContainer" format="reference"/>
+	<attr name="Imgly.PESDK.Editor.Activity.ToolPanelContainer.BottomActionBar" format="reference"/>
+	<attr name="Imgly.PESDK.Editor.Activity.ToolPanelContainer.TopActionBar" format="reference"/>
+	<attr name="Imgly.PESDK.Editor.Panel" format="reference"/>
+	<attr name="Imgly.PESDK.Editor.Panel.Adjust" format="reference"/>
+	<attr name="Imgly.PESDK.Editor.Panel.Adjust.SeekSlider" format="reference"/>
+	<attr name="Imgly.PESDK.Editor.Panel.Adjust.SmallOptionList" format="reference"/>
+	<attr name="Imgly.PESDK.Editor.Panel.Audio.AudioCategoryIconItem" format="reference"/>
+	<attr name="Imgly.PESDK.Editor.Panel.Audio.AudioCategoryIconItem.Border" format="reference"/>
+	<attr name="Imgly.PESDK.Editor.Panel.Audio.AudioCategoryIconItem.Icon" format="reference"/>
+	<attr name="Imgly.PESDK.Editor.Panel.Audio.AudioCategoryIconItem.Label" format="reference"/>
+	<attr name="Imgly.PESDK.Editor.Panel.Audio.AudioCategoryItem" format="reference"/>
+	<attr name="Imgly.PESDK.Editor.Panel.Audio.AudioCategoryItem.Border" format="reference"/>
+	<attr name="Imgly.PESDK.Editor.Panel.Audio.AudioCategoryItem.Icon" format="reference"/>
+	<attr name="Imgly.PESDK.Editor.Panel.Audio.AudioCategoryItem.Label" format="reference"/>
+	<attr name="Imgly.PESDK.Editor.Panel.AudioComposition" format="reference"/>
+	<attr name="Imgly.PESDK.Editor.Panel.AudioComposition.AudioOverlaySlider" format="reference"/>
+	<attr name="Imgly.PESDK.Editor.Panel.AudioComposition.SeekSlider" format="reference"/>
+	<attr name="Imgly.PESDK.Editor.Panel.AudioGallery" format="reference"/>
+	<attr name="Imgly.PESDK.Editor.Panel.AudioGallery.AudioGalleryVertical.Container" format="reference"/>
+	<attr name="Imgly.PESDK.Editor.Panel.AudioGallery.AudioGalleryVerticalItem" format="reference"/>
+	<attr name="Imgly.PESDK.Editor.Panel.AudioGallery.AudioGalleryVerticalItem.Artist" format="reference"/>
+	<attr name="Imgly.PESDK.Editor.Panel.AudioGallery.AudioGalleryVerticalItem.Duration" format="reference"/>
+	<attr name="Imgly.PESDK.Editor.Panel.AudioGallery.AudioGalleryVerticalItem.Label" format="reference"/>
+	<attr name="Imgly.PESDK.Editor.Panel.AudioGallery.Expandable" format="reference"/>
+	<attr name="Imgly.PESDK.Editor.Panel.AudioGallery.OptionList" format="reference"/>
+	<attr name="Imgly.PESDK.Editor.Panel.AudioGallery.Thumb" format="reference"/>
+	<attr name="Imgly.PESDK.Editor.Panel.AudioGallery.VideoLibraryGrid.Container" format="reference"/>
+	<attr name="Imgly.PESDK.Editor.Panel.Brush" format="reference"/>
+	<attr name="Imgly.PESDK.Editor.Panel.Brush.SeekSlider" format="reference"/>
+	<attr name="Imgly.PESDK.Editor.Panel.Brush.SmallOptionList" format="reference"/>
+	<attr name="Imgly.PESDK.Editor.Panel.Color" format="reference"/>
+	<attr name="Imgly.PESDK.Editor.Panel.Color.ColorItem" format="reference"/>
+	<attr name="Imgly.PESDK.Editor.Panel.Color.ColorItem.Background" format="reference"/>
+	<attr name="Imgly.PESDK.Editor.Panel.Color.ColorItem.Icon" format="reference"/>
+	<attr name="Imgly.PESDK.Editor.Panel.Color.ColorItem.SelectOverlay" format="reference"/>
+	<attr name="Imgly.PESDK.Editor.Panel.Color.ColorPicker" format="reference"/>
+	<attr name="Imgly.PESDK.Editor.Panel.Color.ColorPipetteItem.Border" format="reference"/>
+	<attr name="Imgly.PESDK.Editor.Panel.Color.ColorPipetteItem.Icon" format="reference"/>
+	<attr name="Imgly.PESDK.Editor.Panel.Filter" format="reference"/>
+	<attr name="Imgly.PESDK.Editor.Panel.Filter.FilterItem" format="reference"/>
+	<attr name="Imgly.PESDK.Editor.Panel.Filter.FilterItem.Border" format="reference"/>
+	<attr name="Imgly.PESDK.Editor.Panel.Filter.FilterItem.Icon" format="reference"/>
+	<attr name="Imgly.PESDK.Editor.Panel.Filter.FilterItem.Label" format="reference"/>
+	<attr name="Imgly.PESDK.Editor.Panel.Filter.SeekSlider" format="reference"/>
+	<attr name="Imgly.PESDK.Editor.Panel.Focus" format="reference"/>
+	<attr name="Imgly.PESDK.Editor.Panel.Focus.OptionContainer" format="reference"/>
+	<attr name="Imgly.PESDK.Editor.Panel.Focus.SeekSlider" format="reference"/>
+	<attr name="Imgly.PESDK.Editor.Panel.Font" format="reference"/>
+	<attr name="Imgly.PESDK.Editor.Panel.Font.Expandable" format="reference"/>
+	<attr name="Imgly.PESDK.Editor.Panel.Font.Expandable.BottomActionBar" format="reference"/>
+	<attr name="Imgly.PESDK.Editor.Panel.Font.Expandable.TopActionBar" format="reference"/>
+	<attr name="Imgly.PESDK.Editor.Panel.Font.FontItem" format="reference"/>
+	<attr name="Imgly.PESDK.Editor.Panel.Font.FontItem.Label" format="reference"/>
+	<attr name="Imgly.PESDK.Editor.Panel.Font.FontItem.Text" format="reference"/>
+	<attr name="Imgly.PESDK.Editor.Panel.Font.FontVertical.Container" format="reference"/>
+	<attr name="Imgly.PESDK.Editor.Panel.Font.FontVerticalItem" format="reference"/>
+	<attr name="Imgly.PESDK.Editor.Panel.Font.FontVerticalItem.Label" format="reference"/>
+	<attr name="Imgly.PESDK.Editor.Panel.Font.FontVerticalItem.Text" format="reference"/>
+	<attr name="Imgly.PESDK.Editor.Panel.Font.OptionList" format="reference"/>
+	<attr name="Imgly.PESDK.Editor.Panel.Font.Thumb" format="reference"/>
+	<attr name="Imgly.PESDK.Editor.Panel.Frame" format="reference"/>
+	<attr name="Imgly.PESDK.Editor.Panel.Frame.FrameItem" format="reference"/>
+	<attr name="Imgly.PESDK.Editor.Panel.Frame.FrameItem.Icon" format="reference"/>
+	<attr name="Imgly.PESDK.Editor.Panel.Frame.FrameItem.Label" format="reference"/>
+	<attr name="Imgly.PESDK.Editor.Panel.Frame.FrameItem.NoneIcon" format="reference"/>
+	<attr name="Imgly.PESDK.Editor.Panel.Frame.FrameOption" format="reference"/>
+	<attr name="Imgly.PESDK.Editor.Panel.Frame.OptionList" format="reference"/>
+	<attr name="Imgly.PESDK.Editor.Panel.Frame.SeekSlider" format="reference"/>
+	<attr name="Imgly.PESDK.Editor.Panel.Frame.SmallOptionList" format="reference"/>
+	<attr name="Imgly.PESDK.Editor.Panel.Menu" format="reference"/>
+	<attr name="Imgly.PESDK.Editor.Panel.Menu.OptionList" format="reference"/>
+	<attr name="Imgly.PESDK.Editor.Panel.Menu.SmallOptionList" format="reference"/>
+	<attr name="Imgly.PESDK.Editor.Panel.Option" format="reference"/>
+	<attr name="Imgly.PESDK.Editor.Panel.Option.OptionItem" format="reference"/>
+	<attr name="Imgly.PESDK.Editor.Panel.Option.ActivatableOptionItem" format="reference"/>
+	<attr name="Imgly.PESDK.Editor.Panel.Option.OptionItem.Icon" format="reference"/>
+	<attr name="Imgly.PESDK.Editor.Panel.Option.OptionItem.Label" format="reference"/>
+	<attr name="Imgly.PESDK.Editor.Panel.Overlay" format="reference"/>
+	<attr name="Imgly.PESDK.Editor.Panel.Overlay.BlendModeItem" format="reference"/>
+	<attr name="Imgly.PESDK.Editor.Panel.Overlay.BlendModeItem.Label" format="reference"/>
+	<attr name="Imgly.PESDK.Editor.Panel.Overlay.ModeContainer" format="reference"/>
+	<attr name="Imgly.PESDK.Editor.Panel.Overlay.ModeList" format="reference"/>
+	<attr name="Imgly.PESDK.Editor.Panel.Overlay.OverlayItem" format="reference"/>
+	<attr name="Imgly.PESDK.Editor.Panel.Overlay.OverlayItem.Border" format="reference"/>
+	<attr name="Imgly.PESDK.Editor.Panel.Overlay.OverlayItem.Icon" format="reference"/>
+	<attr name="Imgly.PESDK.Editor.Panel.Overlay.OverlayItem.Label" format="reference"/>
+	<attr name="Imgly.PESDK.Editor.Panel.Overlay.OverlayItem.Overlay" format="reference"/>
+	<attr name="Imgly.PESDK.Editor.Panel.Overlay.OverlayItem.Overlay.Icon" format="reference"/>
+	<attr name="Imgly.PESDK.Editor.Panel.Overlay.SeekSlider" format="reference"/>
+	<attr name="Imgly.PESDK.Editor.Panel.SmallOptionItem" format="reference"/>
+	<attr name="Imgly.PESDK.Editor.Panel.SmallOptionItem.Icon" format="reference"/>
+	<attr name="Imgly.PESDK.Editor.Panel.Sticker" format="reference"/>
+	<attr name="Imgly.PESDK.Editor.Panel.Sticker.Expandable" format="reference"/>
+	<attr name="Imgly.PESDK.Editor.Panel.Sticker.Expandable.BottomActionBar" format="reference"/>
+	<attr name="Imgly.PESDK.Editor.Panel.Sticker.Expandable.Grid" format="reference"/>
+	<attr name="Imgly.PESDK.Editor.Panel.Sticker.Expandable.Thumb" format="reference"/>
+	<attr name="Imgly.PESDK.Editor.Panel.Sticker.Expandable.TopActionBar" format="reference"/>
+	<attr name="Imgly.PESDK.Editor.Panel.Sticker.Giphy.SearchBox" format="reference"/>
+	<attr name="Imgly.PESDK.Editor.Panel.Sticker.Giphy.Retry" format="reference"/>
+	<attr name="Imgly.PESDK.Editor.Panel.Sticker.Giphy.Error" format="reference"/>
+	<attr name="Imgly.PESDK.Editor.Panel.Sticker.Giphy.Empty" format="reference"/>
+	<attr name="Imgly.PESDK.Editor.Panel.Sticker.OptionList" format="reference"/>
+	<attr name="Imgly.PESDK.Editor.Panel.Sticker.SeekSlider" format="reference"/>
+	<attr name="Imgly.PESDK.Editor.Panel.Sticker.SmallOptionList" format="reference"/>
+	<attr name="Imgly.PESDK.Editor.Panel.Sticker.StickerCategoryItem" format="reference"/>
+	<attr name="Imgly.PESDK.Editor.Panel.Sticker.StickerCategoryItem.Icon" format="reference"/>
+	<attr name="Imgly.PESDK.Editor.Panel.Sticker.StickerCategoryItem.Label" format="reference"/>
+	<attr name="Imgly.PESDK.Editor.Panel.Sticker.StickerItem" format="reference"/>
+	<attr name="Imgly.PESDK.Editor.Panel.Sticker.StickerItem.Icon" format="reference"/>
+	<attr name="Imgly.PESDK.Editor.Panel.Sticker.StickerItem.Label" format="reference"/>
+	<attr name="Imgly.PESDK.Editor.Panel.Sticker.StickerOption" format="reference"/>
+	<attr name="Imgly.PESDK.Editor.Panel.Sticker.StickerUploadItem" format="reference"/>
+	<attr name="Imgly.PESDK.Editor.Panel.Sticker.StickerUploadItem.Icon" format="reference"/>
+	<attr name="Imgly.PESDK.Editor.Panel.Sticker.StickerUploadItem.Label" format="reference"/>
+	<attr name="Imgly.PESDK.Editor.Panel.SpriteDuration" format="reference"/>
+	<attr name="Imgly.PESDK.Editor.Panel.SpriteDuration.SmallOptionList" format="reference"/>
+	<attr name="Imgly.PESDK.Editor.Panel.SpriteDuration.TrimSpriteSlider" format="reference"/>
+	<attr name="Imgly.PESDK.Editor.Panel.Text" format="reference"/>
+	<attr name="Imgly.PESDK.Editor.Panel.Text.InputField" format="reference"/>
+	<attr name="Imgly.PESDK.Editor.Panel.Text.OptionList" format="reference"/>
+	<attr name="Imgly.PESDK.Editor.Panel.Text.SmallOptionList" format="reference"/>
+	<attr name="Imgly.PESDK.Editor.Panel.Text.TextOptions" format="reference"/>
+	<attr name="Imgly.PESDK.Editor.Panel.TextDesign" format="reference"/>
+	<attr name="Imgly.PESDK.Editor.Panel.TextDesign.ColorItem" format="reference"/>
+	<attr name="Imgly.PESDK.Editor.Panel.TextDesign.ColorItem.Icon" format="reference"/>
+	<attr name="Imgly.PESDK.Editor.Panel.TextDesign.ColorList" format="reference"/>
+	<attr name="Imgly.PESDK.Editor.Panel.TextDesign.InputField" format="reference"/>
+	<attr name="Imgly.PESDK.Editor.Panel.TextDesign.OptionList" format="reference"/>
+	<attr name="Imgly.PESDK.Editor.Panel.TextDesign.SmallOptionList" format="reference"/>
+	<attr name="Imgly.PESDK.Editor.Panel.TextDesign.TextDesignItem" format="reference"/>
+	<attr name="Imgly.PESDK.Editor.Panel.TextDesign.TextDesignItem.Border" format="reference"/>
+	<attr name="Imgly.PESDK.Editor.Panel.TextDesign.TextDesignItem.Icon" format="reference"/>
+	<attr name="Imgly.PESDK.Editor.Panel.TextDesign.TextDesignItem.Overlay" format="reference"/>
+	<attr name="Imgly.PESDK.Editor.Panel.TextDesign.TextDesignItem.Overlay.Icon" format="reference"/>
+	<attr name="Imgly.PESDK.Editor.Panel.TextDesign.TextOptions" format="reference"/>
+	<attr name="Imgly.PESDK.Editor.Panel.Tool" format="reference"/>
+	<attr name="Imgly.PESDK.Editor.Panel.Tool.FolderItem" format="reference"/>
+	<attr name="Imgly.PESDK.Editor.Panel.Tool.FolderItem.Border" format="reference"/>
+	<attr name="Imgly.PESDK.Editor.Panel.Tool.FolderItem.Icon" format="reference"/>
+	<attr name="Imgly.PESDK.Editor.Panel.Tool.FolderItem.Label" format="reference"/>
+	<attr name="Imgly.PESDK.Editor.Panel.Tool.ToolItem" format="reference"/>
+	<attr name="Imgly.PESDK.Editor.Panel.Tool.ToolItem.Icon" format="reference"/>
+	<attr name="Imgly.PESDK.Editor.Panel.Tool.ToolItem.Label" format="reference"/>
+	<attr name="Imgly.PESDK.Editor.Panel.Transform" format="reference"/>
+	<attr name="Imgly.PESDK.Editor.Panel.Transform.Button.Flip" format="reference"/>
+	<attr name="Imgly.PESDK.Editor.Panel.Transform.Button.Rotate" format="reference"/>
+	<attr name="Imgly.PESDK.Editor.Panel.Transform.CropItem" format="reference"/>
+	<attr name="Imgly.PESDK.Editor.Panel.Transform.CropItem.Border" format="reference"/>
+	<attr name="Imgly.PESDK.Editor.Panel.Transform.CropItem.Icon" format="reference"/>
+	<attr name="Imgly.PESDK.Editor.Panel.Transform.CropItem.Label" format="reference"/>
+	<attr name="Imgly.PESDK.Editor.Panel.Transform.CropItem.Overlay.Icon" format="reference"/>
+	<attr name="Imgly.PESDK.Editor.Panel.Transform.Slider" format="reference"/>
+	<attr name="Imgly.PESDK.Editor.Panel.Video.VideoCategoryIconItem" format="reference"/>
+	<attr name="Imgly.PESDK.Editor.Panel.Video.VideoCategoryIconItem.Border" format="reference"/>
+	<attr name="Imgly.PESDK.Editor.Panel.Video.VideoCategoryIconItem.Icon" format="reference"/>
+	<attr name="Imgly.PESDK.Editor.Panel.Video.VideoCategoryIconItem.Label" format="reference"/>
+	<attr name="Imgly.PESDK.Editor.Panel.Video.VideoCategoryItem" format="reference"/>
+	<attr name="Imgly.PESDK.Editor.Panel.Video.VideoCategoryItem.Border" format="reference"/>
+	<attr name="Imgly.PESDK.Editor.Panel.Video.VideoCategoryItem.Icon" format="reference"/>
+	<attr name="Imgly.PESDK.Editor.Panel.Video.VideoCategoryItem.Label" format="reference"/>
+	<attr name="Imgly.PESDK.Editor.Panel.VideoComposition" format="reference"/>
+	<attr name="Imgly.PESDK.Editor.Panel.VideoComposition.VideoItem" format="reference"/>
+	<attr name="Imgly.PESDK.Editor.Panel.VideoComposition.VideoItem.Holder" format="reference"/>
+	<attr name="Imgly.PESDK.Editor.Panel.VideoComposition.VideoItem.Icon" format="reference"/>
+	<attr name="Imgly.PESDK.Editor.Panel.VideoLibrary" format="reference"/>
+	<attr name="Imgly.PESDK.Editor.Panel.VideoLibrary.Expandable" format="reference"/>
+	<attr name="Imgly.PESDK.Editor.Panel.VideoLibrary.OptionList" format="reference"/>
+	<attr name="Imgly.PESDK.Editor.Panel.VideoLibrary.Thumb" format="reference"/>
+	<attr name="Imgly.PESDK.Editor.Panel.VideoTrim" format="reference"/>
+	<attr name="Imgly.PESDK.Editor.Panel.default.OptionContainer" format="reference"/>
+	<attr name="Imgly.PESDK.Editor.Popup" format="reference"/>
+	<attr name="Imgly.PESDK.Editor.Popup.Brush" format="reference"/>
+	<attr name="Imgly.PESDK.Editor.Popup.Brush.BrushPreview" format="reference"/>
+	<attr name="Imgly.PESDK.Editor.Popup.Brush.BrushToolPreview" format="reference"/>
+	<attr name="Imgly.PESDK.Editor.Popup.Button.Agree" format="reference"/>
+	<attr name="Imgly.PESDK.Editor.Popup.Button.Disagree" format="reference"/>
+	<attr name="Imgly.PESDK.Editor.Popup.ButtonContainer" format="reference"/>
+	<attr name="Imgly.PESDK.Editor.Popup.Confirm" format="reference"/>
+	<attr name="Imgly.PESDK.Editor.Popup.Confirm.Background" format="reference"/>
+	<attr name="Imgly.PESDK.Editor.Popup.Confirm.Button.Agree" format="reference"/>
+	<attr name="Imgly.PESDK.Editor.Popup.Confirm.ButtonContainer" format="reference"/>
+	<attr name="Imgly.PESDK.Editor.Popup.Confirm.Text" format="reference"/>
+	<attr name="Imgly.PESDK.Editor.Popup.Confirm.Title" format="reference"/>
+	<attr name="Imgly.PESDK.Editor.Popup.Confirm.default.Background" format="reference"/>
+	<attr name="Imgly.PESDK.Editor.Popup.Error" format="reference"/>
+	<attr name="Imgly.PESDK.Editor.Popup.Error.Background" format="reference"/>
+	<attr name="Imgly.PESDK.Editor.Popup.Error.Button.Agree" format="reference"/>
+	<attr name="Imgly.PESDK.Editor.Popup.Error.ButtonContainer" format="reference"/>
+	<attr name="Imgly.PESDK.Editor.Popup.Error.Text" format="reference"/>
+	<attr name="Imgly.PESDK.Editor.Popup.Error.Title" format="reference"/>
+	<attr name="Imgly.PESDK.Editor.Popup.Progress" format="reference"/>
+	<attr name="Imgly.PESDK.Editor.Popup.Progress.ProgressBar" format="reference"/>
+	<attr name="Imgly.PESDK.Editor.Popup.Progress.Value" format="reference"/>
+	<attr name="Imgly.PESDK.SeekSlider" format="reference"/>
+	<attr name="Imgly.PESDK.SeekSlider.Transparent" format="reference"/>
+	<attr name="Imgly.PESDK.Widget.ActionBar" format="reference"/>
+	<attr name="Imgly.PESDK.Widget.ActionBar.Button.AcceptButton" format="reference"/>
+	<attr name="Imgly.PESDK.Widget.ActionBar.Button.CancelButton" format="reference"/>
+	<attr name="Imgly.PESDK.Widget.ActionBar.TabBar" format="reference"/>
+	<attr name="Imgly.PESDK.Widget.ActionBar.TabBar.Tab" format="reference"/>
+	<attr name="Imgly.PESDK.Widget.ActionBar.TabBar.Tabs" format="reference"/>
+	<attr name="Imgly.PESDK.Widget.ActionBar.TitleAnimationContainer" format="reference"/>
+	<attr name="Imgly.PESDK.Widget.ActionBar.TitleAnimationContainer.TitleItem" format="reference"/>
+	<attr name="Imgly.PESDK.Widget.ActionBar.default.Button" format="reference"/>
+	<attr name="Imgly.PESDK.Widget.ColorPicker.AlphaSlider" format="reference"/>
+	<attr name="Imgly.PESDK.Widget.ColorPicker.Background" format="reference"/>
+	<attr name="Imgly.PESDK.Widget.ColorPicker.ColorValueSlider" format="reference"/>
+	<attr name="Imgly.PESDK.Widget.ColorPicker.HueSlider" format="reference"/>
+	<attr name="Imgly.PESDK.Widget.SeekSlider" format="reference"/>
+	<attr name="Imgly.PESDK.Widget.SeekSliderContainer" format="reference"/>
+	<attr name="Imgly.PESDK.Widget.default.ColorPicker" format="reference"/>
+	<attr name="Imgly.PESDK.default.Item" format="reference"/>
+	<attr name="Imgly.PESDK.default.Item.Icon" format="reference"/>
+	<attr name="Imgly.PESDK.default.Item.Label" format="reference"/>
+	<attr name="Imgly.PESDK.default.Item.SelectOverlay" format="reference"/>
+	<attr name="Imgly.PESDK.default.Item.Value" format="reference"/>
+	<attr name="Imgly.PESDK.default.OptionList" format="reference"/>
+	<attr name="Imgly.Theme" format="reference"/>
+	<attr name="Imgly.Theme.NoFullscreen" format="reference"/>
+	<attr name="Imgly.Theme.TopActionBar" format="reference"/>
+	<attr name="Imgly.Theme.TopActionBar.NoFullscreen" format="reference"/>
+
+	<!--endregion-->
+
+	<!--region Styles-->
+	<style name="Imgly.PESDK.Camera"/>
+	<style name="Imgly.PESDK.Camera.CameraPreview"/>
+	<style name="Imgly.PESDK.Camera.CameraPreview.Focus"/>
+	<style name="Imgly.PESDK.Camera.CameraPreview.Surface"/>
+	<style name="Imgly.PESDK.Camera.UI"/>
+	<style name="Imgly.PESDK.Camera.UI.Footer"/>
+	<style name="Imgly.PESDK.Camera.UI.Footer.Button"/>
+	<style name="Imgly.PESDK.Camera.UI.Footer.Button.FilterButton"/>
+	<style name="Imgly.PESDK.Camera.UI.Footer.Button.GalleryButton"/>
+	<style name="Imgly.PESDK.Camera.UI.Footer.Button.ShutterButton"/>
+	<style name="Imgly.PESDK.Camera.UI.Footer.Container"/>
+	<style name="Imgly.PESDK.Camera.UI.Footer.ExpandableContainer"/>
+	<style name="Imgly.PESDK.Camera.UI.Footer.ExpandableContainer.FilterList"/>
+	<style name="Imgly.PESDK.Camera.UI.Footer.SeekSlider"/>
+	<style name="Imgly.PESDK.Camera.UI.Footer.SeekSlider.Transparent"/>
+	<style name="Imgly.PESDK.Camera.UI.Header"/>
+	<style name="Imgly.PESDK.Camera.UI.Header.Button"/>
+	<style name="Imgly.PESDK.Camera.UI.Header.Button.FlashButton"/>
+	<style name="Imgly.PESDK.Camera.UI.Header.Button.FlashButton.Icon"/>
+	<style name="Imgly.PESDK.Camera.UI.Header.Button.FlashButton.Label"/>
+	<style name="Imgly.PESDK.Camera.UI.Header.Button.HDRButton"/>
+	<style name="Imgly.PESDK.Camera.UI.Header.Button.SwitchCameraButton"/>
+	<style name="Imgly.PESDK.Editor.Panel.Adjust"/>
+	<style name="Imgly.PESDK.Editor.Panel.Adjust.SeekSlider"/>
+	<style name="Imgly.PESDK.Editor.Panel.Audio"/>
+	<style name="Imgly.PESDK.Editor.Panel.Audio.AudioCategoryIconItem"/>
+	<style name="Imgly.PESDK.Editor.Panel.Audio.AudioCategoryIconItem.Border"/>
+	<style name="Imgly.PESDK.Editor.Panel.Audio.AudioCategoryIconItem.Icon"/>
+	<style name="Imgly.PESDK.Editor.Panel.Audio.AudioCategoryIconItem.Label"/>
+	<style name="Imgly.PESDK.Editor.Panel.Audio.AudioCategoryItem"/>
+	<style name="Imgly.PESDK.Editor.Panel.Audio.AudioCategoryItem.Border"/>
+	<style name="Imgly.PESDK.Editor.Panel.Audio.AudioCategoryItem.Icon"/>
+	<style name="Imgly.PESDK.Editor.Panel.Audio.AudioCategoryItem.Label"/>
+	<style name="Imgly.PESDK.Editor.Panel.AudioComposition"/>
+	<style name="Imgly.PESDK.Editor.Panel.AudioComposition.AudioOverlaySlider"/>
+	<style name="Imgly.PESDK.Editor.Panel.AudioComposition.SeekSlider"/>
+	<style name="Imgly.PESDK.Editor.Panel.AudioGallery"/>
+	<style name="Imgly.PESDK.Editor.Panel.AudioGallery.AudioGalleryVertical"/>
+	<style name="Imgly.PESDK.Editor.Panel.AudioGallery.AudioGalleryVertical.Container"/>
+	<style name="Imgly.PESDK.Editor.Panel.AudioGallery.AudioGalleryVerticalItem"/>
+	<style name="Imgly.PESDK.Editor.Panel.AudioGallery.AudioGalleryVerticalItem.Artist"/>
+	<style name="Imgly.PESDK.Editor.Panel.AudioGallery.AudioGalleryVerticalItem.Duration"/>
+	<style name="Imgly.PESDK.Editor.Panel.AudioGallery.AudioGalleryVerticalItem.Label"/>
+	<style name="Imgly.PESDK.Editor.Panel.AudioGallery.Expandable"/>
+	<style name="Imgly.PESDK.Editor.Panel.AudioGallery.OptionList"/>
+	<style name="Imgly.PESDK.Editor.Panel.AudioGallery.Thumb"/>
+	<style name="Imgly.PESDK.Editor.Panel.AudioGallery.VideoLibraryGrid"/>
+	<style name="Imgly.PESDK.Editor.Panel.AudioGallery.VideoLibraryGrid.Container"/>
+	<style name="Imgly.PESDK.Editor.Panel.Brush"/>
+	<style name="Imgly.PESDK.Editor.Panel.Brush.SeekSlider"/>
+	<style name="Imgly.PESDK.Editor.Panel.Brush.SmallOptionList"/>
+	<style name="Imgly.PESDK.Editor.Panel.Color.ColorPipetteItem"/>
+	<style name="Imgly.PESDK.Editor.Panel.Filter"/>
+	<style name="Imgly.PESDK.Editor.Panel.Filter.FilterItem"/>
+	<style name="Imgly.PESDK.Editor.Panel.Filter.FilterItem.Border"/>
+	<style name="Imgly.PESDK.Editor.Panel.Filter.FilterItem.Icon"/>
+	<style name="Imgly.PESDK.Editor.Panel.Filter.FilterItem.Label"/>
+	<style name="Imgly.PESDK.Editor.Panel.Filter.SeekSlider"/>
+	<style name="Imgly.PESDK.Editor.Panel.Focus"/>
+	<style name="Imgly.PESDK.Editor.Panel.Focus.OptionContainer"/>
+	<style name="Imgly.PESDK.Editor.Panel.Focus.SeekSlider"/>
+	<style name="Imgly.PESDK.Editor.Panel.Font"/>
+	<style name="Imgly.PESDK.Editor.Panel.Font.Expandable"/>
+	<style name="Imgly.PESDK.Editor.Panel.Font.FontItem"/>
+	<style name="Imgly.PESDK.Editor.Panel.Font.FontItem.Label"/>
+	<style name="Imgly.PESDK.Editor.Panel.Font.FontItem.Text"/>
+	<style name="Imgly.PESDK.Editor.Panel.Font.FontVertical"/>
+	<style name="Imgly.PESDK.Editor.Panel.Font.FontVertical.Container"/>
+	<style name="Imgly.PESDK.Editor.Panel.Font.FontVerticalItem"/>
+	<style name="Imgly.PESDK.Editor.Panel.Font.FontVerticalItem.Label"/>
+	<style name="Imgly.PESDK.Editor.Panel.Font.FontVerticalItem.Text"/>
+	<style name="Imgly.PESDK.Editor.Panel.Font.OptionList"/>
+	<style name="Imgly.PESDK.Editor.Panel.Font.Thumb"/>
+	<style name="Imgly.PESDK.Editor.Panel.Frame"/>
+	<style name="Imgly.PESDK.Editor.Panel.Frame.FrameItem"/>
+	<style name="Imgly.PESDK.Editor.Panel.Frame.FrameItem.Icon"/>
+	<style name="Imgly.PESDK.Editor.Panel.Frame.FrameItem.Label"/>
+	<style name="Imgly.PESDK.Editor.Panel.Frame.FrameItem.NoneIcon"/>
+	<style name="Imgly.PESDK.Editor.Panel.Frame.FrameOption"/>
+	<style name="Imgly.PESDK.Editor.Panel.Frame.OptionList"/>
+	<style name="Imgly.PESDK.Editor.Panel.Frame.SeekSlider"/>
+	<style name="Imgly.PESDK.Editor.Panel.Frame.SmallOptionList"/>
+	<style name="Imgly.PESDK.Editor.Panel.Overlay"/>
+	<style name="Imgly.PESDK.Editor.Panel.Overlay.BlendModeItem"/>
+	<style name="Imgly.PESDK.Editor.Panel.Overlay.BlendModeItem.Label"/>
+	<style name="Imgly.PESDK.Editor.Panel.Overlay.ModeContainer"/>
+	<style name="Imgly.PESDK.Editor.Panel.Overlay.ModeList"/>
+	<style name="Imgly.PESDK.Editor.Panel.Overlay.OverlayItem"/>
+	<style name="Imgly.PESDK.Editor.Panel.Overlay.OverlayItem.Border"/>
+	<style name="Imgly.PESDK.Editor.Panel.Overlay.OverlayItem.Icon"/>
+	<style name="Imgly.PESDK.Editor.Panel.Overlay.OverlayItem.Label"/>
+	<style name="Imgly.PESDK.Editor.Panel.Overlay.OverlayItem.Overlay"/>
+	<style name="Imgly.PESDK.Editor.Panel.Overlay.OverlayItem.Overlay.Icon"/>
+	<style name="Imgly.PESDK.Editor.Panel.Overlay.SeekSlider"/>
+	<style name="Imgly.PESDK.Editor.Panel.Sticker"/>
+	<style name="Imgly.PESDK.Editor.Panel.Sticker.Expandable"/>
+	<style name="Imgly.PESDK.Editor.Panel.Sticker.Expandable.Grid"/>
+	<style name="Imgly.PESDK.Editor.Panel.Sticker.Expandable.Thumb"/>
+	<style name="Imgly.PESDK.Editor.Panel.Sticker.OptionList"/>
+	<style name="Imgly.PESDK.Editor.Panel.Sticker.SeekSlider"/>
+	<style name="Imgly.PESDK.Editor.Panel.Sticker.SmallOptionList"/>
+	<style name="Imgly.PESDK.Editor.Panel.Sticker.StickerCategoryItem"/>
+	<style name="Imgly.PESDK.Editor.Panel.Sticker.StickerCategoryItem.Icon"/>
+	<style name="Imgly.PESDK.Editor.Panel.Sticker.StickerCategoryItem.Label"/>
+	<style name="Imgly.PESDK.Editor.Panel.Sticker.StickerItem"/>
+	<style name="Imgly.PESDK.Editor.Panel.Sticker.StickerItem.Icon"/>
+	<style name="Imgly.PESDK.Editor.Panel.Sticker.StickerItem.Label"/>
+	<style name="Imgly.PESDK.Editor.Panel.Sticker.StickerOption"/>
+	<style name="Imgly.PESDK.Editor.Panel.Sticker.StickerUploadItem"/>
+	<style name="Imgly.PESDK.Editor.Panel.Sticker.StickerUploadItem.Icon"/>
+	<style name="Imgly.PESDK.Editor.Panel.Sticker.StickerUploadItem.Label"/>
+	<style name="Imgly.PESDK.Editor.Panel.SpriteDuration" />
+	<style name="Imgly.PESDK.Editor.Panel.SpriteDuration.SmallOptionList" />
+	<style name="Imgly.PESDK.Editor.Panel.SpriteDuration.TrimSpriteSlider" />
+	<style name="Imgly.PESDK.Editor.Panel.Text"/>
+	<style name="Imgly.PESDK.Editor.Panel.Text.InputField"/>
+	<style name="Imgly.PESDK.Editor.Panel.Text.OptionList"/>
+	<style name="Imgly.PESDK.Editor.Panel.Text.SmallOptionList"/>
+	<style name="Imgly.PESDK.Editor.Panel.Text.TextOptions"/>
+	<style name="Imgly.PESDK.Editor.Panel.TextDesign"/>
+	<style name="Imgly.PESDK.Editor.Panel.TextDesign.ColorItem"/>
+	<style name="Imgly.PESDK.Editor.Panel.TextDesign.ColorItem.Icon"/>
+	<style name="Imgly.PESDK.Editor.Panel.TextDesign.ColorList"/>
+	<style name="Imgly.PESDK.Editor.Panel.TextDesign.InputField"/>
+	<style name="Imgly.PESDK.Editor.Panel.TextDesign.OptionList"/>
+	<style name="Imgly.PESDK.Editor.Panel.TextDesign.SmallOptionList"/>
+	<style name="Imgly.PESDK.Editor.Panel.TextDesign.TextDesignItem"/>
+	<style name="Imgly.PESDK.Editor.Panel.TextDesign.TextDesignItem.Border"/>
+	<style name="Imgly.PESDK.Editor.Panel.TextDesign.TextDesignItem.Icon"/>
+	<style name="Imgly.PESDK.Editor.Panel.TextDesign.TextDesignItem.Overlay"/>
+	<style name="Imgly.PESDK.Editor.Panel.TextDesign.TextDesignItem.Overlay.Icon"/>
+	<style name="Imgly.PESDK.Editor.Panel.TextDesign.TextOptions"/>
+	<style name="Imgly.PESDK.Editor.Panel.Transform"/>
+	<style name="Imgly.PESDK.Editor.Panel.Transform.Button"/>
+	<style name="Imgly.PESDK.Editor.Panel.Transform.Button.Flip"/>
+	<style name="Imgly.PESDK.Editor.Panel.Transform.Button.Rotate"/>
+	<style name="Imgly.PESDK.Editor.Panel.Transform.CropItem"/>
+	<style name="Imgly.PESDK.Editor.Panel.Transform.CropItem.Border"/>
+	<style name="Imgly.PESDK.Editor.Panel.Transform.CropItem.Icon"/>
+	<style name="Imgly.PESDK.Editor.Panel.Transform.CropItem.Label"/>
+	<style name="Imgly.PESDK.Editor.Panel.Transform.CropItem.Overlay"/>
+	<style name="Imgly.PESDK.Editor.Panel.Transform.CropItem.Overlay.Icon"/>
+	<style name="Imgly.PESDK.Editor.Panel.Transform.Slider"/>
+	<style name="Imgly.PESDK.Editor.Panel.Video"/>
+	<style name="Imgly.PESDK.Editor.Panel.Video.VideoCategoryIconItem"/>
+	<style name="Imgly.PESDK.Editor.Panel.Video.VideoCategoryIconItem.Border"/>
+	<style name="Imgly.PESDK.Editor.Panel.Video.VideoCategoryIconItem.Icon"/>
+	<style name="Imgly.PESDK.Editor.Panel.Video.VideoCategoryIconItem.Label"/>
+	<style name="Imgly.PESDK.Editor.Panel.Video.VideoCategoryItem"/>
+	<style name="Imgly.PESDK.Editor.Panel.Video.VideoCategoryItem.Border"/>
+	<style name="Imgly.PESDK.Editor.Panel.Video.VideoCategoryItem.Icon"/>
+	<style name="Imgly.PESDK.Editor.Panel.Video.VideoCategoryItem.Label"/>
+	<style name="Imgly.PESDK.Editor.Panel.VideoComposition"/>
+	<style name="Imgly.PESDK.Editor.Panel.VideoComposition.VideoItem"/>
+	<style name="Imgly.PESDK.Editor.Panel.VideoComposition.VideoItem.Holder"/>
+	<style name="Imgly.PESDK.Editor.Panel.VideoComposition.VideoItem.Icon"/>
+	<style name="Imgly.PESDK.Editor.Panel.VideoLibrary"/>
+	<style name="Imgly.PESDK.Editor.Panel.VideoLibrary.Expandable"/>
+	<style name="Imgly.PESDK.Editor.Panel.VideoLibrary.OptionList"/>
+	<style name="Imgly.PESDK.Editor.Panel.VideoLibrary.Thumb"/>
+	<style name="Imgly.PESDK.Editor.Panel.VideoTrim"/>
+	<style name="Imgly.PESDK.Editor.Panel.default"/>
+	<style name="Imgly.PESDK.Editor.Popup.Brush"/>
+	<style name="Imgly.PESDK.Editor.Popup.Brush.BrushPreview"/>
+	<style name="Imgly.PESDK.Editor.Popup.Brush.BrushToolPreview"/>
+	<style name="Imgly.PESDK.Editor.Popup.Button"/>
+	<style name="Imgly.PESDK.Editor.Popup.Confirm.Button"/>
+	<style name="Imgly.PESDK.Editor.Popup.Error.Button"/>
+	<style name="Imgly.PESDK.Widget"/>
+	<style name="Imgly.PESDK.Widget.ActionBar.Button"/>
+	<style name="Imgly.PESDK.Widget.ColorPicker"/>
+	<style name="Imgly.PESDK.default"/>
+
+	<style name="Imgly.PESDK.Editor.Panel.Sticker.Giphy"/>
+	<style name="Imgly.PESDK.Editor.Panel.Sticker.Giphy.SearchBox"/>
+	<style name="Imgly.PESDK.Editor.Panel.Sticker.Giphy.Retry"/>
+	<style name="Imgly.PESDK.Editor.Panel.Sticker.Giphy.Error"/>
+	<style name="Imgly.PESDK.Editor.Panel.Sticker.Giphy.Empty"/>
+
+	<!--endregion-->
+</resources>
