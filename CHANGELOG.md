@@ -1,5 +1,21 @@
 # PhotoEditor SDK - Changelog
 
+## v10.3.1
+
+### Fixed
+* Layers were created using default layer settings during deserialization even after using `StateHandler.replaceStateClass()`.
+* Generated sources not getting resolved with Kotlin 1.7.0+.
+  * This is partially a bug in Kotlin and is expected to be fixed in Kotlin 1.7.20. Refer [KT-53688](https://youtrack.jetbrains.com/issue/KT-53688) for more details.
+* [VideoEditorSDK] Setting `allowFastTrim` to false didn't result in re-encoding if there were no modifications made to the video.
+
+### Changed
+* Deprecated `ImgLyIntent::startActivityForBroadcast()` methods.
+* Refactored all public methods accepting an `ArrayList` to accept the super class `List`.
+
+### Added
+* Added new developer API to `IMGLYFileReader` for reading image together with a serialization. 
+  * Use ex. `IMGLYFileReader(stateHandler).readJson(input: InputStream, source: Uri)` to load the image in sync with the serialization.
+
 ## v10.3.0
 
 ### Fixed
