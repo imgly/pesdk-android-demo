@@ -1,5 +1,16 @@
 # PhotoEditor SDK - Changelog
 
+## v10.3.2
+
+### Fixed
+* `CustomStickersFragment::onHiddenChanged()` called successively with `true` and `false` when re-selecting a `CustomStickerCategoryItem`.
+* Unable to open `CameraPreviewActivity` with `CameraPreviewBuilder` using the default permissions on Android Tiramisu.
+  * Restricted `WRITE_EXTERNAL_STORAGE` and `READ_EXTERNAL_STORAGE` permissions to `maxSdkVersion` 32.
+  * Added `READ_MEDIA_IMAGES` permission to the camera module.
+* `FileNotFoundException` when trying to make a local copy of `Uri`s.
+* Changing serialization at runtime creates a memory leak.  
+* Synchronous serialization loading crash if not all backend modules are included. 
+
 ## v10.3.1
 
 ### Fixed
