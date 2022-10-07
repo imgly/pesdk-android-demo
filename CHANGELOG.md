@@ -1,5 +1,10 @@
 # PhotoEditor SDK - Changelog
 
+## v10.3.3
+
+### Fixed
+* Synchronous serialization loading sometimes crash due to a concurrency bug.
+
 ## v10.3.2
 
 ### Fixed
