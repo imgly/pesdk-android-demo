@@ -1,5 +1,15 @@
 # PhotoEditor SDK - Changelog
 
+## v10.4.0
+
+### Added
+* `singleToolUse` mode that skips main menu if only one tool is used.
+
+### Fixed
+* Smart stickers not getting rendered during headless/background export.
+* [VideoEditorSDK] Setting multiple video clips only set the first clip.
+* [VideoEditorSDK] Incorrect exit animation for `AudioOverlayOptionsToolPanel`. 
+
 ## v10.3.3
 
 ### Fixed

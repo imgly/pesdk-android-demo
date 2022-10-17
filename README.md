@@ -16,7 +16,7 @@
     <img src="https://img.shields.io/badge/platform-android-2DC25C.svg?style=flat">
   </a>
   <a href="https://artifactory.img.ly/artifactory/imgly/ly/img/android/pesdk/">
-    <img src="https://img.shields.io/badge/VERSION-10.3.3-007ec6.svg?style=flat" alt="Maven">
+    <img src="https://img.shields.io/badge/VERSION-10.4.0-007ec6.svg?style=flat" alt="Maven">
   </a>
   <a href="http://twitter.com/PhotoEditorSDK">
     <img src="https://img.shields.io/badge/twitter-@PhotoEditorSDK-8646E2.svg?style=flat" alt="Twitter">
@@ -119,7 +119,7 @@ buildscript {
         maven { url "https://artifactory.img.ly/artifactory/imgly" }
     }
     dependencies {
-        classpath 'ly.img.android.pesdk:plugin:10.3.3'
+        classpath 'ly.img.android.pesdk:plugin:10.4.0'
     }
 }
 
