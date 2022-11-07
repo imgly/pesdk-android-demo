@@ -1,5 +1,10 @@
 # PhotoEditor SDK - Changelog
 
+## v10.4.1
+
+### Fixed
+* [VideoEditorSDK] Stutter/noise/audio cracking sound in certain videos and audio overlays.
+
 ## v10.4.0
 
 ### Added
