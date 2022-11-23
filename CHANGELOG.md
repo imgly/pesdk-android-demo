@@ -1,5 +1,19 @@
 # PhotoEditor SDK - Changelog
 
+## v10.4.2
+
+### Fixed
+* `ForceCropMode.SHOW_TOOL_WHEN_CROP_UNMATCHED` was not working resulting in silent crop.
+* VectorDrawables are sometimes invisible.
+* Video thumbnails are rotated in the composition and trim tool when the video is recorded in a rotated orientation.
+* Individual video clip play/pause state not getting updated in Video Composition tool.
+* Tool not showing sometimes on startup in case of force crop/trim.
+* `IllegalStateException` in `VideoEditorActivityResultContract` and `PhotoEditorActivityResultContract` when parsing `null` intent.
+* `SecurityException` when reading a `Uri` without read permission.
+* `CalledFromWrongThreadException` when unable to prepare output `Uri` in `CameraPreviewActivity`.
+* History state (undo/redo operations) was not restored after process death.
+* Certain emojis/characters were breaking on changing the text width/height.
+
 ## v10.4.1
 
 ### Fixed
