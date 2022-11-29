@@ -1,5 +1,12 @@
 # PhotoEditor SDK - Changelog
 
+## v10.4.3
+
+### Fixed
+* When pressing discard, the user is stuck in an invisible audio tool.
+* Slow devices can cause audio to stutter.
+* If the same video appears twice in a list, only the first video can be trimmed.
+
 ## v10.4.2
 
 ### Fixed
