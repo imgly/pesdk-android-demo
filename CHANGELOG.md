@@ -1,5 +1,17 @@
 # PhotoEditor SDK - Changelog
 
+## v10.4.4
+
+### Fixed
+* [VideoEditorSDK] Audio overlay start time is not reset to zero, after switching audio overlay.
+* [VideoEditorSDK] Fixed a potential IOException for some video or audio assets.
+* The same layer instance could be added multiple times to the layer list, with leading to reduced performance.
+* IMGLYFileReader sometimes added Brush, Frame, and Overlay layers multiple times.
+* Loading serialization at runtime could cause a NullPointerException crash.
+* Incorrect brush face aspect ratio (not round) after switching source.
+
+__Note: If serializations contain the same layer (Brush, Frame, or Overlay) multiple times, this issue can be fixed by loading and saving the serialization in the editor.__
+
 ## v10.4.3
 
 ### Fixed
