@@ -1,5 +1,12 @@
 # PhotoEditor SDK - Changelog
 
+## v10.5.0
+
+### Added
+* `CanvasSettings.moveSpritesWithoutSelection` to control moving sprites around the canvas without selecting them first.
+* `CanvasSettings.autoSelectSprites` to control automatic selection of sprites when added to the canvas.
+* Support for custom dynamic smart stickers via `MetadataImageStickerItem`.
+
 ## v10.4.4
 
 ### Fixed
