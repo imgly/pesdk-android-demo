@@ -1,5 +1,11 @@
 # PhotoEditor SDK - Changelog
 
+## v10.6.0
+
+### Added
+* Support for custom audio selection fragment.
+* Added soundstripe audio selection fragment, with proxy or custom data fetch implementation.
+
 ## v10.5.0
 
 ### Added
