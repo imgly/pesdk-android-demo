@@ -1,10 +1,27 @@
 # PhotoEditor SDK - Changelog
 
+## v10.7.0
+
+### Added
+* If `uiMainConfig.showConfirmCloseDialog` is `false` no discard confirm dialog is shown, when close button is clicked. Default is `true`. 
+* Support for adding min and max values to AdjustmentOptions.
+
+### Fixed
+* Sticker and Text-Design previews occasionally failing to load.
+* The background of the editor flickers transparently at startup.
+* [VideoEditorSDK] A rare NullPointerException when changing the tool.
+* [VideoEditorSDK] A rare RuntimeException whenever the timeline was shown due to a recycled Bitmap being drawn.
+* [VideoEditorSDK] Bad video quality if auto bitrate is used.
+
+### Changed
+* Removed the `OrientationSensor` class to comply with privacy policy guidelines of certain third-party app stores.
+* Deprecated `AutoRotateLayout`, `AutoRotateImageSource`, and `AutoRotateTextView` views.
+
 ## v10.6.0
 
 ### Added
-* Support for custom audio selection fragment.
-* Added soundstripe audio selection fragment, with proxy or custom data fetch implementation.
+* [VideoEditorSDK] Support for custom audio selection fragment.
+* [VideoEditorSDK] Added soundstripe audio selection fragment, with proxy or custom data fetch implementation.
 
 ## v10.5.0
 
