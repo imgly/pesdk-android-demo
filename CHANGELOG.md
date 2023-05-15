@@ -1,5 +1,20 @@
 # PhotoEditor SDK - Changelog
 
+## v10.7.1
+
+### Fixed
+* Background rendering not getting completed when rendering videos with big files.
+* IOExceptions when cached files are deleted.
+* Trim is reset when loading/changing the source. This can cause an issue when loading a serialization with a trim.
+* Brush is sometimes not at the correct position after switching source.
+* A rare crash can occur while opening the StickerOptionToolPanel due to improper initialization in the event handlers of the StickerOptionToolPanel.
+* Audio level don't reset to zero after deleting the overlay.
+
+### Improved
+* Event handlers for initialization now have a specific call order to ensure consistent handling of all events.
+* Added `UiConfigComposition.addVideoIntent` to change the intent used to add videos to the composition.
+* Added `DocumentRenderWorker.RESULT_URI_KEY` to `DocumentRenderWorker` result. It's a string due to the fact that `Uri` is not serializable.
+
 ## v10.7.0
 
 ### Added
