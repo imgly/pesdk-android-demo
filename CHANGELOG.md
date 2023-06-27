@@ -1,5 +1,10 @@
 # PhotoEditor SDK - Changelog
 
+## v10.7.2
+
+### Fixed
+* Soundstripe module compile issues.
+
 ## v10.7.1
 
 ### Fixed
