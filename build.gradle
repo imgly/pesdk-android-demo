@@ -2,7 +2,7 @@
 
 buildscript {
     ext.kotlin_version = '1.5.32'
-    ext.pesdk_version = '10.7.2' // Insert the latest SDK version here. You will find it here https://github.com/imgly/pesdk-android-demo/releases
+    ext.pesdk_version = '10.7.3' // Insert the latest SDK version here. You will find it here https://github.com/imgly/pesdk-android-demo/releases
     repositories {
         google()
         gradlePluginPortal()
