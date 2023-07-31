@@ -1,4 +1,21 @@
 # PhotoEditor SDK - Changelog
+## v10.7.3
+
+### Fixed
+* [VideoEditorSDK] Crop header information in videos is ignored. This can also cause artifacts.
+* [VideoEditorSDK] Some unsupported video formats are not detected as unsupported.
+  [VideoEditorSDK] Video trim does not work correctly when using background rendering.
+* [VideoEditorSDK] Soundstripe styles are broken for non default themes.
+* [VideoEditorSDK] Minimal video duration is not respected when between 500 and 1000 milliseconds. 
+* Crop area minimal size is too high, to crop screenshots.
+* `DocumentRenderWorker` is not canceled when `WorkManager.cancelWorkById` is called.
+* Missing `FileDescriptor` closes, resulting in a resource leak.
+* Layer History is not working, when using R8 Full Mode.
+* Soundstripe is not loading, when using R8 Full Mode.
+* Giphy is not loading, when using R8 Full Mode.
+
+### Improved
+* [VideoEditorSDK] Videos with mime type `video/dolby-vision` are now decoded with a fallback decoder. This may work on some devices, that do not officially support this format.
 
 ## v10.7.2
 
