@@ -44,8 +44,10 @@ imglyConfig {
 }
 
 android {
-    compileSdkVersion 31
-    buildToolsVersion '30.0.3'
+    namespace "com.photoeditorsdk.android.app"
+
+    compileSdkVersion 34
+    buildToolsVersion '34.0.0'
 
     defaultConfig {
         applicationId "com.photoeditorsdk.android.app"
