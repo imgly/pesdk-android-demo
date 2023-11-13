@@ -2,6 +2,7 @@ apply plugin: 'com.android.application'
 
 apply plugin: 'ly.img.android.sdk'
 apply plugin: 'kotlin-android'
+apply plugin: 'com.google.devtools.ksp'
 
 imglyConfig {
 
