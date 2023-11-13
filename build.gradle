@@ -3,11 +3,12 @@
 buildscript {
     ext.kotlin_version = '1.6.21'
     ext.ksp_version = '1.6.21-1.0.6'
-    ext.pesdk_version = '10.8.0' // Insert the latest SDK version here. You will find it here https://github.com/imgly/pesdk-android-demo/releases
+    ext.pesdk_version = '10.8.1' // Insert the latest SDK version here. You will find it here https://github.com/imgly/pesdk-android-demo/releases
     repositories {
         google()
         gradlePluginPortal()
         maven { url 'https://artifactory.img.ly/artifactory/imgly' }
+        maven { url 'https://artifactory.img.ly/artifactory/imgly_development' }
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:8.1.2'
@@ -27,6 +28,7 @@ allprojects {
         google()
         mavenCentral()
         maven { url 'https://artifactory.img.ly/artifactory/imgly' }
+        maven { url 'https://artifactory.img.ly/artifactory/imgly_development' }
     }
 }
 
