@@ -1,1 +1,1 @@
-include ':app', ':example_brush_presets_panel'
+include ':app'

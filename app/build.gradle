@@ -2,6 +2,7 @@ apply plugin: 'com.android.application'
 
 apply plugin: 'ly.img.android.sdk'
 apply plugin: 'kotlin-android'
+apply plugin: 'com.google.devtools.ksp'
 
 imglyConfig {
 
@@ -43,13 +44,15 @@ imglyConfig {
 }
 
 android {
-    compileSdkVersion 31
-    buildToolsVersion '30.0.3'
+    namespace "com.photoeditorsdk.android.app"
+
+    compileSdkVersion 34
+    buildToolsVersion '34.0.0'
 
     defaultConfig {
         applicationId "com.photoeditorsdk.android.app"
         minSdkVersion 21
-        targetSdkVersion 30
+        targetSdkVersion 34
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner 'androidx.test.runner.AndroidJUnitRunner'
