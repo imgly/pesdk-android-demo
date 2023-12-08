@@ -1,5 +1,13 @@
 # PhotoEditor SDK - Changelog
+## v10.8.2
+
+### Fixed
+* License check does not work when using KSP plugin.
+
 ## v10.8.1
+
+### Known-Issues
+* __KSP plugin is broken. Please update to 10.8.2.__
 
 ### Fixed
 * [VideoEditorSDK] Video export was limited by the frame rate limiter.
