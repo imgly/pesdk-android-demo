@@ -4,7 +4,7 @@ apply plugin: 'ly.img.android.sdk'
 apply plugin: 'kotlin-android'
 apply plugin: 'com.google.devtools.ksp'
 
-imglyConfig {
+IMGLY.configure {
 
     pesdk {
         enabled true

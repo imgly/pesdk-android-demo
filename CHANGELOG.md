@@ -1,4 +1,20 @@
 # PhotoEditor SDK - Changelog
+## v10.9.0
+
+### Fixed
+* [KSP-PLUGIN] Event-System is not working correctly in some cases, when using KSP Plugin.
+* [GRADLE-PLUGIN] KSP Plugin does not work on newer Gradle versions.
+* [GRADLE-PLUGIN] KAPT and KSP Plugin detection is not working correctly.
+* Images and icons occasionally fail to load.
+* Performance degradation during the loading of numerous images.
+
+### Improved
+* Better runtime and build-time error messages for configuration issues.
+* New Syntax for IMG.LY plugin configuration. Please use `IMGLY.configure { }` instead of `imglyConfig { }`, you will receive errors when you are using the new syntax the wrong way.
+
+### Breaking Changes
+* 🚨 [GRADLE-PLUGIN] Significant modifications have been implemented that will affect a minor segment of our customer base. Should your build process encounter errors, it is recommended to consult the build output for detailed information.
+
 ## v10.8.2
 
 ### Fixed
@@ -24,7 +40,6 @@
 * ConfigLoader (React Native, Cordova/Ionic)
   * `personalVideoClips` is not disabled correctly if the video library is not used.
 * Kotlin 1.9.0+ compatibility issues, by using KSP.
-* Change
 
 ### Changed
 * 🚨 Minimum compileSdkVersion version of the `ui:camera` and `backend:camera` module is now 33
