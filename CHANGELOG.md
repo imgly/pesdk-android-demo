@@ -1,4 +1,42 @@
 # PhotoEditor SDK - Changelog
+## v10.10.0
+
+### Fixed
+Android-15-16KB
+* Added ability to set video export size limit using `VideoEditorSaveSettings.exportSizeLimit(value: ImageSize)`
+  * 🚨 The default video export resolution limit is now 4k (3840x2160px) or (2160x3840px) depending on the orientation.
+  * We limit to 4k by default, because some Samsung devices like the German version of the S22, S22 Ultra, S23 and S23 Ultra support 8k export while others crash because of a driver issue.
+  * It's because Samsung uses different chipsets, with different drivers, for the same device in different regions.
+* Potential FileNotFoundException because file name too long, when saveUriPermissions is true.
+* Typo in Archivo font identifier to `imgly_font_archivo_black`.
+* Potential FileNotFoundException because file name too long, when saveUriPermissions is true.
+* Serializations exported by WEB with tintMode set to "none", loaded as tintMode "solid".
+* Edge to Edge support for Android 15 and lower 
+* The background service stayed alive after the export was canceled or finished.
+* Potential `FileNotFoundException` caused by file names being too long when `saveUriPermissions` is true.
+* Serializations is exported by WEB with `tintMode` set to "none" were loaded as `tintMode` "solid".
+
+## Improved
+* Support for Android 15 16KB page size
+* Support for Android API 35 target.
+
+### Changed
+* Thanks to Google, we can now use the new `FOREGROUND_SERVICE_MEDIA_PROCESSING` permission, and they have enabled it for older Android versions as well.
+  * 🚨Permission `FOREGROUND_SERVICE_MEDIA_PLAYBACK` is no longer required.
+* Added the ability to set the video export size limit using `VideoEditorSaveSettings.exportSizeLimit(value: ImageSize)`.
+  * 🚨The default video export resolution limit is now 4K (3840x2160px) or (2160x3840px), depending on the orientation.
+  * We limit to 4K by default because some Samsung devices, like the German versions of the S22, S22 Ultra, S23, and S23 Ultra, support 8K export while others crash due to a driver issue.
+  * This is because Samsung uses different chipsets with different drivers for the same device in different regions.
+* A typo in the Archivo font identifier. We changed to `imgly_font_archivo_black`, while keeping the old identifier for backward compatibility.
+* To support Android 15 we upgraded APG to the minimum Version 8.4.0.
+* Aligning with the Android 15 16 KB size libraries we upgraded to the lowest working Kotlin Version 1.8.10.
+* [APG/GRADLE-PLUGIN] Upgraded to '8.4.0'
+* [KSP-PLUGIN] Upgraded to '1.8.10-1.0.9'
+* [Kotlin-PLUGIN] Upgraded to '1.8.10'
+* [android-gif-drawable] Upgraded to '1.2.29'
+* [Androidx-Dependencies] Upgraded camerax_version to '1.4.0-rc01', fragment to '1.8.2', appcompat to '1.7.0', vectordrawable to '1.2.0', annotation to '1.8.2'
+* [Google.mlkit-Dependency] Upgraded segmentation-selfie to '16.0.0-beta6'
+
 ## v10.9.0
 
 ### Fixed
