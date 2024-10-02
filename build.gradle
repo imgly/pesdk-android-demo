@@ -1,9 +1,9 @@
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
 
 buildscript {
-    ext.kotlin_version = '1.6.21'
-    ext.ksp_version = '1.6.21-1.0.6'
-    ext.pesdk_version = '10.9.0' // Insert the latest SDK version here. You will find it here https://github.com/imgly/pesdk-android-demo/releases
+    ext.kotlin_version = '1.8.22'
+    ext.ksp_version = '1.8.22-1.0.11'
+    ext.pesdk_version = '10.10.0' // Insert the latest SDK version here. You will find it here https://github.com/imgly/pesdk-android-demo/releases
     repositories {
         google()
         gradlePluginPortal()
