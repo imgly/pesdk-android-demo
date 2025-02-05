@@ -1,4 +1,10 @@
 # PhotoEditor SDK - Changelog
+## v10.10.1
+
+### Fixed
+* Editor sometimes crashes when the Editor is closed before the engine is initalised.
+* Video is exported even when there are no changes and ForceTrim is enabled
+
 ## v10.10.0
 
 ### Fixed
