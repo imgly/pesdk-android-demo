@@ -1,4 +1,9 @@
 # PhotoEditor SDK - Changelog
+## v10.10.2
+
+### Fixed
+* Under certain circumstances, such as using `minSdkVersion` 31 together with third-party libraries such as "dagger", the editor may crash with a recursive clone loop. This is due to a change in the implementation of the clone method in the Android SDK. 
+
 ## v10.10.1
 
 ### Fixed
