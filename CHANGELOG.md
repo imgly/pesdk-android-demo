@@ -1,4 +1,9 @@
 # PhotoEditor SDK - Changelog
+## v10.10.3
+
+### Fixed
+* Long loading times appear on loading images on some devices, due to undocumented changes in API 35.
+
 ## v10.10.2
 
 ### Fixed
