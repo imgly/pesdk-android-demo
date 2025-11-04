@@ -1,4 +1,20 @@
 # PhotoEditor SDK - Changelog
+## v10.10.6
+
+### Fixed
+* On Android 16 ImglyTitalBar being hidden for Edge to Edge.
+
+## v10.10.5
+
+### Changed
+* Updated Video length tolerance for saving and opening, for Videos close to the minimum Duration.
+* Updated Top Bar padding and tolerance for Android 16 edge-to-edge.
+
+## v10.10.4
+
+### Changed
+* Updated SDK to comply with Android SDK 36 and 'onBackPressed()' migrated to AndroidX predictive back navigation. 
+
 ## v10.10.3
 
 ### Fixed
