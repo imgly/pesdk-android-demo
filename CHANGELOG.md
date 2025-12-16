@@ -1,4 +1,18 @@
 # PhotoEditor SDK - Changelog
+## v10.10.9
+## Fixed
+* Thin green edge on some Android devices with crop metadata video
+
+## v10.10.8
+## Fixed
+* Guard sticker gallery selection by checking for null URIs and routing UI updates/toasts onto the main thread to prevent crashes.
+* Align video gallery/composer picker callbacks so gallery toasts are posted on the main thread as well.
+* When starting Trim at the start the Video would not export
+
+## v10.10.7
+## Changed
+* Keep Imgly dependency resolution deterministic so Gradle cache keys match across machines
+
 ## v10.10.6
 
 ### Fixed
