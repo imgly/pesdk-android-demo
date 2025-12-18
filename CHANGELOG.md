@@ -1,7 +1,12 @@
 # PhotoEditor SDK - Changelog
+## Unreleased
+### Fixed
+* Prevent crash when `EditorActivity` is recreated without the required `SettingsList` (e.g. after process death). The activity now finishes so the host app can relaunch via `PhotoEditorBuilder`/`CameraPreviewBuilder`.
+
 ## v10.10.9
 ## Fixed
 * Thin green edge on some Android devices with crop metadata video
+* Fix unresponsive touch area for `HorizontalListView` items on some Android devices (e.g. Pixel 8 Pro)
 
 ## v10.10.8
 ## Fixed
