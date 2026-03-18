@@ -1,7 +1,24 @@
 # PhotoEditor SDK - Changelog
-## Unreleased
+## v10.10.12
+### Fixed
+* [Gradle Plugin] Fixed AGP 9 compatibility for projects using built-in Kotlin.
+  * Prevents `kotlin-kapt` from being applied when KSP is used, avoiding the AGP 9 error:
+    * `The 'org.jetbrains.kotlin.kapt' plugin is not compatible with built-in Kotlin support`
+  * Improves KSP/KAPT plugin handling for newer Android Gradle Plugin versions.
+
+## v10.10.11
+### Fixed
+* `ConfigLoader` (React Native, Flutter, Cordova/Ionic).
+  * `forceCrop` now only opens the transform tool when the asset does not match an allowed aspect ratio (aligns Android behavior with iOS).
+  * `EditorSDKResult` now reports updated `resultWidth`/`resultHeight` for video exports (including crops).
+### Breaking Changes
+* `ConfigLoader` (React Native, Flutter, Cordova/Ionic).
+  * `forceCrop` on Android, no longer always opens the transform tool. To keep the old behavior, set `UiConfigAspect.forceCropMode = UiConfigAspect.ForceCrop.SHOW_TOOL_ALWAYS` via the native `SettingsList.configure<UiConfigAspect> { ... }` interface.
+
+## v10.10.10
 ### Fixed
 * Prevent crash when `EditorActivity` is recreated without the required `SettingsList` (e.g. after process death). The activity now finishes so the host app can relaunch via `PhotoEditorBuilder`/`CameraPreviewBuilder`.
+
 
 ## v10.10.9
 ## Fixed
