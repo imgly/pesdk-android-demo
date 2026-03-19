@@ -1,4 +1,13 @@
 # PhotoEditor SDK - Changelog
+## 10.10.13
+### Fixed
+* Improve Android editor action bar safe-area handling in landscape so edge buttons stay accessible on devices with system gesture or cutout insets.
+* [Serialization] Fixed Android shadows adjustment being written with half the configured value.
+* Added backward-compatible read conversion for serializations exported by older Android SDK versions, so existing files restore the intended shadows value.
+* Harden Android editor entry points against external launches by marking the SDK editor and camera activities as non-exported.
+### Added
+* Added a `SaveSettings.useInternalCacheForUriPermissions` opt-in on Android so temporary URI copies can be kept in the app's internal cache directory when `saveUriPermissions` is enabled.
+
 ## v10.10.12
 ### Fixed
 * [Gradle Plugin] Fixed AGP 9 compatibility for projects using built-in Kotlin.
