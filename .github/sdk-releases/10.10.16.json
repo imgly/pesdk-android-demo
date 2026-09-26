@@ -1,0 +1,9 @@
+{
+  "schema_version": 1,
+  "version": "10.10.16",
+  "sdk_source_sha": "d8094d6ed009db158ecbf2592856b2562b3edfae",
+  "sdk_manifest_sha256": "5a3d3d4335710f4619a3c89180775b64a5b28085e5743d21d106a1137e4102cf",
+  "base_sha": "06180dbb2b32dabaa709caad812458f9d6591d5c",
+  "notes_path": "release-notes/10.10.16.md",
+  "notes_sha256": "bd9efb35e14dede983f85bc2cd4d347433dbc4923c1a97edb89d3983ef4a1955"
+}
