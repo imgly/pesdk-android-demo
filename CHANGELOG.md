@@ -1,4 +1,11 @@
 # PhotoEditor SDK - Changelog
+## 10.10.16
+
+### Fixed
+* Prevent a crash while restoring editor settings from a parcel in minified builds with AGP 9.
+
+- [PE.SDK] Fixed a blank editor preview in minified Android builds when R8 removes constructors of rendering operations created through reflection.
+
 ## 10.10.14
 ### Fixed 
 * AGP 9 Final Module not being generated automatically 

@@ -53,8 +53,8 @@ android {
         applicationId "com.photoeditorsdk.android.app"
         minSdkVersion 21
         targetSdkVersion 35
-        versionCode 1
-        versionName "1.0"
+        versionCode 10010016
+        versionName "10.10.16"
         testInstrumentationRunner 'androidx.test.runner.AndroidJUnitRunner'
 
         resValue 'string', 'pesdk_version', "v$pesdk_version"
